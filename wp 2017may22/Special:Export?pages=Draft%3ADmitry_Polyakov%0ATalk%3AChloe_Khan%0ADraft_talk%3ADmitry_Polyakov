@@ -1,0 +1,220 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>https://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.30.0-wmf.1</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal talk</namespace>
+      <namespace key="108" case="first-letter">Book</namespace>
+      <namespace key="109" case="first-letter">Book talk</namespace>
+      <namespace key="118" case="first-letter">Draft</namespace>
+      <namespace key="119" case="first-letter">Draft talk</namespace>
+      <namespace key="446" case="first-letter">Education Program</namespace>
+      <namespace key="447" case="first-letter">Education Program talk</namespace>
+      <namespace key="710" case="first-letter">TimedText</namespace>
+      <namespace key="711" case="first-letter">TimedText talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Draft:Dmitry Polyakov</title>
+    <ns>118</ns>
+    <id>50490094</id>
+    <revision>
+      <id>753884258</id>
+      <parentid>739556295</parentid>
+      <timestamp>2016-12-09T18:41:35Z</timestamp>
+      <contributor>
+        <ip>79.164.98.225</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="10295">{{AFC submission|d|bio|u=Goldenshimmer|ns=118|decliner=Primefac|declinets=20160908220623|ts=20160908183639}} &lt;!-- Do not remove this line! --&gt;
+{{AFC submission|d|music|u=Goldenshimmer|ns=118|decliner=Tseung Kwan O|declinets=20160711211519|small=yes|ts=20160709182824}} &lt;!-- Do not remove this line! --&gt;
+{{AFC submission|d|reason|If the situation has changed since the deletion, please explain.|u=Goldenshimmer|ns=118|decliner=Robert McClenon|declinets=20160709032214|small=yes|ts=20160604013235}} &lt;!-- Do not remove this line! --&gt;
+{{AFC submission|d|reason|Remove the red links - if any of those people or pieces get a WP article, the link can be done later. Remove all sources that are only mentions (I found many). Do not include every piece he conducted in the article. That is the wrong level of detail for WP. Only include ones where there is a significant review of the performance.|u=Goldenshimmer|ns=118|decliner=LaMona|declinets=20160603165021|small=yes|ts=20160523170452}} &lt;!-- Do not remove this line! --&gt;
+
+{{AFC comment|1={{u|Primefac}}: Ah, cool, thank you for describing the problem with the article — now that the other issues are dealt with, that remaining reason makes sense to me for not including it in WP. :) &lt;span style=&quot;font-family:'Wreathe','Centaur','serif';color:#2a1657;background:#e2daf1&quot;&gt;—&amp;#123;&amp;#123;u&amp;#124;[[User:Goldenshimmer|Goldenshimmer]]&amp;#125;&amp;#125;&amp;#124;✝️&amp;#124;ze/zer&amp;#124;😹&amp;#124;[[User:Goldenshimmer/T|T/C]]&amp;#124;☮️&amp;#124;John15:12&amp;#124;🍂&lt;/span&gt; 23:56, 8 September 2016 (UTC)}}
+
+{{AFC comment|1=The stumbling block of a lack of serious coverage is more of a sinkhole. Yes, the five sources given are (mostly) independent and reliable sources, but there is no ''significant'' coverage of Polyakov. This was the crux of the original deletion discussion, and despite some very heavy trimming (and a lot of work by Goldenshimmer) I still see no evidence of [[WP:42|The Golden Rule]] being met. What Polyakov needs is an article or three that is specifically about him and what he has done; NOT simply &quot;he's now the conductor, and he used to be at X and Y location.&quot; [[User:Primefac|Primefac]] ([[User talk:Primefac|talk]]) 22:06, 8 September 2016 (UTC)}}
+
+{{AFC comment|1={{ping|Tseung Kwan O}}: The remaining five references from four separate sources all appear to me to be fully neutral, independent, and reliable coverage of Polyakov. They may stumble on the &quot;trivial&quot; part of the requirement, though. Was there something in them I was missing indicating that they come from a primary source? &lt;span style=&quot;font-family:'Wreathe','Centaur','serif';color:#2a1657;background:#e2daf1&quot;&gt;—&amp;#123;&amp;#123;u&amp;#124;[[User:Goldenshimmer|Goldenshimmer]]&amp;#125;&amp;#125;&amp;#124;✝️&amp;#124;ze/zer&amp;#124;😹&amp;#124;[[User:Goldenshimmer/T|T/C]]&amp;#124;☮️&amp;#124;John15:12&amp;#124;🍂&lt;/span&gt; 18:41, 8 September 2016 (UTC)}}
+
+{{AFC comment|1=Re Tseung Kwan O comment: I can read Russian, and I confirm that all newspaper refs are concert announcements/reports with usual hype about &quot;brilliant musicians&quot;  and not a shred of normal musical criticism - [[User:Staszek Lem|Staszek Lem]] ([[User talk:Staszek Lem|talk]]) 01:48, 12 July 2016 (UTC)}}
+
+{{AFC comment|1=The references in this submission are affiliated with the subject involved (I can't really read Russian, but I've noticed that they all come from a common source which claims that Polyakov is part of their organization). Note that to establish notability, there must be ''reliable non-trivial third-party sources'' about the topic. This draft shows no sign of this. &lt;span style=&quot;border:2px solid blue; padding:0 9px&quot;&gt;[[User:Tseung Kwan O|&lt;span style=&quot;font-family:'Old English Text MT',Dead Kansas;color:red&quot;&gt;Tseung&amp;nbsp;Kwan&amp;nbsp;O&lt;/span&gt;]]&amp;nbsp;[[User talk:Tseung Kwan O|&lt;b style=&quot;color:tan&quot;&gt;Let's&amp;nbsp;talk&lt;/b&gt;]]&lt;/span&gt; 21:15, 11 July 2016 (UTC)}}
+
+{{AFC comment|1=Ah! I think this might be how to write comments… Thanks again [[User:Robert McClenon|Robert McClenon]] :) &lt;span style=&quot;font-family:'Wreathe','Centaur','serif';color:#2a1657;background:#e2daf1&quot;&gt;—&amp;#123;&amp;#123;u&amp;#124;[[User:Goldenshimmer|Goldenshimmer]]&amp;#125;&amp;#125;&amp;#124;✝️&amp;#124;ze/zer&amp;#124;😹&amp;#124;[[User:Goldenshimmer/T|T/C]]&amp;#124;☮️&amp;#124;John15:12&amp;#124;🍂&lt;/span&gt; 19:42, 9 July 2016 (UTC)
+
+Comments moved from below in wrong place:
+&lt;blockquote&gt;
+I think this resolves the issues mentioned in the review — I removed the Concerts section and a bunch of the trivial coverage sources.
+
+@[[User:Robert McClenon|Robert McClenon]]: The AfD was when there were only a few spammy sources for the article. The article creator found more sources, so I incorporated some of them into the article. At that point, I submitted the article to AfC for reassessment, and it was declined for having too much trivial coverage. I removed the trivial coverage, leaving just the coverage that establishes notability, and resubmitted it. &lt;span style=&quot;font-family:'Wreathe','Centaur','serif';color:#2a1657;background:#e2daf1&quot;&gt;—&amp;#123;&amp;#123;u&amp;#124;[[User:Goldenshimmer|Goldenshimmer]]&amp;#125;&amp;#125;&amp;#124;✝️&amp;#124;ze/zer&amp;#124;😹&amp;#124;[[User:Goldenshimmer/T|T/C]]&amp;#124;☮️&amp;#124;John15:12&amp;#124;🍂&lt;/span&gt; 18:28, 9 July 2016 (UTC)&lt;/blockquote&gt;}}
+
+{{AFC comment|1=Do not insert comments about the status of a draft article into the article itself, whether at the bottom or elsewhere.  Comments should go in AFC comments, like this one, so that they can be removed by a script if and when the draft is approved. [[User:Robert McClenon|Robert McClenon]] ([[User talk:Robert McClenon|talk]]) 19:18, 9 July 2016 (UTC)}}
+
+{{AFC comment|1=See [[Wikipedia:Articles for deletion/Dmitry Polyakov]].
+
+Please do not insert comments about the status of a draft in the draft itself, but only in AFC comments. [[User:Robert McClenon|Robert McClenon]] ([[User talk:Robert McClenon|talk]]) 03:21, 9 July 2016 (UTC)}}
+
+{{AFC comment|1=A few thoughts just in passing - this article still has (if not been made worse) an issue with [[WP:CITEKILL|CITEKILL]] bordering on [[WP:BOMBARD|BOMBARD]]. To the reviewers (keeping in mind I haven't re-reviewed this since it was deleted), please make sure the references actually talk about Polyakov; the previous version of this page used a lot of references that just reused the same &quot;Polyakov is a talented musician&quot; paragraph. [[User:Primefac|Primefac]] ([[User talk:Primefac|talk]]) 20:29, 23 May 2016 (UTC)}}
+
+----
+
+:
+
+:Yeah, the ones that seem useful as independent sources for establishing notability I linked in the &quot;Sources&quot; section below so they're easy to spot among all the primary sources. [[User:Goldenshimmer|Goldenshimmer]] ([[User talk:Goldenshimmer|talk]]) 23:27, 23 May 2016 (UTC)
+:(There may be some more in the article, but those are the ones that struck me as obvious.) [[User:Goldenshimmer|Goldenshimmer]] ([[User talk:Goldenshimmer|talk]]) 23:30, 23 May 2016 (UTC)
+
+{{Userfied page}}
+
+{{orphan|date=May 2016}}
+{{about|the musician|the Soviet general|Dmitri Polyakov|the tennis player|Dimitri Poliakov}}
+{{Infobox person
+| name                = Dmitry Polyakov
+| native_name         = Дми́трий Поляко́в
+| image               = Image:Conductor Dmitry Polyakov.jpg|230px|thumb
+| birth_place         = [[Soviet Union]]
+| occupation          = [[Conducting|Conductor]] and [[Composer]] 
+| website             = {{URL|http://www.dmitrypolyakov.com}}
+}}
+
+'''Dmitry Polyakov''' ({{lang-ru|Дми́трий Поляко́в}} is a [[Russia]]n [[Conducting|conductor]].
+
+[[file:Дмитрий Поляков дирижирует Вторую симфонию И. Брамса в Большом зале Московской консерватории..jpg|250px|thumb|Dmitry Polyakov conducting [[Johannes Brahms]]' [[Symphony No. 2 (Brahms)|Symphony No. 2 in D major, Op. 73]] in the Great Hall of the Moscow Conservatory]]
+
+The concert Polyakov led on 1 February 2015 by the Murmansk Philharmonic Orchestra was featured in two television reports by the Murman State Broadcasting Company.&lt;ref name=&quot;murman-tv-1&quot;&gt;[http://web.archive.org/web/20160517031317/http://murman.tv/news/11869-x-festival-ispolnitelskogo-iskusstva-muzykalnoe-prinoshenie-v-murmanske.html Новости Мурманска и области - ГТРК Мурман :: Россия 1 :: :: X фестиваль исполнительского искусства &quot;Музыкальное приношение&quot; в Мурманске ''News report on ''Musical Offering'' Mozart concert''&lt;!-- Coverage by independent source Murman TV --&gt;]&lt;/ref&gt;&lt;ref name=&quot;murman-tv-2&quot;&gt;[http://web.archive.org/web/20160517030431/http://murman.tv/news/11903-x-festival-muzykalnoe-prinoshenie-startoval-v-murmanske.html Новости Мурманска и области - ГТРК Мурман :: Россия 1 :: :: X фестиваль &quot;Музыкальное приношение&quot; стартовал в Мурманске ''News report on ''Musical Offering'' Mozart concert''&lt;!-- More coverage by independent source Murman TV --&gt;]&lt;/ref&gt;
+
+Polyakov has also worked with the Krasnoyarsk Academic Symphony Orchestra.&lt;ref name=&quot;nv&quot;&gt;[http://web.archive.org/web/20160523155558/http://www.nv.kz/2014/05/29/73278/ Ученики Марио Мелани споют в Караганде «Севильского цирюльника»]&lt;!-- Independent article from news site --&gt;&lt;/ref&gt;
+
+==References==
+
+{{reflist}}
+
+==Sources==
+
+* [https://web.archive.org/web/20160523154123/http://an.zapad24.ru/articles/1540-pashalnyy-vecher-v-krasnoyarskoy-filarmonii.html Пасхальный вечер в Красноярской филармонии » Аргументы неделi. Енисей]&lt;!-- Independent local newspaper coverage. --&gt;
+* [https://web.archive.org/web/20160515211202/https://mstrok.ru/news/vsego-odnoj-repeticii-hvatilo-muzykantam-iz-moskvy-i-nizhnego-tagila-chtoby-sdelat-magiyu-na-scene-filarmonii.html Всего одной репетиции хватило музыкантам из Москвы и Нижнего Тагила, чтобы «сделать магию» на сцене филармонии | Новости | Агентство новостей «Между строк»]
+
+== External links ==
+* [http://www.dmitrypolyakov.com/ Official Website]
+
+{{DEFAULTSORT:Polyakov, Dmitry}}
+[[:Category:Russian conductors (music)]]</text>
+      <sha1>bwbb3wyx00bhahuz552iixeayj00mkb</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Talk:Chloe Khan</title>
+    <ns>1</ns>
+    <id>51180407</id>
+    <revision>
+      <id>781647135</id>
+      <parentid>779725912</parentid>
+      <timestamp>2017-05-22T13:09:54Z</timestamp>
+      <contributor>
+        <username>Murph9000</username>
+        <id>25404341</id>
+      </contributor>
+      <comment>/* Legal threats and content removal */ new section</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="9045">{{Talk header}}
+{{Old AfD multi
+ |date1 = February 14 2016 |result1 = '''delete''' |page1 = Chloe Khan
+}}
+{{WikiProject banner shell|blp=yes|1=
+{{WikiProject Biography |living=yes |listas=Khan, Chloe |class=Stub |a&amp;e-work-group=y}}
+{{WikiProject England}}
+{{WikiProject Big Brother}}
+{{WikiProject Women}}
+}}
+
+==Notability==
+
+The AfD found her non-notable when her claims to notability were her modelling for Playboy, the controversy over her X Factor participation and her appearance on Snog, Marry, Avoid. Since the AfD, she has appeared on Celebrity Big Brother, which attracted enough coverage to meet [[WP:GNG]]. [[User:Boleyn|Boleyn]] ([[User talk:Boleyn|talk]]) 08:06, 26 March 2017 (UTC)
+
+==Persistent removal of information==
+Could the anonymous editor who keeps removing a section please discuss their concerns here? {{u|82.132.231.192}}; {{u|2a00:23c4:8106:b300:9cbc:a8f2:bccc:3874}}, {{u|82.132.212.177}}, {{u|91.75.162.6}}. The sentence being removed is ''In 2010, she auditioned for The X Factor as Chloe Victoria, but was dropped due to her criminal record and allegations that she was a sex worker, allegations she denied.'' It has two reliable references. The first section - that she auditioned for the X Factor as Chloe Victoria - should clearly stand. It's factual, cited, well-known and anyone can see it on Youtube. Why is this persistently being removed? The reasons she was dropped are also available in many reliable sources, and this article clearly states that she denied the allegations. If you feel this could be better written, to make it even clearer that she denied them, then feel free to suggest something. Obviously we want to be accurate as an encyclopaedia and not keep something significant out, but I'm also very sensitive to the fact that this is a biography of a living person. [[User:Boleyn|Boleyn]] ([[User talk:Boleyn|talk]]) 07:24, 30 April 2017 (UTC)
+
+I've made a few changes to make it clearer; again, please discuss concerns so we can look at how to word this best. [[User:Boleyn|Boleyn]] ([[User talk:Boleyn|talk]]) 07:42, 30 April 2017 (UTC)
+
+Most of the removal of information was given with edit summaries such as 'Update' or 'minor edit'. On 4th May, all the X Factor info was removed with edit summary from IP: ''Removed lies and false information . IPSO have ruled against these in the court of law and legal team will be involved if this defamation , abuse and trolling continues .'' Will see if WIkiproject can help. [[User:Boleyn|Boleyn]] ([[User talk:Boleyn|talk]]) 19:37, 7 May 2017 (UTC)
+
+:I don't know what the IP has in mind. But this is not supported by either cited source (Metro or Telegraph): &quot;In 2010, she auditioned for The X Factor as Chloe Victoria, but was dropped due to her criminal record.&quot; Metro does not mention a criminal record. Telegraph does, but doesn't say that's why she was dropped. This article is subject to [[WP:BLP]] and it's important not to reach conclusions that aren't in the source. Also I wonder about the reliability of ''Metro''. [[User:Kendall-K1|Kendall-K1]] ([[User talk:Kendall-K1|talk]]) 21:36, 7 May 2017 (UTC)
+
+The Telegraph says: ''She was kicked off the musical talent show after it was alleged that she had been a sex worker – and that she was continuing to sell sex while The X Factor aired, but at a more expensive rate (leveraged by TV notoriety).'' You're right that the Metro (which I would consider reliable) states that she had a criminal record, but not that this was the reason for being kicked off the show and neither source given says what the reasons for this were. Thanks for looking at it and I'll re-word it. [[User:Boleyn|Boleyn]] ([[User talk:Boleyn|talk]]) 21:45, 7 May 2017 (UTC)
+:The ''Metro'' does not mention a criminal record. It talks about &quot;run-ins with the police.&quot; I don't know about the UK, but in the US these are two different things. The Telegraph does say &quot;criminal record&quot; so I think it's ok to leave that in.
+:I checked at [[WP:RSN]] and apparently ''Metro'' is considered reliable for this sort of information, in spite of its similarity to some US sources that are not. I do wonder about their ability to report the news factually, because they say Khan is a &quot;horrid person&quot; and that sounds more like opinion than news. [[User:Kendall-K1|Kendall-K1]] ([[User talk:Kendall-K1|talk]]) 21:52, 7 May 2017 (UTC)
+
+== Daily Express? ==
+
+{{Ping|Davey2010}} What's up with this link? [http://www.ok.co.uk/celebrity-news/582928/chloe-khans-ex-ian-hough-slams-reality-star-and-claims-she-only-sees-their-daughter-once-a-month] For me it just redirects to the ''[[Daily Express]]'' front page, which as I understand it is not considered RS. If that's the case I would support removing the entire paragraph sourced to it, rather than just one name. [[User:Kendall-K1|Kendall-K1]] ([[User talk:Kendall-K1|talk]]) 18:42, 9 May 2017 (UTC)
+
+{{u|Kendall-K1}}, I just checked and it goes straight to OK Magazine for me. [[User:Boleyn|Boleyn]] ([[User talk:Boleyn|talk]]) 18:58, 9 May 2017 (UTC)
+:I hadn't bothered checking the source - I looked Google as well as her Facebook and Twitter for the name - A ton of tabloids came up on Google and as for FB/TW Chloe has never actually mentioned anything about the child (if she has she's never officially named her on her social medias), I thought the fact she had a child may of been of relevance but if not I have no objections to the entire paragraph being removed, Thanks, –[[User:Davey2010|&lt;span style=&quot;color: blue;&quot;&gt;'''Davey'''&lt;/span&gt;&lt;span style=&quot;color: orange;&quot;&gt;'''2010'''&lt;/span&gt;]]&lt;sup&gt;[[User talk:Davey2010|&lt;span style=&quot;color: navy;&quot;&gt;'''Talk'''&lt;/span&gt;]]&lt;/sup&gt; 19:20, 9 May 2017 (UTC)
+:That's really odd. In firefox and chrome it redirects to the ''Express'' for me. In dillo I can see the article. [[User:Kendall-K1|Kendall-K1]] ([[User talk:Kendall-K1|talk]]) 20:17, 9 May 2017 (UTC)
+
+Weird, I'm using Chrome with no issues. Although OK's article doesn't mention it, it seems it's now owned by The Express Group, which own many publications, some reliable, some not. I haven't heard of any concerns about [[OK!]] and I've read it a few times, it's nothing like the Daily Express. I wouldn't use OK as a ref for a physics article, but fine for this. [[User:Boleyn|Boleyn]] ([[User talk:Boleyn|talk]]) 20:27, 9 May 2017 (UTC)
+
+:{{u|Kendall-K1}} &amp; {{u|Boleyn}} - I've asked at [[Wikipedia:Reliable_sources/Noticeboard#Okay_magazine]] if Okay magazine is okay as a source, Thanks, –[[User:Davey2010|&lt;span style=&quot;color: blue;&quot;&gt;'''Davey'''&lt;/span&gt;&lt;span style=&quot;color: orange;&quot;&gt;'''2010'''&lt;/span&gt;]]&lt;sup&gt;[[User talk:Davey2010|&lt;span style=&quot;color: navy;&quot;&gt;'''Talk'''&lt;/span&gt;]]&lt;/sup&gt; 21:11, 9 May 2017 (UTC)
+::Thanks. I'm leaning toward taking that paragraph out, but maybe we could find a more reliable source that says the same thing. If this guy really was her boyfriend it must have been reported elsewhere. [[User:Kendall-K1|Kendall-K1]] ([[User talk:Kendall-K1|talk]]) 22:24, 9 May 2017 (UTC)
+:::To be honest I'm with you on that one, I've not looked for Ian yet but I'd imagine it's all tabloids which if that is the case then it's better not being included here at all, Thanks, –[[User:Davey2010|&lt;span style=&quot;color: blue;&quot;&gt;'''Davey'''&lt;/span&gt;&lt;span style=&quot;color: orange;&quot;&gt;'''2010'''&lt;/span&gt;]]&lt;sup&gt;[[User talk:Davey2010|&lt;span style=&quot;color: navy;&quot;&gt;'''Talk'''&lt;/span&gt;]]&lt;/sup&gt; 22:35, 9 May 2017 (UTC)
+
+== ANI notice ==
+
+[[File:Ambox notice.svg|link=|25px|alt=Information icon]] There is currently a discussion at [[Wikipedia:Administrators' noticeboard/Incidents]] regarding an issue with which you may have been involved.&amp;nbsp;The thread is [[Wikipedia:Administrators' noticeboard/Incidents#Legal threat at Chloe Khan?|Legal threat at Chloe Khan?]]. &lt;!--Template:ANI-notice--&gt;  This is just a friendly FYI for people watching this talk page, it's not a formally required notice or an indication that anyone here has done anything wrong.  It is in the interests of keeping all discussion open and transparent.  [[User:Murph9000|&lt;span style=&quot;color:white;background-color:purple;padding:0.1em 0.1em 0.1em 1em;&quot;&gt;Murph&lt;/span&gt;&lt;span style=&quot;color:white;background-color:black;padding:0.1em 1em 0.1em 0.1em;&quot;&gt;9000&lt;/span&gt;]] ([[User talk:Murph9000|talk]]) 02:52, 10 May 2017 (UTC)
+
+== Legal threats and content removal ==
+
+To the various IP editors who keep blanking the page with legal threats, and insufficient explanation of your concerns.  Your actions are in violation of the '''''[[Wikipedia:No legal threats]]''''' policy, and general policies and guidelines regarding content and communication with the community.  If you are an official representative of Chloe Khan, please email us at '''&lt;tt&gt;{{nospam|info-en-q|wikimedia.org}}&lt;/tt&gt;''' to discuss your concerns.  ''See also: [[Wikipedia:Contact us - Subjects]].''  [[User:Murph9000|&lt;span style=&quot;color:white;background-color:purple;padding:0.1em 0.1em 0.1em 1em;&quot;&gt;Murph&lt;/span&gt;&lt;span style=&quot;color:white;background-color:black;padding:0.1em 1em 0.1em 0.1em;&quot;&gt;9000&lt;/span&gt;]] ([[User talk:Murph9000|talk]]) 13:09, 22 May 2017 (UTC)</text>
+      <sha1>6oe90dyoru8wwx2zgm7b049wlsskbpc</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Draft talk:Dmitry Polyakov</title>
+    <ns>119</ns>
+    <id>50821274</id>
+    <revision>
+      <id>725479399</id>
+      <timestamp>2016-06-15T22:26:49Z</timestamp>
+      <contributor>
+        <username>Worldbruce</username>
+        <id>7329773</id>
+      </contributor>
+      <comment>+ projects</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="72">{{WikiProject Biography|musician-work-group=yes}}
+{{WikiProject Russia}}</text>
+      <sha1>0yw1nc61bk8dvrtsafi7r5sk9tk0v0j</sha1>
+    </revision>
+  </page>
+</mediawiki>
