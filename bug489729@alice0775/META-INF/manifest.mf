@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: D+fSsO7n03UuCHBEkR/GxA==
+SHA1-Digest: J55koHlX0TZbUmGLhcuf3Tsgztg=
+
+Name: chrome.manifest
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 0DC4rNBJtUGta7W8Bhyxcw==
+SHA1-Digest: wnshSrRv1ssQ50pK5Mfu8zZItj0=
+
+Name: chrome/bug489729.jar
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: dSwEPyep7qzqRqSVonfgHw==
+SHA1-Digest: M6fNGtvk9kEXAHpZVALOVdZvkww=
+
+Name: defaults/preferences/bug489729.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: CK+ygN5Dm4UleFSKa41vZA==
+SHA1-Digest: NNRSM+dQsplM2svauoGvJ3CTcsU=
+

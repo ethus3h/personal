@@ -1,0 +1,7 @@
+content  bug489729 jar:chrome/bug489729.jar!/content/
+
+overlay chrome://browser/content/browser.xul chrome://bug489729/content/browserOverlay4.0.xul appversion>=4.0
+override chrome://bug489729/content/browserOverlay4.0.xul chrome://bug489729/content/browserOverlay17.0.xul appversion>=17.0
+
+locale bug489729 en jar:chrome/bug489729.jar!/locale/en/
+locale bug489729 ja jar:chrome/bug489729.jar!/locale/ja/
