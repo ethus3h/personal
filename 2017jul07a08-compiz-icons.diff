@@ -1,0 +1,54 @@
+diff --git a/Makefile.am b/Makefile.am
+index 65a8186..a464e40 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -1,6 +1,6 @@
+ ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
+ 
+-SUBDIRS = metadata src po images
++SUBDIRS = metadata src po icons images
+ 
+ EXTRA_DIST =		   \
+ 	AUTHORS		    \
+diff --git a/configure.ac b/configure.ac
+index b0a57ee..fbd3f59 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -80,6 +80,9 @@ AC_SUBST(imagedir)
+ metadatadir=$datadir/compiz
+ AC_SUBST(metadatadir)
+ 
++pluginiconsdir=$datadir/compiz/icons
++AC_SUBST(pluginiconsdir)
++
+ compdatadir=$datadir/compiz
+ AC_SUBST(compdatadir)
+ 
+@@ -123,6 +126,7 @@ AC_SUBST(GL_LIBS)
+ 
+ AC_OUTPUT([
+ Makefile
++icons/Makefile
+ images/Makefile
+ images/boing/Makefile
+ images/roach/Makefile
+diff --git a/icons/Makefile.am b/icons/Makefile.am
+new file mode 100644
+index 0000000..d7ff017
+--- /dev/null
++++ b/icons/Makefile.am
+@@ -0,0 +1,14 @@
++iconsdir = $(pluginiconsdir)
++icons_DATA =        \
++  plugin-boing.svg  \
++  plugin-maze.svg   \
++  plugin-newton.svg \
++  plugin-roach.svg  \
++  plugin-rubik.svg
++
++EXTRA_DIST =        \
++  plugin-boing.svg  \
++  plugin-maze.svg   \
++  plugin-newton.svg \
++  plugin-roach.svg  \
++  plugin-rubik.svg
