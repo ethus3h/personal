@@ -100,12 +100,13 @@ append_base_layout() {
     echo "proc          /proc       proc    defaults    0 0" >> ${TEMP}/initramfs-base-temp/etc/fstab
 
     cd ${TEMP}/initramfs-base-temp/dev || gen_die "cannot cd to dev"
-    mknod -m 660 console c 5 1 || gen_die "cannot mknod"
-    mknod -m 660 null c 1 3 || gen_die "cannot mknod"
-    mknod -m 660 zero c 1 5 || gen_die "cannot mknod"
-    mknod -m 600 tty0 c 4 0 || gen_die "cannot mknod"
-    mknod -m 600 tty1 c 4 1 || gen_die "cannot mknod"
-    mknod -m 600 ttyS0 c 4 64 || gen_die "cannot mknod"
+# This copy of genkernel has been patched to use a prebuilt cpio file for these so it can be run without root privileges.
+#    mknod -m 660 console c 5 1 || gen_die "cannot mknod"
+#    mknod -m 660 null c 1 3 || gen_die "cannot mknod"
+#    mknod -m 660 zero c 1 5 || gen_die "cannot mknod"
+#    mknod -m 600 tty0 c 4 0 || gen_die "cannot mknod"
+#    mknod -m 600 tty1 c 4 1 || gen_die "cannot mknod"
+#    mknod -m 600 ttyS0 c 4 64 || gen_die "cannot mknod"
     chmod 1777 shm || gen_die "cannot mknod" # bug 476278
 
     date -u '+%Y%m%d-%H%M%S' > ${TEMP}/initramfs-base-temp/etc/build_date
@@ -127,6 +128,12 @@ append_base_layout() {
 
     cd "${TEMP}/initramfs-base-temp/"
     log_future_cpio_content
+    if [[ "${LOGLEVEL}" -gt 1 ]]; then
+        echo =================================================================
+        echo "About to add these files from '${PWD}' to cpio archive:"
+        find . | xargs ls -ald
+        echo =================================================================
+    fi
     find . -print | cpio ${CPIO_ARGS} --append -F "${CPIO}" \
             || gen_die "compressing baselayout cpio"
     cd "${TEMP}"
