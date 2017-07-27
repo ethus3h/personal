@@ -132,7 +132,7 @@ append_base_layout() {
         echo "About to append prebuilt cpio file containing mknod-created files."
         echo =================================================================
     fi
-    cat "${GK_SHARE}"/mknods.cpio >> "${CPIO}"
+    cat "${GK_SHARE}/mknods.cpio" >> "${CPIO}"
 
     cd "${TEMP}/initramfs-base-temp/"
     log_future_cpio_content
