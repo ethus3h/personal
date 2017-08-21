@@ -1,0 +1,117 @@
+<!-- 
+                <p>Routines with some dangerous properties must be labeled accordingly, as follows:
+                    <dl>
+                        <dt>cs!</dt><dd><span class="important-letter">C</span>hangeable routine <span class="important-letter">s</span>ignature (subtypes don't need to use this routine's signature when overriding it.)</dd>
+                        <dt>nd!</dt><dd><span class="important-letter">N</span>on-<span class="important-letter">d</span>eterministic</dd>
+                    </dl>
+                </p>
+            <h5>Object hierarchy</h5>
+                <p>All objects are addressed through a hierarchy:
+                <dl>
+                    <dt>lang</dt><dd>Basic language Objects and Routines (automatically included)</dd>
+                    <dt>system</dt><dd>Objects and Routines related to the Ember environment</dd>
+                    <dt>math</dt><dd>Objects and Routines related to mathematics</dd>
+                </dl>
+                </p>
+
+            <h5>Types</h5>
+                <p>Types have CamelCase names beginning with an uppercase letter.</p>
+                <h6>C Type</h6>
+                    <dl>
+                        <dt>Traits</dt><dd>C Type$type</dd>
+                        <dt>Routines</dt><dd>C cs!this.$type:new(FuzzyList$params) { lang.new(this) }</dd>
+                    </dl>
+
+                <h6>C Routine</h6>
+                    <dl>
+                        <dt>Traits</dt><dd>
+                            <ul>
+                                <li>C String$code</li>
+                                <li>C (Null|Routine)$onExit</li>
+                            </ul></dd>
+                        <dt>Routines</dt><dd><ul>
+                            <li>C Any:run(FuzzyList$params) { lang.run(this,lang.cast($params,List,"return")) }</li>
+                            <li>C Boolean:compare(Any$object) { /* return true if this object is identical to $object */ }</li>
+                        </ul></dd>
+                    </dl>
+
+                <h6>C List</h6>
+                    <dl>
+                        <dt>Traits</dt><dd>
+                            <ul>
+                                <li>B List{set this.$allowedTypes=lang.new(List).add(Type)}$allowedTypes: List of allowed types that can be put in this list</li>
+                                <li>C Natural$last: last valid index</li>
+                                <li>C Natural$count: number of entries</li>
+                                <li>B (Null|Natural)$entryLimit: number of entries that the list may hold; defaults to Null (meaning unlimited)</li>
+                                <li>S (Null|Natural)$indexLimit: maximum index the list may use; defaults to Null (meaning unlimited)</li>
+                            </ul></dd>
+                        <dt>Routines</dt><dd>
+                            <ul>
+                                <li>B Void:add(String$value|List$value) { this.insert(this.last()+1) }</li>
+                                <li>B Void:set(Natural$index,(String$value|List$value)) { lang.set(this.record($index),$value) }</li>
+                                <li>B Any:get(Natural$index) { lang.get(this.record($index)) }</li>
+                                <li>C Reference:record(Natural$index) { lang.getListEntry(this,$index) }</li>
+                                <li>B Void:insert(Natural$index,(String$value|List$value)): insert $value at $index, moving the current $index and following items ahead by $value.count() if it's a list, and by 1 if it's a string</li>
+                            </ul></dd>
+                    </dl>
+
+                <h6>C FuzzyList (inherits from List)</h6>
+                    <p>When a FuzzyList is used in a list, its contents are appended to the list, and it is deconstructed. When a FuzzyList is used in the declaration of the parameters of a Routine, its first elements, starting from 0, are set to the values of the parameters passed to the Routine from its position onwards (so, for example, if the parameters declared are Natural$a,Natural$b,FuzzyList{ lang.set(lang.trait(this.entryLimit),2) }$c,Natural$d,Natural$e and it gets called with 2,3,4,5,6,7,8, then that's an error because there's no place to put 6 (the 5th parameter) (but if the entryLimit weren't set, a=2,b=3,c=(4,5,6),d=7,e=8), and if it gets called with 2,3,4,5,6,7, a=2,b=3,c=(4,5),d=6,e=7).</p>
+
+                <h6>C Resource</h6>
+                    <dl>
+                        <dt>Traits</dt><dd></dd>
+                        <dt>Routines</dt><dd></dd>
+                    </dl>
+
+            <h5>System object: Traits</h5>
+                <p>Traits have camelCase names beginning with a lowercase letter. Routines are a type of trait.</p>
+                <dl>
+                    <dt>C nd!List[Resource]:system.resources</dt><dd>List of resources (I/O, etc) available.</dd>
+                    <dt>C nd!String:system.implementation</dt><dd>Description of the language backend.</dd>
+                </dl>
+
+            <h5>System object: Routines</h5>
+                <p>Routines have camelCase names beginning with a lowercase letter, and have parameters.</p>
+                <h6>C Void:lang.run(Routine$routine,List$params)</h6>
+                    <dl>
+                        <dt>Exceptions thrown</dt><dd>!routineSyntaxError, !parameterNumberMismatch, !parameterTypeMismatch</dd>
+                        <dt>Notes</dt><dd>Determinism depends on String:$routine.code.</dd>
+                    </dl>
+                <h6>C (Void|$type):lang.cast(Any$object,Type$type,(|String$return))</h6>
+                    <dl>
+                        <dt>Return value</dt><dd>None, unless $return="return" in which case it returns an object of type $type</dd>
+                        <dt>Exceptions thrown</dt><dd>!incompatibleTypeError</dd>
+                        <dt>Notes</dt><dd>If $return="return", determinism depends on types of objects (specifically, on value of String:$object.cast:$type.code).</dd>
+                    </dl>
+                <h6>C (Void|$trait.type):lang.set(Reference$trait,Any$value,(|String$return))</h6>
+                    <dl>
+                        <dt>Return value</dt><dd>None, unless $return="return" in which case it returns an object of type $trait.type</dd>
+                        <dt>Exceptions thrown</dt><dd>!targetTypeMismatch</dd>
+                        <dt>Notes</dt><dd>If $return="return", determinism depends on $value.</dd>
+                    </dl>
+                <h6>C $trait.type:lang.get(Reference$trait)</h6>
+                    <dl>
+                        <dt>Return value</dt><dd>An object of type $trait.type</dd>
+                        <dt>Exceptions thrown</dt><dd>(none additional)</dd>
+                        <dt>Notes</dt><dd>Determinism depends on $trait.</dd>
+                    </dl>
+                <h6>C Reference:lang.trait(Any$object)</h6>
+                    <dl>
+                        <dt>Return value</dt><dd>A reference to the object passed to it</dd>
+                        <dt>Exceptions thrown</dt><dd>(none additional)</dd>
+                        <dt>Notes</dt><dd>(none)</dd>
+                    </dl>
+                <h6>C Boolean:lang.compare(Any$left,Any$right)</h6>
+                    <dl>
+                        <dt>Return value</dt><dd>lang.and($left.compare($right),$right.compare($left))</dd>
+                        <dt>Exceptions thrown</dt><dd>(inherit from $left.compare and $right.compare)</dd>
+                        <dt>Notes</dt><dd>(none)</dd>
+                    </dl>
+                <h6>S Any:lang.otherwise(Routine$left,Routine$right)</h6>
+                    <dl>
+                        <dt>Return value</dt><dd>try { return $left }; except { return $right }</dd>
+                        <dt>Exceptions thrown</dt><dd>(inherit from $left and $right)</dd>
+                        <dt>Notes</dt><dd>(none)</dd>
+                    </dl>
+-->
