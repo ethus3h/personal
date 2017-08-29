@@ -20,6 +20,7 @@ __text__                                                double underlined
 ⇒                                           (not a metacharacter, just here to copy and paste)
 [illeg.]                                    illegible
 <text-above>foo<t>bar</t></text-above>      "bar" written over top of the in-line text "foo"
+<text-below>foo<t>bar</t></text-below>      "bar" written underneath the in-line text "foo"
 <region>(content)</region>                  a region of the document that can contain
                                                 multiple lines of text but is treated as a
                                                 single line for some reason or other (e.g.
