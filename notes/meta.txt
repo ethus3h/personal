@@ -16,3 +16,4 @@ __text__ double underlined
 == (on its own line): page break
 [?] or <[?]>text</[?]>: doubted transcription (single word, or a span when in angle brackets)
 ⛤ (not a metacharacter, just here to copy and paste)
+[illeg.]: illegible
