@@ -47,22 +47,47 @@ equivalent in power ("Turing
 equivalent")
 
 Programming languages
-_are tools_     Some are better -of-
-                -fore so- for some jobs.
+_are tools_         Some are better -of-
+                    -fore so- for some jobs.
 
-_Underlying_    Learning abstract concepts
-_concepts_      underlying languages
-                helps learn new languages —
-                -vogabu- vocabulary 
-                talking/thinking about them
+_Underlying_        Learning abstract concepts
+_concepts_          underlying languages
+                    helps learn new languages —
+                    -vogabu- vocabulary 
+                    talking/thinking about them
 
-                Increases ability to read
-                and understand unfamiliar
-                languages
+                    Increases ability to read
+                    and understand unfamiliar
+                    languages
 
-_One view_      A programming language defines
-                "virtual machine" (not in
-                the usual sense) for solving
-                problems — it gives
-                abstractions & structures on
-                -[illeg.]- top of the real computer.
+_One view_          A programming language defines
+                    "virtual machine" (not in
+                    the usual sense) for solving
+                    problems — it gives
+                    abstractions & structures on
+                    -[illeg.]- top of the real computer.
+
+Understanding
+_implementation_    can help -[illeg.]- predict
+                    performance, write efficient
+                    programs, avoid subtle bugs
+
+_Paradigm_          -A- Of programming lang. —
+                    way of thinking, -[illeg.]- pattern
+                    of characteristics that underlie a
+                    set of languages
+
+                                                    →cont'd.
+
+==
+
+←cont'd. 28 Aug. 2017 p. 3
+
+_Main PL paradigms_     functional, OO, procedural,
+                                            Imperative,
+                                    etc.
+
+Imperative/             Based on the <text-above>-Von-<t>von</t></text-above> Neumann
+_procedural_            computer architecture
+                        This is the ontological commitment.
+                        
