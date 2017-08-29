@@ -1,0 +1,61 @@
+28 Aug. 2017 COS301 p. 1
+
+Programming Languages
+w/ Prof. Turner    rturner@maine.edu
+
+_Course Website:_ MaineSAIL.umcs.maine.edu/COS301
+& Blackboard (grades)
+
+_Office hours_ 240 Boardman
+11–12 MW or by appt.
+
+_Topics_ Underpinnings of programming
+languages, design, theory,
+fundamental properties, talking
+about them, types, comparing,
+implementing<ambig>\,,.</ambig>
+
+_Objectives_ Understanding what a prog. lang.
+is, lang. paradigms,
+syntax & semantics,
+control structures & data repres.,
+understanding how to select & compare
+them, written communication skills.
+
+_TA_ Brian Toner
+
+_Writing center_ good resource — 402 Neville
+
+<box>DUE</box> ⛤ Make sure we can get to
+Web site & Blackboard
+⛤ Project pt. 1: Programming
+language selection for the project
+Due 6 Sept. (Perl 6? C?
+NQP? JS??)
+(COBOL?)
+One we have had very
+little experience in & is
+interesting to us. Include explanation
+of our choice.
+→cont'd.
+
+==
+
+COS301 28 Aug. 2017 p. 2
+
+All programming languages are
+theoretically -equivalent-
+equivalent in power ("Turing
+equivalent")
+
+Programming languages
+_are tools_     Some are better -of-
+            -fore so- for some jobs.
+
+_Underlying_    Learning abstract concepts
+_concepts_      underlying languages
+                helps learn new languages —
+                -vogabu- vocabulary 
+                talking/thinking about them
+
+                

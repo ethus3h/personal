@@ -9,3 +9,10 @@ __text__ double underlined
 <circled>text</circled> text is circled (not necessarily a circle shape)
 @text@ character as described by text
 <br> line break
+
+2017m08d28 and later:
+<ambig>x,y</ambig> either x or y (\ escaped if necessary)
+<box>text</box> "text" in box
+== (on its own line): page break
+[?] or <[?]>text</[?]>: doubted transcription (single word, or a span when in angle brackets)
+⛤ (not a metacharacter, just here to copy and paste)
