@@ -1,4 +1,4 @@
--text-                                                  struck through
+-text- (or [-text-] when ambiguous)                     struck through
 _text_                                                  underlined
 __text__                                                double underlined
 <sub>text</sub>                                         subscript
@@ -11,12 +11,18 @@ __text__                                                double underlined
 <br>                                                    line break
 
 2017m08d28 and later:
-<ambig>x,y</ambig>              either x or y (\ escaped if necessary)
-<box>text</box>                 "text" in box
-== (on its own line)            page break
-[?] or <[?]>text</[?]>          doubted transcription (single word, or a span when in angle brackets)
-⛤                               (not a metacharacter, just here to copy and paste)
-[illeg.]                        illegible
-<text-above>foo<t>bar</t></text-above>       "bar" written over top of the in-line text "foo"
-<region>(content)</region>  a region of the document that can contain multiple lines of text but is
-                                treated as a single region for some reason or other
+<ambig>x,y</ambig>                          either x or y (\ escaped if necessary)
+<box>text</box>                             "text" in box
+== (on its own line)                        page break
+[?] or <[?]>text</[?]>                      doubted transcription (single word,
+                                                or a span when in angle brackets)
+⛤                                           (not a metacharacter, just here to copy and paste)
+⇒                                           (not a metacharacter, just here to copy and paste)
+[illeg.]                                    illegible
+<text-above>foo<t>bar</t></text-above>      "bar" written over top of the in-line text "foo"
+<region>(content)</region>                  a region of the document that can contain
+                                                multiple lines of text but is treated as a
+                                                single line for some reason or other (e.g.
+                                                an underlined <region> would have a single
+                                                underline beneath the group of lines)
+<note>text</note>                           An added note made at the time of transcription

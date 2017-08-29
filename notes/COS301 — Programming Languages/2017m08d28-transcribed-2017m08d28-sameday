@@ -1,4 +1,4 @@
-28 Aug. 2017 COS301 p. 1
+28 Aug. 2017  COS301  p. 1
 
 Programming Languages
 w/ Prof. Turner    rturner@maine.edu
@@ -39,7 +39,7 @@ _Writing center_    good resource — 402 Neville
 
 ==
 
-COS301 28 Aug. 2017 p. 2
+COS301  28 Aug. 2017  p. 2
 
 All programming languages are
 theoretically -equivalent-
@@ -81,7 +81,7 @@ _Paradigm_          -A- Of programming lang. —
 
 ==
 
-←cont'd. 28 Aug. 2017 p. 3
+←cont'd.  28 Aug. 2017  p. 3
 
 _Main PL paradigms_     functional, OO, procedural,
                                             Imperative,
@@ -90,4 +90,139 @@ _Main PL paradigms_     functional, OO, procedural,
 Imperative/             Based on the <text-above>-Von-<t>von</t></text-above> Neumann
 _procedural_            computer architecture
                         This is the ontological commitment.
-                        
+                        The imperative lang is comited[sic]
+                        to there being something
+                        that can sequentially go
+                        thru[sic] -code- instructions,
+                        store info, & do I/O
+
+                        Program = series of instructions
+                        State = contents of memory location
+
+                        Program & data both in mem,
+                            indestinguishable[sic]
+                        Features: variables (state),
+                            assignment, conditional execution,
+                            loops, procedure c<ambig>a,o</ambig>lls
+
+_<region>Object
+    oriented</region>_  -world- Ontological
+                        commitment —
+                        ⛤ World consists of objects
+                        Objects have internal state
+                        Objects have encapsulated
+                            behavior
+                        Features classes, instances,
+                          inheritance. State: instance
+                        variables. Behavior: methods or
+                        messages.                   →cont'd.
+
+==
+
+←cont'd.  COS301  28 Aug. 2017
+                        p. 4
+
+                    Polymorphism.
+
+Functional          Ont. comm.:
+_paradigm_          world -const- consists of
+                    things (values) and
+                    functions on those things.
+
+                    Lang. features:
+                    ⛤ Functional composition
+                    ⛤ Recursion
+                    ⛤ No state (in "pure" FL)
+
+                    Some have aspects of other
+                    paradigms, and some languages
+                    from other paradigms have functional
+                    aspects.
+
+_Logic paradigm_    Ontological commitment:
+                    world consists of things
+                    and statements about things
+                    that are true or false
+
+                    Features:
+                    ⛤ declarative style: make statement
+                        about what should be true
+                    ⛤ Facts are stated in logic
+                        (usually Horn clauses)
+                    ⛤ Usually contain theorem prover
+
+                    E.g. Prolog, OWL (sort of
+                                 — Web Ontology
+                                 Language)
+                                            →cont'd.
+
+==
+
+←cont'd.  COS301  28 Aug.
+                    2017 p.5
+
+Declarative         Ontological comm.:
+_paradigm_          There are statements that
+                    can be made about things
+                        in the world.
+                    Decl. langs are ⊂ logic paradigm
+                                        langs.
+
+_Domains_           Problems to be solved
+                    fall into domains —
+                    -sicence,- science,
+                    business, database,
+                    healthcare, media[-/-]/games,
+                    AI/data mining, -systi-
+                    systems programming,
+                    -Web/- Internet/Web,
+                    embedded, consumer apps,
+                    military.
+
+                    Different domains ⇒ diff.
+                    requirements for the
+                    lang(s).
+
+Domain-specific     some langs become
+vs. general         general purpose —
+_purpose_           FORTRAN, C<note>initially designed for scientific(?)
+                                    programming and systems programming,
+                                    respectively</note>
+                    some are designed as —
+                    Java, Python
+
+_Scientific_        Domain specific — COBOL, PL/C
+                    — requires efficiency e.g.
+                    -Fortran,- FORTRAN, R
+                                            →cont'd.
+
+==
+
+←cont'd.  COS301  28 Aug. 2017  p.6
+
+_Business_          e.g. COBOL, RPG.
+                    COBOL — verbose, invented by
+                        -<[?]>AD</[?]>- Adm. Grace Hopper
+                        Possibly most common -[illeg.]- language
+                        by lines of code.-<[?]>by</[?]>-
+
+_Databases_         Fault tolerance,
+                    efficient storage & retrieval,
+                    transactions, etc.
+                    E.g. SQL, Pig
+
+_Healthcare_        — privacy, security,
+                    assurance of correctness.
+                    — Lots of general-purpose
+                    languages.
+
+_Media_             -<[?]>efficiency, abi</[?]>-
+                    eff<[?]>f</[?]>iciency, ability to
+                    access hardware
+
+_AI_                -<[?]><ambig>prog.,pres.</ambig></[?]>- <ambig>S,s</ambig>ymbolic rather
+                    than numeric mostly
+                    Data types. Neural nets.
+
+_<region>Systems
+  programming</region>_ — C. For drivers etc.
