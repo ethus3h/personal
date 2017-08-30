@@ -114,5 +114,11 @@ _Reliability_                 — Is the program produced by the
                                 -R- Safety & correctness
                                     checks
                             Type checking, exc. handling
-                             — can be compile time or run time
-                            Runtime checking:
+                             — can be compile time or run<ambig> ,[nothing]</ambig>time
+                            Runtime checking: expensive
+                            Compile time checking: decreases
+                                                     writeability[sic]
+                            Runtime type checking helps
+                            writeability & decreases
+                               reliability.
+    -Excc- _Exception handling_
