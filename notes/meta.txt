@@ -36,8 +36,9 @@ __text__                                                double underlined
 [nothing]                                           Null/empty text value (absence of text)
 <three-line-uppercase>text</three-line-uppercase>   Text has three lines under it that indicate capitalization
 <verticalBraceGroup>foo<brace/>bar                  (construct is continued on the next line)
-baz<brace/>qux</verticalBraceGroup>                 Brace group, which would represent a structure
-                                                        like the following LaTeX (XeTeX) code:
+baz<brace/>qux</verticalBraceGroup>                 Brace group (can have more lines), which
+                                                        represents a structure like the
+                                                        following LaTeX (XeTeX) code:
                                                             $\mathrm{\begin{array}{l}
                                                             foo\\
                                                             baz
