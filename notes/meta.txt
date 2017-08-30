@@ -47,3 +47,5 @@ baz<brace/>qux</verticalBraceGroup>                 Brace group (can have more l
                                                             qux
                                                             \end{array}\right.}$
 [scribble]                                          A scribble
+⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻                                Ideographic description characters, used for indicating
+                                                        the strokes in the text
