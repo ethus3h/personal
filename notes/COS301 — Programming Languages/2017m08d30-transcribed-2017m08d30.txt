@@ -35,3 +35,49 @@ _Readability_                       More important for machine to "read"
                                     Aspects — Simplicity,  Orthagonality,
                                           Syntax
                                                                         →cont'd.
+
+==
+
+←cont'd.  COS301  30 Aug. 2017  p.2
+
+Documentation, and also making the
+  code itself readable.
+
+_Syntax_                            ↑Size of language feature set ⇒ ↓
+                                                                    readability
+                                    Subsets<caret-insertion pos="above"> (e.g. -optional sub- for different -pur[?]- purposes)</caret-insertion> -can de- <[?]><italic></[?]>_can_<[?]></italic></[?]> decrease
+                                                                   readability.
+                                Canonical features vs feature multiplicity:
+                                    i = i+1; i++; ++i; i+=1; i=+1;
+                                Operator overloading decreases -readability-
+                                  readability. E.g. + for floating point,
+                                    int, string concat.
+                                Especially confusing: user-defined overloading
+
+_Orthogonality_                     — large feature set, or small
+                                    primitive constructs to combine?
+                                  Canonical: one and only one way to
+                                    express something:
+                                        ⛤ Primitive constructs all
+                                          -treated- treated alike
+                                        ⛤ all combinations legal w/ all
+                                          constructs
+                                        ⛤ all combinations -re- behave
+                                                             ↑  same way
+  (crossed<caret-insertion pos="below">out</caret-insertion> re)
+Identifiers (length, characters allowed) affect
+                                        readability
+Compound statement syntax — deeply nested
+                               code
+                                 →cont'd.
+
+==
+
+← cont'd.  COS301
+               30 Aug. 2017  p. -2- 3
+    Space indentation, such as in Python,
+         is good in an IDE but
+           hard  to read on paper.
+    Different meanings of<caret-insertion pos="above"> the same</caret-insertion> keyword
+
+_Writability_                   
