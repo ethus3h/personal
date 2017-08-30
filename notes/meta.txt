@@ -31,3 +31,4 @@ __text__                                                double underlined
 2017m08d29 and later:
 <loop-deleted>text</loop-deleted>           Deleted text using a curly deletion mark
 \                                           Metacharacter escape
+<big>text</big>                             Larger text used for emphasis
