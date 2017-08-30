@@ -35,7 +35,15 @@ __text__                                                double underlined
 <italic>text</italic>                               Italicized text
 [nothing]                                           Null/empty text value (absence of text)
 <three-line-uppercase>text</three-line-uppercase>   Text has three lines under it that indicate capitalization
-
-<verticalBraceGroup>text<brace/>text
-                    text<brace/>text</verticalBraceGroup>
+<verticalBraceGroup>foo<brace/>bar                  (construct is continued on the next line)
+baz<brace/>qux</verticalBraceGroup>                 Brace group, which would be displayed
+                                                        the same as the following LaTeX (XeTeX)
+                                                        code:
+                                                            $\mathrm{\begin{array}{l}
+                                                            foo\\
+                                                            baz
+                                                            \end{array}\left\{ \begin{array}{l}
+                                                            bar\\
+                                                            qux
+                                                            \end{array}\right.}$
 [scribble]                                          A scribble
