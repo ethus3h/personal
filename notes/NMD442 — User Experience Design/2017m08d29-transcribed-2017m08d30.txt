@@ -146,5 +146,5 @@ _Personas_                    -Age- Demographics of the
                      - Use for Echo:
                      - Groceries\[sic\]
                      - Calendar dates
-                     - ____S___etting client
+                     - <three-line-uppercase>S</three-line-uppercase>etting client
                        meetings

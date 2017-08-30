@@ -29,8 +29,9 @@ __text__                                                double underlined
 <note>text</note>                           An added note made at the time of transcription
 
 2017m08d29 and later:
-<loop-deleted>text</loop-deleted>           Deleted text using a curly deletion mark
-\                                           Metacharacter escape
-<big>text</big>                             Larger text used for emphasis
-<italic>text</italic>                       Italicized text
-[nothing]                                   Null/empty text value (absence of text)
+<loop-deleted>text</loop-deleted>                   Deleted text using a curly deletion mark
+\                                                   Metacharacter escape
+<big>text</big>                                     Larger text used for emphasis
+<italic>text</italic>                               Italicized text
+[nothing]                                           Null/empty text value (absence of text)
+<three-line-uppercase>text</three-line-uppercase>   Text has three lines under it that indicate capitalization
