@@ -1,0 +1,37 @@
+COS301  30 Aug. 2017<ambig>.,[nothing]</ambig>  p.1
+
+_Web_                               Client-[illeg.]-\-side — JS — knows DOM
+                                    Server-side — PHP, etc. — DB
+                                      access, maybe DOM understanding
+
+_Embedded_                          Similarities w/ systems programming
+
+                                    C, etc.  Somewhat, Java.
+
+_Consumer_
+    _apps_                          Desktop, laptop, mobile
+                                    C, C-⿻⿰||—-++, C#, Swift, Objective C
+
+_Military applications_
+                                    Wide range of applications
+                                    Virtually<caret-insertion pos="above"> all</caret-insertion> of the preceding
+                                    Languages: C, Ada, C++, …
+
+_Language_
+  _Evaluation_                      How to see if a language is
+                                    something we want to use?
+                                    Axes:   Readability,
+                                            reliability, writability,
+                                            cost
+
+_Readability_                       More important for machine to "read"
+                                                                   code
+                                    than to be efficient to write.<note>This was referring to the state in the 1970s.</note>
+                                    After,<caret-insertion pos="below"> realized</caret-insertion> sw maintenance cost ≫ dev.
+                                                                                                                           cost
+                                    Memory — compilers/interpreters
+                                               for more readable langs
+                                                  can be large
+                                    Aspects — Simplicity,  Orthagonality,
+                                          Syntax
+                                                                        →cont'd.
