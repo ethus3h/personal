@@ -69,7 +69,7 @@ Identifiers (length, characters allowed) affect
                                         readability
 Compound statement syntax — deeply nested
                                code
-                                 →cont'd.
+                                                            →cont'd.
 
 ==
 
@@ -80,4 +80,24 @@ Compound statement syntax — deeply nested
            hard  to read on paper.
     Different meanings of<caret-insertion pos="above"> the same</caret-insertion> keyword
 
-_Writability_                   
+_Writability_                   How easy is it for a programmer to
+                                  write a program?
+
+                                Can depend on purpose (e.g.
+                                  Python vs. C for an OS)
+-Sy- Simplicity / orthogonality generally
+                  increases writeability
+         but can result in inappropriate use of unfamiliar
+                                                      features
+         e.g. C++
+                cout « (1 «2); -pr[?]- prints 4
+                vs. cout « 1<ambig> ,[nothing]</ambig>«<ambig> ,[nothing]</ambig>2; prints 12
+            -but-
+Abstraction — allows treating complex structures
+             / operations as black boxes.
+             Support for abstraction increases
+                   -reada<[?]>b</[?]>- writeability.
+    Application-specific data -types- types
+Can languages express what is needed for problem?
+Number, power of operators increases expressivity
+Number of predefined fns increases        "
