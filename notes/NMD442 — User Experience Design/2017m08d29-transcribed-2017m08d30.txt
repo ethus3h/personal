@@ -35,6 +35,22 @@ _Readings                   -based- — reflections based
 _Slack_
   _Channel_                   nmd442f17
                             Discussion is important
-                              for _grading_
+                              for <big>_grading_</big> —
                             we're graded on our
                             Slack discussion.
+
+In this                   Not much
+  _class_                       programming — more
+                            just <italic>_conceptual_</italic>
+                            development.
+
+_Knowledge_                 of UX design practices
+                            & processes.
+
+_Blogs_                     high priority.
+
+_Development for _personas__
+
+    Make sure we provide -to- feedback
+    & thoughts & stuff on the
+    readings<ambig>.,</ambig>
