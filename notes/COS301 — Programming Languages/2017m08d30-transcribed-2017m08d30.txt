@@ -121,4 +121,15 @@ _Reliability_                 — Is the program produced by the
                             Runtime type checking helps
                             writeability & decreases
                                reliability.
-    -Excc- _Exception handling_
+
+-Excc- _Exception handling_     Ways to handle
+                                runtime errors. Security &
+                                correctness impacted by lack of
+                                exception handling.
+
+_Aliasing_                      decreases -ri- reliability.
+                                Multiple names for one thing.
+                                Problem: Multiple accesses to
+                                same location / object w/o
+                                  realizing it
+Lack of expressiveness ⇒ unnatural-<ambig>(,C</ambig>-convoluted
