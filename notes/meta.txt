@@ -36,4 +36,6 @@ __text__                                                double underlined
 [nothing]                                           Null/empty text value (absence of text)
 <three-line-uppercase>text</three-line-uppercase>   Text has three lines under it that indicate capitalization
 
-<verticalBraceGroup><brace>text</brace></verticalBraceGroup>
+<verticalBraceGroup>text<brace/>text
+                    text<brace/>text</verticalBraceGroup>
+[scribble]                                          A scribble

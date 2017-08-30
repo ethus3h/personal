@@ -144,7 +144,7 @@ _Personas_                    -Age- Demographics of the
                                     has client meetings on
                      - job: Lawyer    weekends
                      - Use for Echo:
-                     - Groceries\[sic\]
-                     - Calendar dates
-                     - <three-line-uppercase>S</three-line-uppercase>etting client
-                       meetings
+<verticalBraceGroup>                     - Groceries\[sic\]                         <brace/> Assuming Jenhas chil
+                     - Calendar dates                                               <brace/> [scribble]
+                     - <three-line-uppercase>S</three-line-uppercase>etting client  <brace/>
+                       meetings                                                     <brace/></verticalBraceGroup>
