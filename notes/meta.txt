@@ -35,3 +35,5 @@ __text__                                                double underlined
 <italic>text</italic>                               Italicized text
 [nothing]                                           Null/empty text value (absence of text)
 <three-line-uppercase>text</three-line-uppercase>   Text has three lines under it that indicate capitalization
+
+<verticalBraceGroup><brace>text</brace></verticalBraceGroup>
