@@ -145,10 +145,15 @@ Lack of expressiveness ⇒ unnatural-/-convoluted
 Poor readability decreases reliability
                             e.g. APL, Perl — -"write[illeg.]- "write-only"
                                                    languages
+
 Cost (not cost of compilers — -we- use
                                 GNU)
                             — ⛤ time costs — training, compilation speed, execution efficiency, reliability
                             — ⛤ direct monetary costs — e.g. delay selling product
                             — ⛤ other — privacy breaches, data loss, etc.
 
-Other 
+_Other criteria_                — portable?
+                                — General?
+                                — well-defined?
+    POSIX — for portability — set of
+            
