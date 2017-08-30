@@ -31,3 +31,10 @@ _Readings                   -based- — reflections based
 ← -cont'd.-<note>The "c" in "cont'd." does look like a large C in the paper copy, but IIRC I had simply mis-drawn a lowercase c, rather than drawing an uppercase C by accident.</note>
   cont'.d  NMD442
             29 Aug. 2017  p. 2
+
+_Slack_
+  _Channel_                   nmd442f17
+                            Discussion is important
+                              for _grading_
+                            we're graded on our
+                            Slack discussion.
