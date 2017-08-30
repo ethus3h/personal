@@ -155,5 +155,18 @@ Cost (not cost of compilers — -we- use
 _Other criteria_                — portable?
                                 — General?
                                 — well-defined?
-    POSIX — for portability — set of
-            
+                        POSIX — for portability — set of
+                                system calls
+
+Is the language well-defined?
+                                Java is, FORTRAN
+                                        isn't
+
+Trade offs sometimes necessary
+                                — Polymorphism / overloading (e.g. + in
+                                                                   Python)
+                                — special-purpose operators (e.g. APL)
+                                — complex language (e.g. PL/1)
+
+Quicker to buil<loop-deleted>e</loop-deleted>d apps in Python/Lisp
+       -Runty- Runtime type checking
