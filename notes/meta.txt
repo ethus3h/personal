@@ -27,3 +27,7 @@ __text__                                                double underlined
                                                 an underlined <region> would have a single
                                                 underline beneath the group of lines)
 <note>text</note>                           An added note made at the time of transcription
+
+2017m08d29 and later:
+<loop-deleted>text</loop-deleted>           Deleted text using a curly deletion mark
+\                                           Metacharacter escape
