@@ -132,4 +132,23 @@ _Aliasing_                      decreases -ri- reliability.
                                 Problem: Multiple accesses to
                                 same location / object w/o
                                   realizing it
-Lack of expressiveness ⇒ unnatural-<ambig>(,C</ambig>-convoluted
+Lack of expressiveness ⇒ unnatural-/-convoluted
+                                algorithms & programming
+                                decreases reliability & -readabi-
+                                readability.
+                                                    →cont'd.
+
+==
+
+←cont'd.  COS301  30 Aug. 2017  p. 5
+
+Poor readability decreases reliability
+                            e.g. APL, Perl — -"write[illeg.]- "write-only"
+                                                   languages
+Cost (not cost of compilers — -we- use
+                                GNU)
+                            — ⛤ time costs — training, compilation speed, execution efficiency, reliability
+                            — ⛤ direct monetary costs — e.g. delay selling product
+                            — ⛤ other — privacy breaches, data loss, etc.
+
+Other 
