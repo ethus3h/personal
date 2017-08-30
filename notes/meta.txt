@@ -33,3 +33,4 @@ __text__                                                double underlined
 \                                           Metacharacter escape
 <big>text</big>                             Larger text used for emphasis
 <italic>text</italic>                       Italicized text
+[nothing]                                   Null/empty text value (absence of text)

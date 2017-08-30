@@ -33,24 +33,70 @@ _Readings                   -based- — reflections based
             29 Aug. 2017  p. 2
 
 _Slack_
-  _Channel_                   nmd442f17
-                            Discussion is important
-                              for <big>_grading_</big> —
-                            we're graded on our
-                            Slack discussion.
+  _Channel_                       nmd442f17
+                                Discussion is important
+                                  for <big>_grading_</big> —
+                                we're graded on our
+                                Slack discussion.
 
-In this                   Not much
-  _class_                       programming — more
-                            just <italic>_conceptual_</italic>
-                            development.
+In this                       Not much
+  _class_                           programming — more
+                                just <italic>_conceptual_</italic>
+                                development.
 
 _Knowledge_                 of UX design practices
-                            & processes.
+                                & processes.
 
-_Blogs_                     high priority.
+_Blogs_                         high priority.
 
 _Development for _personas__
 
     Make sure we provide -to- feedback
     & thoughts & stuff on the
-    readings<ambig>.,</ambig>
+    readings<ambig>.,[nothing]</ambig>
+
+_<region>What makes             Intuitive.
+a successful                    The tool goes into the
+  user experience?</region>     background & lets work get
+                                done. Provide -All[?]-  →cont'd.
+
+==
+
+←cont'd.  NMD442  29 Aug. 2017  p.3
+
+-any[?]- all the information the user needs.
+
+Is the user experience to -simply- simplify
+    life, or is it to -provide a hidden
+    assistant?- make us lazy?
+
+Laziness vs. productivity.
+
+_Virtual assistants_ — importance of its
+                                ecosystem. Require -pr[?]-
+                                other products to get
+                                the -whole[?]- whole
+                                experience of the assistant
+                                — assistant needs things
+                                it's connected to to work
+                                well.
+
+_Personas_                    -Age- Demographics of the
+                                                    user.
+                                What they're trying to do.
+            Mine:
+                                Pat.
+                                Embedded systems developer
+                                Wants to use the equipment as
+                                a virtual assistant for remembering
+                                things they need to know for work,
+                                so they could get reference
+                                info. they had -progr.- ⛤ <caret-insertion pos="below">copied from board — </caret-insertion>continued at next
+                                                              ⛤
+                                                        -[illeg.]-
+            Understand the <[?]><italic></[?]>_context_<[?]></italic></[?]>
+              one's persona exists in, so
+              one can draw on the
+                                                        →cont'.d
+
+==
