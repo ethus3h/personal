@@ -100,4 +100,9 @@ Abstraction — allows treating complex structures
     Application-specific data -types- types
 Can languages express what is needed for problem?
 Number, power of operators increases expressivity
-Number of predefined fns increases        "
+Number of predefined fns increases        〃
+COBOL — many operations for file types
+   APL — many operations for math
+                                    →cont'd.
+
+==
