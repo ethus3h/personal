@@ -106,3 +106,13 @@ COBOL — many operations for file types
                                     →cont'd.
 
 ==
+
+←cont'd.  COS301  30 Aug. 2017  p.4
+
+_Reliability_                 — Is the program produced by the
+                                language reliable?
+                                -R- Safety & correctness
+                                    checks
+                            Type checking, exc. handling
+                             — can be compile time or run time
+                            Runtime checking:
