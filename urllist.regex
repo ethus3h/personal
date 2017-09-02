@@ -1,5 +1,9 @@
-set +H!
+###########
+Zeroth, make sure you set +H first!
 
+set +H
+
+###########
 First, replace
 
 https://pastebin.com/([\w\d]{8})
@@ -8,9 +12,8 @@ with
 
 https://pastebin.com/$1\nhttps://pastebin.com/raw/$1\nhttps://pastebin.com/dl/$1\nhttps://pastebin.com/index/$1\nhttps://pastebin.com/embed/$1\nhttps://pastebin.com/report/$1\nhttps://pastebin.com/print/$1\n
 
-
+###########
 Second, replace
-
 
 ^(.+)$
 
@@ -18,7 +21,10 @@ with
 
 "$1"
 
-
+###########
 Third, join lines
 
-Fourth, 
+###########
+Fourth, substitute into the single-page template (as of 1 Sept. 2017, it is:
+( tempName="wget-$(date-uuid)"; mkdir "$tempName"; cd "$tempName"; wget -p --no-check-certificate --content-on-error -e robots=off --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" --save-cookies=cookies.txt --load-cookies=cookies.txt --keep-session-cookies --warc-max-size=500M -E -k -K --warc-file="$tempName" -H [url] )
+)
