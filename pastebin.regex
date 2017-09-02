@@ -1,3 +1,9 @@
 https://pastebin.com/([\w\d]{8})
 
 https://pastebin.com/$1\nhttps://pastebin.com/raw/$1\nhttps://pastebin.com/dl/$1\nhttps://pastebin.com/index/$1\nhttps://pastebin.com/embed/$1\nhttps://pastebin.com/report/$1\nhttps://pastebin.com/print/$1\n
+
+
+
+^(.+)$
+
+"$1"
