@@ -25,6 +25,6 @@ with
 Third, join lines
 
 ###########
-Fourth, substitute into the single-page template (as of 1 Sept. 2017, it is:
+Fourth, substitute into the latest single-page template command (as of 1 Sept. 2017, it is:
 ( tempName="wget-$(date-uuid)"; mkdir "$tempName"; cd "$tempName"; wget -p --no-check-certificate --content-on-error -e robots=off --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" --save-cookies=cookies.txt --load-cookies=cookies.txt --keep-session-cookies --warc-max-size=500M -E -k -K --warc-file="$tempName" -H [url] )
 )
