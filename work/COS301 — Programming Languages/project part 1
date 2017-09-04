@@ -4,3 +4,12 @@ My second choice of language is COBOL.
 Perl 6 is my first choice of language for two main reasons. First, Perl 6 has strong built-in support for implementing other languages, and I would like to learn to use this: I would like to implement a document format that I have been creating, and I think that knowing Perl 6 could help me with that. Second, Perl 6 has a number of features that I have heard about (and seem to have a lot of "buzz" and many popular applications), but don't have any significant understanding of the use of, or experience with: multiple dispatch, promises, asynchronous I/O, polymorphism, functional programming, introspection, generic programming, meta-object programming, and macros. That's certainly a lot of things to learn, so I'd pick a couple of areas to focus on.
 
 My second language choice is COBOL, because it has a long history of being very capable for data processing work and file handling, and a lot of businesses seem to use it successfully. Because of that history of success with it, I think that it would be good to have experience with. (While C and Java have similar histories of successful use, I do not propose studying them as I have used them briefly.) I am also interested in learning about it because of how different it is from the languages I have experience using (as a file-processing language — Perl 6 is also quite different, because of its capacity for functional programming).
+
+For reference, the languages with which I have the most confidence and experience in are, in roughly descending order:
+  * Bash (along with PHP, which is a reasonably close second, I have by far the most confidence and experience in Bash)
+  * PHP 5 (I used it a lot until I switched to writing most things in Bash)
+  * C (don't have a lot of experience with it, only having written small patches, but I've appreciated the readability of it in what I've done with it)
+  * Python (All the apps I wrote in Python that I still use I have since re-written in Bash, and found it much more appropriate for them)
+  * Java (I don't really get it)
+  * Perl (used it for one tiny project about eight years ago, but don't remember anything about it really)
+  * C++ (poked around briefly trying to patch a couple of apps in it)
