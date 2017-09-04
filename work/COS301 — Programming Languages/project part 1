@@ -1,7 +1,4 @@
 My first choice of language is Perl 6.
 My second choice of language is COBOL.
 
-Perl 6 is my first choice of language for two main reasons. First, Perl 6 has strong built-in support for implementing other languages, and I would like to learn to use this: I would like to implement a document format that I have been creating, and I think that knowing Perl 6 could help me with that. Second, Perl 6 has a number of features that I have heard about (and seem to have a lot of "buzz" and many popular applications), but don't have any significant understanding of:
-    * Multiple dispatch 
-    * Promises
-    * Asynchronous I/O
+Perl 6 is my first choice of language for two main reasons. First, Perl 6 has strong built-in support for implementing other languages, and I would like to learn to use this: I would like to implement a document format that I have been creating, and I think that knowing Perl 6 could help me with that. Second, Perl 6 has a number of features that I have heard about (and seem to have a lot of "buzz" and many popular applications), but don't have any significant understanding of: multiple dispatch, promises, and asynchronous I/O.
