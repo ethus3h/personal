@@ -19,7 +19,7 @@ Second, replace
 
 with
 
-"$1"
+'$1'
 
 ###########
 Third, filter for only unique lines
