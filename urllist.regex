@@ -6,7 +6,7 @@ set +H
 ###########
 First, replace
 
-https://pastebin.com/([\w\d]{8})
+https://pastebin.com/([\w\d\/]+)
 
 with
 
