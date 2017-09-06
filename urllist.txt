@@ -47,3 +47,15 @@ http://www.hardcoregamer.com/2014/07/27/kobra-studio-puts-bad-game-on-steam-gree
 https://pastebin.com/64GuVi2F/25476
 https://pastebin.com/64GuVi2F
 https://pastebin.com/64GuVi2F/
+https://np.reddit.com/r/rust/comments/47ucw9/comparing_haskell_and_rust_which_to_choose_when/
+https://gist.github.com/jonpacker/2107554
+https://github.com/rakudo/rakudo/pulls?q=is%3Apr+is%3Aclosed
+https://np.reddit.com/r/rust/comments/47ucw9/comparing_haskell_and_rust_which_to_choose_when/
+https://lists.wikimedia.org/pipermail/wikitech-l/2017-July/088466.html
+https://lists.wikimedia.org/robots.txt
+https://lists.wikimedia.org/pipermail/wikitech-l/2017-July/088466.html
+https://github.com/robots.txt
+https://github.com/rakudo/rakudo/pulls?q=is%3Apr+is%3Aclosed
+https://github.com/rakudo/rakudo/pulls?q=is%3Apr+is%3Aclosed
+http://blog.ciarang.com:80/posts/amazon-just-sell-me-the-music/
+https://sites.google.com/decagames.com/xml-documentation/home
