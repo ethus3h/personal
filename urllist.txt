@@ -1,0 +1,13 @@
+https://bugzilla.kernel.org/attachment.cgi?id=241601
+https://bugzilla.kernel.org/robots.txt
+https://people.redhat.com/~rjones/ioport/files/ioport-1.2.tar.gz
+http://rfkrocktk.github.io/2016/07/macbook-suspend-bug
+https://www.intel.com/content/www/us/en/chipsets/8-series-chipset-pch-datasheet.html
+http://copr-dist-git.fedorainfracloud.org/cgit/asamalik/MacBook-kernel/kernel.git/tree/macbook-sleep.patch?h=f24
+http://copr-dist-git.fedorainfracloud.org/robots.txt
+http://copr-dist-git.fedorainfracloud.org/cgit/asamalik/MacBook-kernel/kernel.git/tree/macbook-sleep.patch?h=f24
+https://www.intel.com/content/www/us/en/chipsets/8-series-chipset-pch-datasheet.html
+https://www.intel.com/content/www/us/en/chipsets/8-series-chipset-pch-datasheet.html
+https://www.intel.com/content/dam/www/public/us/en/documents/datasheets/8-series-chipset-pch-datasheet.pdf
+https://bugzilla.kernel.org/attachment.cgi?id=241601
+https://www.intel.com/content/www/us/en/chipsets/8-series-chipset-pch-datasheet.html
