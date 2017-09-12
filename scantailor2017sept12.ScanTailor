@@ -685,14 +685,14 @@
       <page id="16">
         <params>
           <hardMarginsMM right="5" left="5" bottom="5" top="5"/>
-          <contentSizeMM width="30.10580560448964" height="38.58764577814909"/>
+          <contentSizeMM width="30.10580560448964" height="38.58764577814908"/>
           <alignment vert="top" hor="hcenter" null="0"/>
         </params>
       </page>
       <page id="19">
         <params>
           <hardMarginsMM right="5" left="5" bottom="5" top="5"/>
-          <contentSizeMM width="29.73477166470502" height="39.40443455863601"/>
+          <contentSizeMM width="29.73477166470502" height="39.404434558636"/>
           <alignment vert="top" hor="hcenter" null="0"/>
         </params>
       </page>
@@ -752,25 +752,25 @@
               <polyline>/6xpQ2NsKkKJsmRDUL2YQnQyYUNbIcxCkuNeQy1G9UL0jldDDgZaQ+FYT0MAl5tDCXJMQ5I4tUOQtUpDsPjIQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="786" x="125" y="118" height="990"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1573" x="251" y="236" height="1980"/>
             <partial-xform>
               <m11>-0.04506474271756675</m11>
               <m12>-0.9989840684234156</m12>
               <m21>0.9989840684234156</m21>
               <m22>-0.04506474271756675</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -796,7 +796,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1626364" mtime="1505232754"/>
+          <file size="10170496" mtime="1505233548"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -827,25 +827,25 @@
               <polyline>GDlxQ7CeP0LY8GhDX38JQ5ioYEMSF2NDWGBYQ2JXnkMYGFBDPCPLQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="801" x="118" y="118" height="984"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1601" x="236" y="236" height="1968"/>
             <partial-xform>
               <m11>-0.07865846001611652</m11>
               <m12>-0.9969016233650605</m12>
               <m21>0.9969016233650605</m21>
               <m22>-0.07865846001611652</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -871,7 +871,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1689210" mtime="1505232785"/>
+          <file size="10235756" mtime="1505233549"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -902,25 +902,25 @@
               <polyline>gwQyQ/8sdkLZaixDnMERQy/RJkP592VDhTchQysXnUPbnRtDWTLHQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="752" x="143" y="118" height="866"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1503" x="285" y="236" height="1732"/>
             <partial-xform>
               <m11>-0.01649814144154638</m11>
               <m12>-0.9998638964023927</m12>
               <m21>0.9998638964023927</m21>
               <m22>-0.01649814144154638</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -946,7 +946,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1650240" mtime="1505232813"/>
+          <file size="10311116" mtime="1505233550"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -977,25 +977,25 @@
               <polyline>jYpFQ70FikJWnUJDVRgZQx+wP0PLLW1D6MI8Q6ChoEOy1TlDW6zKQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="729" x="154" y="118" height="846"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1457" x="308" y="236" height="1693"/>
             <partial-xform>
               <m11>0.03687115313255462</m11>
               <m12>-0.999320027852277</m12>
               <m21>0.999320027852277</m21>
               <m22>0.03687115313255462</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -1021,7 +1021,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1442516" mtime="1505232838"/>
+          <file size="10273500" mtime="1505233551"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -1052,25 +1052,25 @@
               <polyline>G9GLQ5zXlkIt+o1Dck8kQ0AjkEMWM31DUkySQ10Lq0NkdZRDL33XQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="711" x="163" y="118" height="912"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1422" x="326" y="236" height="1823"/>
             <partial-xform>
-              <m11>0.04588410167606797</m11>
+              <m11>0.04588410167606798</m11>
               <m12>-0.9989467699599315</m12>
               <m21>0.9989467699599315</m21>
-              <m22>0.04588410167606797</m22>
+              <m22>0.04588410167606798</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -1096,7 +1096,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1393038" mtime="1505232872"/>
+          <file size="10011018" mtime="1505233552"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -1127,25 +1127,25 @@
               <polyline>hslwQ6P/m0JKjXFD7/AnQw5RckMG8YBD0RRzQ5XprUOV2HNDI+LaQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="702" x="167" y="118" height="931"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1405" x="335" y="236" height="1862"/>
             <partial-xform>
               <m11>0.06718743459709953</m11>
               <m12>-0.9977403713553243</m12>
               <m21>0.9977403713553243</m21>
               <m22>0.06718743459709953</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -1171,7 +1171,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1416818" mtime="1505232871"/>
+          <file size="10003522" mtime="1505233553"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -1202,25 +1202,25 @@
               <polyline>9+yMQ/P2EUKu5YdDQzr4QmXegkOGvFNDOK57Q/WtlUOmn3FDqH3BQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="703" x="167" y="118" height="956"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1406" x="334" y="236" height="1912"/>
             <partial-xform>
               <m11>-0.02867756354754248</m11>
               <m12>-0.9995887140964411</m12>
               <m21>0.9995887140964411</m21>
               <m22>-0.02867756354754248</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -1246,7 +1246,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1178506" mtime="1505232894"/>
+          <file size="9321506" mtime="1505233553"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -1277,25 +1277,25 @@
               <polyline>3LyMQ4LIOkIlzYdD/IEEQ23dgkPYUVpDbNt7Q9oQmEP9+3FDyPjCQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="693" x="172" y="118" height="924"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1386" x="344" y="236" height="1849"/>
             <partial-xform>
               <m11>0</m11>
               <m12>-1</m12>
               <m21>1</m21>
               <m22>0</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -1321,7 +1321,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1128720" mtime="1505232912"/>
+          <file size="9549890" mtime="1505233555"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -1353,25 +1353,25 @@
               <polyline>ZiotQ98yQ0LrvSxD44+HQusBK0M/eBFD/+EoQ3ykcEPLvSZDL0ioQ5eZJEMgPthD</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="719" x="159" y="118" height="775"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1438" x="318" y="236" height="1550"/>
             <partial-xform>
               <m11>0.1239713205520419</m11>
               <m12>-0.9922858014103512</m12>
               <m21>0.9922858014103512</m21>
               <m22>0.1239713205520419</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -1398,7 +1398,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="1060252" mtime="1505232944"/>
+          <file size="9572218" mtime="1505233556"/>
           <zones/>
           <fill-zones/>
         </output-params>
@@ -1429,25 +1429,25 @@
               <polyline>gdUsQ4BBaELx5StDN58YQ2H2KkMPLndD0QYqQ3PeqkNBFylD3yXaQw==</polyline>
             </bottom-curve>
           </distortion-model>
-          <dpi vertical="600" horizontal="600"/>
+          <dpi vertical="1200" horizontal="1200"/>
           <color-params colorMode="colorOrGray">
-            <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+            <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
             <bw thresholdAdj="23"/>
           </color-params>
         </params>
         <output-params>
           <image depthPerception="2" despeckleLevel="cautious" dewarpingMode="manual">
-            <size width="1037" height="1226"/>
-            <content-rect width="693" x="172" y="118" height="761"/>
+            <size width="2074" height="2453"/>
+            <content-rect width="1385" x="344" y="236" height="1522"/>
             <partial-xform>
               <m11>0.09775183388000307</m11>
               <m12>-0.9952108213705759</m12>
               <m21>0.9952108213705759</m21>
               <m22>0.09775183388000307</m22>
             </partial-xform>
-            <dpi vertical="600" horizontal="600"/>
+            <dpi vertical="1200" horizontal="1200"/>
             <color-params colorMode="colorOrGray">
-              <color-or-grayscale whiteMargins="1" normalizeIllumination="1"/>
+              <color-or-grayscale whiteMargins="0" normalizeIllumination="0"/>
               <bw thresholdAdj="23"/>
             </color-params>
             <distortion-model>
@@ -1473,7 +1473,7 @@
               </bottom-curve>
             </distortion-model>
           </image>
-          <file size="978064" mtime="1505232969"/>
+          <file size="9514348" mtime="1505233557"/>
           <zones/>
           <fill-zones/>
         </output-params>
