@@ -1,0 +1,788 @@
+cd Em   Em      \       pkyan@elegiac ~ nohup compiz --replace openbox $ cd Ember\ Library/Ember\ satellite\ projects/p
+bash: cd: Ember Library/Ember satellite projects/p: No such file or directory
+        /bin/bash
+failed with the error on /usr/local/bin/error-notify line 21:
+An error was reported on  line 1.
+kyan@elegiac ~ nohup compiz --replace openbox $ eogup-isngel
+bash: eogup-isngel: command not found
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 21:
+An error was reported on  line 2.
+kyan@elegiac ~ nohup compiz --replace openbox $ ^C
+kyan@elegiac ~ nohup compiz --replace openbox $ cd Ember\ Library/Ember\ satellite\ projects/personal
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ eogup-singel
+bash: eogup-singel: command not found
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 21:
+An error was reported on  line 5.
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ eogup-single
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+[master 1457123] Update Ember tree
+ 10 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_30_27_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_30_29_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_30_39_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_30_40_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_00_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_01_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_10_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_11_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_23_pro.jpg
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_24_pro.jpg
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ eogup-single
+error: pathspec '(HEAD detached at 0e444d4)' did not match any file(s) known to git.
+bash /usr/bin/eogup-single
+failed with the error on /usr/local/bin/error-notify line 21:
+A fatal error was reported on /usr/bin/egup-single line 24.
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 21:
+An error was reported on  line 7.
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ eogup-single
+error: pathspec '(HEAD detached at 0e444d4)' did not match any file(s) known to git.
+bash /usr/bin/eogup-single
+failed with the error on /usr/local/bin/error-notify line 21:
+A fatal error was reported on /usr/bin/egup-single line 24.
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 21:
+An error was reported on  line 8.
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ git status
+HEAD detached at 0e444d4
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Nmd-442-Wordpress-for-scantailor-2017sept12/
+        scantailor2017sept12.ScanTailor
+
+nothing added to commit but untracked files present (use "git add" to track)
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ git branch
+* (HEAD detached at 0e444d4)
+  master
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ git checkout master
+Previous HEAD position was 0e444d4... Update Ember tree
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-s^C
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ git push
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 984.94 KiB | 0 bytes/s, done.
+Total 13 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ethus3h/personal.git
+   0e444d4..1457123  master -> master
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-single
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+[master c6adad8] Update Ember tree
+ 11 files changed, 322 insertions(+)
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_27_pro_0_e017a5a2ba068c11a086fb07d2d29bb6.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_29_pro_0_38fd70ab19a13efa53b95f29c3f3229e.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_39_pro_0_ed002a4a04ac4a9861d9009d4c7e7967.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_40_pro_0_495e9e84d98da151476f15e0e22bf662.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_00_pro_0_94a4344f561e527611591de2d8750fd8.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_01_pro_0_e68003b297c6ba67bd3e89f7c83fa666.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_10_pro_0_f81d96a05b5fafa83f398e81699585a9.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_11_pro_0_507fbd1a51bcf9375cc0b903e7113581.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_23_pro_0_b843ec1b2722811b721a4fd1c55e1d3f.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_24_pro_0_7e180bed49e3a20f37a3aea72eca2e29.png
+ create mode 100644 scantailor2017sept12.ScanTailor
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 17, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (17/17), 346.47 KiB | 0 bytes/s, done.
+Total 17 (delta 2), reused 0 (delta 0)
+POST git-receive-pack (354942 bytes)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ethus3h/personal.git
+   1457123..c6adad8  master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-single
+M       scantailor2017sept12.ScanTailor
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+[master f5d0bc3] Update Ember tree
+ 1 file changed, 448 insertions(+), 151 deletions(-)
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.28 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+POST git-receive-pack (2485 bytes)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ethus3h/personal.git
+   c6adad8..f5d0bc3  master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-single
+M       scantailor2017sept12.ScanTailor
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+[master 1e26340] Update Ember tree
+ 1 file changed, 152 insertions(+), 1 deletion(-)
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.91 KiB | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+POST git-receive-pack (2111 bytes)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ethus3h/personal.git
+   f5d0bc3..1e26340  master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-single
+M       scantailor2017sept12.ScanTailor
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+[master 018fd86] Update Ember tree
+ 26 files changed, 754 insertions(+), 41 deletions(-)
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/speckles/win_20170912_13_30_27_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/speckles/win_20170912_13_30_29_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/speckles/win_20170912_13_30_39_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/speckles/win_20170912_13_30_40_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/speckles/win_20170912_13_31_00_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_27_pro_0_ad503356507c7beefb97c920fa36ead0.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_29_pro_0_6edf8cf369e2bc21ec38571ded8c6994.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_39_pro_0_44efc4f4c90fb4474c8ee894f7ff09a5.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_40_pro_0_a46cae30b72b3598abe74632564bebfa.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_00_pro_0_5fcdeb9c9b2cd27436e63a3fee463833.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_01_pro_0_8fcfdbff80596d1758a1ec5d97cb2cb5.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_10_pro_0_548c304de8aa80f8fb653af5a765cf48.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_11_pro_0_082b1d649f11739d92dc4af073bdba03.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_23_pro_0_0db10fa689329d982307270e89d35dbf.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_24_pro_0_2f9f956822cd34e79da10d345b5e74a5.png
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_30_27_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_30_29_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_30_39_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_30_40_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_00_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_01_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_10_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_11_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_23_pro.tif
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_24_pro.tif
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 33, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (33/33), done.
+POST git-receive-pack (chunked) 
+Writing objects: 100% (33/33), 13.26 MiB | 7.76 MiB/s, done.
+Total 33 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ethus3h/personal.git
+   1e26340..018fd86  master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ 
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-single
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_23_pro.jpg
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+[master db467fe] Update Ember tree
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_23_pro.jpg (99%)
+ copy Nmd-442-Wordpress-for-scantailor-2017sept12/{win_20170912_13_31_23_pro.jpg => win_20170912_13_31_23_pro.jpg~} (100%)
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 56.63 KiB | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+POST git-receive-pack (58144 bytes)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ethus3h/personal.git
+   018fd86..db467fe  master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ git log
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ git revert db467fe98b4615f3b9a8d2b65046de0f71af9af5
+[master 659a81b] Revert "Update Ember tree"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Nmd-442-Wordpress-for-scantailor-2017sept12/{win_20170912_13_31_23_pro.jpg~ => win_20170912_13_31_23_pro.jpg} (100%)
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ git revert db467fe98b4615f3b9a8d2b65046de0f71af9af5
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+        modified:   Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_23_pro_0_0db10fa689329d982307270e89d35dbf.png
+        modified:   Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_23_pro.tif
+
+Untracked files:
+        Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/speckles/win_20170912_13_31_23_pro.tif
+        Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_23_pro.xcf
+
+no changes added to commit
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 21:
+An error was reported on  line 22.
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-single
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_23_pro_0_0db10fa689329d982307270e89d35dbf.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_23_pro.tif
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+[master 956764e] Update Ember tree
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/speckles/win_20170912_13_31_23_pro.tif
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_23_pro_0_0db10fa689329d982307270e89d35dbf.png (99%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_23_pro.tif (99%)
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_23_pro.xcf
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 414.60 KiB | 0 bytes/s, done.
+Total 14 (delta 7), reused 0 (delta 0)
+POST git-receive-pack (424702 bytes)
+remote: Resolving deltas: 100% (7/7), completed with 5 local objects.
+To https://github.com/ethus3h/personal.git
+   db467fe..956764e  master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-single
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+[master 57e5d68] Update Ember tree
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Nmd-442-Wordpress-for-scantailor-2017sept12/win_20170912_13_31_23_pro.png
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 339.55 KiB | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+POST git-receive-pack (347848 bytes)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ethus3h/personal.git
+   956764e..57e5d68  master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ egup-single
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_27_pro_0_ad503356507c7beefb97c920fa36ead0.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_29_pro_0_6edf8cf369e2bc21ec38571ded8c6994.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_39_pro_0_44efc4f4c90fb4474c8ee894f7ff09a5.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_40_pro_0_a46cae30b72b3598abe74632564bebfa.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_00_pro_0_5fcdeb9c9b2cd27436e63a3fee463833.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_01_pro_0_8fcfdbff80596d1758a1ec5d97cb2cb5.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_10_pro_0_548c304de8aa80f8fb653af5a765cf48.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_11_pro_0_082b1d649f11739d92dc4af073bdba03.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_23_pro_0_0db10fa689329d982307270e89d35dbf.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_24_pro_0_2f9f956822cd34e79da10d345b5e74a5.png
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_30_27_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_30_29_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_30_39_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_30_40_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_00_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_01_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_10_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_11_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_23_pro.tif
+M       Nmd-442-Wordpress-for-scantailor-2017sept12/out/win_20170912_13_31_24_pro.tif
+M       scantailor2017sept12.ScanTailor
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+[master 075db63] Update Ember tree
+ 21 files changed, 74 insertions(+), 74 deletions(-)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_27_pro_0_ad503356507c7beefb97c920fa36ead0.png (99%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_29_pro_0_6edf8cf369e2bc21ec38571ded8c6994.png (99%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_39_pro_0_44efc4f4c90fb4474c8ee894f7ff09a5.png (98%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_30_40_pro_0_a46cae30b72b3598abe74632564bebfa.png (99%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_00_pro_0_5fcdeb9c9b2cd27436e63a3fee463833.png (99%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_01_pro_0_8fcfdbff80596d1758a1ec5d97cb2cb5.png (99%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_10_pro_0_548c304de8aa80f8fb653af5a765cf48.png (99%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_11_pro_0_082b1d649f11739d92dc4af073bdba03.png (99%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_23_pro_0_0db10fa689329d982307270e89d35dbf.png (98%)
+ rewrite Nmd-442-Wordpress-for-scantailor-2017sept12/out/cache/thumbs/win_20170912_13_31_24_pro_0_2f9f956822cd34e79da10d345b5e74a5.png (99%)
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+Counting objects: 27, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (27/27), done.
+POST git-receive-pack (chunked) 
+Writing objects: 100% (27/27), 94.42 MiB | 12.96 MiB/s, done.
+Total 27 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/ethus3h/personal.git
+   57e5d68..075db63  master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+(Note: Repository appears to have no tags.)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Fetching origin
+Already up-to-date.
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+Pushing to https://github.com/ethus3h/personal.git
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+/usr/share/themes/MurrinaCandy/gtk-2.0/gtkrc:46: Murrine configuration option "scrollbar_color" is no longer supported and will be ignored.
+Pass a valid window to KWallet::Wallet::openWallet().
+To https://github.com/ethus3h/personal.git
+ = [up to date]      master -> master
+Branch master set up to track remote branch master from origin.
+updating local tracking ref 'refs/remotes/origin/master'
+Everything up-to-date
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ cd 
+bug489729@alice0775/                         notes/
+files-for-neo/                               work/
+Nmd-442-Wordpress-for-scantailor-2017sept12/ 
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal nohup compiz --replace openbox $ cd Nmd-442-Wordpress-for-scantailor-2017sept12/out/
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal/Nmd-442-Wordpress-for-scantailor-2017sept12/out nohup compiz --replace openbox $ ls
+cache                          win_20170912_13_30_40_pro.tif  win_20170912_13_31_11_pro.tif
+win_20170912_13_30_27_pro.tif  win_20170912_13_31_00_pro.tif  win_20170912_13_31_23_pro.tif
+win_20170912_13_30_29_pro.tif  win_20170912_13_31_01_pro.tif  win_20170912_13_31_24_pro.tif
+win_20170912_13_30_39_pro.tif  win_20170912_13_31_10_pro.tif
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal/Nmd-442-Wordpress-for-scantailor-2017sept12/out nohup compiz --replace openbox $ convert *.tif png
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal/Nmd-442-Wordpress-for-scantailor-2017sept12/out nohup compiz --replace openbox $ convert *.tif -format png
+convert: missing an image filename `png' @ error/convert.c/ConvertImageCommand/3255.
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 21:
+An error was reported on  line 29.
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal/Nmd-442-Wordpress-for-scantailor-2017sept12/out nohup compiz --replace openbox $ convert *.tif -format png *.png
+kyan@elegiac ~/Ember Library/Ember satellite projects/personal/Nmd-442-Wordpress-for-scantailor-2017sept12/out nohup compiz --replace openbox $ 
