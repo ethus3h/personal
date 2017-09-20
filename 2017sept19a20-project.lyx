@@ -2,7 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass extarticle
+\textclass IEEEtran-CompSoc
 \begin_preamble
 \usepackage{indentfirst}
 \end_preamble
@@ -27,7 +27,7 @@
 \output_sync 1
 \bibtex_command default
 \index_command default
-\paperfontsize 17
+\paperfontsize default
 \spacing single
 \use_hyperref false
 \papersize default
@@ -84,6 +84,20 @@ Perl 6 is a programming language first released at the end of 2015.
  rather than an implementation-driven process.
  Consequently, there is not a single official implementation, although the
  Rakudo implementation is currently the most complete implementation available.
+ It is a general purpose language that is just-in-time compiled to bytecode.
+ The language is implemented using a subset language called NQP, which is
+ run by a virtual machine.
+ There are a few virtual machine implementations available, including a
+ native one, one running on the Java Virtual Machine, and one for JavaScript.
+ The native one, 
+\begin_inset Quotes eld
+\end_inset
+
+MoarVM
+\begin_inset Quotes erd
+\end_inset
+
+, is the most complete of these.
 \end_layout
 
 \end_body
