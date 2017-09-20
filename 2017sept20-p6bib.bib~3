@@ -10,17 +10,7 @@
 	organization = {perl6.org},
 	owner = {kyan},
 	timestamp = {2017.09.20},
-	title = {{FAQ}: Frequently Asked Questions about {Perl} 6},
+	title = {FAQ: Frequently Asked Questions about Perl 6},
 	year = {2017}
-}
-
-@article{New1,
-	address = {https://opensource.com/life/16/9/perl-6-features},
-	author = {Holloway, Ruth},
-	howpublished = {Web},
-	month = {23 Sept.},
-	publisher = {opensource.com},
-	title = {The must-have features for {Perl} 6},
-	year = {2016}
 }
 
