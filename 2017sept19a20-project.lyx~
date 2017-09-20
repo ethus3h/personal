@@ -83,8 +83,9 @@ Perl 6 is a programming language first released at the end of 2015.
  It uses a specification and test-suite driven language development process,
  rather than an implementation-driven process.
  Consequently, there is not a single official implementation, although the
- Rakudo implementation is currently the most complete implementation available.
- It is a general purpose language that is just-in-time compiled to bytecode.
+ Rakudo implementation is currently the most complete implementation available,
+ and is the only implementation that is currently available.
+ Perl 6 is a general purpose language that is just-in-time compiled to bytecode.
  The language is implemented using a subset language called NQP, which is
  run by a virtual machine.
  There are a few virtual machine implementations available, including a
@@ -125,6 +126,39 @@ MoarVM
  one's system: the standard model of an elegant one-minor-version-per-package
  used by system package managers is broken, and rendered unable to ship
  the app properly.
+ While being a new language could conceivably be a problem because of a
+ lack of available libraries for a language, this problem is avoided by
+ Perl 6 by including a system for interacting with existing Perl modules.
+ Perl 6 contains a wide range of capabilities and features.
+ The feature that interested me the most is grammars.
+ That is what made me choose to pursue learning about the language.
+ Perl 6's grammars allow writing code that parses a language and returns
+ an abstract syntax tree without having to manually write the parser: rather,
+ one can write a set of rules that combine to express the syntax of the
+ language.
+ This provides a powerful facility for being able to handle problems of
+ implementing languages and document formats, and consequently is something
+ that interests me, as I have a document format that I would like to implement.
+ The rules in Perl 6 are created using 
+\emph on
+patterns
+\emph default
+, which are somewhat similar to regular expressions in other languages,
+ and generally take their place in Perl 6, although Perl 5–style regular
+ expressions are still available in Perl 6 in case they are needed.
+ Perl 6 has many other features, as well, that contribute to it being effective
+ and capable at solving a wide range of other problems.
+ Its mascot is a butterfly named Camelia.
+ It integrates several techniques different from the way Perl works, such
+ as using lazy evaluation.
+ This creates some changes in the way the language operates compared to
+ Perl, and consequently it is somewhat different, with some language constructs
+ not being available in Perl 6, thus necessitating working around their
+ absence.
+ My lack of familiarity with Perl prevents my assessing thoroughly the extent
+ of this as being a problem, but apparently the wantsarray construct from
+ Perl is not available in Perl 6, according to the language FAQ.
+ The 
 \end_layout
 
 \end_body
