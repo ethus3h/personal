@@ -24,3 +24,13 @@
 	year = {2016}
 }
 
+@article{New2,
+	address = {https://www.evanmiller.org/a-review-of-perl-6.html},
+	author = {Miller, Evan},
+	howpublished = {Web},
+	month = {13 Aug.},
+	publisher = {Evanmiller.org},
+	title = {A Review of {Perl} 6},
+	year = {2017}
+}
+
