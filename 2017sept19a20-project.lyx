@@ -190,9 +190,9 @@ lstinline!wantsarray!
 \end_inset
 
  construct from Perl is not available in Perl 6, according to the language
- FAQ
+ FAQ 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "P6FAQ"
 
 \end_inset
@@ -204,7 +204,7 @@ key "P6FAQ"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "2017sept20-p6bib"
-options "plain"
+options "plainnat"
 
 \end_inset
 

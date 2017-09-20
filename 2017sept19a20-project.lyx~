@@ -43,8 +43,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -190,9 +190,9 @@ lstinline!wantsarray!
 \end_inset
 
  construct from Perl is not available in Perl 6, according to the language
- FAQ
+ FAQ 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "P6FAQ"
 
 \end_inset
