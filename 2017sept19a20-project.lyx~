@@ -15,7 +15,7 @@
 \fontencoding global
 \font_roman Wreathe
 \font_sans Linux Biolinum O
-\font_typewriter Courier 10 Pitch
+\font_typewriter Courier
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
@@ -150,7 +150,23 @@ MoarVM
  the app properly.
  While being a new language could conceivably be a problem because of a
  lack of available libraries for a language, this problem is avoided by
- Perl 6 by including a system for interacting with existing Perl modules.
+ Perl 6 by including a system for interacting with 
+\begin_inset Quotes eld
+\end_inset
+
+C, Python, Perl 5, and Ruby
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 2"
+key "Lenz2017"
+
+\end_inset
+
+.
  Perl 6 contains a wide range of capabilities and features.
  The feature that interested me the most is grammars.
  That is what made me choose to pursue learning about the language.
