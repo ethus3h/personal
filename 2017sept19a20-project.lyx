@@ -2,7 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass IEEEtran-CompSoc
+\textclass extarticle
 \begin_preamble
 \usepackage{indentfirst}
 \end_preamble
@@ -14,7 +14,7 @@
 \fontencoding global
 \font_roman Wreathe
 \font_sans Linux Biolinum O
-\font_typewriter Courier New
+\font_typewriter Courier 10 Pitch
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
@@ -27,7 +27,7 @@
 \output_sync 1
 \bibtex_command default
 \index_command default
-\paperfontsize default
+\paperfontsize 17
 \spacing single
 \use_hyperref false
 \papersize default
@@ -75,6 +75,25 @@
 \end_header
 
 \begin_body
+
+\begin_layout Title
+Perl 6: Project: Part 2
+\end_layout
+
+\begin_layout Author
+Elliot Chandler (Wallace)
+\end_layout
+
+\begin_layout Date
+19a20 Sept.
+ 2017
+\end_layout
+
+\begin_layout Abstract
+This article introduces and summarizes the Perl 6 programming language and
+ some of its various features and capabilities, as well as discussing its
+ applications, effective uses, popularity, prospects, and limitations.
+\end_layout
 
 \begin_layout Standard
 Perl 6 is a programming language first released at the end of 2015.
@@ -156,8 +175,20 @@ patterns
  not being available in Perl 6, thus necessitating working around their
  absence.
  My lack of familiarity with Perl prevents my assessing thoroughly the extent
- of this as being a problem, but apparently the wantsarray construct from
- Perl is not available in Perl 6, according to the language FAQ.
+ of this as being a problem, but apparently the
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+wantsarray
+\end_layout
+
+\end_inset
+
+ construct from Perl is not available in Perl 6, according to the language
+ FAQ.
 \end_layout
 
 \end_body
