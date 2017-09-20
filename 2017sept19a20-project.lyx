@@ -98,7 +98,7 @@ This article introduces and summarizes the Perl 6 programming language and
 
 \begin_layout Standard
 Perl 6 is a programming language first released at the end of 2015.
- It was originally concieved as a revision of the Perl programming language,
+ It was originally conceived as a revision of the Perl programming language,
  but because it evolved during the course of its development (begun in 2000).
  It uses a specification and test-suite driven language development process,
  rather than an implementation-driven process.
@@ -133,7 +133,7 @@ MoarVM
  for executing external shell commands and manipulating their output, although
  this is a problem shared by many languages that are not purpose-built as
  shell languages.
- The problem with being a module-centric language, exascerbated by it being
+ The problem with being a module-centric language, exacerbated by it being
  a new language, is that packages for it are not available easily as native
  packages.
  This is also a common issue with languages that come with their own package
