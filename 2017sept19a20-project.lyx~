@@ -77,13 +77,7 @@
 \begin_body
 
 \begin_layout Standard
-Perl 6 is a programming language first released at the end of 2015.
- It was originally concieved as a revision of the Perl programming language,
- but because it evolved during the course of its development (begun in 2000).
- It uses a specification and test-suite driven language development process,
- rather than an implementation-driven process.
- Consequently, there is not a single official implementation, although the
- Rakudo implementation is currently the most complete implementation available.
+
 \end_layout
 
 \end_body
