@@ -89,6 +89,42 @@ Perl 6 is a programming language first released at the end of 2015.
  run by a virtual machine.
  There are a few virtual machine implementations available, including a
  native one, one running on the Java Virtual Machine, and one for JavaScript.
+ The native one, 
+\begin_inset Quotes eld
+\end_inset
+
+MoarVM
+\begin_inset Quotes erd
+\end_inset
+
+, is the most complete of these.
+ Perl 6 has many complex and capable programming constructs included with
+ it.
+ Consequently, it seems quite capable to me.
+ The main detriment compared to other programming languages in general that
+ it seems very module-centric, and that it is fairly a new language, and
+ consequently that it does not have a substantial amount of documentation
+ available for it.
+ Another issue that bothers me specifically, is that it lacks strong facilities
+ out of the box for use as a shell REPL environment and shell-style use
+ for executing external shell commands and manipulating their output, although
+ this is a problem shared by many languages that are not purpose-built as
+ shell languages.
+ The problem with being a module-centric language, exascerbated by it being
+ a new language, is that packages for it are not available easily as native
+ packages.
+ This is also a common issue with languages that come with their own package
+ managers, such as .NET's NuGet, Node.js's npm, and Python's pip.
+ The consequence of this is that there is no significant pressure on package
+ maintainers to keep their packages up to date and interoperable, because
+ any given app only needs to work with one version of each package on which
+ it depends.
+ That system, however, breaks down when an app depends on two packages,
+ each of which depend on a conflicting version of the same package, and
+ one wants to avoid having outdated versions of the packages installed on
+ one's system: the standard model of an elegant one-minor-version-per-package
+ used by system package managers is broken, and rendered unable to ship
+ the app properly.
 \end_layout
 
 \end_body
