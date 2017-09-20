@@ -105,7 +105,9 @@ Perl 6 is a programming language first released at the end of 2015.
  Consequently, there is not a single official implementation, although the
  Rakudo implementation is currently the most complete implementation available,
  and is the only implementation that is currently available.
- Perl 6 is a general purpose language that is just-in-time compiled to bytecode.
+ Perl 6 is a general purpose language that by default for modules is just-in-tim
+e compiled to bytecode, and for scripts is interpreted, although this can
+ be changed.
  The language is implemented using a subset language called NQP, which is
  run by a virtual machine.
  There are a few virtual machine implementations available, including a
