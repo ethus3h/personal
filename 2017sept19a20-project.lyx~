@@ -190,7 +190,14 @@ lstinline!wantsarray!
 \end_inset
 
  construct from Perl is not available in Perl 6, according to the language
- FAQ.
+ FAQ
+\begin_inset CommandInset citation
+LatexCommand cite
+key "P6FAQ"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
