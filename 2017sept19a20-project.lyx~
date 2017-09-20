@@ -204,7 +204,7 @@ key "P6FAQ"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "2017sept20-p6bib"
-options "plain"
+options "plainnat"
 
 \end_inset
 

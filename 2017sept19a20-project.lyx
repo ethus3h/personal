@@ -176,7 +176,7 @@ patterns
  not being available in Perl 6, thus necessitating working around their
  absence.
  My lack of familiarity with Perl prevents my assessing thoroughly the extent
- of this as being a problem, but apparently the
+ of this as being a problem, but apparently the 
 \begin_inset ERT
 status open
 
