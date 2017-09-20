@@ -1,21 +1,30 @@
 #!/usr/bin/env perl6
-my $argument1 = EM.parse(Q[String foo(String, String qux?, *):
-foo(bar baz)
-foo(qux=6 bar)]);
-my $n = Q[    say $!par[1]$!par[2]$qux
+use v6;
 
-# Test simple invocation
-foo(bar baz)
-foo(bar 6 qux) # qux is 6, param 0 is bar, param 1 is 6, and param 2 is qux
-foo(qux=6 bar) # qux is still 6, but now parameter 0 is 6 and 1 is bar
+my $argument1 = +(prompt("What is the first number? "));
+if ! ( ( Int === $argument1.WHAT ) || ( Num === $argument1.WHAT ) ) {
+    fail "That doesn't look like a number."
+}
 
-# Test simple invocation, parenthesis-less style
-foo bar baz
-foo bar 6 qux # qux is 6, param 0 is bar, param 1 is 6, and param 2 is qux
-foo qux=6 bar # qux is still 6, but now parameter 0 is 6 and 1 is bar
+my $argument2 = +(prompt("What is the second number? "));
+if ! (
+        ( Int === $argument2.WHAT ) ||
+        ( Num === $argument2.WHAT ) ||
+        ( Rat === $argument2.WHAT )
+    )
+{
+    say $argument2.WHAT;
+    fail "That doesn't look like a number."
+}
 
-# Test invocation with "invoke"
-routineName="foo"
-invoke $routineName bar baz
-];
-say $m;
+if  ( ( Int === $argument1.WHAT ) || ( Num === $argument1.WHAT ) ) &&
+    ( ( Int === $argument2.WHAT ) || ( Num === $argument2.WHAT ) )
+{
+    say "$argument1 + $argument2 = " ~ $argument1 + $argument2;
+    say "$argument1 - $argument2 = " ~ $argument1 - $argument2;
+    say "$argument1 * $argument2 = " ~ $argument1 * $argument2;
+    say "$argument1 / $argument2 = " ~ $argument1 / $argument2;
+    say "$argument1 / 0 = " ~ $argument1 / 0;
+}
+else {
+}
