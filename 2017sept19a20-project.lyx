@@ -148,9 +148,12 @@ MoarVM
  one's system: the standard model of an elegant one-minor-version-per-package
  used by system package managers is broken, and rendered unable to ship
  the app properly.
- While being a new language could conceivably be a problem because of a
- lack of available libraries for a language, this problem is avoided by
- Perl 6 by including a system for interacting with 
+\end_layout
+
+\begin_layout Standard
+While being a new language could conceivably be a problem because of a lack
+ of available libraries for a language, this problem is avoided by Perl
+ 6 by including a system for interacting with 
 \begin_inset Quotes eld
 \end_inset
 
@@ -220,8 +223,12 @@ key "P6FAQ"
  that decimals will follow the traditional rules of arithmetic rather than
  the slightly strange behavior of floating-point numbers (floating-point
  numbers will produce unexpected results in some cases when doing arithmetic
- on them).
+ on them), but at the cost of performance.
  Floating-point numbers can be used if they are desired, though.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
