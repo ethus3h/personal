@@ -63,5 +63,8 @@ say "Testing division by zero: $argument1 / 0";
 }
 say "Testing division by zero done.";
 
-say "Showing off Unicode support"
-say ꯸ + ꤄
+say "Showing off Unicode support";
+say "꯸ + ꤄ + 𒐟 = " ~ ꯸ + ꤄ + 𒐟; # U+ABF8 MEETEI MAYEK DIGIT EIGHT + U+A904 KAYAH LI DIGIT FOUR + U+1241F CUNEIFORM NUMERIC SIGN TWO GESHU
+
+# Blank line in case the typeface the terminal uses for the preceding line is larger than the terminal's native line height
+say '';
