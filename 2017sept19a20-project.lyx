@@ -216,6 +216,12 @@ key "P6FAQ"
 \end_inset
 
 .
+ Perl 6 uses rational numbers by default, rather than floating point, so
+ that decimals will follow the traditional rules of arithmetic rather than
+ the slightly strange behavior of floating-point numbers (floating-point
+ numbers will produce unexpected results in some cases when doing arithmetic
+ on them).
+ Floating-point numbers can be used if they are desired, though.
 \end_layout
 
 \begin_layout Standard
