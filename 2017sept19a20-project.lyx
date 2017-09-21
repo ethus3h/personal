@@ -294,6 +294,12 @@ key "Documentation_2"
 \end_layout
 
 \begin_layout Standard
+Perl 6 seems to have good prospects ahead of it, being a new language.
+ Now that it has been released, it will presumably see extensive testing,
+ and consequent development, due to its being in more widespread use.
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
