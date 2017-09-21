@@ -30,4 +30,11 @@ say "$argument1 + $argument2 = " ~ $argument1 + $argument2;
 say "$argument1 - $argument2 = " ~ $argument1 - $argument2;
 say "$argument1 * $argument2 = " ~ $argument1 * $argument2;
 say "$argument1 / $argument2 = " ~ $argument1 / $argument2;
-say "$argument1 / 0 = " ~ $argument1 / 0;
+
+# We need to catch exception in division by zero.
+try {
+    say "$argument1 / 0 = " ~ $argument1 / 0;
+}
+CATCH {
+    default { say "This threw an exception like it's supposed to." }
+}
