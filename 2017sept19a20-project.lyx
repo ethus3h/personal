@@ -121,6 +121,13 @@ MoarVM
 \end_inset
 
 , is the most complete of these.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "project"
+
+\end_inset
+
  Perl 6 has many complex and capable programming constructs included with
  it.
  Consequently, it seems quite capable to me.

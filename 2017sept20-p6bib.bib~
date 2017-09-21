@@ -92,8 +92,10 @@
 	address = {https://docs.perl6.org/},
 	author = {Documentation, Perl 6},
 	howpublished = {Web},
+	month = {19 Sept.},
 	note = {The official Perl 6 documentation is very helpful for getting an understanding of the language.},
-	title = {Perl 6 Documentation}
+	title = {Perl 6 Documentation},
+	year = {2017}
 }
 
 @article{Language,
@@ -126,7 +128,10 @@
 @article{Documentation_2,
 	address = {https://docs.perl6.org/language/grammars},
 	author = {Documentation, Perl 6},
+	howpublished = {Web},
+	month = {19 Sept.},
 	note = {This documentation page was one of my primary sources for getting an understanding of the scope and capabilities of grammars in Perl 6.},
-	title = {Grammars}
+	title = {Grammars},
+	year = {2017}
 }
 

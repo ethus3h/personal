@@ -275,6 +275,13 @@ actions
 \emph default
  are available (a type of class that allows the parse process to call its
  methods).
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation_2"
+
+\end_inset
+
  This allows hooking into the parse process with other code, to allow a
  wide range of uses outside the traditional scope of grammars.
 \end_layout

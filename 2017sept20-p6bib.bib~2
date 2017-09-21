@@ -113,7 +113,7 @@
 	year = {2017}
 }
 
-@article{New1,
+@article{project,
 	address = {https://github.com/perl6/nqp},
 	author = {project, Perl 6},
 	howpublished = {Web},
@@ -121,5 +121,12 @@
 	note = {This is where I got information about how Perl 6 is implemented, and its portability.},
 	title = {NQP - Not Quite Perl (6): README.pod},
 	year = {2017}
+}
+
+@article{Documentation_2,
+	address = {https://docs.perl6.org/language/grammars},
+	author = {Documentation, Perl 6},
+	note = {This documentation page was one of my primary sources for getting an understanding of the scope and capabilities of grammars in Perl 6.},
+	title = {Grammars}
 }
 
