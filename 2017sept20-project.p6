@@ -19,7 +19,6 @@ if ! (
         ( Rat === $argument1.WHAT )
     )
 {
-    say $argument1.WHAT;
     fail "That doesn't look like a number."
 }
 
@@ -33,7 +32,6 @@ if ! (
         ( Rat === $argument2.WHAT )
     )
 {
-    say $argument2.WHAT;
     fail "That doesn't look like a number."
 }
 
@@ -64,3 +62,6 @@ say "Testing division by zero: $argument1 / 0";
     }
 }
 say "Testing division by zero done.";
+
+say "Showing off Unicode support"
+say ꯸ + ꤄
