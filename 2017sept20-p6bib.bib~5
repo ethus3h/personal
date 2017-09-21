@@ -44,12 +44,22 @@
 	year = {2011}
 }
 
-@book{Lenz,
+@book{Lenz2017,
 	address = {doi:10.1007/978-1-4842-2899-9},
 	author = {Lenz, Moritz},
 	isbn = {978-1-4842-2899-9},
 	location = {Fürth, Bayern, Germany},
 	title = {Perl 6 Fundamentals: A Primer with Examples, Projects, and Case Studies},
 	year = {2017}
+}
+
+@article{Lenz2010,
+	address = {https://perlgeek.de/en/article/debug-a-perl-6-grammar},
+	author = {Lenz, Moritz},
+	howpublished = {Web},
+	month = {1 Sept.},
+	publisher = {Perl Programming},
+	title = {How To Debug a Perl 6 Grammar},
+	year = {2010}
 }
 
