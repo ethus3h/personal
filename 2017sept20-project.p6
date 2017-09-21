@@ -9,7 +9,7 @@ if ! (
         ( Rat === $argument1.WHAT )
     )
 {
-    say $argument2.WHAT;
+    say $argument1.WHAT;
     fail "That doesn't look like a number."
 }
 
@@ -32,9 +32,11 @@ say "$argument1 * $argument2 = " ~ $argument1 * $argument2;
 say "$argument1 / $argument2 = " ~ $argument1 / $argument2;
 
 # We need to catch exception in division by zero.
-try {
+# This is in braces to give it its own scope, so it doesn't catch exceptions thrown by the earlier code.
+{
+    say "Testing division by zero: $argument1 / 0";
     say "$argument1 / 0 = " ~ $argument1 / 0;
-}
-CATCH {
-    default { say "This threw an exception like it's supposed to." }
+    CATCH {
+        default { say "This threw an exception (as expected)." }
+    }
 }
