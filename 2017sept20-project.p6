@@ -5,14 +5,14 @@ use v6;
 say '';
 
 # Get the first argument, and check its type
-my $argument1 = prompt("What is the first number? ");
+my $argument1str = prompt("What is the first number? ");
 
-# Check if it's empty. Empty string becomes 0 when cast to a number, and that isn't desirable.
-( $argument1 === '' ) && fail "That is an empty string.";
+# Check if it's empty. Empty string becomes 0 when cast to a number, and I think that would be surprising in interactive use.
+( $argument1str === '' ) && fail "That is an empty string.";
 
-# Cast it to a number, and check its type to make sure it came through OK.
-my $argument1 = +($argument1);
-my $foo = ''; ( $foo === '' ) && say 'fail';
+# Tell it to use it as a number-y thing, and check its type afterwards to make sure it actually is a number.
+my $argument1 = +($argument1str); # We can't use the variable to initialize itself, 
+                                  #     so my $argument1str = +($argument1str) isn't an option.
 if ! (
         ( Int === $argument1.WHAT ) ||
         ( Num === $argument1.WHAT ) ||
@@ -23,8 +23,10 @@ if ! (
     fail "That doesn't look like a number."
 }
 
-# Get the second argument, and check its type
-my $argument2 = +(prompt("What is the second number? "));
+# Get the second argument, and check it
+my $argument2str = prompt("What is the second number? ");
+( $argument2str === '' ) && fail "That is an empty string.";
+my $argument2 = +($argument2str);
 if ! (
         ( Int === $argument2.WHAT ) ||
         ( Num === $argument2.WHAT ) ||
