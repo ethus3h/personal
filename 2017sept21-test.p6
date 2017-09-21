@@ -81,7 +81,7 @@
             <type> |
 
             [ <declaration> \?? ] |
-
+[ <declaration> \? ] |
             <value>
 
         }
