@@ -7,6 +7,7 @@
 	author = {Documentation, Perl 6},
 	howpublished = {Web},
 	month = {19 Sept.},
+	note = {I used this article to learn some basic information about Perl 6.},
 	organization = {perl6.org},
 	owner = {kyan},
 	timestamp = {2017.09.20},
@@ -19,6 +20,7 @@
 	author = {Holloway, Ruth},
 	howpublished = {Web},
 	month = {23 Sept.},
+	note = {This article provided a resource for learning about some of the things that distinguish and differentiate Perl 6 from other languages.},
 	publisher = {opensource.com},
 	title = {The must-have features for {Perl} 6},
 	year = {2016}
@@ -29,6 +31,7 @@
 	author = {Miller, Evan},
 	howpublished = {Web},
 	month = {13 Aug.},
+	note = {This article discusses Perl 6's merits and weaknesses.},
 	publisher = {Evanmiller.org},
 	title = {A Review of {Perl} 6},
 	year = {2017}
@@ -40,6 +43,7 @@
 	howpublished = {Web},
 	journal = {Perl 6 Advent Calendar},
 	month = {2 Dec.},
+	note = {Debugging grammars is hard out of the box.},
 	title = {{Grammar}::{Tracer} and {Grammar}::{Debugger}},
 	year = {2011}
 }
@@ -49,6 +53,7 @@
 	author = {Lenz, Moritz},
 	isbn = {978-1-4842-2899-9},
 	location = {Fürth, Bayern, Germany},
+	note = {This book provides a general introduction to Perl 6. It seems quite accessible to me.},
 	title = {Perl 6 Fundamentals: A Primer with Examples, Projects, and Case Studies},
 	year = {2017}
 }
@@ -58,6 +63,7 @@
 	author = {Lenz, Moritz},
 	howpublished = {Web},
 	month = {1 Sept.},
+	note = {This is more information on debugging Perl 6 grammars.},
 	publisher = {Perl Programming},
 	title = {How To Debug a Perl 6 Grammar},
 	year = {2010}
@@ -67,6 +73,7 @@
 	address = {https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples},
 	author = {Overflow, Stack},
 	howpublished = {Web},
+	note = {A citation for the claim regarding floating points being a little odd.},
 	title = {Floating point inaccuracy examples},
 	year = {2010–2013}
 }
@@ -76,6 +83,7 @@
 	author = {News, Hacker},
 	howpublished = {Web},
 	month = {Nov.},
+	note = {This is where I learned that Perl 6 Rationals aren't arbitrary-precision.},
 	title = {Why hasn't Perl 6 taken off yet?},
 	year = {2016}
 }
@@ -84,6 +92,24 @@
 	address = {https://docs.perl6.org/},
 	author = {Documentation, Perl 6},
 	howpublished = {Web},
+	note = {The official Perl 6 documentation is very helpful for getting an understanding of the language.},
 	title = {Perl 6 Documentation}
+}
+
+@article{Language,
+	address = {https://perl6.org/},
+	author = {Language, The Perl 6 Programming},
+	howpublished = {Web},
+	note = {This home page for the Perl 6 language introduces it and its culture. Retrieved 20 Sept. 2017.},
+	title = {The Perl 6 Programming Language},
+	year = {n.d.}
+}
+
+@article{RosenfeldDowney,
+	author = {Rosenfeld, Laurent and Downey, Allen B.},
+	note = {I used this book as a supplementary resource for getting an overview of Perl 6.},
+	publisher = {O'Reilly Media, Inc.},
+	title = {Think Perl 6},
+	year = {2017}
 }
 

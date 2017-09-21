@@ -189,7 +189,14 @@ patterns
  expressions are still available in Perl 6 in case they are needed.
  Perl 6 has many other features, as well, that contribute to it being effective
  and capable at solving a wide range of other problems.
- Its mascot is a butterfly named Camelia.
+ Its mascot is a butterfly named Camelia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
  It integrates several techniques different from the way Perl works, such
  as using lazy evaluation.
  This creates some changes in the way the language operates compared to
@@ -219,21 +226,63 @@ key "P6FAQ"
 \end_inset
 
 .
- Perl 6 uses rational numbers by default, rather than floating point, so
- that decimals will follow the traditional rules of arithmetic rather than
- the slightly strange behavior of floating-point numbers (floating-point
- numbers will produce unexpected results in some cases when doing arithmetic
- on them), but at the cost of performance.
+ Perl 6 uses (limited-precision 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "News"
+
+\end_inset
+
+) rational numbers by default, rather than floating point, so that decimals
+ will follow the traditional rules of arithmetic rather than the slightly
+ strange behavior of floating-point numbers (floating-point numbers will
+ produce unexpected results in some cases when doing arithmetic on them
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Overflow"
+
+\end_inset
+
+), but at the cost of performance.
  Floating-point numbers can be used if they are desired, though.
 \end_layout
 
 \begin_layout Standard
+Perl 6 
+\emph on
+grammars
+\emph default
+ are an extremely expressive tool for writing parsers for languages and
+ document formats.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
 
+\end_inset
+
+ They are a way to specify the syntax of a language in such a way that given
+ a grammar and a string to parse using it, the Perl 6 language can build
+ an abstract syntax tree that can be used by code generators for compiling
+ a language, or by other tools that can work with abstract syntax trees.
+ A grammar is a set of patterns (which can be named, and reference each
+ other) using which the input string is parsed.
+ A Perl 6 grammar is a class, so it can be used as other classes.
+ To allow better expressivity from grammars, 
+\emph on
+actions
+\emph default
+ are available (a type of class that allows the parse process to call its
+ methods).
+ This allows hooking into the parse process with other code, to allow a
+ wide range of uses outside the traditional scope of grammars.
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintAll"
 bibfiles "2017sept20-p6bib"
 options "plainnat"
 

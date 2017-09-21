@@ -100,7 +100,33 @@
 	address = {https://perl6.org/},
 	author = {Language, The Perl 6 Programming},
 	howpublished = {Web},
-	note = {This home page for the Perl 6 language introduces it and its culture.},
-	title = {The Perl 6 Programming Language}
+	note = {This home page for the Perl 6 language introduces it and its culture. Retrieved 20 Sept. 2017.},
+	title = {The Perl 6 Programming Language},
+	year = {n.d.}
+}
+
+@article{RosenfeldDowney,
+	author = {Rosenfeld, Laurent and Downey, Allen B.},
+	note = {I used this book as a supplementary resource for getting an overview of Perl 6.},
+	publisher = {O'Reilly Media, Inc.},
+	title = {Think Perl 6},
+	year = {2017}
+}
+
+@article{project,
+	address = {https://github.com/perl6/nqp},
+	author = {project, Perl 6},
+	howpublished = {Web},
+	month = {31 May},
+	note = {This is where I got information about how Perl 6 is implemented, and its portability.},
+	title = {NQP - Not Quite Perl (6): README.pod},
+	year = {2017}
+}
+
+@article{Documentation_2,
+	address = {https://docs.perl6.org/language/grammars},
+	author = {Documentation, Perl 6},
+	note = {This documentation page was one of my primary sources for getting an understanding of the scope and capabilities of grammars in Perl 6.},
+	title = {Grammars}
 }
 
