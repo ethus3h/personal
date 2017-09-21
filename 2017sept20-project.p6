@@ -16,10 +16,11 @@ my $argument1 = +($argument1str); # We can't use the variable to initialize itse
 if ! (
         ( Int === $argument1.WHAT ) ||
         ( Num === $argument1.WHAT ) ||
-        ( Rat === $argument1.WHAT )
+        ( Rat === $argument1.WHAT ) ||
+        ( Real === $argument1.WHAT )
     )
 {
-    fail "That doesn't look like a number."
+    fail "That doesn't look like a number.";
 }
 
 # Get the second argument, and check it
@@ -29,16 +30,31 @@ my $argument2 = +($argument2str);
 if ! (
         ( Int === $argument2.WHAT ) ||
         ( Num === $argument2.WHAT ) ||
-        ( Rat === $argument2.WHAT )
+        ( Rat === $argument2.WHAT ) ||
+        ( Real === $argument2.WHAT )
     )
 {
-    fail "That doesn't look like a number."
+    fail "That doesn't look like a number.";
 }
 
 # Blank line
 say '';
 
 # Print out the answers.
+say "Integer part of $argument1: " ~ truncate($argument1);
+say "Decimal part of $argument1: " ~ $argument1 - truncate($argument1);
+say "Decimal part of $argument1 as fraction: " ~ ($argument1 - truncate($argument1)).Rat().nude.join('/');
+
+# Blank line
+say '';
+
+say "Integer part of $argument2: " ~ truncate($argument2);
+say "Decimal part of $argument2: " ~ $argument2 - truncate($argument2);
+say "Decimal part of $argument2 as fraction: " ~ ($argument2 - truncate($argument2)).Rat().nude.join('/');
+
+# Blank line
+say '';
+
 say "$argument1 + $argument2 = " ~ $argument1 + $argument2;
 say "$argument1 - $argument2 = " ~ $argument1 - $argument2;
 say "$argument1 * $argument2 = " ~ $argument1 * $argument2;
