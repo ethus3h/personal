@@ -1,6 +1,6 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%  This file was created with JabRef 2.10.
+%   This file was created with JabRef 2.10.
 
 @article{P6FAQ,
 	address = {https://docs.perl6.org/language/faq},
@@ -14,7 +14,7 @@
 	year = {2017}
 }
 
-@article{New1,
+@article{Holloway,
 	address = {https://opensource.com/life/16/9/perl-6-features},
 	author = {Holloway, Ruth},
 	howpublished = {Web},
@@ -24,7 +24,7 @@
 	year = {2016}
 }
 
-@article{New2,
+@article{Miller,
 	address = {https://www.evanmiller.org/a-review-of-perl-6.html},
 	author = {Miller, Evan},
 	howpublished = {Web},
@@ -32,5 +32,34 @@
 	publisher = {Evanmiller.org},
 	title = {A Review of {Perl} 6},
 	year = {2017}
+}
+
+@article{jnthnwrthngtn,
+	address = {https://perl6advent.wordpress.com/2011/12/02/grammartracer-and-grammardebugger/},
+	author = {jnthnwrthngtn},
+	howpublished = {Web},
+	journal = {Perl 6 Advent Calendar},
+	month = {2 Dec.},
+	title = {{Grammar}::{Tracer} and {Grammar}::{Debugger}},
+	year = {2011}
+}
+
+@book{Lenz2017,
+	address = {doi:10.1007/978-1-4842-2899-9},
+	author = {Lenz, Moritz},
+	isbn = {978-1-4842-2899-9},
+	location = {Fürth, Bayern, Germany},
+	title = {Perl 6 Fundamentals: A Primer with Examples, Projects, and Case Studies},
+	year = {2017}
+}
+
+@article{Lenz2010,
+	address = {https://perlgeek.de/en/article/debug-a-perl-6-grammar},
+	author = {Lenz, Moritz},
+	howpublished = {Web},
+	month = {1 Sept.},
+	publisher = {Perl Programming},
+	title = {How To Debug a Perl 6 Grammar},
+	year = {2010}
 }
 

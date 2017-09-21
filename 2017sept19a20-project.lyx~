@@ -228,6 +228,10 @@ key "P6FAQ"
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "2017sept20-p6bib"

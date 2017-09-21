@@ -1,6 +1,6 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%   This file was created with JabRef 2.10.
+%    This file was created with JabRef 2.10.
 
 @article{P6FAQ,
 	address = {https://docs.perl6.org/language/faq},
@@ -44,12 +44,46 @@
 	year = {2011}
 }
 
-@book{Lenz,
+@book{Lenz2017,
 	address = {doi:10.1007/978-1-4842-2899-9},
 	author = {Lenz, Moritz},
 	isbn = {978-1-4842-2899-9},
 	location = {Fürth, Bayern, Germany},
 	title = {Perl 6 Fundamentals: A Primer with Examples, Projects, and Case Studies},
 	year = {2017}
+}
+
+@article{Lenz2010,
+	address = {https://perlgeek.de/en/article/debug-a-perl-6-grammar},
+	author = {Lenz, Moritz},
+	howpublished = {Web},
+	month = {1 Sept.},
+	publisher = {Perl Programming},
+	title = {How To Debug a Perl 6 Grammar},
+	year = {2010}
+}
+
+@article{Overflow,
+	address = {https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples},
+	author = {Overflow, Stack},
+	howpublished = {Web},
+	title = {Floating point inaccuracy examples},
+	year = {2010–2013}
+}
+
+@article{News,
+	address = {https://news.ycombinator.com/item?id=12888784},
+	author = {News, Hacker},
+	howpublished = {Web},
+	month = {Nov.},
+	title = {Why hasn't Perl 6 taken off yet?},
+	year = {2016}
+}
+
+@article{Documentation,
+	address = {https://docs.perl6.org/},
+	author = {Documentation, Perl 6},
+	howpublished = {Web},
+	title = {Perl 6 Documentation}
 }
 

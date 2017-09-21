@@ -189,7 +189,7 @@ patterns
  expressions are still available in Perl 6 in case they are needed.
  Perl 6 has many other features, as well, that contribute to it being effective
  and capable at solving a wide range of other problems.
- Its mascot is a butterfly named Camelia.
+ Its mascot is a butterfly named Camelia .
  It integrates several techniques different from the way Perl works, such
  as using lazy evaluation.
  This creates some changes in the way the language operates compared to
@@ -219,11 +219,25 @@ key "P6FAQ"
 \end_inset
 
 .
- Perl 6 uses (limited-precision) rational numbers by default, rather than
- floating point, so that decimals will follow the traditional rules of arithmeti
-c rather than the slightly strange behavior of floating-point numbers (floating-
-point numbers will produce unexpected results in some cases when doing arithmeti
-c on them), but at the cost of performance.
+ Perl 6 uses (limited-precision 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "News"
+
+\end_inset
+
+) rational numbers by default, rather than floating point, so that decimals
+ will follow the traditional rules of arithmetic rather than the slightly
+ strange behavior of floating-point numbers (floating-point numbers will
+ produce unexpected results in some cases when doing arithmetic on them
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Overflow"
+
+\end_inset
+
+), but at the cost of performance.
  Floating-point numbers can be used if they are desired, though.
 \end_layout
 

@@ -219,16 +219,30 @@ key "P6FAQ"
 \end_inset
 
 .
- Perl 6 uses rational numbers by default, rather than floating point, so
- that decimals will follow the traditional rules of arithmetic rather than
- the slightly strange behavior of floating-point numbers (floating-point
- numbers will produce unexpected results in some cases when doing arithmetic
- on them), but at the cost of performance.
+ Perl 6 uses (limited-precision 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "News"
+
+\end_inset
+
+) rational numbers by default, rather than floating point, so that decimals
+ will follow the traditional rules of arithmetic rather than the slightly
+ strange behavior of floating-point numbers (floating-point numbers will
+ produce unexpected results in some cases when doing arithmetic on them
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Overflow"
+
+\end_inset
+
+), but at the cost of performance.
  Floating-point numbers can be used if they are desired, though.
 \end_layout
 
 \begin_layout Standard
-
+Perl 6 has a Grammars feature.
 \end_layout
 
 \begin_layout Standard
