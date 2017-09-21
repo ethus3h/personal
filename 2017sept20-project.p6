@@ -11,6 +11,9 @@ my $argument1str = prompt("What is the first number? ");
 ( $argument1str === '' ) && fail "That is an empty string.";
 
 # Tell it to use it as a number-y thing, and check its type afterwards to make sure it actually is a number.
+# This will usually create a Rat (rational number, made of a numerator and denominator).
+# Traditional floating point numbers could be used, but don't really offer any advantage unless the input is actually a float.
+# I'm assuming here that the input is a "normal" looking number, rather than a float in hexadecimal or binary or something.
 my $argument1 = +($argument1str); # We can't use the variable to initialize itself, 
                                   #     so my $argument1str = +($argument1str) isn't an option.
 if ! (
@@ -79,5 +82,13 @@ say "Testing division by zero: $argument1 / 0";
 }
 say "Testing division by zero done.";
 
+# Blank line
+say '';
+
 say "Showing off Unicode support 😊️";
 say "꯸ + ꤄ + 𒐟 = " ~ ꯸ + ꤄ + 𒐟; # U+ABF8 MEETEI MAYEK DIGIT EIGHT + U+A904 KAYAH LI DIGIT FOUR + U+1241F CUNEIFORM NUMERIC SIGN TWO GESHU
+
+# Blank line
+say '';
+
+say "Done everything!"
