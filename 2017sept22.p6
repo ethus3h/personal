@@ -5,8 +5,8 @@ class St {
 };
 
 grammar EM {
+    :my $*ST = St.new();
     token TOP {
-        :my $*ST = St.new();
     };
     method block {
         $*ST.enter();
