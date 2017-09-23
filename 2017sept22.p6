@@ -5,7 +5,7 @@ class St {
 };
 
 grammar EM {
-    has St $.ST;
+    has St $.ST = St.new();
     token TOP {
         <block>
     };
