@@ -7,7 +7,7 @@ class Baz {
     has Foo $.a = Foo.new();
 
     method qux {
-        $.a.bar();
+        # $.a.bar();
         LEAVE $.a.bar();
     }
 }
@@ -15,4 +15,4 @@ class Baz {
 
 # LEAVE $.a.bar();
 
-EM.new().qux();
+Baz.new().qux();
