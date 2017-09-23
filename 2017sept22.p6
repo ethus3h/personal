@@ -1,3 +1,5 @@
+#!/usr/bin/env perl6
+
 class St {
     method qux() { say "OK"; };
 };
