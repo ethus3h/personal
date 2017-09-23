@@ -7,6 +7,7 @@ class St {
 grammar EM {
     has St $.ST;
     token TOP {
+        <block>
     };
     method block {
         $*ST.enter();
