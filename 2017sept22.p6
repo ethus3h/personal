@@ -1,18 +1,1 @@
-class Foo {
-    method bar() {
-        say "OK";
-    }
-}
-class Baz {
-    has Foo $.a = Foo.new();
-
-    method qux {
-        # $.a.bar();
-        LEAVE $.a.bar();
-    }
-}
-
-
-# LEAVE $.a.bar();
-
-Baz.new().qux();
+EM { token TOP { :my $*ST = St.new(); }; method block { $*ST.enter(); }; token foo { <block> '!' }; }; say EM.parse('!', :<foo>);
