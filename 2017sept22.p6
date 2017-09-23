@@ -1,9 +1,15 @@
-grammar EM does Grammar::ErrorReporting {
-    has SymbolTable $.ST = SymbolTable.new();
-
-    method block {
-        $.ST.enter-scope();
-        LEAVE $.ST.leave-scope();
-        self.block_wrapped();
+class Foo {
+    method bar() {
+        say "OK";
     }
 }
+grammar EM {
+    has Foo $.a = Foo.new();
+
+    method qux {
+        $.a.bar();
+    }
+}
+
+
+# LEAVE $.a.leave-scope();
