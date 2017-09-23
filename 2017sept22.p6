@@ -1,15 +1,9 @@
-class Foo {
-    method qux {
-        say "OK";
-    }
-}
-Foo.new().qux();
+grammar EM does Grammar::ErrorReporting {
+    has SymbolTable $.ST = SymbolTable.new();
 
-class Baz {
-    has Foo $.foo;
-    method bar {
-        $.foo.qux();
+    method block {
+        $.ST.enter-scope();
+        LEAVE $.ST.leave-scope();
+        self.block_wrapped();
     }
 }
-Foo.new().qux();
-Baz.new().bar();
