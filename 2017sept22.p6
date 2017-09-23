@@ -3,13 +3,16 @@ class Foo {
         say "OK";
     }
 }
-grammar EM {
+class Baz {
     has Foo $.a = Foo.new();
 
     method qux {
         $.a.bar();
+        LEAVE $.a.bar();
     }
 }
 
 
-# LEAVE $.a.leave-scope();
+# LEAVE $.a.bar();
+
+EM.new().qux();
