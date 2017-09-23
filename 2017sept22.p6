@@ -5,7 +5,7 @@ class St {
 };
 
 grammar EM {
-    :my $*ST = St.new();
+    has St $.ST;
     token TOP {
     };
     method block {
