@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mlt title="Anonymous Submission" LC_NUMERIC="en_US.UTF-8" producer="main bin" version="6.4.1" root="/home/kyan">
- <profile frame_rate_num="60000" sample_aspect_num="1" display_aspect_den="4" colorspace="709" progressive="1" description="2017sept25" display_aspect_num="5" frame_rate_den="1000" width="2160" height="2700" sample_aspect_den="1"/>
+ <profile frame_rate_num="240" sample_aspect_num="1" display_aspect_den="4" colorspace="709" progressive="1" description="2017sept25" display_aspect_num="5" frame_rate_den="1" width="2160" height="2700" sample_aspect_den="1"/>
  <playlist id="main bin">
   <property name="kdenlive:docproperties.audiotargettrack">2</property>
   <property name="kdenlive:docproperties.dirtypreviewchunks"/>
