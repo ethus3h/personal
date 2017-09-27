@@ -1,234 +1,73 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mlt title="Anonymous Submission" LC_NUMERIC="en_US.UTF-8" producer="main bin" version="6.4.1" root="/home/kyan">
- <profile frame_rate_num="240" sample_aspect_num="1" display_aspect_den="4" colorspace="709" progressive="1" description="2017sept25" display_aspect_num="5" frame_rate_den="1" width="2160" height="2700" sample_aspect_den="1"/>
- <producer title="Anonymous Submission" id="5" in="0" out="1558">
-  <property name="length">00:04:08:02</property>
+ <profile frame_rate_num="500000" sample_aspect_num="72" display_aspect_den="640" colorspace="601" progressive="1" description="640x426 6.28fps" display_aspect_num="426" frame_rate_den="10000" width="640" height="426" sample_aspect_den="72"/>
+ <producer title="Anonymous Submission" id="10" in="0" out="54860">
+  <property name="length">00:18:17:11</property>
   <property name="eof">pause</property>
-  <property name="resource">2017sept27film/Movie on 2017.09.27 at 16.46.53.75200.-0400.mov</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">6.27673</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">426</property>
-  <property name="meta.media.0.codec.rotate">0</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">mjpeg</property>
-  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
-  <property name="meta.media.0.codec.bit_rate">1321209</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T20:46:53.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">1378</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T20:46:54.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-09-27T20:46:53.000000Z</property>
+  <property name="resource">2017sept27n2.flac.wav</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">pcm_s16le</property>
+  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
+  <property name="meta.media.0.codec.bit_rate">1411200</property>
   <property name="seekable">1</property>
-  <property name="meta.media.sample_aspect_num">72</property>
-  <property name="meta.media.sample_aspect_den">72</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">41109412</property>
-  <property name="kdenlive:file_hash">6350a6879af7164429069866162296a0</property>
-  <property name="global_feed">1</property>
-  <property name="meta.media.frame_rate_num">934800</property>
-  <property name="meta.media.frame_rate_den">148931</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">426</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="6" in="0" out="1232">
-  <property name="length">00:03:16:03</property>
-  <property name="eof">pause</property>
-  <property name="resource">2017sept27film/Movie on 2017.09.27 at 16.52.41.45100.-0400.mov</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">6.46833</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">426</property>
-  <property name="meta.media.0.codec.rotate">0</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">mjpeg</property>
-  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
-  <property name="meta.media.0.codec.bit_rate">1374472</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T20:52:41.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">1378</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T20:52:41.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-09-27T20:52:41.000000Z</property>
-  <property name="seekable">1</property>
-  <property name="meta.media.sample_aspect_num">72</property>
-  <property name="meta.media.sample_aspect_den">72</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">33799472</property>
-  <property name="kdenlive:file_hash">1ce46638e25ced8212f6c09b9e481371</property>
-  <property name="global_feed">1</property>
-  <property name="meta.media.frame_rate_num">95175</property>
-  <property name="meta.media.frame_rate_den">14714</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">426</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="7" in="0" out="793">
-  <property name="length">00:02:06:03</property>
-  <property name="eof">pause</property>
-  <property name="resource">2017sept27film/Movie on 2017.09.27 at 16.58.20.87900.-0400.mov</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">6.37195</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">426</property>
-  <property name="meta.media.0.codec.rotate">0</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">mjpeg</property>
-  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
-  <property name="meta.media.0.codec.bit_rate">1901982</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T20:58:20.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">1378</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T20:58:20.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-09-27T20:58:20.000000Z</property>
-  <property name="seekable">1</property>
-  <property name="meta.media.sample_aspect_num">72</property>
-  <property name="meta.media.sample_aspect_den">72</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">30095623</property>
-  <property name="kdenlive:file_hash">eb859d4eb6c78da600ab6957384baf70</property>
-  <property name="global_feed">1</property>
-  <property name="meta.media.frame_rate_num">161000</property>
-  <property name="meta.media.frame_rate_den">25267</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">426</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="8" in="0" out="698">
-  <property name="length">00:01:51:02</property>
-  <property name="eof">pause</property>
-  <property name="resource">2017sept27film/Movie on 2017.09.27 at 17.02.49.28000.-0400.mov</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">6.30093</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">426</property>
-  <property name="meta.media.0.codec.rotate">0</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">mjpeg</property>
-  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
-  <property name="meta.media.0.codec.bit_rate">1797495</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">1378</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
-  <property name="seekable">1</property>
-  <property name="meta.media.sample_aspect_num">72</property>
-  <property name="meta.media.sample_aspect_den">72</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">25049893</property>
-  <property name="kdenlive:file_hash">3626c8573e751d82f2e49ed685bc4ea2</property>
-  <property name="global_feed">1</property>
-  <property name="meta.media.frame_rate_num">52575</property>
-  <property name="meta.media.frame_rate_den">8344</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">426</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="13" in="0" out="1837">
-  <property name="length">00:04:52:05</property>
-  <property name="eof">pause</property>
-  <property name="resource">Downloads/1. McScuse me, BEATS.m4a</property>
   <property name="audio_index">0</property>
   <property name="video_index">-1</property>
   <property name="mute_on_pause">1</property>
   <property name="mlt_service">avformat-novalidate</property>
+  <property name="kdenlive:file_size">193549868</property>
+  <property name="kdenlive:file_hash">407a443d49512b6cf8eff53150bff2b8</property>
+  <property name="global_feed">1</property>
+ </producer>
+ <producer title="Anonymous Submission" id="11" in="0" out="13506">
+  <property name="length">00:04:30:07</property>
+  <property name="eof">pause</property>
+  <property name="resource">2017sept27n3.flac.wav</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">pcm_s16le</property>
+  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
+  <property name="meta.media.0.codec.bit_rate">1411200</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="kdenlive:file_size">47651372</property>
+  <property name="kdenlive:file_hash">d4311130640c78cc767c7c4375c5e904</property>
+  <property name="global_feed">1</property>
+ </producer>
+ <producer title="Anonymous Submission" id="12" in="0" out="30313">
+  <property name="length">00:10:06:14</property>
+  <property name="eof">pause</property>
+  <property name="resource">2017sept27n4.flac.wav</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">pcm_s16le</property>
+  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
+  <property name="meta.media.0.codec.bit_rate">1411200</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="kdenlive:file_size">106947116</property>
+  <property name="kdenlive:file_hash">ec3c3e2e1cf759c8fd6fc0840c1cc991</property>
+  <property name="global_feed">1</property>
+ </producer>
+ <producer title="Anonymous Submission" id="13" in="0" out="14639">
+  <property name="length">00:04:52:40</property>
+  <property name="eof">pause</property>
+  <property name="resource">Downloads/1. McScuse me, BEATS.m4a</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">audio</property>
   <property name="meta.media.0.codec.sample_fmt">s32p</property>
@@ -274,72 +113,233 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">71396386</property>
   <property name="kdenlive:file_hash">35ca44cf21f509aada67401663690307</property>
   <property name="global_feed">1</property>
  </producer>
- <producer title="Anonymous Submission" id="10" in="0" out="263332">
-  <property name="length">00:18:17:053</property>
+ <producer title="Anonymous Submission" id="5" in="0" out="12419">
+  <property name="length">00:04:08:20</property>
   <property name="eof">pause</property>
-  <property name="resource">2017sept27n2.flac.wav</property>
-  <property name="meta.media.nb_streams">1</property>
-  <property name="meta.media.0.stream.type">audio</property>
-  <property name="meta.media.0.codec.sample_fmt">s16</property>
-  <property name="meta.media.0.codec.sample_rate">44100</property>
-  <property name="meta.media.0.codec.channels">2</property>
-  <property name="meta.media.0.codec.name">pcm_s16le</property>
-  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
-  <property name="meta.media.0.codec.bit_rate">1411200</property>
+  <property name="resource">2017sept27film/Movie on 2017.09.27 at 16.46.53.75200.-0400.mov</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">6.27673</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">426</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.frame_rate">600</property>
+  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">mjpeg</property>
+  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
+  <property name="meta.media.0.codec.bit_rate">1321209</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T20:46:53.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">1378</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T20:46:54.000000Z</property>
+  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.major_brand.markup">qt  </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">qt  </property>
+  <property name="meta.attr.creation_time.markup">2017-09-27T20:46:53.000000Z</property>
   <property name="seekable">1</property>
-  <property name="audio_index">0</property>
-  <property name="video_index">-1</property>
+  <property name="meta.media.sample_aspect_num">72</property>
+  <property name="meta.media.sample_aspect_den">72</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
   <property name="mute_on_pause">1</property>
   <property name="mlt_service">avformat-novalidate</property>
-  <property name="kdenlive:file_size">193549868</property>
-  <property name="kdenlive:file_hash">407a443d49512b6cf8eff53150bff2b8</property>
+  <property name="kdenlive:file_size">41109412</property>
+  <property name="kdenlive:file_hash">6350a6879af7164429069866162296a0</property>
   <property name="global_feed">1</property>
+  <property name="meta.media.frame_rate_num">934800</property>
+  <property name="meta.media.frame_rate_den">148931</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">426</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="11" in="0" out="64831">
-  <property name="length">00:04:30:032</property>
+ <producer title="Anonymous Submission" id="6" in="0" out="9819">
+  <property name="length">00:03:16:20</property>
   <property name="eof">pause</property>
-  <property name="resource">2017sept27n3.flac.wav</property>
-  <property name="meta.media.nb_streams">1</property>
-  <property name="meta.media.0.stream.type">audio</property>
-  <property name="meta.media.0.codec.sample_fmt">s16</property>
-  <property name="meta.media.0.codec.sample_rate">44100</property>
-  <property name="meta.media.0.codec.channels">2</property>
-  <property name="meta.media.0.codec.name">pcm_s16le</property>
-  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
-  <property name="meta.media.0.codec.bit_rate">1411200</property>
+  <property name="resource">2017sept27film/Movie on 2017.09.27 at 16.52.41.45100.-0400.mov</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">6.46833</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">426</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.frame_rate">600</property>
+  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">mjpeg</property>
+  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
+  <property name="meta.media.0.codec.bit_rate">1374472</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T20:52:41.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">1378</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T20:52:41.000000Z</property>
+  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.major_brand.markup">qt  </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">qt  </property>
+  <property name="meta.attr.creation_time.markup">2017-09-27T20:52:41.000000Z</property>
   <property name="seekable">1</property>
-  <property name="audio_index">0</property>
-  <property name="video_index">-1</property>
+  <property name="meta.media.sample_aspect_num">72</property>
+  <property name="meta.media.sample_aspect_den">72</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
   <property name="mute_on_pause">1</property>
   <property name="mlt_service">avformat-novalidate</property>
-  <property name="kdenlive:file_size">47651372</property>
-  <property name="kdenlive:file_hash">d4311130640c78cc767c7c4375c5e904</property>
+  <property name="kdenlive:file_size">33799472</property>
+  <property name="kdenlive:file_hash">1ce46638e25ced8212f6c09b9e481371</property>
   <property name="global_feed">1</property>
+  <property name="meta.media.frame_rate_num">95175</property>
+  <property name="meta.media.frame_rate_den">14714</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">426</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="12" in="0" out="145505">
-  <property name="length">00:10:06:066</property>
+ <producer title="Anonymous Submission" id="7" in="0" out="6328">
+  <property name="length">00:02:06:29</property>
   <property name="eof">pause</property>
-  <property name="resource">2017sept27n4.flac.wav</property>
-  <property name="meta.media.nb_streams">1</property>
-  <property name="meta.media.0.stream.type">audio</property>
-  <property name="meta.media.0.codec.sample_fmt">s16</property>
-  <property name="meta.media.0.codec.sample_rate">44100</property>
-  <property name="meta.media.0.codec.channels">2</property>
-  <property name="meta.media.0.codec.name">pcm_s16le</property>
-  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
-  <property name="meta.media.0.codec.bit_rate">1411200</property>
+  <property name="resource">2017sept27film/Movie on 2017.09.27 at 16.58.20.87900.-0400.mov</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">6.37195</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">426</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.frame_rate">600</property>
+  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">mjpeg</property>
+  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
+  <property name="meta.media.0.codec.bit_rate">1901982</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T20:58:20.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">1378</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T20:58:20.000000Z</property>
+  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.major_brand.markup">qt  </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">qt  </property>
+  <property name="meta.attr.creation_time.markup">2017-09-27T20:58:20.000000Z</property>
   <property name="seekable">1</property>
-  <property name="audio_index">0</property>
-  <property name="video_index">-1</property>
+  <property name="meta.media.sample_aspect_num">72</property>
+  <property name="meta.media.sample_aspect_den">72</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
   <property name="mute_on_pause">1</property>
   <property name="mlt_service">avformat-novalidate</property>
-  <property name="kdenlive:file_size">106947116</property>
-  <property name="kdenlive:file_hash">ec3c3e2e1cf759c8fd6fc0840c1cc991</property>
+  <property name="kdenlive:file_size">30095623</property>
+  <property name="kdenlive:file_hash">eb859d4eb6c78da600ab6957384baf70</property>
   <property name="global_feed">1</property>
+  <property name="meta.media.frame_rate_num">161000</property>
+  <property name="meta.media.frame_rate_den">25267</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">426</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <producer title="Anonymous Submission" id="8" in="0" out="5567">
+  <property name="length">00:01:51:18</property>
+  <property name="eof">pause</property>
+  <property name="resource">2017sept27film/Movie on 2017.09.27 at 17.02.49.28000.-0400.mov</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">6.30093</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">426</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.frame_rate">600</property>
+  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">mjpeg</property>
+  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
+  <property name="meta.media.0.codec.bit_rate">1797495</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">1378</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
+  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.major_brand.markup">qt  </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">qt  </property>
+  <property name="meta.attr.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">72</property>
+  <property name="meta.media.sample_aspect_den">72</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="kdenlive:file_size">25049893</property>
+  <property name="kdenlive:file_hash">3626c8573e751d82f2e49ed685bc4ea2</property>
+  <property name="global_feed">1</property>
+  <property name="meta.media.frame_rate_num">52575</property>
+  <property name="meta.media.frame_rate_den">8344</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">426</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
  </producer>
  <playlist id="main bin">
   <property name="kdenlive:docproperties.audiotargettrack">2</property>
@@ -350,11 +350,11 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">0</property>
+  <property name="kdenlive:docproperties.position">418</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
-  <property name="kdenlive:docproperties.profile">.local/share/kdenlive/profiles/customprofile0</property>
+  <property name="kdenlive:docproperties.profile">.local/share/kdenlive/profiles/customprofile2</property>
   <property name="kdenlive:docproperties.projectfolder">/Ember Library/Ember satellite projects/personal/2017sept25/</property>
   <property name="kdenlive:docproperties.proxyextension">mpg</property>
   <property name="kdenlive:docproperties.proxyimageminsize">2000</property>
@@ -368,14 +368,14 @@
   <property name="kdenlive:docproperties.zoom">7</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
-  <entry producer="5" in="0" out="1558"/>
-  <entry producer="6" in="0" out="1232"/>
-  <entry producer="7" in="0" out="793"/>
-  <entry producer="8" in="0" out="698"/>
-  <entry producer="13" in="0" out="1837"/>
-  <entry producer="10" in="0" out="263332"/>
-  <entry producer="11" in="0" out="64831"/>
-  <entry producer="12" in="0" out="145505"/>
+  <entry producer="10" in="0" out="54860"/>
+  <entry producer="11" in="0" out="13506"/>
+  <entry producer="12" in="0" out="30313"/>
+  <entry producer="13" in="0" out="14639"/>
+  <entry producer="5" in="0" out="12419"/>
+  <entry producer="6" in="0" out="9819"/>
+  <entry producer="7" in="0" out="6328"/>
+  <entry producer="8" in="0" out="5567"/>
  </playlist>
  <producer id="black" in="0" out="500">
   <property name="length">15000</property>
@@ -399,8 +399,8 @@
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
  </playlist>
- <producer title="Anonymous Submission" id="5_playlist4" in="0" out="1558">
-  <property name="length">00:04:08:02</property>
+ <producer title="Anonymous Submission" id="5_playlist4" in="0" out="12419">
+  <property name="length">12420</property>
   <property name="eof">pause</property>
   <property name="resource">2017sept27film/Movie on 2017.09.27 at 16.46.53.75200.-0400.mov</property>
   <property name="audio_index">1</property>
@@ -455,8 +455,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="8_playlist4" in="0" out="698">
-  <property name="length">00:01:51:02</property>
+ <producer title="Anonymous Submission" id="8_playlist4" in="0" out="5567">
+  <property name="length">5568</property>
   <property name="eof">pause</property>
   <property name="resource">2017sept27film/Movie on 2017.09.27 at 17.02.49.28000.-0400.mov</property>
   <property name="audio_index">1</property>
@@ -472,12 +472,25 @@
  </producer>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
-  <entry producer="5_playlist4" in="0" out="1558"/>
+  <entry producer="5_playlist4" in="0" out="1558">
+   <filter id="qtblend">
+    <property name="mlt_service">qtblend</property>
+    <property name="kdenlive_id">qtblend</property>
+    <property name="tag">qtblend</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="rect">0=426 0 640 426 1</property>
+    <property name="rotation">0=90</property>
+    <property name="compositing">0</property>
+    <property name="distort">0</property>
+    <property name="kdenlive:sync_in_out">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
   <blank length="375"/>
   <entry producer="8_playlist4" in="0" out="698"/>
  </playlist>
- <producer title="Anonymous Submission" id="6_playlist5" in="0" out="1232">
-  <property name="length">00:03:16:03</property>
+ <producer title="Anonymous Submission" id="6_playlist5" in="0" out="9819">
+  <property name="length">9820</property>
   <property name="eof">pause</property>
   <property name="resource">2017sept27film/Movie on 2017.09.27 at 16.52.41.45100.-0400.mov</property>
   <property name="audio_index">1</property>
