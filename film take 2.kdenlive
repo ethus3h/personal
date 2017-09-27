@@ -251,7 +251,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">6587</property>
+  <property name="kdenlive:docproperties.position">4505</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension">avi</property>
   <property name="kdenlive:docproperties.previewparameters">f=avi vcodec=mjpeg progressive=1 qscale=1</property>
@@ -315,7 +315,11 @@
  <playlist id="playlist2">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 1</property>
-  <blank length="2176"/>
+  <blank length="82"/>
+  <entry producer="6_playlist2" in="2495" out="2723"/>
+  <blank length="446"/>
+  <entry producer="6_playlist2" in="2724" out="3277"/>
+  <blank length="865"/>
   <entry producer="6_playlist2" in="2495" out="2723"/>
   <blank length="446"/>
   <entry producer="6_playlist2" in="2724" out="3277"/>
@@ -379,9 +383,13 @@
  </producer>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
-  <blank length="4223"/>
+  <blank length="2129"/>
   <entry producer="2_playlist3" in="24179" out="24796"/>
-  <blank length="25134"/>
+  <blank length="1476"/>
+  <entry producer="2_playlist3" in="24179" out="24796"/>
+  <blank length="23040"/>
+  <entry producer="2_playlist3" in="25602" out="27200"/>
+  <blank length="495"/>
   <entry producer="2_playlist3" in="25602" out="27200"/>
  </playlist>
  <producer title="Anonymous Submission" id="4_playlist4" in="0" out="26727">
@@ -442,7 +450,9 @@
  </producer>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
-  <blank length="3399"/>
+  <blank length="1305"/>
+  <entry producer="4_playlist4" in="7491" out="8314"/>
+  <blank length="1270"/>
   <entry producer="4_playlist4" in="7491" out="8314"/>
   <blank length="718"/>
   <entry producer="4_playlist4" in="12597" out="14084"/>
@@ -461,51 +471,12 @@
   <property name="kdenlive:file_hash">6350a6879af7164429069866162296a0</property>
   <property name="global_feed">1</property>
   <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">6.27673</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">426</property>
-  <property name="meta.media.0.codec.rotate">0</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">mjpeg</property>
-  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
-  <property name="meta.media.0.codec.bit_rate">1321209</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T20:46:53.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">1378</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T20:46:54.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-09-27T20:46:53.000000Z</property>
-  <property name="meta.media.sample_aspect_num">72</property>
-  <property name="meta.media.sample_aspect_den">72</property>
-  <property name="meta.media.frame_rate_num">934800</property>
-  <property name="meta.media.frame_rate_den">148931</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">426</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
  </producer>
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
-  <blank length="2094"/>
+  <entry producer="1_playlist5" in="24961" out="25642"/>
+  <entry producer="1_playlist5" in="18550" out="19172"/>
+  <blank length="789"/>
   <entry producer="1_playlist5" in="24961" out="25642"/>
   <entry producer="1_playlist5" in="18550" out="19172"/>
   <blank length="75376"/>
