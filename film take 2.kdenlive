@@ -221,6 +221,27 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
+ <producer title="Anonymous Submission" id="5" in="0" out="6358">
+  <property name="length">00:00:26:119</property>
+  <property name="eof">pause</property>
+  <property name="resource">2017sept27n5.wav</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">pcm_s16le</property>
+  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
+  <property name="meta.media.0.codec.bit_rate">1411200</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="kdenlive:file_size">4674160</property>
+  <property name="kdenlive:file_hash">8cc49bc1d99f3b4b1bb163bc85c873f7</property>
+  <property name="global_feed">1</property>
+ </producer>
  <playlist id="main bin">
   <property name="kdenlive:docproperties.audiotargettrack">2</property>
   <property name="kdenlive:docproperties.dirtypreviewchunks"/>
@@ -230,7 +251,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">27577</property>
+  <property name="kdenlive:docproperties.position">32685</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -252,6 +273,7 @@
   <entry producer="2" in="0" out="47136"/>
   <entry producer="3" in="0" out="30378"/>
   <entry producer="4" in="0" out="26727"/>
+  <entry producer="5" in="0" out="6358"/>
  </playlist>
  <producer id="black" in="0" out="102525">
   <property name="length">102526</property>
@@ -262,15 +284,39 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="93222"/>
+  <entry producer="black" in="0" out="94210"/>
  </playlist>
  <playlist id="playlist1">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 2</property>
  </playlist>
+ <producer title="Anonymous Submission" id="5_playlist2" in="0" out="6358">
+  <property name="length">00:00:26:119</property>
+  <property name="eof">pause</property>
+  <property name="resource">2017sept27n5.wav</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="kdenlive:file_size">4674160</property>
+  <property name="kdenlive:file_hash">8cc49bc1d99f3b4b1bb163bc85c873f7</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">pcm_s16le</property>
+  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
+  <property name="meta.media.0.codec.bit_rate">1411200</property>
+ </producer>
  <playlist id="playlist2">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 1</property>
+  <blank length="31717"/>
+  <entry producer="5_playlist2" in="0" out="6358"/>
  </playlist>
  <producer title="Anonymous Submission" id="2_playlist3" in="0" out="47136">
   <property name="length">00:03:16:097</property>
@@ -391,10 +437,9 @@
  </producer>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
-  <blank length="21458"/>
-  <entry producer="4_playlist4" in="6636" out="12706"/>
-  <blank length="2776"/>
+  <blank length="16798"/>
   <entry producer="4_playlist4" in="15483" out="22070"/>
+  <entry producer="4_playlist4" in="6636" out="12706"/>
  </playlist>
  <producer title="Anonymous Submission" id="1_playlist5" in="0" out="59614">
   <property name="length">00:04:08:095</property>
@@ -455,10 +500,10 @@
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
   <entry producer="1_playlist5" in="16707" out="27200"/>
-  <blank length="67293"/>
+  <blank length="68281"/>
   <entry producer="1_playlist5" in="27201" out="42635"/>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="93222">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="94210">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist2"/>
