@@ -251,7 +251,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">25906</property>
+  <property name="kdenlive:docproperties.position">6587</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension">avi</property>
   <property name="kdenlive:docproperties.previewparameters">f=avi vcodec=mjpeg progressive=1 qscale=1</property>
@@ -319,7 +319,7 @@
   <entry producer="6_playlist2" in="2495" out="2723"/>
   <blank length="446"/>
   <entry producer="6_playlist2" in="2724" out="3277"/>
-  <entry producer="6_playlist2" in="3808" out="7153"/>
+  <entry producer="6_playlist2" in="3808" out="6831"/>
  </playlist>
  <producer title="Anonymous Submission" id="2_playlist3" in="0" out="47136">
   <property name="length">00:03:16:097</property>
@@ -379,9 +379,9 @@
  </producer>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
-  <blank length="11387"/>
-  <entry producer="2_playlist3" in="21790" out="25601"/>
-  <blank length="14776"/>
+  <blank length="4223"/>
+  <entry producer="2_playlist3" in="24179" out="24796"/>
+  <blank length="25134"/>
   <entry producer="2_playlist3" in="25602" out="27200"/>
  </playlist>
  <producer title="Anonymous Submission" id="4_playlist4" in="0" out="26727">
@@ -442,10 +442,10 @@
  </producer>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
-  <blank length="16798"/>
-  <entry producer="4_playlist4" in="15483" out="22070"/>
-  <blank length="1531"/>
-  <entry producer="4_playlist4" in="7491" out="8467"/>
+  <blank length="3399"/>
+  <entry producer="4_playlist4" in="7491" out="8314"/>
+  <blank length="718"/>
+  <entry producer="4_playlist4" in="12597" out="14084"/>
  </playlist>
  <producer title="Anonymous Submission" id="1_playlist5" in="0" out="59614">
   <property name="length">00:04:08:095</property>
