@@ -230,7 +230,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">27435</property>
+  <property name="kdenlive:docproperties.position">27577</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -262,7 +262,7 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="79293"/>
+  <entry producer="black" in="0" out="93222"/>
  </playlist>
  <playlist id="playlist1">
   <property name="kdenlive:audio_track">1</property>
@@ -330,7 +330,7 @@
  </producer>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
-  <blank length="26588"/>
+  <blank length="11387"/>
   <entry producer="2_playlist3" in="21790" out="27200"/>
  </playlist>
  <producer title="Anonymous Submission" id="4_playlist4" in="0" out="26727">
@@ -347,11 +347,54 @@
   <property name="kdenlive:file_hash">3626c8573e751d82f2e49ed685bc4ea2</property>
   <property name="global_feed">1</property>
   <property name="xml">was here</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">6.30093</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">426</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.frame_rate">600</property>
+  <property name="meta.media.0.codec.pix_fmt">yuvj420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">mjpeg</property>
+  <property name="meta.media.0.codec.long_name">MJPEG (Motion JPEG)</property>
+  <property name="meta.media.0.codec.bit_rate">1797495</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.0.stream.encoder.markup">Photo - JPEG</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">1378</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
+  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.major_brand.markup">qt  </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">qt  </property>
+  <property name="meta.attr.creation_time.markup">2017-09-27T21:02:49.000000Z</property>
+  <property name="meta.media.sample_aspect_num">72</property>
+  <property name="meta.media.sample_aspect_den">72</property>
+  <property name="meta.media.frame_rate_num">52575</property>
+  <property name="meta.media.frame_rate_den">8344</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">426</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
  </producer>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
-  <blank length="45599"/>
-  <entry producer="4_playlist4" in="0" out="26727"/>
+  <blank length="21458"/>
+  <entry producer="4_playlist4" in="6636" out="12706"/>
+  <blank length="2776"/>
+  <entry producer="4_playlist4" in="15483" out="22070"/>
  </playlist>
  <producer title="Anonymous Submission" id="1_playlist5" in="0" out="59614">
   <property name="length">00:04:08:095</property>
@@ -412,10 +455,10 @@
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
   <entry producer="1_playlist5" in="16707" out="27200"/>
-  <blank length="53364"/>
+  <blank length="67293"/>
   <entry producer="1_playlist5" in="27201" out="42635"/>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="79293">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="93222">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist2"/>
@@ -446,28 +489,12 @@
    <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
-  <transition id="transition3">
-   <property name="a_track">0</property>
-   <property name="b_track">3</property>
-   <property name="compositing">0</property>
-   <property name="distort">0</property>
-   <property name="mlt_service">qtblend</property>
-   <property name="internal_added">237</property>
-  </transition>
   <transition id="transition4">
    <property name="a_track">0</property>
    <property name="b_track">4</property>
    <property name="mlt_service">mix</property>
    <property name="always_active">1</property>
    <property name="combine">1</property>
-   <property name="internal_added">237</property>
-  </transition>
-  <transition id="transition5">
-   <property name="a_track">0</property>
-   <property name="b_track">4</property>
-   <property name="compositing">0</property>
-   <property name="distort">0</property>
-   <property name="mlt_service">qtblend</property>
    <property name="internal_added">237</property>
   </transition>
   <transition id="transition6">
@@ -478,7 +505,33 @@
    <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
+  <transition id="transition3" in="72087" out="72326">
+   <property name="a_track">3</property>
+   <property name="b_track">4</property>
+   <property name="factory">loader</property>
+   <property name="mlt_service">luma</property>
+   <property name="automatic">1</property>
+   <property name="kdenlive_id">dissolve</property>
+   <property name="force_track">0</property>
+   <property name="reverse">1</property>
+  </transition>
+  <transition id="transition5">
+   <property name="a_track">0</property>
+   <property name="b_track">3</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="internal_added">237</property>
+  </transition>
   <transition id="transition7">
+   <property name="a_track">0</property>
+   <property name="b_track">4</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition8">
    <property name="a_track">0</property>
    <property name="b_track">5</property>
    <property name="compositing">0</property>
