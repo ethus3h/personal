@@ -230,7 +230,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">20328</property>
+  <property name="kdenlive:docproperties.position">20329</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -262,7 +262,7 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="102525"/>
+  <entry producer="black" in="0" out="87183"/>
  </playlist>
  <playlist id="playlist1">
   <property name="kdenlive:audio_track">1</property>
@@ -330,7 +330,7 @@
  </producer>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
-  <blank length="55388"/>
+  <blank length="40046"/>
   <entry producer="2_playlist3" in="0" out="47136"/>
  </playlist>
  <producer title="Anonymous Submission" id="4_playlist4" in="0" out="26727">
@@ -411,9 +411,11 @@
  </producer>
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
-  <entry producer="1_playlist5" in="16707" out="42635"/>
+  <entry producer="1_playlist5" in="16707" out="27200"/>
+  <blank length="53364"/>
+  <entry producer="1_playlist5" in="27201" out="42635"/>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="102525">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="87183">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist2"/>
