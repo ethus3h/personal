@@ -225,6 +225,10 @@
   <property name="length">00:00:29:194</property>
   <property name="eof">pause</property>
   <property name="resource">2017sept27n6.wav</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">1</property>
   <property name="meta.media.0.stream.type">audio</property>
   <property name="meta.media.0.codec.sample_fmt">s16</property>
@@ -234,16 +238,69 @@
   <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
   <property name="meta.media.0.codec.bit_rate">1411200</property>
   <property name="seekable">1</property>
-  <property name="audio_index">0</property>
-  <property name="video_index">-1</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">5258428</property>
   <property name="kdenlive:file_hash">ce602277415c086cd0f8d6a39d6705ce</property>
   <property name="global_feed">1</property>
  </producer>
+ <producer title="Anonymous Submission" id="7" in="0" out="70271">
+  <property name="length">00:04:52:192</property>
+  <property name="eof">pause</property>
+  <property name="resource">Downloads/1. McScuse me, BEATS.m4a</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s32p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">alac</property>
+  <property name="meta.media.0.codec.long_name">ALAC (Apple Lossless Audio Codec)</property>
+  <property name="meta.media.0.codec.bit_rate">1465785</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2006-04-08T23:50:42.000000Z</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">video</property>
+  <property name="meta.media.1.stream.frame_rate">-nan</property>
+  <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.width">4096</property>
+  <property name="meta.media.1.codec.height">4096</property>
+  <property name="meta.media.1.codec.rotate">0</property>
+  <property name="meta.media.1.codec.frame_rate">90000</property>
+  <property name="meta.media.1.codec.pix_fmt">rgba</property>
+  <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.colorspace">709</property>
+  <property name="meta.media.1.codec.name">png</property>
+  <property name="meta.media.1.codec.long_name">PNG (Portable Network Graphics) image</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.major_brand.markup">M4A </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">M4A mp42isom</property>
+  <property name="meta.attr.creation_time.markup">2006-04-08T23:50:42.000000Z</property>
+  <property name="meta.attr.iTunSMPB.markup"> 00000000 00000000 000008A0 0000000000C50760 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000</property>
+  <property name="meta.attr.title.markup">McScuse me, BEATS</property>
+  <property name="meta.attr.artist.markup">Elliot Chandler</property>
+  <property name="meta.attr.album_artist.markup">Elliot Chandler</property>
+  <property name="meta.attr.composer.markup">Elliot Chandler</property>
+  <property name="meta.attr.album.markup">McScuse me, BEATS</property>
+  <property name="meta.attr.genre.markup">Trap</property>
+  <property name="meta.attr.track.markup">1/1</property>
+  <property name="meta.attr.date.markup">2016</property>
+  <property name="meta.attr.comment.markup">Released 2016 Mar. 01a02. Copyright © ℗ 2016 Futuramerlin. Duration: 4m53s. Sample from: https://www.youtube.com/watch?v=IrSsjdzlUSw
+</property>
+  <property name="meta.attr.sort_album.markup">McScuse me, BEATS</property>
+  <property name="meta.attr.sort_album_artist.markup">Elliot Chandler</property>
+  <property name="meta.attr.sort_composer.markup">Elliot Chandler</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="kdenlive:file_size">71396386</property>
+  <property name="kdenlive:file_hash">35ca44cf21f509aada67401663690307</property>
+  <property name="global_feed">1</property>
+ </producer>
  <playlist id="main bin">
-  <property name="kdenlive:docproperties.audiotargettrack">2</property>
+  <property name="kdenlive:docproperties.audiotargettrack">3</property>
   <property name="kdenlive:docproperties.dirtypreviewchunks">0,25,50,75,100</property>
   <property name="kdenlive:docproperties.disablepreview">0</property>
   <property name="kdenlive:docproperties.documentid">1506548579523</property>
@@ -251,7 +308,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">6587</property>
+  <property name="kdenlive:docproperties.position">2306</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension">avi</property>
   <property name="kdenlive:docproperties.previewparameters">f=avi vcodec=mjpeg progressive=1 qscale=1</property>
@@ -263,10 +320,10 @@
   <property name="kdenlive:docproperties.proxyparams">-s 640x480 -g 5 -qscale 6 -ab 128k -vcodec mpeg2video -acodec mp2</property>
   <property name="kdenlive:docproperties.version">0.95</property>
   <property name="kdenlive:docproperties.verticalzoom">1</property>
-  <property name="kdenlive:docproperties.videotargettrack">3</property>
+  <property name="kdenlive:docproperties.videotargettrack">4</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">100</property>
-  <property name="kdenlive:docproperties.zoom">10</property>
+  <property name="kdenlive:docproperties.zoom">9</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
   <entry producer="1" in="0" out="59614"/>
@@ -274,6 +331,7 @@
   <entry producer="3" in="0" out="30378"/>
   <entry producer="4" in="0" out="26727"/>
   <entry producer="6" in="0" out="7153"/>
+  <entry producer="7" in="0" out="70271"/>
  </playlist>
  <producer id="black" in="0" out="102525">
   <property name="length">102526</property>
@@ -284,11 +342,86 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="94210"/>
+  <entry producer="black" in="0" out="92116"/>
  </playlist>
+ <producer title="Anonymous Submission" id="7_playlist1" in="0" out="70271">
+  <property name="length">00:04:52:192</property>
+  <property name="eof">pause</property>
+  <property name="resource">Downloads/1. McScuse me, BEATS.m4a</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">71396386</property>
+  <property name="kdenlive:file_hash">35ca44cf21f509aada67401663690307</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s32p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">alac</property>
+  <property name="meta.media.0.codec.long_name">ALAC (Apple Lossless Audio Codec)</property>
+  <property name="meta.media.0.codec.bit_rate">1465785</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2006-04-08T23:50:42.000000Z</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">video</property>
+  <property name="meta.media.1.stream.frame_rate">-nan</property>
+  <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.width">4096</property>
+  <property name="meta.media.1.codec.height">4096</property>
+  <property name="meta.media.1.codec.rotate">0</property>
+  <property name="meta.media.1.codec.frame_rate">90000</property>
+  <property name="meta.media.1.codec.pix_fmt">rgba</property>
+  <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.colorspace">709</property>
+  <property name="meta.media.1.codec.name">png</property>
+  <property name="meta.media.1.codec.long_name">PNG (Portable Network Graphics) image</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.major_brand.markup">M4A </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">M4A mp42isom</property>
+  <property name="meta.attr.creation_time.markup">2006-04-08T23:50:42.000000Z</property>
+  <property name="meta.attr.iTunSMPB.markup"> 00000000 00000000 000008A0 0000000000C50760 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000</property>
+  <property name="meta.attr.title.markup">McScuse me, BEATS</property>
+  <property name="meta.attr.artist.markup">Elliot Chandler</property>
+  <property name="meta.attr.album_artist.markup">Elliot Chandler</property>
+  <property name="meta.attr.composer.markup">Elliot Chandler</property>
+  <property name="meta.attr.album.markup">McScuse me, BEATS</property>
+  <property name="meta.attr.genre.markup">Trap</property>
+  <property name="meta.attr.track.markup">1/1</property>
+  <property name="meta.attr.date.markup">2016</property>
+  <property name="meta.attr.comment.markup">Released 2016 Mar. 01a02. Copyright © ℗ 2016 Futuramerlin. Duration: 4m53s. Sample from: https://www.youtube.com/watch?v=IrSsjdzlUSw
+</property>
+  <property name="meta.attr.sort_album.markup">McScuse me, BEATS</property>
+  <property name="meta.attr.sort_album_artist.markup">Elliot Chandler</property>
+  <property name="meta.attr.sort_composer.markup">Elliot Chandler</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+ </producer>
  <playlist id="playlist1">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 2</property>
+  <entry producer="7_playlist1" in="41458" out="46374">
+   <filter id="gain">
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">gain</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="gain">0.08</property>
+    <property name="kdenlive_info"/>
+    <property name="disable"/>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist0">
+  <property name="kdenlive:track_name">Video 4</property>
+  <property name="kdenlive:audio_track">1</property>
  </playlist>
  <producer title="Anonymous Submission" id="6_playlist2" in="0" out="7153">
   <property name="length">00:00:29:194</property>
@@ -315,7 +448,7 @@
  <playlist id="playlist2">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 1</property>
-  <blank length="2176"/>
+  <blank length="82"/>
   <entry producer="6_playlist2" in="2495" out="2723"/>
   <blank length="446"/>
   <entry producer="6_playlist2" in="2724" out="3277"/>
@@ -379,10 +512,8 @@
  </producer>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
-  <blank length="4223"/>
+  <blank length="2129"/>
   <entry producer="2_playlist3" in="24179" out="24796"/>
-  <blank length="25134"/>
-  <entry producer="2_playlist3" in="25602" out="27200"/>
  </playlist>
  <producer title="Anonymous Submission" id="4_playlist4" in="0" out="26727">
   <property name="length">00:01:51:088</property>
@@ -442,10 +573,39 @@
  </producer>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
-  <blank length="3399"/>
+  <blank length="1305"/>
   <entry producer="4_playlist4" in="7491" out="8314"/>
   <blank length="718"/>
-  <entry producer="4_playlist4" in="12597" out="14084"/>
+  <entry producer="4_playlist4" in="12597" out="14084">
+   <filter id="frei0r.scale0tilt">
+    <property name="version">0.1</property>
+    <property name="mlt_service">frei0r.scale0tilt</property>
+    <property name="kdenlive_id">frei0r.scale0tilt</property>
+    <property name="tag">frei0r.scale0tilt</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="Clip left">0</property>
+    <property name="Clip right">0</property>
+    <property name="Clip top">0</property>
+    <property name="Clip bottom">0</property>
+    <property name="Scale X">0.67</property>
+    <property name="Scale Y">0.75</property>
+    <property name="Tilt X">0.5</property>
+    <property name="Tilt Y">0.5</property>
+    <property name="kdenlive_info"/>
+   </filter>
+   <filter id="qtblend">
+    <property name="mlt_service">qtblend</property>
+    <property name="kdenlive_id">qtblend</property>
+    <property name="tag">qtblend</property>
+    <property name="kdenlive_ix">2</property>
+    <property name="rect">0=0 0 640 426 1</property>
+    <property name="rotation">0=0</property>
+    <property name="compositing">0</property>
+    <property name="distort">0</property>
+    <property name="kdenlive:sync_in_out">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
  </playlist>
  <producer title="Anonymous Submission" id="1_playlist5" in="0" out="59614">
   <property name="length">00:04:08:095</property>
@@ -505,15 +665,15 @@
  </producer>
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
-  <blank length="2094"/>
   <entry producer="1_playlist5" in="24961" out="25642"/>
   <entry producer="1_playlist5" in="18550" out="19172"/>
   <blank length="75376"/>
   <entry producer="1_playlist5" in="27201" out="42635"/>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="94210">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="92116">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
+  <track hide="video" producer="playlist0"/>
   <track hide="video" producer="playlist2"/>
   <track producer="playlist3"/>
   <track producer="playlist4"/>
@@ -542,7 +702,7 @@
    <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
-  <transition id="transition4">
+  <transition id="transition3">
    <property name="a_track">0</property>
    <property name="b_track">4</property>
    <property name="mlt_service">mix</property>
@@ -550,7 +710,7 @@
    <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
-  <transition id="transition6">
+  <transition id="transition4">
    <property name="a_track">0</property>
    <property name="b_track">5</property>
    <property name="mlt_service">mix</property>
@@ -558,20 +718,21 @@
    <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
-  <transition id="transition3">
+  <transition id="transition5">
    <property name="a_track">0</property>
-   <property name="b_track">3</property>
-   <property name="compositing">0</property>
-   <property name="distort">0</property>
-   <property name="mlt_service">qtblend</property>
+   <property name="b_track">6</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
-  <transition id="transition5">
+  <transition id="transition6">
    <property name="a_track">0</property>
    <property name="b_track">4</property>
    <property name="compositing">0</property>
    <property name="distort">0</property>
    <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
    <property name="internal_added">237</property>
   </transition>
   <transition id="transition7">
@@ -580,6 +741,16 @@
    <property name="compositing">0</property>
    <property name="distort">0</property>
    <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition8">
+   <property name="a_track">0</property>
+   <property name="b_track">6</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
    <property name="internal_added">237</property>
   </transition>
  </tractor>
