@@ -244,15 +244,15 @@
  </producer>
  <playlist id="main bin">
   <property name="kdenlive:docproperties.audiotargettrack">2</property>
-  <property name="kdenlive:docproperties.dirtypreviewchunks">25,50,75,100</property>
+  <property name="kdenlive:docproperties.dirtypreviewchunks">0,25,50,75,100</property>
   <property name="kdenlive:docproperties.disablepreview">0</property>
   <property name="kdenlive:docproperties.documentid">1506548579523</property>
   <property name="kdenlive:docproperties.enableproxy">0</property>
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">9505</property>
-  <property name="kdenlive:docproperties.previewchunks">0</property>
+  <property name="kdenlive:docproperties.position">2901</property>
+  <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension">avi</property>
   <property name="kdenlive:docproperties.previewparameters">f=avi vcodec=mjpeg progressive=1 qscale=1</property>
   <property name="kdenlive:docproperties.profile">.local/share/kdenlive/profiles/customprofile0</property>
@@ -266,7 +266,7 @@
   <property name="kdenlive:docproperties.videotargettrack">3</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">100</property>
-  <property name="kdenlive:docproperties.zoom">13</property>
+  <property name="kdenlive:docproperties.zoom">10</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
   <entry producer="1" in="0" out="59614"/>
@@ -315,8 +315,9 @@
  <playlist id="playlist2">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 1</property>
-  <blank length="30635"/>
-  <entry producer="6_playlist2" in="0" out="7153"/>
+  <blank length="100"/>
+  <entry producer="6_playlist2" in="0" out="2251"/>
+  <entry producer="6_playlist2" in="2252" out="7153"/>
  </playlist>
  <producer title="Anonymous Submission" id="2_playlist3" in="0" out="47136">
   <property name="length">00:03:16:097</property>
@@ -501,8 +502,9 @@
  </producer>
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
-  <entry producer="1_playlist5" in="16707" out="27200"/>
-  <blank length="68281"/>
+  <blank length="2117"/>
+  <entry producer="1_playlist5" in="24801" out="27200"/>
+  <blank length="74258"/>
   <entry producer="1_playlist5" in="27201" out="42635"/>
  </playlist>
  <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="94210">
