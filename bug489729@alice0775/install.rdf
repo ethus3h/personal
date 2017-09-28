@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#" xmlns:NC="http://home.netscape.com/NC-rdf#" xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$38QF52" em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}" em:minVersion="17.0" em:maxVersion="20.0a1"/>
-  <RDF:Description RDF:about="urn:mozilla:install-manifest" em:id="bug489729@alice0775" em:version="2.1.1-signed.1-signed" em:type="2" em:unpack="true" em:name="bug489729(Disable detach and tear off tab)" em:description="Workaround Bug 489729 - Clicking a tab once and then moving your mouse in a downward motion causes a new window to open." em:creator="Alice0775" em:optionsURL="chrome://bug489729/content/pref.xul" em:homepageURL="http://space.geocities.yahoo.co.jp/gl/alice0775">
-    <em:targetApplication RDF:resource="rdf:#$38QF52"/>
-  </RDF:Description>
-</RDF:RDF>
