@@ -1,0 +1,16 @@
+Started render process: /usr/bin/melt /tmp/kdenlive_rendering_k16403.mlt.mlt in=0 out=100 -profile /home/kyan/.local/share/kdenlive/profiles/customprofile0 -consumer avformat:/home/kyan/kdenlive/2017sept27n2.mp4 progress=1 properties=x264-medium f=mp4 vcodec=libx264 acodec=aac g=120 crf=23 ab=160k preset=faster threads=1 real_time=-1
+melt: Current Frame: 8, percentage: 7
+melt: Current Frame: 16, percentage: 15
+melt: Current Frame: 26, percentage: 25
+melt: Current Frame: 33, percentage: 32
+melt: Current Frame: 40, percentage: 39
+melt: Current Frame: 46, percentage: 45
+melt: Current Frame: 53, percentage: 52
+melt: Current Frame: 61, percentage: 60
+melt: Current Frame: 69, percentage: 68
+melt: Current Frame: 78, percentage: 77
+melt: Current Frame: 83, percentage: 82
+melt: Current Frame: 89, percentage: 88
+melt: Current Frame: 96, percentage: 95
+melt: Current Frame: 100, percentage: 99
+Rendering of /home/kyan/kdenlive/2017sept27n2.mp4 finished
