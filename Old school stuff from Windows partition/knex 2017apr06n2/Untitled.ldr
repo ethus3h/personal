@@ -1,0 +1,13 @@
+0 Untitled
+0 Name: Untitled.ldr
+0 Author: MLCad
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 14 -290 -16 -230 -1 0 0 0 1 0 0 0 -1 k1114.dat
+1 4 -290 -16 190 1 0 0 0 1 0 0 0 1 k304.dat
+1 4 -290 -16 -230 0 0 1 0 1 0 -1 0 0 k304.dat
+1 14 -130 -16 -230 -1 0 0 0 1 0 0 0 -1 k1114.dat
+1 4 -130 -16 190 1 0 0 0 1 0 0 0 1 k304.dat
+1 4 -130 -16 -230 0 0 1 0 1 0 -1 0 0 k304.dat
+0
