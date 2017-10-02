@@ -8,6 +8,9 @@ Known missing tracks:
 "Larghetto" by Antonio Salieri (AOVz1RUjbpo)
 "Heartfelt Universe" by Bibliotheque Music
 "Kknow Me" by Marshmello (ODCyZumZ3PY)
+"M.I.L.F. $" by Fergie (z_f-9FpgpCk)
+"The Bleeding" by Five Finger Death Punch
+"Coming Down" by Five Finger Death Punch
 
 Fully missing:
 * "Snowglobe" (rap version) by AJR
@@ -18,11 +21,11 @@ No streaming license available:
 * "Invitation" by Britney Spears
 * "Requiem ~inori~" by lisa (placeholder included)
 * "Wolves (feat. Sia, Vic Mensa, and Frank Ocean)" by Kanye West
-* "Black Is The Colour" by KOKIA (placeholder included)
+* "Black Is The Colour" by KOKIA (placeholder included: after "Never Give Up (feat. Mathilde M.)" by Axero, and before "Hard For Me" by Leela James)
 * "The Neglected Garden" by Cécile Corbel
 * "Our House Below" by Cécile Corbel
 * "Desperado" by Ken Hirai
-* "Symphonie" by Celtic Woman (placeholder included)
+* "Symphonie" by Celtic Woman (placeholder included: after "Forever Young" by Celtic Woman, and before "直到世界末日" by 齊秦 / Chyi Chin)
 * "Heal My Broken Heart" by Smile.dk (placeholder included)
 * "Tic Toc" by Smile.dk (placeholder included)
 * "Wish You Were Here (live)" by Pearl Jam
