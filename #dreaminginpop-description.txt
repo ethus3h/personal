@@ -11,7 +11,10 @@ Known missing tracks:
 "M.I.L.F. $" by Fergie (z_f-9FpgpCk)
 "The Bleeding" by Five Finger Death Punch
 "Coming Down" by Five Finger Death Punch
-"The Butterfly Lovers Violin Concerto" by Takako Nishizaki (fYQYCkVLklc)
+"The Butterfly Lovers Violin Concerto" by Takako Nishizaki
+"Lovers in a Dangerous Time" by Bruce Cockburn
+"Take Cover (Remastered Version)" by Mr. Big
+"Stayin Alive" by the Bee Gees
 
 Fully missing:
 * "Snowglobe" (rap version) by AJR
@@ -27,6 +30,7 @@ No streaming license available:
 * "Our House Below" by Cécile Corbel
 * "Desperado" by Ken Hirai
 * "Symphonie" by Celtic Woman (placeholder included: after "Forever Young" by Celtic Woman, and before "直到世界末日" by 齊秦 / Chyi Chin)
+* "Sway (feat. Quavo & Lil Yachty)" by NexxThursday (placeholder included: after "Gloria" by The Midnight, and before "Don't Go Away" by Era)
 * "Heal My Broken Heart" by Smile.dk (placeholder included)
 * "Tic Toc" by Smile.dk (placeholder included)
 * "Wish You Were Here (live)" by Pearl Jam
