@@ -143,8 +143,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="4" in="0" out="1658">
-  <property name="length">00:00:55;09</property>
+ <producer title="Anonymous Submission" id="4" in="0" out="1656">
+  <property name="length">00:00:55;07</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1939.MOV</property>
   <property name="audio_index">1</property>
@@ -355,8 +355,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="7" in="0" out="1111">
-  <property name="length">00:00:37;02</property>
+ <producer title="Anonymous Submission" id="7" in="0" out="1110">
+  <property name="length">00:00:37;01</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1942.MOV</property>
   <property name="audio_index">1</property>
@@ -426,8 +426,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="8" in="0" out="2923">
-  <property name="length">00:01:37;16</property>
+ <producer title="Anonymous Submission" id="8" in="0" out="2922">
+  <property name="length">00:01:37;15</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1943.MOV</property>
   <property name="audio_index">1</property>
@@ -568,8 +568,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="10" in="0" out="651">
-  <property name="length">00:00:21;22</property>
+ <producer title="Anonymous Submission" id="10" in="0" out="650">
+  <property name="length">00:00:21;21</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1945.MOV</property>
   <property name="audio_index">1</property>
@@ -710,8 +710,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="12" in="0" out="1774">
-  <property name="length">00:00:59;05</property>
+ <producer title="Anonymous Submission" id="12" in="0" out="1772">
+  <property name="length">00:00:59;03</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1947.MOV</property>
   <property name="audio_index">1</property>
@@ -851,8 +851,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="14" in="0" out="830">
-  <property name="length">00:00:27;21</property>
+ <producer title="Anonymous Submission" id="14" in="0" out="829">
+  <property name="length">00:00:27;20</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1949.MOV</property>
   <property name="audio_index">1</property>
@@ -1134,8 +1134,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="18" in="0" out="719">
-  <property name="length">00:00:24;00</property>
+ <producer title="Anonymous Submission" id="18" in="0" out="718">
+  <property name="length">00:00:23;29</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1937.MOV</property>
   <property name="audio_index">1</property>
@@ -1346,8 +1346,8 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="21" in="0" out="7191">
-  <property name="length">00:03:59;28</property>
+ <producer title="Anonymous Submission" id="21" in="0" out="7190">
+  <property name="length">00:03:59;27</property>
   <property name="eof">pause</property>
   <property name="resource">1. Guillemot.m4a</property>
   <property name="audio_index">0</property>
@@ -1404,7 +1404,7 @@
   <property name="global_feed">1</property>
  </producer>
  <producer title="Anonymous Submission" id="22" in="0" out="7340">
-  <property name="length">00:04:05;00</property>
+  <property name="length">00:04:05;01</property>
   <property name="eof">pause</property>
   <property name="resource">6. The Crack in my Universe (Autumnfey's Mystic Lounge Remix) (by Debbizo).m4a</property>
   <property name="audio_index">0</property>
@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">1956</property>
+  <property name="kdenlive:docproperties.position">2891</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1539,29 +1539,29 @@
   <property name="kdenlive:docproperties.videotargettrack">3</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">0</property>
-  <property name="kdenlive:docproperties.zoom">8</property>
+  <property name="kdenlive:docproperties.zoom">4</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
   <entry producer="2" in="0" out="9804"/>
   <entry producer="3" in="0" out="2402"/>
-  <entry producer="4" in="0" out="1658"/>
+  <entry producer="4" in="0" out="1656"/>
   <entry producer="5" in="0" out="41"/>
   <entry producer="6" in="0" out="30"/>
-  <entry producer="7" in="0" out="1111"/>
-  <entry producer="8" in="0" out="2923"/>
+  <entry producer="7" in="0" out="1110"/>
+  <entry producer="8" in="0" out="2922"/>
   <entry producer="9" in="0" out="1824"/>
-  <entry producer="10" in="0" out="651"/>
+  <entry producer="10" in="0" out="650"/>
   <entry producer="11" in="0" out="230"/>
-  <entry producer="12" in="0" out="1774"/>
+  <entry producer="12" in="0" out="1772"/>
   <entry producer="13" in="0" out="2225"/>
-  <entry producer="14" in="0" out="830"/>
+  <entry producer="14" in="0" out="829"/>
   <entry producer="15" in="0" out="3989"/>
   <entry producer="16" in="0" out="23"/>
   <entry producer="17" in="0" out="2205"/>
-  <entry producer="18" in="0" out="719"/>
+  <entry producer="18" in="0" out="718"/>
   <entry producer="19" in="0" out="110"/>
   <entry producer="20" in="0" out="41"/>
-  <entry producer="21" in="0" out="7191"/>
+  <entry producer="21" in="0" out="7190"/>
   <entry producer="22" in="0" out="7340"/>
   <entry producer="23" in="0" out="13712"/>
  </playlist>
@@ -3090,6 +3090,78 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
+ <producer title="Anonymous Submission" id="4_playlist0" in="0" out="1656">
+  <property name="length">00:00:55;09</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1939.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">24767854</property>
+  <property name="kdenlive:file_hash">ed11901e66f881f12f356947aa840f0d</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">29.963</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">480</property>
+  <property name="meta.media.0.codec.rotate">90</property>
+  <property name="meta.media.0.codec.frame_rate">600</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">h264</property>
+  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+  <property name="meta.media.0.codec.bit_rate">3501984</property>
+  <property name="meta.attr.0.stream.rotate.markup">90</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:42:11.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">63998</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:42:11.000000Z</property>
+  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.major_brand.markup">qt  </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">qt  </property>
+  <property name="meta.attr.creation_time.markup">2017-10-04T18:42:11.000000Z</property>
+  <property name="meta.attr.model.markup">iPhone 3GS</property>
+  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
+  <property name="meta.attr.encoder.markup">6.1.6</property>
+  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
+  <property name="meta.attr.date.markup">2017-10-04T14:42:11-0400</property>
+  <property name="meta.attr.date-eng.markup">2017-10-04T14:42:11-0400</property>
+  <property name="meta.attr.location.markup">+44.8988-068.6687+082.067/</property>
+  <property name="meta.attr.location-eng.markup">+44.8988-068.6687+082.067/</property>
+  <property name="meta.attr.make.markup">Apple</property>
+  <property name="meta.attr.make-eng.markup">Apple</property>
+  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
+  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:42:11-0400</property>
+  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8988-068.6687+082.067/</property>
+  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
+  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="meta.media.frame_rate_num">332200</property>
+  <property name="meta.media.frame_rate_den">11087</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
  <playlist id="playlist0">
   <property name="kdenlive:track_name">Video 4</property>
   <entry producer="15_playlist0" in="221" out="488"/>
@@ -3099,9 +3171,13 @@
   <entry producer="15_playlist0" in="2611" out="2870"/>
   <blank length="534"/>
   <entry producer="15_playlist0" in="582" out="1057"/>
-  <blank length="98"/>
+  <blank length="77"/>
   <entry producer="12_playlist0" in="0" out="137"/>
-  <blank length="1864"/>
+  <blank length="201"/>
+  <entry producer="4_playlist0" in="373" out="629"/>
+  <blank length="257"/>
+  <entry producer="4_playlist0" in="630" out="1656"/>
+  <blank length="143"/>
   <entry producer="15_playlist0" in="2871" out="3989"/>
   <blank length="872"/>
   <entry producer="15_playlist0" in="0" out="220"/>
@@ -3332,10 +3408,15 @@
   <entry producer="2_playlist4" in="8239" out="8320"/>
   <blank length="394"/>
   <entry producer="2_playlist4" in="8399" out="8480"/>
-  <blank length="300"/>
-  <entry producer="4_playlist4" in="0" out="1656"/>
-  <entry producer="2_playlist4" in="8720" out="9334"/>
-  <blank length="1246"/>
+  <blank length="215"/>
+  <entry producer="4_playlist4" in="0" out="148"/>
+  <blank length="14"/>
+  <entry producer="4_playlist4" in="149" out="186"/>
+  <blank length="257"/>
+  <entry producer="2_playlist4" in="8720" out="8759"/>
+  <blank length="387"/>
+  <entry producer="2_playlist4" in="9261" out="9334"/>
+  <blank length="2644"/>
   <entry producer="15_playlist4" in="1066" out="2610"/>
  </playlist>
  <producer title="Anonymous Submission" id="12_playlist5" in="0" out="1772">
