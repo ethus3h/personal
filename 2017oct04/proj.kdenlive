@@ -5,6 +5,10 @@
   <property name="length">00:05:27;05</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1935.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9587</property>
@@ -56,10 +60,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">147111309</property>
   <property name="kdenlive:file_hash">5a79abf35436072a68974d7044147998</property>
   <property name="global_feed">1</property>
@@ -76,6 +76,10 @@
   <property name="length">00:01:20;05</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1936.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9751</property>
@@ -127,10 +131,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">36227379</property>
   <property name="kdenlive:file_hash">bb5a8fccd9c63a4c0472473c7b7e2626</property>
   <property name="global_feed">1</property>
@@ -143,10 +143,14 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="4" in="0" out="1660">
-  <property name="length">00:00:55;11</property>
+ <producer title="Anonymous Submission" id="4" in="0" out="1658">
+  <property name="length">00:00:55;09</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1939.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.963</property>
@@ -198,10 +202,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">24767854</property>
   <property name="kdenlive:file_hash">ed11901e66f881f12f356947aa840f0d</property>
   <property name="global_feed">1</property>
@@ -218,6 +218,10 @@
   <property name="length">00:00:01;12</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1940.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">22.695</property>
@@ -268,10 +272,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">551602</property>
   <property name="kdenlive:file_hash">23b82787089968727c08279d83821e3f</property>
   <property name="global_feed">1</property>
@@ -288,6 +288,10 @@
   <property name="length">00:00:01;01</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1941.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9517</property>
@@ -339,10 +343,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">537425</property>
   <property name="kdenlive:file_hash">bdfe2b26c1c49d2ae4d4a8edcea8bb68</property>
   <property name="global_feed">1</property>
@@ -355,10 +355,14 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="7" in="0" out="1112">
-  <property name="length">00:00:37;03</property>
+ <producer title="Anonymous Submission" id="7" in="0" out="1111">
+  <property name="length">00:00:37;02</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1942.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9677</property>
@@ -410,10 +414,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">16761631</property>
   <property name="kdenlive:file_hash">682cba979a2fee4f613eb356b6f746f7</property>
   <property name="global_feed">1</property>
@@ -426,10 +426,14 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="8" in="0" out="2924">
-  <property name="length">00:01:37;17</property>
+ <producer title="Anonymous Submission" id="8" in="0" out="2923">
+  <property name="length">00:01:37;16</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1943.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9693</property>
@@ -481,10 +485,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">44283401</property>
   <property name="kdenlive:file_hash">da4da1fb7b8c73b998747b5d77fd4fb5</property>
   <property name="global_feed">1</property>
@@ -501,6 +501,10 @@
   <property name="length">00:01:00;27</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1944.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9778</property>
@@ -552,10 +556,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">28098073</property>
   <property name="kdenlive:file_hash">1562572ef5d0eeb9721f2c128c2ada50</property>
   <property name="global_feed">1</property>
@@ -568,10 +568,14 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="10" in="0" out="652">
-  <property name="length">00:00:21;23</property>
+ <producer title="Anonymous Submission" id="10" in="0" out="651">
+  <property name="length">00:00:21;22</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1945.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9748</property>
@@ -623,10 +627,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">9612582</property>
   <property name="kdenlive:file_hash">1780d327403b60abf7ee3c5362653c33</property>
   <property name="global_feed">1</property>
@@ -643,6 +643,10 @@
   <property name="length">00:00:07;21</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1946.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.987</property>
@@ -694,10 +698,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">3545278</property>
   <property name="kdenlive:file_hash">d3799330349018cd19f6b1c1546ecc8d</property>
   <property name="global_feed">1</property>
@@ -710,10 +710,14 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="12" in="0" out="1776">
-  <property name="length">00:00:59;07</property>
+ <producer title="Anonymous Submission" id="12" in="0" out="1774">
+  <property name="length">00:00:59;05</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1947.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9739</property>
@@ -765,10 +769,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">26088393</property>
   <property name="kdenlive:file_hash">141dfa27020c306be2873e938b4b48c0</property>
   <property name="global_feed">1</property>
@@ -785,6 +785,10 @@
   <property name="length">00:01:14;08</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1948.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9812</property>
@@ -835,10 +839,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">32877151</property>
   <property name="kdenlive:file_hash">1e8a813091e4324176f7b53548550c75</property>
   <property name="global_feed">1</property>
@@ -851,10 +851,14 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="14" in="0" out="831">
-  <property name="length">00:00:27;22</property>
+ <producer title="Anonymous Submission" id="14" in="0" out="830">
+  <property name="length">00:00:27;21</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1949.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9712</property>
@@ -905,10 +909,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">12717214</property>
   <property name="kdenlive:file_hash">f2320203e2de5989a4b5fe9672bcc6c6</property>
   <property name="global_feed">1</property>
@@ -925,6 +925,10 @@
   <property name="length">00:02:13;04</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1950.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9703</property>
@@ -976,10 +980,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">59659615</property>
   <property name="kdenlive:file_hash">062ba99220c768f9cecdeb3b28ef535c</property>
   <property name="global_feed">1</property>
@@ -996,6 +996,10 @@
   <property name="length">00:00:00;24</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1951.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">21.4286</property>
@@ -1047,10 +1051,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">332371</property>
   <property name="kdenlive:file_hash">864bc3a2b77b6851f3fb9631f9f58ce9</property>
   <property name="global_feed">1</property>
@@ -1067,6 +1067,10 @@
   <property name="length">00:01:13;18</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1952.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9708</property>
@@ -1118,10 +1122,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">33351719</property>
   <property name="kdenlive:file_hash">0ef04466b24e93081a81be775440aca6</property>
   <property name="global_feed">1</property>
@@ -1134,10 +1134,14 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="18" in="0" out="720">
-  <property name="length">00:00:24;01</property>
+ <producer title="Anonymous Submission" id="18" in="0" out="719">
+  <property name="length">00:00:24;00</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1937.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.9855</property>
@@ -1189,10 +1193,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">10975545</property>
   <property name="kdenlive:file_hash">5258660c6fc9c051d9bf2dfbfb636811</property>
   <property name="global_feed">1</property>
@@ -1209,6 +1209,10 @@
   <property name="length">00:00:03;21</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1938.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">29.973</property>
@@ -1260,10 +1264,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">1686946</property>
   <property name="kdenlive:file_hash">608646371dfb0e4a37353d155f46b6e3</property>
   <property name="global_feed">1</property>
@@ -1280,6 +1280,10 @@
   <property name="length">00:00:01;12</property>
   <property name="eof">pause</property>
   <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1940.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">22.695</property>
@@ -1330,10 +1334,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">551602</property>
   <property name="kdenlive:file_hash">23b82787089968727c08279d83821e3f</property>
   <property name="global_feed">1</property>
@@ -1346,10 +1346,14 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="21" in="0" out="7192">
-  <property name="length">00:03:59;29</property>
+ <producer title="Anonymous Submission" id="21" in="0" out="7191">
+  <property name="length">00:03:59;28</property>
   <property name="eof">pause</property>
   <property name="resource">1. Guillemot.m4a</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">audio</property>
   <property name="meta.media.0.codec.sample_fmt">s32p</property>
@@ -1395,18 +1399,18 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">0</property>
-  <property name="video_index">-1</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">47104408</property>
   <property name="kdenlive:file_hash">4414fcab8fc1a74269d139912318859d</property>
   <property name="global_feed">1</property>
  </producer>
  <producer title="Anonymous Submission" id="22" in="0" out="7340">
-  <property name="length">00:04:04;29</property>
+  <property name="length">00:04:05;00</property>
   <property name="eof">pause</property>
   <property name="resource">6. The Crack in my Universe (Autumnfey's Mystic Lounge Remix) (by Debbizo).m4a</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">audio</property>
   <property name="meta.media.0.codec.sample_fmt">s32p</property>
@@ -1451,10 +1455,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">0</property>
-  <property name="video_index">-1</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">49064620</property>
   <property name="kdenlive:file_hash">1cb1e795d13d7a1a97a17b858d0c606c</property>
   <property name="global_feed">1</property>
@@ -1463,6 +1463,10 @@
   <property name="length">00:07:37;17</property>
   <property name="eof">pause</property>
   <property name="resource">3. Take Me Home (EDM Remix) (by Tarida Gaol and Kizzylotus).m4a</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">audio</property>
   <property name="meta.media.0.codec.sample_fmt">s32p</property>
@@ -1507,10 +1511,6 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">0</property>
-  <property name="video_index">-1</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">91619266</property>
   <property name="kdenlive:file_hash">1fd7e6bd2ab33aa8db2b1349bf4888f8</property>
   <property name="global_feed">1</property>
@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">7133</property>
+  <property name="kdenlive:docproperties.position">3036</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1544,29 +1544,29 @@
   <property name="xml_retain">1</property>
   <entry producer="2" in="0" out="9804"/>
   <entry producer="3" in="0" out="2402"/>
-  <entry producer="4" in="0" out="1660"/>
+  <entry producer="4" in="0" out="1658"/>
   <entry producer="5" in="0" out="41"/>
   <entry producer="6" in="0" out="30"/>
-  <entry producer="7" in="0" out="1112"/>
-  <entry producer="8" in="0" out="2924"/>
+  <entry producer="7" in="0" out="1111"/>
+  <entry producer="8" in="0" out="2923"/>
   <entry producer="9" in="0" out="1824"/>
-  <entry producer="10" in="0" out="652"/>
+  <entry producer="10" in="0" out="651"/>
   <entry producer="11" in="0" out="230"/>
-  <entry producer="12" in="0" out="1776"/>
+  <entry producer="12" in="0" out="1774"/>
   <entry producer="13" in="0" out="2225"/>
-  <entry producer="14" in="0" out="831"/>
+  <entry producer="14" in="0" out="830"/>
   <entry producer="15" in="0" out="3989"/>
   <entry producer="16" in="0" out="23"/>
   <entry producer="17" in="0" out="2205"/>
-  <entry producer="18" in="0" out="720"/>
+  <entry producer="18" in="0" out="719"/>
   <entry producer="19" in="0" out="110"/>
   <entry producer="20" in="0" out="41"/>
-  <entry producer="21" in="0" out="7192"/>
+  <entry producer="21" in="0" out="7191"/>
   <entry producer="22" in="0" out="7340"/>
   <entry producer="23" in="0" out="13712"/>
  </playlist>
- <producer id="black" in="0" out="18340">
-  <property name="length">18341</property>
+ <producer id="black" in="0" out="34743">
+  <property name="length">34744</property>
   <property name="eof">pause</property>
   <property name="resource">black</property>
   <property name="aspect_ratio">0</property>
@@ -1574,7 +1574,7 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="16233"/>
+  <entry producer="black" in="0" out="34743"/>
  </playlist>
  <producer title="Anonymous Submission" id="22_playlist1" in="0" out="7340">
   <property name="length">00:04:04;29</property>
@@ -1805,8 +1805,377 @@
    </filter>
   </entry>
  </playlist>
+ <producer title="Anonymous Submission" id="17_playlist3" in="0" out="2205">
+  <property name="length">00:01:13;18</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1952.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">33351719</property>
+  <property name="kdenlive:file_hash">0ef04466b24e93081a81be775440aca6</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">29.9708</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">640</property>
+  <property name="meta.media.0.codec.height">480</property>
+  <property name="meta.media.0.codec.rotate">90</property>
+  <property name="meta.media.0.codec.frame_rate">600</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">h264</property>
+  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+  <property name="meta.media.0.codec.bit_rate">3552987</property>
+  <property name="meta.attr.0.stream.rotate.markup">90</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T19:02:57.000000Z</property>
+  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">1</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">63999</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T19:02:57.000000Z</property>
+  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
+  <property name="meta.attr.major_brand.markup">qt  </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">qt  </property>
+  <property name="meta.attr.creation_time.markup">2017-10-04T19:02:57.000000Z</property>
+  <property name="meta.attr.model.markup">iPhone 3GS</property>
+  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
+  <property name="meta.attr.encoder.markup">6.1.6</property>
+  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
+  <property name="meta.attr.date.markup">2017-10-04T15:02:57-0400</property>
+  <property name="meta.attr.date-eng.markup">2017-10-04T15:02:57-0400</property>
+  <property name="meta.attr.location.markup">+44.8967-068.6707+029.067/</property>
+  <property name="meta.attr.location-eng.markup">+44.8967-068.6707+029.067/</property>
+  <property name="meta.attr.make.markup">Apple</property>
+  <property name="meta.attr.make-eng.markup">Apple</property>
+  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
+  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T15:02:57-0400</property>
+  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8967-068.6707+029.067/</property>
+  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
+  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="meta.media.frame_rate_num">441200</property>
+  <property name="meta.media.frame_rate_den">14721</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>
+ <producer title="Anonymous Submission" id="16_playlist3" in="0" out="23">
+  <property name="length">00:00:00;24</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1951.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">332371</property>
+  <property name="kdenlive:file_hash">864bc3a2b77b6851f3fb9631f9f58ce9</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="15_playlist3" in="0" out="3989">
+  <property name="length">00:02:13;04</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1950.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">59659615</property>
+  <property name="kdenlive:file_hash">062ba99220c768f9cecdeb3b28ef535c</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="14_playlist3" in="0" out="829">
+  <property name="length">00:00:27;21</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1949.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">12717214</property>
+  <property name="kdenlive:file_hash">f2320203e2de5989a4b5fe9672bcc6c6</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="13_playlist3" in="0" out="2225">
+  <property name="length">00:01:14;08</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1948.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">32877151</property>
+  <property name="kdenlive:file_hash">1e8a813091e4324176f7b53548550c75</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="12_playlist3" in="0" out="1772">
+  <property name="length">00:00:59;05</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1947.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">26088393</property>
+  <property name="kdenlive:file_hash">141dfa27020c306be2873e938b4b48c0</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="11_playlist3" in="0" out="230">
+  <property name="length">00:00:07;21</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1946.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">3545278</property>
+  <property name="kdenlive:file_hash">d3799330349018cd19f6b1c1546ecc8d</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="10_playlist3" in="0" out="650">
+  <property name="length">00:00:21;22</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1945.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">9612582</property>
+  <property name="kdenlive:file_hash">1780d327403b60abf7ee3c5362653c33</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="9_playlist3" in="0" out="1824">
+  <property name="length">00:01:00;27</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1944.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">28098073</property>
+  <property name="kdenlive:file_hash">1562572ef5d0eeb9721f2c128c2ada50</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="8_playlist3" in="0" out="2922">
+  <property name="length">00:01:37;16</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1943.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">44283401</property>
+  <property name="kdenlive:file_hash">da4da1fb7b8c73b998747b5d77fd4fb5</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="7_playlist3" in="0" out="1110">
+  <property name="length">00:00:37;02</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1942.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">16761631</property>
+  <property name="kdenlive:file_hash">682cba979a2fee4f613eb356b6f746f7</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="6_playlist3" in="0" out="30">
+  <property name="length">00:00:01;01</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1941.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">537425</property>
+  <property name="kdenlive:file_hash">bdfe2b26c1c49d2ae4d4a8edcea8bb68</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="20_playlist3" in="0" out="41">
+  <property name="length">00:00:01;12</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1940.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">551602</property>
+  <property name="kdenlive:file_hash">23b82787089968727c08279d83821e3f</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="5_playlist3" in="0" out="41">
+  <property name="length">00:00:01;12</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1940.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">551602</property>
+  <property name="kdenlive:file_hash">23b82787089968727c08279d83821e3f</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="4_playlist3" in="0" out="1656">
+  <property name="length">00:00:55;09</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1939.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">24767854</property>
+  <property name="kdenlive:file_hash">ed11901e66f881f12f356947aa840f0d</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="19_playlist3" in="0" out="110">
+  <property name="length">00:00:03;21</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1938.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">1686946</property>
+  <property name="kdenlive:file_hash">608646371dfb0e4a37353d155f46b6e3</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="18_playlist3" in="0" out="718">
+  <property name="length">00:00:24;00</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1937.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">10975545</property>
+  <property name="kdenlive:file_hash">5258660c6fc9c051d9bf2dfbfb636811</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="3_playlist3" in="0" out="2402">
+  <property name="length">00:01:20;05</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1936.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">36227379</property>
+  <property name="kdenlive:file_hash">bb5a8fccd9c63a4c0472473c7b7e2626</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
+ <producer title="Anonymous Submission" id="2_playlist3" in="0" out="9804">
+  <property name="length">00:05:27;05</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1935.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">147111309</property>
+  <property name="kdenlive:file_hash">5a79abf35436072a68974d7044147998</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
+  <blank length="2134"/>
+  <entry producer="17_playlist3" in="0" out="2205"/>
+  <entry producer="16_playlist3" in="0" out="23"/>
+  <entry producer="15_playlist3" in="0" out="3989"/>
+  <entry producer="14_playlist3" in="0" out="829"/>
+  <blank length="1"/>
+  <entry producer="13_playlist3" in="0" out="2225"/>
+  <entry producer="12_playlist3" in="0" out="1772"/>
+  <blank length="2"/>
+  <entry producer="11_playlist3" in="0" out="230"/>
+  <entry producer="10_playlist3" in="0" out="650"/>
+  <blank length="1"/>
+  <entry producer="9_playlist3" in="0" out="1824"/>
+  <entry producer="8_playlist3" in="0" out="2922"/>
+  <blank length="1"/>
+  <entry producer="7_playlist3" in="0" out="1110"/>
+  <blank length="1"/>
+  <entry producer="6_playlist3" in="0" out="30"/>
+  <entry producer="20_playlist3" in="0" out="41"/>
+  <entry producer="5_playlist3" in="0" out="41"/>
+  <entry producer="4_playlist3" in="0" out="1656"/>
+  <blank length="2"/>
+  <entry producer="19_playlist3" in="0" out="110"/>
+  <entry producer="18_playlist3" in="0" out="718"/>
+  <blank length="1"/>
+  <entry producer="3_playlist3" in="0" out="2402"/>
+  <entry producer="2_playlist3" in="0" out="9804"/>
  </playlist>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
@@ -1814,7 +2183,7 @@
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="16233">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="34743">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist2"/>
