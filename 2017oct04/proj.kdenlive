@@ -1515,6 +1515,34 @@
   <property name="kdenlive:file_hash">1fd7e6bd2ab33aa8db2b1349bf4888f8</property>
   <property name="global_feed">1</property>
  </producer>
+ <producer id="24" in="0" out="149">
+  <property name="length">150</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="seekable">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="kdenlive:clipname">Title clip</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="xmldata">&lt;kdenlivetitle duration="150" LC_NUMERIC="en_US.UTF-8" width="640" height="480" out="150">
+ &lt;item type="QGraphicsTextItem" z-index="0">
+  &lt;position x="31" y="331">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content line-spacing="0" shadow="1;#64000000;3;3;3" font-underline="0" box-height="137" font-outline-color="0,0,0,255" font="Wreathe" letter-spacing="0" font-pixel-size="100" font-italic="1" alignment="1" font-weight="50" gradient="#ffffffff;#ff000000;0;100;90" font-outline="0" box-width="513.453" font-color="0,0,0,255">Robert Stromberg&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,640,480"/>
+ &lt;endviewport rect="0,0,640,480"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="kdenlive:duration">150</property>
+  <property name="force_reload">0</property>
+  <property name="meta.media.width">640</property>
+  <property name="meta.media.height">480</property>
+  <property name="kdenlive:file_hash">b5a1177c9fdcb553fd74bf9a971d7b40</property>
+ </producer>
  <playlist id="main bin">
   <property name="kdenlive:docproperties.audiotargettrack">2</property>
   <property name="kdenlive:docproperties.dirtypreviewchunks"/>
@@ -1524,7 +1552,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">10351</property>
+  <property name="kdenlive:docproperties.position">0</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1539,7 +1567,7 @@
   <property name="kdenlive:docproperties.videotargettrack">3</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">0</property>
-  <property name="kdenlive:docproperties.zoom">8</property>
+  <property name="kdenlive:docproperties.zoom">12</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
   <entry producer="2" in="0" out="9804"/>
@@ -1564,6 +1592,7 @@
   <entry producer="21" in="0" out="7190"/>
   <entry producer="22" in="0" out="7340"/>
   <entry producer="23" in="0" out="13712"/>
+  <entry producer="24" in="0" out="149"/>
  </playlist>
  <producer id="black" in="0" out="34743">
   <property name="length">34744</property>
@@ -3001,6 +3030,9 @@
   <blank length="42"/>
   <entry producer="12_playlist5" in="1663" out="1755"/>
  </playlist>
+ <playlist id="playlist6">
+  <property name="kdenlive:track_name">Titles</property>
+ </playlist>
  <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="10337">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
@@ -3009,6 +3041,7 @@
   <track hide="audio" producer="playlist0"/>
   <track hide="audio" producer="playlist4"/>
   <track hide="audio" producer="playlist5"/>
+  <track producer="playlist6"/>
   <transition id="transition0">
    <property name="a_track">0</property>
    <property name="b_track">1</property>
@@ -3059,16 +3092,15 @@
   </transition>
   <transition id="transition6">
    <property name="a_track">0</property>
-   <property name="b_track">3</property>
-   <property name="compositing">0</property>
-   <property name="distort">0</property>
-   <property name="mlt_service">qtblend</property>
+   <property name="b_track">7</property>
+   <property name="mlt_service">mix</property>
    <property name="always_active">1</property>
+   <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
   <transition id="transition7">
    <property name="a_track">0</property>
-   <property name="b_track">4</property>
+   <property name="b_track">3</property>
    <property name="compositing">0</property>
    <property name="distort">0</property>
    <property name="mlt_service">qtblend</property>
@@ -3077,7 +3109,7 @@
   </transition>
   <transition id="transition8">
    <property name="a_track">0</property>
-   <property name="b_track">5</property>
+   <property name="b_track">4</property>
    <property name="compositing">0</property>
    <property name="distort">0</property>
    <property name="mlt_service">qtblend</property>
@@ -3086,7 +3118,25 @@
   </transition>
   <transition id="transition9">
    <property name="a_track">0</property>
+   <property name="b_track">5</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition10">
+   <property name="a_track">0</property>
    <property name="b_track">6</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition11">
+   <property name="a_track">0</property>
+   <property name="b_track">7</property>
    <property name="compositing">0</property>
    <property name="distort">0</property>
    <property name="mlt_service">qtblend</property>
