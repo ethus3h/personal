@@ -1346,7 +1346,7 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer id="21" in="0" out="7192">
+ <producer title="Anonymous Submission" id="21" in="0" out="7192">
   <property name="length">00:03:59;29</property>
   <property name="eof">pause</property>
   <property name="resource">1. Guillemot.m4a</property>
@@ -1401,6 +1401,7 @@
   <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">47104408</property>
   <property name="kdenlive:file_hash">4414fcab8fc1a74269d139912318859d</property>
+  <property name="global_feed">1</property>
  </producer>
  <producer id="22" in="0" out="7340">
   <property name="length">00:04:04;29</property>
@@ -1466,7 +1467,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">0</property>
+  <property name="kdenlive:docproperties.position">144</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1480,7 +1481,7 @@
   <property name="kdenlive:docproperties.verticalzoom">1</property>
   <property name="kdenlive:docproperties.videotargettrack">3</property>
   <property name="kdenlive:docproperties.zonein">0</property>
-  <property name="kdenlive:docproperties.zoneout">100</property>
+  <property name="kdenlive:docproperties.zoneout">0</property>
   <property name="kdenlive:docproperties.zoom">7</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
@@ -1515,15 +1516,74 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="1"/>
+  <entry producer="black" in="0" out="3731"/>
  </playlist>
  <playlist id="playlist1">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 2</property>
  </playlist>
+ <producer title="Anonymous Submission" id="21_playlist2" in="0" out="7191">
+  <property name="length">00:03:59;29</property>
+  <property name="eof">pause</property>
+  <property name="resource">1. Guillemot.m4a</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">47104408</property>
+  <property name="kdenlive:file_hash">4414fcab8fc1a74269d139912318859d</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s32p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">alac</property>
+  <property name="meta.media.0.codec.long_name">ALAC (Apple Lossless Audio Codec)</property>
+  <property name="meta.media.0.codec.bit_rate">1526057</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2015-05-26T16:35:35.000000Z</property>
+  <property name="meta.media.1.stream.type">video</property>
+  <property name="meta.media.1.stream.frame_rate">-nan</property>
+  <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.width">1200</property>
+  <property name="meta.media.1.codec.height">1200</property>
+  <property name="meta.media.1.codec.rotate">0</property>
+  <property name="meta.media.1.codec.frame_rate">90000</property>
+  <property name="meta.media.1.codec.pix_fmt">rgba</property>
+  <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.colorspace">709</property>
+  <property name="meta.media.1.codec.name">png</property>
+  <property name="meta.media.1.codec.long_name">PNG (Portable Network Graphics) image</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.major_brand.markup">M4A </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">M4A mp42isom</property>
+  <property name="meta.attr.creation_time.markup">2015-05-26T16:35:35.000000Z</property>
+  <property name="meta.attr.title.markup">Guillemot</property>
+  <property name="meta.attr.artist.markup">Elliot Wallace</property>
+  <property name="meta.attr.composer.markup">Elliot Chandler Wallace</property>
+  <property name="meta.attr.album.markup">Infinite Universe: Electric Dream Redux</property>
+  <property name="meta.attr.genre.markup">Electronic</property>
+  <property name="meta.attr.track.markup">1/20</property>
+  <property name="meta.attr.disc.markup">1/1</property>
+  <property name="meta.attr.date.markup">2015</property>
+  <property name="meta.attr.compilation.markup">0</property>
+  <property name="meta.attr.gapless_playback.markup">0</property>
+  <property name="meta.attr.encoder.markup">iTunes 12.1.2.27</property>
+  <property name="meta.attr.Encoding Params.markup">vers</property>
+  <property name="meta.attr.iTunNORM.markup"> 0000025F 00000242 00000E61 00000F46 0001CF37 0002DC9B 00007E87 000077DD 00022960 0002025F</property>
+  <property name="meta.attr.album_artist.markup">Elliot Wallace</property>
+  <property name="meta.attr.comment.markup">Finished 26 May 2015; to be released 27 May 2015. Copyright © ℗ 2015 Futuramerlin.</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+ </producer>
  <playlist id="playlist2">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 1</property>
+  <entry producer="21_playlist2" in="3461" out="7191"/>
  </playlist>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
@@ -1534,7 +1594,7 @@
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="1">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="3731">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist2"/>
