@@ -1527,7 +1527,7 @@
   <property name="kdenlive:folderid">-1</property>
   <property name="xmldata">&lt;kdenlivetitle duration="150" LC_NUMERIC="en_US.UTF-8" width="640" height="480" out="150">
  &lt;item type="QGraphicsTextItem" z-index="1">
-  &lt;position x="8" y="297">
+  &lt;position x="74" y="288">
    &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
   &lt;/position>
   &lt;content line-spacing="0" shadow="0;#64000000;3;3;3" font-underline="0" box-height="102" font-outline-color="255,255,255,255" font="Wreathe" letter-spacing="0" font-pixel-size="75" font-italic="1" alignment="1" font-weight="50" gradient="#ffffffff;#ff000000;0;100;90" font-outline="0.1" box-width="232.766" font-color="0,0,0,255">directed by&lt;/content>
@@ -1536,7 +1536,7 @@
   &lt;position x="31" y="331">
    &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
   &lt;/position>
-  &lt;content line-spacing="0" shadow="1;#ffffffff;5;3;3" font-underline="0" box-height="137" font-outline-color="255,255,255,255" font="Wreathe" letter-spacing="0" font-pixel-size="100" font-italic="1" alignment="1" font-weight="50" gradient="#ffffffff;#ff000000;0;100;90" font-outline="0.1" box-width="481.047" font-color="0,0,0,255">robert stromberg&lt;/content>
+  &lt;content line-spacing="0" shadow="1;#ffffffff;5;3;3" font-underline="0" box-height="137" font-outline-color="255,255,255,255" font="Wreathe" letter-spacing="0" font-pixel-size="100" font-italic="1" alignment="1" font-weight="50" gradient="#ffffffff;#ff000000;0;100;90" font-outline="0.1" box-width="513.453" font-color="0,0,0,255">Robert Stromberg&lt;/content>
  &lt;/item>
  &lt;startviewport rect="0,0,640,480"/>
  &lt;endviewport rect="0,0,640,480"/>
@@ -1566,41 +1566,6 @@
    &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
   &lt;/position>
   &lt;content line-spacing="0" shadow="0;#64000000;3;3;3" font-underline="0" box-height="102" font-outline-color="255,255,255,255" font="Wreathe" letter-spacing="0" font-pixel-size="75" font-italic="1" alignment="1" font-weight="50" gradient="#ffffffff;#ff000000;0;100;90" font-outline="0.1" box-width="222.609" font-color="0,0,0,255">starring~&lt;/content>
- &lt;/item>
- &lt;startviewport rect="0,0,640,480"/>
- &lt;endviewport rect="0,0,640,480"/>
- &lt;background color="0,0,0,0"/>
-&lt;/kdenlivetitle>
-</property>
-  <property name="kdenlive:duration">150</property>
-  <property name="force_reload">0</property>
-  <property name="kdenlive:file_hash">b5a1177c9fdcb553fd74bf9a971d7b40</property>
-  <property name="global_feed">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
- </producer>
- <producer id="26" in="0" out="149">
-  <property name="length">150</property>
-  <property name="eof">pause</property>
-  <property name="resource"/>
-  <property name="progressive">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="seekable">1</property>
-  <property name="mlt_service">kdenlivetitle</property>
-  <property name="kdenlive:clipname">Title clip (copy)</property>
-  <property name="kdenlive:folderid">-1</property>
-  <property name="xmldata">&lt;kdenlivetitle duration="150" LC_NUMERIC="en_US.UTF-8" width="640" height="480" out="150">
- &lt;item type="QGraphicsTextItem" z-index="1">
-  &lt;position x="8" y="297">
-   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
-  &lt;/position>
-  &lt;content line-spacing="0" shadow="0;#64000000;3;3;3" font-underline="0" box-height="102" font-outline-color="255,255,255,255" font="Wreathe" letter-spacing="0" font-pixel-size="75" font-italic="1" alignment="1" font-weight="50" gradient="#ffffffff;#ff000000;0;100;90" font-outline="0.1" box-width="232.766" font-color="0,0,0,255">directed by&lt;/content>
- &lt;/item>
- &lt;item type="QGraphicsTextItem" z-index="0">
-  &lt;position x="31" y="331">
-   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
-  &lt;/position>
-  &lt;content line-spacing="0" shadow="1;#ffffffff;5;3;3" font-underline="0" box-height="137" font-outline-color="255,255,255,255" font="Wreathe" letter-spacing="0" font-pixel-size="100" font-italic="1" alignment="1" font-weight="50" gradient="#ffffffff;#ff000000;0;100;90" font-outline="0.1" box-width="481.047" font-color="0,0,0,255">robert stromberg&lt;/content>
  &lt;/item>
  &lt;startviewport rect="0,0,640,480"/>
  &lt;endviewport rect="0,0,640,480"/>
@@ -1665,7 +1630,6 @@
   <entry producer="23" in="0" out="13712"/>
   <entry producer="24" in="0" out="149"/>
   <entry producer="25" in="0" out="149"/>
-  <entry producer="26" in="0" out="149"/>
  </playlist>
  <producer id="black" in="0" out="34743">
   <property name="length">34744</property>
@@ -3107,7 +3071,7 @@
   <property name="kdenlive:track_name">Titles</property>
   <blank length="555"/>
   <entry producer="24" in="0" out="149"/>
-  <blank length="329"/>
+  <blank length="458"/>
   <entry producer="25" in="0" out="149"/>
  </playlist>
  <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="10337">
@@ -3185,7 +3149,7 @@
    <property name="force_track">0</property>
    <property name="reverse">0</property>
   </transition>
-  <transition id="transition8" in="1034" out="1183">
+  <transition id="transition8" in="1163" out="1312">
    <property name="a_track">6</property>
    <property name="b_track">7</property>
    <property name="factory">loader</property>
