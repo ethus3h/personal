@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">16731</property>
+  <property name="kdenlive:docproperties.position">10354</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1539,7 +1539,7 @@
   <property name="kdenlive:docproperties.videotargettrack">3</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">0</property>
-  <property name="kdenlive:docproperties.zoom">10</property>
+  <property name="kdenlive:docproperties.zoom">8</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
   <entry producer="2" in="0" out="9804"/>
@@ -1574,7 +1574,7 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="32193"/>
+  <entry producer="black" in="0" out="10337"/>
  </playlist>
  <producer title="Anonymous Submission" id="22_playlist1" in="0" out="7340">
   <property name="length">00:04:04;29</property>
@@ -1792,7 +1792,7 @@
    </filter>
   </entry>
   <blank length="4504"/>
-  <entry producer="23_playlist2" in="2532" out="13712">
+  <entry producer="23_playlist2" in="2532" out="7800">
    <filter id="filter1" in="2532" out="2607">
     <property name="window">75</property>
     <property name="max_gain">20dB</property>
@@ -1802,6 +1802,16 @@
     <property name="kdenlive_ix">1</property>
     <property name="gain">0</property>
     <property name="end">1</property>
+   </filter>
+   <filter id="filter2" in="7725" out="7800">
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadeout</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">2</property>
+    <property name="gain">1</property>
+    <property name="end">0</property>
    </filter>
   </entry>
  </playlist>
@@ -2020,580 +2030,6 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
- <producer title="Anonymous Submission" id="8_playlist3" in="0" out="2922">
-  <property name="length">00:01:37;16</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1943.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">44283401</property>
-  <property name="kdenlive:file_hash">da4da1fb7b8c73b998747b5d77fd4fb5</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">29.9693</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">90</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">3558017</property>
-  <property name="meta.attr.0.stream.rotate.markup">90</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:46:46.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">63999</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:46:46.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:46:46.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:46:46-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:46:46-0400</property>
-  <property name="meta.attr.location.markup">+44.8967-068.6707+073.066/</property>
-  <property name="meta.attr.location-eng.markup">+44.8967-068.6707+073.066/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:46:46-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8967-068.6707+073.066/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">14625</property>
-  <property name="meta.media.frame_rate_den">488</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="7_playlist3" in="0" out="1110">
-  <property name="length">00:00:37;02</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1942.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">16761631</property>
-  <property name="kdenlive:file_hash">682cba979a2fee4f613eb356b6f746f7</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">29.9677</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">90</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">3537503</property>
-  <property name="meta.attr.0.stream.rotate.markup">90</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:44:04.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">63960</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:44:04.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:44:04.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:44:04-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:44:04-0400</property>
-  <property name="meta.attr.location.markup">+44.8993-068.6688+073.066/</property>
-  <property name="meta.attr.location-eng.markup">+44.8993-068.6688+073.066/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:44:04-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8993-068.6688+073.066/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">18550</property>
-  <property name="meta.media.frame_rate_den">619</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="6_playlist3" in="0" out="30">
-  <property name="length">00:00:01;01</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1941.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">537425</property>
-  <property name="kdenlive:file_hash">bdfe2b26c1c49d2ae4d4a8edcea8bb68</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">29.9517</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">180</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">4057749</property>
-  <property name="meta.attr.0.stream.rotate.markup">180</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:43:22.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">66113</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:43:22.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:43:22.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:43:22-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:43:22-0400</property>
-  <property name="meta.attr.location.markup">+44.8988-068.6687+029.067/</property>
-  <property name="meta.attr.location-eng.markup">+44.8988-068.6687+029.067/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:43:22-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8988-068.6687+029.067/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">6200</property>
-  <property name="meta.media.frame_rate_den">207</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="20_playlist3" in="0" out="41">
-  <property name="length">00:00:01;12</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1940.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">551602</property>
-  <property name="kdenlive:file_hash">23b82787089968727c08279d83821e3f</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">22.695</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">0</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">3085310</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:43:14.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">65296</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:43:14.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:43:14.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:43:14-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:43:14-0400</property>
-  <property name="meta.attr.location.markup">+44.8988-068.6687+082.067/</property>
-  <property name="meta.attr.location-eng.markup">+44.8988-068.6687+082.067/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:43:14-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8988-068.6687+082.067/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">3200</property>
-  <property name="meta.media.frame_rate_den">141</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="5_playlist3" in="0" out="41">
-  <property name="length">00:00:01;12</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1940.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">551602</property>
-  <property name="kdenlive:file_hash">23b82787089968727c08279d83821e3f</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">22.695</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">0</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">3085310</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:43:14.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">65296</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:43:14.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:43:14.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:43:14-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:43:14-0400</property>
-  <property name="meta.attr.location.markup">+44.8988-068.6687+082.067/</property>
-  <property name="meta.attr.location-eng.markup">+44.8988-068.6687+082.067/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:43:14-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8988-068.6687+082.067/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">3200</property>
-  <property name="meta.media.frame_rate_den">141</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="19_playlist3" in="0" out="110">
-  <property name="length">00:00:03;21</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1938.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">1686946</property>
-  <property name="kdenlive:file_hash">608646371dfb0e4a37353d155f46b6e3</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">29.973</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">90</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">3568762</property>
-  <property name="meta.attr.0.stream.rotate.markup">90</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:42:03.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">64621</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:42:03.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:42:03.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:42:03-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:42:03-0400</property>
-  <property name="meta.attr.location.markup">+44.8988-068.6687+081.067/</property>
-  <property name="meta.attr.location-eng.markup">+44.8988-068.6687+081.067/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:42:03-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8988-068.6687+081.067/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">33300</property>
-  <property name="meta.media.frame_rate_den">1111</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="18_playlist3" in="0" out="718">
-  <property name="length">00:00:24;00</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/Files/IMG_1937.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">10975545</property>
-  <property name="kdenlive:file_hash">5258660c6fc9c051d9bf2dfbfb636811</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">29.9855</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">180</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">3573304</property>
-  <property name="meta.attr.0.stream.rotate.markup">180</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:41:25.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">63938</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:41:25.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:41:25.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:41:25-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:41:25-0400</property>
-  <property name="meta.attr.location.markup">+44.8990-068.6686+085.067/</property>
-  <property name="meta.attr.location-eng.markup">+44.8990-068.6686+085.067/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:41:25-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8990-068.6686+085.067/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">433200</property>
-  <property name="meta.media.frame_rate_den">14447</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="3_playlist3" in="0" out="2402">
-  <property name="length">00:01:20;05</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1936.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">36227379</property>
-  <property name="kdenlive:file_hash">bb5a8fccd9c63a4c0472473c7b7e2626</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">29.9751</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">90</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">3542056</property>
-  <property name="meta.attr.0.stream.rotate.markup">90</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:39:19.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">63999</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:39:19.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:39:19.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:39:19-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:39:19-0400</property>
-  <property name="meta.attr.location.markup">+44.8966-068.6707+041.067/</property>
-  <property name="meta.attr.location-eng.markup">+44.8966-068.6707+041.067/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:39:19-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8966-068.6707+041.067/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">12020</property>
-  <property name="meta.media.frame_rate_den">401</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
-  <property name="meta.media.top_field_first">0</property>
-  <property name="meta.media.progressive">1</property>
- </producer>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
   <blank length="317"/>
@@ -2614,22 +2050,17 @@
   <entry producer="13_playlist3" in="507" out="556"/>
   <entry producer="13_playlist3" in="779" out="888"/>
   <blank length="35"/>
-  <entry producer="13_playlist3" in="978" out="2225"/>
-  <blank length="4463"/>
-  <entry producer="8_playlist3" in="0" out="2922"/>
-  <blank length="1"/>
-  <entry producer="7_playlist3" in="0" out="1110"/>
-  <blank length="1"/>
-  <entry producer="6_playlist3" in="0" out="30"/>
-  <entry producer="20_playlist3" in="0" out="41"/>
-  <entry producer="5_playlist3" in="0" out="41"/>
-  <blank length="1659"/>
-  <entry producer="19_playlist3" in="0" out="110"/>
-  <entry producer="18_playlist3" in="0" out="718"/>
-  <blank length="1"/>
-  <entry producer="3_playlist3" in="0" out="2402"/>
-  <entry producer="2_playlist3" in="0" out="7168"/>
-  <entry producer="2_playlist3" in="7169" out="7254"/>
+  <entry producer="13_playlist3" in="978" out="1131">
+   <filter id="fade_to_black" in="1056" out="1131">
+    <property name="start">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
  </playlist>
  <producer title="Anonymous Submission" id="15_playlist0" in="0" out="3989">
   <property name="length">00:02:13;04</property>
@@ -3096,8 +2527,6 @@
   <entry producer="9_playlist0" in="151" out="478"/>
   <blank length="110"/>
   <entry producer="9_playlist0" in="479" out="563"/>
-  <blank length="822"/>
-  <entry producer="9_playlist0" in="639" out="1824"/>
  </playlist>
  <producer title="Anonymous Submission" id="2_playlist4" in="0" out="9804">
   <property name="length">00:05:27;05</property>
@@ -3572,7 +3001,7 @@
   <blank length="42"/>
   <entry producer="12_playlist5" in="1663" out="1755"/>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="32193">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="10337">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist2"/>
