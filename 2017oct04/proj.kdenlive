@@ -1403,7 +1403,7 @@
   <property name="kdenlive:file_hash">4414fcab8fc1a74269d139912318859d</property>
   <property name="global_feed">1</property>
  </producer>
- <producer id="22" in="0" out="7340">
+ <producer title="Anonymous Submission" id="22" in="0" out="7340">
   <property name="length">00:04:04;29</property>
   <property name="eof">pause</property>
   <property name="resource">6. The Crack in my Universe (Autumnfey's Mystic Lounge Remix) (by Debbizo).m4a</property>
@@ -1457,6 +1457,63 @@
   <property name="mlt_service">avformat-novalidate</property>
   <property name="kdenlive:file_size">49064620</property>
   <property name="kdenlive:file_hash">1cb1e795d13d7a1a97a17b858d0c606c</property>
+  <property name="global_feed">1</property>
+ </producer>
+ <producer title="Anonymous Submission" id="23" in="0" out="13712">
+  <property name="length">00:07:37;17</property>
+  <property name="eof">pause</property>
+  <property name="resource">3. Take Me Home (EDM Remix) (by Tarida Gaol and Kizzylotus).m4a</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s32p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">alac</property>
+  <property name="meta.media.0.codec.long_name">ALAC (Apple Lossless Audio Codec)</property>
+  <property name="meta.media.0.codec.bit_rate">1578500</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2015-05-26T16:35:42.000000Z</property>
+  <property name="meta.media.1.stream.type">video</property>
+  <property name="meta.media.1.stream.frame_rate">-nan</property>
+  <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.width">1200</property>
+  <property name="meta.media.1.codec.height">1200</property>
+  <property name="meta.media.1.codec.rotate">0</property>
+  <property name="meta.media.1.codec.frame_rate">90000</property>
+  <property name="meta.media.1.codec.pix_fmt">rgba</property>
+  <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.colorspace">709</property>
+  <property name="meta.media.1.codec.name">png</property>
+  <property name="meta.media.1.codec.long_name">PNG (Portable Network Graphics) image</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.major_brand.markup">M4A </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">M4A mp42isom</property>
+  <property name="meta.attr.creation_time.markup">2015-05-26T16:35:42.000000Z</property>
+  <property name="meta.attr.title.markup">Take Me Home (EDM Remix) (by Tarida Gaol and Kizzylotus)</property>
+  <property name="meta.attr.artist.markup">Elliot Wallace</property>
+  <property name="meta.attr.album.markup">Infinite Universe: Electric Dream Redux</property>
+  <property name="meta.attr.genre.markup">Electronic</property>
+  <property name="meta.attr.track.markup">3/20</property>
+  <property name="meta.attr.disc.markup">1/1</property>
+  <property name="meta.attr.date.markup">2015</property>
+  <property name="meta.attr.compilation.markup">0</property>
+  <property name="meta.attr.gapless_playback.markup">0</property>
+  <property name="meta.attr.encoder.markup">iTunes 12.1.2.27</property>
+  <property name="meta.attr.Encoding Params.markup">vers</property>
+  <property name="meta.attr.iTunNORM.markup"> 00000219 00000253 00002519 000015F6 000157DA 000157DA 00007E87 00007DEB 0004EBC5 0004C450</property>
+  <property name="meta.attr.album_artist.markup">Elliot Wallace</property>
+  <property name="meta.attr.comment.markup">Finished 26 May 2015; to be released 27 May 2015. Copyright © ℗ 2015 Futuramerlin. Copyright others. Creative Commons share-alike attribution non-commercial.</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="kdenlive:file_size">91619266</property>
+  <property name="kdenlive:file_hash">1fd7e6bd2ab33aa8db2b1349bf4888f8</property>
+  <property name="global_feed">1</property>
  </producer>
  <playlist id="main bin">
   <property name="kdenlive:docproperties.audiotargettrack">2</property>
@@ -1467,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">144</property>
+  <property name="kdenlive:docproperties.position">3825</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1506,9 +1563,10 @@
   <entry producer="20" in="0" out="41"/>
   <entry producer="21" in="0" out="7192"/>
   <entry producer="22" in="0" out="7340"/>
+  <entry producer="23" in="0" out="13712"/>
  </playlist>
- <producer id="black" in="0" out="500">
-  <property name="length">15000</property>
+ <producer id="black" in="0" out="17418">
+  <property name="length">17419</property>
   <property name="eof">pause</property>
   <property name="resource">black</property>
   <property name="aspect_ratio">0</property>
@@ -1516,11 +1574,70 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="3731"/>
+  <entry producer="black" in="0" out="17418"/>
  </playlist>
+ <producer title="Anonymous Submission" id="22_playlist1" in="0" out="7340">
+  <property name="length">00:04:04;29</property>
+  <property name="eof">pause</property>
+  <property name="resource">6. The Crack in my Universe (Autumnfey's Mystic Lounge Remix) (by Debbizo).m4a</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">49064620</property>
+  <property name="kdenlive:file_hash">1cb1e795d13d7a1a97a17b858d0c606c</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s32p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">alac</property>
+  <property name="meta.media.0.codec.long_name">ALAC (Apple Lossless Audio Codec)</property>
+  <property name="meta.media.0.codec.bit_rate">1559160</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2015-05-26T16:36:10.000000Z</property>
+  <property name="meta.media.1.stream.type">video</property>
+  <property name="meta.media.1.stream.frame_rate">-nan</property>
+  <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.width">1200</property>
+  <property name="meta.media.1.codec.height">1200</property>
+  <property name="meta.media.1.codec.rotate">0</property>
+  <property name="meta.media.1.codec.frame_rate">90000</property>
+  <property name="meta.media.1.codec.pix_fmt">rgba</property>
+  <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.colorspace">709</property>
+  <property name="meta.media.1.codec.name">png</property>
+  <property name="meta.media.1.codec.long_name">PNG (Portable Network Graphics) image</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.major_brand.markup">M4A </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">M4A mp42isom</property>
+  <property name="meta.attr.creation_time.markup">2015-05-26T16:36:10.000000Z</property>
+  <property name="meta.attr.title.markup">The Crack in my Universe (Autumnfey's Mystic Lounge Remix) (by Debbizo)</property>
+  <property name="meta.attr.artist.markup">Elliot Wallace</property>
+  <property name="meta.attr.album.markup">Infinite Universe: Electric Dream Redux</property>
+  <property name="meta.attr.genre.markup">Electronic</property>
+  <property name="meta.attr.track.markup">6/20</property>
+  <property name="meta.attr.disc.markup">1/1</property>
+  <property name="meta.attr.date.markup">2015</property>
+  <property name="meta.attr.compilation.markup">0</property>
+  <property name="meta.attr.gapless_playback.markup">0</property>
+  <property name="meta.attr.encoder.markup">iTunes 12.1.2.27</property>
+  <property name="meta.attr.Encoding Params.markup">vers</property>
+  <property name="meta.attr.iTunNORM.markup"> 000000FB 00000102 00001502 000013DD 0002D52A 0002DACA 000076FC 00007E87 0002E03C 0002F646</property>
+  <property name="meta.attr.album_artist.markup">Elliot Wallace</property>
+  <property name="meta.attr.comment.markup">Finished 26 May 2015; to be released 27 May 2015. Copyright © ℗ 2015 Futuramerlin. Copyright others. Creative Commons share-alike attribution non-commercial.</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+ </producer>
  <playlist id="playlist1">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 2</property>
+  <blank length="610"/>
+  <entry producer="22_playlist1" in="0" out="7340"/>
  </playlist>
  <producer title="Anonymous Submission" id="21_playlist2" in="0" out="7191">
   <property name="length">00:03:59;29</property>
@@ -1580,10 +1697,81 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
  </producer>
+ <producer title="Anonymous Submission" id="23_playlist2" in="0" out="13712">
+  <property name="length">00:07:37;17</property>
+  <property name="eof">pause</property>
+  <property name="resource">3. Take Me Home (EDM Remix) (by Tarida Gaol and Kizzylotus).m4a</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">91619266</property>
+  <property name="kdenlive:file_hash">1fd7e6bd2ab33aa8db2b1349bf4888f8</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s32p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">alac</property>
+  <property name="meta.media.0.codec.long_name">ALAC (Apple Lossless Audio Codec)</property>
+  <property name="meta.media.0.codec.bit_rate">1578500</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2015-05-26T16:35:42.000000Z</property>
+  <property name="meta.media.1.stream.type">video</property>
+  <property name="meta.media.1.stream.frame_rate">-nan</property>
+  <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.width">1200</property>
+  <property name="meta.media.1.codec.height">1200</property>
+  <property name="meta.media.1.codec.rotate">0</property>
+  <property name="meta.media.1.codec.frame_rate">90000</property>
+  <property name="meta.media.1.codec.pix_fmt">rgba</property>
+  <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.1.codec.colorspace">709</property>
+  <property name="meta.media.1.codec.name">png</property>
+  <property name="meta.media.1.codec.long_name">PNG (Portable Network Graphics) image</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.major_brand.markup">M4A </property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">M4A mp42isom</property>
+  <property name="meta.attr.creation_time.markup">2015-05-26T16:35:42.000000Z</property>
+  <property name="meta.attr.title.markup">Take Me Home (EDM Remix) (by Tarida Gaol and Kizzylotus)</property>
+  <property name="meta.attr.artist.markup">Elliot Wallace</property>
+  <property name="meta.attr.album.markup">Infinite Universe: Electric Dream Redux</property>
+  <property name="meta.attr.genre.markup">Electronic</property>
+  <property name="meta.attr.track.markup">3/20</property>
+  <property name="meta.attr.disc.markup">1/1</property>
+  <property name="meta.attr.date.markup">2015</property>
+  <property name="meta.attr.compilation.markup">0</property>
+  <property name="meta.attr.gapless_playback.markup">0</property>
+  <property name="meta.attr.encoder.markup">iTunes 12.1.2.27</property>
+  <property name="meta.attr.Encoding Params.markup">vers</property>
+  <property name="meta.attr.iTunNORM.markup"> 00000219 00000253 00002519 000015F6 000157DA 000157DA 00007E87 00007DEB 0004EBC5 0004C450</property>
+  <property name="meta.attr.album_artist.markup">Elliot Wallace</property>
+  <property name="meta.attr.comment.markup">Finished 26 May 2015; to be released 27 May 2015. Copyright © ℗ 2015 Futuramerlin. Copyright others. Creative Commons share-alike attribution non-commercial.</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+ </producer>
  <playlist id="playlist2">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 1</property>
-  <entry producer="21_playlist2" in="3461" out="7191"/>
+  <entry producer="21_playlist2" in="3461" out="4297">
+   <filter id="fadein" in="3461" out="3487">
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadein</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="gain">0</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <blank length="2868"/>
+  <entry producer="23_playlist2" in="0" out="13712"/>
  </playlist>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
@@ -1594,7 +1782,7 @@
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="3731">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="17418">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist2"/>
