@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">9595</property>
+  <property name="kdenlive:docproperties.position">9678</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -2753,7 +2753,8 @@
   <entry producer="17_playlist3" in="1332" out="1472"/>
   <blank length="2179"/>
   <entry producer="13_playlist3" in="46" out="273"/>
-  <entry producer="13_playlist3" in="274" out="2225"/>
+  <entry producer="13_playlist3" in="274" out="506"/>
+  <entry producer="13_playlist3" in="507" out="2225"/>
   <blank length="1787"/>
   <entry producer="11_playlist3" in="0" out="230"/>
   <blank length="652"/>
