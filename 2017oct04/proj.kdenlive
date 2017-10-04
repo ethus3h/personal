@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">7677</property>
+  <property name="kdenlive:docproperties.position">7140</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -2765,8 +2765,8 @@
   <blank length="590"/>
   <entry producer="17_playlist3" in="689" out="1331"/>
   <blank length="599"/>
-  <entry producer="17_playlist3" in="1332" out="2205"/>
-  <blank length="1412"/>
+  <entry producer="17_playlist3" in="1332" out="1472"/>
+  <blank length="2145"/>
   <entry producer="13_playlist3" in="0" out="2225"/>
   <blank length="1775"/>
   <entry producer="11_playlist3" in="0" out="230"/>
@@ -3390,6 +3390,21 @@
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
  </producer>
+ <producer title="Anonymous Submission" id="17_playlist4" in="0" out="2205">
+  <property name="length">00:01:13;18</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1952.MOV</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mute_on_pause">1</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="seekable">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="kdenlive:file_size">33351719</property>
+  <property name="kdenlive:file_hash">0ef04466b24e93081a81be775440aca6</property>
+  <property name="global_feed">1</property>
+  <property name="xml">was here</property>
+ </producer>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
   <blank length="259"/>
@@ -3419,6 +3434,8 @@
   <entry producer="14_playlist4" in="69" out="255"/>
   <entry producer="14_playlist4" in="379" out="563"/>
   <entry producer="14_playlist4" in="627" out="804"/>
+  <blank length="179"/>
+  <entry producer="17_playlist4" in="1431" out="2205"/>
  </playlist>
  <producer title="Anonymous Submission" id="12_playlist5" in="0" out="1772">
   <property name="length">00:00:59;05</property>
