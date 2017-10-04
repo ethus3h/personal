@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">3825</property>
+  <property name="kdenlive:docproperties.position">578</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1539,7 +1539,7 @@
   <property name="kdenlive:docproperties.videotargettrack">3</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">0</property>
-  <property name="kdenlive:docproperties.zoom">7</property>
+  <property name="kdenlive:docproperties.zoom">9</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
   <entry producer="2" in="0" out="9804"/>
@@ -1565,8 +1565,8 @@
   <entry producer="22" in="0" out="7340"/>
   <entry producer="23" in="0" out="13712"/>
  </playlist>
- <producer id="black" in="0" out="17418">
-  <property name="length">17419</property>
+ <producer id="black" in="0" out="18340">
+  <property name="length">18341</property>
   <property name="eof">pause</property>
   <property name="resource">black</property>
   <property name="aspect_ratio">0</property>
@@ -1574,7 +1574,7 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry producer="black" in="0" out="17418"/>
+  <entry producer="black" in="0" out="16233"/>
  </playlist>
  <producer title="Anonymous Submission" id="22_playlist1" in="0" out="7340">
   <property name="length">00:04:04;29</property>
@@ -1636,8 +1636,19 @@
  <playlist id="playlist1">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 2</property>
-  <blank length="610"/>
-  <entry producer="22_playlist1" in="0" out="7340"/>
+  <blank length="505"/>
+  <entry producer="22_playlist1" in="2440" out="7340">
+   <filter id="fadein" in="2440" out="2515">
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadein</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="gain">0</property>
+    <property name="end">1</property>
+   </filter>
+  </entry>
  </playlist>
  <producer title="Anonymous Submission" id="21_playlist2" in="0" out="7191">
   <property name="length">00:03:59;29</property>
@@ -1757,8 +1768,8 @@
  <playlist id="playlist2">
   <property name="kdenlive:audio_track">1</property>
   <property name="kdenlive:track_name">Audio 1</property>
-  <entry producer="21_playlist2" in="3461" out="4297">
-   <filter id="fadein" in="3461" out="3487">
+  <entry producer="21_playlist2" in="3461" out="4008">
+   <filter id="filter0" in="3461" out="3487">
     <property name="window">75</property>
     <property name="max_gain">20dB</property>
     <property name="mlt_service">volume</property>
@@ -1769,9 +1780,30 @@
     <property name="end">1</property>
     <property name="kdenlive_info"/>
    </filter>
+   <filter id="fadeout" in="3933" out="4008">
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadeout</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">2</property>
+    <property name="gain">1</property>
+    <property name="end">0</property>
+   </filter>
   </entry>
-  <blank length="2868"/>
-  <entry producer="23_playlist2" in="0" out="13712"/>
+  <blank length="4504"/>
+  <entry producer="23_playlist2" in="2532" out="13712">
+   <filter id="filter1" in="2532" out="2607">
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadein</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="gain">0</property>
+    <property name="end">1</property>
+   </filter>
+  </entry>
  </playlist>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
@@ -1782,7 +1814,7 @@
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
  </playlist>
- <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="17418">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="16233">
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist2"/>
