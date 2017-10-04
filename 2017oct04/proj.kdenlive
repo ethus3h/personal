@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">10136</property>
+  <property name="kdenlive:docproperties.position">16731</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1539,7 +1539,7 @@
   <property name="kdenlive:docproperties.videotargettrack">3</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">0</property>
-  <property name="kdenlive:docproperties.zoom">7</property>
+  <property name="kdenlive:docproperties.zoom">10</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
   <entry producer="2" in="0" out="9804"/>
@@ -2612,8 +2612,10 @@
   <entry producer="13_playlist3" in="274" out="506"/>
   <blank length="308"/>
   <entry producer="13_playlist3" in="507" out="556"/>
-  <entry producer="13_playlist3" in="779" out="2225"/>
-  <blank length="4409"/>
+  <entry producer="13_playlist3" in="779" out="888"/>
+  <blank length="35"/>
+  <entry producer="13_playlist3" in="978" out="2225"/>
+  <blank length="4463"/>
   <entry producer="8_playlist3" in="0" out="2922"/>
   <blank length="1"/>
   <entry producer="7_playlist3" in="0" out="1110"/>
@@ -3092,8 +3094,10 @@
   <entry producer="10_playlist0" in="437" out="535"/>
   <blank length="115"/>
   <entry producer="9_playlist0" in="151" out="478"/>
-  <blank length="807"/>
-  <entry producer="9_playlist0" in="479" out="1824"/>
+  <blank length="110"/>
+  <entry producer="9_playlist0" in="479" out="563"/>
+  <blank length="822"/>
+  <entry producer="9_playlist0" in="639" out="1824"/>
  </playlist>
  <producer title="Anonymous Submission" id="2_playlist4" in="0" out="9804">
   <property name="length">00:05:27;05</property>
