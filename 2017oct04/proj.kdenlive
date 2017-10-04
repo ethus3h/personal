@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">4774</property>
+  <property name="kdenlive:docproperties.position">4847</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1948,76 +1948,6 @@
   <property name="meta.media.height">480</property>
   <property name="meta.media.top_field_first">0</property>
   <property name="meta.media.progressive">1</property>
- </producer>
- <producer title="Anonymous Submission" id="16_playlist3" in="0" out="23">
-  <property name="length">00:00:00;24</property>
-  <property name="eof">pause</property>
-  <property name="resource">/run/media/kyan/Windows/Users/Elliot/Desktop/IMG_1951.MOV</property>
-  <property name="audio_index">1</property>
-  <property name="video_index">0</property>
-  <property name="mute_on_pause">1</property>
-  <property name="mlt_service">avformat-novalidate</property>
-  <property name="seekable">1</property>
-  <property name="aspect_ratio">1</property>
-  <property name="kdenlive:file_size">332371</property>
-  <property name="kdenlive:file_hash">864bc3a2b77b6851f3fb9631f9f58ce9</property>
-  <property name="global_feed">1</property>
-  <property name="xml">was here</property>
-  <property name="meta.media.nb_streams">2</property>
-  <property name="meta.media.0.stream.type">video</property>
-  <property name="meta.media.0.stream.frame_rate">21.4286</property>
-  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.width">640</property>
-  <property name="meta.media.0.codec.height">480</property>
-  <property name="meta.media.0.codec.rotate">90</property>
-  <property name="meta.media.0.codec.frame_rate">600</property>
-  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-  <property name="meta.media.0.codec.colorspace">601</property>
-  <property name="meta.media.0.codec.color_trc">1</property>
-  <property name="meta.media.0.codec.name">h264</property>
-  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-  <property name="meta.media.0.codec.bit_rate">3670994</property>
-  <property name="meta.attr.0.stream.rotate.markup">90</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2017-10-04T18:59:02.000000Z</property>
-  <property name="meta.attr.0.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.0.stream.encoder.markup">H.264</property>
-  <property name="meta.media.1.stream.type">audio</property>
-  <property name="meta.media.1.codec.sample_fmt">fltp</property>
-  <property name="meta.media.1.codec.sample_rate">44100</property>
-  <property name="meta.media.1.codec.channels">1</property>
-  <property name="meta.media.1.codec.name">aac</property>
-  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-  <property name="meta.media.1.codec.bit_rate">64045</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2017-10-04T18:59:02.000000Z</property>
-  <property name="meta.attr.1.stream.handler_name.markup">Core Media Data Handler</property>
-  <property name="meta.attr.major_brand.markup">qt  </property>
-  <property name="meta.attr.minor_version.markup">0</property>
-  <property name="meta.attr.compatible_brands.markup">qt  </property>
-  <property name="meta.attr.creation_time.markup">2017-10-04T18:59:02.000000Z</property>
-  <property name="meta.attr.model.markup">iPhone 3GS</property>
-  <property name="meta.attr.model-eng.markup">iPhone 3GS</property>
-  <property name="meta.attr.encoder.markup">6.1.6</property>
-  <property name="meta.attr.encoder-eng.markup">6.1.6</property>
-  <property name="meta.attr.date.markup">2017-10-04T14:59:02-0400</property>
-  <property name="meta.attr.date-eng.markup">2017-10-04T14:59:02-0400</property>
-  <property name="meta.attr.location.markup">+44.8993-068.6689+029.067/</property>
-  <property name="meta.attr.location-eng.markup">+44.8993-068.6689+029.067/</property>
-  <property name="meta.attr.make.markup">Apple</property>
-  <property name="meta.attr.make-eng.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.make.markup">Apple</property>
-  <property name="meta.attr.com.apple.quicktime.creationdate.markup">2017-10-04T14:59:02-0400</property>
-  <property name="meta.attr.com.apple.quicktime.location.ISO6709.markup">+44.8993-068.6689+029.067/</property>
-  <property name="meta.attr.com.apple.quicktime.software.markup">6.1.6</property>
-  <property name="meta.attr.com.apple.quicktime.model.markup">iPhone 3GS</property>
-  <property name="meta.media.sample_aspect_num">1</property>
-  <property name="meta.media.sample_aspect_den">1</property>
-  <property name="meta.media.frame_rate_num">150</property>
-  <property name="meta.media.frame_rate_den">7</property>
-  <property name="meta.media.colorspace">601</property>
-  <property name="meta.media.color_trc">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
  </producer>
  <producer title="Anonymous Submission" id="14_playlist3" in="0" out="829">
   <property name="length">00:00:27;21</property>
@@ -2901,11 +2831,9 @@
   <entry producer="2_playlist3" in="7313" out="7394"/>
   <blank length="1207"/>
   <entry producer="17_playlist3" in="0" out="160"/>
-  <blank length="2453"/>
-  <entry producer="16_playlist3" in="0" out="23"/>
-  <blank length="338"/>
-  <entry producer="17_playlist3" in="137" out="2205"/>
-  <blank length="1583"/>
+  <blank length="2874"/>
+  <entry producer="17_playlist3" in="259" out="2205"/>
+  <blank length="1646"/>
   <entry producer="14_playlist3" in="0" out="829"/>
   <blank length="1"/>
   <entry producer="13_playlist3" in="0" out="2225"/>
