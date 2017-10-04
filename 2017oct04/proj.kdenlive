@@ -1524,7 +1524,7 @@
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
   <property name="kdenlive:docproperties.kdenliveversion">16.08.3</property>
-  <property name="kdenlive:docproperties.position">2891</property>
+  <property name="kdenlive:docproperties.position">2693</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -1539,7 +1539,7 @@
   <property name="kdenlive:docproperties.videotargettrack">3</property>
   <property name="kdenlive:docproperties.zonein">0</property>
   <property name="kdenlive:docproperties.zoneout">0</property>
-  <property name="kdenlive:docproperties.zoom">4</property>
+  <property name="kdenlive:docproperties.zoom">9</property>
   <property name="kdenlive:documentnotes"/>
   <property name="xml_retain">1</property>
   <entry producer="2" in="0" out="9804"/>
@@ -3175,9 +3175,11 @@
   <entry producer="12_playlist0" in="0" out="137"/>
   <blank length="201"/>
   <entry producer="4_playlist0" in="373" out="629"/>
-  <blank length="257"/>
-  <entry producer="4_playlist0" in="630" out="1656"/>
-  <blank length="143"/>
+  <blank length="61"/>
+  <entry producer="4_playlist0" in="819" out="879"/>
+  <blank length="57"/>
+  <entry producer="4_playlist0" in="1230" out="1252"/>
+  <blank length="1225"/>
   <entry producer="15_playlist0" in="2871" out="3989"/>
   <blank length="872"/>
   <entry producer="15_playlist0" in="0" out="220"/>
@@ -3414,9 +3416,12 @@
   <entry producer="4_playlist4" in="149" out="186"/>
   <blank length="257"/>
   <entry producer="2_playlist4" in="8720" out="8759"/>
-  <blank length="387"/>
-  <entry producer="2_playlist4" in="9261" out="9334"/>
-  <blank length="2644"/>
+  <entry producer="2_playlist4" in="9261" out="9281"/>
+  <blank length="61"/>
+  <entry producer="4_playlist4" in="1097" out="1153"/>
+  <blank length="23"/>
+  <entry producer="4_playlist4" in="1605" out="1616"/>
+  <blank length="2931"/>
   <entry producer="15_playlist4" in="1066" out="2610"/>
  </playlist>
  <producer title="Anonymous Submission" id="12_playlist5" in="0" out="1772">
