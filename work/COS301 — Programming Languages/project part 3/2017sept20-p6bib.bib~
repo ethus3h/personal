@@ -1,6 +1,6 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%     This file was created with JabRef 2.10.
+%    This file was created with JabRef 2.10.
 
 @article{P6FAQ,
 	address = {https://docs.perl6.org/language/faq},
@@ -65,7 +65,7 @@
 	month = {1 Sept.},
 	note = {This is more information on debugging Perl 6 grammars.},
 	publisher = {Perl Programming},
-	title = {How To Debug a {Perl} 6 Grammar},
+	title = {How To Debug a Perl 6 Grammar},
 	year = {2010}
 }
 
@@ -103,7 +103,7 @@
 	author = {Language, The Perl 6 Programming},
 	howpublished = {Web},
 	note = {This home page for the Perl 6 language introduces it and its culture. Retrieved 20 Sept. 2017.},
-	title = {The {Perl} 6 Programming Language},
+	title = {The Perl 6 Programming Language},
 	year = {n.d.}
 }
 
@@ -111,7 +111,7 @@
 	author = {Rosenfeld, Laurent and Downey, Allen B.},
 	note = {I used this book as a supplementary resource for getting an overview of Perl 6.},
 	publisher = {O'Reilly Media, Inc.},
-	title = {Think {Perl} 6},
+	title = {Think Perl 6},
 	year = {2017}
 }
 

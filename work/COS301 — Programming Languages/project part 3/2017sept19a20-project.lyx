@@ -86,8 +86,7 @@ Elliot Chandler (Wallace)
 \end_layout
 
 \begin_layout Date
-19a20 Sept.
- 2017
+4 October 2017
 \end_layout
 
 \begin_layout Abstract
@@ -136,7 +135,7 @@ key "project"
 
  Perl 6 has many complex and capable programming constructs included with
  it.
- Consequently, it seems quite capable to me.
+ Because of this, it seems quite capable to me.
  The main detriment compared to other programming languages in general that
  it seems very module-centric, and that it is fairly a new language, and
  consequently that it does not have a substantial amount of documentation
@@ -207,8 +206,22 @@ patterns
 , which are somewhat similar to regular expressions in other languages,
  and generally take their place in Perl 6, although Perl 5–style regular
  expressions are still available in Perl 6 in case they are needed.
- Perl 6 has many other features, as well, that contribute to it being effective
- and capable at solving a wide range of other problems.
+\end_layout
+
+\begin_layout Standard
+In addition to these abilities, Perl 6 has many other features, as well,
+ that contribute to it being effective and capable at solving a variety
+ of other problems: rather than focusing exclusively on one problem domain
+ at the expense of facility in others, it is a general-purpose language
+ that provides a range of tools that can be used, combined, and adapted
+ for various applications.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
  Its mascot is a butterfly named Camelia 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -223,8 +236,7 @@ key "Documentation"
  Perl, and consequently it is somewhat different, with some language constructs
  not being available in Perl 6, thus necessitating working around their
  absence.
- My lack of familiarity with Perl prevents my assessing thoroughly the extent
- of this as being a problem, but apparently the 
+ For example, the 
 \begin_inset ERT
 status open
 
@@ -237,8 +249,8 @@ lstinline!wantsarray!
 
 \end_inset
 
- construct from Perl is not available in Perl 6, according to the language
- FAQ 
+ construct from Perl is apparently not available in Perl 6, according to
+ the language FAQ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "P6FAQ"
@@ -246,6 +258,8 @@ key "P6FAQ"
 \end_inset
 
 .
+ My lack of familiarity with Perl prevents my assessing thoroughly the extent
+ of a problem that this causes.
  Perl 6 uses (limited-precision 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -310,6 +324,8 @@ key "Documentation_2"
 Perl 6 seems to have good prospects ahead of it, being a new language.
  Now that it has been released, it will presumably see extensive testing,
  and consequent development, due to its being in more widespread use.
+ In summary, it is a capable and flexible general-purpose language that,
+ while being new and having some rough edges, is quite capable and useful.
 \end_layout
 
 \begin_layout Standard
