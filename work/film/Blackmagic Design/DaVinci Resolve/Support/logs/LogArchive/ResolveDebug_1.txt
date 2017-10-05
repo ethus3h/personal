@@ -1,0 +1,489 @@
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:12,639 | Resolve Module Handle 00007FF6C2E40000
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,751 | Updating display GPU information...
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,825 | Found correct name from registry for device : I, provider Intel Corporation
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,825 | Found Intel Device: Intel(R) Iris(TM) Graphics 540
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,826 | GPU Intel(R) Iris(TM) Graphics 540 is used for display
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,866 | GPUs detected: 1 integrated, 0 discrete, 1 OpenCL.Graphics interop capable.
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,866 | Detected uptime 747s
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,866 | GPU Name = 'Intel(R) Iris(TM) Graphics 540', Main display = 1
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,867 | Only 1 Intel display GPU found. Using OPENCL for processing.
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,867 | Setting LsManager.3.NumGPUs = 1
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,867 | Setting LsManager.3.DisplayGPUName = Intel(R) Iris(TM) Graphics 540
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,867 | Setting LsManager.3.DisplayGPUIndex = 0
+[0x000018a8] | IO                   | INFO  | 2017-09-28 01:35:14,867 | RED InitializeSdk with library path at C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\Libraries
+[0x000018a8] | IO                   | INFO  | 2017-09-28 01:35:14,878 | Red SDK init is successful
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,879 | 0 RED rocket cards available
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,879 | Setting Local.DtManager.1.Red.Threads = 0
+There are 1 GPUs in the system.
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,891 | Decklink model name: '', version: ''
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,892 | Installed custom font: Open Sans
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:14,893 | Installed custom font: Open Sans Semibold
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:15,081 | Finished loading Application style sheet
+*********** WITH DIRECT I/O SWITCHED ON!
+*********** WITH DIRECT I/O SWITCHED ON!
+Local.Speed.Debug switched OFF - ''
+[0x000018fc] | LeManager            | INFO  | 2017-09-28 01:35:15,495 | 521, 38
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,428 | Memory config: reserved=4000M pinned=3000M log=0
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,429 | Using default pooled memory manager
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,509 | Starting Daemon: C:/Program Files/Blackmagic Design/DaVinci Resolve/DPDecoder.exe
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,566 | Starting Daemon: C:/Program Files/Blackmagic Design/DaVinci Resolve/DPDecoder.exe
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,632 | Starting Daemon: C:/Program Files/Blackmagic Design/DaVinci Resolve/DPDecoder.exe
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,714 | Starting Daemon: C:/Program Files/Blackmagic Design/DaVinci Resolve/DPDecoder.exe
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,797 | Starting Daemon: C:/Program Files/Blackmagic Design/DaVinci Resolve/DPDecoder.exe
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,873 | Starting Daemon: C:/Program Files/Blackmagic Design/DaVinci Resolve/DPDecoder.exe
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:16,958 | Starting Daemon: C:/Program Files/Blackmagic Design/DaVinci Resolve/DPDecoder.exe
+[0x000018a8] | BtCommon             | INFO  | 2017-09-28 01:35:17,047 | Starting Daemon: C:/Program Files/Blackmagic Design/DaVinci Resolve/DPDecoder.exe
+[0x000018a8] | SyManager            | INFO  | 2017-09-28 01:35:17,156 | Total: 20, NumDtThreads: 8, NumComms: 0, NumSites: 1
+
+[0x000018a8] | SyManager            | INFO  | 2017-09-28 01:35:17,156 | Lookaheads -> playback = 20, record = 20, stop = 2
+
+[0x000018a8] | DtManager            | INFO  | 2017-09-28 01:35:17,157 | Using 8 generic IO threads
+[0x000018a8] | DtManager            | INFO  | 2017-09-28 01:35:17,157 | Total of 16 IO threads (including 8 generic and 8 Red decode threads)
+Sy High Command Handler Thread ----- (686514224)
+SY high priority cmd handler thread starts: 28EB6030
+Sy Low Command Handler Thread ----- (686547456)
+SY low priority cmd handler thread starts: 28EBE200
+Sy Data Handler Thread ----- (686547904)
+SY data handler thread starts: 28EBE3C0
+Gs High Command Handler Thread ----- (686549248)
+GS high priority cmd handler thread starts: 28EBE900
+Gs Low Command Handler Thread ----- (686549776)
+GS low priority cmd handler thread starts: 28EBEB10
+[0x00002c7c] | GsManager            | INFO  | 2017-09-28 01:35:17,160 | Gs Processor Thread ----- (686552464)
+
+GS processor thread starts: 28EBF590
+Local.Speed.Verbose switched OFF - ''
+Dp High Command Handler Thread ----- (686550672)
+DP high priority cmd handler thread starts: 28EBEE90
+Dp Low Command Handler Thread ----- (686551120)
+DP low priority cmd handler thread starts: 28EBF050
+Dt High Command Handler Thread ----- (686550224)
+DT high priority cmd handler thhread starts: 28EBECD0
+Dt Low Command Handler Thread ----- (686551568)
+DT low priority cmd handler thread starts: 28EBF210
+[0x00003100] | DtManager            | INFO  | 2017-09-28 01:35:17,161 | Dt Data Handler Thread Started
+DT data handler thread starts: 28EBF750
+[0x000032b0] | DtManager            | INFO  | 2017-09-28 01:35:17,162 | Dt Worker Thread Started
+[0x0000273c] | DtManager            | INFO  | 2017-09-28 01:35:17,162 | Dt Worker Thread Started
+[0x00000074] | DtManager            | INFO  | 2017-09-28 01:35:17,162 | Dt Worker Thread Started
+[0x000031d0] | DtManager            | INFO  | 2017-09-28 01:35:17,162 | Dt Worker Thread Started
+[0x0000203c] | DtManager            | INFO  | 2017-09-28 01:35:17,163 | Dt Worker Thread Started
+[0x000017f8] | DtManager            | INFO  | 2017-09-28 01:35:17,163 | Dt Worker Thread Started
+[0x000030f0] | DtManager            | INFO  | 2017-09-28 01:35:17,163 | Dt Worker Thread Started
+[0x00001f90] | DtManager            | INFO  | 2017-09-28 01:35:17,163 | Dt Worker Thread Started
+[0x00000b34] | DtManager            | INFO  | 2017-09-28 01:35:17,163 | Dt Worker Thread Started
+[0x00002270] | DtManager            | INFO  | 2017-09-28 01:35:17,163 | Dt Worker Thread Started
+[0x0000310c] | DtManager            | INFO  | 2017-09-28 01:35:17,166 | Dt Worker Thread Started
+[0x00003114] | DtManager            | INFO  | 2017-09-28 01:35:17,169 | Dt Worker Thread Started
+[0x00003150] | DtManager            | INFO  | 2017-09-28 01:35:17,171 | Dt Worker Thread Started
+[0x000031e0] | DtManager            | INFO  | 2017-09-28 01:35:17,173 | Dt Worker Thread Started
+[0x000018a8] | DbCommon2            | INFO  | 2017-09-28 01:35:17,175 | Loading dblist file: C:\ProgramData\Blackmagic Design\DaVinci Resolve\Preferences\dblist.conf
+[0x0000305c] | DtManager            | INFO  | 2017-09-28 01:35:17,184 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (686557920)
+Ls Low Command Handler Thread ----- (686553888)
+LS low priority cmd handler thread starts: 28EBFB20
+Ls Data Handler Thread ----- (688364000)
+LS data handler thread starts: 290799E0
+[0x000032ec] | DtManager            | INFO  | 2017-09-28 01:35:17,185 | Dt Worker Thread Started
+[0x0000219c] | DtManager            | INFO  | 2017-09-28 01:35:17,185 | Dt Worker Thread Started
+Ls High Command Handler Thread ----- (688364448)
+Ls Low Command Handler Thread ----- (688367584)
+LS low priority cmd handler thread starts: 2907A7E0
+Ls Data Handler Thread ----- (688364896)
+LS data handler thread starts: 29079D60
+Ls High Command Handler Thread ----- (688368032)
+Ls Low Command Handler Thread ----- (688368480)
+LS low priority cmd handler thread starts: 2907AB60
+Ls Data Handler Thread ----- (688365344)
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:35:17,188 | Let There Be OpenCL Light!
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:35:17,188 | Start detecting OpenCL boards
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:35:17,188 | Found qualified OpenCL board 0: platform - Intel(R) OpenCL, vendor - Intel(R) Corporation, device name - Intel(R) Iris(TM) Graphics 540 id - 0000027E21A9E360, global memory size (MB) - 6496, local memory size (KB) - 64, max global memory alloc size (MB) - 2047
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:35:17,188 | Skipping unsupported device Intel(R) Core(TM) i7-6560U CPU @ 2.20GHz
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:35:17,188 | 1 OpenCL boards detected
+Mem Data Transmitter Thread ----- (688362656)
+Mem data transmitter thread starts: 290794A0
+[0x00000a78] | GPUManager           | INFO  | 2017-09-28 01:35:17,200 | Initializing GPU board 0 with context thread 0
+[0x00000a78] | UI.GLInterOp         | INFO  | 2017-09-28 01:35:17,201 | Waiting for shared OpenGL context to be set.
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:35:17,213 | Running DaVinci Resolve v14.0.0.078 (Windows)
+[0x000018a8] | IO                   | INFO  | 2017-09-28 01:35:17,237 | Using DNxHR library v2.3.3.39r
+[0x00002cd8] | SyManager            | ERROR | 2017-09-28 01:35:18,162 | socket failed to connect to server, error: 10061
+
+[0x00002cd8] | SyManager            | ERROR | 2017-09-28 01:35:18,163 | DRIVER: panel connection failed
+SY panel handler thread starts: 28EBE740
+[0x00002cd8] | SyManager            | ERROR | 2017-09-28 01:35:19,169 | socket failed to connect to server, error: 10061
+
+[0x000018a8] | DVIP                 | INFO  | 2017-09-28 01:35:19,478 | DVIP Version : 1.0, Revision = 65521 (Release)
+
+MidiInWinMM::initialize: no MIDI input devices currently available.
+
+[0x000018a8] | Fairlight            | INFO  | 2017-09-28 01:35:20,051 | RtMidi Output Port #1: Microsoft GS Wavetable Synth 0
+All textures are loaded : 1.
+A scanner discovery instance could not be created: Class not registered
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:20,683 | Missing ActionDefinition for fileEnableDisableCollaboration
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:20,710 | Missing ActionDefinition for helpDeactivateLicense
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:20,712 | Missing ActionDefinition for workspaceRemoteRendering
+[0x000018a8] | DbCommon2            | INFO  | 2017-09-28 01:35:20,783 | Sm2SysIdEntry is not supported in disk database (xml) mode
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,691 | Binding 'Alt+Shift+T' for unknown action fileCollaborationPublish
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,692 | Binding 'Ctrl+Shift+T' for unknown action fileCollaborationPublishSelected
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,692 | Binding 'Alt+Shift+U' for unknown action fileCollaborationUpdate
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,692 | Binding 'Ctrl+Shift+U' for unknown action fileCollaborationUpdateSelected
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,712 | Binding 'Ctrl+G' for unknown action workspaceRemoteGrading
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,751 | :/Application/Keyboard/bindings-resolve9.txt: Key sequence Shift+C defined by trimSelectAudioEditPoint and clipShowCurveEditor
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,751 | :/Application/Keyboard/bindings-resolve9.txt: Key sequence Ctrl+Shift+, defined by viewStereoSwitchEyeLeft and editNudgeSwapEditReverse
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,752 | :/Application/Keyboard/bindings-resolve9.txt: Key sequence Ctrl+Shift+. defined by editNudgeSwapEditForward and viewStereoSwitchEyeRight
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,753 | After merging custom hotkeys: Key sequence Up defined by fairlightActionsPanTracksUp and controlClipPrev
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,753 | After merging custom hotkeys: Key sequence Right defined by controlStepForward and fairlightActionsJumpRight
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,754 | After merging custom hotkeys: Key sequence Down defined by fairlightActionsPanTracksDown and controlClipNext
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,754 | After merging custom hotkeys: Key sequence Shift+C defined by trimSelectAudioEditPoint and clipShowCurveEditor
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,754 | After merging custom hotkeys: Key sequence Left defined by controlStepReverse and fairlightActionsJumpLeft
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,754 | After merging custom hotkeys: Key sequence Ctrl+Shift+, defined by viewStereoSwitchEyeLeft and editNudgeSwapEditReverse
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:21,754 | After merging custom hotkeys: Key sequence Ctrl+Shift+. defined by editNudgeSwapEditForward and viewStereoSwitchEyeRight
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:22,636 | Failed to load media metadata preset list or the list is empty.
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:22,652 | Failed to load media metadata preset list or the list is empty.
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:23,057 | Failed to load media metadata preset list or the list is empty.
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:23,072 | Failed to load media metadata preset list or the list is empty.
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:23,175 | Missing ActionDefinition for trimSlidePlayheadToIn
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:23,175 | Missing ActionDefinition for trimSlidePlayheadToOut
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:23,409 | Failed to load media metadata preset list or the list is empty.
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:23,426 | Failed to load media metadata preset list or the list is empty.
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:23,557 | Missing ActionDefinition for workspaceRemoteGrading
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:23,579 | Missing ActionDefinition for sessionDolbyVisionAnalyzeAllShots
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:23,579 | Missing ActionDefinition for sessionDolbyVisionAnalyzeSelectedShots
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:23,579 | Missing ActionDefinition for sessionDolbyVisionAnalyzeSelectedAndGroup
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:23,580 | Missing ActionDefinition for sessionDolbyVisionAnalyzeCurrentFrame
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:35:23,623 | Not creating special GL widget for screen 0
+[0x000018a8] | UI.GLInterOp         | INFO  | 2017-09-28 01:35:23,624 | Creating interop OpenGL context.
+[0x000018a8] | UI.GLInterOp         | INFO  | 2017-09-28 01:35:23,656 | Shared OpenGL context set.
+[0x00000a78] | UI.GLInterOp         | INFO  | 2017-09-28 01:35:23,731 | Done waiting for OpenGL context, moving it to current thread.
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:35:24,948 | Failed to find value '4522061' in combo-box
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,323 | Missing ActionDefinition for copy
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,323 | Missing ActionDefinition for cut
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,324 | Missing ActionDefinition for paste
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,327 | Missing ActionDefinition for markMarkerClearAll
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,329 | Missing ActionDefinition for controlRewind
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,330 | Missing ActionDefinition for controlSlowForward
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,330 | Missing ActionDefinition for controlSlowReverse
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,333 | Missing ActionDefinition for fairlightActionsPresetsLibrary
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,333 | Missing ActionDefinition for fairlightActionsLinkGroup
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,335 | Missing ActionDefinition for markSetRangeTypeUnion
+[0x000018a8] | UI.ActionConnector   | WARN  | 2017-09-28 01:35:25,335 | Missing ActionDefinition for markSetRangeTypeIntersecting
+[0x00000a78] | UI.GLInterOp         | INFO  | 2017-09-28 01:35:25,468 | Interop OpenCL setup done.
+[0x00000a78] | GPUManager           | INFO  | 2017-09-28 01:35:25,468 | Setting channel cache size on GPU board 0 to 0
+[0x00000a78] | GPUManager           | INFO  | 2017-09-28 01:35:25,469 | Board manager 0 on thread 0 initialization done on GPU Intel(R) Iris(TM) Graphics 540
+****************** Flushing GPU Buffers
+[0x00000a78] | GPUManager           | INFO  | 2017-09-28 01:35:36,574 | Completed prebuild of basic OpenCL kernels in 11105 msec
+[0x00000a78] | GPUManager           | INFO  | 2017-09-28 01:35:36,574 | Entering loop to wait for commands
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:35:36,574 | Finished initializing OpenCL board 0 <Intel(R) Iris(TM) Graphics 540> on platform <Intel(R) OpenCL> clock rate <1050> multiprocessor count <48> global mem size (MB) 6496, available mem size (MB) 0, shared mem size (KB) 64, on SBM[0|0]
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:35:36,574 | Hired OpenCL board 0 <Intel(R) Iris(TM) Graphics 540>
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:35:36,579 | Let There Be OpenCL Light, Done!!
+Board 0 - Intel(R)_Iris(TM)_Graphics_540
+1 REACTOR GPU NAMES = Intel(R)_Iris(TM)_Graphics_540,
+LS data handler thread starts: 29079F20
+[0x000018a8] | IO                   | INFO  | 2017-09-28 01:35:36,589 | 0 RED rocket cards available
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:35:37,091 | Failed to find value '0' in combo-box
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:35:45,278 | Current user pointer is changed
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:45,282 | UI Persistence - no old persistent data found
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:35:45,822 | Failed to find value '14' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:35:45,831 | Failed to find value '-1' in combo-box
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:45,971 | Binding 'Alt+Shift+T' for unknown action fileCollaborationPublish
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:45,971 | Binding 'Ctrl+Shift+T' for unknown action fileCollaborationPublishSelected
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:45,971 | Binding 'Alt+Shift+U' for unknown action fileCollaborationUpdate
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:45,971 | Binding 'Ctrl+Shift+U' for unknown action fileCollaborationUpdateSelected
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:45,988 | Binding 'Ctrl+G' for unknown action workspaceRemoteGrading
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,021 | :/Application/Keyboard/bindings-resolve9.txt: Key sequence Shift+C defined by trimSelectAudioEditPoint and clipShowCurveEditor
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,021 | :/Application/Keyboard/bindings-resolve9.txt: Key sequence Ctrl+Shift+, defined by viewStereoSwitchEyeLeft and editNudgeSwapEditReverse
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,021 | :/Application/Keyboard/bindings-resolve9.txt: Key sequence Ctrl+Shift+. defined by editNudgeSwapEditForward and viewStereoSwitchEyeRight
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,023 | After merging custom hotkeys: Key sequence Up defined by fairlightActionsPanTracksUp and controlClipPrev
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,023 | After merging custom hotkeys: Key sequence Right defined by controlStepForward and fairlightActionsJumpRight
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,023 | After merging custom hotkeys: Key sequence Down defined by fairlightActionsPanTracksDown and controlClipNext
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,024 | After merging custom hotkeys: Key sequence Shift+C defined by trimSelectAudioEditPoint and clipShowCurveEditor
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,024 | After merging custom hotkeys: Key sequence Left defined by controlStepReverse and fairlightActionsJumpLeft
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,024 | After merging custom hotkeys: Key sequence Ctrl+Shift+, defined by viewStereoSwitchEyeLeft and editNudgeSwapEditReverse
+[0x000018a8] | UI.KeyBindings       | WARN  | 2017-09-28 01:35:46,024 | After merging custom hotkeys: Key sequence Ctrl+Shift+. defined by editNudgeSwapEditForward and viewStereoSwitchEyeRight
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:35:46,056 | Main view page is changed to 12
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:35:46,190 | Gallery pointer is changed, refreshing color gallery
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:35:46,235 | Gallery pointer is changed, refreshing gallery browser
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:35:57,660 | Current project pointer (2017sept27afterclass) is changed
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:35:57,660 | Current timeline pointer () is changed
+[0x000018a8] | SyManager.Project    | INFO  | 2017-09-28 01:35:57,660 | Unlock project Untitled Project
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:35:57,778 | Failed to find value '14' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:35:57,780 | Failed to find value '-1' in combo-box
+### DEL_DBG IOFileSys::DeletePath[1250] p_OSErrCode = 0, p_ErrMsg = 
+[0x000018a8] | SyManager            | WARN  | 2017-09-28 01:35:57,928 | No reply received from file system, assume successfully deleted folder C:\Users\Elliot\Videos\CacheClip\c0e9c2f5-5d5b-4e98-8d21-40d03a9ae6ca.
+### DEL_DBG IOFileSys::DeletePath[1250] p_OSErrCode = 0, p_ErrMsg = 
+[0x000018a8] | SyManager            | WARN  | 2017-09-28 01:35:57,939 | No reply received from file system, assume successfully deleted folder C:\Users\Elliot\Videos\.gallery\c0e9c2f5-5d5b-4e98-8d21-40d03a9ae6ca.
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:35:57,964 | Main view page is changed to 1
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:35:58,071 | Main view page is changed to 2
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:58,403 | Layout is disabled.
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:35:58,403 | Layout is disabled.
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:35:59,423 | Main view page is changed to 2
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:35:59,750 | Finished saving HiddenView to database (size = 0)
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:35:59,751 | Finished clearing HiddenView (size = 0)
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:35:59,751 | Start purging still caches
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:35:59,751 | Finish purging still caches
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:35:59,752 | Lock project 2017sept27afterclass
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:35:59,804 | UiGPU::UploadWipeData called before UiGPU has been initialized. Returning false
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:35:59,805 | Gallery pointer is changed, refreshing color gallery
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:35:59,887 | Gallery pointer is changed, refreshing gallery browser
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:36:30,151 | Current timeline pointer (Timeline 1) is changed
+[0x00002c8c] | SyManager            | ERROR | 2017-09-28 01:36:30,347 | There is no current video media, SetCurrentRecFrame failed.
+Audio error correction enabled
+[Audio] Using DeckLink for audio playback
+[0x000030e8] | DtManager            | INFO  | 2017-09-28 01:36:31,426 | Audio WFM Generation thread starts
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:36:31,473 | Failed to find value '320' in combo-box
+[0x00001f18] | LsManager            | WARN  | 2017-09-28 01:36:46,863 | Timeout waiting in Ls for texture (seed = 117)
+Printing Stack Info
+00007FF6C38518BA
+00007FF6C38232A0
+00007FF6C3824233
+00007FF6C388491E
+00007FF6C4FAC913
+000000005D4C2A73
+000000005D205A76
+000000005D204FA8
+00007FF6C37CE931
+000000005D900CB8
+000000005D4DDF13
+000000005D22D07C
+000000005D3195D7
+000000005D4E3664
+00007FF6C4FAFAD9
+000000005D902B3D
+000000005D205A62
+000000005D2039FD
+00007FF6C37CE931
+000000005D900CB8
+000000005D206E54
+000000005D4B5DCE
+000000005D4A4E5A
+000000005D4CBF74
+000000005D4CC37F
+000000005D4C880E
+00007FF6C4D7AB7B
+000000005D4C2A73
+00007FF6C4D7892B
+000000005D205A76
+000000005D204FA8
+00007FF6C37CE931
+000000005D900CB8
+000000005D4DDF13
+00007FF6C51047FF
+000000005D22D07C
+000000005D3195D7
+000000005D4E3664
+000000005D902B3D
+000000005D205A62
+000000005D2039FD
+00007FF6C37CE931
+000000005D900CB8
+000000005D206E54
+000000005D2517A9
+000000005D24FDDE
+000000005D205A76
+000000005D204FA8
+00007FF6C37CE931
+000000005D900CB8
+[0x000018a8] | BtCommon             | WARN  | 2017-09-28 01:37:19,887 | lower_bound contract violation
+[0x000018a8] | UI                   | WARN  | 2017-09-28 01:37:54,333 | Layout is disabled.
+[0x000018a8] | UI.GLInterOp         | ERROR | 2017-09-28 01:37:54,547 | PopTextureForDisplay returning NULL as it cound not find texture seed 4
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:37:54,785 | Main view page is changed to 1
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:37:55,494 | Main view page is changed to 2
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:37:55,911 | Main view page is changed to 2
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:37:55,980 | Main view page is changed to 2
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:38:59,046 | Main view page is changed to 12
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:39:01,300 | Main view page is changed to 2
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:39:01,333 | Main view page is changed to 2
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:39:05,034 | Failed to find value '-1' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:39:05,034 | Failed to find value '-1' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:39:05,034 | Failed to find value '-1' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:39:05,262 | Failed to find value '14' in combo-box
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:39:22,476 | Current setup pointer is changed
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:39:22,527 | Failed to find value '-1' in combo-box
+****************** Flushing GPU Buffers
+[0x00000a78] | GPUManager           | INFO  | 2017-09-28 01:39:22,596 | Flushing GPU memory...
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:40:06,950 | Failed to find value '-1' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:40:06,950 | Failed to find value '-1' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:40:16,096 | Failed to find value '-1' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:40:16,096 | Failed to find value '-1' in combo-box
+Printing Stack Info
+00007FF6C38518BA
+00007FF6C38232A0
+00007FF6C3824233
+00007FF6C388491E
+00007FF6C4FAC913
+000000005D4C2A73
+000000005D205A76
+000000005D204FA8
+00007FF6C37CE931
+000000005D900CB8
+000000005D4DDF13
+000000005D22D07C
+000000005D3195D7
+000000005D4E3664
+00007FF6C4FAFAD9
+000000005D902B3D
+000000005D205A62
+000000005D2039FD
+00007FF6C37CE931
+000000005D900CB8
+000000005D206E54
+000000005D4B5DCE
+000000005D4A4E5A
+000000005D4CBF74
+000000005D4CC37F
+000000005D4C880E
+00007FF6C4D7AB7B
+000000005D4C2A73
+00007FF6C4D7892B
+000000005D205A76
+000000005D204FA8
+00007FF6C37CE931
+000000005D900CB8
+000000005D4DDF13
+00007FF6C51047FF
+000000005D22D07C
+000000005D3195D7
+000000005D4E3664
+000000005D902B3D
+000000005D205A62
+000000005D2039FD
+00007FF6C37CE931
+000000005D900CB8
+000000005D206E54
+000000005D2517A9
+000000005D24FDDE
+000000005D205A76
+000000005D204FA8
+00007FF6C37CE931
+000000005D900CB8
+[0x000018a8] | BtCommon             | WARN  | 2017-09-28 01:40:16,696 | lower_bound contract violation
+[0x000018a8] | SyManager.ProjectManager | INFO  | 2017-09-28 01:40:34,867 | Start saving project 2017sept27afterclass
+[0x000018a8] | DbCommon2            | INFO  | 2017-09-28 01:40:34,869 | Initializing fresh database {c70f1001-6c23-4072-8226-7a18e34712da}
+[0x000018a8] | DbCommon2            | INFO  | 2017-09-28 01:40:35,095 | Finished upgrading database {c70f1001-6c23-4072-8226-7a18e34712da} from <14.0.0.268> to <14.0.0.035>
+[0x000018a8] | SyManager.ProjectManager | INFO  | 2017-09-28 01:40:35,524 | Saving project took 657 ms
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:40:35,524 | Current project pointer (2017sept27afterclass) is changed
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:40:35,524 | Current timeline pointer (Timeline 1) is changed
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:40:35,719 | Finished saving HiddenView to database (size = 0)
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:40:35,720 | Finished clearing HiddenView (size = 0)
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:40:35,720 | Start purging still caches
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:40:35,720 | Finish purging still caches
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:40:35,735 | Lock project 2017sept27afterclass
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:40:35,770 | UiGPU::UploadWipeData called before UiGPU has been initialized. Returning false
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:40:35,771 | Gallery pointer is changed, refreshing color gallery
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:40:35,797 | Gallery pointer is changed, refreshing gallery browser
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:40:38,068 | Initializing FBO of size 1920 x 1080 - 16b (old 0 x 0 - 16b)
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:40:38,087 | Setting reInit to true in CheckGPU
+Init called for UiGPUShader::Init
+profile : 7000(6145)
+Texture mode determined to be 2 (GL_ARB_texture_non_power_of_two)
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:40:38,614 | Main view page is changed to 11
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:42:01,262 | Failed to set VideoField Mode
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:42:02,940 | Failed to set VideoField Mode
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:42:15,503 | Failed to find value '0' in combo-box
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:42:15,506 | Failed to set VideoField Mode
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:42:15,637 | Current timeline mode is changed
+[0x00002c8c] | SyManager            | ERROR | 2017-09-28 01:42:15,750 | There is no current clip, SetCurrentFrame failed.
+[0x00003114] | IO                   | WARN  | 2017-09-28 01:42:16,139 | Failed to set VideoField Mode
+[0x00002c7c] | GsManager            | INFO  | 2017-09-28 01:42:36,335 | Recording cancelled after 821 frames.
+[0x00001f18] | LsManager            | WARN  | 2017-09-28 01:42:39,057 | Timeout waiting in Ls for texture (seed = 451)
+[0x00001f18] | LsManager            | WARN  | 2017-09-28 01:42:39,557 | Timeout waiting in Ls for texture (seed = 452)
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:42:43,235 | Current timeline mode is changed
+[0x00001f18] | LsManager            | WARN  | 2017-09-28 01:42:43,240 | Timeout waiting in Ls for texture (seed = 453)
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:42:43,325 | Main view page is changed to 2
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:43:47,692 | Failed to set VideoField Mode
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:43:47,727 | Failed to set VideoField Mode
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:43:47,760 | Failed to set VideoField Mode
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:43:47,791 | Failed to set VideoField Mode
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:43:47,916 | Main view page is changed to 11
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:43:48,244 | Main view page is changed to 11
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:43:56,128 | Failed to set VideoField Mode
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:43:56,168 | Failed to find value '0' in combo-box
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:43:56,172 | Failed to set VideoField Mode
+[0x000018a8] | IO                   | WARN  | 2017-09-28 01:43:56,203 | Failed to set VideoField Mode
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:43:56,335 | Current timeline mode is changed
+[0x00001f18] | LsManager            | WARN  | 2017-09-28 01:43:56,353 | LsDataHandler.cpp(2220): discard 7(0)
+[0x00002c8c] | SyManager            | ERROR | 2017-09-28 01:43:56,451 | There is no current clip, SetCurrentFrame failed.
+[0x000031e0] | IO                   | WARN  | 2017-09-28 01:43:56,813 | Failed to set VideoField Mode
+[0x00002c7c] | GsManager            | INFO  | 2017-09-28 01:44:08,116 | Finished recording 432 frames.
+[0x000018a8] | SyManager.ProjectManager | INFO  | 2017-09-28 01:44:14,152 | Start saving project 2017sept27afterclass
+[0x000018a8] | SyManager.ProjectManager | INFO  | 2017-09-28 01:44:14,505 | Saving project took 353 ms
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:44:25,524 | Finished saving HiddenView to database (size = 0)
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:44:25,525 | Finished clearing HiddenView (size = 0)
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:44:25,525 | Start purging still caches
+[0x000018a8] | SyManager.Gallery    | INFO  | 2017-09-28 01:44:25,525 | Finish purging still caches
+[0x000018a8] | SyManager.Project    | INFO  | 2017-09-28 01:44:25,603 | Unlock project 2017sept27afterclass
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:44:25,731 | Failed to find value '14' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:44:25,734 | Failed to find value '-1' in combo-box
+[0x000018a8] | UI                   | ERROR | 2017-09-28 01:44:25,776 | Failed to find value '120' in combo-box
+[0x000018a8] | SyManager.Signals    | INFO  | 2017-09-28 01:44:25,818 | Main view page is changed to 11
+Accepted close event on main window
+[0x000018fc] | LeManager            | INFO  | 2017-09-28 01:44:26,574 | 522, 101
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:27,775 | Starting terminate sequence by calling g_MainTerm
+
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:27,776 | Closing components
+[0x000018a8] | UI                   | INFO  | 2017-09-28 01:44:27,797 | Audio thread terminated.
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:27,798 | g_MainTerm: BtStartupShutdownControl.Shutdown() - begin
+Exit SY panel handler
+Exit SY data handler
+[0x000028bc] | SyManager            | INFO  | 2017-09-28 01:44:27,858 | Exit SY low priority cmd handler
+[0x000028d0] | SyManager            | INFO  | 2017-09-28 01:44:27,859 | Exit SY high priority cmd handler
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:27,880 | SvcManager: SyManager.StopThreads() - end
+[0x00002c7c] | GsManager            | INFO  | 2017-09-28 01:44:27,882 | Exit GS process handler
+Exit GS low priority cmd handler
+Exit GS high priority cmd handler
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:27,909 | SvcManager: GsManager.StopThreads() - end
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:27,909 | SvcManager: DpManager.StopThreads() - end
+[0x00003100] | DtManager            | INFO  | 2017-09-28 01:44:27,919 | Exit DT data handler thread
+[0x00002824] | DpManager            | INFO  | 2017-09-28 01:44:27,919 | Exit DP low priority cmd handler
+[0x00002c80] | DpManager            | INFO  | 2017-09-28 01:44:27,919 | Exit DP high priority cmd handler
+[0x00003368] | DtManager            | INFO  | 2017-09-28 01:44:27,920 | Exit DT low priority cmd handler
+[0x00002828] | DtManager            | INFO  | 2017-09-28 01:44:27,921 | Exit DT high priority cmd handler
+[0x00000074] | DtManager            | INFO  | 2017-09-28 01:44:27,938 | Exit DT worker thread
+[0x000017f8] | DtManager            | INFO  | 2017-09-28 01:44:27,939 | Exit DT worker thread
+[0x00000b34] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x0000310c] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x00003114] | DtManager            | INFO  | 2017-09-28 01:44:27,939 | Exit DT worker thread
+[0x000032b0] | DtManager            | INFO  | 2017-09-28 01:44:27,939 | Exit DT worker thread
+[0x00002270] | DtManager            | INFO  | 2017-09-28 01:44:27,939 | Exit DT worker thread
+[0x0000219c] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x00001f90] | DtManager            | INFO  | 2017-09-28 01:44:27,939 | Exit DT worker thread
+[0x00003150] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x000031d0] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x0000273c] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x0000203c] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x000032ec] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x0000305c] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x000031e0] | DtManager            | INFO  | 2017-09-28 01:44:27,940 | Exit DT worker thread
+[0x000030f0] | DtManager            | INFO  | 2017-09-28 01:44:27,938 | Exit DT worker thread
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:27,973 | SvcManager: DtManager.StopThreads() - end
+[0x00002a0c] | LsManager            | INFO  | 2017-09-28 01:44:27,984 | Exit LS low priority cmd handler
+[0x00003398] | LsManager            | INFO  | 2017-09-28 01:44:27,984 | Exit LS high priority cmd handler
+[0x00000870] | LsManager            | INFO  | 2017-09-28 01:44:27,986 | Exit LS data handler
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:28,006 | SvcManager: LsManager.StopThreads() - end
+[0x00001af8] | LsManager            | INFO  | 2017-09-28 01:44:28,012 | Exit LS high priority cmd handler
+[0x00002e84] | LsManager            | INFO  | 2017-09-28 01:44:28,014 | Exit LS data handler
+[0x00000500] | LsManager            | INFO  | 2017-09-28 01:44:28,015 | Exit LS low priority cmd handler
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:28,040 | SvcManager: LsManager.StopThreads() - end
+[0x00002d4c] | LsManager            | INFO  | 2017-09-28 01:44:28,050 | Exit LS low priority cmd handler
+[0x0000211c] | LsManager            | INFO  | 2017-09-28 01:44:28,059 | Exit LS high priority cmd handler
+[0x00000a78] | GPUManager           | INFO  | 2017-09-28 01:44:28,080 | Board 0 on thread 0 <Intel(R) Iris(TM) Graphics 540>: No more jobs. You're fired!
+[0x00000a78] | GPUManager           | INFO  | 2017-09-28 01:44:28,092 | Clean up and shut down board 0 on thread 0
+[0x00001f18] | GPUManager           | INFO  | 2017-09-28 01:44:28,102 | SBM[0|0]<Intel(R) Iris(TM) Graphics 540> Doomed
+[0x00001f18] | LsManager            | INFO  | 2017-09-28 01:44:28,103 | Exit LS data handler
+[0x000018a8] | Main                 | INFO  | 2017-09-28 01:44:28,132 | SvcManager: LsManager.StopThreads() - end
+Exit memory data transmitter
+[0x000018a8] | IO                   | INFO  | 2017-09-28 01:44:28,138 | RED FinalizeSdk
+[0x000018a8] | DpManager            | INFO  | 2017-09-28 01:44:28,142 | Stopping DpWfmWorker threads -- start
+[0x00002f44] | DpManager            | INFO  | 2017-09-28 01:44:28,143 | DpWfmWorker thread exit
+[0x00002cfc] | DpManager            | INFO  | 2017-09-28 01:44:28,143 | DpWfmWorker thread exit
+[0x00002f28] | DpManager            | INFO  | 2017-09-28 01:44:28,143 | DpWfmWorker thread exit
+[0x00002bf0] | DpManager            | INFO  | 2017-09-28 01:44:28,143 | DpWfmWorker thread exit
+[0x000018a8] | DpManager            | INFO  | 2017-09-28 01:44:28,153 | Stopping DpWfmWorker threads -- done
+Delete service manager
+Delete cmd transmitter/receiver
+Delete data transmitter/receiver
+Delete remote cmd receiver
+Delete remote data receiver
+Exit SiteManager
+[0x000018a8] | SyManager.Project    | INFO  | 2017-09-28 01:44:28,188 | Unlock project Untitled Project
+[0x000030e8] | DtManager            | INFO  | 2017-09-28 01:44:28,215 | Audio WFM Generation thread quits
