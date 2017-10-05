@@ -107,8 +107,11 @@ Perl 6 is a programming language first released at the end of 2015.
  Consequently, there is not a single official implementation, although the
  Rakudo implementation is currently the most complete implementation available,
  and is the only implementation that is currently available.
- Perl 6 is a general purpose language that by default for modules is just-in-tim
-e compiled to bytecode, and for scripts is interpreted, although this can
+\end_layout
+
+\begin_layout Standard
+Perl 6 is a general purpose language that by default for modules is just-in-time
+ compiled to bytecode, and for scripts is interpreted, although this can
  be changed.
  The language is implemented using a subset language called NQP, which is
  run by a virtual machine.
@@ -122,7 +125,8 @@ MoarVM
 \begin_inset Quotes erd
 \end_inset
 
-, is the most complete of these.
+, is the most complete of these, in that it has support for the most language
+ features of the various implementations.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -147,10 +151,14 @@ key "project"
  packages.
  This is also a common issue with languages that come with their own package
  managers, such as .NET's NuGet, Node.js's npm, and Python's pip.
- The consequence of this is that there is no significant pressure on package
- maintainers to keep their packages up to date and interoperable, because
- any given app only needs to work with one version of each package on which
- it depends.
+\end_layout
+
+\begin_layout Standard
+There are several issues caused by Perl 6 using its own package manager.
+ One major consequence of this is that there is no significant pressure
+ on package maintainers to keep their packages up to date and interoperable,
+ because any given app only needs to work with one version of each package
+ on which it depends.
  That system, however, breaks down when an app depends on two packages,
  each of which depend on a conflicting version of the same package, and
  one wants to avoid having outdated versions of the packages installed on

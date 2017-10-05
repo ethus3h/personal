@@ -146,15 +146,17 @@ key "project"
  for executing external shell commands and manipulating their output, although
  this is a problem shared by many languages that are not purpose-built as
  shell languages.
- The problem with being a module-centric language, exacerbated by it being
- a new language, is that packages for it are not available easily as native
- packages.
- This is also a common issue with languages that come with their own package
- managers, such as .NET's NuGet, Node.js's npm, and Python's pip.
 \end_layout
 
 \begin_layout Standard
-There are several issues caused by Perl 6 using its own package manager.
+Perl 6 is a module-centric language, including its own package management
+ and package repository.
+ One problem caused by it being a module-centric language, exacerbated by
+ it being a new language, is that packages for it are not available easily
+ as native packages.
+ This is also a common issue with languages that come with their own package
+ managers, such as .NET's NuGet, Node.js's npm, and Python's pip.
+ There are several issues caused by Perl 6 using its own package manager.
  One major consequence of this is that there is no significant pressure
  on package maintainers to keep their packages up to date and interoperable,
  because any given app only needs to work with one version of each package
