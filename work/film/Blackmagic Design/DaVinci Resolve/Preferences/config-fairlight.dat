@@ -1,0 +1,4 @@
+FaderDisplayTimeoutSeconds = 600
+engineConfig = 1
+ioConfig = 0
+screenSaverState = 1

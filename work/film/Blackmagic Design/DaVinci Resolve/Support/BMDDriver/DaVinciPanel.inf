@@ -1,0 +1,61 @@
+; Blackmagic Design DaVinciPanel
+; Copyright 2004-2012 Blackmagic Design
+
+
+
+[Version]
+Signature = "$Windows NT$"
+Class=Media
+ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
+CatalogFile=DaVinciPanel.cat
+Provider=%Blackmagic%
+DriverVer=07/26/2012, 9.0.0.0
+
+[Manufacturer]
+%Blackmagic%=Blackmagic,NTamd64
+
+[Blackmagic]
+%USB\VID_1EDB&PID_DA00.DeviceDesc%=DaVinciPanel, USB\VID_1EDB&PID_DA00
+%USB\VID_1EDB&PID_DA02.DeviceDesc%=DaVinciPanel, USB\VID_1EDB&PID_DA02
+%USB\VID_1EDB&PID_DA04.DeviceDesc%=DaVinciPanel, USB\VID_1EDB&PID_DA04
+
+[Blackmagic.NTamd64]
+%USB\VID_1EDB&PID_DA00.DeviceDesc%=DaVinciPanel, USB\VID_1EDB&PID_DA00
+%USB\VID_1EDB&PID_DA02.DeviceDesc%=DaVinciPanel, USB\VID_1EDB&PID_DA02
+%USB\VID_1EDB&PID_DA04.DeviceDesc%=DaVinciPanel, USB\VID_1EDB&PID_DA04
+
+[SourceDisksNames]
+0=%DiskName%,,,
+
+[SourceDisksFiles]
+DaVinciPanel.sys=0,,
+
+[DestinationDirs]
+DefaultDestDir = 12
+DaVinciPanel.Files.Drivers = 12
+
+
+[DaVinciPanel]
+CopyFiles = DaVinciPanel.Files.Drivers
+
+[DaVinciPanel.Services]
+AddService = DaVinciPanel, 0x00000002, DaVinciPanel.AddService
+
+[DaVinciPanel.AddService]
+DisplayName    = %DaVinciPanel.ServiceDesc%
+ServiceType    = 1 ; SERVICE_KERNEL_DRIVER
+StartType      = 3 ; SERVICE_DEMAND_START
+ErrorControl   = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\DaVinciPanel.sys
+
+[DaVinciPanel.Files.Drivers]
+DaVinciPanel.sys
+
+
+[Strings]
+Blackmagic = "Blackmagic Design"
+USB\VID_1EDB&PID_DA00.DeviceDesc="DaVinci Resolve Right Console"
+USB\VID_1EDB&PID_DA02.DeviceDesc="DaVinci Resolve Left Console"
+USB\VID_1EDB&PID_DA04.DeviceDesc="DaVinci Resolve Centre Console"
+DaVinciPanel.ServiceDesc = "DaVinci Resolve Panel Driver"
+DiskName="DaVinci Resolve Panel Driver"
