@@ -1,0 +1,329 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extarticle
+\begin_preamble
+\usepackage{indentfirst}
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman Wreathe
+\font_sans Linux Biolinum O
+\font_typewriter Courier
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf true
+\font_sf_scale 85
+\font_tt_scale 85
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize 17
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Perl 6: Project: Part 2
+\end_layout
+
+\begin_layout Author
+Elliot Chandler (Wallace)
+\end_layout
+
+\begin_layout Date
+19a20 Sept.
+ 2017
+\end_layout
+
+\begin_layout Abstract
+This article introduces and summarizes the Perl 6 programming language and
+ some of its various features and capabilities, as well as discussing its
+ applications, effective uses, popularity, prospects, and limitations.
+\end_layout
+
+\begin_layout Standard
+Perl 6 is a programming language first released at the end of 2015.
+ It was originally conceived as a revision of the Perl programming language,
+ but because it evolved during the course of its development (begun in 2000).
+ It uses a specification and test-suite driven language development process,
+ rather than an implementation-driven process.
+ Consequently, there is not a single official implementation, although the
+ Rakudo implementation is currently the most complete implementation available,
+ and is the only implementation that is currently available.
+ Perl 6 is a general purpose language that by default for modules is just-in-tim
+e compiled to bytecode, and for scripts is interpreted, although this can
+ be changed.
+ The language is implemented using a subset language called NQP, which is
+ run by a virtual machine.
+ There are a few virtual machine implementations available, including a
+ native one, one running on the Java Virtual Machine, and one for JavaScript.
+ The native one, 
+\begin_inset Quotes eld
+\end_inset
+
+MoarVM
+\begin_inset Quotes erd
+\end_inset
+
+, is the most complete of these.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "project"
+
+\end_inset
+
+ Perl 6 has many complex and capable programming constructs included with
+ it.
+ Consequently, it seems quite capable to me.
+ The main detriment compared to other programming languages in general that
+ it seems very module-centric, and that it is fairly a new language, and
+ consequently that it does not have a substantial amount of documentation
+ available for it.
+ Another issue that bothers me specifically, is that it lacks strong facilities
+ out of the box for use as a shell REPL environment and shell-style use
+ for executing external shell commands and manipulating their output, although
+ this is a problem shared by many languages that are not purpose-built as
+ shell languages.
+ The problem with being a module-centric language, exacerbated by it being
+ a new language, is that packages for it are not available easily as native
+ packages.
+ This is also a common issue with languages that come with their own package
+ managers, such as .NET's NuGet, Node.js's npm, and Python's pip.
+ The consequence of this is that there is no significant pressure on package
+ maintainers to keep their packages up to date and interoperable, because
+ any given app only needs to work with one version of each package on which
+ it depends.
+ That system, however, breaks down when an app depends on two packages,
+ each of which depend on a conflicting version of the same package, and
+ one wants to avoid having outdated versions of the packages installed on
+ one's system: the standard model of an elegant one-minor-version-per-package
+ used by system package managers is broken, and rendered unable to ship
+ the app properly.
+\end_layout
+
+\begin_layout Standard
+While being a new language could conceivably be a problem because of a lack
+ of available libraries for a language, this problem is avoided by Perl
+ 6 by including a system for interacting with 
+\begin_inset Quotes eld
+\end_inset
+
+C, Python, Perl 5, and Ruby
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 2"
+key "Lenz2017"
+
+\end_inset
+
+.
+ Perl 6 contains a wide range of capabilities and features.
+ The feature that interested me the most is grammars.
+ That is what made me choose to pursue learning about the language.
+ Perl 6's grammars allow writing code that parses a language and returns
+ an abstract syntax tree without having to manually write the parser: rather,
+ one can write a set of rules that combine to express the syntax of the
+ language.
+ This provides a powerful facility for being able to handle problems of
+ implementing languages and document formats, and consequently is something
+ that interests me, as I have a document format that I would like to implement.
+ The rules in Perl 6 are created using 
+\emph on
+patterns
+\emph default
+, which are somewhat similar to regular expressions in other languages,
+ and generally take their place in Perl 6, although Perl 5–style regular
+ expressions are still available in Perl 6 in case they are needed.
+ Perl 6 has many other features, as well, that contribute to it being effective
+ and capable at solving a wide range of other problems.
+ Its mascot is a butterfly named Camelia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+ It integrates several techniques different from the way Perl works, such
+ as using lazy evaluation.
+ This creates some changes in the way the language operates compared to
+ Perl, and consequently it is somewhat different, with some language constructs
+ not being available in Perl 6, thus necessitating working around their
+ absence.
+ My lack of familiarity with Perl prevents my assessing thoroughly the extent
+ of this as being a problem, but apparently the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinline!wantsarray!
+\end_layout
+
+\end_inset
+
+ construct from Perl is not available in Perl 6, according to the language
+ FAQ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "P6FAQ"
+
+\end_inset
+
+.
+ Perl 6 uses (limited-precision 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "News"
+
+\end_inset
+
+) rational numbers by default, rather than floating point, so that decimals
+ will follow the traditional rules of arithmetic rather than the slightly
+ strange behavior of floating-point numbers (floating-point numbers will
+ produce unexpected results in some cases when doing arithmetic on them
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Overflow"
+
+\end_inset
+
+), but at the cost of performance.
+ Floating-point numbers can be used if they are desired, though.
+\end_layout
+
+\begin_layout Standard
+Perl 6 
+\emph on
+grammars
+\emph default
+ are an extremely expressive tool for writing parsers for languages and
+ document formats.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+ They are a way to specify the syntax of a language in such a way that given
+ a grammar and a string to parse using it, the Perl 6 language can build
+ an abstract syntax tree that can be used by code generators for compiling
+ a language, or by other tools that can work with abstract syntax trees.
+ A grammar is a set of patterns (which can be named, and reference each
+ other) using which the input string is parsed.
+ A Perl 6 grammar is a class, so it can be used as other classes.
+ To allow better expressivity from grammars, 
+\emph on
+actions
+\emph default
+ are available (a type of class that allows the parse process to call its
+ methods).
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation_2"
+
+\end_inset
+
+ This allows hooking into the parse process with other code, to allow a
+ wide range of uses outside the traditional scope of grammars.
+\end_layout
+
+\begin_layout Standard
+Perl 6 seems to have good prospects ahead of it, being a new language.
+ Now that it has been released, it will presumably see extensive testing,
+ and consequent development, due to its being in more widespread use.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "2017sept20-p6bib"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
