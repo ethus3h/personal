@@ -1,0 +1,11 @@
+Setting:
+    Nat and a human in a deserted rocky area, like a rock slide but at low altitude. No vegetation in visible distance. Nat tries to convince a human to help someone they don't know.
+
+Human:
+    "I won't live, regardless of whether I do this for them or not."
+Nat:
+    "You need to do this."
+Human:
+    "Why should I?! I don't want any more trouble."
+Nat:
+    "Can't you feel in your heart, that even though you are nearly dead, it is what is right to do?"
