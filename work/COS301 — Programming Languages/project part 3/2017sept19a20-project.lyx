@@ -156,8 +156,9 @@ Perl 6 is a module-centric language, including its own package management
  as native packages.
  This is also a common issue with languages that come with their own package
  managers, such as .NET's NuGet, Node.js's npm, and Python's pip.
- There are several issues caused by Perl 6 using its own package manager.
- One major consequence of this is that there is no significant pressure
+ There are several other issues caused by languages using their own package
+ managers, as well.
+ Another major consequence of this is that there is no significant pressure
  on package maintainers to keep their packages up to date and interoperable,
  because any given app only needs to work with one version of each package
  on which it depends.
