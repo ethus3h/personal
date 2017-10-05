@@ -1,0 +1,14 @@
+@comment{x-kbibtex-encoding=iso-8859-1}
+
+%  This file was created with JabRef 2.10.
+
+@article{P6FAQ,
+	address = {https://docs.perl6.org/language/faq},
+	author = {Documentation, Perl 6},
+	howpublished = {Web},
+	organization = {perl6.org},
+	owner = {kyan},
+	timestamp = {2017.09.20},
+	title = {FAQ: Frequently Asked Questions about Perl 6}
+}
+
