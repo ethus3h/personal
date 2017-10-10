@@ -5,7 +5,6 @@
 \textclass extarticle
 \begin_preamble
 \usepackage{indentfirst}
-\usepackage{listings}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -68,7 +67,6 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\listings_params "style=Typewriter"
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -226,16 +224,15 @@ key "Documentation"
  not being available in Perl 6, thus necessitating working around their
  absence.
  For example, the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
 
 
-\backslash
-lstinline!wantsarray!
-\end_layout
+\family typewriter
+wantsarray
+\family default
 
+\begin_inset Quotes erd
 \end_inset
 
  construct from Perl is apparently not available in Perl 6, according to
