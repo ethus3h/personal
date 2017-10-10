@@ -89,20 +89,8 @@ Elliot Chandler (Wallace)
 10 October 2017
 \end_layout
 
-\begin_layout Abstract
-This article introduces and summarizes the Perl 6 programming language and
- some of its various features and capabilities, as well as discussing its
- applications, effective uses, popularity, prospects, and limitations.
-\end_layout
-
 \begin_layout Standard
-Perl 6 is a programming language first released at the end of 2015.
- It was originally conceived as a revision of the Perl programming language,
- but because it evolved during the course of its development (begun in 2000),
- it was split from the older language, which will continue to be maintained
- separately.
- It uses a specification and test-suite driven language development process,
- rather than an implementation-driven process.
+anguage development process, rather than an implementation-driven process.
  Consequently, there is not a single official implementation, although the
  Rakudo implementation is currently the most complete implementation available,
  and is the only implementation that is currently available.
