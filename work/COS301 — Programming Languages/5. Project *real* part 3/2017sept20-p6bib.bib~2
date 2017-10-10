@@ -80,7 +80,7 @@
 
 @article{News,
 	address = {https://news.ycombinator.com/item?id=12888784},
-	author = {News, Hacker},
+	author = {{Hacker News}},
 	howpublished = {Web},
 	month = {Nov.},
 	note = {This is where I learned that Perl 6 Rationals aren't arbitrary-precision.},
@@ -121,7 +121,7 @@
 	howpublished = {Web},
 	month = {31 May},
 	note = {This is where I got information about how Perl 6 is implemented, and its portability.},
-	title = {{NQP} - {Not} {Quite} {Perl} (6): {README}.{pod}},
+	title = {{NQP} — {Not} {Quite} {Perl} (6): {README}.{pod}},
 	year = {2017}
 }
 
