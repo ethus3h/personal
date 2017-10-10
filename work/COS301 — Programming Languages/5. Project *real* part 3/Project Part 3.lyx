@@ -321,7 +321,7 @@ Perl 6 seems to have good prospects ahead of it, being a new language.
 LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "2017sept20-p6bib"
-options "plainnat"
+options "apa"
 
 \end_inset
 

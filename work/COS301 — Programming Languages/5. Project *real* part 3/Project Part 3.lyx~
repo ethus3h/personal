@@ -29,7 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 17
-\spacing single
+\spacing other 1.5
 \use_hyperref false
 \papersize default
 \use_geometry true
