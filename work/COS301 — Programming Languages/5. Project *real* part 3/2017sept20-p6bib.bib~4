@@ -1,10 +1,10 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%      This file was created with JabRef 2.10.
+%     This file was created with JabRef 2.10.
 
 @article{P6FAQ,
 	address = {https://docs.perl6.org/language/faq},
-	author = {{Perl 6 Documentation}},
+	author = {Documentation, Perl 6},
 	howpublished = {Web},
 	month = {19 Sept.},
 	note = {I used this article to learn some basic information about Perl 6.},
@@ -71,7 +71,7 @@
 
 @article{Overflow,
 	address = {https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples},
-	author = {{Stack Overflow}},
+	author = {Overflow, Stack},
 	howpublished = {Web},
 	note = {A citation for the claim regarding floating points being a little odd.},
 	title = {Floating point inaccuracy examples},
@@ -80,7 +80,7 @@
 
 @article{News,
 	address = {https://news.ycombinator.com/item?id=12888784},
-	author = {{Hacker News}},
+	author = {News, Hacker},
 	howpublished = {Web},
 	month = {Nov.},
 	note = {This is where I learned that Perl 6 Rationals aren't arbitrary-precision.},
@@ -90,7 +90,7 @@
 
 @article{Documentation,
 	address = {https://docs.perl6.org/},
-	author = {{Perl 6 Documentation}},
+	author = {Documentation, Perl 6},
 	howpublished = {Web},
 	month = {19 Sept.},
 	note = {The official Perl 6 documentation is very helpful for getting an understanding of the language.},
@@ -100,7 +100,7 @@
 
 @article{Language,
 	address = {https://perl6.org/},
-	author = {{The Perl 6 Programming Language}},
+	author = {Language, The Perl 6 Programming},
 	howpublished = {Web},
 	note = {This home page for the Perl 6 language introduces it and its culture. Retrieved 20 Sept. 2017.},
 	title = {The {Perl} 6 Programming Language},
@@ -117,17 +117,17 @@
 
 @article{project,
 	address = {https://github.com/perl6/nqp},
-	author = {{Perl 6 project}},
+	author = {project, Perl 6},
 	howpublished = {Web},
 	month = {31 May},
 	note = {This is where I got information about how Perl 6 is implemented, and its portability.},
-	title = {{NQP} - {Not} {Quite} {Perl} (6): {README}.{pod}},
+	title = {NQP - Not Quite Perl (6): README.pod},
 	year = {2017}
 }
 
 @article{Documentation_2,
 	address = {https://docs.perl6.org/language/grammars},
-	author = {{Perl 6 Documentation}},
+	author = {Documentation, Perl 6},
 	howpublished = {Web},
 	month = {19 Sept.},
 	note = {This documentation page was one of my primary sources for getting an understanding of the scope and capabilities of grammars in Perl 6.},

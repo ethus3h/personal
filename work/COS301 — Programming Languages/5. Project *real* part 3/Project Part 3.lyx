@@ -15,7 +15,7 @@
 \fontencoding global
 \font_roman Wreathe
 \font_sans Linux Biolinum O
-\font_typewriter Courier
+\font_typewriter Fira Code
 \font_math auto
 \font_default_family default
 \use_non_tex_fonts true
