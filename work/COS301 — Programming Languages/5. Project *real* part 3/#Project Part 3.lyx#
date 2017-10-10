@@ -89,15 +89,7 @@ Elliot Chandler (Wallace)
 \end_layout
 
 \begin_layout Standard
-Perl 6 has twenty-seven levels of precedence.
- All operators can be written as subroutines.
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Documentation"
-
-\end_inset
-
- Custom operators are allowed.
+Perl 6 has 27 levels of operator precedence.
 \end_layout
 
 \begin_layout Standard
