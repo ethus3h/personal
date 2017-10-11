@@ -80,7 +80,7 @@ sub lex(Str $code --> List) {
     return @finishedTokens
 }
 
-sub parse(List @tokens --> Nil) {
+sub parse(List $tokens --> Nil) {
     my Str @state;
     my Str @consumed;
     my Pair $token = "" => "";
@@ -88,7 +88,7 @@ sub parse(List @tokens --> Nil) {
     # Support subroutines for the parser
     (
         sub lexeme( --> Pair) {
-            $_ = shift(@tokens);
+            $_ = shift($tokens);
             unshift(@consumed, "$_");
             when "" => "" {
                 # do nothing, we don't have any token yet
@@ -109,7 +109,7 @@ sub parse(List @tokens --> Nil) {
             say "Releasing tokens ";
             say @consumed;
             for @consumed {
-                unshift(@tokens, (shift(@consumed)))
+                unshift($tokens, (shift(@consumed)))
             }
         }
     );
@@ -231,7 +231,7 @@ sub parse(List @tokens --> Nil) {
     # Test parser
     #lex('foo & !( a2 > bar & w < foo | x < y)')
     #    ==> parse;
-    say parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
+    say parse(lex('foo & !( a2 > bar & w < foo | x < y)')).WHAT;
 
     say "Done running tests. Report:";
     done-testing;
