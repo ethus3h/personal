@@ -59,7 +59,7 @@ sub lex(Str $code --> List) {
 (
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
-    say lex('Stringqux').WHAT;
+    say lex('Stringqux');
 
     say "Done running tests. Report:";
     done-testing;
