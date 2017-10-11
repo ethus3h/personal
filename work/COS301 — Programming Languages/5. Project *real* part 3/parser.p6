@@ -80,10 +80,10 @@ sub lex(Str $code --> List) {
     return @finishedTokens
 }
 
-sub parse(Pair @tokens --> Nil) {
+sub parse(List $tokens --> Nil) {
     my Str @state;
     my Str @consumed;
-    my Pair @input = @tokens.copy;
+    my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
 
     # Support subroutines for the parser
