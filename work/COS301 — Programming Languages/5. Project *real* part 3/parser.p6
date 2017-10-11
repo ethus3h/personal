@@ -65,11 +65,22 @@ sub lex(Str $code --> List) {
     }
     return @finishedTokens
 }
+
+sub parse(Pair @tokens --> Nil) {
+    
+}
+
 # Test suite
 (
+    # Test lexer
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
     isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
+    say lex('foo & !( a2 > bar & w < foo | x < y)');
+
+    # Test parser
+    lex('foo & !( a2 > bar & w < foo | x < y)')
+      ==> parse;
 
     say "Done running tests. Report:";
     done-testing;
