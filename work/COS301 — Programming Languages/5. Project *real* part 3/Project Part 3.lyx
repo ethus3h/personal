@@ -98,6 +98,7 @@ key "Documentation"
 \end_inset
 
  Custom operators are allowed.
+ Perl 6 uses a similar block structure to PHP: blocks are denoted by 
 \end_layout
 
 \begin_layout Standard
