@@ -4,9 +4,9 @@ use v6.c;
 use Test;
 
 my $a = 'b';
-$_ := $a;
+my $b := $a;
 sub foo() {
-    say $a =:= $_
+    say $a =:= $b
 }
 foo;
 
