@@ -82,8 +82,29 @@ sub lex(Str $code --> List) {
 
 sub parse(Pair @tokens --> Nil) {
     say "enter <bool_expr>";
+    my String @parse;
+    sub push(Str $type --> Nil) {
+        $_ := $type;
+        if $prevChar ~~ /<:L + :N>/ {
+            # Found something non-identifier after an identifier,
+            #   so push the identifier
+            @finishedTokens.push("identifier" => "$token");
+            $token = ""
+        }
+        # Found a token
+        $token ~= $char;
+        @finishedTokens.push($type => "$token");
+        $prevChar = $char;
+        $token = "";
+        next
+    }
     for @tokens {
         say "Next token is the " ~ .key ~ " " ~ .value;
+        when .key eq identifier {
+            say "Consuming identifier " ~ .key
+            
+        }
+        when .key eq 
     }
 }
 
