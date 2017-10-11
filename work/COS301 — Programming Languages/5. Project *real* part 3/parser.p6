@@ -55,8 +55,8 @@ sub lex(Str $code --> Bool) {
 }
 # Test suite
 (
-    #nok lex('String qux?');
-    #ok lex('Stringqux');
+    nok lex('String qux?');
+    ok lex('Stringqux');
 
     say "Done running tests. Report:";
     done-testing;
