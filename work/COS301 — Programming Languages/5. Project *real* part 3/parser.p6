@@ -91,6 +91,7 @@ sub parse(List $tokens --> Nil) {
     (
         sub lexeme( --> Pair) {
             $_ = shift(@input);
+            say $_;
             $lexeme = ~ $_;
             unshift(@consumed, $_);
             when "" => "" {
