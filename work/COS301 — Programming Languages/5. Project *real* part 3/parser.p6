@@ -13,20 +13,20 @@ sub lex(Str $code --> List) {
         say $prevChar;
         say $char;
         sub continue( --> Nil) {
-            say "Accepted an identifier-part $char";
+            # Accepted an identifier-part
             $token ~= $char;
             $prevChar = $char;
             next
         }
         sub push(Str $type --> Nil) {
             $_ := $type;
-            say "Type: $type. Prevchar: $prevChar";
             if $prevChar ~~ /<:L + :N>/ {
-                say "Found a $type after an identifier $token";
+                # Found something non-identifier after an identifier,
+                #   so push the identifier
                 @finishedTokens.push("identifier" => "$token");
                 $token = "";
             }
-            say "Found a $type $token$char";
+            # Found a token
             $token ~= $char;
             @finishedTokens.push($type => "$token");
             $prevChar = $char;
@@ -40,8 +40,7 @@ sub lex(Str $code --> List) {
         }
         when /<:L + :N>/ {
             when /<:N>/ && $prevChar !~~ /<:L>/ {
-                say "Expected an identifier or an operator.";
-                fail
+                fail "Expected an identifier or an operator."
             }
             default {
                 continue
@@ -57,12 +56,11 @@ sub lex(Str $code --> List) {
             push 'binary_oper'
         }
         when /\s/ {
-            say "Skipping a space";
+            # Skip this space
             next
         }
         default {
-            say 'Input character is not in the language: "' ~ $char ~ '"';
-            fail
+            fail 'Input character is not in the language: "' ~ $char ~ '"'
         }
     }
     when $token ne '' {
@@ -74,7 +72,7 @@ sub lex(Str $code --> List) {
 (
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
-    isa-k lex('foo & !( a2 > bar & w < foo | x < y)'), List;
+    isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
 
     say "Done running tests. Report:";
     done-testing;
