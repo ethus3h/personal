@@ -27,12 +27,12 @@ sub lex(Str $code) {
             say "Unknown input character " ~ $char;
         }
     }
+    return True
 }
 
 # Test suite
 (
-say lex('String qux?');
-    #ok lex('String qux?');
+    ok lex('String qux?');
 
     say "Done running tests. Report:";
     done-testing;
