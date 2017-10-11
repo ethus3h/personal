@@ -20,8 +20,9 @@ sub lex(Str $code --> List) {
         sub push(Str $type --> Nil) {
             $_ := $type;
             if $prevChar ~~ /<:L>/ {
+                say "Found a $type";
                 @finishedTokens.push($type => "$token");
-                $prevChar = "None"
+                $token = "";
             }
             $token ~= $char;
             @finishedTokens.push($type => "$token");
