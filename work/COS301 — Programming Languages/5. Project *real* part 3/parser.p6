@@ -27,10 +27,17 @@ sub lex(Str $code --> Bool) {
             }
         }
         when /<:L>/ {
-            if $token ∈ <t tr tru f fa fal fals> {
+            if $prevChar ~= /<:L + :D>/ {
                 continue
             }
         }
+        when < ( ) > {
+            push 'parenthesis'
+        }
+        when '!' {
+            push 'unary_oper'
+        }
+        when 
         default {
             say "Unknown input character " ~ $char;
             return False
