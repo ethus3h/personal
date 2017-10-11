@@ -96,8 +96,8 @@ sub parse(List $tokens --> Nil) {
             }
             default {
                 say "Next token is the " ~ .key ~ " " ~ .value;
-                say @state;
-                say @consumed;
+                say "    State: " ~ @state;
+                say "    Consumed: " ~ @consumed;
                 return $_
             }
         }
@@ -105,8 +105,8 @@ sub parse(List $tokens --> Nil) {
         sub enter(Str $rule --> Nil) {
             say "Enter <$rule>";
             @state.push("$rule");
-            say @state;
-            say @consumed;
+            say "    State: " ~ @state;
+            say "    Consumed: " ~ @consumed;
         }
 
         sub give_back( --> Nil) {
@@ -116,6 +116,8 @@ sub parse(List $tokens --> Nil) {
                 unshift(@input, (shift(@consumed)))
             }
             @consumed = < >
+            say "    State: " ~ @state;
+            say "    Consumed: " ~ @consumed;
         }
     );
 
