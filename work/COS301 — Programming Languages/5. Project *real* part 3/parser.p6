@@ -104,7 +104,12 @@ sub parse(Pair @tokens --> Nil) {
 
     sub bool_literal( --> Nil) {
         enter "bool_literal";
-        lexeme().key eq "bool_literal"
+        lexeme().key ∈ < \< \> >
+    }
+
+    sub relop( --> Nil) {
+        enter "relop";
+        lexeme().value eq "identifier"
     }
 
     sub id( --> Nil) {
