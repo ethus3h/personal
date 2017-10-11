@@ -85,9 +85,14 @@ sub parse(Pair @tokens --> Nil) {
     my Str @parse;
     my Pair $token = "" => "";
 
-    sub lexeme(Pair $token) {
+    sub lexeme(Pair $token --> Str) {
         $_ := $token;
-        say "Next token is the " ~ .key ~ " " ~ .value
+        when "" => "" {
+            # do nothing, we don't have any token yet
+        }
+        default {
+            say "Next token is the " ~ .key ~ " " ~ .value
+        }
     }
 
     sub enter(Str $rule --> Nil) {
