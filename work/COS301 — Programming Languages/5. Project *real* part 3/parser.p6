@@ -10,6 +10,8 @@ sub lex(Str $code --> Bool) {
     my Str $prevChar = "None";
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
+        say $_;
+        say $char;
         sub continue( --> Nil) {
             $token ~= $_;
             $prevChar = $char;
@@ -17,7 +19,7 @@ sub lex(Str $code --> Bool) {
         }
         sub push(Str $type --> Nil) {
             $state = "";
-            $prevChar = "None"
+            $prevChar = "None";
             $token ~= $_;
             $finishedTokens := $type => $token;
             next
@@ -28,11 +30,11 @@ sub lex(Str $code --> Bool) {
             }
         }
         when /<:L + :N>/ {
-            if $prevChar ~= /<:L>/ {
+            if $prevChar ~~ /<:L>/ {
                 continue
             }
             when /<:N>/ && $prevChar eq "None" {
-                say ""
+                say "";
                 return False
             }
         }
@@ -42,9 +44,11 @@ sub lex(Str $code --> Bool) {
         when '!' {
             push 'unary_oper'
         }
-        when 
+        when < & > {
+            push 'binary_oper'
+        }
         default {
-            say 'Input character is not in the grammar: "' ~ $char ~ '"';
+            say 'Input character is not in the language: "' ~ $char ~ '"';
             return False
         }
     }
