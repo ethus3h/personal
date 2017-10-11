@@ -93,9 +93,32 @@ sub parse(Pair @tokens --> Nil) {
     enter "and_term";
     enter "bool_factor";
 
-    sub bool_expr( --> Nil) {
-        next
+    sub bool_factor( --> Nil) {
+        enter "bool_factor";
+        if ! bool_literal {
+            
+        }
+        while lexeme eq "&" {
+            bool_factor
+        }
     }
+
+    sub and_term( --> Nil) {
+        enter "and_term";
+        bool_factor;
+        while lexeme eq "&" {
+            bool_factor
+        }
+    }
+
+    sub bool_expr( --> Nil) {
+        enter "bool_expr";
+        and_term;
+        while lexeme eq "|" {
+            and_term
+        }
+    }
+
     for @tokens {
         say "Next token is the " ~ .key ~ " " ~ .value;
         when .key eq "identifier" {
