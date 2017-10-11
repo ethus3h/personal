@@ -115,7 +115,7 @@ sub parse(List $tokens --> Nil) {
             for @consumed {
                 unshift(@input, (shift(@consumed)))
             }
-            @consumed = < >
+            @consumed = < >;
             say "    State: " ~ @state;
             say "    Consumed: " ~ @consumed;
         }
