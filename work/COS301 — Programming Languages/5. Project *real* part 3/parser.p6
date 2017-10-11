@@ -14,7 +14,7 @@ sub lex(Str $code) {
             when "e" {
                 $state = "";
                 $token ~= $_;
-                $finishedTokens := ( 'bool_literal' => $token );
+                $finishedTokens := 'bool_literal' => $token;
             }
         }
         when /<:L>/ {
