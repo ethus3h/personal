@@ -46,9 +46,12 @@ sub lex(Str $code --> List) {
             else {
                 $prevChar = $char
             }
-            when /<:N>/ && $prevChar eq "None" {
+            when /<:N>/ && $prevChar !~~ /<:L>/ {
                 say "Expected an identifier or an operator.";
                 fail
+            }
+            default {
+                
             }
         }
         if $_ ∈ < ( ) > {
