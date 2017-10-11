@@ -123,7 +123,12 @@ sub parse(List $tokens --> Nil) {
             $value = lexeme().value;
             say $value;
             CATCH {
-                give_back
+                # when X::TypeCheck::Assignment {
+                    # say .^name;
+                # }
+                default {
+                    give_back
+                }
             }
         }
 
