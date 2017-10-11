@@ -124,11 +124,11 @@ sub parse(List $tokens --> Nil) {
             say $value;
             CATCH {
                 when X::AdHoc {
-                    X::AdHoc.new("Did not match").throw
+                    X::AdHoc.new(:payload<Did not match>).throw
                 }
                 default {
                     give_back;
-                    X::AdHoc.new("Did not match").throw
+                    X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
         }
