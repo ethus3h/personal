@@ -21,7 +21,7 @@ sub lex(Str $code --> List) {
         sub push(Str $type --> Nil) {
             $_ := $type;
             say "Type: $type. Prevchar: $prevChar";
-            if $prevChar ~~ /<:L>/ && $type ne "" {
+            if $prevChar ~~ /<:L + :N>/ {
                 say "Found a $type after an identifier $token";
                 @finishedTokens.push("identifier" => "$token");
                 $token = "";
@@ -72,9 +72,9 @@ sub lex(Str $code --> List) {
 }
 # Test suite
 (
-    #nok lex('String qux?');
-    #isa-ok lex('Stringqux'), List;
-    say lex('foo & !( a2 > bar & w < foo | x < y)');
+    nok lex('String qux?');
+    isa-ok lex('Stringqux'), List;
+    isa-k lex('foo & !( a2 > bar & w < foo | x < y)'), List;
 
     say "Done running tests. Report:";
     done-testing;
