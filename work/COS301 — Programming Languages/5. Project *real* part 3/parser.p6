@@ -159,6 +159,7 @@ sub parse(Pair @tokens --> Nil) {
         }
     );
 
+    # Enter the parser from the top of the tree
     bool_expr
 }
 
