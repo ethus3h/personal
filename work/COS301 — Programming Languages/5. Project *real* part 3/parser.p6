@@ -4,13 +4,10 @@ use v6.c;
 use Test;
 
 sub foo() {
-    my $oc = 'Boctei';
-    $_ := $oc;
-    say $oc =:= $_;
+    my $a = 'b';
+    $_ := $a;
     sub bar() {
-        say $_;
-        say $oc;
-        say $oc =:= $_;
+        say $a =:= $_;
     }
     bar
 }
