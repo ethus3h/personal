@@ -265,7 +265,7 @@ sub parse(List $tokens --> Nil) {
     # Test parser
     #lex('foo & !( a2 > bar & w < foo | x < y)')
     #    ==> parse;
-    say parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
+    say parse(lex('foo & !( a2 > bar & w < foo | x < y())'));
 
     say "Done running tests. Report:";
     done-testing;
