@@ -12,6 +12,7 @@ sub foo() {
         say $oc;
         say $oc =:= $ce;
     }
+    bar
 }
 
 sub lex(Str $code --> Bool) {
