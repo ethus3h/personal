@@ -17,7 +17,7 @@ sub lex(Str $code --> List) {
         }
         sub push(Str $type --> Nil) {
             $_ := $type;
-            if $prevChar eq "None" {
+            if $prevChar ~~ /<:L>/ {
                 @finishedTokens.push($type => "$token");
                 $prevChar = "None"
             }
