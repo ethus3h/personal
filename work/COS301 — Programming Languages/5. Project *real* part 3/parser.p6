@@ -82,7 +82,7 @@ sub lex(Str $code --> List) {
 
 sub parse(List $tokens --> Nil) {
     my Str @state;
-    my Str @consumed;
+    my Pair @consumed;
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
 
@@ -90,7 +90,7 @@ sub parse(List $tokens --> Nil) {
     (
         sub lexeme( --> Pair) {
             $_ = shift(@input);
-            unshift(@consumed, "$_");
+            unshift(@consumed, $_);
             when "" => "" {
                 # do nothing, we don't have any token yet
             }
@@ -108,7 +108,7 @@ sub parse(List $tokens --> Nil) {
 
         sub give_back( --> Nil) {
             say "Releasing tokens ";
-            say @consumed;
+            say @consumed.WHAT;
             for @consumed {
                 unshift(@input, (shift(@consumed)))
             }
