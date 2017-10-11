@@ -4,8 +4,13 @@ use v6.c;
 use Test;
 
 sub lex(Str $code) {
-    for $code.split("", :skip-empty) {
-        .say
+    for $code.split("", :skip-empty) -> $char {
+        when "t" {
+            say "boom";
+        }
+        default {
+            say "Unknown input character " ~ $char;
+        }
     }
 }
 
