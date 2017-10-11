@@ -84,8 +84,6 @@ sub parse(Pair @tokens --> Nil) {
     say "enter <bool_expr>";
     for @tokens {
         say "Next token is the " ~ .key ~ " " ~ .value;
-        say "enter <and_term>";
-        say "enter <bool_factor>";
     }
 }
 
