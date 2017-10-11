@@ -98,17 +98,17 @@ sub parse(List $tokens --> Nil) {
             }
             default {
                 say "Next token is the " ~ .key ~ " " ~ .value;
-                say "    State: " ~ @state;
-                say "    Consumed: " ~ @consumed;
+                say "    State: \n" ~ @state;
+                say "    Consumed: \n" ~ @consumed;
                 return $_
             }
         }
 
         sub enter(Str $rule --> Nil) {
             say "Enter <$rule>";
-            @state.push("<$rule>: " => "Lexeme: \{ $lexeme \}");
-            say "    State: " ~ @state;
-            say "    Consumed: " ~ @consumed;
+            @state.push("<$rule>: " => "Lexeme: \{ $lexeme \}\n");
+            say "    State: \n" ~ @state;
+            say "    Consumed: \n" ~ @consumed;
         }
 
         sub give_back( --> Nil) {
@@ -118,8 +118,8 @@ sub parse(List $tokens --> Nil) {
                 unshift(@input, (shift(@consumed)))
             }
             @consumed = < >;
-            say "    State: " ~ @state;
-            say "    Consumed: " ~ @consumed;
+            say "    State: \n" ~ @state;
+            say "    Consumed: \n" ~ @consumed;
         }
     );
 
