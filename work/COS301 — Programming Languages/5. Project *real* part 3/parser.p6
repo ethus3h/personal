@@ -22,11 +22,11 @@ sub lex(Str $code --> List) {
             $_ := $type;
             say "Type: $type. Prevchar: $prevChar";
             if $prevChar ~~ /<:L>/ && $type ne "" {
-                say "Found a $type after an identifier";
+                say "Found a $type after an identifier $token";
                 @finishedTokens.push("identifier" => "$token");
                 $token = "";
             }
-            say "Found a $type";
+            say "Found a $type $token$char";
             $token ~= $char;
             @finishedTokens.push($type => "$token");
             $prevChar = $char;
@@ -60,7 +60,6 @@ sub lex(Str $code --> List) {
             push 'binary_oper'
         }
         when /\s/ {
-            $prevChar = $char;
             say "Skipping a space";
             next
         }
