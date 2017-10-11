@@ -10,7 +10,6 @@ sub lex(Str $code --> Bool) {
     my Str $prevChar = "None";
     for $code.split("", :skip-empty) -> $char {
         $_ := $char;
-        say $_;
         sub continue( --> Nil) {
             $token ~= $char;
             $prevChar = $char;
