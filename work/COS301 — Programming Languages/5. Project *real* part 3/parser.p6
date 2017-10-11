@@ -6,7 +6,8 @@ use Test;
 sub lex(Str $code) {
     say
         $code
-            ==> split("", :skip-empty);
+            ==> split("", :skip-empty)
+            ==> .WHAT;
     say "bcueti";
 }
 
