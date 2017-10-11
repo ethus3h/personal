@@ -3,7 +3,7 @@
 use v6.c;
 use Test;
 
-sub lex:Nil(Str $code) {
+sub lex(--> Int Str $code) {
     my Str $state="start";
     my List $finishedTokens;
     my Str $token;
