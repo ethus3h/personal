@@ -5,7 +5,7 @@ use Test;
 
 sub lex(Str $code) {
     my Str $state="start";
-    my Array @finishedTokens;
+    my List $finishedTokens;
     my Str $token;
     my Str $prevChar;
     for $code.split("", :skip-empty) -> $char {
@@ -14,7 +14,7 @@ sub lex(Str $code) {
             when "e" {
                 $state = "";
                 $token ~= $_;
-                @finishedTokens + ('bool_literal' => $token);
+                $finishedTokens := ( 'bool_literal' => $token );
             }
         }
         when /<:L>/ {
