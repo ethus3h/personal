@@ -136,7 +136,8 @@ sub parse(List $tokens --> Nil) {
 
         sub relop( --> Nil) {
             enter "relop";
-            lexeme().value eq "identifier";
+            my $test where * eq "identifier";
+            $test = lexeme().key;
             CATCH {
                 default {
                     give_back;
