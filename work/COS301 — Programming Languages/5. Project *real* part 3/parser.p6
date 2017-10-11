@@ -130,31 +130,31 @@ sub parse(Pair @tokens --> Nil) {
 
         sub relop( --> Nil) {
             enter "relop";
-            if ! {
+            if (! {
                 lexeme().value eq "identifier";
                 CATCH {
                     give_back
                 }
-            } {
+            }) {
                 @consumed = < >
             }
         }
 
         sub id( --> Nil) {
             enter "id";
-            if ! {
+            if (! {
                 lexeme().key eq "identifier";
                 CATCH {
                     give_back
                 }
-            } {
+            }) {
                 @consumed = < >
             }
         }
 
         sub relation_expr( --> Nil) {
             enter "relation_expr";
-            if ! {
+            if (! {
                 id;
                 while relop() {
                     id
@@ -162,14 +162,14 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            } {
+            }) {
                 @consumed = < >
             }
         }
 
         sub bool_factor( --> Nil) {
             enter "bool_factor";
-            if ! {
+            if (! {
                 my Str $lexeme = lexeme().value;
                 if ! bool_literal() {
                     if ! { $lexeme eq "!"; bool_factor } {
@@ -181,14 +181,14 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            } {
+            }) {
                 @consumed = < >
             }
         }
 
         sub and_term( --> Nil) {
             enter "and_term";
-            if ! {
+            if (! {
                 bool_factor;
                 while lexeme().value eq "&" {
                     bool_factor
@@ -196,14 +196,14 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            } {
+            }) {
                 @consumed = < >
             }
         }
 
         sub bool_expr( --> Nil) {
             enter "bool_expr";
-            if ! {
+            if (! {
                 and_term;
                 while lexeme().value eq "|" {
                     and_term
@@ -211,7 +211,7 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            } {
+            }) {
                 @consumed = < >
             }
         }
