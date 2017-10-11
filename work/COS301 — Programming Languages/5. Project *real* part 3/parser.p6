@@ -89,6 +89,7 @@ sub parse(Pair @tokens --> Nil) {
     (
         sub lexeme( --> Pair) {
             $_ = shift(@tokens);
+            unshift(@consumed, "$_");
             when "" => "" {
                 # do nothing, we don't have any token yet
             }
@@ -107,7 +108,9 @@ sub parse(Pair @tokens --> Nil) {
         sub give_back( --> Nil) {
             say "Releasing tokens ";
             say @consumed;
-            @tokens.push(shift(@consumed))
+            for @consumed {
+                unshift(@tokens, (shift(@consumed)))
+            }
         }
     );
 
