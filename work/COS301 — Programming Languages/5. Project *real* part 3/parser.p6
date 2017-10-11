@@ -11,9 +11,9 @@ sub lex(Str $code --> Bool) {
     for $code.split("", :skip-empty) -> $char {
         $_ := $char;
         say $_;
-        say $char;
         sub continue( --> Nil) {
-            $token ~= $_;
+            say $_;
+#            $token ~= $_;
             $prevChar = $char;
             next
         }
