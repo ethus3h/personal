@@ -19,7 +19,7 @@ sub lex(Str $code --> List) {
             $state = "";
             $prevChar = "None";
             $token ~= $char;
-            $finishedTokens := $type => $token;
+            @finishedTokens := $type => $token;
             next
         }
         if $token ∈ <tru fals> {
@@ -51,9 +51,9 @@ sub lex(Str $code --> List) {
         }
     }
     when $token ne '' {
-        $finishedTokens := 'literal' => $token;
+        @finishedTokens.push 'literal' => $token;
     }
-    return $finishedTokens
+    return @finishedTokens
 }
 # Test suite
 (
