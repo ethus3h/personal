@@ -25,6 +25,7 @@ sub lex(Str $code) {
         $prevChar = $char;
         default {
             say "Unknown input character " ~ $char;
+            return False
         }
     }
     return True
@@ -32,7 +33,8 @@ sub lex(Str $code) {
 
 # Test suite
 (
-    ok lex('String qux?');
+    nok lex('String qux?');
+    ok lex('Stringqux');
 
     say "Done running tests. Report:";
     done-testing;
