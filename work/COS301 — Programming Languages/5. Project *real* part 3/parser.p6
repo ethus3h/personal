@@ -251,6 +251,7 @@ sub parse(List $tokens --> Nil) {
     );
 
     # Enter the parser from the top of the tree
+    say "becti";
     bool_expr;
     say @state;
 }
