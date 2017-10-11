@@ -4,11 +4,17 @@ use v6.c;
 use Test;
 
 sub lex(Str $code) {
+    my Str $state="start";
+    my Array @finishedTokens;
+    my Str $token;
+    my Str $prevChar;
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
-        when "t" {
-            say "boom";
+        when ~~ <:L> {
+            when $token in ( "t" "tr" "tru" )
+            $state = "LetterOrBool";
         }
+        $prevChar = $char;
         default {
             say "Unknown input character " ~ $char;
         }
