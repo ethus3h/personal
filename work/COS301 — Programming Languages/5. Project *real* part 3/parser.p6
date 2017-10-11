@@ -86,6 +86,7 @@ sub parse(Pair @tokens --> Nil) {
     my Pair $token = "" => "";
 
     sub lexeme(Pair $token --> Str) {
+        say @tokens;
         $_ := $token;
         when "" => "" {
             # do nothing, we don't have any token yet
@@ -108,7 +109,7 @@ sub parse(Pair @tokens --> Nil) {
         # }
         say $token.WHAT;
 
-        while lexeme eq "&" {
+        while lexeme() eq "&" {
             bool_factor
         }
     }
@@ -116,7 +117,7 @@ sub parse(Pair @tokens --> Nil) {
     sub and_term( --> Nil) {
         enter "and_term";
         bool_factor;
-        while lexeme eq "&" {
+        while lexeme() eq "&" {
             bool_factor
         }
     }
@@ -124,7 +125,7 @@ sub parse(Pair @tokens --> Nil) {
     sub bool_expr( --> Nil) {
         enter "bool_expr";
         and_term;
-        while lexeme eq "|" {
+        while lexeme() eq "|" {
             and_term
         }
     }
