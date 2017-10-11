@@ -114,8 +114,8 @@ sub parse(Pair @tokens --> Nil) {
     # Rules for the parser
     (
         sub bool_literal( --> Nil) {
+            enter "bool_literal";
             if ! {
-                enter "bool_literal";
                 lexeme().key ∈ < \< \> >;
                 CATCH {
                     give_back
@@ -127,47 +127,89 @@ sub parse(Pair @tokens --> Nil) {
 
         sub relop( --> Nil) {
             enter "relop";
-            lexeme().value eq "identifier"
+            if ! {
+                lexeme().value eq "identifier";
+                CATCH {
+                    give_back
+                }
+            } {
+                @consumed = < >
+            }
         }
 
         sub id( --> Nil) {
             enter "id";
-            lexeme().key eq "identifier"
+            if ! {
+                lexeme().key eq "identifier";
+                CATCH {
+                    give_back
+                }
+            } {
+                @consumed = < >
+            }
         }
 
         sub relation_expr( --> Nil) {
             enter "relation_expr";
-            id;
-            while relop() {
-                id
+            if ! {
+                id;
+                while relop() {
+                    id
+                }
+                CATCH {
+                    give_back
+                }
+            } {
+                @consumed = < >
             }
         }
 
         sub bool_factor( --> Nil) {
             enter "bool_factor";
-            my Str $lexeme = lexeme().value;
-            if ! bool_literal() {
-                if ! { $lexeme eq "!"; bool_factor } {
-                    if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
-                        relation_expr
+            if ! {
+                my Str $lexeme = lexeme().value;
+                if ! bool_literal() {
+                    if ! { $lexeme eq "!"; bool_factor } {
+                        if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
+                            relation_expr
+                        }
                     }
                 }
+                CATCH {
+                    give_back
+                }
+            } {
+                @consumed = < >
             }
         }
 
         sub and_term( --> Nil) {
             enter "and_term";
-            bool_factor;
-            while lexeme().value eq "&" {
-                bool_factor
+            if ! {
+                bool_factor;
+                while lexeme().value eq "&" {
+                    bool_factor
+                }
+                CATCH {
+                    give_back
+                }
+            } {
+                @consumed = < >
             }
         }
 
         sub bool_expr( --> Nil) {
             enter "bool_expr";
-            and_term;
-            while lexeme().value eq "|" {
-                and_term
+            if ! {
+                and_term;
+                while lexeme().value eq "|" {
+                    and_term
+                }
+                CATCH {
+                    give_back
+                }
+            } {
+                @consumed = < >
             }
         }
     );
