@@ -42,7 +42,7 @@ sub lex(Str $code --> Bool) {
         when '!' {
             push 'unary_oper'
         }
-        when < & > {
+        when < & \< \> > {
             push 'binary_oper'
         }
         default {
