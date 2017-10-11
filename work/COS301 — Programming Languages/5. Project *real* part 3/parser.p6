@@ -45,6 +45,9 @@ sub lex(Str $code --> List) {
         when < & \< \> > {
             push 'binary_oper'
         }
+        when /\s/ {
+            next
+        }
         default {
             say 'Input character is not in the language: "' ~ $char ~ '"';
             fail
@@ -59,7 +62,7 @@ sub lex(Str $code --> List) {
 (
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
-    say lex('Stringqux');
+    say lex('foo & !( a2 > bar & w < foo | x < y)');
 
     say "Done running tests. Report:";
     done-testing;
