@@ -85,7 +85,7 @@ sub parse(Pair @tokens --> Nil) {
     my Str @parse;
     my Pair $token = "" => "";
 
-    sub lexeme( --> Str) {
+    sub lexeme( --> Pair) {
         $_ = shift(@tokens);
         when "" => "" {
             # do nothing, we don't have any token yet
