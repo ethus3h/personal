@@ -119,10 +119,7 @@ sub parse(List $tokens --> Nil) {
     (
         sub bool_literal( --> Nil) {
             enter "bool_literal";
-            say "Bocteic";
             my Str $key = lexeme().key;
-            say $key;
-            say "Bocteic";
             $key ∈ < \< \> >;
             CATCH {
                 give_back
