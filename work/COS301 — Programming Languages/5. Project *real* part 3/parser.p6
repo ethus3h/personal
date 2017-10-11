@@ -19,7 +19,7 @@ sub lex(Str $code --> List) {
             $state = "";
             $prevChar = "None";
             $token ~= $char;
-            @finishedTokens.push($type => $token);
+            @finishedTokens.push($type => "$token");
             $token = "";
             next
         }
