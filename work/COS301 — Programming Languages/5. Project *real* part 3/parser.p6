@@ -107,6 +107,14 @@ sub parse(Pair @tokens --> Nil) {
         lexeme().key eq "bool_literal"
     }
 
+    sub relation_expr( --> Nil) {
+        enter "relation_expr";
+        id;
+        while relop() {
+            id
+        }
+    }
+
     sub bool_factor( --> Nil) {
         enter "bool_factor";
         my Str $lexeme = lexeme().value;
