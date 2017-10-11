@@ -50,12 +50,16 @@ sub lex(Str $code --> List) {
             fail
         }
     }
+    when $token ne '' {
+        $finishedTokens := 'literal' => $token;
+    }
     return $finishedTokens
 }
 # Test suite
 (
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
+    say lex('Stringqux').WHAT;
 
     say "Done running tests. Report:";
     done-testing;
