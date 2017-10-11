@@ -9,6 +9,8 @@ sub lex(Str $code --> List) {
     my Str $prevChar = "None";
     for $code.split("", :skip-empty) -> $char {
         $_ := $char;
+        say "Entering tests";
+        say $char;
         say $prevChar;
         sub continue( --> Nil) {
             $token ~= $char;
