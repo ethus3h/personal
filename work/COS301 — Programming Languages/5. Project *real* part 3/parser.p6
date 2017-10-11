@@ -107,6 +107,11 @@ sub parse(Pair @tokens --> Nil) {
         lexeme().key eq "bool_literal"
     }
 
+    sub id( --> Nil) {
+        enter "id";
+        lexeme().key eq "identifier"
+    }
+
     sub relation_expr( --> Nil) {
         enter "relation_expr";
         id;
