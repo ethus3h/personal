@@ -123,9 +123,6 @@ sub parse(List $tokens --> Nil) {
             $value = lexeme().value;
             say $value;
             CATCH {
-                when X::AdHoc {
-                    X::AdHoc.new(:payload<Did not match>).throw
-                }
                 default {
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
@@ -137,9 +134,6 @@ sub parse(List $tokens --> Nil) {
             enter "relop";
             lexeme().value eq "identifier";
             CATCH {
-                when X::AdHoc {
-                    X::AdHoc.new(:payload<Did not match>).throw
-                }
                 default {
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
@@ -151,9 +145,6 @@ sub parse(List $tokens --> Nil) {
             enter "id";
             lexeme().key eq "identifier";
             CATCH {
-                when X::AdHoc {
-                    X::AdHoc.new(:payload<Did not match>).throw
-                }
                 default {
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
@@ -168,9 +159,6 @@ sub parse(List $tokens --> Nil) {
                 id
             }
             CATCH {
-                when X::AdHoc {
-                    X::AdHoc.new(:payload<Did not match>).throw
-                }
                 default {
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
@@ -189,9 +177,6 @@ sub parse(List $tokens --> Nil) {
                 }
             }
             CATCH {
-                when X::AdHoc {
-                    X::AdHoc.new(:payload<Did not match>).throw
-                }
                 default {
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
@@ -206,9 +191,6 @@ sub parse(List $tokens --> Nil) {
                 bool_factor
             }
             CATCH {
-                when X::AdHoc {
-                    X::AdHoc.new(:payload<Did not match>).throw
-                }
                 default {
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
@@ -223,9 +205,6 @@ sub parse(List $tokens --> Nil) {
                 and_term
             }
             CATCH {
-                when X::AdHoc {
-                    X::AdHoc.new(:payload<Did not match>).throw
-                }
                 default {
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
