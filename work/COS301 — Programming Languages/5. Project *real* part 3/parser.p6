@@ -4,14 +4,15 @@ use v6.c;
 use Test;
 
 sub lex(Str $code) {
-    $code
-    ==> split(:skip-empty=True);
+    say
+        $code;
+        #    ==> split("", :skip-empty=True);
     say "bcueti";
 }
 
 # Test suite
 (
-    ok runParserTest('String qux?');
+    ok lex('String qux?');
 
     say "Done running tests. Report:";
     done-testing;
