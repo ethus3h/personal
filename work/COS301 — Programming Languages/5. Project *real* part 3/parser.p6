@@ -17,7 +17,7 @@ sub lex(Str $code --> Bool) {
         }
         if $token ∈ <tru fals> {
             when "e" {
-                push bool_literal
+                push 'bool_literal'
             }
         }
         when /<:L>/ {
