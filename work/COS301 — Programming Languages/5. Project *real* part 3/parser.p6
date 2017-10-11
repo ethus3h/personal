@@ -5,6 +5,7 @@ use Test;
 
 sub lex(Str $code) {
     for $code.split("", :skip-empty) -> $char {
+        $_ = $char;
         when "t" {
             say "boom";
         }
