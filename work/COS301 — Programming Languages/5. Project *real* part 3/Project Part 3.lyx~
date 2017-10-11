@@ -117,7 +117,8 @@ key "Documentation"
 \family typewriter
 -‌>
 \family default
- followed by a list of variables to create an anonymous function.
+, with an interceding list of variables, to create an anonymous function.
+ 
 \end_layout
 
 \begin_layout Standard

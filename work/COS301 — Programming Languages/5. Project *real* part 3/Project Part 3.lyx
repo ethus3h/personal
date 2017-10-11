@@ -106,7 +106,7 @@ key "Documentation"
 \family typewriter
 }
 \family default
-), and statements are delimited by semicolons (
+) and can be nested, and statements are delimited by semicolons (
 \family typewriter
 ;
 \family default
@@ -118,7 +118,7 @@ key "Documentation"
 -‌>
 \family default
 , with an interceding list of variables, to create an anonymous function.
- 
+ Parentheses can be used to denote semantic sub-blocks within a given block.
 \end_layout
 
 \begin_layout Standard
