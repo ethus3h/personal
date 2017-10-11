@@ -123,12 +123,12 @@ sub parse(List $tokens --> Nil) {
             $value = lexeme().value;
             say $value;
             CATCH {
-                # when X::TypeCheck::Assignment {
-                    # say .^name;
-                # }
+                when X::AdHoc {
+                    X::AdHoc.new("Did not match").throw
+                }
                 default {
-                    give_back
-                    fail "Did not match"
+                    give_back;
+                    X::AdHoc.new("Did not match").throw
                 }
             }
         }
