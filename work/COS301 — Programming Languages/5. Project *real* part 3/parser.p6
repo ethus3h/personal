@@ -3,13 +3,6 @@
 use v6.c;
 use Test;
 
-my $a = 'b';
-my $b := $a;
-sub foo() {
-    say $a =:= $b
-}
-foo;
-
 sub lex(Str $code --> Bool) {
     my Str $state="start";
     my List $finishedTokens;
@@ -19,16 +12,14 @@ sub lex(Str $code --> Bool) {
         $_ := $char;
         say $_;
         sub continue( --> Nil) {
-            say $_.WHAT;
-            say $char.WHAT;
-#            $token ~= $_;
+            $token ~= $char;
             $prevChar = $char;
             next
         }
         sub push(Str $type --> Nil) {
             $state = "";
             $prevChar = "None";
-            $token ~= $_;
+            $token ~= $char;
             $finishedTokens := $type => $token;
             next
         }
