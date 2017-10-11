@@ -80,7 +80,7 @@ sub lex(Str $code --> List) {
     return @finishedTokens
 }
 
-sub parse(Pair @tokens --> Nil) {
+sub parse(List @tokens --> Nil) {
     my Str @state;
     my Str @consumed;
     my Pair $token = "" => "";
@@ -229,9 +229,9 @@ sub parse(Pair @tokens --> Nil) {
     isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
 
     # Test parser
-    lex('foo & !( a2 > bar & w < foo | x < y)')
-        ==> parse;
-    
+    #lex('foo & !( a2 > bar & w < foo | x < y)')
+    #    ==> parse;
+    say parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
 
     say "Done running tests. Report:";
     done-testing;
