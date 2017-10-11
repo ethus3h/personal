@@ -161,8 +161,15 @@ sub parse(List $tokens --> Nil) {
         sub relation_expr( --> Nil) {
             enter "relation_expr";
             id;
-            while relop() {
-                id
+            {
+                while relop() {
+                    id
+                }
+                CATCH {
+                    default {
+                        say "(Matched short relop)"
+                    }
+                }
             }
             CATCH {
                 default {
