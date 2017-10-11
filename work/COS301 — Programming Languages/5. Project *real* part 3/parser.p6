@@ -16,7 +16,7 @@ sub lex(Str $code --> List) {
         }
         sub push(Str $type --> Nil) {
             $_ := $type;
-            when binary_oper {
+            when "binary_oper" {
                 unless $prevChar eq "None" {
                     @finishedTokens.push($type => "$token");
                 }
@@ -46,6 +46,7 @@ sub lex(Str $code --> List) {
         when '!' {
             push 'unary_oper'
         }
+        say $_;
         if "$_" ∈ < & | \< \> > {
             push 'binary_oper'
         }
