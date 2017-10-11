@@ -124,7 +124,6 @@ sub parse(List $tokens --> Nil) {
         }
     );
 
-    say "becti";
     # Rules for the parser
     (
         sub bool_literal( --> Nil) {
@@ -247,7 +246,7 @@ sub parse(List $tokens --> Nil) {
             }
         }
         if @input.elems > 0 {
-            fail "The input string does not match the grammar."
+            fail "The input string does not match the grammar. Unused input: " ~ @input
         }
     );
 
@@ -266,7 +265,7 @@ sub parse(List $tokens --> Nil) {
     # Test parser
     #lex('foo & !( a2 > bar & w < foo | x < y)')
     #    ==> parse;
-    parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
+    say parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
 
     say "Done running tests. Report:";
     done-testing;
