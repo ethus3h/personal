@@ -96,9 +96,9 @@ sub parse(Pair @tokens --> Nil) {
 
     sub bool_factor( --> Nil) {
         enter "bool_factor";
-        if ! bool_literal {
-            
-        }
+        # if ! bool_literal {
+        #     
+        # }
         while lexeme eq "&" {
             bool_factor
         }
