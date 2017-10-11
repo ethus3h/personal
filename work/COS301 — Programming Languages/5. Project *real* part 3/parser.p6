@@ -5,12 +5,13 @@ use Test;
 
 sub lex(Str $code) {
     $code
-    ==> split(:skip-empty=True)
+    ==> split(:skip-empty=True);
+    say "bcueti";
 }
 
 # Test suite
 (
-    ok runParserTest('String qux?', 'optionalParameter');
+    ok runParserTest('String qux?');
 
     say "Done running tests. Report:";
     done-testing;
