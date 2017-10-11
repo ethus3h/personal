@@ -6,8 +6,12 @@ use Test;
 sub foo() {
     my $oc = 'Boctei';
     my $ce := $oc;
-    say $oc =.= $ce;
-    
+    say $oc =:= $ce;
+    sub bar() {
+        say $ce;
+        say $oc;
+        say $oc =:= $ce;
+    }
 }
 
 sub lex(Str $code --> Bool) {
