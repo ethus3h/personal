@@ -10,16 +10,15 @@ sub lex(Str $code) {
     my Str $prevChar;
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
+        if $token ∈ <tru fals> {
+            when "e" {
+                $state = "";
+                $token ~= $_;
+                @finishedTokens + $token
+            }
+        }
         when /<:L>/ {
             if $token ∈ <t tr tru f fa fal fals> {
-                if $token ∈ <tru fals> {
-                    when "e" {
-                        $state = "";
-                        $token ~= $_;
-                        @finishedTokens + $token
-                    }
-                }
-                $state = "LetterOrBool";
                 $token ~= $_;
             }
         }
