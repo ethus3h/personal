@@ -5,8 +5,8 @@ use Test;
 
 sub lex(Str $code) {
     say
-        $code;
-        #    ==> split("", :skip-empty=True);
+        $code
+            ==> split("", :skip-empty);
     say "bcueti";
 }
 
