@@ -3,7 +3,7 @@
 use v6.c;
 use Test;
 
-sub lex(Str $code --> Bool) {
+sub lex(Str $code --> List) {
     my Str $state="start";
     my List $finishedTokens;
     my Str $token;
@@ -47,15 +47,15 @@ sub lex(Str $code --> Bool) {
         }
         default {
             say 'Input character is not in the language: "' ~ $char ~ '"';
-            return False
+            fail
         }
     }
-    return True
+    return $finishedTokens
 }
 # Test suite
 (
     nok lex('String qux?');
-    ok lex('Stringqux');
+    isa-ok lex('Stringqux'), List;
 
     say "Done running tests. Report:";
     done-testing;
