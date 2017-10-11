@@ -5,7 +5,7 @@ use Test;
 
 sub lex(Str $code --> List) {
     my Str $state="start";
-    my List[Pair] $finishedTokens;
+    my Pair @finishedTokens;
     my Str $token;
     my Str $prevChar = "None";
     for $code.split("", :skip-empty) -> $char {
