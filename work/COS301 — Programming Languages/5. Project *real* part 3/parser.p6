@@ -81,7 +81,12 @@ sub lex(Str $code --> List) {
 }
 
 sub parse(Pair @tokens --> Nil) {
-    say @tokens
+    for @tokens {
+        say "Next token is " ~ .key "with the value" ~ .value
+        say "enter <bool_expr>";
+        say "enter <and_term>";
+        say "enter <bool_factor>";
+    }
 }
 
 # Test suite
@@ -90,11 +95,11 @@ sub parse(Pair @tokens --> Nil) {
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
     isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
-    say lex('foo & !( a2 > bar & w < foo | x < y)');
 
     # Test parser
     lex('foo & !( a2 > bar & w < foo | x < y)')
         ==> parse;
+    
 
     say "Done running tests. Report:";
     done-testing;
