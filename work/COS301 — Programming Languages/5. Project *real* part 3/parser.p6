@@ -85,11 +85,13 @@ sub parse(List $tokens --> Nil) {
     my Pair @consumed;
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
+    my Str $lexeme = "";
 
     # Support subroutines for the parser
     (
         sub lexeme( --> Pair) {
             $_ = shift(@input);
+            $lexeme = ~ $_;
             unshift(@consumed, $_);
             when "" => "" {
                 # do nothing, we don't have any token yet
@@ -104,7 +106,7 @@ sub parse(List $tokens --> Nil) {
 
         sub enter(Str $rule --> Nil) {
             say "Enter <$rule>";
-            @state.push("$rule");
+            @state.push("$rule" => );
             say "    State: " ~ @state;
             say "    Consumed: " ~ @consumed;
         }
