@@ -10,7 +10,7 @@ sub lex(Str $code) {
     my Str $prevChar;
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
-        when ~~ <:L> {
+        when ~~ /<:L>/ {
             when $token ∈ <t tr tru> {
                 $state = "LetterOrBool";
             }
