@@ -27,11 +27,13 @@ sub lex(Str $code --> Bool) {
                 push 'bool_literal'
             }
         }
-        when /<:L:N>/ {
-            when /<:L>/ && $prevChar ~= /<:L>/ {
-            }
-            if $prevChar ~= /<:L + :D>/ {
+        when /<:L + :N>/ {
+            if $prevChar ~= /<:L>/ {
                 continue
+            }
+            when /<:N>/ && $prevChar eq "None" {
+                say ""
+                return False
             }
         }
         when < ( ) > {
@@ -42,7 +44,7 @@ sub lex(Str $code --> Bool) {
         }
         when 
         default {
-            say "Unknown input character " ~ $char;
+            say 'Input character is not in the grammar: "' ~ $char ~ '"';
             return False
         }
     }
