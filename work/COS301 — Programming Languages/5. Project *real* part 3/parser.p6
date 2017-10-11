@@ -36,8 +36,8 @@ sub lex(Str $code --> List) {
                 continue
             }
             when /<:N>/ && $prevChar eq "None" {
-                say "";
-                return False
+                say "Expected an identifier or an operator.";
+                fail
             }
         }
         if $_ ∈ < ( ) > {
@@ -46,8 +46,7 @@ sub lex(Str $code --> List) {
         when '!' {
             push 'unary_oper'
         }
-        say $_;
-        if "$_" ∈ < & | \< \> > {
+        when $_ ∈ < & | \< \> > {
             push 'binary_oper'
         }
         when /\s/ {
@@ -67,7 +66,7 @@ sub lex(Str $code --> List) {
 (
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
-    say lex('foo & !( a2 > bar & w < foo | x < y)');
+    #say lex('foo & !( a2 > bar & w < foo | x < y)');
 
     say "Done running tests. Report:";
     done-testing;
