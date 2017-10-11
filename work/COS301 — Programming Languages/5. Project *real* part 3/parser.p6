@@ -13,7 +13,7 @@ sub lex(Str $code --> Bool) {
         sub push(Str $type) {
             $state = "";
             $token ~= $_;
-            $finishedTokens := 'bool_literal' => $token;
+            $finishedTokens := $type => $token;
         }
         if $token ∈ <tru fals> {
             when "e" {
