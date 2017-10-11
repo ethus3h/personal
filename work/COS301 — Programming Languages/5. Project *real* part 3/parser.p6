@@ -10,7 +10,7 @@ sub lex(Str $code --> Bool) {
     my Str $prevChar;
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
-        sub push(Str $type) {
+        sub push(Str $type --> Nil) {
             $state = "";
             $token ~= $_;
             $finishedTokens := $type => $token;
