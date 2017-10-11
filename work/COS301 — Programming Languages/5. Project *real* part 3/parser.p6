@@ -175,11 +175,11 @@ sub parse(List $tokens --> Nil) {
 
         sub bool_factor( --> Nil) {
             enter "bool_factor";
-            my Str $lexeme = lexeme().value;
             {
                 bool_literal();
                 CATCH {
                     default {
+                        my Str $lexeme = lexeme().value;
                         my $extest where * eq '!';
                         $extest = $lexeme;
                         bool_factor;
