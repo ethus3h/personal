@@ -96,6 +96,8 @@ sub parse(List $tokens --> Nil) {
             }
             default {
                 say "Next token is the " ~ .key ~ " " ~ .value;
+                say @state;
+                say @consumed;
                 return $_
             }
         }
@@ -104,6 +106,7 @@ sub parse(List $tokens --> Nil) {
             say "Enter <$rule>";
             @state.push("$rule");
             say @state;
+            say @consumed;
         }
 
         sub give_back( --> Nil) {
