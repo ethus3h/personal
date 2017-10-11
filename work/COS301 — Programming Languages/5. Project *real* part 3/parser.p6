@@ -6,6 +6,7 @@ use Test;
 sub foo() {
     my $a = 'b';
     $_ := $a;
+    say $a =:= $_;
     sub bar() {
         say $a =:= $_;
     }
