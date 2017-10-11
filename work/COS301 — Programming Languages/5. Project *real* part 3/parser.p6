@@ -125,9 +125,8 @@ sub parse(List $tokens --> Nil) {
     (
         sub bool_literal( --> Nil) {
             enter "bool_literal";
-            my Str $value where * ∈ < \< \> >;
-            $value = lexeme().value;
-            say $value;
+            my Str $test where * eq "bool_literal";
+            $test = lexeme().key;
             CATCH {
                 default {
                     give_back;
@@ -138,8 +137,8 @@ sub parse(List $tokens --> Nil) {
 
         sub relop( --> Nil) {
             enter "relop";
-            my $test where * eq "identifier";
-            $test = lexeme().key;
+            my Str $test where * ∈ < \< \> >;
+            $test = lexeme().value;
             CATCH {
                 default {
                     give_back;
