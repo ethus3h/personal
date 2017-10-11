@@ -117,7 +117,11 @@ key "Documentation"
 \family typewriter
 -‌>
 \family default
-, with an interceding list of variables, to create an anonymous function.
+, with an interceding list of variables, called a 
+\emph on
+pointy block
+\emph default
+, which acts similarly to an anonymous function.
  Parentheses can be used to denote semantic divisions within a given block.
  
 \end_layout
