@@ -31,7 +31,7 @@ sub lex(Str $code) {
 
 # Test suite
 (
-lex('String qux?');
+say lex('String qux?');
     #ok lex('String qux?');
 
     say "Done running tests. Report:";
