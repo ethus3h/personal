@@ -106,7 +106,7 @@ sub parse(List $tokens --> Nil) {
 
         sub enter(Str $rule --> Nil) {
             say "Enter <$rule>";
-            @state.push("    " x @state.elems ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
+            @state.push("    " x @consumed.elems ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
             #say "    State: \n" ~ @state;
             #say "    Consumed: \n" ~ @consumed;
         }
@@ -243,6 +243,9 @@ sub parse(List $tokens --> Nil) {
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
+        }
+        if @input.elems > 0 {
+            fail "The input string does not match the grammar."
         }
     );
 
