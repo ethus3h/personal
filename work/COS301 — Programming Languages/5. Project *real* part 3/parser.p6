@@ -86,13 +86,13 @@ sub parse(Pair @tokens --> Nil) {
     my Pair $token = "" => "";
 
     sub lexeme( --> Str) {
-        say @tokens;
-        $_ := $token;
+        $_ = shift(@tokens);
         when "" => "" {
             # do nothing, we don't have any token yet
         }
         default {
-            say "Next token is the " ~ .key ~ " " ~ .value
+            say "Next token is the " ~ .key ~ " " ~ .value;
+            return .value
         }
     }
 
