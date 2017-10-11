@@ -124,6 +124,7 @@ sub parse(List $tokens --> Nil) {
         }
     );
 
+    say "becti";
     # Rules for the parser
     (
         sub bool_literal( --> Nil) {
@@ -251,7 +252,6 @@ sub parse(List $tokens --> Nil) {
     );
 
     # Enter the parser from the top of the tree
-    say "becti";
     bool_expr;
     say @state;
 }
