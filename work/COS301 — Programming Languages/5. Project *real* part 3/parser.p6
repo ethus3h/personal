@@ -30,6 +30,7 @@ sub lex(Str $code --> List) {
             $token ~= $char;
             @finishedTokens.push($type => "$token");
             $prevChar = $char;
+            $token = "";
             next
         }
         if $token ∈ <tru fals> {
