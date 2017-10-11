@@ -99,7 +99,7 @@ sub parse(Pair @tokens --> Nil) {
         # if ! bool_literal {
         #     
         # }
-        while lexeme eq "&" {
+        while lexeme $_ eq "&" {
             bool_factor
         }
     }
@@ -107,7 +107,7 @@ sub parse(Pair @tokens --> Nil) {
     sub and_term( --> Nil) {
         enter "and_term";
         bool_factor;
-        while lexeme eq "&" {
+        while lexeme $_ eq "&" {
             bool_factor
         }
     }
@@ -115,7 +115,7 @@ sub parse(Pair @tokens --> Nil) {
     sub bool_expr( --> Nil) {
         enter "bool_expr";
         and_term;
-        while lexeme eq "|" {
+        while lexeme $_ eq "|" {
             and_term
         }
     }
