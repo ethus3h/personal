@@ -104,9 +104,14 @@ sub parse(Pair @tokens --> Nil) {
 
     sub bool_factor( --> Nil) {
         enter "bool_factor";
-        # if ! bool_literal {
-        #     
-        # }
+        my Str $lexeme = lexeme();
+        if ! bool_literal {
+            if ! { $lexeme eq "!"; bool_factor } {
+                if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
+                    relation_expr
+                }
+            }
+        }
         say $token.WHAT;
 
         while lexeme() eq "&" {
