@@ -85,7 +85,7 @@ sub parse(Pair @tokens --> Nil) {
     my Str @parse;
     my Pair $token = "" => "";
 
-    sub lexeme(Pair $token --> Str) {
+    sub lexeme( --> Str) {
         say @tokens;
         $_ := $token;
         when "" => "" {
