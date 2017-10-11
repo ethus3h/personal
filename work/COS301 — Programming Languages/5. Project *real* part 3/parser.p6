@@ -106,7 +106,7 @@ sub parse(List $tokens --> Nil) {
 
         sub enter(Str $rule --> Nil) {
             say "Enter <$rule>";
-            @state.push("$rule" => "Lexeme: $lexeme");
+            @state.push("$rule" => "Lexeme: \{ $lexeme \}");
             say "    State: " ~ @state;
             say "    Consumed: " ~ @consumed;
         }
