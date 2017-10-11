@@ -111,6 +111,7 @@ sub parse(List $tokens --> Nil) {
             for @consumed {
                 unshift($tokens, (shift(@consumed)))
             }
+            @consumed = < >
         }
     );
 
