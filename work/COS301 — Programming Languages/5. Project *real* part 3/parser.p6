@@ -12,6 +12,7 @@ sub lex(Str $code --> Bool) {
         $_ = $char;
         sub continue( --> Nil) {
             $token ~= $_;
+            $prevChar = $char;
             next
         }
         sub push(Str $type --> Nil) {
@@ -30,7 +31,6 @@ sub lex(Str $code --> Bool) {
                 continue
             }
         }
-        $prevChar = $char;
         default {
             say "Unknown input character " ~ $char;
             return False
