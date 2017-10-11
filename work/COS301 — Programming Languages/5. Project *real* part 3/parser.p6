@@ -3,18 +3,21 @@
 use v6.c;
 use Test;
 
-sub lex(Str $code) {
+sub lex:Nil(Str $code) {
     my Str $state="start";
     my List $finishedTokens;
     my Str $token;
     my Str $prevChar;
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
+        sub push(Str $type) {
+            $state = "";
+            $token ~= $_;
+            $finishedTokens := 'bool_literal' => $token;
+        }
         if $token ∈ <tru fals> {
             when "e" {
-                $state = "";
-                $token ~= $_;
-                $finishedTokens := 'bool_literal' => $token;
+                push bool_literal
             }
         }
         when /<:L>/ {
