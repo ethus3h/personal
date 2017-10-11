@@ -9,7 +9,7 @@ say $a =:= $_;
 sub foo() {
     say $a =:= $_;
 }
-foo
+foo;
 
 sub lex(Str $code --> Bool) {
     my Str $state="start";
