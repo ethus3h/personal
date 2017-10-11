@@ -247,7 +247,8 @@ sub parse(List $tokens --> Nil) {
     );
 
     # Enter the parser from the top of the tree
-    bool_expr
+    bool_expr;
+    say @state;
 }
 
 # Test suite
@@ -260,7 +261,7 @@ sub parse(List $tokens --> Nil) {
     # Test parser
     #lex('foo & !( a2 > bar & w < foo | x < y)')
     #    ==> parse;
-    say parse(lex('foo & !( a2 > bar & w < foo | x < y)')).WHAT;
+    parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
 
     say "Done running tests. Report:";
     done-testing;
