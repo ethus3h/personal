@@ -98,6 +98,13 @@ key "Documentation"
 \end_inset
 
  Custom operators are allowed.
+ In Perl 6, blocks are denoted by braces (
+\family typewriter
+{
+\family default
+, 
+\family typewriter
+})
 \end_layout
 
 \begin_layout Standard
