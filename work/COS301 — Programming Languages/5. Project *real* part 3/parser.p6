@@ -4,7 +4,7 @@ use v6.c;
 use Test;
 
 sub lex(Str $code) {
-    say $code.split("", :skip-empty).WHAT;
+    say $code.split("", :skip-empty);
     say "bcueti";
 }
 
