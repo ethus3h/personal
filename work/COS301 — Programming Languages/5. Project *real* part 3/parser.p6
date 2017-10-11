@@ -81,16 +81,19 @@ sub lex(Str $code --> List) {
 }
 
 sub parse(Pair @tokens --> Nil) {
-    my Str $state;
+    my Str @state;
     my Str @parse;
 
     sub enter(Str $rule --> Nil) {
         say "Enter <$rule>";
-        $state = "$rule";
+        @state.push("$rule");
+        say @state;
     }
     enter "bool_expr";
+    enter "and_term";
+    enter "bool_factor";
 
-    sub push( --> Nil) {
+    sub bool_expr( --> Nil) {
         next
     }
     for @tokens {
