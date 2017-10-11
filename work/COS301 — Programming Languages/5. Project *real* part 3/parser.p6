@@ -5,7 +5,7 @@ use Test;
 
 sub lex(Str $code) {
     my @code = $code.split("", :skip-empty);
-    
+    for shift(@code)
 }
 
 # Test suite
