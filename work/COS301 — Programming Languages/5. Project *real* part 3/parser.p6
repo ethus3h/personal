@@ -4,7 +4,6 @@ use v6.c;
 use Test;
 
 sub lex(Str $code --> List) {
-    my Str $state="start";
     my Pair @finishedTokens;
     my Str $token;
     my Str $prevChar = "None";
@@ -22,8 +21,6 @@ sub lex(Str $code --> List) {
                     @finishedTokens.push($type => "$token");
                 }
             }
-            $state = "";
-            $prevChar = "None";
             $token ~= $char;
             @finishedTokens.push($type => "$token");
             $token = "";
