@@ -169,10 +169,24 @@ sub parse(List $tokens --> Nil) {
         sub bool_factor( --> Nil) {
             enter "bool_factor";
             my Str $lexeme = lexeme().value;
-            if ! bool_literal() {
-                if ! { $lexeme eq "!"; bool_factor } {
-                    if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
-                        relation_expr
+            {
+                bool_literal()
+                CATCH {
+                    default {
+                        $lexeme eq "!";
+                        bool_factor
+                        CATCH {
+                            default {
+                                $lexeme eq "(";
+                                bool_expr;
+                                $lexeme eq "("
+                                CATCH {
+                                    default {
+                                        relation_expr
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
