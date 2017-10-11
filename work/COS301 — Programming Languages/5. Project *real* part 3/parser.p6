@@ -81,9 +81,13 @@ sub lex(Str $code --> List) {
 }
 
 sub parse(Pair @tokens --> Nil) {
-    say "enter <bool_expr>";
-    my String @parse;
-    sub push(Str $type --> Nil) {
+    my Str $state;
+    my Str @parse;
+    sub state(Str $rule --> Nil) {
+        say "Enter <$rule>";
+        $state = "$rule";
+    }
+    sub push( --> Nil) {
         $_ := $type;
         if $prevChar ~~ /<:L + :N>/ {
             # Found something non-identifier after an identifier,
