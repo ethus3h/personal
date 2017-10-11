@@ -5,12 +5,12 @@ use Test;
 
 sub foo() {
     my $oc = 'Boctei';
-    my $ce := $oc;
-    say $oc =:= $ce;
+    my $_ := $oc;
+    say $oc =:= $_;
     sub bar() {
-        say $ce;
+        say $_;
         say $oc;
-        say $oc =:= $ce;
+        say $oc =:= $_;
     }
     bar
 }
