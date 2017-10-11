@@ -5,7 +5,7 @@ use Test;
 
 sub foo() {
     my $oc = 'Boctei';
-    my $_ := $oc;
+    $_ := $oc;
     say $oc =:= $_;
     sub bar() {
         say $_;
