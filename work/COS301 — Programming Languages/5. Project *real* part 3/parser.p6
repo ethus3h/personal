@@ -9,6 +9,7 @@ sub lex(Str $code --> List) {
     my Str $prevChar = "None";
     for $code.split("", :skip-empty) -> $char {
         $_ := $char;
+        say $prevChar;
         sub continue( --> Nil) {
             $token ~= $char;
             $prevChar = $char;
@@ -16,14 +17,13 @@ sub lex(Str $code --> List) {
         }
         sub push(Str $type --> Nil) {
             $_ := $type;
-            when "binary_oper" {
-                unless $prevChar eq "None" {
-                    @finishedTokens.push($type => "$token");
-                }
+            if $prevChar eq "None" {
+                @finishedTokens.push($type => "$token");
+                $prevChar = "None"
             }
             $token ~= $char;
             @finishedTokens.push($type => "$token");
-            $token = "";
+            $prevChar = $char;
             next
         }
         if $token ∈ <tru fals> {
@@ -33,7 +33,11 @@ sub lex(Str $code --> List) {
         }
         when /<:L + :N>/ {
             if $prevChar ~~ /<:L>/ {
+                $prevChar = $char;
                 continue
+            }
+            else {
+                $prevChar = $char
             }
             when /<:N>/ && $prevChar eq "None" {
                 say "Expected an identifier or an operator.";
@@ -50,6 +54,7 @@ sub lex(Str $code --> List) {
             push 'binary_oper'
         }
         when /\s/ {
+            $prevChar = $char;
             next
         }
         default {
@@ -66,7 +71,7 @@ sub lex(Str $code --> List) {
 (
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
-    #say lex('foo & !( a2 > bar & w < foo | x < y)');
+    say lex('foo & !( a2 > bar & w < foo | x < y)');
 
     say "Done running tests. Report:";
     done-testing;
