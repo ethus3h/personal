@@ -14,6 +14,7 @@ sub lex(Str $code --> Bool) {
             $state = "";
             $token ~= $_;
             $finishedTokens := $type => $token;
+            continue
         }
         if $token ∈ <tru fals> {
             when "e" {
