@@ -20,6 +20,7 @@ sub lex(Str $code --> List) {
             $prevChar = "None";
             $token ~= $char;
             @finishedTokens.push($type => $token);
+            $token = "";
             next
         }
         if $token ∈ <tru fals> {
@@ -36,13 +37,13 @@ sub lex(Str $code --> List) {
                 return False
             }
         }
-        when < ( ) > {
+        if $_ ∈ < ( ) > {
             push 'parenthesis'
         }
         when '!' {
             push 'unary_oper'
         }
-        when < & \< \> > {
+        if $_ ∈ < & | \< \> > {
             push 'binary_oper'
         }
         when /\s/ {
