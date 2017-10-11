@@ -12,7 +12,8 @@ sub lex(Str $code --> Bool) {
         $_ := $char;
         say $_;
         sub continue( --> Nil) {
-            say $_;
+            say $_.WHAT;
+            say $char.WHAT;
 #            $token ~= $_;
             $prevChar = $char;
             next
