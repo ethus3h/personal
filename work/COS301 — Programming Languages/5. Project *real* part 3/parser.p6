@@ -7,7 +7,7 @@ sub lex(Str $code --> Bool) {
     my Str $state="start";
     my List $finishedTokens;
     my Str $token;
-    my Str $prevChar;
+    my Str $prevChar = "None";
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
         sub continue( --> Nil) {
@@ -17,6 +17,7 @@ sub lex(Str $code --> Bool) {
         }
         sub push(Str $type --> Nil) {
             $state = "";
+            $prevChar = "None"
             $token ~= $_;
             $finishedTokens := $type => $token;
             next
@@ -26,7 +27,9 @@ sub lex(Str $code --> Bool) {
                 push 'bool_literal'
             }
         }
-        when /<:L>/ {
+        when /<:L:N>/ {
+            when /<:L>/ && $prevChar ~= /<:L>/ {
+            }
             if $prevChar ~= /<:L + :D>/ {
                 continue
             }
