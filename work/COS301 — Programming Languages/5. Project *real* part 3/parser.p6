@@ -5,9 +5,8 @@ use Test;
 
 my $a = 'b';
 $_ := $a;
-say $a =:= $_;
 sub foo() {
-    say $a =:= $_;
+    say $a =:= $_
 }
 foo;
 
