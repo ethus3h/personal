@@ -11,8 +11,9 @@ sub lex(Str $code) {
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
         when ~~ <:L> {
-            when $token in ( "t" "tr" "tru" )
-            $state = "LetterOrBool";
+            when $token ∈ <t tr tru> {
+                $state = "LetterOrBool";
+            }
         }
         $prevChar = $char;
         default {
