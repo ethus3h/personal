@@ -39,19 +39,12 @@ sub lex(Str $code --> List) {
             }
         }
         when /<:L + :N>/ {
-            if $prevChar ~~ /<:L>/ {
-                $prevChar = $char;
-                continue
-            }
-            else {
-                $prevChar = $char
-            }
             when /<:N>/ && $prevChar !~~ /<:L>/ {
                 say "Expected an identifier or an operator.";
                 fail
             }
             default {
-                
+                continue
             }
         }
         if $_ ∈ < ( ) > {
