@@ -3,15 +3,13 @@
 use v6.c;
 use Test;
 
+my $a = 'b';
+$_ := $a;
+say $a =:= $_;
 sub foo() {
-    my $a = 'b';
-    $_ := $a;
     say $a =:= $_;
-    sub bar() {
-        say $a =:= $_;
-    }
-    bar
 }
+foo
 
 sub lex(Str $code --> Bool) {
     my Str $state="start";
@@ -65,7 +63,6 @@ sub lex(Str $code --> Bool) {
     }
     return True
 }
-foo;
 # Test suite
 (
     #nok lex('String qux?');
