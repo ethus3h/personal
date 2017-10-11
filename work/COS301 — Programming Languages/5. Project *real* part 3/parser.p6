@@ -82,7 +82,7 @@ sub lex(Str $code --> List) {
 
 sub parse(Pair @tokens --> Nil) {
     my Str @state;
-    my Str @parse;
+    my Str @consumed;
     my Pair $token = "" => "";
 
     # Support subroutines for the parser
@@ -103,13 +103,26 @@ sub parse(Pair @tokens --> Nil) {
             @state.push("$rule");
             say @state;
         }
+
+        sub give_back( --> Nil) {
+            say "Releasing tokens ";
+            say @consumed;
+            @tokens.push(shift(@consumed))
+        }
     );
 
     # Rules for the parser
     (
         sub bool_literal( --> Nil) {
-            enter "bool_literal";
-            lexeme().key ∈ < \< \> >
+            if ! {
+                enter "bool_literal";
+                lexeme().key ∈ < \< \> >;
+                CATCH {
+                    give_back
+                }
+            } {
+                @consumed = < >
+            }
         }
 
         sub relop( --> Nil) {
