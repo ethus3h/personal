@@ -85,73 +85,79 @@ sub parse(Pair @tokens --> Nil) {
     my Str @parse;
     my Pair $token = "" => "";
 
-    sub lexeme( --> Pair) {
-        $_ = shift(@tokens);
-        when "" => "" {
-            # do nothing, we don't have any token yet
+    # Support subroutines for the parser
+    (
+        sub lexeme( --> Pair) {
+            $_ = shift(@tokens);
+            when "" => "" {
+                # do nothing, we don't have any token yet
+            }
+            default {
+                say "Next token is the " ~ .key ~ " " ~ .value;
+                return $_
+            }
         }
-        default {
-            say "Next token is the " ~ .key ~ " " ~ .value;
-            return $_
+
+        sub enter(Str $rule --> Nil) {
+            say "Enter <$rule>";
+            @state.push("$rule");
+            say @state;
         }
-    }
+    );
 
-    sub enter(Str $rule --> Nil) {
-        say "Enter <$rule>";
-        @state.push("$rule");
-        say @state;
-    }
-
-    sub bool_literal( --> Nil) {
-        enter "bool_literal";
-        lexeme().key ∈ < \< \> >
-    }
-
-    sub relop( --> Nil) {
-        enter "relop";
-        lexeme().value eq "identifier"
-    }
-
-    sub id( --> Nil) {
-        enter "id";
-        lexeme().key eq "identifier"
-    }
-
-    sub relation_expr( --> Nil) {
-        enter "relation_expr";
-        id;
-        while relop() {
-            id
+    # Rules for the parser
+    (
+        sub bool_literal( --> Nil) {
+            enter "bool_literal";
+            lexeme().key ∈ < \< \> >
         }
-    }
 
-    sub bool_factor( --> Nil) {
-        enter "bool_factor";
-        my Str $lexeme = lexeme().value;
-        if ! bool_literal() {
-            if ! { $lexeme eq "!"; bool_factor } {
-                if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
-                    relation_expr
+        sub relop( --> Nil) {
+            enter "relop";
+            lexeme().value eq "identifier"
+        }
+
+        sub id( --> Nil) {
+            enter "id";
+            lexeme().key eq "identifier"
+        }
+
+        sub relation_expr( --> Nil) {
+            enter "relation_expr";
+            id;
+            while relop() {
+                id
+            }
+        }
+
+        sub bool_factor( --> Nil) {
+            enter "bool_factor";
+            my Str $lexeme = lexeme().value;
+            if ! bool_literal() {
+                if ! { $lexeme eq "!"; bool_factor } {
+                    if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
+                        relation_expr
+                    }
                 }
             }
         }
-    }
 
-    sub and_term( --> Nil) {
-        enter "and_term";
-        bool_factor;
-        while lexeme().value eq "&" {
-            bool_factor
+        sub and_term( --> Nil) {
+            enter "and_term";
+            bool_factor;
+            while lexeme().value eq "&" {
+                bool_factor
+            }
         }
-    }
 
-    sub bool_expr( --> Nil) {
-        enter "bool_expr";
-        and_term;
-        while lexeme().value eq "|" {
-            and_term
+        sub bool_expr( --> Nil) {
+            enter "bool_expr";
+            and_term;
+            while lexeme().value eq "|" {
+                and_term
+            }
         }
-    }
+    );
 
     bool_expr
 }
