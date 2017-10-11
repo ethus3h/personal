@@ -174,17 +174,17 @@ sub parse(List $tokens --> Nil) {
                 bool_literal();
                 CATCH {
                     default {
-                        my $test where * eq '!';
-                        $test = $lexeme;
+                        my $extest where * eq '!';
+                        $extest = $lexeme;
                         bool_factor;
                         CATCH {
                             default {
-                                my $test where * eq '(';
-                                $test = $lexeme;
+                                my $lptest where * eq '(';
+                                $lptest = $lexeme;
                                 $lexeme eq "(";
                                 bool_expr;
-                                my $test where * eq ')';
-                                $test = lexeme;
+                                my $rptest where * eq ')';
+                                $rptest = lexeme;
                                 CATCH {
                                     default {
                                         relation_expr
