@@ -4,8 +4,9 @@ use v6.c;
 use Test;
 
 sub lex(Str $code) {
-    my @code = $code.split("", :skip-empty);
-    for shift(@code)
+    for $code.split("", :skip-empty) {
+        .say
+    }
 }
 
 # Test suite
