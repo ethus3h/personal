@@ -118,12 +118,12 @@ sub parse(Pair @tokens --> Nil) {
     (
         sub bool_literal( --> Nil) {
             enter "bool_literal";
-            if ! {
+            if (! {
                 lexeme().key ∈ < \< \> >;
                 CATCH {
                     give_back
                 }
-            } {
+            }()) {
                 @consumed = < >
             }
         }
@@ -135,7 +135,7 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            }) {
+            }()) {
                 @consumed = < >
             }
         }
@@ -147,7 +147,7 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            }) {
+            }()) {
                 @consumed = < >
             }
         }
@@ -162,7 +162,7 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            }) {
+            }()) {
                 @consumed = < >
             }
         }
@@ -181,7 +181,7 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            }) {
+            }()) {
                 @consumed = < >
             }
         }
@@ -196,7 +196,7 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            }) {
+            }()) {
                 @consumed = < >
             }
         }
@@ -211,7 +211,7 @@ sub parse(Pair @tokens --> Nil) {
                 CATCH {
                     give_back
                 }
-            }) {
+            }()) {
                 @consumed = < >
             }
         }
