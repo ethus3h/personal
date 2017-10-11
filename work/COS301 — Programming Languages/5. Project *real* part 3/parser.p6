@@ -108,7 +108,6 @@ sub parse(List $tokens --> Nil) {
 
         sub give_back( --> Nil) {
             say "Releasing tokens ";
-            say @consumed.WHAT;
             for @consumed {
                 unshift(@input, (shift(@consumed)))
             }
