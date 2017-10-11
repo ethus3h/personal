@@ -92,7 +92,7 @@ sub parse(Pair @tokens --> Nil) {
         }
         default {
             say "Next token is the " ~ .key ~ " " ~ .value;
-            return .value
+            return $_
         }
     }
 
@@ -104,21 +104,13 @@ sub parse(Pair @tokens --> Nil) {
 
     sub bool_literal( --> Nil) {
         enter "bool_literal";
-        lexeme() eq 
-        my Str $lexeme = lexeme();
-        if ! bool_literal {
-            if ! { $lexeme eq "!"; bool_factor } {
-                if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
-                    relation_expr
-                }
-            }
-        }
+        lexeme().key eq "bool_literal"
     }
 
     sub bool_factor( --> Nil) {
         enter "bool_factor";
-        my Str $lexeme = lexeme();
-        if ! bool_literal {
+        my Str $lexeme = lexeme().value;
+        if ! bool_literal() {
             if ! { $lexeme eq "!"; bool_factor } {
                 if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
                     relation_expr
@@ -130,7 +122,7 @@ sub parse(Pair @tokens --> Nil) {
     sub and_term( --> Nil) {
         enter "and_term";
         bool_factor;
-        while lexeme() eq "&" {
+        while lexeme().value eq "&" {
             bool_factor
         }
     }
@@ -138,7 +130,7 @@ sub parse(Pair @tokens --> Nil) {
     sub bool_expr( --> Nil) {
         enter "bool_expr";
         and_term;
-        while lexeme() eq "|" {
+        while lexeme().value eq "|" {
             and_term
         }
     }
