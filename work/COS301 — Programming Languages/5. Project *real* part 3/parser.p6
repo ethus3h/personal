@@ -107,6 +107,7 @@ sub parse(List $tokens --> Nil) {
         }
 
         sub give_back( --> Nil) {
+            @state.pop();
             say "Releasing tokens ";
             for @consumed {
                 unshift(@input, (shift(@consumed)))
