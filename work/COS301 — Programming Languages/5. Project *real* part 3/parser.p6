@@ -5,7 +5,7 @@ use Test;
 
 sub lex(Str $code) {
     $code
-    ==> split(:$skip-empty=True)
+    ==> split(:skip-empty=True)
 }
 
 # Test suite
@@ -72,7 +72,6 @@ sub lex(Str $code) {
                     }
                 }
             }
-            $*ST = SymbolTable.new;
             if $fail {
                 if run-silenced { lex($code) } {
                     say "Parsing unexpectedly succeeded.";
