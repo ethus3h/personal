@@ -128,6 +128,7 @@ sub parse(List $tokens --> Nil) {
                 # }
                 default {
                     give_back
+                    fail "Did not match"
                 }
             }
         }
