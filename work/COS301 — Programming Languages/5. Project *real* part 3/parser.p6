@@ -13,6 +13,7 @@ sub lex(Str $code --> List) {
         say $prevChar;
         say $char;
         sub continue( --> Nil) {
+            say "Accepted an identifier-part $char";
             $token ~= $char;
             $prevChar = $char;
             next
@@ -24,6 +25,7 @@ sub lex(Str $code --> List) {
                 @finishedTokens.push("identifier" => "$token");
                 $token = "";
             }
+            say "Found a $type";
             $token ~= $char;
             @finishedTokens.push($type => "$token");
             $prevChar = $char;
@@ -58,6 +60,7 @@ sub lex(Str $code --> List) {
         }
         when /\s/ {
             $prevChar = $char;
+            say "Skipping a space";
             next
         }
         default {
@@ -72,8 +75,8 @@ sub lex(Str $code --> List) {
 }
 # Test suite
 (
-    nok lex('String qux?');
-    isa-ok lex('Stringqux'), List;
+    #nok lex('String qux?');
+    #isa-ok lex('Stringqux'), List;
     say lex('foo & !( a2 > bar & w < foo | x < y)');
 
     say "Done running tests. Report:";
