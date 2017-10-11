@@ -3,6 +3,13 @@
 use v6.c;
 use Test;
 
+sub foo() {
+    my $oc = 'Boctei';
+    my $ce := $oc;
+    say $oc =.= $ce;
+    
+}
+
 sub lex(Str $code --> Bool) {
     my Str $state="start";
     my List $finishedTokens;
