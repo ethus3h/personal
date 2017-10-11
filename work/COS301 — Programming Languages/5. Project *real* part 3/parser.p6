@@ -245,13 +245,13 @@ sub parse(List $tokens --> Nil) {
                 }
             }
         }
-        if @input.elems > 0 {
-            fail "The input string does not match the grammar. Unused input: " ~ @input
-        }
     );
 
     # Enter the parser from the top of the tree
     bool_expr;
+    if @input.elems > 0 {
+        fail "The input string does not match the grammar. Unused input: " ~ @input
+    }
     say @state;
 }
 
