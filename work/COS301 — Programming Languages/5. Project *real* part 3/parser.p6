@@ -108,7 +108,7 @@ sub parse(Pair @tokens --> Nil) {
         # }
         say $token.WHAT;
 
-        while lexeme($token) eq "&" {
+        while lexeme eq "&" {
             bool_factor
         }
     }
@@ -116,7 +116,7 @@ sub parse(Pair @tokens --> Nil) {
     sub and_term( --> Nil) {
         enter "and_term";
         bool_factor;
-        while lexeme($token) eq "&" {
+        while lexeme eq "&" {
             bool_factor
         }
     }
@@ -124,7 +124,7 @@ sub parse(Pair @tokens --> Nil) {
     sub bool_expr( --> Nil) {
         enter "bool_expr";
         and_term;
-        while lexeme($token) eq "|" {
+        while lexeme eq "|" {
             and_term
         }
     }
