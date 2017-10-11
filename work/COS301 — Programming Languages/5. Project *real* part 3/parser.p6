@@ -19,9 +19,9 @@ sub lex(Str $code --> List) {
         }
         sub push(Str $type --> Nil) {
             $_ := $type;
-            if $prevChar ~~ /<:L>/ {
-                say "Found a $type";
-                @finishedTokens.push($type => "$token");
+            if $prevChar ~~ /<:L>/ && $type ne "" {
+                say "Found a $type after an identifier";
+                @finishedTokens.push("identifier" => "$token");
                 $token = "";
             }
             $token ~= $char;
