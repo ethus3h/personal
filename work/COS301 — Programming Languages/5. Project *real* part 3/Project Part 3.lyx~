@@ -115,20 +115,7 @@ key "Documentation"
  statement is unambiguous.
  A block can be preceded by 
 \family typewriter
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
--
-\backslash
-textgreater
-\end_layout
-
-\end_inset
-
-
+-‌>
 \family default
  followed by a list of variables to create an anonymous function.
 \end_layout
