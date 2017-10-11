@@ -84,14 +84,15 @@ sub parse(Pair @tokens --> Nil) {
     my Str @state;
     my Str @parse;
 
+    sub lexeme(Pair $_) {
+        say "Next token is the " ~ .key ~ " " ~ .value
+    }
+
     sub enter(Str $rule --> Nil) {
         say "Enter <$rule>";
         @state.push("$rule");
         say @state;
     }
-    enter "bool_expr";
-    enter "and_term";
-    enter "bool_factor";
 
     sub bool_factor( --> Nil) {
         enter "bool_factor";
@@ -120,7 +121,6 @@ sub parse(Pair @tokens --> Nil) {
     }
 
     for @tokens {
-        say "Next token is the " ~ .key ~ " " ~ .value;
         when .key eq "identifier" {
             say "Consuming identifier " ~ .key
             
