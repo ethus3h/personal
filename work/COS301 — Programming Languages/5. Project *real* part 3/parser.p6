@@ -10,11 +10,11 @@ sub lex(Str $code --> Bool) {
     my Str $prevChar;
     for $code.split("", :skip-empty) -> $char {
         $_ = $char;
-        sub push(Str $type --> Nil) {
+        sub continue(Str $type --> Nil) {
             $token ~= $_;
             next
         }
-        sub pop(Str $type --> Nil) {
+        sub push(Str $type --> Nil) {
             $state = "";
             $token ~= $_;
             $finishedTokens := $type => $token;
@@ -22,12 +22,12 @@ sub lex(Str $code --> Bool) {
         }
         if $token ∈ <tru fals> {
             when "e" {
-                pop 'bool_literal'
+                push 'bool_literal'
             }
         }
         when /<:L>/ {
             if $token ∈ <t tr tru f fa fal fals> {
-                $token ~= $_;
+                continue
             }
         }
         $prevChar = $char;
