@@ -81,9 +81,9 @@ sub lex(Str $code --> List) {
 }
 
 sub parse(Pair @tokens --> Nil) {
+    say "enter <bool_expr>";
     for @tokens {
-        say "Next token is " ~ .key "with the value" ~ .value
-        say "enter <bool_expr>";
+        say "Next token is the " ~ .key ~ " " ~ .value;
         say "enter <and_term>";
         say "enter <bool_factor>";
     }
