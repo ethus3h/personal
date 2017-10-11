@@ -98,7 +98,7 @@ key "Documentation"
 \end_inset
 
  Custom operators are allowed.
- In Perl 6, blocks are typically denoted by brac)es (
+ In Perl 6, blocks are typically denoted by braces (
 \family typewriter
 {
 \family default
@@ -106,11 +106,31 @@ key "Documentation"
 \family typewriter
 }
 \family default
-C, and statements are delimited by semicolons (
+), and statements are delimited by semicolons (
 \family typewriter
 ;
 \family default
 ).
+ The semicolons can be omitted in some circumstances, when then end of a
+ statement is unambiguous.
+ A block can be preceded by 
+\family typewriter
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+-
+\backslash
+textgreater
+\end_layout
+
+\end_inset
+
+
+\family default
+ followed by a list of variables to create an anonymous function.
 \end_layout
 
 \begin_layout Standard
