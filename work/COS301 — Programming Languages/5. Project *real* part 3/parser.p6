@@ -14,7 +14,7 @@ sub lex(Str $code) {
             if $token ∈ <t tr tru f fa fal fals> {
                 if $token ∈ <tru fals> {
                     when "e" {
-                        $state = ""
+                        $state = "";
                         $token ~= $_;
                         @finishedTokens + $token
                     }
