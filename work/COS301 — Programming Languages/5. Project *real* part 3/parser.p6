@@ -83,6 +83,7 @@ sub lex(Str $code --> List) {
 sub parse(Pair @tokens --> Nil) {
     my Str @state;
     my Str @parse;
+    my Pair $token = "":"";
 
     sub lexeme(Pair $_) {
         say "Next token is the " ~ .key ~ " " ~ .value
@@ -99,7 +100,7 @@ sub parse(Pair @tokens --> Nil) {
         # if ! bool_literal {
         #     
         # }
-        while lexeme $_ eq "&" {
+        while lexeme $token eq "&" {
             bool_factor
         }
     }
@@ -107,7 +108,7 @@ sub parse(Pair @tokens --> Nil) {
     sub and_term( --> Nil) {
         enter "and_term";
         bool_factor;
-        while lexeme $_ eq "&" {
+        while lexeme $token eq "&" {
             bool_factor
         }
     }
@@ -115,20 +116,12 @@ sub parse(Pair @tokens --> Nil) {
     sub bool_expr( --> Nil) {
         enter "bool_expr";
         and_term;
-        while lexeme $_ eq "|" {
+        while lexeme $token eq "|" {
             and_term
         }
     }
 
-    for @tokens {
-        when .key eq "identifier" {
-            say "Consuming identifier " ~ .key
-            
-        }
-        when .key eq "bo" {
-            
-        }
-    }
+    bool_expr
 }
 
 # Test suite
