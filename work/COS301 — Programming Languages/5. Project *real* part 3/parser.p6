@@ -119,101 +119,73 @@ sub parse(List $tokens --> Nil) {
     (
         sub bool_literal( --> Nil) {
             enter "bool_literal";
-            if (! {
-                lexeme().key ∈ < \< \> >;
-                CATCH {
-                    give_back
-                }
-            }()) {
-                @consumed = < >
+            lexeme().key ∈ < \< \> >;
+            CATCH {
+                give_back
             }
         }
 
         sub relop( --> Nil) {
             enter "relop";
-            if (! {
-                lexeme().value eq "identifier";
-                CATCH {
-                    give_back
-                }
-            }()) {
-                @consumed = < >
+            lexeme().value eq "identifier";
+            CATCH {
+                give_back
             }
         }
 
         sub id( --> Nil) {
             enter "id";
-            if (! {
-                lexeme().key eq "identifier";
-                CATCH {
-                    give_back
-                }
-            }()) {
-                @consumed = < >
+            lexeme().key eq "identifier";
+            CATCH {
+                give_back
             }
         }
 
         sub relation_expr( --> Nil) {
             enter "relation_expr";
-            if (! {
-                id;
-                while relop() {
-                    id
-                }
-                CATCH {
-                    give_back
-                }
-            }()) {
-                @consumed = < >
+            id;
+            while relop() {
+                id
+            }
+            CATCH {
+                give_back
             }
         }
 
         sub bool_factor( --> Nil) {
             enter "bool_factor";
-            if (! {
-                my Str $lexeme = lexeme().value;
-                if ! bool_literal() {
-                    if ! { $lexeme eq "!"; bool_factor } {
-                        if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
-                            relation_expr
-                        }
+            my Str $lexeme = lexeme().value;
+            if ! bool_literal() {
+                if ! { $lexeme eq "!"; bool_factor } {
+                    if ! { $lexeme eq "("; bool_expr; $lexeme eq "("; } {
+                        relation_expr
                     }
                 }
-                CATCH {
-                    give_back
-                }
-            }()) {
-                @consumed = < >
+            }
+            CATCH {
+                give_back
             }
         }
 
         sub and_term( --> Nil) {
             enter "and_term";
-            if (! {
-                bool_factor;
-                while lexeme().value eq "&" {
-                    bool_factor
-                }
-                CATCH {
-                    give_back
-                }
-            }()) {
-                @consumed = < >
+            bool_factor;
+            while lexeme().value eq "&" {
+                bool_factor
+            }
+            CATCH {
+                give_back
             }
         }
 
         sub bool_expr( --> Nil) {
             enter "bool_expr";
-            if (! {
-                and_term;
-                while lexeme().value eq "|" {
-                    and_term
-                }
-                CATCH {
-                    give_back
-                }
-            }()) {
-                @consumed = < >
+            and_term;
+            while lexeme().value eq "|" {
+                and_term
+            }
+            CATCH {
+                give_back
             }
         }
     );
