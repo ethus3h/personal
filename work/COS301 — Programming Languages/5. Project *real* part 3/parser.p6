@@ -9,7 +9,7 @@ sub lex(Str $code --> Bool) {
     my Str $token;
     my Str $prevChar = "None";
     for $code.split("", :skip-empty) -> $char {
-        $_ = $char;
+        $_ := $char;
         say $_;
         say $char;
         sub continue( --> Nil) {
