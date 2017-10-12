@@ -5,6 +5,9 @@
 \textclass extarticle
 \begin_preamble
 \usepackage{indentfirst}
+\setmonofont[
+  Contextuals={Alternate}
+]{Fira Code}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -67,7 +70,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\listings_params "basicstyle={\ttfamily},columns=fullflexible,keepspaces=true"
+\listings_params "basicstyle={\texttt},columns=fullflexible,keepspaces=true,literate={-->}{\texttt{-->}}{1} {->}{\texttt{->}}{1} {==>}{\texttt{==>}}{1} {=>}{\texttt{=>}}{1}"
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -135,7 +138,7 @@ Appendix: Program listing
 
 \family typewriter
 \begin_inset listings
-lstparams "numbers=left,basicstyle={\ttfamily},extendedchars=true"
+lstparams "numbers=left,basicstyle={\tiny\ttfamily},extendedchars=true"
 inline false
 status open
 
