@@ -67,6 +67,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\listings_params "basicstyle={\ttfamily},columns=fullflexible,keepspaces=true"
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -134,7 +135,7 @@ Appendix: Program listing
 
 \family typewriter
 \begin_inset listings
-lstparams "numbers=left,basicstyle={\ttfamily},extendedchars=true,columns=fullflexible,keepspaces=true"
+lstparams "numbers=left,basicstyle={\ttfamily},extendedchars=true"
 inline false
 status open
 

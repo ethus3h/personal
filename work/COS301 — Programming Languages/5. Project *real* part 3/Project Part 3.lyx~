@@ -134,7 +134,7 @@ Appendix: Program listing
 
 \family typewriter
 \begin_inset listings
-lstparams "numbers=left,basicstyle={\ttfamily},extendedchars=true"
+lstparams "numbers=left,basicstyle={\ttfamily},extendedchars=true,columns=fullflexible,keepspaces=true"
 inline false
 status open
 
