@@ -178,6 +178,15 @@ key "Documentation"
 Primitive data types available, including range limitations or lack thereof.
 \end_layout
 
+\begin_layout Standard
+Of the 260 built-in types in Perl 6, 47 of them are primitive types.
+ All types are subtypes of 
+\family typewriter
+Mu
+\family default
+.
+\end_layout
+
 \begin_layout Subsubsection*
 Operators for primitive data types and their precedence and associativity.
 \end_layout
