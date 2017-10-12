@@ -133,6 +133,14 @@ pointy block
 \emph default
 , which acts similarly to an anonymous function.
  Parentheses can be used to denote semantic divisions within a given block.
+ Perl 6 has five types of variables, denoted by one of four indicators called
+ 
+\emph on
+sigils
+\emph default
+, or by the absence of a sigil; these determine the default type of the
+ variable, affect how assignment to the variable takes place, and possibly
+ introduce a type constraint on the variable.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -155,6 +163,15 @@ my
 twigils
 \emph default
 , to alter the default scoping.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+ There are seven declarators and two declarator-style prefixes, and there
+ are nine twigils (not counting the absence of a twigil)
 \end_layout
 
 \begin_layout Subsubsection*
