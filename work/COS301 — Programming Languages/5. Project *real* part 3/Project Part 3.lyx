@@ -325,6 +325,20 @@ circumfix:«[ ]»(<a b c>)
 [<a b c>]
 \family default
 .
+ Some operators can be created by combining other operators together, such
+ as type coersion and assignment (
+\family typewriter
+~
+\family default
+ coerces to a string, and 
+\family typewriter
+=
+\family default
+ assigns; combined, 
+\family typewriter
+~=
+\family default
+ coerces the right operand to a string and assigns it to the left operand).
  
 \begin_inset Newpage newpage
 \end_inset

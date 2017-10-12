@@ -190,7 +190,12 @@ key "Documentation"
 
 \end_inset
 
- AllCommon number types are 
+ Things that can be numbers are subtypes of 
+\family typewriter
+Numeric
+\family default
+.
+ Common number types are 
 \family typewriter
 Int
 \family default
@@ -234,12 +239,57 @@ Num
 NaN
 \family default
  (not a number).
- Rats are rational numbers, so they do not accumulate errors like floating-point
- numbers (in Perl 6, Nums) do.
+ 
+\family typewriter
+Rat
+\family default
+s are rational numbers, so they do not accumulate errors like floating-point
+ numbers (in Perl 6, 
+\family typewriter
+Num
+\family default
+s) do.
  Their denominators are limited to 64 bits.
- If one desires a Rat that does not have a restriction on the values of
- its numerator and denominator, a FatRat can be used instead.
- In addition, 
+ If one desires a 
+\family typewriter
+Rat
+\family default
+ that does not have a restriction on the values of its numerator and denominator
+, a 
+\family typewriter
+FatRat
+\family default
+ can be used instead.
+ In addition, the 
+\family typewriter
+Real
+\family default
+ and 
+\family typewriter
+Complex
+\family default
+ types are available.
+ A 
+\family typewriter
+Real
+\family default
+ can be created from the non-imaginary numeric types, and a 
+\family typewriter
+Complex
+\family default
+ can be created from two 
+\family typewriter
+Real
+\family default
+s representing the number's real and imaginary parts.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -258,7 +308,25 @@ key "Documentation"
 
  Custom operators are allowed, and can have their precedence specified relative
  to the built-in operators.
- 
+ There are three types of associativity for unary operators: left-associative,
+ right-associative, and non-associative.
+ Binary operators add to these three chain-associative and list-associative.
+ The position of operators relative to their operand(s) has five categories:
+ prefix (preceding the operand), infix (between two operands), postfix (succedin
+g the operand), circumfix (surrounding the operand — 'bracketing' operators),
+ and postcircumfix (bracketing the second of two operands).
+ These five categories, combined with the operator, can be written as subroutine
+s, as in this example from the documentation: 
+\family typewriter
+circumfix:«[ ]»(<a b c>)
+\family default
+, being equivalent to 
+\family typewriter
+[<a b c>]
+\family default
+.
+ Some operators can be created by combining other operators together, such
+ as type co 
 \begin_inset Newpage newpage
 \end_inset
 

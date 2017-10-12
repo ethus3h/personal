@@ -315,6 +315,16 @@ key "Documentation"
  prefix (preceding the operand), infix (between two operands), postfix (succedin
 g the operand), circumfix (surrounding the operand — 'bracketing' operators),
  and postcircumfix (bracketing the second of two operands).
+ These five categories, combined with the operator, can be written as subroutine
+s, as in this example from the documentation: 
+\family typewriter
+circumfix:«[ ]»(<a b c>)
+\family default
+, being equivalent to 
+\family typewriter
+[<a b c>]
+\family default
+.
  
 \begin_inset Newpage newpage
 \end_inset
