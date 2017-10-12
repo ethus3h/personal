@@ -190,7 +190,98 @@ key "Documentation"
 
 \end_inset
 
+ Things that can be numbers are subtypes of 
+\family typewriter
+Numeric
+\family default
+.
+ Common number types are 
+\family typewriter
+Int
+\family default
+, 
+\family typewriter
+Num
+\family default
+, and 
+\family typewriter
+Rat
+\family default
+.
+ 
+\family typewriter
+Int
+\family default
+s do not restrict the range of values they can hold, beyond only accepting
+ integers.
+ 
+\family typewriter
+Num
+\family default
+s usually hold either 
+\begin_inset Quotes eld
+\end_inset
 
+an IEEE 754 64-bit floating point
+\begin_inset Quotes erd
+\end_inset
+
+ value, 
+\family typewriter
+Inf
+\family default
+ (infinity, or a number too large to store in a 
+\family typewriter
+Num
+\family default
+), or 
+\family typewriter
+NaN
+\family default
+ (not a number).
+ 
+\family typewriter
+Rat
+\family default
+s are rational numbers, so they do not accumulate errors like floating-point
+ numbers (in Perl 6, 
+\family typewriter
+Num
+\family default
+s) do.
+ Their denominators are limited to 64 bits.
+ If one desires a 
+\family typewriter
+Rat
+\family default
+ that does not have a restriction on the values of its numerator and denominator
+, a 
+\family typewriter
+FatRat
+\family default
+ can be used instead.
+ In addition, the 
+\family typewriter
+Real
+\family default
+ and 
+\family typewriter
+Complex
+\family default
+ types are available.
+ A 
+\family typewriter
+Real
+\family default
+ can be created from the non-imaginary numeric types, and a 
+\family typewriter
+Complex
+\family default
+ can be created from two 
+\family typewriter
+Real
+\family default
+s representing the number's real and imaginary parts.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -239,7 +330,7 @@ Sigils
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="20line%">
 <column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
@@ -318,7 +409,7 @@ Mu
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -366,7 +457,7 @@ Positional
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -414,7 +505,7 @@ Associative
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -462,7 +553,7 @@ Callable
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -551,7 +642,7 @@ Declarators
 <lyxtabular version="3" rows="10" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="30line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -591,7 +682,7 @@ my
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -616,7 +707,7 @@ our
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -641,7 +732,7 @@ has
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -666,7 +757,7 @@ anon
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -691,7 +782,7 @@ state
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -716,7 +807,7 @@ augment
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -741,7 +832,7 @@ supersede
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -768,7 +859,7 @@ temp
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2869,7 +2960,7 @@ Levels of precedence
 <features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="30line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
