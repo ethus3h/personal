@@ -67,6 +67,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\listings_params "basicstyle={\ttfamily},columns=fullflexible,keepspaces=true"
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -131,12 +132,15 @@ Appendix: Program listing
 \end_layout
 
 \begin_layout Standard
-
-\family typewriter
-\begin_inset listings
-lstparams "numbers=left,basicstyle={\ttfamily},extendedchars=true,columns=fullflexible,keepspaces=true"
-inline false
+\begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -144,8 +148,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\noindent
-\align left
 
 \end_layout
 
@@ -1511,6 +1513,9 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
+
+\backslash
+end{verbatim}
 \end_layout
 
 \end_inset
@@ -1524,20 +1529,6 @@ LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "2017sept20-p6bib"
 options "apa"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \end_inset
 
