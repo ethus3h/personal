@@ -227,6 +227,10 @@ key "Documentation"
 
 \end_layout
 
+\begin_layout Section*
+Sigils
+\end_layout
+
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="4">
@@ -472,7 +476,7 @@ none (declared with
 \begin_inset Text
 
 \begin_layout Plain Layout
-(do not create containers or enforce context)
+(does not create containers or enforce context)
 \end_layout
 
 \end_inset
