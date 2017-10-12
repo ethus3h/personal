@@ -282,6 +282,14 @@ Complex
 Real
 \family default
 s representing the number's real and imaginary parts.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -303,6 +311,20 @@ key "Documentation"
  There are three types of associativity for unary operators: left-associative,
  right-associative, and non-associative.
  Binary operators add to these three chain-associative and list-associative.
+ The position of operators relative to their operand(s) has five categories:
+ prefix (preceding the operand), infix (between two operands), postfix (succedin
+g the operand), circumfix (surrounding the operand — 'bracketing' operators),
+ and postcircumfix (bracketing the second of two operands).
+ These five categories, combined with the operator, can be written as subroutine
+s, as in this example from the documentation: 
+\family typewriter
+circumfix:«[ ]»(<a b c>)
+\family default
+, being equivalent to 
+\family typewriter
+[<a b c>]
+\family default
+.
  
 \begin_inset Newpage newpage
 \end_inset

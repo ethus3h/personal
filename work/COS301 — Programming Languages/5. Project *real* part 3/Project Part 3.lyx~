@@ -282,6 +282,14 @@ Complex
 Real
 \family default
 s representing the number's real and imaginary parts.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -300,6 +308,13 @@ key "Documentation"
 
  Custom operators are allowed, and can have their precedence specified relative
  to the built-in operators.
+ There are three types of associativity for unary operators: left-associative,
+ right-associative, and non-associative.
+ Binary operators add to these three chain-associative and list-associative.
+ The position of operators relative to their operand(s) has five categories:
+ prefix (preceding the operand), infix (between two operands), postfix (succedin
+g the operand), circumfix (surrounding the operand — 'bracketing' operators),
+ and postcircumfix (bracketing the second of two operands).
  
 \begin_inset Newpage newpage
 \end_inset
