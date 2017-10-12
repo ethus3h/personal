@@ -117,9 +117,1405 @@ key "Documentation"
 \family typewriter
 -‌>
 \family default
-, with an interceding list of variables, to create an anonymous function.
+, with an interceding list of variables, called a 
+\emph on
+pointy block
+\emph default
+, which acts similarly to an anonymous function.
  Parentheses can be used to denote semantic divisions within a given block.
  
+\end_layout
+
+\begin_layout Part*
+Appendix: Program listing
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset listings
+lstparams "numbers=left,basicstyle={\ttfamily},extendedchars=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/usr/bin/env perl6
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\end_layout
+
+\begin_layout Plain Layout
+
+use v6.c;x
+\end_layout
+
+\begin_layout Plain Layout
+
+use Test;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sub lex(Str $code --> List) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Pair @finishedTokens;
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Str $token;
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Str $prevChar = "None";
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    for $code.split("", :skip-empty) -> $char {
+\end_layout
+
+\begin_layout Plain Layout
+
+        $_ := $char;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Subroutines for when something interesting is found
+\end_layout
+
+\begin_layout Plain Layout
+
+        (
+\end_layout
+
+\begin_layout Plain Layout
+
+            sub continue( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                # Accepted an identifier-part
+\end_layout
+
+\begin_layout Plain Layout
+
+                $token ~= $char;
+\end_layout
+
+\begin_layout Plain Layout
+
+                $prevChar = $char;
+\end_layout
+
+\begin_layout Plain Layout
+
+                next
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+            sub push(Str $type --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+                $_ := $type;
+\end_layout
+
+\begin_layout Plain Layout
+
+                if $prevChar ~~ /<:L + :N>/ {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    # Found something non-identifier after an identifier,
+\end_layout
+
+\begin_layout Plain Layout
+
+                    #   so push the identifier
+\end_layout
+
+\begin_layout Plain Layout
+
+                    @finishedTokens.push("identifier" => "$token");
+\end_layout
+
+\begin_layout Plain Layout
+
+                    $token = ""
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+                # Found a token
+\end_layout
+
+\begin_layout Plain Layout
+
+                $token ~= $char;
+\end_layout
+
+\begin_layout Plain Layout
+
+                @finishedTokens.push($type => "$token");
+\end_layout
+
+\begin_layout Plain Layout
+
+                $prevChar = $char;
+\end_layout
+
+\begin_layout Plain Layout
+
+                $token = "";
+\end_layout
+
+\begin_layout Plain Layout
+
+                next
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        );
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Rules for figuring out what the lexer is looking at
+\end_layout
+
+\begin_layout Plain Layout
+
+        (
+\end_layout
+
+\begin_layout Plain Layout
+
+            if $token ∈ <tru fals> {
+\end_layout
+
+\begin_layout Plain Layout
+
+                when "e" {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    push 'bool_literal'
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            when /<:L + :N>/ {
+\end_layout
+
+\begin_layout Plain Layout
+
+                when /<:N>/ && $prevChar !~~ /<:L>/ {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    fail "Expected an identifier or an operator."
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    continue
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            if $_ ∈ < ( ) > {
+\end_layout
+
+\begin_layout Plain Layout
+
+                push 'parenthesis'
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            when '!' {
+\end_layout
+
+\begin_layout Plain Layout
+
+                push 'unary_oper'
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            when $_ ∈ < & | 
+\backslash
+< 
+\backslash
+> > {
+\end_layout
+
+\begin_layout Plain Layout
+
+                push 'binary_oper'
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            when /
+\backslash
+s/ {
+\end_layout
+
+\begin_layout Plain Layout
+
+                # Skip this space
+\end_layout
+
+\begin_layout Plain Layout
+
+                next
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                fail 'Input character is not in the language: "' ~ $char
+ ~ '"'
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        );
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    # If there aren't any more characters to consume
+\end_layout
+
+\begin_layout Plain Layout
+
+    # but there is still a token, it's an identifier
+\end_layout
+
+\begin_layout Plain Layout
+
+    if $token ne '' {
+\end_layout
+
+\begin_layout Plain Layout
+
+        @finishedTokens.push('identifier' => $token)
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    return @finishedTokens
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sub parse(List $tokens --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Pair @state;
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Pair @consumed;
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Pair @input = $tokens.clone;
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Pair $token = "" => "";
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Str $lexeme = "";
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Support subroutines for the parser
+\end_layout
+
+\begin_layout Plain Layout
+
+    (
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub lexeme( --> Pair) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            $_ = shift(@input);
+\end_layout
+
+\begin_layout Plain Layout
+
+            say $_;
+\end_layout
+
+\begin_layout Plain Layout
+
+            $lexeme = ~ $_;
+\end_layout
+
+\begin_layout Plain Layout
+
+            unshift(@consumed, $_);
+\end_layout
+
+\begin_layout Plain Layout
+
+            when "" => "" {
+\end_layout
+
+\begin_layout Plain Layout
+
+                # do nothing, we don't have any token yet
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                say "Next token is the " ~ .key ~ " " ~ .value;
+\end_layout
+
+\begin_layout Plain Layout
+
+                #say "    State: 
+\backslash
+n" ~ @state;
+\end_layout
+
+\begin_layout Plain Layout
+
+                #say "    Consumed: 
+\backslash
+n" ~ @consumed;
+\end_layout
+
+\begin_layout Plain Layout
+
+                return $_
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub enter(Str $rule --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            say "Enter <$rule>";
+\end_layout
+
+\begin_layout Plain Layout
+
+            @state.push("    " x @consumed.elems ~ "<$rule>: " => "Lexeme:
+ 
+\backslash
+{ $lexeme 
+\backslash
+}
+\backslash
+n");
+\end_layout
+
+\begin_layout Plain Layout
+
+            #say "    State: 
+\backslash
+n" ~ @state;
+\end_layout
+
+\begin_layout Plain Layout
+
+            #say "    Consumed: 
+\backslash
+n" ~ @consumed;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub give_back( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            @state.pop();
+\end_layout
+
+\begin_layout Plain Layout
+
+            say "Releasing tokens ";
+\end_layout
+
+\begin_layout Plain Layout
+
+            for @consumed {
+\end_layout
+
+\begin_layout Plain Layout
+
+                unshift(@input, (shift(@consumed)))
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            @consumed = < >;
+\end_layout
+
+\begin_layout Plain Layout
+
+            #say "    State: 
+\backslash
+n" ~ @state;
+\end_layout
+
+\begin_layout Plain Layout
+
+            #say "    Consumed: 
+\backslash
+n" ~ @consumed;
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    );
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Rules for the parser
+\end_layout
+
+\begin_layout Plain Layout
+
+    (
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub bool_literal( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            enter "bool_literal";
+\end_layout
+
+\begin_layout Plain Layout
+
+            my Str $test where * eq "bool_literal";
+\end_layout
+
+\begin_layout Plain Layout
+
+            $test = lexeme().key;
+\end_layout
+
+\begin_layout Plain Layout
+
+            CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    give_back;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    X::AdHoc.new(:payload<Did not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub relop( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            enter "relop";
+\end_layout
+
+\begin_layout Plain Layout
+
+            my Str $test where * ∈ < 
+\backslash
+< 
+\backslash
+> >;
+\end_layout
+
+\begin_layout Plain Layout
+
+            $test = lexeme().value;
+\end_layout
+
+\begin_layout Plain Layout
+
+            CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    give_back;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    X::AdHoc.new(:payload<Did not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub id( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            enter "id";
+\end_layout
+
+\begin_layout Plain Layout
+
+            lexeme().key eq "identifier";
+\end_layout
+
+\begin_layout Plain Layout
+
+            CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    give_back;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    X::AdHoc.new(:payload<Did not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub relation_expr( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            enter "relation_expr";
+\end_layout
+
+\begin_layout Plain Layout
+
+            id;
+\end_layout
+
+\begin_layout Plain Layout
+
+            {
+\end_layout
+
+\begin_layout Plain Layout
+
+                while relop() {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    id
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+                CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        say "(Matched short relop)"
+\end_layout
+
+\begin_layout Plain Layout
+
+                    }
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    give_back;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    X::AdHoc.new(:payload<Did not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub bool_factor( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            enter "bool_factor";
+\end_layout
+
+\begin_layout Plain Layout
+
+            {
+\end_layout
+
+\begin_layout Plain Layout
+
+                bool_literal();
+\end_layout
+
+\begin_layout Plain Layout
+
+                CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                        my Str $lexeme = lexeme().value;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        my $extest where * eq '!';
+\end_layout
+
+\begin_layout Plain Layout
+
+                        $extest = $lexeme;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        bool_factor;
+\end_layout
+
+\begin_layout Plain Layout
+
+                        CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                            default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                                my $lptest where * eq '(';
+\end_layout
+
+\begin_layout Plain Layout
+
+                                $lptest = $lexeme;
+\end_layout
+
+\begin_layout Plain Layout
+
+                                $lexeme eq "(";
+\end_layout
+
+\begin_layout Plain Layout
+
+                                bool_expr;
+\end_layout
+
+\begin_layout Plain Layout
+
+                                my $rptest where * eq ')';
+\end_layout
+
+\begin_layout Plain Layout
+
+                                $rptest = lexeme;
+\end_layout
+
+\begin_layout Plain Layout
+
+                                CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                                    default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                                        relation_expr
+\end_layout
+
+\begin_layout Plain Layout
+
+                                    }
+\end_layout
+
+\begin_layout Plain Layout
+
+                                }
+\end_layout
+
+\begin_layout Plain Layout
+
+                            }
+\end_layout
+
+\begin_layout Plain Layout
+
+                        }
+\end_layout
+
+\begin_layout Plain Layout
+
+                    }
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    give_back;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    X::AdHoc.new(:payload<Did not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub and_term( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            enter "and_term";
+\end_layout
+
+\begin_layout Plain Layout
+
+            bool_factor;
+\end_layout
+
+\begin_layout Plain Layout
+
+            while lexeme().value eq "&" {
+\end_layout
+
+\begin_layout Plain Layout
+
+                bool_factor
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    give_back;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    X::AdHoc.new(:payload<Did not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub bool_expr( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            enter "bool_expr";
+\end_layout
+
+\begin_layout Plain Layout
+
+            and_term;
+\end_layout
+
+\begin_layout Plain Layout
+
+            while lexeme().value eq "|" {
+\end_layout
+
+\begin_layout Plain Layout
+
+                and_term
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                    give_back;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    X::AdHoc.new(:payload<Did not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    );
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Enter the parser from the top of the tree
+\end_layout
+
+\begin_layout Plain Layout
+
+    bool_expr;
+\end_layout
+
+\begin_layout Plain Layout
+
+    if @input.elems > 0 {
+\end_layout
+
+\begin_layout Plain Layout
+
+        fail "The input string does not match the grammar.
+ Unused input: " ~ @input
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    say @state;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# Test suite
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Test lexer
+\end_layout
+
+\begin_layout Plain Layout
+
+    nok lex('String qux?');
+\end_layout
+
+\begin_layout Plain Layout
+
+    isa-ok lex('Stringqux'), List;
+\end_layout
+
+\begin_layout Plain Layout
+
+    isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Test parser
+\end_layout
+
+\begin_layout Plain Layout
+
+    #lex('foo & !( a2 > bar & w < foo | x < y)')
+\end_layout
+
+\begin_layout Plain Layout
+
+    #    ==> parse;
+\end_layout
+
+\begin_layout Plain Layout
+
+    say parse(lex('foo & !( a2 > bar & w < foo | x < y('));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    say "Done running tests.
+ Report:";
+\end_layout
+
+\begin_layout Plain Layout
+
+    done-testing;
+\end_layout
+
+\begin_layout Plain Layout
+
+);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
