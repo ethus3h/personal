@@ -247,6 +247,7 @@ Sigils
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Sigil
 \end_layout
@@ -258,6 +259,7 @@ Sigil
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Type constraint
 \end_layout
@@ -269,6 +271,7 @@ Type constraint
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Default type
 \end_layout
@@ -280,6 +283,7 @@ Default type
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Assignment
 \end_layout
@@ -554,6 +558,7 @@ Declarators
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Declarator
 \end_layout
@@ -565,6 +570,7 @@ Declarator
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Effect
 \end_layout
@@ -827,6 +833,7 @@ Twigils
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Twigil
 \end_layout
@@ -838,6 +845,7 @@ Twigil
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Scope
 \end_layout
@@ -1108,16 +1116,17 @@ Built-in types
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="48" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Category
 \end_layout
@@ -1129,6 +1138,7 @@ Category
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Type
 \end_layout
@@ -1140,6 +1150,7 @@ Type
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Description
 \end_layout
@@ -2855,16 +2866,17 @@ Levels of precedence
 \size scriptsize
 \begin_inset Tabular
 <lyxtabular version="3" rows="28" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Associativity
 \end_layout
@@ -2876,6 +2888,7 @@ Associativity
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Level of precedence
 \end_layout
@@ -2887,6 +2900,7 @@ Level of precedence
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Examples
 \end_layout

@@ -247,7 +247,8 @@ Sigils
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Sigil
 \end_layout
 
@@ -258,7 +259,8 @@ Sigil
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Type constraint
 \end_layout
 
@@ -269,7 +271,8 @@ Type constraint
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Default type
 \end_layout
 
@@ -280,7 +283,8 @@ Default type
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Assignment
 \end_layout
 
@@ -294,7 +298,7 @@ Assignment
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 $
 \end_layout
 
@@ -306,7 +310,7 @@ $
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Mu
 \family default
  (no constraint)
@@ -319,7 +323,7 @@ Mu
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Any
 \end_layout
 
@@ -330,7 +334,7 @@ Any
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 item
 \end_layout
 
@@ -344,7 +348,7 @@ item
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 @
 \end_layout
 
@@ -356,7 +360,7 @@ item
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Positional
 \end_layout
 
@@ -367,7 +371,7 @@ Positional
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Array
 \end_layout
 
@@ -378,7 +382,7 @@ Array
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 list
 \end_layout
 
@@ -392,7 +396,7 @@ list
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 %
 \end_layout
 
@@ -404,7 +408,7 @@ list
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Associative
 \end_layout
 
@@ -415,7 +419,7 @@ Associative
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Hash
 \end_layout
 
@@ -426,7 +430,7 @@ Hash
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 list
 \end_layout
 
@@ -440,7 +444,7 @@ list
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 &
 \end_layout
 
@@ -452,7 +456,7 @@ list
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Callable
 \end_layout
 
@@ -463,7 +467,7 @@ Callable
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Callable
 \end_layout
 
@@ -474,7 +478,7 @@ Callable
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 item
 \end_layout
 
@@ -487,7 +491,7 @@ item
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 none (declared with 
 \family typewriter
 
@@ -513,7 +517,7 @@ none (declared with
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 (does not create containers or enforce context)
 \end_layout
 
@@ -554,7 +558,8 @@ Declarators
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Declarator
 \end_layout
 
@@ -565,7 +570,8 @@ Declarator
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Effect
 \end_layout
 
@@ -579,7 +585,7 @@ Effect
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 my
 \end_layout
 
@@ -590,7 +596,7 @@ my
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Introduces lexically scoped names
 \end_layout
 
@@ -604,7 +610,7 @@ Introduces lexically scoped names
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 our
 \end_layout
 
@@ -615,7 +621,7 @@ our
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Introduces package-scoped names
 \end_layout
 
@@ -629,7 +635,7 @@ Introduces package-scoped names
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 has
 \end_layout
 
@@ -640,7 +646,7 @@ has
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Introduces attribute names
 \end_layout
 
@@ -654,7 +660,7 @@ Introduces attribute names
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 anon
 \end_layout
 
@@ -665,7 +671,7 @@ anon
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Introduces names that are private to the construct
 \end_layout
 
@@ -679,7 +685,7 @@ Introduces names that are private to the construct
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 state
 \end_layout
 
@@ -690,7 +696,7 @@ state
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Introduces lexically scoped but persistent names
 \end_layout
 
@@ -704,7 +710,7 @@ Introduces lexically scoped but persistent names
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 augment
 \end_layout
 
@@ -715,7 +721,7 @@ augment
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Adds definitions to an existing name
 \end_layout
 
@@ -729,7 +735,7 @@ Adds definitions to an existing name
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 supersede
 \end_layout
 
@@ -740,7 +746,7 @@ supersede
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Replaces definitions of an existing name
 \end_layout
 
@@ -754,7 +760,7 @@ Replaces definitions of an existing name
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 temp
 \family default
  (prefix: not a declarator)
@@ -767,7 +773,7 @@ temp
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Restores a variable's value at the end of scope
 \end_layout
 
@@ -781,7 +787,7 @@ Restores a variable's value at the end of scope
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 let
 \family default
  (prefix: not a declarator)
@@ -794,7 +800,7 @@ let
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Restores a variable's value at the end of scope if the block exits unsuccessfull
 y
 \end_layout
@@ -827,7 +833,8 @@ Twigils
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Twigil
 \end_layout
 
@@ -838,7 +845,8 @@ Twigil
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Scope
 \end_layout
 
@@ -851,7 +859,7 @@ Scope
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 (none)
 \end_layout
 
@@ -862,7 +870,7 @@ Scope
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Based only on declarator
 \end_layout
 
@@ -876,7 +884,7 @@ Based only on declarator
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 *
 \end_layout
 
@@ -887,7 +895,7 @@ Based only on declarator
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Dynamic
 \end_layout
 
@@ -901,7 +909,7 @@ Dynamic
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 !
 \end_layout
 
@@ -912,7 +920,7 @@ Dynamic
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Attribute (class member)
 \end_layout
 
@@ -926,7 +934,7 @@ Attribute (class member)
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ?
 \end_layout
 
@@ -937,7 +945,7 @@ Attribute (class member)
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Compile-time variable
 \end_layout
 
@@ -951,7 +959,7 @@ Compile-time variable
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 .
 \end_layout
 
@@ -962,7 +970,7 @@ Compile-time variable
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Method (not really a variable)
 \end_layout
 
@@ -976,7 +984,7 @@ Method (not really a variable)
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 <
 \end_layout
 
@@ -987,7 +995,7 @@ Method (not really a variable)
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Index into match object (not really a variable)
 \end_layout
 
@@ -1001,7 +1009,7 @@ Index into match object (not really a variable)
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ^
 \end_layout
 
@@ -1012,7 +1020,7 @@ Index into match object (not really a variable)
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Self-declared formal positional parameter
 \end_layout
 
@@ -1026,7 +1034,7 @@ Self-declared formal positional parameter
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 :
 \end_layout
 
@@ -1037,7 +1045,7 @@ Self-declared formal positional parameter
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Self-declared formal named parameter
 \end_layout
 
@@ -1051,7 +1059,7 @@ Self-declared formal named parameter
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 =
 \end_layout
 
@@ -1062,7 +1070,7 @@ Self-declared formal named parameter
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Pod variables
 \end_layout
 
@@ -1076,7 +1084,7 @@ Pod variables
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ~
 \end_layout
 
@@ -1087,7 +1095,7 @@ Pod variables
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 The sublanguage seen by the parser at this lexical spot
 \end_layout
 
@@ -1118,7 +1126,8 @@ Built-in types
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Category
 \end_layout
 
@@ -1129,7 +1138,8 @@ Category
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Type
 \end_layout
 
@@ -1140,7 +1150,8 @@ Type
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Description
 \end_layout
 
@@ -1153,7 +1164,7 @@ Description
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1165,7 +1176,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 AST
 \end_layout
 
@@ -1176,7 +1187,7 @@ AST
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Abstract representation of a piece of source code
 \end_layout
 
@@ -1189,7 +1200,7 @@ Abstract representation of a piece of source code
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1201,7 +1212,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Any
 \end_layout
 
@@ -1212,7 +1223,7 @@ Any
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Thing/object
 \end_layout
 
@@ -1225,7 +1236,7 @@ Thing/object
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1237,7 +1248,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Block
 \end_layout
 
@@ -1248,7 +1259,7 @@ Block
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Code object with its own lexical scope
 \end_layout
 
@@ -1261,7 +1272,7 @@ Code object with its own lexical scope
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 enum
 \end_layout
 
@@ -1273,7 +1284,7 @@ enum
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Bool
 \end_layout
 
@@ -1284,7 +1295,7 @@ Bool
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Logical boolean
 \end_layout
 
@@ -1297,7 +1308,7 @@ Logical boolean
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1309,7 +1320,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 CallFrame
 \end_layout
 
@@ -1320,7 +1331,7 @@ CallFrame
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Capturing current frame state
 \end_layout
 
@@ -1333,7 +1344,7 @@ Capturing current frame state
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 role
 \end_layout
 
@@ -1345,7 +1356,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Callable
 \end_layout
 
@@ -1356,7 +1367,7 @@ Callable
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Invocable code object
 \end_layout
 
@@ -1369,7 +1380,7 @@ Invocable code object
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1381,7 +1392,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Code
 \end_layout
 
@@ -1392,7 +1403,7 @@ Code
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Code object
 \end_layout
 
@@ -1405,7 +1416,7 @@ Code object
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1417,7 +1428,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Complex
 \end_layout
 
@@ -1428,7 +1439,7 @@ Complex
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Complex number
 \end_layout
 
@@ -1441,7 +1452,7 @@ Complex number
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1453,7 +1464,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ComplexStr
 \end_layout
 
@@ -1464,7 +1475,7 @@ ComplexStr
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Dual Value Complex number and String
 \end_layout
 
@@ -1477,7 +1488,7 @@ Dual Value Complex number and String
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1489,7 +1500,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Cool
 \end_layout
 
@@ -1500,7 +1511,7 @@ Cool
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Object that can be treated as both a string and number
 \end_layout
 
@@ -1513,7 +1524,7 @@ Object that can be treated as both a string and number
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1525,7 +1536,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Date
 \end_layout
 
@@ -1536,7 +1547,7 @@ Date
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Calendar date
 \end_layout
 
@@ -1549,7 +1560,7 @@ Calendar date
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1561,7 +1572,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 DateTime
 \end_layout
 
@@ -1572,7 +1583,7 @@ DateTime
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Calendar date with time
 \end_layout
 
@@ -1585,7 +1596,7 @@ Calendar date with time
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 role
 \end_layout
 
@@ -1597,7 +1608,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Dateish
 \end_layout
 
@@ -1608,7 +1619,7 @@ Dateish
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Object that can be treated as a date
 \end_layout
 
@@ -1621,7 +1632,7 @@ Object that can be treated as a date
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1633,7 +1644,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Duration
 \end_layout
 
@@ -1644,7 +1655,7 @@ Duration
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Length of time
 \end_layout
 
@@ -1657,7 +1668,7 @@ Length of time
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1669,7 +1680,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 FatRat
 \end_layout
 
@@ -1680,7 +1691,7 @@ FatRat
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Rational number (arbitrary-precision)
 \end_layout
 
@@ -1693,7 +1704,7 @@ Rational number (arbitrary-precision)
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1705,7 +1716,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Instant
 \end_layout
 
@@ -1716,7 +1727,7 @@ Instant
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Specific moment in time
 \end_layout
 
@@ -1729,7 +1740,7 @@ Specific moment in time
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1741,7 +1752,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Int
 \end_layout
 
@@ -1752,7 +1763,7 @@ Int
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Integer (arbitrary-precision)
 \end_layout
 
@@ -1765,7 +1776,7 @@ Integer (arbitrary-precision)
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1777,7 +1788,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 IntStr
 \end_layout
 
@@ -1788,7 +1799,7 @@ IntStr
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Dual Value Integer and String
 \end_layout
 
@@ -1801,7 +1812,7 @@ Dual Value Integer and String
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1813,7 +1824,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Junction
 \end_layout
 
@@ -1824,7 +1835,7 @@ Junction
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Logical superposition of values
 \end_layout
 
@@ -1837,7 +1848,7 @@ Logical superposition of values
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1849,7 +1860,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Label
 \end_layout
 
@@ -1860,7 +1871,7 @@ Label
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Tagged location in the source code
 \end_layout
 
@@ -1873,7 +1884,7 @@ Tagged location in the source code
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1885,7 +1896,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Macro
 \end_layout
 
@@ -1896,7 +1907,7 @@ Macro
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Compile-time routine
 \end_layout
 
@@ -1909,7 +1920,7 @@ Compile-time routine
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1921,7 +1932,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Method
 \end_layout
 
@@ -1932,7 +1943,7 @@ Method
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Member function
 \end_layout
 
@@ -1945,7 +1956,7 @@ Member function
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1957,7 +1968,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Mu
 \end_layout
 
@@ -1968,7 +1979,7 @@ Mu
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 The root of the Perl 6 type hierarchy.
 \end_layout
 
@@ -1981,7 +1992,7 @@ The root of the Perl 6 type hierarchy.
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -1993,7 +2004,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Nil
 \end_layout
 
@@ -2004,7 +2015,7 @@ Nil
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Absence of a value or a benign failure
 \end_layout
 
@@ -2017,7 +2028,7 @@ Absence of a value or a benign failure
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2029,7 +2040,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Num
 \end_layout
 
@@ -2040,7 +2051,7 @@ Num
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Floating-point number
 \end_layout
 
@@ -2053,7 +2064,7 @@ Floating-point number
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2065,7 +2076,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 NumStr
 \end_layout
 
@@ -2076,7 +2087,7 @@ NumStr
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Dual Value Floating-point number and String
 \end_layout
 
@@ -2089,7 +2100,7 @@ Dual Value Floating-point number and String
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 role
 \end_layout
 
@@ -2101,7 +2112,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Numeric
 \end_layout
 
@@ -2112,7 +2123,7 @@ Numeric
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Number or object that can act as a number
 \end_layout
 
@@ -2125,7 +2136,7 @@ Number or object that can act as a number
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2137,7 +2148,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ObjAt
 \end_layout
 
@@ -2148,7 +2159,7 @@ ObjAt
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Unique identification for an object
 \end_layout
 
@@ -2161,7 +2172,7 @@ Unique identification for an object
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2173,7 +2184,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Parameter
 \end_layout
 
@@ -2184,7 +2195,7 @@ Parameter
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Element of a signature
 \end_layout
 
@@ -2197,7 +2208,7 @@ Element of a signature
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2209,7 +2220,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Proxy
 \end_layout
 
@@ -2220,7 +2231,7 @@ Proxy
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Item container with custom storage and retrieval
 \end_layout
 
@@ -2233,7 +2244,7 @@ Item container with custom storage and retrieval
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2245,7 +2256,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Rat
 \end_layout
 
@@ -2256,7 +2267,7 @@ Rat
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Rational number (limited-precision)
 \end_layout
 
@@ -2269,7 +2280,7 @@ Rational number (limited-precision)
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2281,7 +2292,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 RatStr
 \end_layout
 
@@ -2292,7 +2303,7 @@ RatStr
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Dual Value Rational number and String
 \end_layout
 
@@ -2305,7 +2316,7 @@ Dual Value Rational number and String
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 role
 \end_layout
 
@@ -2317,7 +2328,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Rational
 \end_layout
 
@@ -2328,7 +2339,7 @@ Rational
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Number stored as numerator and denominator
 \end_layout
 
@@ -2341,7 +2352,7 @@ Number stored as numerator and denominator
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 role
 \end_layout
 
@@ -2353,7 +2364,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Real
 \end_layout
 
@@ -2364,7 +2375,7 @@ Real
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Non-complex number
 \end_layout
 
@@ -2377,7 +2388,7 @@ Non-complex number
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2389,7 +2400,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Routine
 \end_layout
 
@@ -2400,7 +2411,7 @@ Routine
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Code object with its own lexical scope and `return` handling
 \end_layout
 
@@ -2413,7 +2424,7 @@ Code object with its own lexical scope and `return` handling
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2425,7 +2436,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Scalar
 \end_layout
 
@@ -2436,7 +2447,7 @@ Scalar
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 A mostly transparent container used for indirections
 \end_layout
 
@@ -2449,7 +2460,7 @@ A mostly transparent container used for indirections
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2461,7 +2472,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Signature
 \end_layout
 
@@ -2472,7 +2483,7 @@ Signature
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Parameter list pattern
 \end_layout
 
@@ -2485,7 +2496,7 @@ Parameter list pattern
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2497,7 +2508,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Str
 \end_layout
 
@@ -2508,7 +2519,7 @@ Str
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 String of characters
 \end_layout
 
@@ -2521,7 +2532,7 @@ String of characters
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 role
 \end_layout
 
@@ -2533,7 +2544,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Stringy
 \end_layout
 
@@ -2544,7 +2555,7 @@ Stringy
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 String or object that can act as a string
 \end_layout
 
@@ -2557,7 +2568,7 @@ String or object that can act as a string
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2569,7 +2580,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Sub
 \end_layout
 
@@ -2580,7 +2591,7 @@ Sub
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Subroutine
 \end_layout
 
@@ -2593,7 +2604,7 @@ Subroutine
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2605,7 +2616,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Submethod
 \end_layout
 
@@ -2616,7 +2627,7 @@ Submethod
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Member function that is not inherited by subclasses
 \end_layout
 
@@ -2629,7 +2640,7 @@ Member function that is not inherited by subclasses
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2641,7 +2652,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Variable
 \end_layout
 
@@ -2652,7 +2663,7 @@ Variable
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Object representation of a variable for use in traits
 \end_layout
 
@@ -2665,7 +2676,7 @@ Object representation of a variable for use in traits
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2677,7 +2688,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Version
 \end_layout
 
@@ -2688,7 +2699,7 @@ Version
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Module version descriptor
 \end_layout
 
@@ -2701,7 +2712,7 @@ Module version descriptor
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2713,7 +2724,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Whatever
 \end_layout
 
@@ -2724,7 +2735,7 @@ Whatever
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Placeholder for an unspecified value/argument
 \end_layout
 
@@ -2737,7 +2748,7 @@ Placeholder for an unspecified value/argument
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2749,7 +2760,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 WhateverCode
 \end_layout
 
@@ -2760,7 +2771,7 @@ WhateverCode
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Code object constructed by Whatever-currying
 \end_layout
 
@@ -2773,7 +2784,7 @@ Code object constructed by Whatever-currying
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2785,7 +2796,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 atomicint
 \end_layout
 
@@ -2796,7 +2807,7 @@ atomicint
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Integer (native storage at the platform's atomic operation size)
 \end_layout
 
@@ -2809,7 +2820,7 @@ Integer (native storage at the platform's atomic operation size)
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 class
 \end_layout
 
@@ -2821,7 +2832,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 int
 \end_layout
 
@@ -2832,7 +2843,7 @@ int
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Integer (native storage; machine precision)
 \end_layout
 
@@ -2865,7 +2876,8 @@ Levels of precedence
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Associativity
 \end_layout
 
@@ -2876,7 +2888,8 @@ Associativity
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Level of precedence
 \end_layout
 
@@ -2887,7 +2900,8 @@ Level of precedence
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\series bold
+\size small
 Examples
 \end_layout
 
@@ -2900,7 +2914,7 @@ Examples
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 N
 \end_layout
 
@@ -2911,7 +2925,7 @@ N
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Terms 
 \end_layout
 
@@ -2923,7 +2937,7 @@ Terms
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 42 3.14 "eek" qq["foo"] $x :!verbose @$array
 \end_layout
 
@@ -2936,7 +2950,7 @@ Terms
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 L
 \end_layout
 
@@ -2947,7 +2961,7 @@ L
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Method postfix 
 \end_layout
 
@@ -2959,7 +2973,7 @@ Method postfix
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 .meth .+ .? .* .() .[] .{} .<> .«» .:: .= .^ .:
 \end_layout
 
@@ -2972,7 +2986,7 @@ Method postfix
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 N
 \end_layout
 
@@ -2983,7 +2997,7 @@ N
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Autoincrement 
 \end_layout
 
@@ -2995,7 +3009,7 @@ Autoincrement
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ++ --
 \end_layout
 
@@ -3008,7 +3022,7 @@ Autoincrement
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 R
 \end_layout
 
@@ -3019,7 +3033,7 @@ R
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Exponentiation 
 \end_layout
 
@@ -3031,7 +3045,7 @@ Exponentiation
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 **
 \end_layout
 
@@ -3044,7 +3058,7 @@ Exponentiation
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 L
 \end_layout
 
@@ -3055,7 +3069,7 @@ L
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Symbolic unary 
 \end_layout
 
@@ -3067,7 +3081,7 @@ Symbolic unary
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ! + - ~ ? | || +^ ~^ ?^ ^
 \end_layout
 
@@ -3080,7 +3094,7 @@ Symbolic unary
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 L
 \end_layout
 
@@ -3091,7 +3105,7 @@ L
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Dotty infix 
 \end_layout
 
@@ -3103,7 +3117,7 @@ Dotty infix
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 .= .
 \end_layout
 
@@ -3116,7 +3130,7 @@ Dotty infix
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 L
 \end_layout
 
@@ -3127,7 +3141,7 @@ L
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Multiplicative 
 \end_layout
 
@@ -3139,7 +3153,7 @@ Multiplicative
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 * / % %% +& +< +> ~& ~< ~> ?& div mod gcd lcm
 \end_layout
 
@@ -3152,7 +3166,7 @@ Multiplicative
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 L
 \end_layout
 
@@ -3163,7 +3177,7 @@ L
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Additive 
 \end_layout
 
@@ -3175,7 +3189,7 @@ Additive
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 + - +| +^ ~| ~^ ?| ?^
 \end_layout
 
@@ -3188,7 +3202,7 @@ Additive
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 L
 \end_layout
 
@@ -3199,7 +3213,7 @@ L
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Replication 
 \end_layout
 
@@ -3211,7 +3225,7 @@ Replication
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 x xx
 \end_layout
 
@@ -3224,7 +3238,7 @@ x xx
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3235,7 +3249,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Concatenation 
 \end_layout
 
@@ -3247,7 +3261,7 @@ Concatenation
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ~
 \end_layout
 
@@ -3260,7 +3274,7 @@ Concatenation
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3271,7 +3285,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Junctive and 
 \end_layout
 
@@ -3283,7 +3297,7 @@ Junctive and
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 &
 \end_layout
 
@@ -3296,7 +3310,7 @@ Junctive and
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3307,7 +3321,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Junctive or 
 \end_layout
 
@@ -3319,7 +3333,7 @@ Junctive or
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 | ^
 \end_layout
 
@@ -3332,7 +3346,7 @@ Junctive or
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 L
 \end_layout
 
@@ -3343,7 +3357,7 @@ L
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Named unary 
 \end_layout
 
@@ -3355,7 +3369,7 @@ Named unary
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 temp let
 \end_layout
 
@@ -3368,7 +3382,7 @@ temp let
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 N
 \end_layout
 
@@ -3379,7 +3393,7 @@ N
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Structural infix 
 \end_layout
 
@@ -3391,7 +3405,7 @@ Structural infix
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 but does <=> leg cmp ..
  ..^ ^..
  ^..^
@@ -3406,7 +3420,7 @@ but does <=> leg cmp ..
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 C
 \end_layout
 
@@ -3417,7 +3431,7 @@ C
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Chaining infix 
 \end_layout
 
@@ -3429,7 +3443,7 @@ Chaining infix
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 != == < <= > >= eq ne lt le gt ge ~~ === eqv !eqv =~=
 \end_layout
 
@@ -3442,7 +3456,7 @@ Chaining infix
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3453,7 +3467,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Tight and 
 \end_layout
 
@@ -3465,7 +3479,7 @@ Tight and
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 &&
 \end_layout
 
@@ -3478,7 +3492,7 @@ Tight and
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3489,7 +3503,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Tight or 
 \end_layout
 
@@ -3501,7 +3515,7 @@ Tight or
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 || ^^ // min max
 \end_layout
 
@@ -3514,7 +3528,7 @@ Tight or
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 R
 \end_layout
 
@@ -3525,7 +3539,7 @@ R
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Conditional 
 \end_layout
 
@@ -3537,7 +3551,7 @@ Conditional
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ?? !! ff fff
 \end_layout
 
@@ -3550,7 +3564,7 @@ Conditional
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 R
 \end_layout
 
@@ -3561,7 +3575,7 @@ R
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Item assignment 
 \end_layout
 
@@ -3573,7 +3587,7 @@ Item assignment
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 = => += -= **= xx=
 \end_layout
 
@@ -3586,7 +3600,7 @@ Item assignment
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 L
 \end_layout
 
@@ -3597,7 +3611,7 @@ L
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Loose unary 
 \end_layout
 
@@ -3609,7 +3623,7 @@ Loose unary
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 so not
 \end_layout
 
@@ -3622,7 +3636,7 @@ so not
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3633,7 +3647,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Comma operator 
 \end_layout
 
@@ -3645,7 +3659,7 @@ Comma operator
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 , :
 \end_layout
 
@@ -3658,7 +3672,7 @@ Comma operator
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3669,7 +3683,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 List infix 
 \end_layout
 
@@ -3681,7 +3695,7 @@ List infix
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 Z minmax X X~ X* Xeqv ...
 \end_layout
 
@@ -3694,7 +3708,7 @@ Z minmax X X~ X* Xeqv ...
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 R
 \end_layout
 
@@ -3705,7 +3719,7 @@ R
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 List prefix 
 \end_layout
 
@@ -3717,7 +3731,7 @@ List prefix
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 print push say die map substr ...
  [+] [*] any Z=
 \end_layout
@@ -3731,7 +3745,7 @@ print push say die map substr ...
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3742,7 +3756,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Loose and 
 \end_layout
 
@@ -3754,7 +3768,7 @@ Loose and
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 and andthen notandthen
 \end_layout
 
@@ -3767,7 +3781,7 @@ and andthen notandthen
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3778,7 +3792,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Loose or 
 \end_layout
 
@@ -3790,7 +3804,7 @@ Loose or
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 or xor orelse
 \end_layout
 
@@ -3803,7 +3817,7 @@ or xor orelse
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 X
 \end_layout
 
@@ -3814,7 +3828,7 @@ X
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Sequencer 
 \end_layout
 
@@ -3826,7 +3840,7 @@ Sequencer
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 <==, ==>, <<==, ==>>
 \end_layout
 
@@ -3839,7 +3853,7 @@ Sequencer
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 N
 \end_layout
 
@@ -3850,7 +3864,7 @@ N
 
 \begin_layout Plain Layout
 
-\size scriptsize
+\size small
 Terminator 
 \end_layout
 
@@ -3862,7 +3876,7 @@ Terminator
 \begin_layout Plain Layout
 
 \family typewriter
-\size scriptsize
+\size small
 ; {...}, unless, extra ), ], }
 \end_layout
 
