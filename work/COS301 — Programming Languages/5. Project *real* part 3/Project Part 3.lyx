@@ -1320,18 +1320,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-AST 
+\family typewriter
+AST
 \end_layout
 
 \end_inset
@@ -1385,18 +1375,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Any 
+\family typewriter
+Any
 \end_layout
 
 \end_inset
@@ -1450,18 +1430,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Block 
+\family typewriter
+Block
 \end_layout
 
 \end_inset
@@ -1515,18 +1485,8 @@ enum
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Bool 
+\family typewriter
+Bool
 \end_layout
 
 \end_inset
@@ -1580,18 +1540,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-CallFrame 
+\family typewriter
+CallFrame
 \end_layout
 
 \end_inset
@@ -1645,18 +1595,8 @@ role
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Callable 
+\family typewriter
+Callable
 \end_layout
 
 \end_inset
@@ -1710,18 +1650,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Code 
+\family typewriter
+Code
 \end_layout
 
 \end_inset
@@ -1775,18 +1705,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Complex 
+\family typewriter
+Complex
 \end_layout
 
 \end_inset
@@ -1840,18 +1760,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-ComplexStr 
+\family typewriter
+ComplexStr
 \end_layout
 
 \end_inset
@@ -1905,18 +1815,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Cool 
+\family typewriter
+Cool
 \end_layout
 
 \end_inset
@@ -1970,18 +1870,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Date 
+\family typewriter
+Date
 \end_layout
 
 \end_inset
@@ -2035,18 +1925,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-DateTime 
+\family typewriter
+DateTime
 \end_layout
 
 \end_inset
@@ -2100,18 +1980,8 @@ role
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Dateish 
+\family typewriter
+Dateish
 \end_layout
 
 \end_inset
@@ -2165,18 +2035,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Duration 
+\family typewriter
+Duration
 \end_layout
 
 \end_inset
@@ -2230,18 +2090,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-FatRat 
+\family typewriter
+FatRat
 \end_layout
 
 \end_inset
@@ -2295,18 +2145,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Instant 
+\family typewriter
+Instant
 \end_layout
 
 \end_inset
@@ -2360,18 +2200,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Int 
+\family typewriter
+Int
 \end_layout
 
 \end_inset
@@ -2425,18 +2255,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-IntStr 
+\family typewriter
+IntStr
 \end_layout
 
 \end_inset
@@ -2490,18 +2310,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Junction 
+\family typewriter
+Junction
 \end_layout
 
 \end_inset
@@ -2555,18 +2365,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Label 
+\family typewriter
+Label
 \end_layout
 
 \end_inset
@@ -2620,18 +2420,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Macro 
+\family typewriter
+Macro
 \end_layout
 
 \end_inset
@@ -2685,18 +2475,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Method 
+\family typewriter
+Method
 \end_layout
 
 \end_inset
@@ -2750,18 +2530,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Mu 
+\family typewriter
+Mu
 \end_layout
 
 \end_inset
@@ -2815,18 +2585,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Nil 
+\family typewriter
+Nil
 \end_layout
 
 \end_inset
@@ -2880,18 +2640,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Num 
+\family typewriter
+Num
 \end_layout
 
 \end_inset
@@ -2945,18 +2695,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-NumStr 
+\family typewriter
+NumStr
 \end_layout
 
 \end_inset
@@ -3010,18 +2750,8 @@ role
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Numeric 
+\family typewriter
+Numeric
 \end_layout
 
 \end_inset
@@ -3075,18 +2805,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-ObjAt 
+\family typewriter
+ObjAt
 \end_layout
 
 \end_inset
@@ -3140,18 +2860,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Parameter 
+\family typewriter
+Parameter
 \end_layout
 
 \end_inset
@@ -3205,18 +2915,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Proxy 
+\family typewriter
+Proxy
 \end_layout
 
 \end_inset
@@ -3270,18 +2970,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Rat 
+\family typewriter
+Rat
 \end_layout
 
 \end_inset
@@ -3335,18 +3025,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-RatStr 
+\family typewriter
+RatStr
 \end_layout
 
 \end_inset
@@ -3400,18 +3080,8 @@ role
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Rational 
+\family typewriter
+Rational
 \end_layout
 
 \end_inset
@@ -3465,18 +3135,8 @@ role
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Real 
+\family typewriter
+Real
 \end_layout
 
 \end_inset
@@ -3530,18 +3190,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Routine 
+\family typewriter
+Routine
 \end_layout
 
 \end_inset
@@ -3595,18 +3245,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Scalar 
+\family typewriter
+Scalar
 \end_layout
 
 \end_inset
@@ -3660,18 +3300,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Signature 
+\family typewriter
+Signature
 \end_layout
 
 \end_inset
@@ -3725,18 +3355,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Str 
+\family typewriter
+Str
 \end_layout
 
 \end_inset
@@ -3790,18 +3410,8 @@ role
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Stringy 
+\family typewriter
+Stringy
 \end_layout
 
 \end_inset
@@ -3855,18 +3465,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Sub 
+\family typewriter
+Sub
 \end_layout
 
 \end_inset
@@ -3920,18 +3520,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Submethod 
+\family typewriter
+Submethod
 \end_layout
 
 \end_inset
@@ -3985,18 +3575,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Variable 
+\family typewriter
+Variable
 \end_layout
 
 \end_inset
@@ -4050,18 +3630,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Version 
+\family typewriter
+Version
 \end_layout
 
 \end_inset
@@ -4115,18 +3685,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Whatever 
+\family typewriter
+Whatever
 \end_layout
 
 \end_inset
@@ -4180,18 +3740,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-WhateverCode 
+\family typewriter
+WhateverCode
 \end_layout
 
 \end_inset
@@ -4245,18 +3795,8 @@ class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-atomicint 
+\family typewriter
+atomicint
 \end_layout
 
 \end_inset
@@ -4297,6 +3837,8 @@ class
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\family typewriter
 int
 \end_layout
 
