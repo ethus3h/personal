@@ -1321,7 +1321,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-AST 
+AST
 \end_layout
 
 \end_inset
@@ -2882,7 +2882,7 @@ Parameter
 \uwave off
 \noun off
 \color none
-Element of a
+Element of a signature
 \end_layout
 
 \end_inset
