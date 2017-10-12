@@ -232,6 +232,8 @@ Sigils
 \end_layout
 
 \begin_layout Standard
+
+\size scriptsize
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="4">
 <features rotate="0" tabularvalignment="middle">
@@ -244,6 +246,8 @@ Sigils
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Sigil
 \end_layout
 
@@ -253,6 +257,8 @@ Sigil
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Type constraint
 \end_layout
 
@@ -262,6 +268,8 @@ Type constraint
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Default type
 \end_layout
 
@@ -271,6 +279,8 @@ Default type
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Assignment
 \end_layout
 
@@ -284,6 +294,7 @@ Assignment
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 $
 \end_layout
 
@@ -295,6 +306,7 @@ $
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Mu
 \family default
  (no constraint)
@@ -306,6 +318,8 @@ Mu
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Any
 \end_layout
 
@@ -315,6 +329,8 @@ Any
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 item
 \end_layout
 
@@ -328,6 +344,7 @@ item
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 @
 \end_layout
 
@@ -339,6 +356,7 @@ item
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Positional
 \end_layout
 
@@ -348,6 +366,8 @@ Positional
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Array
 \end_layout
 
@@ -357,6 +377,8 @@ Array
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 list
 \end_layout
 
@@ -370,6 +392,7 @@ list
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 %
 \end_layout
 
@@ -381,6 +404,7 @@ list
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Associative
 \end_layout
 
@@ -390,6 +414,8 @@ Associative
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Hash
 \end_layout
 
@@ -399,6 +425,8 @@ Hash
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 list
 \end_layout
 
@@ -412,6 +440,7 @@ list
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 &
 \end_layout
 
@@ -423,6 +452,7 @@ list
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Callable
 \end_layout
 
@@ -432,6 +462,8 @@ Callable
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Callable
 \end_layout
 
@@ -441,6 +473,8 @@ Callable
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 item
 \end_layout
 
@@ -452,6 +486,8 @@ item
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 none (declared with 
 \family typewriter
 
@@ -476,6 +512,8 @@ none (declared with
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 (does not create containers or enforce context)
 \end_layout
 
@@ -503,6 +541,8 @@ Declarators
 \end_layout
 
 \begin_layout Standard
+
+\size scriptsize
 \begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="2">
 <features rotate="0" tabularvalignment="middle">
@@ -513,6 +553,8 @@ Declarators
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Declarator
 \end_layout
 
@@ -522,6 +564,8 @@ Declarator
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Effect
 \end_layout
 
@@ -535,6 +579,7 @@ Effect
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 my
 \end_layout
 
@@ -545,17 +590,7 @@ my
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Introduces lexically scoped names
 \end_layout
 
@@ -569,6 +604,7 @@ Introduces lexically scoped names
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 our
 \end_layout
 
@@ -579,17 +615,7 @@ our
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Introduces package-scoped names
 \end_layout
 
@@ -603,6 +629,7 @@ Introduces package-scoped names
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 has
 \end_layout
 
@@ -613,17 +640,7 @@ has
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Introduces attribute names
 \end_layout
 
@@ -637,6 +654,7 @@ Introduces attribute names
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 anon
 \end_layout
 
@@ -647,17 +665,7 @@ anon
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Introduces names that are private to the construct
 \end_layout
 
@@ -671,6 +679,7 @@ Introduces names that are private to the construct
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 state
 \end_layout
 
@@ -681,17 +690,7 @@ state
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Introduces lexically scoped but persistent names
 \end_layout
 
@@ -705,6 +704,7 @@ Introduces lexically scoped but persistent names
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 augment
 \end_layout
 
@@ -715,17 +715,7 @@ augment
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Adds definitions to an existing name
 \end_layout
 
@@ -739,6 +729,7 @@ Adds definitions to an existing name
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 supersede
 \end_layout
 
@@ -749,17 +740,7 @@ supersede
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Replaces definitions of an existing name
 \end_layout
 
@@ -773,18 +754,9 @@ Replaces definitions of an existing name
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 temp
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family default
  (prefix: not a declarator)
 \end_layout
 
@@ -795,17 +767,7 @@ temp
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Restores a variable's value at the end of scope
 \end_layout
 
@@ -819,18 +781,9 @@ Restores a variable's value at the end of scope
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 let
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family default
  (prefix: not a declarator)
 \end_layout
 
@@ -841,17 +794,7 @@ let
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Restores a variable's value at the end of scope if the block exits unsuccessfull
 y
 \end_layout
@@ -871,6 +814,8 @@ Twigils
 \end_layout
 
 \begin_layout Standard
+
+\size scriptsize
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="2">
 <features rotate="0" tabularvalignment="middle">
@@ -881,6 +826,8 @@ Twigils
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Twigil
 \end_layout
 
@@ -890,6 +837,8 @@ Twigil
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Scope
 \end_layout
 
@@ -902,17 +851,7 @@ Scope
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 (none)
 \end_layout
 
@@ -923,17 +862,7 @@ Scope
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Based only on declarator
 \end_layout
 
@@ -947,6 +876,7 @@ Based only on declarator
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 *
 \end_layout
 
@@ -957,17 +887,7 @@ Based only on declarator
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Dynamic
 \end_layout
 
@@ -981,6 +901,7 @@ Dynamic
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 !
 \end_layout
 
@@ -991,17 +912,7 @@ Dynamic
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Attribute (class member)
 \end_layout
 
@@ -1015,6 +926,7 @@ Attribute (class member)
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ?
 \end_layout
 
@@ -1025,17 +937,7 @@ Attribute (class member)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Compile-time variable
 \end_layout
 
@@ -1049,6 +951,7 @@ Compile-time variable
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 .
 \end_layout
 
@@ -1059,17 +962,7 @@ Compile-time variable
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Method (not really a variable)
 \end_layout
 
@@ -1083,6 +976,7 @@ Method (not really a variable)
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 <
 \end_layout
 
@@ -1093,17 +987,7 @@ Method (not really a variable)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Index into match object (not really a variable)
 \end_layout
 
@@ -1117,6 +1001,7 @@ Index into match object (not really a variable)
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ^
 \end_layout
 
@@ -1127,17 +1012,7 @@ Index into match object (not really a variable)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Self-declared formal positional parameter
 \end_layout
 
@@ -1151,6 +1026,7 @@ Self-declared formal positional parameter
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 :
 \end_layout
 
@@ -1161,17 +1037,7 @@ Self-declared formal positional parameter
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Self-declared formal named parameter
 \end_layout
 
@@ -1185,6 +1051,7 @@ Self-declared formal named parameter
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 =
 \end_layout
 
@@ -1195,17 +1062,7 @@ Self-declared formal named parameter
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Pod variables
 \end_layout
 
@@ -1219,6 +1076,7 @@ Pod variables
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ~
 \end_layout
 
@@ -1229,17 +1087,7 @@ Pod variables
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 The sublanguage seen by the parser at this lexical spot
 \end_layout
 
@@ -1269,6 +1117,8 @@ Built-in types
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Category
 \end_layout
 
@@ -1278,6 +1128,8 @@ Category
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Type
 \end_layout
 
@@ -1287,6 +1139,8 @@ Type
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Description
 \end_layout
 
@@ -1299,17 +1153,7 @@ Description
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1321,6 +1165,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 AST
 \end_layout
 
@@ -1331,17 +1176,7 @@ AST
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Abstract representation of a piece of source code
 \end_layout
 
@@ -1354,17 +1189,7 @@ Abstract representation of a piece of source code
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1376,6 +1201,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Any
 \end_layout
 
@@ -1386,17 +1212,7 @@ Any
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Thing/object
 \end_layout
 
@@ -1409,17 +1225,7 @@ Thing/object
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1431,6 +1237,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Block
 \end_layout
 
@@ -1441,17 +1248,7 @@ Block
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Code object with its own lexical scope
 \end_layout
 
@@ -1464,17 +1261,7 @@ Code object with its own lexical scope
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 enum
 \end_layout
 
@@ -1486,6 +1273,7 @@ enum
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Bool
 \end_layout
 
@@ -1496,17 +1284,7 @@ Bool
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Logical boolean
 \end_layout
 
@@ -1519,17 +1297,7 @@ Logical boolean
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1541,6 +1309,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 CallFrame
 \end_layout
 
@@ -1551,17 +1320,7 @@ CallFrame
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Capturing current frame state
 \end_layout
 
@@ -1574,17 +1333,7 @@ Capturing current frame state
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 role
 \end_layout
 
@@ -1596,6 +1345,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Callable
 \end_layout
 
@@ -1606,17 +1356,7 @@ Callable
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Invocable code object
 \end_layout
 
@@ -1629,17 +1369,7 @@ Invocable code object
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1651,6 +1381,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Code
 \end_layout
 
@@ -1661,17 +1392,7 @@ Code
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Code object
 \end_layout
 
@@ -1684,17 +1405,7 @@ Code object
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1706,6 +1417,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Complex
 \end_layout
 
@@ -1716,17 +1428,7 @@ Complex
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Complex number
 \end_layout
 
@@ -1739,17 +1441,7 @@ Complex number
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1761,6 +1453,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ComplexStr
 \end_layout
 
@@ -1771,17 +1464,7 @@ ComplexStr
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Dual Value Complex number and String
 \end_layout
 
@@ -1794,17 +1477,7 @@ Dual Value Complex number and String
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1816,6 +1489,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Cool
 \end_layout
 
@@ -1826,17 +1500,7 @@ Cool
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Object that can be treated as both a string and number
 \end_layout
 
@@ -1849,17 +1513,7 @@ Object that can be treated as both a string and number
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1871,6 +1525,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Date
 \end_layout
 
@@ -1881,17 +1536,7 @@ Date
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Calendar date
 \end_layout
 
@@ -1904,17 +1549,7 @@ Calendar date
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -1926,6 +1561,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 DateTime
 \end_layout
 
@@ -1936,17 +1572,7 @@ DateTime
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Calendar date with time
 \end_layout
 
@@ -1959,17 +1585,7 @@ Calendar date with time
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 role
 \end_layout
 
@@ -1981,6 +1597,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Dateish
 \end_layout
 
@@ -1991,17 +1608,7 @@ Dateish
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Object that can be treated as a date
 \end_layout
 
@@ -2014,17 +1621,7 @@ Object that can be treated as a date
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2036,6 +1633,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Duration
 \end_layout
 
@@ -2046,17 +1644,7 @@ Duration
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Length of time
 \end_layout
 
@@ -2069,17 +1657,7 @@ Length of time
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2091,6 +1669,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 FatRat
 \end_layout
 
@@ -2101,17 +1680,7 @@ FatRat
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Rational number (arbitrary-precision)
 \end_layout
 
@@ -2124,17 +1693,7 @@ Rational number (arbitrary-precision)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2146,6 +1705,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Instant
 \end_layout
 
@@ -2156,17 +1716,7 @@ Instant
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Specific moment in time
 \end_layout
 
@@ -2179,17 +1729,7 @@ Specific moment in time
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2201,6 +1741,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Int
 \end_layout
 
@@ -2211,17 +1752,7 @@ Int
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Integer (arbitrary-precision)
 \end_layout
 
@@ -2234,17 +1765,7 @@ Integer (arbitrary-precision)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2256,6 +1777,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 IntStr
 \end_layout
 
@@ -2266,17 +1788,7 @@ IntStr
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Dual Value Integer and String
 \end_layout
 
@@ -2289,17 +1801,7 @@ Dual Value Integer and String
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2311,6 +1813,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Junction
 \end_layout
 
@@ -2321,17 +1824,7 @@ Junction
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Logical superposition of values
 \end_layout
 
@@ -2344,17 +1837,7 @@ Logical superposition of values
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2366,6 +1849,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Label
 \end_layout
 
@@ -2376,17 +1860,7 @@ Label
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Tagged location in the source code
 \end_layout
 
@@ -2399,17 +1873,7 @@ Tagged location in the source code
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2421,6 +1885,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Macro
 \end_layout
 
@@ -2431,17 +1896,7 @@ Macro
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Compile-time routine
 \end_layout
 
@@ -2454,17 +1909,7 @@ Compile-time routine
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2476,6 +1921,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Method
 \end_layout
 
@@ -2486,17 +1932,7 @@ Method
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Member function
 \end_layout
 
@@ -2509,17 +1945,7 @@ Member function
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2531,6 +1957,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Mu
 \end_layout
 
@@ -2541,17 +1968,7 @@ Mu
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 The root of the Perl 6 type hierarchy.
 \end_layout
 
@@ -2564,17 +1981,7 @@ The root of the Perl 6 type hierarchy.
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2586,6 +1993,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Nil
 \end_layout
 
@@ -2596,17 +2004,7 @@ Nil
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Absence of a value or a benign failure
 \end_layout
 
@@ -2619,17 +2017,7 @@ Absence of a value or a benign failure
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2641,6 +2029,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Num
 \end_layout
 
@@ -2651,17 +2040,7 @@ Num
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Floating-point number
 \end_layout
 
@@ -2674,17 +2053,7 @@ Floating-point number
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2696,6 +2065,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 NumStr
 \end_layout
 
@@ -2706,17 +2076,7 @@ NumStr
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Dual Value Floating-point number and String
 \end_layout
 
@@ -2729,17 +2089,7 @@ Dual Value Floating-point number and String
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 role
 \end_layout
 
@@ -2751,6 +2101,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Numeric
 \end_layout
 
@@ -2761,17 +2112,7 @@ Numeric
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Number or object that can act as a number
 \end_layout
 
@@ -2784,17 +2125,7 @@ Number or object that can act as a number
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2806,6 +2137,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ObjAt
 \end_layout
 
@@ -2816,17 +2148,7 @@ ObjAt
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Unique identification for an object
 \end_layout
 
@@ -2839,17 +2161,7 @@ Unique identification for an object
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2861,6 +2173,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Parameter
 \end_layout
 
@@ -2871,17 +2184,7 @@ Parameter
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Element of a signature
 \end_layout
 
@@ -2894,17 +2197,7 @@ Element of a signature
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2916,6 +2209,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Proxy
 \end_layout
 
@@ -2926,17 +2220,7 @@ Proxy
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Item container with custom storage and retrieval
 \end_layout
 
@@ -2949,17 +2233,7 @@ Item container with custom storage and retrieval
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -2971,6 +2245,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Rat
 \end_layout
 
@@ -2981,17 +2256,7 @@ Rat
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Rational number (limited-precision)
 \end_layout
 
@@ -3004,17 +2269,7 @@ Rational number (limited-precision)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3026,6 +2281,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 RatStr
 \end_layout
 
@@ -3036,17 +2292,7 @@ RatStr
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Dual Value Rational number and String
 \end_layout
 
@@ -3059,17 +2305,7 @@ Dual Value Rational number and String
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 role
 \end_layout
 
@@ -3081,6 +2317,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Rational
 \end_layout
 
@@ -3091,17 +2328,7 @@ Rational
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Number stored as numerator and denominator
 \end_layout
 
@@ -3114,17 +2341,7 @@ Number stored as numerator and denominator
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 role
 \end_layout
 
@@ -3136,6 +2353,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Real
 \end_layout
 
@@ -3146,17 +2364,7 @@ Real
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Non-complex number
 \end_layout
 
@@ -3169,17 +2377,7 @@ Non-complex number
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3191,6 +2389,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Routine
 \end_layout
 
@@ -3201,17 +2400,7 @@ Routine
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Code object with its own lexical scope and `return` handling
 \end_layout
 
@@ -3224,17 +2413,7 @@ Code object with its own lexical scope and `return` handling
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3246,6 +2425,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Scalar
 \end_layout
 
@@ -3256,17 +2436,7 @@ Scalar
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 A mostly transparent container used for indirections
 \end_layout
 
@@ -3279,17 +2449,7 @@ A mostly transparent container used for indirections
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3301,6 +2461,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Signature
 \end_layout
 
@@ -3311,17 +2472,7 @@ Signature
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Parameter list pattern
 \end_layout
 
@@ -3334,17 +2485,7 @@ Parameter list pattern
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3356,6 +2497,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Str
 \end_layout
 
@@ -3366,17 +2508,7 @@ Str
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 String of characters
 \end_layout
 
@@ -3389,17 +2521,7 @@ String of characters
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 role
 \end_layout
 
@@ -3411,6 +2533,7 @@ role
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Stringy
 \end_layout
 
@@ -3421,17 +2544,7 @@ Stringy
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 String or object that can act as a string
 \end_layout
 
@@ -3444,17 +2557,7 @@ String or object that can act as a string
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3466,6 +2569,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Sub
 \end_layout
 
@@ -3476,17 +2580,7 @@ Sub
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Subroutine
 \end_layout
 
@@ -3499,17 +2593,7 @@ Subroutine
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3521,6 +2605,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Submethod
 \end_layout
 
@@ -3531,17 +2616,7 @@ Submethod
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Member function that is not inherited by subclasses
 \end_layout
 
@@ -3554,17 +2629,7 @@ Member function that is not inherited by subclasses
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3576,6 +2641,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Variable
 \end_layout
 
@@ -3586,17 +2652,7 @@ Variable
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Object representation of a variable for use in traits
 \end_layout
 
@@ -3609,17 +2665,7 @@ Object representation of a variable for use in traits
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3631,6 +2677,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Version
 \end_layout
 
@@ -3641,17 +2688,7 @@ Version
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Module version descriptor
 \end_layout
 
@@ -3664,17 +2701,7 @@ Module version descriptor
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3686,6 +2713,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Whatever
 \end_layout
 
@@ -3696,17 +2724,7 @@ Whatever
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Placeholder for an unspecified value/argument
 \end_layout
 
@@ -3719,17 +2737,7 @@ Placeholder for an unspecified value/argument
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3741,6 +2749,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 WhateverCode
 \end_layout
 
@@ -3751,17 +2760,7 @@ WhateverCode
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Code object constructed by Whatever-currying
 \end_layout
 
@@ -3774,17 +2773,7 @@ Code object constructed by Whatever-currying
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 class
 \end_layout
 
@@ -3796,6 +2785,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 atomicint
 \end_layout
 
@@ -3806,17 +2796,7 @@ atomicint
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Integer (native storage at the platform's atomic operation size)
 \end_layout
 
@@ -3828,6 +2808,8 @@ Integer (native storage at the platform's atomic operation size)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 class
 \end_layout
 
@@ -3839,6 +2821,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 int
 \end_layout
 
@@ -3848,6 +2831,8 @@ int
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Integer (native storage; machine precision)
 \end_layout
 
@@ -3866,6 +2851,8 @@ Levels of precedence
 \end_layout
 
 \begin_layout Standard
+
+\size scriptsize
 \begin_inset Tabular
 <lyxtabular version="3" rows="28" columns="3">
 <features rotate="0" tabularvalignment="middle">
@@ -3877,6 +2864,8 @@ Levels of precedence
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Associativity
 \end_layout
 
@@ -3886,6 +2875,8 @@ Associativity
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Level of precedence
 \end_layout
 
@@ -3895,6 +2886,8 @@ Level of precedence
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Examples
 \end_layout
 
@@ -3907,17 +2900,7 @@ Examples
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 N
 \end_layout
 
@@ -3928,17 +2911,7 @@ N
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Terms 
 \end_layout
 
@@ -3950,6 +2923,7 @@ Terms
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 42 3.14 "eek" qq["foo"] $x :!verbose @$array
 \end_layout
 
@@ -3962,17 +2936,7 @@ Terms
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 L
 \end_layout
 
@@ -3983,17 +2947,7 @@ L
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Method postfix 
 \end_layout
 
@@ -4005,6 +2959,7 @@ Method postfix
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 .meth .+ .? .* .() .[] .{} .<> .«» .:: .= .^ .:
 \end_layout
 
@@ -4017,17 +2972,7 @@ Method postfix
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 N
 \end_layout
 
@@ -4038,17 +2983,7 @@ N
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Autoincrement 
 \end_layout
 
@@ -4060,6 +2995,7 @@ Autoincrement
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ++ --
 \end_layout
 
@@ -4072,17 +3008,7 @@ Autoincrement
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 R
 \end_layout
 
@@ -4093,17 +3019,7 @@ R
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Exponentiation 
 \end_layout
 
@@ -4115,6 +3031,7 @@ Exponentiation
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 **
 \end_layout
 
@@ -4127,17 +3044,7 @@ Exponentiation
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 L
 \end_layout
 
@@ -4148,17 +3055,7 @@ L
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Symbolic unary 
 \end_layout
 
@@ -4170,6 +3067,7 @@ Symbolic unary
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ! + - ~ ? | || +^ ~^ ?^ ^
 \end_layout
 
@@ -4182,17 +3080,7 @@ Symbolic unary
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 L
 \end_layout
 
@@ -4203,17 +3091,7 @@ L
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Dotty infix 
 \end_layout
 
@@ -4225,6 +3103,7 @@ Dotty infix
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 .= .
 \end_layout
 
@@ -4237,17 +3116,7 @@ Dotty infix
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 L
 \end_layout
 
@@ -4258,17 +3127,7 @@ L
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Multiplicative 
 \end_layout
 
@@ -4280,6 +3139,7 @@ Multiplicative
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 * / % %% +& +< +> ~& ~< ~> ?& div mod gcd lcm
 \end_layout
 
@@ -4292,17 +3152,7 @@ Multiplicative
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 L
 \end_layout
 
@@ -4313,17 +3163,7 @@ L
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Additive 
 \end_layout
 
@@ -4335,6 +3175,7 @@ Additive
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 + - +| +^ ~| ~^ ?| ?^
 \end_layout
 
@@ -4347,17 +3188,7 @@ Additive
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 L
 \end_layout
 
@@ -4368,17 +3199,7 @@ L
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Replication 
 \end_layout
 
@@ -4390,6 +3211,7 @@ Replication
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 x xx
 \end_layout
 
@@ -4402,17 +3224,7 @@ x xx
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -4423,17 +3235,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Concatenation 
 \end_layout
 
@@ -4445,6 +3247,7 @@ Concatenation
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ~
 \end_layout
 
@@ -4457,17 +3260,7 @@ Concatenation
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -4478,17 +3271,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Junctive and 
 \end_layout
 
@@ -4500,6 +3283,7 @@ Junctive and
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 &
 \end_layout
 
@@ -4512,17 +3296,7 @@ Junctive and
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -4533,17 +3307,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Junctive or 
 \end_layout
 
@@ -4555,6 +3319,7 @@ Junctive or
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 | ^
 \end_layout
 
@@ -4567,17 +3332,7 @@ Junctive or
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 L
 \end_layout
 
@@ -4588,17 +3343,7 @@ L
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Named unary 
 \end_layout
 
@@ -4610,6 +3355,7 @@ Named unary
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 temp let
 \end_layout
 
@@ -4622,17 +3368,7 @@ temp let
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 N
 \end_layout
 
@@ -4643,17 +3379,7 @@ N
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Structural infix 
 \end_layout
 
@@ -4665,6 +3391,7 @@ Structural infix
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 but does <=> leg cmp ..
  ..^ ^..
  ^..^
@@ -4679,17 +3406,7 @@ but does <=> leg cmp ..
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 C
 \end_layout
 
@@ -4700,17 +3417,7 @@ C
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Chaining infix 
 \end_layout
 
@@ -4722,6 +3429,7 @@ Chaining infix
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 != == < <= > >= eq ne lt le gt ge ~~ === eqv !eqv =~=
 \end_layout
 
@@ -4734,17 +3442,7 @@ Chaining infix
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -4755,17 +3453,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Tight and 
 \end_layout
 
@@ -4777,6 +3465,7 @@ Tight and
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 &&
 \end_layout
 
@@ -4789,17 +3478,7 @@ Tight and
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -4810,17 +3489,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Tight or 
 \end_layout
 
@@ -4832,6 +3501,7 @@ Tight or
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 || ^^ // min max
 \end_layout
 
@@ -4844,17 +3514,7 @@ Tight or
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 R
 \end_layout
 
@@ -4865,17 +3525,7 @@ R
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Conditional 
 \end_layout
 
@@ -4887,6 +3537,7 @@ Conditional
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ?? !! ff fff
 \end_layout
 
@@ -4899,17 +3550,7 @@ Conditional
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 R
 \end_layout
 
@@ -4920,17 +3561,7 @@ R
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Item assignment 
 \end_layout
 
@@ -4942,6 +3573,7 @@ Item assignment
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 = => += -= **= xx=
 \end_layout
 
@@ -4954,17 +3586,7 @@ Item assignment
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 L
 \end_layout
 
@@ -4975,17 +3597,7 @@ L
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Loose unary 
 \end_layout
 
@@ -4997,6 +3609,7 @@ Loose unary
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 so not
 \end_layout
 
@@ -5009,17 +3622,7 @@ so not
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -5030,17 +3633,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Comma operator 
 \end_layout
 
@@ -5052,6 +3645,7 @@ Comma operator
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 , :
 \end_layout
 
@@ -5064,17 +3658,7 @@ Comma operator
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -5085,17 +3669,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 List infix 
 \end_layout
 
@@ -5107,6 +3681,7 @@ List infix
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 Z minmax X X~ X* Xeqv ...
 \end_layout
 
@@ -5119,17 +3694,7 @@ Z minmax X X~ X* Xeqv ...
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 R
 \end_layout
 
@@ -5140,17 +3705,7 @@ R
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 List prefix 
 \end_layout
 
@@ -5162,6 +3717,7 @@ List prefix
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 print push say die map substr ...
  [+] [*] any Z=
 \end_layout
@@ -5175,17 +3731,7 @@ print push say die map substr ...
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -5196,17 +3742,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Loose and 
 \end_layout
 
@@ -5218,6 +3754,7 @@ Loose and
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 and andthen notandthen
 \end_layout
 
@@ -5230,17 +3767,7 @@ and andthen notandthen
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -5251,17 +3778,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Loose or 
 \end_layout
 
@@ -5273,6 +3790,7 @@ Loose or
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 or xor orelse
 \end_layout
 
@@ -5285,17 +3803,7 @@ or xor orelse
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 X
 \end_layout
 
@@ -5306,17 +3814,7 @@ X
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Sequencer 
 \end_layout
 
@@ -5328,6 +3826,7 @@ Sequencer
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 <==, ==>, <<==, ==>>
 \end_layout
 
@@ -5340,17 +3839,7 @@ Sequencer
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 N
 \end_layout
 
@@ -5361,17 +3850,7 @@ N
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size scriptsize
 Terminator 
 \end_layout
 
@@ -5383,6 +3862,7 @@ Terminator
 \begin_layout Plain Layout
 
 \family typewriter
+\size scriptsize
 ; {...}, unless, extra ), ], }
 \end_layout
 

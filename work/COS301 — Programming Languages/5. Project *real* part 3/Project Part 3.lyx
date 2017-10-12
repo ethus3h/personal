@@ -1108,10 +1108,10 @@ Built-in types
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="48" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2855,10 +2855,10 @@ Levels of precedence
 \size scriptsize
 \begin_inset Tabular
 <lyxtabular version="3" rows="28" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
