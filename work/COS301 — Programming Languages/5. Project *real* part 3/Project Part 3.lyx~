@@ -190,6 +190,11 @@ key "Documentation"
 
 \end_inset
 
+ Things that can be numbers are subtypes of 
+\family typewriter
+Numeric
+\family default
+.
  Common number types are 
 \family typewriter
 Int
@@ -234,6 +239,49 @@ Num
 NaN
 \family default
  (not a number).
+ 
+\family typewriter
+Rat
+\family default
+s are rational numbers, so they do not accumulate errors like floating-point
+ numbers (in Perl 6, 
+\family typewriter
+Num
+\family default
+s) do.
+ Their denominators are limited to 64 bits.
+ If one desires a 
+\family typewriter
+Rat
+\family default
+ that does not have a restriction on the values of its numerator and denominator
+, a 
+\family typewriter
+FatRat
+\family default
+ can be used instead.
+ In addition, the 
+\family typewriter
+Real
+\family default
+ and 
+\family typewriter
+Complex
+\family default
+ types are available.
+ A 
+\family typewriter
+Real
+\family default
+ can be created from the non-imaginary numeric types, and a 
+\family typewriter
+Complex
+\family default
+ can be created from two 
+\family typewriter
+Real
+\family default
+s representing the number's real and imaginary parts.
 \end_layout
 
 \begin_layout Subsubsection*
