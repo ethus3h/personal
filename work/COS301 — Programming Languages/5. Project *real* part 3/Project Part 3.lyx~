@@ -98,17 +98,7 @@ Basic syntactic structure, including statement terminators or separators,
 \end_layout
 
 \begin_layout Standard
-Perl 6 has twenty-seven levels of precedence.
- All operators can be written as subroutines.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Documentation"
-
-\end_inset
-
- Custom operators are allowed.
- In Perl 6, blocks are typically denoted by braces (
+In Perl 6, blocks are typically denoted by braces (
 \family typewriter
 {
 \family default
@@ -178,8 +168,31 @@ key "Documentation"
 Primitive data types available, including range limitations or lack thereof.
 \end_layout
 
+\begin_layout Standard
+Of the 260 built-in types in Perl 6, 47 of them are primitive types.
+ All types are subtypes of 
+\family typewriter
+Mu
+\family default
+.
+\end_layout
+
 \begin_layout Subsubsection*
 Operators for primitive data types and their precedence and associativity.
+\end_layout
+
+\begin_layout Standard
+Perl 6 has twenty-seven levels of precedence.
+ All operators can be written as subroutines.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+ Custom operators are allowed, and can have their precedence specified relative
+ to the built-in operators.
 \end_layout
 
 \begin_layout Part*
@@ -207,7 +220,7 @@ status open
 
 \begin_layout Plain Layout
 
-use v6.c;x
+use v6.c;
 \end_layout
 
 \begin_layout Plain Layout
