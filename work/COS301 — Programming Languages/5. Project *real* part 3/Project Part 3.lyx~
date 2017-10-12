@@ -92,9 +92,15 @@ Elliot Chandler (Wallace)
 10 October 2017
 \end_layout
 
+\begin_layout Subsubsection*
+Basic syntactic structure, including statement terminators or separators,
+ block structure, syntactic peculiarities, etc.
+\end_layout
+
 \begin_layout Standard
 Perl 6 has twenty-seven levels of precedence.
  All operators can be written as subroutines.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Documentation"
@@ -127,7 +133,36 @@ pointy block
 \emph default
 , which acts similarly to an anonymous function.
  Parentheses can be used to denote semantic divisions within a given block.
- 
+\end_layout
+
+\begin_layout Subsubsection*
+The units or levels of scope and the nature and type (runtime or compile-time)
+ of name bindings within the different levels of scope.
+\end_layout
+
+\begin_layout Standard
+By default, the scope of variables in Perl 6 is determined by the 
+\emph on
+declarator
+\emph default
+ with which the variable was declared (most commonly 
+\family typewriter
+my
+\family default
+).
+ Perl 6 uses a variety of modifiers, called 
+\emph on
+twigils
+\emph default
+, to alter the default scoping.
+\end_layout
+
+\begin_layout Subsubsection*
+Primitive data types available, including range limitations or lack thereof.
+\end_layout
+
+\begin_layout Subsubsection*
+Operators for primitive data types and their precedence and associativity.
 \end_layout
 
 \begin_layout Part*
