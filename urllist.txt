@@ -21,3 +21,6 @@ http://sguru.org/libgen-proxy/
 https://web.archive.org/save/http://zer0day.to/
 https://web.archive.org/save/http://zer0day.to/
 http://zer0day.to/
+http://www.dsogaming.com/news/middle-earth-shadow-war-now-available-uses-denuvo-anti-tamper-tech/
+http://www.dsogaming.com/robots.txt
+http://www.dsogaming.com/news/evil-within-2-gets-launch-trailer-will-not-using-denuvo/
