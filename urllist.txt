@@ -34,3 +34,10 @@ https://encrypted-tbn0.gstatic.com/sorry
 https://github.com/ethus3h/crystallize/blob/caae06b168888031f5a0d65655a8bfe344017d77/scripts/rubberfs
 https://github.com/robots.txt
 https://github.com/ethus3h/crystallize/blob/caae06b168888031f5a0d65655a8bfe344017d77/scripts/rubberfs
+http://pkg-status.nyi.freebsd.org/logs/beefy4/93amd64-quarterly/417438/logs/e-module-everything-places-20140606.log
+https://pkg-status.freebsd.org/logs/beefy4/93amd64-quarterly/417438/logs/e-module-everything-places-20140606.log
+http://irclogs.ubuntu.com/2013/10/25/
+https://irclogs.ubuntu.com/2013/10/25/%23ubuntu.txt
+https://pastebin.com/raw/gbPBL1LP
+https://pastebin.com/gbPBL1LP
+http://crxextractor.com/
