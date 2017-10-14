@@ -49,3 +49,7 @@ http://www.dotgnu.org/danger.html
 http://www.openp2p.com/lpt/a//p2p/2001/05/30/hailstorm.html
 http://www.openp2p.com/lpt/a/p2p/2001/05/30/hailstorm.html
 https://www.wsj.com/articles/alibaba-sizes-up-facebook-amazon-with-r-d-funding-surge-1507707466
+http://try.rakudo.org:80/
+http://try.rakudo.org/
+https://try.rakudo.org/
+https://www.wsj.com/articles/alibaba-sizes-up-facebook-amazon-with-r-d-funding-surge-1507707466
