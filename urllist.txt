@@ -92,3 +92,9 @@ https://gist.github.com/Pistos/0a058ad716ad9f4d43334f4a5c4c12ad
 https://pastebin.com/UaWPGWsi
 http://dpaste.com/3VPADSW
 http://dpaste.com/3VPADSW.txt
+https://paste.pound-python.org/raw/rO8LeEe6TSNmJLOnreFe/
+https://paste.pound-python.org/show/rO8LeEe6TSNmJLOnreFe/
+https://codereview.qt-project.org/gitweb?p=qt%2Fqtbase.git;a=commit;h=899a815414e95da8d9429a4a4f4d7094e49cfc55
+https://codereview.qt-project.org/robots.txt
+https://codereview.qt-project.org/gitweb?p=qt%2Fqtbase.git;a=commit;h=899a815414e95da8d9429a4a4f4d7094e49cfc55
+https://codereview.qt-project.org/gitweb?p=qt%2Fqtbase.git;a=commit;h=899a815414e95da8d9429a4a4f4d7094e49cfc55
