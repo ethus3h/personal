@@ -158,3 +158,5 @@ http://colabti.org/~feb
 http://colabti.org/~feb/
 http://colabti.org/robots.txt
 http://photobucket.com/gallery/user/Flare_009/media/bWVkaWFJZDo3NDUwOTAzMw==/?ref=
+http://dpaste.com/3WP679W
+https://paste.pound-python.org/show/1COmU6D4yXlkprIa32TE/
