@@ -160,3 +160,23 @@ http://colabti.org/robots.txt
 http://photobucket.com/gallery/user/Flare_009/media/bWVkaWFJZDo3NDUwOTAzMw==/?ref=
 http://dpaste.com/3WP679W
 https://paste.pound-python.org/show/1COmU6D4yXlkprIa32TE/
+https://web.archive.org/web/20171015011100/https://github-production-release-asset-2e65be.s3.amazonaws.com/49557311/4d87132a-1ff4-11e7-8892-b8bf6659b347?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170930T045037Z&X-Amz-Expires=300&X-Amz-Signature=7abaeda14251700c1a2a0066674614b27e7c60adad6d14771ec472f96f73b19f&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dplugin.video.quasar-0.9.78.zip&response-content-type=application%2Foctet-stream
+https://github-production-release-asset-2e65be.s3.amazonaws.com/49557311/4d87132a-1ff4-11e7-8892-b8bf6659b347?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170930%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170930T045037Z&X-Amz-Expires=300&X-Amz-Signature=7abaeda14251700c1a2a0066674614b27e7c60adad6d14771ec472f96f73b19f&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B filename%3Dplugin.video.quasar-0.9.78.zip&response-content-type=application%2Foctet-stream
+http://paste.ubuntu.com/23626934/
+http://paste.ubuntu.com/robots.txt
+http://paste.ubuntu.com/robots.txt
+https://forums.gentoo.org/viewtopic-p-7972920.html?sid=ea0006153b9464885ce467a4d6cbb3db
+https://forums.gentoo.org/viewtopic-p-7972920.html?sid=ea0006153b9464885ce467a4d6cbb3db
+https://paste.ubuntu.com/23626934/
+https://paste.ubuntu.com/23626934/plain/
+https://paste.ubuntu.com/23626934/plain/
+http://paste.ubuntu.com/23811549/plain/
+http://paste.ubuntu.com/23811549/
+https://paste.ubuntu.com/23811549/
+http://koditips.com/quasar-kodi-torrent-streaming-install/
+https://yts.ag/torrent/download/20B83CC3AF1B0661C5214E6A970F24ACF004B7AC
+https://yts.ag/robots.txt
+https://github.com/Colossal1/repository.colossus/
+https://github.com/Colossal1/repository.colossus
+http://www.omgubuntu.co.uk/2017/02/do-you-like-linux-client-side-decorations-poll
+http://www.omgubuntu.co.uk/robots.txt
