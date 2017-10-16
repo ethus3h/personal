@@ -8,3 +8,15 @@ http://ix.io/BiQ
 http://ix.io/BiR
 http://vminko.org/storage/x200/configs/config-3.10.25
 http://phdcomics.com/comics.php?f=562
+https://webcache.googleusercontent.com/search?q=cache:SYvj-QpAm3kJ:https://wiki.linuxfoundation.org/en/LSB_Distribution_Status+&cd=2&hl=en&ct=clnk&gl=us
+https://webcache.googleusercontent.com/search?q=cache:SYvj-QpAm3kJ:https://wiki.linuxfoundation.org/en/LSB_Distribution_Status&num=1&hl=en&gl=us&strip=1&vwsrc=0
+https://webcache.googleusercontent.com/search?q=cache:SYvj-QpAm3kJ:https://wiki.linuxfoundation.org/en/LSB_Distribution_Status&num=1&hl=en&gl=us&strip=0&vwsrc=1
+https://webcache.googleusercontent.com/search?q=cache:SYvj-QpAm3kJ:https://wiki.linuxfoundation.org/en/LSB_Distribution_Status&num=1&hl=en&gl=us&strip=0&vwsrc=1
+https://wiki.linuxfoundation.org/en/LSB_Distribution_Status
+https://webcache.googleusercontent.com/search?q=cache:SYvj-QpAm3kJ:https://wiki.linuxfoundation.org/en/LSB_Distribution_Status&num=1&hl=en&gl=us&strip=0&vwsrc=0
+https://identity.linuxfoundation.org/cas/login?service=https%3A%2F%2Fwww.linuxbase.org%2Flsb-cert%2Fproductdir.php%3Finfo%26pcid%3D348&gateway=true
+https://identity.linuxfoundation.org/cas/login?service=https%3A%2F%2Fwww.linuxbase.org%2Flsb-cert%2Fproductdir.php&gateway=true
+https://identity.linuxfoundation.org/robots.txt
+https://www.linuxfoundation.org/lsb-cert/productdir.php
+https://www.linuxbase.org/lsb-cert/productdir.php?info&pcid=348
+https://www.linuxbase.org/lsb-cert/productdir.php?by_lsb
