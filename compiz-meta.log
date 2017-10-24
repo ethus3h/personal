@@ -1,0 +1,109 @@
+elegiac ~ # emerge =x11-wm/compiz-meta-0.8.14
+
+These are the packages that would be merged, in reverse order:
+
+Calculating dependencies... done!
+[ebuild   R   ~] x11-wm/compiz-meta-0.8.14 
+
+
+>>> Verifying ebuild manifests
+
+>>> Emerging (1 of 1) x11-wm/compiz-meta-0.8.14::compiz-reloaded
+>>> Unpacking source...
+>>> Source unpacked in /var/tmp/portage/x11-wm/compiz-meta-0.8.14/work
+>>> Preparing source in /var/tmp/portage/x11-wm/compiz-meta-0.8.14/work ...
+>>> Source prepared.
+>>> Configuring source in /var/tmp/portage/x11-wm/compiz-meta-0.8.14/work ...
+>>> Source configured.
+>>> Compiling source in /var/tmp/portage/x11-wm/compiz-meta-0.8.14/work ...
+>>> Source compiled.
+>>> Test phase [not enabled]: x11-wm/compiz-meta-0.8.14
+
+>>> Install compiz-meta-0.8.14 into /var/tmp/portage/x11-wm/compiz-meta-0.8.14/image/ category x11-wm
+>>> Completed installing compiz-meta-0.8.14 into /var/tmp/portage/x11-wm/compiz-meta-0.8.14/image/
+
+ * Final size of build directory: 1 KiB
+ * Final size of installed tree: 1 KiB
+
+>>> Done.
+
+>>> Installing (1 of 1) x11-wm/compiz-meta-0.8.14::compiz-reloaded
+>>> Auto-cleaning packages...
+
+>>> No outdated packages were found on your system.
+
+ * GNU info directory index is up-to-date.
+
+!!! existing preserved libs:
+>>> package: media-libs/jasper-2.0.12
+ *  - /usr/lib64/libjasper.so.1
+ *  - /usr/lib64/libjasper.so.1.0.0
+ *      used by /usr/bin/jpeg2ktopam (media-libs/netpbm-10.70.00)
+ *      used by /usr/bin/pamtojpeg2k (media-libs/netpbm-10.70.00)
+ *      used by /usr/bin/ufraw (media-gfx/ufraw-0.22)
+ *      used by 6 other files
+>>> package: net-libs/gnutls-3.5.15
+ *  - /usr/lib32/libgnutls.so.28
+ *  - /usr/lib32/libgnutls.so.28.43.0
+ *      used by /usr/lib32/libcups.so.2 (net-print/cups-2.1.4)
+ *  - /usr/lib64/libgnutls.so.28
+ *  - /usr/lib64/libgnutls.so.28.43.0
+ *      used by /usr/bin/emacs-24 (app-editors/emacs-24.5-r3)
+ *      used by /usr/bin/filezilla (net-ftp/filezilla-3.12.0.2)
+ *      used by /usr/lib64/empathy/libempathy-3.12.12.so (net-im/empathy-3.12.12)
+ *      used by 13 other files
+>>> package: sci-geosciences/gpsd-3.16
+ *  - /usr/lib64/libgps.so.21
+ *  - /usr/lib64/libgps.so.21.0.0
+ *      used by /usr/lib64/kde4/plugins/marble/GpsdPositionProviderPlugin.so (kde-apps/marble-4.14.3)
+ *      used by /usr/libexec/geoclue-gpsd (app-misc/geoclue-0.12.99)
+>>> package: kde-frameworks/kdelibs-4.14.34
+ *  - /usr/lib64/libkdewebkit.so.5
+ *  - /usr/lib64/libkdewebkit.so.5.14.34
+ *      used by /usr/bin/blogilo (kde-apps/blogilo-4.14.11_pre20160211)
+ *      used by /usr/lib64/kde4/amarok_context_applet_info.so (media-sound/amarok-2.8.0-r3)
+ *      used by /usr/lib64/kde4/amarok_context_applet_wikipedia.so (media-sound/amarok-2.8.0-r3)
+ *      used by 4 other files
+>>> package: dev-libs/libzip-1.3.0
+ *  - /usr/lib64/libzip.so.4
+ *  - /usr/lib64/libzip.so.4.0.0
+ *      used by /usr/bin/ideviceinstaller (app-pda/ideviceinstaller-1.0.1)
+>>> package: media-libs/glew-1.13.0
+ *  - /usr/lib64/libGLEW.so.1.10
+ *  - /usr/lib64/libGLEW.so.1.10.0
+ *      used by /usr/bin/_cvpcb.kiface (sci-electronics/kicad-4.0.4)
+ *      used by /usr/bin/_eeschema.kiface (sci-electronics/kicad-4.0.4)
+ *      used by /usr/bin/_gerbview.kiface (sci-electronics/kicad-4.0.4)
+ *      used by 14 other files
+>>> package: app-text/hunspell-1.6.1-r1
+ *  - /usr/lib64/libhunspell-1.3.so.0
+ *  - /usr/lib64/libhunspell-1.3.so.0.0.0
+ *      used by /usr/bin/goldendict (app-text/goldendict-1.0.1)
+ *      used by /usr/bin/lokalize (kde-apps/lokalize-16.08.3)
+ *      used by /usr/bin/lyx (app-office/lyx-2.1.5)
+ *      used by 8 other files
+>>> package: sys-libs/binutils-libs-2.28.1
+ *  - /usr/lib64/libbfd-2.27.so
+ *      used by /usr/lib64/ocaml/objinfo_helper (dev-lang/ocaml-4.04.0)
+>>> package: app-text/poppler-0.57.0
+ *  - /usr/lib64/libpoppler.so.62
+ *  - /usr/lib64/libpoppler.so.62.0.0
+ *      used by /usr/bin/inkscape (media-gfx/inkscape-0.92.1-r1)
+ *      used by /usr/bin/inkview (media-gfx/inkscape-0.92.1-r1)
+ *      used by /usr/lib64/kde4/calligra_filter_pdf2svg.so (app-office/calligra-2.9.11)
+ *      used by 2 other files
+>>> package: dev-haskell/scientific-0.3.4.9
+ *  - /usr/lib64/scientific-0.3.3.8/ghc-7.10.3/libHSscientific-0.3.3.8-Ac9ewSFZzaiJXTSrehvPMQ-ghc7.10.3.so
+ *      used by /usr/lib64/attoparsec-0.13.0.1/ghc-7.10.3/libHSattoparsec-0.13.0.1-5OcDi3oNQ7CLJe1LHqPBQm-ghc7.10.3.so (preserved)
+>>> package: media-libs/x264-0.0.20160712
+ *  - /usr/lib64/libx264.so.142
+ *      used by /usr/bin/mencoder (media-video/mplayer-1.2.1)
+ *      used by /usr/lib64/gstreamer-0.10/libgstx264.so (media-plugins/gst-plugins-x264-0.10.19-r1)
+ *      used by /usr/lib64/mediastreamer/plugins/libmsx264.so.0.0.0 (media-plugins/mediastreamer-x264-1.4.1)
+ *  - /usr/lib32/libx264.so.142
+ *      used by /usr/lib32/gstreamer-0.10/libgstx264.so (media-plugins/gst-plugins-x264-0.10.19-r1)
+>>> package: dev-haskell/attoparsec-0.13.1.0
+ *  - /usr/lib64/attoparsec-0.13.0.1/ghc-7.10.3/libHSattoparsec-0.13.0.1-5OcDi3oNQ7CLJe1LHqPBQm-ghc7.10.3.so
+ *      used by /usr/lib64/darcs-2.12.5/ghc-7.10.3/libHSdarcs-2.12.5-I94n9nC7X251L7DB1corIy-ghc7.10.3.so (dev-vcs/darcs-2.12.5)
+Use emerge @preserved-rebuild to rebuild packages using these libraries
+elegiac ~ # 

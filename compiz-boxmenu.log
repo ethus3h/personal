@@ -1,0 +1,310 @@
+elegiac ~ # emerge =x11-apps/compiz-boxmenu-1.1.12
+
+These are the packages that would be merged, in reverse order:
+
+Calculating dependencies... done!
+[ebuild     UD~] x11-apps/compiz-boxmenu-1.1.12 [9999]
+
+!!! The following installed packages are masked:
+- dev-qt/qtwebkit-4.8.7::gentoo (masked by: package.mask)
+/usr/portage/profiles/package.mask:
+# Andreas Sturmlechner <asturm@gentoo.org> (16 Oct 2017)
+# Qt4WebKit is ancient and is likely to have more holes
+# in it than swiss cheese. Bug #620684
+
+For more information, see the MASKED PACKAGES section in the emerge
+man page or refer to the Gentoo Handbook.
+
+
+
+>>> Verifying ebuild manifests
+
+>>> Emerging (1 of 1) x11-apps/compiz-boxmenu-1.1.12::compiz-reloaded
+>>> Downloading 'http://lug.mtu.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:13--  http://lug.mtu.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving lug.mtu.edu (lug.mtu.edu)... 141.219.188.20, 2001:48a8:63:1c3::1337:6769
+Connecting to lug.mtu.edu (lug.mtu.edu)|141.219.188.20|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://mirrors.lug.mtu.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz [following]
+--2017-10-23 19:33:14--  http://mirrors.lug.mtu.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving mirrors.lug.mtu.edu (mirrors.lug.mtu.edu)... 141.219.188.21, 2001:48a8:63:1c3::dead:beef
+Connecting to mirrors.lug.mtu.edu (mirrors.lug.mtu.edu)|141.219.188.21|:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Retrying.
+
+--2017-10-23 19:33:15--  (try: 2)  http://mirrors.lug.mtu.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Connecting to mirrors.lug.mtu.edu (mirrors.lug.mtu.edu)|141.219.188.21|:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Retrying.
+
+--2017-10-23 19:33:17--  (try: 3)  http://mirrors.lug.mtu.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Connecting to mirrors.lug.mtu.edu (mirrors.lug.mtu.edu)|141.219.188.21|:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Giving up.
+
+>>> Downloading 'http://gentoo.osuosl.org/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:17--  http://gentoo.osuosl.org/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving gentoo.osuosl.org (gentoo.osuosl.org)... 64.50.236.52, 140.211.166.134, 64.50.233.100, ...
+Connecting to gentoo.osuosl.org (gentoo.osuosl.org)|64.50.236.52|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-10-23 19:33:18 ERROR 404: Not Found.
+
+>>> Downloading 'http://gentoo.mirrors.pair.com/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:18--  http://gentoo.mirrors.pair.com/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving gentoo.mirrors.pair.com (gentoo.mirrors.pair.com)... 216.92.2.140
+Connecting to gentoo.mirrors.pair.com (gentoo.mirrors.pair.com)|216.92.2.140|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-10-23 19:33:18 ERROR 404: Not Found.
+
+>>> Downloading 'rsync://mirrors.rit.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+
+receiving incremental file list
+rsync: link_stat "/distfiles/compiz-boxmenu-1.1.12.tar.xz" (in gentoo) failed: No such file or directory (2)
+
+sent 8 bytes  received 122 bytes  86.67 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1650) [Receiver=3.1.2]
+>>> Downloading 'http://mirrors.rit.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:19--  http://mirrors.rit.edu/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving mirrors.rit.edu (mirrors.rit.edu)... 129.21.171.72, 2620:8d:8000:15:225:90ff:fefd:344c
+Connecting to mirrors.rit.edu (mirrors.rit.edu)|129.21.171.72|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-10-23 19:33:19 ERROR 404: Not Found.
+
+>>> Downloading 'http://gentoo.mirrors.tds.net/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:19--  http://gentoo.mirrors.tds.net/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving gentoo.mirrors.tds.net (gentoo.mirrors.tds.net)... 216.165.129.134
+Connecting to gentoo.mirrors.tds.net (gentoo.mirrors.tds.net)|216.165.129.134|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-10-23 19:33:19 ERROR 404: Not Found.
+
+>>> Downloading 'http://cosmos.illinois.edu/pub/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:19--  http://cosmos.illinois.edu/pub/gentoo/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving cosmos.illinois.edu (cosmos.illinois.edu)... 192.17.174.4
+Connecting to cosmos.illinois.edu (cosmos.illinois.edu)|192.17.174.4|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-10-23 19:33:19 ERROR 404: Not Found.
+
+>>> Downloading 'rsync://gentoo.cs.uni.edu/gentoo-distfiles/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+* Hardware specifications
+  Architecture: Dual PPC (Xserve)
+  OS: Debian PPC
+
+* Bandwidth specifications
+  1Gbps feed to the community (egress), and Internet2 support.
+
+* Location
+  The University of Northern Iowa, Cedar Falls, IA
+
+* Connections
+  30 per each rsync module.
+     _   _ _   _ ___ 
+    | | | | \ | |_ _|
+    | | | |  \| || |         -o)
+    | |_| | |\  || |         /\\
+     \___/|_| \_|___|       _\_V
+
+ Access terminated if penguin violated 
+      Don't mess with the penguin
+
+  gentoo.cs.uni.edu [134.161.240.18]
+----------------------------------
+  rsync server at gentoo.cs.uni.edu
+----------------------------------
+  Resources hosted by the Department
+     of Computer Science at the 
+    University of Northern Iowa
+
+
+receiving incremental file list
+rsync: link_stat "/distfiles/compiz-boxmenu-1.1.12.tar.xz" (in gentoo-distfiles) failed: No such file or directory (2)
+
+sent 8 bytes  received 138 bytes  97.33 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1650) [Receiver=3.1.2]
+>>> Downloading 'http://gentoo.cs.uni.edu/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:20--  http://gentoo.cs.uni.edu/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving gentoo.cs.uni.edu (gentoo.cs.uni.edu)... 134.161.116.17
+Connecting to gentoo.cs.uni.edu (gentoo.cs.uni.edu)|134.161.116.17|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://seal.cs.uni.edu/distfiles/compiz-boxmenu-1.1.12.tar.xz [following]
+--2017-10-23 19:33:21--  http://seal.cs.uni.edu/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving seal.cs.uni.edu (seal.cs.uni.edu)... 134.161.116.17
+Reusing existing connection to gentoo.cs.uni.edu:80.
+HTTP request sent, awaiting response... 404 Not Found
+2017-10-23 19:33:25 ERROR 404: Not Found.
+
+>>> Downloading 'http://distfiles.gentoo.org/distfiles/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:25--  http://distfiles.gentoo.org/distfiles/compiz-boxmenu-1.1.12.tar.xz
+Resolving distfiles.gentoo.org (distfiles.gentoo.org)... 64.50.233.100, 156.56.247.195, 137.226.34.46, ...
+Connecting to distfiles.gentoo.org (distfiles.gentoo.org)|64.50.233.100|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-10-23 19:33:26 ERROR 404: Not Found.
+
+>>> Downloading 'https://github.com/compiz-reloaded/compiz-boxmenu/releases/download/1.1.12/compiz-boxmenu-1.1.12.tar.xz'
+--2017-10-23 19:33:26--  https://github.com/compiz-reloaded/compiz-boxmenu/releases/download/1.1.12/compiz-boxmenu-1.1.12.tar.xz
+Resolving github.com (github.com)... 192.30.253.112, 192.30.253.113
+Connecting to github.com (github.com)|192.30.253.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/1488412/51cb5f9a-6212-11e6-8a67-ba1299112e7e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171023T233327Z&X-Amz-Expires=300&X-Amz-Signature=a38bbd2cb56be403c9d08c156cdc639eef319bacaf41df6a9f06c5c067272d28&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dcompiz-boxmenu-1.1.12.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2017-10-23 19:33:27--  https://github-production-release-asset-2e65be.s3.amazonaws.com/1488412/51cb5f9a-6212-11e6-8a67-ba1299112e7e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171023T233327Z&X-Amz-Expires=300&X-Amz-Signature=a38bbd2cb56be403c9d08c156cdc639eef319bacaf41df6a9f06c5c067272d28&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dcompiz-boxmenu-1.1.12.tar.xz&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.216.130.19
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.130.19|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 63360 (62K) [application/octet-stream]
+Saving to: ‘/usr/portage/distfiles/compiz-boxmenu-1.1.12.tar.xz’
+
+/usr/portage/distfi 100%[===================>]  61.88K   313KB/s    in 0.2s    
+
+2017-10-23 19:33:27 (313 KB/s) - ‘/usr/portage/distfiles/compiz-boxmenu-1.1.12.tar.xz’ saved [63360/63360]
+
+ * compiz-boxmenu-1.1.12.tar.xz SHA256 SHA512 WHIRLPOOL size ;-) ...                         [ ok ]
+>>> Unpacking source...
+>>> Unpacking compiz-boxmenu-1.1.12.tar.xz to /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/work
+>>> Source unpacked in /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/work
+>>> Preparing source in /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/work/compiz-boxmenu-1.1.12 ...
+>>> Source prepared.
+>>> Configuring source in /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/work/compiz-boxmenu-1.1.12 ...
+>>> Source configured.
+>>> Compiling source in /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/work/compiz-boxmenu-1.1.12 ...
+make -j3 
+dbus-binding-tool --mode=glib-server --prefix=deskmenu --output=deskmenu-glue.h deskmenu-service.xml
+cc -o compiz-boxmenu-daemon deskmenu-menu.c deskmenu-wnck.c deskmenu-utils.c -Wl,--as-needed `pkg-config --libs dbus-glib-1 gdk-2.0 gtk+-2.0 libwnck-1.0` `pkg-config --cflags dbus-glib-1 gdk-2.0 gtk+-2.0 libwnck-1.0` -Wall -Wextra -Wno-unused-parameter 
+cc -o compiz-boxmenu deskmenu.c deskmenu-common.h -Wl,--as-needed `pkg-config --libs dbus-glib-1` `pkg-config --cflags dbus-glib-1` -Wall -Wextra -Wno-unused-parameter  
+cc -o compiz-boxmenu-dlist deskmenu-documentlist-client.c deskmenu-common.h -Wl,--as-needed `pkg-config --libs dbus-glib-1` `pkg-config --cflags dbus-glib-1` -Wall -Wextra -Wno-unused-parameter 
+m4 -DVERSION=1.1.12 man/compiz-boxmenu.1.in > man/compiz-boxmenu.1
+cc -o compiz-boxmenu-dplist deskmenu-dplist-client.c deskmenu-common.h -Wl,--as-needed `pkg-config --libs dbus-glib-1` `pkg-config --cflags dbus-glib-1` -Wall -Wextra -Wno-unused-parameter 
+m4 -DVERSION=1.1.12 man/compiz-boxmenu-dlist.1.in > man/compiz-boxmenu-dlist.1
+cc -o compiz-boxmenu-vplist deskmenu-vplist-client.c deskmenu-common.h -Wl,--as-needed `pkg-config --libs dbus-glib-1` `pkg-config --cflags dbus-glib-1` -Wall -Wextra -Wno-unused-parameter
+m4 -DVERSION=1.1.12 man/compiz-boxmenu-vplist.1.in > man/compiz-boxmenu-vplist.1
+cc -o compiz-boxmenu-wlist deskmenu-windowlist-client.c deskmenu-common.h -Wl,--as-needed `pkg-config --libs dbus-glib-1` `pkg-config --cflags dbus-glib-1` -Wall -Wextra -Wno-unused-parameter
+m4 -DVERSION=1.1.12 man/compiz-boxmenu-dplist.1.in > man/compiz-boxmenu-dplist.1
+m4 -d -DLOOK_HERE=/usr/share/cb-editor -DPYTHONBIN=/usr/bin/python2.7 compiz-boxmenu-editor.in >compiz-boxmenu-editor
+m4 -DVERSION=1.1.12 man/compiz-boxmenu-editor.1.in > man/compiz-boxmenu-editor.1
+m4 -DVERSION=1.1.12 man/compiz-boxmenu-wlist.1.in > man/compiz-boxmenu-wlist.1
+m4 -DVERSION=1.1.12 man/compiz-boxmenu-daemon.1.in > man/compiz-boxmenu-daemon.1
+>>> Source compiled.
+>>> Test phase [not enabled]: x11-apps/compiz-boxmenu-1.1.12
+
+>>> Install compiz-boxmenu-1.1.12 into /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image/ category x11-apps
+make -j3 DESTDIR=/var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image/ install 
+mkdir -p /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/bin/
+mkdir -p /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/icons
+mkdir -p /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/applications
+mkdir -p /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/cb-editor
+mkdir -p /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/man/man1
+install -m755 compiz-boxmenu /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/bin/
+install -m755 compiz-boxmenu-dlist /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/bin/
+install -m755 compiz-boxmenu-dplist /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/bin/
+install -m755 compiz-boxmenu-vplist /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/bin/
+install -m755 compiz-boxmenu-wlist /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/bin/
+install -m755 compiz-boxmenu-daemon /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/bin/
+install -m755 compiz-boxmenu-editor /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/bin/
+install -m644 new-editor/* /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/cb-editor
+cp -r hicolor /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/icons
+mkdir -p /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//etc/xdg/compiz/boxmenu/
+install -m644 menu.xml /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//etc/xdg/compiz/boxmenu/
+install -m644 precache.ini /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//etc/xdg/compiz/boxmenu/
+mkdir -p /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/dbus-1/services/
+install -m644 org.compiz_fusion.boxmenu.service /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/dbus-1/services/
+install -m644 man/*.1 /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/man/man1
+install -m644 Compiz-Boxmenu-Editor.desktop /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image//usr/share/applications
+>>> Completed installing compiz-boxmenu-1.1.12 into /var/tmp/portage/x11-apps/compiz-boxmenu-1.1.12/image/
+
+ * Final size of build directory: 465 KiB
+ * Final size of installed tree: 324 KiB
+
+strip: x86_64-pc-linux-gnu-strip --strip-unneeded -R .comment -R .GCC.command.line -R .note.gnu.gold-version
+   usr/bin/compiz-boxmenu-dplist
+   usr/bin/compiz-boxmenu
+   usr/bin/compiz-boxmenu-dlist
+   usr/bin/compiz-boxmenu-vplist
+   usr/bin/compiz-boxmenu-wlist
+   usr/bin/compiz-boxmenu-daemon
+ecompressdir: bzip2 -9 /usr/share/doc
+ecompressdir: bzip2 -9 /usr/share/man
+>>> Done.
+
+>>> Installing (1 of 1) x11-apps/compiz-boxmenu-1.1.12::compiz-reloaded
+ * Updating icons cache ...                                                                  [ ok ]
+
+>>> Recording x11-apps/compiz-boxmenu in "world" favorites file...
+>>> Auto-cleaning packages...
+
+>>> No outdated packages were found on your system.
+
+ * GNU info directory index is up-to-date.
+
+!!! existing preserved libs:
+>>> package: media-libs/jasper-2.0.12
+ *  - /usr/lib64/libjasper.so.1
+ *  - /usr/lib64/libjasper.so.1.0.0
+ *      used by /usr/bin/jpeg2ktopam (media-libs/netpbm-10.70.00)
+ *      used by /usr/bin/pamtojpeg2k (media-libs/netpbm-10.70.00)
+ *      used by /usr/bin/ufraw (media-gfx/ufraw-0.22)
+ *      used by 6 other files
+>>> package: net-libs/gnutls-3.5.15
+ *  - /usr/lib32/libgnutls.so.28
+ *  - /usr/lib32/libgnutls.so.28.43.0
+ *      used by /usr/lib32/libcups.so.2 (net-print/cups-2.1.4)
+ *  - /usr/lib64/libgnutls.so.28
+ *  - /usr/lib64/libgnutls.so.28.43.0
+ *      used by /usr/bin/emacs-24 (app-editors/emacs-24.5-r3)
+ *      used by /usr/bin/filezilla (net-ftp/filezilla-3.12.0.2)
+ *      used by /usr/lib64/empathy/libempathy-3.12.12.so (net-im/empathy-3.12.12)
+ *      used by 13 other files
+>>> package: sci-geosciences/gpsd-3.16
+ *  - /usr/lib64/libgps.so.21
+ *  - /usr/lib64/libgps.so.21.0.0
+ *      used by /usr/lib64/kde4/plugins/marble/GpsdPositionProviderPlugin.so (kde-apps/marble-4.14.3)
+ *      used by /usr/libexec/geoclue-gpsd (app-misc/geoclue-0.12.99)
+>>> package: kde-frameworks/kdelibs-4.14.34
+ *  - /usr/lib64/libkdewebkit.so.5
+ *  - /usr/lib64/libkdewebkit.so.5.14.34
+ *      used by /usr/bin/blogilo (kde-apps/blogilo-4.14.11_pre20160211)
+ *      used by /usr/lib64/kde4/amarok_context_applet_info.so (media-sound/amarok-2.8.0-r3)
+ *      used by /usr/lib64/kde4/amarok_context_applet_wikipedia.so (media-sound/amarok-2.8.0-r3)
+ *      used by 4 other files
+>>> package: dev-libs/libzip-1.3.0
+ *  - /usr/lib64/libzip.so.4
+ *  - /usr/lib64/libzip.so.4.0.0
+ *      used by /usr/bin/ideviceinstaller (app-pda/ideviceinstaller-1.0.1)
+>>> package: media-libs/glew-1.13.0
+ *  - /usr/lib64/libGLEW.so.1.10
+ *  - /usr/lib64/libGLEW.so.1.10.0
+ *      used by /usr/bin/_cvpcb.kiface (sci-electronics/kicad-4.0.4)
+ *      used by /usr/bin/_eeschema.kiface (sci-electronics/kicad-4.0.4)
+ *      used by /usr/bin/_gerbview.kiface (sci-electronics/kicad-4.0.4)
+ *      used by 14 other files
+>>> package: app-text/hunspell-1.6.1-r1
+ *  - /usr/lib64/libhunspell-1.3.so.0
+ *  - /usr/lib64/libhunspell-1.3.so.0.0.0
+ *      used by /usr/bin/goldendict (app-text/goldendict-1.0.1)
+ *      used by /usr/bin/lokalize (kde-apps/lokalize-16.08.3)
+ *      used by /usr/bin/lyx (app-office/lyx-2.1.5)
+ *      used by 8 other files
+>>> package: sys-libs/binutils-libs-2.28.1
+ *  - /usr/lib64/libbfd-2.27.so
+ *      used by /usr/lib64/ocaml/objinfo_helper (dev-lang/ocaml-4.04.0)
+>>> package: app-text/poppler-0.57.0
+ *  - /usr/lib64/libpoppler.so.62
+ *  - /usr/lib64/libpoppler.so.62.0.0
+ *      used by /usr/bin/inkscape (media-gfx/inkscape-0.92.1-r1)
+ *      used by /usr/bin/inkview (media-gfx/inkscape-0.92.1-r1)
+ *      used by /usr/lib64/kde4/calligra_filter_pdf2svg.so (app-office/calligra-2.9.11)
+ *      used by 2 other files
+>>> package: dev-haskell/scientific-0.3.4.9
+ *  - /usr/lib64/scientific-0.3.3.8/ghc-7.10.3/libHSscientific-0.3.3.8-Ac9ewSFZzaiJXTSrehvPMQ-ghc7.10.3.so
+ *      used by /usr/lib64/attoparsec-0.13.0.1/ghc-7.10.3/libHSattoparsec-0.13.0.1-5OcDi3oNQ7CLJe1LHqPBQm-ghc7.10.3.so (preserved)
+>>> package: media-libs/x264-0.0.20160712
+ *  - /usr/lib64/libx264.so.142
+ *      used by /usr/bin/mencoder (media-video/mplayer-1.2.1)
+ *      used by /usr/lib64/gstreamer-0.10/libgstx264.so (media-plugins/gst-plugins-x264-0.10.19-r1)
+ *      used by /usr/lib64/mediastreamer/plugins/libmsx264.so.0.0.0 (media-plugins/mediastreamer-x264-1.4.1)
+ *  - /usr/lib32/libx264.so.142
+ *      used by /usr/lib32/gstreamer-0.10/libgstx264.so (media-plugins/gst-plugins-x264-0.10.19-r1)
+>>> package: dev-haskell/attoparsec-0.13.1.0
+ *  - /usr/lib64/attoparsec-0.13.0.1/ghc-7.10.3/libHSattoparsec-0.13.0.1-5OcDi3oNQ7CLJe1LHqPBQm-ghc7.10.3.so
+ *      used by /usr/lib64/darcs-2.12.5/ghc-7.10.3/libHSdarcs-2.12.5-I94n9nC7X251L7DB1corIy-ghc7.10.3.so (dev-vcs/darcs-2.12.5)
+Use emerge @preserved-rebuild to rebuild packages using these libraries
+elegiac ~ # 
