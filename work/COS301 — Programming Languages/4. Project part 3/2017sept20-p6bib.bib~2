@@ -1,10 +1,10 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%      This file was created with JabRef 2.10.
+%    This file was created with JabRef 2.10.
 
 @article{P6FAQ,
+	address = {https://docs.perl6.org/language/faq},
 	author = {Documentation, Perl 6},
-	booktitle = {{\url{https://docs.perl6.org/language/faq}}},
 	howpublished = {Web},
 	month = {19 Sept.},
 	note = {I used this article to learn some basic information about Perl 6.},
@@ -16,8 +16,8 @@
 }
 
 @article{Holloway,
+	address = {https://opensource.com/life/16/9/perl-6-features},
 	author = {Holloway, Ruth},
-	booktitle = {{\url{https://opensource.com/life/16/9/perl-6-features}}},
 	howpublished = {Web},
 	month = {23 Sept.},
 	note = {This article provided a resource for learning about some of the things that distinguish and differentiate Perl 6 from other languages.},
@@ -27,8 +27,8 @@
 }
 
 @article{Miller,
+	address = {https://www.evanmiller.org/a-review-of-perl-6.html},
 	author = {Miller, Evan},
-	booktitle = {{\url{https://www.evanmiller.org/a-review-of-perl-6.html}}},
 	howpublished = {Web},
 	month = {13 Aug.},
 	note = {This article discusses Perl 6's merits and weaknesses.},
@@ -38,8 +38,8 @@
 }
 
 @article{jnthnwrthngtn,
+	address = {https://perl6advent.wordpress.com/2011/12/02/grammartracer-and-grammardebugger/},
 	author = {jnthnwrthngtn},
-	booktitle = {{\url{https://perl6advent.wordpress.com/2011/12/02/grammartracer-and-grammardebugger/}}},
 	howpublished = {Web},
 	journal = {Perl 6 Advent Calendar},
 	month = {2 Dec.},
@@ -59,19 +59,19 @@
 }
 
 @article{Lenz2010,
+	address = {https://perlgeek.de/en/article/debug-a-perl-6-grammar},
 	author = {Lenz, Moritz},
-	booktitle = {{\url{https://perlgeek.de/en/article/debug-a-perl-6-grammar}}},
 	howpublished = {Web},
 	month = {1 Sept.},
 	note = {This is more information on debugging Perl 6 grammars.},
 	publisher = {Perl Programming},
-	title = {How To Debug a {Perl} 6 Grammar},
+	title = {How To Debug a Perl 6 Grammar},
 	year = {2010}
 }
 
 @article{Overflow,
+	address = {https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples},
 	author = {Overflow, Stack},
-	booktitle = {{\url{https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples}}},
 	howpublished = {Web},
 	note = {A citation for the claim regarding floating points being a little odd.},
 	title = {Floating point inaccuracy examples},
@@ -79,8 +79,8 @@
 }
 
 @article{News,
-	author = {{Hacker News}},
-	booktitle = {{\url{https://news.ycombinator.com/item?id=12888784}}},
+	address = {https://news.ycombinator.com/item?id=12888784},
+	author = {News, Hacker},
 	howpublished = {Web},
 	month = {Nov.},
 	note = {This is where I learned that Perl 6 Rationals aren't arbitrary-precision.},
@@ -89,8 +89,8 @@
 }
 
 @article{Documentation,
+	address = {https://docs.perl6.org/},
 	author = {Documentation, Perl 6},
-	booktitle = {{\url{https://docs.perl6.org/}}},
 	howpublished = {Web},
 	month = {19 Sept.},
 	note = {The official Perl 6 documentation is very helpful for getting an understanding of the language.},
@@ -99,11 +99,11 @@
 }
 
 @article{Language,
+	address = {https://perl6.org/},
 	author = {Language, The Perl 6 Programming},
-	booktitle = {{\url{https://perl6.org/}}},
 	howpublished = {Web},
 	note = {This home page for the Perl 6 language introduces it and its culture. Retrieved 20 Sept. 2017.},
-	title = {The {Perl} 6 Programming Language},
+	title = {The Perl 6 Programming Language},
 	year = {n.d.}
 }
 
@@ -111,13 +111,13 @@
 	author = {Rosenfeld, Laurent and Downey, Allen B.},
 	note = {I used this book as a supplementary resource for getting an overview of Perl 6.},
 	publisher = {O'Reilly Media, Inc.},
-	title = {Think {Perl} 6},
+	title = {Think Perl 6},
 	year = {2017}
 }
 
 @article{project,
-	author = {{Perl 6 project}},
-	booktitle = {{\url{https://github.com/perl6/nqp}}},
+	address = {https://github.com/perl6/nqp},
+	author = {project, Perl 6},
 	howpublished = {Web},
 	month = {31 May},
 	note = {This is where I got information about how Perl 6 is implemented, and its portability.},
@@ -126,8 +126,8 @@
 }
 
 @article{Documentation_2,
+	address = {https://docs.perl6.org/language/grammars},
 	author = {Documentation, Perl 6},
-	booktitle = {{\url{https://docs.perl6.org/language/grammars}}},
 	howpublished = {Web},
 	month = {19 Sept.},
 	note = {This documentation page was one of my primary sources for getting an understanding of the scope and capabilities of grammars in Perl 6.},
@@ -136,8 +136,8 @@
 }
 
 @article{Wikipedia,
+	address = {https://en.wikipedia.org/wiki/Perl\_6},
 	author = {Wikipedia},
-	booktitle = {{\url{https://en.wikipedia.org/wiki/Perl_6}}},
 	howpublished = {Web},
 	note = {I used Wikipedia's article on Perl 6 as a way to find other articles and books to look at (as well as Fogler Library and Web search).},
 	title = {Perl 6}
