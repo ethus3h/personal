@@ -4045,6 +4045,10 @@ Appendix: Program listing
 \end_layout
 
 \begin_layout Standard
+This program parses a simple grammar.
+\end_layout
+
+\begin_layout Standard
 
 \family typewriter
 \begin_inset listings

@@ -356,9 +356,9 @@ s///
 S///
 \family default
  substitution operators, but the documentation is, as far as I could tell,
- unclear on which of the above types of operator they fall into, and is
- unclear about whether the regular rules that apply to operators apply to
- them.
+ unclear on which of the above types of operator they fall into, and does
+ not state clearly whether the regular rules that apply to operators apply
+ to them.
  
 \begin_inset Newpage newpage
 \end_inset
