@@ -116,6 +116,7 @@ sub parse(List $tokens --> Nil) {
 
         sub give_back( --> Nil) {
             @state.pop();
+            $levelsCount = $levelsCount - 1;
             say "Releasing tokens ";
             for @consumed {
                 unshift(@input, (shift(@consumed)))
@@ -172,7 +173,7 @@ sub parse(List $tokens --> Nil) {
                 }
                 CATCH {
                     default {
-                        say "(Matched short relop)"
+                        say "(Matched ID-only relop)"
                     }
                 }
             }
@@ -204,7 +205,13 @@ sub parse(List $tokens --> Nil) {
                                 $rptest = lexeme;
                                 CATCH {
                                     default {
-                                        relation_expr
+                                        relation_expr;
+                                        CATCH {
+                                            default {
+                                                give_back;
+                                                X::AdHoc.new(:payload<Did not match>).throw
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -267,7 +274,7 @@ sub parse(List $tokens --> Nil) {
     # Test parser
     #lex('foo & !( a2 > bar & w < foo | x < y)')
     #    ==> parse;
-    say parse(lex('foo & !( a2 > bar & w < foo | x < y('));
+    say parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
 
     say "Done running tests. Report:";
     done-testing;
