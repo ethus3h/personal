@@ -209,11 +209,10 @@ sub parse(List $tokens --> Nil) {
                 bool_literal();
                 CATCH {
                     default {
-                        say lexeme();
-                        say "bO(IBOLEIBLOEBI*(LOEB))";
                         my Str $lexeme = lexeme().value;
                         my $extest where * eq '!';
                         $extest = $lexeme;
+                        say "bociblo";
                         bool_factor;
                         CATCH {
                             default {
