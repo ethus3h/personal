@@ -8,6 +8,8 @@
 \setmonofont[
   Contextuals={Alternate}
 ]{Fira Code}
+\usepackage{hyperref}
+\usepackage{url}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -359,7 +361,22 @@ S///
  unclear on which of the above types of operator they fall into, and does
  not state clearly whether the regular rules that apply to operators apply
  to them.
- 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "2017sept20-p6bib"
+options "apalike2"
+
+\end_inset
+
+
 \begin_inset Newpage newpage
 \end_inset
 
@@ -374,7 +391,7 @@ key "Documentation"
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Section*
@@ -5430,18 +5447,6 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintAll"
-bibfiles "2017sept20-p6bib"
-options "apa"
 
 \end_inset
 
