@@ -1,0 +1,187 @@
+Running lexer tests
+ok 1 - 
+ok 2 - The object is-a 'List'
+[identifier => foo binary_oper => & unary_oper => ! parenthesis => ( 
+identifier => a2 binary_oper => > identifier => bar binary_oper => & 
+identifier => w binary_oper => < identifier => foo binary_oper => | 
+identifier => x binary_oper => < identifier => y parenthesis => ) EOF 
+=> ]
+[identifier => A1 binary_oper => & identifier => B1 binary_oper => | 
+identifier => A2 binary_oper => & identifier => B1 binary_oper => | 
+parenthesis => ( unary_oper => ! identifier => C binary_oper => | 
+identifier => A binary_oper => < binary_oper => > identifier => B 
+parenthesis => ) EOF => ]
+
+Starting parser test
+
+Enter <bool_expr>
+Enter <and_term>
+Enter <bool_factor>
+Enter <bool_literal>
+Next token is the identifier foo
+DEBUG: Did not match <bool_literal> (depth: 4)
+Next token is the identifier foo
+Enter <relation_expr>
+Enter <id>
+Next token is the identifier foo
+Exit <id>
+Enter <relop>
+Next token is the binary_oper &
+DEBUG: Did not match <relop> (depth: 5)
+DEBUG: Matched ID-only relation_expr
+Exit <relation_expr>
+Exit <bool_factor>
+Exit <and_term>
+Next token is the binary_oper &
+Enter <bool_factor>
+Enter <bool_literal>
+Next token is the unary_oper !
+DEBUG: Did not match <bool_literal> (depth: 3)
+Next token is the unary_oper !
+Enter <bool_factor>
+Enter <bool_literal>
+Next token is the parenthesis (
+DEBUG: Did not match <bool_literal> (depth: 4)
+Next token is the parenthesis (
+Enter <bool_expr>
+Enter <and_term>
+Enter <bool_factor>
+Enter <bool_literal>
+Next token is the identifier a2
+DEBUG: Did not match <bool_literal> (depth: 7)
+Next token is the identifier a2
+Enter <relation_expr>
+Enter <id>
+Next token is the identifier a2
+Exit <id>
+Enter <relop>
+Next token is the binary_oper >
+Exit <relop>
+Exit <relation_expr>
+Exit <bool_factor>
+Next token is the identifier bar
+Exit <and_term>
+Next token is the binary_oper &
+Next token is the identifier w
+DEBUG: Did not match <bool_expr> (depth: 4)
+Enter <relation_expr>
+Enter <id>
+Next token is the identifier bar
+Exit <id>
+Enter <relop>
+Next token is the binary_oper &
+DEBUG: Did not match <relop> (depth: 5)
+DEBUG: Matched ID-only relation_expr
+Exit <relation_expr>
+Exit <bool_factor>
+Exit <bool_factor>
+Exit <bool_expr>
+Next token is the binary_oper &
+Enter <bool_factor>
+Enter <bool_literal>
+Next token is the identifier w
+DEBUG: Did not match <bool_literal> (depth: 2)
+Next token is the identifier w
+Enter <relation_expr>
+Enter <id>
+Next token is the identifier w
+Exit <id>
+Enter <relop>
+Next token is the binary_oper <
+Exit <relop>
+Exit <relation_expr>
+Exit <bool_factor>
+Next token is the identifier foo
+Exit <>
+Next token is the binary_oper |
+Enter <and_term>
+Enter <bool_factor>
+Enter <bool_literal>
+Next token is the identifier x
+DEBUG: Did not match <bool_literal> (depth: 2)
+Next token is the identifier foo
+Enter <relation_expr>
+Enter <id>
+Next token is the identifier foo
+Exit <id>
+Enter <relop>
+Next token is the binary_oper |
+DEBUG: Did not match <relop> (depth: 3)
+DEBUG: Matched ID-only relation_expr
+Exit <relation_expr>
+Exit <bool_factor>
+Exit <and_term>
+Next token is the binary_oper |
+The input string does not match the grammar. Current parse state: 
+[    <bool_expr>:  => Lexeme: {  }
+         <and_term>:  => Lexeme: {  }
+                 <relation_expr>:  => Lexeme: { identifier      foo }
+                     <id>:  => Lexeme: { identifier     foo }
+         <bool_factor>:  => Lexeme: { binary_oper       & }
+             <bool_factor>:  => Lexeme: { unary_oper    ! }
+                 <bool_expr>:  => Lexeme: { parenthesis ( }
+                     <and_term>:  => Lexeme: { parenthesis      ( }
+                             <relation_expr>:  => Lexeme: { identifier  
+a2 }
+                 <relation_expr>:  => Lexeme: { identifier      w }
+                     <id>:  => Lexeme: { identifier     w }
+         <relation_expr>:  => Lexeme: { identifier      w }
+             <id>:  => Lexeme: { identifier     w }
+             <relop>:  => Lexeme: { identifier  w }
+ <and_term>:  => Lexeme: { binary_oper  | }
+         <relation_expr>:  => Lexeme: { identifier      foo }
+             <id>:  => Lexeme: { identifier     foo }
+]
+
+Starting second test
+
+Enter <bool_expr>
+Enter <and_term>
+Enter <bool_factor>
+Enter <bool_literal>
+Next token is the identifier A1
+DEBUG: Did not match <bool_literal> (depth: 4)
+Next token is the identifier A1
+Enter <relation_expr>
+Enter <id>
+Next token is the identifier A1
+Exit <id>
+Enter <relop>
+Next token is the binary_oper &
+DEBUG: Did not match <relop> (depth: 5)
+DEBUG: Matched ID-only relation_expr
+Exit <relation_expr>
+Exit <bool_factor>
+Exit <and_term>
+Next token is the binary_oper &
+Enter <bool_factor>
+Enter <bool_literal>
+Next token is the identifier B1
+DEBUG: Did not match <bool_literal> (depth: 3)
+Next token is the identifier B1
+Enter <relation_expr>
+Enter <id>
+Next token is the identifier B1
+Exit <id>
+Enter <relop>
+Next token is the binary_oper |
+DEBUG: Did not match <relop> (depth: 4)
+DEBUG: Matched ID-only relation_expr
+Exit <relation_expr>
+Exit <bool_factor>
+Exit <bool_expr>
+Next token is the binary_oper |
+Exit <>
+Next token is the identifier A2
+Next token is the binary_oper &
+The input string does not match the grammar. Current parse state: 
+[    <bool_expr>:  => Lexeme: {  }
+         <and_term>:  => Lexeme: {  }
+                 <relation_expr>:  => Lexeme: { identifier      A1 }
+                     <id>:  => Lexeme: { identifier     A1 }
+             <relation_expr>:  => Lexeme: { identifier  B1 }
+                 <id>:  => Lexeme: { identifier B1 }
+]
+
+Done running tests. Report:
+1..2
