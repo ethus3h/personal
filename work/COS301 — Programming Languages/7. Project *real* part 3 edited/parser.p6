@@ -123,6 +123,7 @@ sub parse(List $tokens --> Nil) {
 
         sub give_back( --> Nil) {
             @state.pop();
+            say "DEBUG: Did not match <$currentRule>";
             $levelsCount = $levelsCount - 1;
             for @consumed {
                 unshift(@input, (shift(@consumed)))
