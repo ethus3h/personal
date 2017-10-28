@@ -156,6 +156,7 @@ sub parse(List $tokens --> Nil) {
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
+            accept
         }
 
         sub id( --> Nil) {
@@ -167,6 +168,7 @@ sub parse(List $tokens --> Nil) {
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
+            accept
         }
 
         sub relation_expr( --> Nil) {
@@ -188,6 +190,7 @@ sub parse(List $tokens --> Nil) {
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
+            accept
         }
 
         sub eof( --> Nil) {
@@ -239,6 +242,7 @@ sub parse(List $tokens --> Nil) {
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
+            accept
         }
 
         sub and_term( --> Nil) {
@@ -253,6 +257,7 @@ sub parse(List $tokens --> Nil) {
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
+            accept
         }
 
         sub bool_expr( --> Nil) {
@@ -268,6 +273,7 @@ sub parse(List $tokens --> Nil) {
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
+            accept
         }
     );
 
