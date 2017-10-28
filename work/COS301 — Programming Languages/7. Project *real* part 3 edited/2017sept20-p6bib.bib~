@@ -1,6 +1,6 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%        This file was created with JabRef 2.10.
+%       This file was created with JabRef 2.10.
 
 @article{P6FAQ,
 	address = {https://docs.perl6.org/language/faq},
@@ -79,8 +79,8 @@
 }
 
 @article{News,
+	address = {https://news.ycombinator.com/item?id=12888784},
 	author = {{Hacker News}},
-	booktitle = {{\url{https://news.ycombinator.com/item?id=12888784}}},
 	howpublished = {Web},
 	month = {Nov.},
 	note = {This is where I learned that Perl 6 Rationals aren't arbitrary-precision.},
