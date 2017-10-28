@@ -103,8 +103,6 @@ sub parse(List $tokens --> Nil) {
             }
             default {
                 say "Next token is the " ~ .key ~ " " ~ .value;
-                #say "    State: \n" ~ @state;
-                #say "    Consumed: \n" ~ @consumed;
                 return $_
             }
         }
@@ -182,6 +180,7 @@ sub parse(List $tokens --> Nil) {
                 CATCH {
                     default {
                         say "(Matched ID-only relation_expr)"
+                        accept
                     }
                 }
             }
