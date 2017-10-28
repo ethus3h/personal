@@ -115,7 +115,7 @@ sub parse(List $tokens --> Nil) {
         }
 
         sub accept( --> Nil) {
-            say "Exit <" ~ @currentRule.pop() ~ ">";
+            say "Exit <" ~ @currentRules.pop() ~ ">";
             $levelsCount = $levelsCount - 1;
         }
 
