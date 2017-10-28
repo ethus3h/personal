@@ -216,7 +216,7 @@ sub parse(List $tokens --> Nil) {
                         CATCH {
                             default {
                                 my $lptest where * eq '(';
-                                $lptest = $lexeme;
+                                $lptest = lexeme;
                                 $lexeme eq "(";
                                 bool_expr;
                                 my $rptest where * eq ')';
