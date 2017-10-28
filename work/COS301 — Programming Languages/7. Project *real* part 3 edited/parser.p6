@@ -77,6 +77,8 @@ sub lex(Str $code --> List) {
         @finishedTokens.push('identifier' => $token)
     }
 
+    @finishedTokens.push('EOF' => "");
+
     return @finishedTokens
 }
 
@@ -93,7 +95,7 @@ sub parse(List $tokens --> Nil) {
     (
         sub lexeme( --> Pair) {
             $_ = shift(@input);
-            say $_;
+            #say $_;
             $lexeme = ~ $_;
             unshift(@consumed, $_);
             when "" => "" {
@@ -187,6 +189,15 @@ sub parse(List $tokens --> Nil) {
             }
         }
 
+        sub eof( --> Nil) {
+            lexeme().key eq "EOF";
+            CATCH {
+                default {
+                    X::AdHoc.new(:payload<Did not match>).throw
+                }
+            }
+        }
+
         sub bool_factor( --> Nil) {
             enter "bool_factor";
             {
@@ -249,6 +260,7 @@ sub parse(List $tokens --> Nil) {
             while lexeme().value eq "|" {
                 and_term
             }
+            eof;
             CATCH {
                 default {
                     give_back;
