@@ -166,6 +166,7 @@ sub parse(List $tokens --> Nil) {
             #lexeme().key eq "identifier";
             CATCH {
                 default {
+                    say "BOIRCILLOICRBECRIBOECRIBCOERBICREOHUCR";
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
