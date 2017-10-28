@@ -170,12 +170,12 @@ sub parse(List $tokens --> Nil) {
             enter "relation_expr";
             id;
             {
-                while relop() {
+                if relop() {
                     id
                 }
                 CATCH {
                     default {
-                        say "(Matched ID-only relop)"
+                        say "(Matched ID-only relation_expr)"
                     }
                 }
             }
