@@ -118,10 +118,17 @@ sub parse(List $tokens --> Nil) {
             #say "    Consumed: \n" ~ @consumed;
         }
 
+        sub accept( --> Nil) {
+            say "Exit <$currentRule>";
+            $levelsCount = $levelsCount + 1;
+            @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
+            #say "    State: \n" ~ @state;
+            #say "    Consumed: \n" ~ @consumed;
+        }
+
         sub give_back( --> Nil) {
             @state.pop();
             $levelsCount = $levelsCount - 1;
-            say "Exit <" ~ $currentRule ~ ">";
             for @consumed {
                 unshift(@input, (shift(@consumed)))
             }
@@ -143,6 +150,7 @@ sub parse(List $tokens --> Nil) {
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
+            accept
         }
 
         sub relop( --> Nil) {
