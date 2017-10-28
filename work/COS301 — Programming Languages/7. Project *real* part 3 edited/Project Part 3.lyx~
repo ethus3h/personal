@@ -47,8 +47,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine natbib
-\cite_engine_type authoryear
+\cite_engine basic
+\cite_engine_type default
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -371,7 +371,7 @@ S///
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
-bibfiles "2017sept20-p6bib,update ffs"
+bibfiles "2017sept20-p6bib"
 options "apa"
 
 \end_inset
