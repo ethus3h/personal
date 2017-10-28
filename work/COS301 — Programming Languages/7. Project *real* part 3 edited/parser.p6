@@ -226,6 +226,7 @@ sub parse(List $tokens --> Nil) {
                                 $rptest = lexeme;
                                 CATCH {
                                     default {
+                                        give_back;
                                         relation_expr;
                                         CATCH {
                                             default {
