@@ -87,7 +87,7 @@ sub parse(List $tokens --> Nil) {
     my Pair @consumed;
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
-    my Str $lexeme = "";
+    my Str @lexeme;
     my Str @currentRules;
     my Int $levelsCount = 0;
 
@@ -96,7 +96,7 @@ sub parse(List $tokens --> Nil) {
         sub lexeme( --> Pair) {
             $_ = shift(@input);
             #say $_;
-            $lexeme = ~ $_;
+            @lexeme.push( ~ $_);
             unshift(@consumed, $_);
             when "" => "" {
                 # do nothing, we don't have any token yet
@@ -111,7 +111,7 @@ sub parse(List $tokens --> Nil) {
             say "Enter <$rule>";
             @currentRules.push($rule);
             $levelsCount = $levelsCount + 1;
-            @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
+            @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: \{" ~ @lexeme.pop() ~ " \}\n");
         }
 
         sub accept( --> Nil) {
