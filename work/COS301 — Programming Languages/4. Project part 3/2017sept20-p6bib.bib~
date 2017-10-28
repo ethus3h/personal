@@ -1,6 +1,6 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%      This file was created with JabRef 2.10.
+%       This file was created with JabRef 2.10.
 
 @article{P6FAQ,
 	author = {Documentation, Perl 6},
@@ -10,7 +10,7 @@
 	organization = {perl6.org},
 	owner = {kyan},
 	timestamp = {2017.09.20},
-	title = {{FAQ}: Frequently Asked Questions about {Perl} 6: {\url{https://docs.perl6.org/language/faq}}},
+	title = {{Fuh Q}: Frequently Asked Questions about {Perl} 6: {\url{https://docs.perl6.org/language/faq}}},
 	year = {2017}
 }
 
@@ -128,6 +128,7 @@
 	author = {Wikipedia},
 	howpublished = {Web},
 	note = {I used Wikipedia's article on Perl 6 as a way to find other articles and books to look at (as well as Fogler Library and Web search).},
-	title = {Perl 6: {\url{https://en.wikipedia.org/wiki/Perl_6}}}
+	title = {Perl 6: {\url{https://en.wikipedia.org/wiki/Perl_6}}},
+	year = {n.d.}
 }
 

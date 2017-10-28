@@ -114,20 +114,7 @@ In Perl 6, blocks are typically denoted by braces (
 ;
 \family default
 ), but the semicolons can be omitted in some circumstances, when the end
- of
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-url{rcahroichoerchueorchlicrhleorahrlicheo}}
-\end_layout
-
-\end_inset
-
- a statement is unambiguous.
+ of a statement is unambiguous.
  A block can be preceded by 
 \family typewriter
 -‌>
