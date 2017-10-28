@@ -302,19 +302,26 @@ sub parse(List $tokens --> Nil) {
 # Test suite
 (
     # Test lexer
+    say "Running lexer tests";
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
-    isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
-    isa-ok lex('A1 & B1 | A2 & B1 | (! C | A <> B )'), List;
+    say lex('foo & !( a2 > bar & w < foo | x < y)');
+    say lex('A1 & B1 | A2 & B1 | (! C | A <> B )');
+
+    say "";
+    say "Starting parser test";
+    say "";
+
     # Test parser
-    lex('A1 & B1 | A2 & B1 | (! C | A <> B )')
-        ==> parse;
-    say "";
-    say "Starting second test";
-    say "";
     lex('foo & !( a2 > bar & w < foo | x < y)')
         ==> parse;
+        say "";
+        say "Starting second test";
+        say "";
+    lex('A1 & B1 | A2 & B1 | (! C | A <> B )')
+        ==> parse;
 
+        say "";
     say "Done running tests. Report:";
     done-testing;
 );
