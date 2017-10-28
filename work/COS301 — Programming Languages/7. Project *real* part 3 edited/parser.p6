@@ -180,8 +180,7 @@ sub parse(List $tokens --> Nil) {
                 }
                 CATCH {
                     default {
-                        say "DEBUG: Matched ID-only relation_expr";
-                        accept
+                        say "DEBUG: Matched ID-only relation_expr"
                     }
                 }
             }
@@ -216,8 +215,8 @@ sub parse(List $tokens --> Nil) {
                         CATCH {
                             default {
                                 my $lptest where * eq '(';
+                                # [sic] — $lexeme here but lexeme in a few lines
                                 $lptest = $lexeme;
-                                $lexeme eq "(" or X::AdHoc.new(:payload<Did not match>).throw;
                                 bool_expr;
                                 my $rptest where * eq ')';
                                 $rptest = lexeme;
