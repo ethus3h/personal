@@ -1,0 +1,869 @@
+\batchmode
+\makeatletter
+\def\input@path{{\string"/Ember Library/Ember satellite projects/personal/work/COS301 — Programming Languages/7. Project *real* part 3 edited/\string"/}}
+\makeatother
+\documentclass[17pt,english]{extarticle}
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle]{Wreathe}
+\setsansfont[Scale=0.7,Mapping=tex-text]{Linux Biolinum O}
+\setmonofont[Scale=0.7]{Fira Code}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage[authoryear]{natbib}
+\setstretch{1.5}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{indentfirst}
+\setmonofont[
+  Contextuals={Alternate}
+]{Fira Code}
+\usepackage{hyperref}
+\usepackage{url}
+
+\makeatother
+
+\usepackage{listings}
+\lstset{basicstyle={\texttt},
+columns=fullflexible,
+keepspaces=true,
+literate={-->}{\texttt{-->}}{1} {->}{\texttt{->}}{1} {==>}{\texttt{==>}}{1} {=>}{\texttt{=>}}{1}}
+\usepackage{xunicode}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\renewcommand{\lstlistingname}{Listing}
+
+\begin{document}
+
+\title{Perl 6: Project: Part 3}
+
+
+\author{Elliot Chandler (Wallace)}
+
+
+\date{10 October 2017}
+
+\maketitle
+
+\subsubsection*{Basic syntactic structure, including statement terminators or separators,
+block structure, syntactic peculiarities, etc.}
+
+In Perl 6, blocks are typically denoted by braces (\texttt{\{}, \texttt{\}})
+and can be nested. Statements are delimited by semicolons (\texttt{;}),
+but the semicolons can be omitted in some circumstances, when the
+end of a statement is unambiguous. A block can be preceded by \texttt{-‌>},
+with an interceding list of variables, called a \emph{pointy block},
+which acts similarly to an anonymous function. Parentheses can be
+used to denote semantic divisions within a given block. Perl 6 has
+five types of variables, denoted by one of four indicators called
+\emph{sigils}, or by the absence of a sigil; these determine the default
+type of the variable, affect how assignment to the variable takes
+place, and possibly introduce a type constraint on the variable \citep{Documentation}.
+
+
+\subsubsection*{The units or levels of scope and the nature and type (runtime or
+compile-time) of name bindings within the different levels of scope.}
+
+By default, the scope of variables in Perl 6 is determined by the
+\emph{declarator} with which the variable was declared (most commonly
+\texttt{my}). Perl 6 uses a variety of modifiers, called \emph{twigils},
+to alter the default scoping \citep{Documentation}. There are seven
+declarators and two declarator-style prefixes, and there are nine
+twigils (not counting the absence of a twigil) \citep{Documentation}. 
+
+
+\subsubsection*{Primitive data types available, including range limitations or lack
+thereof.}
+
+Of the 260 built-in types in Perl 6, 47 of them are primitive types.
+All types are subtypes of \texttt{Mu} \citep{Documentation}. Things
+that can be numbers are subtypes of \texttt{Numeric}. Common number
+types are \texttt{Int}, \texttt{Num}, and \texttt{Rat}. \texttt{Int}s
+do not restrict the range of values they can hold, beyond only accepting
+integers. \texttt{Num}s usually hold either ``an IEEE 754 64-bit
+floating point'' \citep{Documentation} value, \texttt{Inf} (infinity,
+or a number too large to store in a \texttt{Num}), or \texttt{NaN}
+(not a number). \texttt{Rat}s are rational numbers, so they do not
+accumulate errors like floating-point numbers (in Perl 6, \texttt{Num}s)
+do. Their denominators are limited to 64 bits. If one desires a \texttt{Rat}
+that does not have a restriction on the values of its numerator and
+denominator, a \texttt{FatRat} can be used instead. In addition, the
+\texttt{Real} and \texttt{Complex} types are available. A \texttt{Real}
+can be created from the non-imaginary numeric types, and a \texttt{Complex}
+can be created from two \texttt{Real}s representing the number's real
+and imaginary parts \citep{Documentation}. 
+
+
+\subsubsection*{Operators for primitive data types and their precedence and associativity.}
+
+Perl 6 has twenty-seven levels of precedence. All operators can be
+written as subroutines \citep{Documentation}. Custom operators are
+allowed, and can have their precedence specified relative to the built-in
+operators. Most operators can be overloaded. There are three types
+of associativity for unary operators: left-associative, right-associative,
+and non-associative. Binary operators add to these three chain-associative
+and list-associative. The position of operators relative to their
+operand(s) has five categories: prefix (preceding the operand), infix
+(between two operands), postfix (succeding the operand), circumfix
+(surrounding the operand — `bracketing' operators), and postcircumfix
+(bracketing the second of two operands). These five categories, combined
+with the operator, can be written as subroutines, as in this example
+from the documentation: \texttt{circumfix:«{[} {]}»(<a b c>)}, being
+equivalent to \texttt{{[}<a b c>{]}}. Some operators can be created
+by combining other operators together, such as type coersion and assignment
+(\texttt{\textasciitilde{}} coerces to a string, and \texttt{=} assigns;
+combined, \texttt{\textasciitilde{}=} coerces the right operand to
+a string and assigns it to the left operand). There are also the \texttt{s///}
+and \texttt{S///} substitution operators, but the documentation is,
+as far as I could tell, unclear on which of the above types of operator
+they fall into, and does not state clearly whether the regular rules
+that apply to operators apply to them.
+
+\newpage{}\bibliographystyle{apa}
+\nocite{*}
+\bibliography{0_Ember_Library_Ember_satellite_projects_person___oject__real__part_3_edited_2017sept20-p6bib}
+\newpage{}
+
+
+\part*{Appendix: Tables — after \citealp{Documentation} }
+
+
+\section*{Sigils}
+
+{\scriptsize{}}%
+\begin{tabular}{|c|c|>{\centering}p{0.2\linewidth}|c|}
+\hline 
+\textbf{\small{}Sigil} &
+\textbf{\small{}Type constraint} &
+\textbf{\small{}Default type} &
+\textbf{\small{}Assignment}\tabularnewline
+\hline 
+\hline 
+\texttt{\small{}\$} &
+\texttt{\small{}Mu}{\small{} (no constraint)} &
+{\small{}Any} &
+{\small{}item}\tabularnewline
+\hline 
+\texttt{\small{}@} &
+\texttt{\small{}Positional} &
+{\small{}Array} &
+{\small{}list}\tabularnewline
+\hline 
+\texttt{\small{}\%} &
+\texttt{\small{}Associative} &
+{\small{}Hash} &
+{\small{}list}\tabularnewline
+\hline 
+\texttt{\small{}\&} &
+\texttt{\small{}Callable} &
+{\small{}Callable} &
+{\small{}item}\tabularnewline
+\hline 
+{\small{}none (declared with }\texttt{\small{}\textbackslash{}}{\small{})} &
+ &
+{\small{}(does not create containers or enforce context)} &
+\tabularnewline
+\hline 
+\end{tabular}{\scriptsize \par}
+
+
+\section*{Declarators}
+
+{\scriptsize{}}%
+\begin{tabular}{|c|>{\centering}p{0.3\linewidth}|}
+\hline 
+\textbf{\small{}Declarator} &
+\textbf{\small{}Effect}\tabularnewline
+\hline 
+\hline 
+\texttt{\small{}my} &
+{\small{}Introduces lexically scoped names}\tabularnewline
+\hline 
+\texttt{\small{}our} &
+{\small{}Introduces package-scoped names}\tabularnewline
+\hline 
+\texttt{\small{}has} &
+{\small{}Introduces attribute names}\tabularnewline
+\hline 
+\texttt{\small{}anon} &
+{\small{}Introduces names that are private to the construct}\tabularnewline
+\hline 
+\texttt{\small{}state} &
+{\small{}Introduces lexically scoped but persistent names}\tabularnewline
+\hline 
+\texttt{\small{}augment} &
+{\small{}Adds definitions to an existing name}\tabularnewline
+\hline 
+\texttt{\small{}supersede} &
+{\small{}Replaces definitions of an existing name}\tabularnewline
+\hline 
+\texttt{\small{}temp}{\small{} (prefix: not a declarator)} &
+{\small{}Restores a variable's value at the end of scope}\tabularnewline
+\hline 
+\texttt{\small{}let}{\small{} (prefix: not a declarator)} &
+{\small{}Restores a variable's value at the end of scope if the block
+exits unsuccessfully}\tabularnewline
+\hline 
+\end{tabular}{\scriptsize \par}
+
+
+\section*{Twigils}
+
+{\scriptsize{}}%
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{\small{}Twigil} &
+\textbf{\small{}Scope}\tabularnewline
+\hline 
+\hline 
+{\small{}(none)} &
+{\small{}Based only on declarator}\tabularnewline
+\hline 
+\texttt{\small{}{*}} &
+{\small{}Dynamic}\tabularnewline
+\hline 
+\texttt{\small{}!} &
+{\small{}Attribute (class member)}\tabularnewline
+\hline 
+\texttt{\small{}?} &
+{\small{}Compile-time variable}\tabularnewline
+\hline 
+\texttt{\small{}.} &
+{\small{}Method (not really a variable)}\tabularnewline
+\hline 
+\texttt{\small{}<} &
+{\small{}Index into match object (not really a variable)}\tabularnewline
+\hline 
+\texttt{\small{}\textasciicircum{}} &
+{\small{}Self-declared formal positional parameter}\tabularnewline
+\hline 
+\texttt{\small{}:} &
+{\small{}Self-declared formal named parameter}\tabularnewline
+\hline 
+\texttt{\small{}=} &
+{\small{}Pod variables}\tabularnewline
+\hline 
+\texttt{\small{}\textasciitilde{}} &
+{\small{}The sublanguage seen by the parser at this lexical spot}\tabularnewline
+\hline 
+\end{tabular}{\scriptsize \par}
+
+
+\section*{Built-in types}
+
+\begin{longtable}{|c|c|c|}
+\hline 
+\textbf{\small{}Category} &
+\textbf{\small{}Type} &
+\textbf{\small{}Description}\tabularnewline
+\hline 
+\hline 
+{\small{}class} &
+\texttt{\small{}AST} &
+{\small{}Abstract representation of a piece of source code}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Any} &
+{\small{}Thing/object}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Block} &
+{\small{}Code object with its own lexical scope}\tabularnewline
+\hline 
+{\small{}enum} &
+\texttt{\small{}Bool} &
+{\small{}Logical boolean}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}CallFrame} &
+{\small{}Capturing current frame state}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Callable} &
+{\small{}Invocable code object}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Code} &
+{\small{}Code object}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Complex} &
+{\small{}Complex number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}ComplexStr} &
+{\small{}Dual Value Complex number and String}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Cool} &
+{\small{}Object that can be treated as both a string and number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Date} &
+{\small{}Calendar date}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}DateTime} &
+{\small{}Calendar date with time}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Dateish} &
+{\small{}Object that can be treated as a date}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Duration} &
+{\small{}Length of time}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}FatRat} &
+{\small{}Rational number (arbitrary-precision)}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Instant} &
+{\small{}Specific moment in time}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Int} &
+{\small{}Integer (arbitrary-precision)}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}IntStr} &
+{\small{}Dual Value Integer and String}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Junction} &
+{\small{}Logical superposition of values}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Label} &
+{\small{}Tagged location in the source code}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Macro} &
+{\small{}Compile-time routine}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Method} &
+{\small{}Member function}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Mu} &
+{\small{}The root of the Perl 6 type hierarchy.}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Nil} &
+{\small{}Absence of a value or a benign failure}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Num} &
+{\small{}Floating-point number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}NumStr} &
+{\small{}Dual Value Floating-point number and String}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Numeric} &
+{\small{}Number or object that can act as a number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}ObjAt} &
+{\small{}Unique identification for an object}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Parameter} &
+{\small{}Element of a signature}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Proxy} &
+{\small{}Item container with custom storage and retrieval}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Rat} &
+{\small{}Rational number (limited-precision)}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}RatStr} &
+{\small{}Dual Value Rational number and String}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Rational} &
+{\small{}Number stored as numerator and denominator}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Real} &
+{\small{}Non-complex number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Routine} &
+{\small{}Code object with its own lexical scope and `return` handling}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Scalar} &
+{\small{}A mostly transparent container used for indirections}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Signature} &
+{\small{}Parameter list pattern}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Str} &
+{\small{}String of characters}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Stringy} &
+{\small{}String or object that can act as a string}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Sub} &
+{\small{}Subroutine}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Submethod} &
+{\small{}Member function that is not inherited by subclasses}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Variable} &
+{\small{}Object representation of a variable for use in traits}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Version} &
+{\small{}Module version descriptor}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Whatever} &
+{\small{}Placeholder for an unspecified value/argument}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}WhateverCode} &
+{\small{}Code object constructed by Whatever-currying}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}atomicint} &
+{\small{}Integer (native storage at the platform's atomic operation
+size)}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}int} &
+{\small{}Integer (native storage; machine precision)}\tabularnewline
+\hline 
+\end{longtable}
+
+
+\section*{Levels of precedence}
+
+{\scriptsize{}}%
+\begin{longtable}{|c|c|>{\centering}p{0.3\linewidth}|}
+\hline 
+\textbf{\small{}Associativity} &
+\textbf{\small{}Level of precedence} &
+\textbf{\small{}Examples}\tabularnewline
+\hline 
+\hline 
+{\small{}N} &
+{\small{}Terms } &
+\texttt{\small{}42 3.14 \textquotedbl{}eek\textquotedbl{} qq{[}\textquotedbl{}foo\textquotedbl{}{]}
+\$x :!verbose @\$array}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Method postfix } &
+\texttt{\small{}.meth .+ .? .{*} .() .{[}{]} .\{\} .<> .«» .:: .=
+.\textasciicircum{} .:}\tabularnewline
+\hline 
+{\small{}N} &
+{\small{}Autoincrement } &
+\texttt{\small{}++ -{}-}\tabularnewline
+\hline 
+{\small{}R} &
+{\small{}Exponentiation } &
+\texttt{\small{}{*}{*}}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Symbolic unary } &
+\texttt{\small{}! + - \textasciitilde{} ? | || +\textasciicircum{}
+\textasciitilde{}\textasciicircum{} ?\textasciicircum{} \textasciicircum{}}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Dotty infix } &
+\texttt{\small{}.= .}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Multiplicative } &
+\texttt{\small{}{*} / \% \%\% +\& +< +> \textasciitilde{}\& \textasciitilde{}<
+\textasciitilde{}> ?\& div mod gcd lcm}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Additive } &
+\texttt{\small{}+ - +| +\textasciicircum{} \textasciitilde{}| \textasciitilde{}\textasciicircum{}
+?| ?\textasciicircum{}}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Replication } &
+\texttt{\small{}x xx}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Concatenation } &
+\texttt{\small{}\textasciitilde{}}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Junctive and } &
+\texttt{\small{}\&}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Junctive or } &
+\texttt{\small{}| \textasciicircum{}}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Named unary } &
+\texttt{\small{}temp let}\tabularnewline
+\hline 
+{\small{}N} &
+{\small{}Structural infix } &
+\texttt{\small{}but does <=> leg cmp .. ..\textasciicircum{} \textasciicircum{}.. \textasciicircum{}..\textasciicircum{}}\tabularnewline
+\hline 
+{\small{}C} &
+{\small{}Chaining infix } &
+\texttt{\small{}!= == < <= > >= eq ne lt le gt ge \textasciitilde{}\textasciitilde{}
+=== eqv !eqv =\textasciitilde{}=}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Tight and } &
+\texttt{\small{}\&\&}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Tight or } &
+\texttt{\small{}|| \textasciicircum{}\textasciicircum{} // min max}\tabularnewline
+\hline 
+{\small{}R} &
+{\small{}Conditional } &
+\texttt{\small{}?? !! ff fff}\tabularnewline
+\hline 
+{\small{}R} &
+{\small{}Item assignment } &
+\texttt{\small{}= => += -= {*}{*}= xx=}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Loose unary } &
+\texttt{\small{}so not}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Comma operator } &
+\texttt{\small{}, :}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}List infix } &
+\texttt{\small{}Z minmax X X\textasciitilde{} X{*} Xeqv ...}\tabularnewline
+\hline 
+{\small{}R} &
+{\small{}List prefix } &
+\texttt{\small{}print push say die map substr ... {[}+{]} {[}{*}{]}
+any Z=}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Loose and } &
+\texttt{\small{}and andthen notandthen}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Loose or } &
+\texttt{\small{}or xor orelse}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Sequencer } &
+\texttt{\small{}<==, ==>, <\textcompwordmark{}<==, ==>\textcompwordmark{}>}\tabularnewline
+\hline 
+{\small{}N} &
+{\small{}Terminator } &
+\texttt{\small{}; \{...\}, unless, extra ), {]}, \}}\tabularnewline
+\hline 
+\end{longtable}{\scriptsize \par}
+
+
+\part*{Appendix: Program listing}
+
+This program parses a simple grammar.
+
+\texttt{}
+\begin{lstlisting}[numbers=left,basicstyle={\scriptsize\ttfamily},extendedchars=true]
+#!/usr/bin/env perl6
+
+use v6.c;
+use Test;
+
+sub lex(Str $code --> List) {
+    my Pair @finishedTokens;
+    my Str $token;
+    my Str $prevChar = "None";
+
+    for $code.split("", :skip-empty) -> $char {
+        $_ := $char;
+
+        # Subroutines for when something interesting is found
+        (
+            sub continue( --> Nil) {
+                # Accepted an identifier-part
+                $token ~= $char;
+                $prevChar = $char;
+                next
+            }
+
+            sub push(Str $type --> Nil) {
+                $_ := $type;
+                if $prevChar ~~ /<:L + :N>/ {
+                    # Found something non-identifier after an identifier,
+                    #   so push the identifier
+                    @finishedTokens.push("identifier" => "$token");
+                    $token = ""
+                }
+                # Found a token
+                $token ~= $char;
+                @finishedTokens.push($type => "$token");
+                $prevChar = $char;
+                $token = "";
+                next
+            }
+        );
+
+        # Rules for figuring out what the lexer is looking at
+        (
+            if $token ∈ <tru fals> {
+                when "e" {
+                    push 'bool_literal'
+                }
+            }
+            when /<:L + :N>/ {
+                when /<:N>/ && $prevChar !~~ /<:L>/ {
+                    fail "Expected an identifier or an operator."
+                }
+                default {
+                    continue
+                }
+            }
+            if $_ ∈ < ( ) > {
+                push 'parenthesis'
+            }
+            when '!' {
+                push 'unary_oper'
+            }
+            when $_ ∈ < & | \< \> > {
+                push 'binary_oper'
+            }
+            when /\s/ {
+                # Skip this space
+                next
+            }
+            default {
+                fail 'Input character is not in the language: "' ~ $char ~ '"'
+            }
+        );
+    }
+
+    # If there aren't any more characters to consume
+    # but there is still a token, it's an identifier
+    if $token ne '' {
+        @finishedTokens.push('identifier' => $token)
+    }
+
+    return @finishedTokens
+}
+
+sub parse(List $tokens --> Nil) {
+    my Pair @state;
+    my Pair @consumed;
+    my Pair @input = $tokens.clone;
+    my Pair $token = "" => "";
+    my Str $lexeme = "";
+
+    # Support subroutines for the parser
+    (
+        sub lexeme( --> Pair) {
+            $_ = shift(@input);
+            say $_;
+            $lexeme = ~ $_;
+            unshift(@consumed, $_);
+            when "" => "" {
+                # do nothing, we don't have any token yet
+            }
+            default {
+                say "Next token is the " ~ .key ~ " " ~ .value;
+                #say "    State: \n" ~ @state;
+                #say "    Consumed: \n" ~ @consumed;
+                return $_
+            }
+        }
+
+        sub enter(Str $rule --> Nil) {
+            say "Enter <$rule>";
+            @state.push("    " x @consumed.elems ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
+            #say "    State: \n" ~ @state;
+            #say "    Consumed: \n" ~ @consumed;
+        }
+
+        sub give_back( --> Nil) {
+            @state.pop();
+            say "Releasing tokens ";
+            for @consumed {
+                unshift(@input, (shift(@consumed)))
+            }
+            @consumed = < >;
+            #say "    State: \n" ~ @state;
+            #say "    Consumed: \n" ~ @consumed;
+        }
+    );
+
+    # Rules for the parser
+    (
+        sub bool_literal( --> Nil) {
+            enter "bool_literal";
+            my Str $test where * eq "bool_literal";
+            $test = lexeme().key;
+            CATCH {
+                default {
+                    give_back;
+                    X::AdHoc.new(:payload<Did not match>).throw
+                }
+            }
+        }
+
+        sub relop( --> Nil) {
+            enter "relop";
+            my Str $test where * ∈ < \< \> >;
+            $test = lexeme().value;
+            CATCH {
+                default {
+                    give_back;
+                    X::AdHoc.new(:payload<Did not match>).throw
+                }
+            }
+        }
+
+        sub id( --> Nil) {
+            enter "id";
+            lexeme().key eq "identifier";
+            CATCH {
+                default {
+                    give_back;
+                    X::AdHoc.new(:payload<Did not match>).throw
+                }
+            }
+        }
+
+        sub relation_expr( --> Nil) {
+            enter "relation_expr";
+            id;
+            {
+                while relop() {
+                    id
+                }
+                CATCH {
+                    default {
+                        say "(Matched short relop)"
+                    }
+                }
+            }
+            CATCH {
+                default {
+                    give_back;
+                    X::AdHoc.new(:payload<Did not match>).throw
+                }
+            }
+        }
+
+        sub bool_factor( --> Nil) {
+            enter "bool_factor";
+            {
+                bool_literal();
+                CATCH {
+                    default {
+                        my Str $lexeme = lexeme().value;
+                        my $extest where * eq '!';
+                        $extest = $lexeme;
+                        bool_factor;
+                        CATCH {
+                            default {
+                                my $lptest where * eq '(';
+                                $lptest = $lexeme;
+                                $lexeme eq "(";
+                                bool_expr;
+                                my $rptest where * eq ')';
+                                $rptest = lexeme;
+                                CATCH {
+                                    default {
+                                        relation_expr
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            CATCH {
+                default {
+                    give_back;
+                    X::AdHoc.new(:payload<Did not match>).throw
+                }
+            }
+        }
+
+        sub and_term( --> Nil) {
+            enter "and_term";
+            bool_factor;
+            while lexeme().value eq "&" {
+                bool_factor
+            }
+            CATCH {
+                default {
+                    give_back;
+                    X::AdHoc.new(:payload<Did not match>).throw
+                }
+            }
+        }
+
+        sub bool_expr( --> Nil) {
+            enter "bool_expr";
+            and_term;
+            while lexeme().value eq "|" {
+                and_term
+            }
+            CATCH {
+                default {
+                    give_back;
+                    X::AdHoc.new(:payload<Did not match>).throw
+                }
+            }
+        }
+    );
+
+    # Enter the parser from the top of the tree
+    bool_expr;
+    if @input.elems > 0 {
+        fail "The input string does not match the grammar. Unused input: " ~ @input
+    }
+    say @state;
+}
+
+# Test suite
+(
+    # Test lexer
+    nok lex('String qux?');
+    isa-ok lex('Stringqux'), List;
+    isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
+
+    # Test parser
+    #lex('foo & !( a2 > bar & w < foo | x < y)')
+    #    ==> parse;
+    say parse(lex('foo & !( a2 > bar & w < foo | x < y('));
+
+    say "Done running tests. Report:";
+    done-testing;
+);
+\end{lstlisting}
+
+\end{document}

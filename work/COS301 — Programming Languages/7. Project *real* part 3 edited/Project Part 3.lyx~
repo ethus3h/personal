@@ -132,7 +132,14 @@ sigils
 \emph default
 , or by the absence of a sigil; these determine the default type of the
  variable, affect how assignment to the variable takes place, and possibly
- introduce a type constraint on the variable.
+ introduce a type constraint on the variable 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
