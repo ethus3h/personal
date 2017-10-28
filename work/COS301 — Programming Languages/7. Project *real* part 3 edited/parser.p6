@@ -83,7 +83,7 @@ sub lex(Str $code --> List) {
 }
 
 sub parse(List $tokens --> Nil) {
-    my Pair @state = ("" => "");
+    my Pair @state = ( "" => "" );
     my Pair @consumed;
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
