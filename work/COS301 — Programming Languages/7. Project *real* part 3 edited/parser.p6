@@ -163,6 +163,7 @@ sub parse(List $tokens --> Nil) {
             my $foo=lexeme();
             say $foo;
             say $foo.key eq "identifier";
+            $foo.key eq "identifier";
             #lexeme().key eq "identifier";
             CATCH {
                 default {
