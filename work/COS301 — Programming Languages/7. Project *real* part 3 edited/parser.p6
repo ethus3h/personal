@@ -83,7 +83,7 @@ sub lex(Str $code --> List) {
 }
 
 sub parse(List $tokens --> Nil) {
-    my Pair @state = ( "" => "" );
+    my Pair @state;
     my Pair @consumed;
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
@@ -286,13 +286,11 @@ sub parse(List $tokens --> Nil) {
     bool_expr;
     CATCH {
         default {
-            shift(@state);
             say "The input string does not match the grammar. Current parse state: ";
             say @state;
             fail "The input string does not match the grammar. Unused input: " ~ @input
         }
     }
-    shift(@state);
     if @input.elems > 0 {
         say "The input string does not match the grammar. Current parse state: ";
         say @state;
