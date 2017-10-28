@@ -305,11 +305,15 @@ sub parse(List $tokens --> Nil) {
     nok lex('String qux?');
     isa-ok lex('Stringqux'), List;
     isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
-
+    isa-ok lex('A1 & B1 | A2 & B1 | (! C | A <> B )'), List;
     # Test parser
+    lex('A1 & B1 | A2 & B1 | (! C | A <> B )')
+        ==> parse;
+    say "";
+    say "Starting second test";
+    say "";
     lex('foo & !( a2 > bar & w < foo | x < y)')
         ==> parse;
-    #say parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
 
     say "Done running tests. Report:";
     done-testing;
