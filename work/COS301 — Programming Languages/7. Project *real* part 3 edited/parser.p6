@@ -90,6 +90,7 @@ sub parse(List $tokens --> Nil) {
     my Str $lexeme = "";
     my Str @currentRules = "";
     my Int $levelsCount = 0;
+    @state.push("");
 
     # Support subroutines for the parser
     (
