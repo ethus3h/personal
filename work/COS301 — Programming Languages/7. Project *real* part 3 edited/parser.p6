@@ -114,16 +114,11 @@ sub parse(List $tokens --> Nil) {
             $currentRule = $rule;
             $levelsCount = $levelsCount + 1;
             @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
-            #say "    State: \n" ~ @state;
-            #say "    Consumed: \n" ~ @consumed;
         }
 
         sub accept( --> Nil) {
             say "Exit <$currentRule>";
-            $levelsCount = $levelsCount + 1;
-            @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
-            #say "    State: \n" ~ @state;
-            #say "    Consumed: \n" ~ @consumed;
+            $levelsCount = $levelsCount - 1;
         }
 
         sub give_back( --> Nil) {
@@ -133,8 +128,6 @@ sub parse(List $tokens --> Nil) {
                 unshift(@input, (shift(@consumed)))
             }
             @consumed = < >;
-            #say "    State: \n" ~ @state;
-            #say "    Consumed: \n" ~ @consumed;
         }
     );
 
