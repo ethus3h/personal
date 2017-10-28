@@ -371,7 +371,7 @@ S///
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
-bibfiles "2017sept20-p6bib"
+bibfiles "2017sept20-p6bib,update ffs"
 options "apa"
 
 \end_inset

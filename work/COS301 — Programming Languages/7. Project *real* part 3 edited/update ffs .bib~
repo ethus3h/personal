@@ -1,6 +1,6 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%        This file was created with JabRef 2.10.
+%       This file was created with JabRef 2.10.
 
 @article{P6FAQ,
 	author = {Documentation, Perl 6},
@@ -10,7 +10,7 @@
 	organization = {perl6.org},
 	owner = {kyan},
 	timestamp = {2017.09.20},
-	title = {{FAacgodieQ}: Frequently Asked Questions about {Perl} 6: {\url{https://docs.perl6.org/language/faq}}},
+	title = {{FAQ}: Frequently Asked Questions about {Perl} 6: {\url{https://docs.perl6.org/language/faq}}},
 	year = {2017}
 }
 
