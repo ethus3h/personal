@@ -88,7 +88,7 @@ sub parse(List $tokens --> Nil) {
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
     my Str $lexeme = "";
-    my Str @currentRules = "";
+    my Str @currentRules;
     my Int $levelsCount = 0;
 
     # Support subroutines for the parser
