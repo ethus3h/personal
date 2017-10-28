@@ -86,6 +86,7 @@ sub parse(List $tokens --> Nil) {
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
     my Str $lexeme = "";
+    my Int $levelsCount = 0;
 
     # Support subroutines for the parser
     (
@@ -107,7 +108,8 @@ sub parse(List $tokens --> Nil) {
 
         sub enter(Str $rule --> Nil) {
             say "Enter <$rule>";
-            @state.push("    " x @consumed.elems ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
+            $levelsCount = $levelsCount + 1;
+            @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
             #say "    State: \n" ~ @state;
             #say "    Consumed: \n" ~ @consumed;
         }
