@@ -4069,7 +4069,8 @@ Appendix: Program listing
 \end_layout
 
 \begin_layout Standard
-This program parses a simple grammar.
+This program tries to parse a simple grammar, although in the end I was
+ not able to get it to work.
 \end_layout
 
 \begin_layout Standard
@@ -4086,8 +4087,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\noindent
-\align left
 
 \end_layout
 
@@ -4478,6 +4477,15 @@ s/ {
 
 \begin_layout Plain Layout
 
+    @finishedTokens.push('EOF' => "");
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
     return @finishedTokens
 \end_layout
 
@@ -4522,6 +4530,16 @@ sub parse(List $tokens --> Nil) {
 
 \begin_layout Plain Layout
 
+    my Str @currentRules = "";
+\end_layout
+
+\begin_layout Plain Layout
+
+    my Int $levelsCount = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -4546,7 +4564,7 @@ sub parse(List $tokens --> Nil) {
 
 \begin_layout Plain Layout
 
-            say $_;
+            #say $_;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4586,20 +4604,6 @@ sub parse(List $tokens --> Nil) {
 
 \begin_layout Plain Layout
 
-                #say "    State: 
-\backslash
-n" ~ @state;
-\end_layout
-
-\begin_layout Plain Layout
-
-                #say "    Consumed: 
-\backslash
-n" ~ @consumed;
-\end_layout
-
-\begin_layout Plain Layout
-
                 return $_
 \end_layout
 
@@ -4629,8 +4633,17 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-            @state.push("    " x @consumed.elems ~ "<$rule>: " => "Lexeme:
- 
+            @currentRules.push($rule);
+\end_layout
+
+\begin_layout Plain Layout
+
+            $levelsCount = $levelsCount + 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+            @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: 
 \backslash
 { $lexeme 
 \backslash
@@ -4641,16 +4654,26 @@ n");
 
 \begin_layout Plain Layout
 
-            #say "    State: 
-\backslash
-n" ~ @state;
+        }
 \end_layout
 
 \begin_layout Plain Layout
 
-            #say "    Consumed: 
-\backslash
-n" ~ @consumed;
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub accept( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            say "Exit <" ~ @currentRules.pop() ~ ">";
+\end_layout
+
+\begin_layout Plain Layout
+
+            $levelsCount = $levelsCount - 1;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4670,11 +4693,6 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
             @state.pop();
-\end_layout
-
-\begin_layout Plain Layout
-
-            say "Releasing tokens ";
 \end_layout
 
 \begin_layout Plain Layout
@@ -4699,16 +4717,28 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-            #say "    State: 
-\backslash
-n" ~ @state;
+        }
 \end_layout
 
 \begin_layout Plain Layout
 
-            #say "    Consumed: 
-\backslash
-n" ~ @consumed;
+        sub failMatch( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            say "DEBUG: Did not match <" ~ @currentRules.pop() ~ "> (depth:
+ $levelsCount)";
+\end_layout
+
+\begin_layout Plain Layout
+
+            $levelsCount = $levelsCount - 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+            give_back;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4767,7 +4797,7 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                    give_back;
+                    failMatch;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4783,6 +4813,11 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
             }
+\end_layout
+
+\begin_layout Plain Layout
+
+            accept
 \end_layout
 
 \begin_layout Plain Layout
@@ -4830,7 +4865,7 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                    give_back;
+                    failMatch;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4846,6 +4881,11 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
             }
+\end_layout
+
+\begin_layout Plain Layout
+
+            accept
 \end_layout
 
 \begin_layout Plain Layout
@@ -4869,7 +4909,8 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-            lexeme().key eq "identifier";
+            lexeme().key eq "identifier" or X::AdHoc.new(:payload<Did not
+ match>).throw;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4884,7 +4925,7 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                    give_back;
+                    failMatch;
 \end_layout
 
 \begin_layout Plain Layout
@@ -4900,6 +4941,11 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
             }
+\end_layout
+
+\begin_layout Plain Layout
+
+            accept
 \end_layout
 
 \begin_layout Plain Layout
@@ -4928,12 +4974,16 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
             {
 \end_layout
 
 \begin_layout Plain Layout
 
-                while relop() {
+                if relop() {
 \end_layout
 
 \begin_layout Plain Layout
@@ -4958,7 +5008,12 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                        say "(Matched short relop)"
+                        say "DEBUG: Matched ID-only relation_expr";
+\end_layout
+
+\begin_layout Plain Layout
+
+                        accept
 \end_layout
 
 \begin_layout Plain Layout
@@ -4988,7 +5043,56 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                    give_back;
+                    failMatch;
+\end_layout
+
+\begin_layout Plain Layout
+
+                    X::AdHoc.new(:payload<Did not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                }
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+            accept
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        sub eof( --> Nil) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            lexeme().key eq "EOF" or X::AdHoc.new(:payload<Did not match>).throw;
+\end_layout
+
+\begin_layout Plain Layout
+
+            CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                default {
 \end_layout
 
 \begin_layout Plain Layout
@@ -5032,7 +5136,7 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                bool_literal();
+                bool_literal;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5082,12 +5186,13 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                                $lptest = $lexeme;
+                                # [sic] — $lexeme here but lexeme in a few
+ lines
 \end_layout
 
 \begin_layout Plain Layout
 
-                                $lexeme eq "(";
+                                $lptest = $lexeme;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5117,7 +5222,43 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                                        relation_expr
+                                        give_back;
+\end_layout
+
+\begin_layout Plain Layout
+
+                                        relation_expr;
+\end_layout
+
+\begin_layout Plain Layout
+
+                                        CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+                                            default {
+\end_layout
+
+\begin_layout Plain Layout
+
+                                                failMatch;
+\end_layout
+
+\begin_layout Plain Layout
+
+                                                X::AdHoc.new(:payload<Did
+ not match>).throw
+\end_layout
+
+\begin_layout Plain Layout
+
+                                            }
+\end_layout
+
+\begin_layout Plain Layout
+
+                                        }
 \end_layout
 
 \begin_layout Plain Layout
@@ -5167,7 +5308,7 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                    give_back;
+                    failMatch;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5183,6 +5324,11 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
             }
+\end_layout
+
+\begin_layout Plain Layout
+
+            accept
 \end_layout
 
 \begin_layout Plain Layout
@@ -5236,7 +5382,7 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                    give_back;
+                    failMatch;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5252,6 +5398,11 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
             }
+\end_layout
+
+\begin_layout Plain Layout
+
+            accept
 \end_layout
 
 \begin_layout Plain Layout
@@ -5295,6 +5446,11 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
+            eof;
+\end_layout
+
+\begin_layout Plain Layout
+
             CATCH {
 \end_layout
 
@@ -5305,7 +5461,7 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-                    give_back;
+                    failMatch;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5321,6 +5477,11 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
             }
+\end_layout
+
+\begin_layout Plain Layout
+
+            accept
 \end_layout
 
 \begin_layout Plain Layout
@@ -5349,7 +5510,55 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
+    CATCH {
+\end_layout
+
+\begin_layout Plain Layout
+
+        default {
+\end_layout
+
+\begin_layout Plain Layout
+
+            say "The input string does not match the grammar.
+ Current parse state: ";
+\end_layout
+
+\begin_layout Plain Layout
+
+            say @state;
+\end_layout
+
+\begin_layout Plain Layout
+
+            fail "The input string does not match the grammar.
+ Unused input: " ~ @input
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
     if @input.elems > 0 {
+\end_layout
+
+\begin_layout Plain Layout
+
+        say "The input string does not match the grammar.
+ Current parse state: ";
+\end_layout
+
+\begin_layout Plain Layout
+
+        say @state;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5394,6 +5603,11 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
+    say "Running lexer tests";
+\end_layout
+
+\begin_layout Plain Layout
+
     nok lex('String qux?');
 \end_layout
 
@@ -5404,7 +5618,31 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-    isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
+    say lex('foo & !( a2 > bar & w < foo | x < y)');
+\end_layout
+
+\begin_layout Plain Layout
+
+    say lex('A1 & B1 | A2 & B1 | (! C | A <> B )');
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    say "";
+\end_layout
+
+\begin_layout Plain Layout
+
+    say "Starting parser test";
+\end_layout
+
+\begin_layout Plain Layout
+
+    say "";
 \end_layout
 
 \begin_layout Plain Layout
@@ -5418,21 +5656,46 @@ n" ~ @consumed;
 
 \begin_layout Plain Layout
 
-    #lex('foo & !( a2 > bar & w < foo | x < y)')
+    lex('foo & !( a2 > bar & w < foo | x < y)')
 \end_layout
 
 \begin_layout Plain Layout
 
-    #    ==> parse;
+        ==> parse;
 \end_layout
 
 \begin_layout Plain Layout
 
-    say parse(lex('foo & !( a2 > bar & w < foo | x < y('));
+        say "";
 \end_layout
 
 \begin_layout Plain Layout
 
+        say "Starting second test";
+\end_layout
+
+\begin_layout Plain Layout
+
+        say "";
+\end_layout
+
+\begin_layout Plain Layout
+
+    lex('A1 & B1 | A2 & B1 | (! C | A <> B )')
+\end_layout
+
+\begin_layout Plain Layout
+
+        ==> parse;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        say "";
 \end_layout
 
 \begin_layout Plain Layout
@@ -5449,6 +5712,961 @@ n" ~ @consumed;
 \begin_layout Plain Layout
 
 );
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Appendix: Program listing
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset listings
+lstparams "numbers=left,basicstyle={\scriptsize\ttfamily},extendedchars=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Running lexer tests
+\end_layout
+
+\begin_layout Plain Layout
+
+ok 1 - 
+\end_layout
+
+\begin_layout Plain Layout
+
+ok 2 - The object is-a 'List'
+\end_layout
+
+\begin_layout Plain Layout
+
+[identifier => foo binary_oper => & unary_oper => ! parenthesis => ( 
+\end_layout
+
+\begin_layout Plain Layout
+
+identifier => a2 binary_oper => > identifier => bar binary_oper => & 
+\end_layout
+
+\begin_layout Plain Layout
+
+identifier => w binary_oper => < identifier => foo binary_oper => | 
+\end_layout
+
+\begin_layout Plain Layout
+
+identifier => x binary_oper => < identifier => y parenthesis => ) EOF 
+\end_layout
+
+\begin_layout Plain Layout
+
+=> ]
+\end_layout
+
+\begin_layout Plain Layout
+
+[identifier => A1 binary_oper => & identifier => B1 binary_oper => | 
+\end_layout
+
+\begin_layout Plain Layout
+
+identifier => A2 binary_oper => & identifier => B1 binary_oper => | 
+\end_layout
+
+\begin_layout Plain Layout
+
+parenthesis => ( unary_oper => ! identifier => C binary_oper => | 
+\end_layout
+
+\begin_layout Plain Layout
+
+identifier => A binary_oper => < binary_oper => > identifier => B 
+\end_layout
+
+\begin_layout Plain Layout
+
+parenthesis => ) EOF => ]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Starting parser test
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <and_term>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_literal>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier foo
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_literal> (depth: 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier foo
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier foo
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper &
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <relop> (depth: 5)
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Matched ID-only relation_expr
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <and_term>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper &
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_literal>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the unary_oper !
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_literal> (depth: 3)
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the unary_oper !
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_literal>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the parenthesis (
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_literal> (depth: 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the parenthesis (
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <and_term>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_literal>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier a2
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_literal> (depth: 7)
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier a2
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier a2
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper >
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier bar
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <and_term>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper &
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier w
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_expr> (depth: 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier bar
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper &
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <relop> (depth: 5)
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Matched ID-only relation_expr
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper &
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_literal>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier w
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_literal> (depth: 2)
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier w
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier w
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper <
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier foo
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper |
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <and_term>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_literal>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier x
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_literal> (depth: 2)
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier foo
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier foo
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper |
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <relop> (depth: 3)
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Matched ID-only relation_expr
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <and_term>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper |
+\end_layout
+
+\begin_layout Plain Layout
+
+The input string does not match the grammar.
+ Current parse state: 
+\end_layout
+
+\begin_layout Plain Layout
+
+[    <bool_expr>:  => Lexeme: {  }
+\end_layout
+
+\begin_layout Plain Layout
+
+         <and_term>:  => Lexeme: {  }
+\end_layout
+
+\begin_layout Plain Layout
+
+                 <relation_expr>:  => Lexeme: { identifier      foo }
+\end_layout
+
+\begin_layout Plain Layout
+
+                     <id>:  => Lexeme: { identifier     foo }
+\end_layout
+
+\begin_layout Plain Layout
+
+         <bool_factor>:  => Lexeme: { binary_oper       & }
+\end_layout
+
+\begin_layout Plain Layout
+
+             <bool_factor>:  => Lexeme: { unary_oper    ! }
+\end_layout
+
+\begin_layout Plain Layout
+
+                 <bool_expr>:  => Lexeme: { parenthesis ( }
+\end_layout
+
+\begin_layout Plain Layout
+
+                     <and_term>:  => Lexeme: { parenthesis      ( }
+\end_layout
+
+\begin_layout Plain Layout
+
+                             <relation_expr>:  => Lexeme: { identifier 
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+a2 }
+\end_layout
+
+\begin_layout Plain Layout
+
+                 <relation_expr>:  => Lexeme: { identifier      w }
+\end_layout
+
+\begin_layout Plain Layout
+
+                     <id>:  => Lexeme: { identifier     w }
+\end_layout
+
+\begin_layout Plain Layout
+
+         <relation_expr>:  => Lexeme: { identifier      w }
+\end_layout
+
+\begin_layout Plain Layout
+
+             <id>:  => Lexeme: { identifier     w }
+\end_layout
+
+\begin_layout Plain Layout
+
+             <relop>:  => Lexeme: { identifier  w }
+\end_layout
+
+\begin_layout Plain Layout
+
+ <and_term>:  => Lexeme: { binary_oper  | }
+\end_layout
+
+\begin_layout Plain Layout
+
+         <relation_expr>:  => Lexeme: { identifier      foo }
+\end_layout
+
+\begin_layout Plain Layout
+
+             <id>:  => Lexeme: { identifier     foo }
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Starting second test
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <and_term>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_literal>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier A1
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_literal> (depth: 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier A1
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier A1
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper &
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <relop> (depth: 5)
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Matched ID-only relation_expr
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <and_term>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper &
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <bool_literal>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier B1
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <bool_literal> (depth: 3)
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier B1
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier B1
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <id>
+\end_layout
+
+\begin_layout Plain Layout
+
+Enter <relop>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper |
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Did not match <relop> (depth: 4)
+\end_layout
+
+\begin_layout Plain Layout
+
+DEBUG: Matched ID-only relation_expr
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <relation_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_factor>
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <bool_expr>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper |
+\end_layout
+
+\begin_layout Plain Layout
+
+Exit <>
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the identifier A2
+\end_layout
+
+\begin_layout Plain Layout
+
+Next token is the binary_oper &
+\end_layout
+
+\begin_layout Plain Layout
+
+The input string does not match the grammar.
+ Current parse state: 
+\end_layout
+
+\begin_layout Plain Layout
+
+[    <bool_expr>:  => Lexeme: {  }
+\end_layout
+
+\begin_layout Plain Layout
+
+         <and_term>:  => Lexeme: {  }
+\end_layout
+
+\begin_layout Plain Layout
+
+                 <relation_expr>:  => Lexeme: { identifier      A1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+                     <id>:  => Lexeme: { identifier     A1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+             <relation_expr>:  => Lexeme: { identifier  B1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+                 <id>:  => Lexeme: { identifier B1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Done running tests.
+ Report:
+\end_layout
+
+\begin_layout Plain Layout
+
+1..2
 \end_layout
 
 \begin_layout Plain Layout
