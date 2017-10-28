@@ -121,12 +121,15 @@ sub parse(List $tokens --> Nil) {
 
         sub give_back( --> Nil) {
             @state.pop();
-            say "DEBUG: Did not match <" ~ @currentRules.pop() ~ "> (depth: $levelsCount)";
-            $levelsCount = $levelsCount - 1;
             for @consumed {
                 unshift(@input, (shift(@consumed)))
             }
             @consumed = < >;
+        }
+        sub failMatch( --> Nil) {
+            say "DEBUG: Did not match <" ~ @currentRules.pop() ~ "> (depth: $levelsCount)";
+            $levelsCount = $levelsCount - 1;
+            give_back;
         }
     );
 
@@ -138,7 +141,7 @@ sub parse(List $tokens --> Nil) {
             $test = lexeme().key;
             CATCH {
                 default {
-                    give_back;
+                    failMatch;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
@@ -151,7 +154,7 @@ sub parse(List $tokens --> Nil) {
             $test = lexeme().value;
             CATCH {
                 default {
-                    give_back;
+                    failMatch;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
@@ -163,7 +166,7 @@ sub parse(List $tokens --> Nil) {
             lexeme().key eq "identifier" or X::AdHoc.new(:payload<Did not match>).throw;
             CATCH {
                 default {
-                    give_back;
+                    failMatch;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
@@ -187,7 +190,7 @@ sub parse(List $tokens --> Nil) {
             }
             CATCH {
                 default {
-                    give_back;
+                    failMatch;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
@@ -226,7 +229,7 @@ sub parse(List $tokens --> Nil) {
                                         relation_expr;
                                         CATCH {
                                             default {
-                                                give_back;
+                                                failMatch;
                                                 X::AdHoc.new(:payload<Did not match>).throw
                                             }
                                         }
@@ -239,7 +242,7 @@ sub parse(List $tokens --> Nil) {
             }
             CATCH {
                 default {
-                    give_back;
+                    failMatch;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
@@ -254,7 +257,7 @@ sub parse(List $tokens --> Nil) {
             }
             CATCH {
                 default {
-                    give_back;
+                    failMatch;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
@@ -270,7 +273,7 @@ sub parse(List $tokens --> Nil) {
             eof;
             CATCH {
                 default {
-                    give_back;
+                    failMatch;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
             }
