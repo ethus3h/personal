@@ -88,7 +88,7 @@ sub parse(List $tokens --> Nil) {
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
     my Str $lexeme = "";
-    my Str $currentRule = "";
+    my Str @currentRules = "";
     my Int $levelsCount = 0;
 
     # Support subroutines for the parser
@@ -109,13 +109,13 @@ sub parse(List $tokens --> Nil) {
 
         sub enter(Str $rule --> Nil) {
             say "Enter <$rule>";
-            $currentRule = $rule;
+            $currentRules.push($rule);
             $levelsCount = $levelsCount + 1;
             @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
         }
 
         sub accept( --> Nil) {
-            say "Exit <$currentRule>";
+            say "Exit <" ~ @currentRule.pop() ~ ">";
             $levelsCount = $levelsCount - 1;
         }
 
@@ -179,7 +179,7 @@ sub parse(List $tokens --> Nil) {
                 }
                 CATCH {
                     default {
-                        say "(Matched ID-only relation_expr)"
+                        say "(Matched ID-only relation_expr)";
                         accept
                     }
                 }
