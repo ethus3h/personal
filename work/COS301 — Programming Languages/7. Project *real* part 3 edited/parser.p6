@@ -160,14 +160,9 @@ sub parse(List $tokens --> Nil) {
 
         sub id( --> Nil) {
             enter "id";
-            my $foo=lexeme();
-            say $foo;
-            say $foo.key eq "identifier";
-            $foo.key eq "identifier";
-            #lexeme().key eq "identifier";
+            lexeme().key eq "identifier" or X::AdHoc.new(:payload<Did not match>).throw;
             CATCH {
                 default {
-                    say "BOIRCILLOICRBECRIBOECRIBCOERBICREOHUCR";
                     give_back;
                     X::AdHoc.new(:payload<Did not match>).throw
                 }
@@ -199,7 +194,7 @@ sub parse(List $tokens --> Nil) {
         }
 
         sub eof( --> Nil) {
-            lexeme().key eq "EOF";
+            lexeme().key eq "EOF" or X::AdHoc.new(:payload<Did not match>).throw;
             CATCH {
                 default {
                     X::AdHoc.new(:payload<Did not match>).throw
@@ -221,7 +216,7 @@ sub parse(List $tokens --> Nil) {
                             default {
                                 my $lptest where * eq '(';
                                 $lptest = lexeme;
-                                $lexeme eq "(";
+                                $lexeme eq "(" or X::AdHoc.new(:payload<Did not match>).throw;
                                 bool_expr;
                                 my $rptest where * eq ')';
                                 $rptest = lexeme;
