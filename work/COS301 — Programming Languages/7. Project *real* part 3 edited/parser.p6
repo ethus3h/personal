@@ -109,7 +109,7 @@ sub parse(List $tokens --> Nil) {
 
         sub enter(Str $rule --> Nil) {
             say "Enter <$rule>";
-            $currentRules.push($rule);
+            @currentRules.push($rule);
             $levelsCount = $levelsCount + 1;
             @state.push("    " x $levelsCount ~ "<$rule>: " => "Lexeme: \{ $lexeme \}\n");
         }
