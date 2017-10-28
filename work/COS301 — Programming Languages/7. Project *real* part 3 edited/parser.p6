@@ -83,14 +83,13 @@ sub lex(Str $code --> List) {
 }
 
 sub parse(List $tokens --> Nil) {
-    my Pair @state;
+    my Pair @state = ("" => "");
     my Pair @consumed;
     my Pair @input = $tokens.clone;
     my Pair $token = "" => "";
     my Str $lexeme = "";
     my Str @currentRules = "";
     my Int $levelsCount = 0;
-    @state.push("" => "");
 
     # Support subroutines for the parser
     (
