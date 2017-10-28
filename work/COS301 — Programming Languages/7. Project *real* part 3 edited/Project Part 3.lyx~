@@ -372,7 +372,7 @@ S///
 LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "2017sept20-p6bib"
-options "apalike"
+options "apa"
 
 \end_inset
 
