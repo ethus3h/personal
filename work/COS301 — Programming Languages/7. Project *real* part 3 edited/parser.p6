@@ -307,9 +307,9 @@ sub parse(List $tokens --> Nil) {
     isa-ok lex('foo & !( a2 > bar & w < foo | x < y)'), List;
 
     # Test parser
-    #lex('foo & !( a2 > bar & w < foo | x < y)')
-    #    ==> parse;
-    say parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
+    lex('foo & !( a2 > bar & w < foo | x < y)')
+        ==> parse;
+    #say parse(lex('foo & !( a2 > bar & w < foo | x < y)'));
 
     say "Done running tests. Report:";
     done-testing;
