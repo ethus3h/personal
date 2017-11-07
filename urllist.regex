@@ -24,11 +24,11 @@ with
 
 https://paste.pound-python.org/show/$1/\nhttps://paste.pound-python.org/raw/$1/\nhttps://paste.pound-python.org/?reply_to=$1
 
-https://bpaste.net/show/([\w\d]+)
+http(s?)://bpaste.net/show/([\w\d]+)
 
 with
 
-https://bpaste.net/show/$1/\nhttps://bpaste.net/raw/$1/
+https://bpaste.net/show/$2/\nhttps://bpaste.net/raw/$2/\nhttp://bpaste.net/show/$2/\nhttp://bpaste.net/raw/$2/\n
 
 ###########
 Second, replace
