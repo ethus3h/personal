@@ -5,7 +5,7 @@ This piece is designed to be accessible to people who like both pop music and mu
 
 Form:
 A: Soothing electronic
-B: Nightmarish industrial/electronic/orchestral
+B: Harsh industrial/electronic/orchestral (à la Elend)
 C: Soothing orchestral
 D: Club orchestral
 E: Harsh club
