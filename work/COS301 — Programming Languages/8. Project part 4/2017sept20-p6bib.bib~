@@ -134,7 +134,7 @@
 @article{New1,
 	author = {{Rakudo organization on GitHub}},
 	howpublished = {Web},
-	title = {{Rakudo Star: star/modules at master}: {\url{https://github.com/rakudo/star/tree/master/modules}}},
+	title = {{star/modules at master}},
 	year = {2017}
 }
 

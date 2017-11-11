@@ -1,6 +1,6 @@
 @comment{x-kbibtex-encoding=utf-8}
 
-%         This file was created with JabRef 2.10.
+%        This file was created with JabRef 2.10.
 
 @article{P6FAQ,
 	author = {{Perl 6 Documentation}},
@@ -129,12 +129,5 @@
 	howpublished = {Web},
 	note = {I used Wikipedia's article on Perl 6 as a way to find other articles and books to look at (as well as Fogler Library and Web search).},
 	title = {Perl 6: {\url{https://en.wikipedia.org/wiki/Perl_6}}}
-}
-
-@article{New1,
-	author = {{Rakudo organization on GitHub}},
-	howpublished = {Web},
-	title = {{Rakudo Star: star/modules at master}: {\url{https://github.com/rakudo/star/tree/master/modules}}},
-	year = {2017}
 }
 
