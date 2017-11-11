@@ -104,9 +104,34 @@ Data types available in the language beyond primitive data types (such as
  or other library.
 \end_layout
 
+\begin_layout Standard
+Perl 6 includes a large amount of non-primitive types in the language itself:
+ 33 compound types, 56 
+\begin_inset Quotes eld
+\end_inset
+
+domain-specific
+\begin_inset Quotes erd
+\end_inset
+
+ types, and 113 exception types.
+\end_layout
+
 \begin_layout Subsubsection*
 Summary of standard libraries or classes that extend the language’s type
  system.
+\end_layout
+
+\begin_layout Standard
+Perl 6 does not itself have a specified standard library 
+\emph on
+per se
+\emph default
+, but the Rakudo implementation does include a variety of additional 
+\emph on
+modules
+\emph default
+.
 \end_layout
 
 \begin_layout Subsubsection*
