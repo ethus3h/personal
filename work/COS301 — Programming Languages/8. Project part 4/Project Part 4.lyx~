@@ -188,6 +188,12 @@ perl6-http-easy
 perl6-http-status
 \family default
  for network interoperation.
+ Perl 6 includes a package manager, also, called 
+\family typewriter
+zef
+\family default
+, which provides a command-line interface for managing the packages installed
+ in a system.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -195,7 +201,23 @@ Semantics of expression evaluation.
 \end_layout
 
 \begin_layout Standard
-The process of evaluating an expression 
+Perl 6 makes a distinction between 
+\emph on
+statements
+\emph default
+ and 
+\emph on
+expressions
+\emph default
+, where expressions are statements that return a value.
+ A program in Perl 6 semantically represents a list of statements (things
+ for the computer to do).
+ To make a statement act as an expression, the 
+\family typewriter
+do
+\family default
+ keyword can be used, which will cause the statement given to represent
+ its value in the given context.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -212,6 +234,10 @@ By default, Perl 6 when encountering a variable that does not have a specified
 
 \begin_layout Subsubsection*
 Semantics of assignment statements.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
