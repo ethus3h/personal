@@ -237,7 +237,27 @@ Semantics of assignment statements.
 \end_layout
 
 \begin_layout Standard
+Perl 6 has somewhat complicated assignment semantics, similar to Java, because
+ it uses containers for some things, but things can also exist without container
+s.
+ The documentation writes that 
+\begin_inset Quotes eld
+\end_inset
 
+The assignment operator asks the container on the left to store the value
+ on its right
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This means that the actual effect of assigning a value to a name depends
+ on the type of container that has been created by variable declaration.
+ In practice, this is largely transparent to the user, and the context of
+ a reference to a variable will affect whether the container is used or
+ the value within the container is used.
+ If the user wants control over this, the language provides some constructs
+ for controlling these issues, but the defaults seem to generally work well.
+ A list can contain containers or values.
 \end_layout
 
 \begin_layout Standard
