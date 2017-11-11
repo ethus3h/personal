@@ -1,0 +1,99 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{{Hacker News}}{2016}]{News}
+{Hacker News} (2016).
+\newblock Why hasn't {Perl} 6 taken off yet?:
+  {\url{https://news.ycombinator.com/item?id=12888784}}.
+\newblock This is where I learned that Perl 6 Rationals aren't
+  arbitrary-precision.
+
+\bibitem[\protect\astroncite{Holloway}{2016}]{Holloway}
+Holloway, R. (2016).
+\newblock The must-have features for {Perl} 6:
+  {\url{https://opensource.com/life/16/9/perl-6-features}}.
+\newblock This article provided a resource for learning about some of the
+  things that distinguish and differentiate Perl 6 from other languages.
+
+\bibitem[\protect\astroncite{jnthnwrthngtn}{2011}]{jnthnwrthngtn}
+jnthnwrthngtn (2011).
+\newblock {Grammar}::{Tracer} and {Grammar}::{Debugger}:
+  {\url{https://perl6advent.wordpress.com/2011/12/02/grammartracer-and-grammardebugger/}}.
+\newblock {\em Perl 6 Advent Calendar}.
+\newblock Debugging grammars is hard out of the box.
+
+\bibitem[\protect\astroncite{Lenz}{2010}]{Lenz2010}
+Lenz, M. (2010).
+\newblock How to debug a {Perl} 6 grammar:
+  {\url{https://perlgeek.de/en/article/debug-a-perl-6-grammar}}.
+\newblock This is more information on debugging Perl 6 grammars.
+
+\bibitem[\protect\astroncite{Lenz}{2017}]{Lenz2017}
+Lenz, M. (2017).
+\newblock {\em Perl 6 Fundamentals: A Primer with Examples, Projects, and Case
+  Studies}.
+\newblock doi:10.1007/978-1-4842-2899-9.
+\newblock This book provides a general introduction to Perl 6. It seems quite
+  accessible to me.
+
+\bibitem[\protect\astroncite{Miller}{2017}]{Miller}
+Miller, E. (2017).
+\newblock A review of {Perl} 6:
+  {\url{https://www.evanmiller.org/a-review-of-perl-6.html}}.
+\newblock This article discusses Perl 6's merits and weaknesses.
+
+\bibitem[\protect\astroncite{{Perl 6 Documentation}}{2017a}]{P6FAQ}
+{Perl 6 Documentation} (2017a).
+\newblock {FAQ}: Frequently asked questions about {Perl} 6:
+  {\url{https://docs.perl6.org/language/faq}}.
+\newblock I used this article to learn some basic information about Perl 6.
+
+\bibitem[\protect\astroncite{{Perl 6 Documentation}}{2017b}]{Documentation_2}
+{Perl 6 Documentation} (2017b).
+\newblock Grammars: {\url{https://docs.perl6.org/language/grammars}}.
+\newblock This documentation page was one of my primary sources for getting an
+  understanding of the scope and capabilities of grammars in Perl 6.
+
+\bibitem[\protect\astroncite{{Perl 6 Documentation}}{2017c}]{Documentation}
+{Perl 6 Documentation} (2017c).
+\newblock Perl 6 documentation: {\url{https://docs.perl6.org/}}.
+\newblock The official Perl 6 documentation is very helpful for getting an
+  understanding of the language.
+
+\bibitem[\protect\astroncite{{Perl 6 project}}{2017}]{project}
+{Perl 6 project} (2017).
+\newblock {NQP — Not Quite Perl (6): README.pod}:
+  {\url{https://github.com/perl6/nqp}}.
+\newblock This is where I got information about how Perl 6 is implemented, and
+  its portability.
+
+\bibitem[\protect\astroncite{{Rakudo organization on GitHub}}{2017}]{New1}
+{Rakudo organization on GitHub} (2017).
+\newblock {Rakudo Star: star/modules at master}:
+  {\url{https://github.com/rakudo/star/tree/master/modules}}.
+
+\bibitem[\protect\astroncite{Rosenfeld and Downey}{2017}]{RosenfeldDowney}
+Rosenfeld, L. and Downey, A.~B. (2017).
+\newblock Think {Perl} 6.
+\newblock I used this book as a supplementary resource for getting an overview
+  of Perl 6.
+
+\bibitem[\protect\astroncite{{Stack Overflow}}{2013}]{Overflow}
+{Stack Overflow} (2010–2013).
+\newblock Floating point inaccuracy examples:
+  {\url{https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples}}.
+\newblock A citation for the claim regarding floating points being a little
+  odd.
+
+\bibitem[\protect\astroncite{{The Perl 6 Programming Language}}{nd}]{Language}
+{The Perl 6 Programming Language} (n.d.).
+\newblock The {Perl} 6 programming language: {\url{https://perl6.org/}}.
+\newblock This home page for the Perl 6 language introduces it and its culture.
+  Retrieved 20 Sept. 2017.
+
+\bibitem[\protect\astroncite{Wikipedia}{}]{Wikipedia}
+Wikipedia.
+\newblock Perl 6: {\url{https://en.wikipedia.org/wiki/Perl_6}}.
+\newblock I used Wikipedia's article on Perl 6 as a way to find other articles
+  and books to look at (as well as Fogler Library and Web search).
+
+\end{thebibliography}
