@@ -194,8 +194,20 @@ perl6-http-status
 Semantics of expression evaluation.
 \end_layout
 
+\begin_layout Standard
+The process of evaluating an expression 
+\end_layout
+
 \begin_layout Subsubsection*
 Coercions/implicit type conversions that are performed in expression evaluation.
+\end_layout
+
+\begin_layout Standard
+By default, Perl 6 when encountering a variable that does not have a specified
+ type will convert it to the necessary type when it is used in a context
+ where its current type is not applicable.
+ To override this behavior, types can be specified for each object, allowing
+ strict type checking.
 \end_layout
 
 \begin_layout Subsubsection*

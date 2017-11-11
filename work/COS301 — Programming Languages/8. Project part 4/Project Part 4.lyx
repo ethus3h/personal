@@ -188,10 +188,20 @@ perl6-http-easy
 perl6-http-status
 \family default
  for network interoperation.
+ Perl 6 includes a package manager, also, called 
+\family typewriter
+zef
+\family default
+, which provides a command-line interface for managing the packages installed
+ in a system.
 \end_layout
 
 \begin_layout Subsubsection*
 Semantics of expression evaluation.
+\end_layout
+
+\begin_layout Standard
+The process of evaluating an expression 
 \end_layout
 
 \begin_layout Subsubsection*
