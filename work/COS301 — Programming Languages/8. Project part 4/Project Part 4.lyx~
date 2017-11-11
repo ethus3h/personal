@@ -192,7 +192,7 @@ Composite types
 \begin_inset Tabular
 <lyxtabular version="3" rows="34" columns="3">
 <features rotate="0" islongtable="true" longtabularalignment="center">
-<column alignment="center" valignment="top" width="31col%">
+<column alignment="center" valignment="top" width="21col%">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="31col%">
 <row>
@@ -2044,7 +2044,7 @@ Domain-specific types
 <features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top" width="31col%">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="31col%">
+<column alignment="center" valignment="top" width="21col%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -5116,7 +5116,7 @@ Exception types
 <features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="31text%">
+<column alignment="center" valignment="top" width="21text%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -11376,25 +11376,15 @@ List of modules included with Rakudo Star
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="46" columns="1">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
+<features rotate="0" islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 DBIish
 \end_layout
 
@@ -11407,17 +11397,7 @@ DBIish
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 debugger-ui-commandline
 \end_layout
 
@@ -11430,17 +11410,7 @@ debugger-ui-commandline
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 doc
 \end_layout
 
@@ -11453,17 +11423,7 @@ doc
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 file-find
 \end_layout
 
@@ -11476,17 +11436,7 @@ file-find
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 grammar-debugger
 \end_layout
 
@@ -11499,17 +11449,7 @@ grammar-debugger
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 Grammar-Profiler-Simple
 \end_layout
 
@@ -11522,17 +11462,7 @@ Grammar-Profiler-Simple
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 json
 \end_layout
 
@@ -11545,17 +11475,7 @@ json
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 json_fast
 \end_layout
 
@@ -11568,17 +11488,7 @@ json_fast
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 JSON-Class
 \end_layout
 
@@ -11591,17 +11501,7 @@ JSON-Class
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 JSON-Marshal
 \end_layout
 
@@ -11614,17 +11514,7 @@ JSON-Marshal
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 JSON-Name
 \end_layout
 
@@ -11637,17 +11527,7 @@ JSON-Name
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 JSON-Unmarshal
 \end_layout
 
@@ -11660,17 +11540,7 @@ JSON-Unmarshal
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 jsonrpc
 \end_layout
 
@@ -11683,17 +11553,7 @@ jsonrpc
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 library-make
 \end_layout
 
@@ -11706,17 +11566,7 @@ library-make
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 Linenoise
 \end_layout
 
@@ -11729,17 +11579,7 @@ Linenoise
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 META6
 \end_layout
 
@@ -11752,17 +11592,7 @@ META6
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 NativeHelpers-Blob
 \end_layout
 
@@ -11775,17 +11605,7 @@ NativeHelpers-Blob
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 oo-monitors
 \end_layout
 
@@ -11798,17 +11618,7 @@ oo-monitors
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 p6-file-directory-tree
 \end_layout
 
@@ -11821,17 +11631,7 @@ p6-file-directory-tree
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 p6-File-Temp
 \end_layout
 
@@ -11844,17 +11644,7 @@ p6-File-Temp
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 p6-io-string
 \end_layout
 
@@ -11867,17 +11657,7 @@ p6-io-string
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 p6-Template-Mustache
 \end_layout
 
@@ -11890,17 +11670,7 @@ p6-Template-Mustache
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 panda-stub
 \end_layout
 
@@ -11913,17 +11683,7 @@ panda-stub
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-datetime-format
 \end_layout
 
@@ -11936,17 +11696,7 @@ perl6-datetime-format
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-digest-md5
 \end_layout
 
@@ -11959,17 +11709,7 @@ perl6-digest-md5
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-encode
 \end_layout
 
@@ -11982,17 +11722,7 @@ perl6-encode
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-file-which
 \end_layout
 
@@ -12005,17 +11735,7 @@ perl6-file-which
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-http-easy
 \end_layout
 
@@ -12028,17 +11748,7 @@ perl6-http-easy
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-http-status
 \end_layout
 
@@ -12051,17 +11761,7 @@ perl6-http-status
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-lwp-simple
 \end_layout
 
@@ -12074,17 +11774,7 @@ perl6-lwp-simple
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 Perl6-MIME-Base64
 \end_layout
 
@@ -12097,17 +11787,7 @@ Perl6-MIME-Base64
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-pod-to-bigpage
 \end_layout
 
@@ -12120,17 +11800,7 @@ perl6-pod-to-bigpage
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 perl6-Test-When
 \end_layout
 
@@ -12143,17 +11813,7 @@ perl6-Test-When
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 Pod-To-HTML
 \end_layout
 
@@ -12166,17 +11826,7 @@ Pod-To-HTML
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 PSGI
 \end_layout
 
@@ -12189,17 +11839,7 @@ PSGI
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 shell-command
 \end_layout
 
@@ -12212,17 +11852,7 @@ shell-command
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 svg
 \end_layout
 
@@ -12235,17 +11865,7 @@ svg
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 svg-plot
 \end_layout
 
@@ -12258,17 +11878,7 @@ svg-plot
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 tap-harness6
 \end_layout
 
@@ -12281,17 +11891,7 @@ tap-harness6
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 Template-Mojo
 \end_layout
 
@@ -12304,17 +11904,7 @@ Template-Mojo
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 Terminal-ANSIColor
 \end_layout
 
@@ -12327,17 +11917,7 @@ Terminal-ANSIColor
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 Test-META
 \end_layout
 
@@ -12350,17 +11930,7 @@ Test-META
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 test-mock
 \end_layout
 
@@ -12373,17 +11943,7 @@ test-mock
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 uri
 \end_layout
 
@@ -12396,17 +11956,7 @@ uri
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 xml-writer
 \end_layout
 
@@ -12419,17 +11969,7 @@ xml-writer
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\family typewriter
 zef
 \end_layout
 

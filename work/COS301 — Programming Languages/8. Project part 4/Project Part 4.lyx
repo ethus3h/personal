@@ -192,7 +192,7 @@ Composite types
 \begin_inset Tabular
 <lyxtabular version="3" rows="34" columns="3">
 <features rotate="0" islongtable="true" longtabularalignment="center">
-<column alignment="center" valignment="top" width="31col%">
+<column alignment="center" valignment="top" width="21col%">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="31col%">
 <row>
@@ -2044,7 +2044,7 @@ Domain-specific types
 <features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top" width="31col%">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="31col%">
+<column alignment="center" valignment="top" width="21col%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -5116,7 +5116,7 @@ Exception types
 <features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="31text%">
+<column alignment="center" valignment="top" width="21text%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -11376,8 +11376,8 @@ List of modules included with Rakudo Star
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="46" columns="1">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
+<features rotate="0" islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
