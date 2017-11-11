@@ -179,7 +179,15 @@ svg
 svg-plot
 \family default
  modules.
- 
+ It also includes several such as 
+\family typewriter
+perl6-http-easy
+\family default
+ and 
+\family typewriter
+perl6-http-status
+\family default
+ for network interoperation.
 \end_layout
 
 \begin_layout Subsubsection*
