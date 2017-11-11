@@ -115,6 +115,12 @@ domain-specific
 \end_inset
 
  types, and 113 exception types.
+ This includes common compound types such as arrays, lists, and hashes,
+ as well as various other types for a range of applications.
+ By including a large amount of capabilities within the language core itself,
+ it enables the base package to be quite functional without the need for
+ as many additional libraries to have a practical base of tools to work
+ from.
 \end_layout
 
 \begin_layout Subsubsection*

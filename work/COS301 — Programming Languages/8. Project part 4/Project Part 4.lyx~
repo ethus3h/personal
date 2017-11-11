@@ -115,6 +115,8 @@ domain-specific
 \end_inset
 
  types, and 113 exception types.
+ This includes common compound types such as arrays, lists, and hashes,
+ as well as various other types for a range of applications.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -258,6 +260,13 @@ The assignment operator asks the container on the left to store the value
  If the user wants control over this, the language provides some constructs
  for controlling these issues, but the defaults seem to generally work well.
  A list can contain containers or values.
+ Because of this, it is not always possible to assign to list elements,
+ because lists are immutable and values cannot be changed.
+ However, if the items in a list are containers, they can be changed because
+ the container itself will stay the same (the list would not be changing,
+ but what one of the elements in the list refers to would be changing).
+ Arrays, however, only hold containers; thus their contents can be changed.
+ 
 \end_layout
 
 \begin_layout Standard
