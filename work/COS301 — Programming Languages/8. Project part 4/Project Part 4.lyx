@@ -5115,7 +5115,7 @@ Exception types
 <lyxtabular version="3" rows="114" columns="3">
 <features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="21col%">
 <column alignment="center" valignment="top" width="21text%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -6054,7 +6054,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Channel:: ReceiveOnClosed 
+X::Channel::ReceiveOnClosed 
 \end_layout
 
 \end_inset
@@ -6109,7 +6109,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Channel:: SendOnClosed 
+X::Channel::SendOnClosed 
 \end_layout
 
 \end_inset
@@ -6219,7 +6219,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Composition:: NotComposable 
+X::Composition::NotComposable 
 \end_layout
 
 \end_inset
@@ -6274,7 +6274,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Constructor:: Positional 
+X::Constructor::Positional 
 \end_layout
 
 \end_inset
@@ -6439,7 +6439,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::DateTime:: TimezoneClash 
+X::DateTime::TimezoneClash 
 \end_layout
 
 \end_inset
@@ -6549,7 +6549,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Declaration:: Scope::Multi 
+X::Declaration::Scope::Multi 
 \end_layout
 
 \end_inset
@@ -7539,7 +7539,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Inheritance:: NotComposed 
+X::Inheritance::NotComposed 
 \end_layout
 
 \end_inset
@@ -7594,7 +7594,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Inheritance:: Unsupported 
+X::Inheritance::Unsupported 
 \end_layout
 
 \end_inset
@@ -7649,7 +7649,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Method:: InvalidQualifier 
+X::Method::InvalidQualifier 
 \end_layout
 
 \end_inset
@@ -7759,7 +7759,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Method::Private:: Permission 
+X::Method::Private::Permission 
 \end_layout
 
 \end_inset
@@ -7814,7 +7814,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Method::Private:: Unqualified 
+X::Method::Private::Unqualified 
 \end_layout
 
 \end_inset
@@ -7869,7 +7869,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Mixin:: NotComposable 
+X::Mixin::NotComposable 
 \end_layout
 
 \end_inset
@@ -8364,7 +8364,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Parameter:: MultipleTypeConstraints 
+X::Parameter::MultipleTypeConstraints 
 \end_layout
 
 \end_inset
@@ -8419,7 +8419,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Parameter:: Placeholder 
+X::Parameter::Placeholder 
 \end_layout
 
 \end_inset
@@ -8529,7 +8529,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Parameter:: WrongOrder 
+X::Parameter::WrongOrder 
 \end_layout
 
 \end_inset
@@ -8694,7 +8694,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Placeholder:: Block 
+X::Placeholder::Block 
 \end_layout
 
 \end_inset
@@ -8749,7 +8749,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Placeholder:: Mainline 
+X::Placeholder::Mainline 
 \end_layout
 
 \end_inset
@@ -8914,7 +8914,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Proc::Async:: AlreadyStarted 
+X::Proc::Async::AlreadyStarted 
 \end_layout
 
 \end_inset
@@ -8969,7 +8969,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Proc::Async:: CharsOrBytes 
+X::Proc::Async::CharsOrBytes 
 \end_layout
 
 \end_inset
@@ -9024,7 +9024,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Proc::Async:: MustBeStarted 
+X::Proc::Async::MustBeStarted 
 \end_layout
 
 \end_inset
@@ -9079,7 +9079,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Proc::Async:: OpenForWriting 
+X::Proc::Async::OpenForWriting 
 \end_layout
 
 \end_inset
@@ -9134,7 +9134,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Proc::Async:: TapBeforeSpawn 
+X::Proc::Async::TapBeforeSpawn 
 \end_layout
 
 \end_inset
@@ -9245,7 +9245,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Promise:: CauseOnlyValidOnBroken 
+X::Promise::CauseOnlyValidOnBroken 
 \end_layout
 
 \end_inset
@@ -9410,7 +9410,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Role:: Initialization 
+X::Role::Initialization 
 \end_layout
 
 \end_inset
@@ -9520,7 +9520,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Sequence:: Deduction 
+X::Sequence::Deduction 
 \end_layout
 
 \end_inset
@@ -9575,7 +9575,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Signature:: NameClash 
+X::Signature::NameClash 
 \end_layout
 
 \end_inset
@@ -9630,7 +9630,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Signature:: Placeholder 
+X::Signature::Placeholder 
 \end_layout
 
 \end_inset
@@ -9850,7 +9850,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax::Augment:: WithoutMonkeyTyping 
+X::Syntax::Augment::WithoutMonkeyTyping 
 \end_layout
 
 \end_inset
@@ -9905,7 +9905,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax:: Comment::Embedded 
+X::Syntax::Comment::Embedded 
 \end_layout
 
 \end_inset
@@ -10015,7 +10015,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax:: InfixInTermPosition 
+X::Syntax::InfixInTermPosition 
 \end_layout
 
 \end_inset
@@ -10290,7 +10290,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax:: Number:: RadixOutOfRange 
+X::Syntax::Number::RadixOutOfRange 
 \end_layout
 
 \end_inset
@@ -10455,7 +10455,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax::Regex:: SolitaryQuantifier 
+X::Syntax::Regex::SolitaryQuantifier 
 \end_layout
 
 \end_inset
@@ -10565,7 +10565,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax::Self:: WithoutObject 
+X::Syntax::Self::WithoutObject 
 \end_layout
 
 \end_inset
@@ -10620,7 +10620,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax:: Signature::InvocantMarker 
+X::Syntax::Signature::InvocantMarker 
 \end_layout
 
 \end_inset
@@ -10675,7 +10675,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax::Term:: MissingInitializer 
+X::Syntax::Term::MissingInitializer 
 \end_layout
 
 \end_inset
@@ -10785,7 +10785,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax:: Variable::Match 
+X::Syntax::Variable::Match 
 \end_layout
 
 \end_inset
@@ -10840,7 +10840,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax:: Variable::Numeric 
+X::Syntax::Variable::Numeric 
 \end_layout
 
 \end_inset
@@ -10895,7 +10895,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Syntax:: Variable::Twigil 
+X::Syntax::Variable::Twigil 
 \end_layout
 
 \end_inset
@@ -11005,7 +11005,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::Temporal:: InvalidFormat 
+X::Temporal::InvalidFormat 
 \end_layout
 
 \end_inset
@@ -11115,7 +11115,7 @@ class
 \begin_layout Plain Layout
 
 \family typewriter
-X::TypeCheck:: Assignment 
+X::TypeCheck::Assignment 
 \end_layout
 
 \end_inset
