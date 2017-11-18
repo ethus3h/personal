@@ -5,5 +5,5 @@ A/UserRights=[{"Method"\:15,"Uri"\:"/users/A"},{"Method"\:15,"Uri"\:"/workspace/
 A/UserRightsVersion=3
 A/Workspaces=[{"LastModified"\:1510845463198,"Id"\:"kolubat"}]
 A/maqettaInit=true
-A/maqettaWorkbenchPref={"activeEditor"\:"./project1/HomeScreenClient.html","editors"\:["./project1/HomeScreenClient.html"],"nhfo"\:{"project1"\:{"device"\:"iphone","layout"\:"flow","themeSet"\:{"_COMMENT_"\:"Defines site-specific default theme sets","desktopTheme"\:"claro","mobileTheme"\:[{"device"\:"Android","theme"\:"android"},{"device"\:"BlackBerry","theme"\:"blackberry"},{"device"\:"iPad","theme"\:"ipad"},{"device"\:"iPhone","theme"\:"iphone"},{"device"\:"other","theme"\:"iphone"}],"name"\:"site_dojo_default"}}}}
+A/maqettaWorkbenchPref={"activeEditor"\:null,"editors"\:[],"nhfo"\:{"project1"\:{"device"\:"iphone","layout"\:"flow","themeSet"\:{"_COMMENT_"\:"Defines site-specific default theme sets","desktopTheme"\:"claro","mobileTheme"\:[{"device"\:"Android","theme"\:"android"},{"device"\:"BlackBerry","theme"\:"blackberry"},{"device"\:"iPad","theme"\:"ipad"},{"device"\:"iPhone","theme"\:"iphone"},{"device"\:"other","theme"\:"iphone"}],"name"\:"site_dojo_default"}}}}
 eclipse.preferences.version=1
