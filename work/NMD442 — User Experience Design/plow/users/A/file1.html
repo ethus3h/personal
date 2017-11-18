@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dojox/mobile",
+  "dojox/mobile/deviceTheme",
+  "dojox/mobile/TextBox",
+  "dojox/mobile/ToggleButton",
+  "dojox/mobile/Button"
+]);
+</script>
+<style>@import "themes/claro/claro.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
+</head>
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+ <input type="text" data-dojo-type="dojox/mobile/TextBox" style="width: 170.99999354589843px; position: absolute; z-index: 900; height: 23.999993545898437px; left: 99.63333129882812px; top: 153px;"></input>
+ <label style="position: absolute; z-index: 900; font-size: 4em; left: 42px; top: 43px;">
+Autoplow</label>
+ <label style="position: absolute; z-index: 900; left: 42px; top: 157.56666564941406px;">
+   Name</label>
+ <input type="text" data-dojo-type="dojox/mobile/TextBox" style="width: 170.99999354589843px; height: 23.999993545898437px; position: absolute; z-index: 900; left: 99.63334655761719px; top: 203.433px;"></input>
+ <label style="position: absolute; z-index: 900; left: 42.00001525878906px; top: 207.99966564941406px;">
+Password</label>
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 123.63333129882812px; top: 368px;" onclick="location.href='HomeScreenClient.html'">
+Log in</button>
+ </body>
+</html>
