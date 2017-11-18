@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dojox/mobile",
+  "dojox/mobile/deviceTheme",
+  "dojox/mobile/TextBox",
+  "dojox/mobile/ToggleButton",
+  "dojox/mobile/Button",
+  "dojox/mobile/DatePicker",
+  "dojox/mobile/ValuePickerDatePicker",
+  "dojox/mobile/SpinWheel",
+  "dojox/mobile/ValuePicker",
+  "dojox/mobile/ValuePickerSlot",
+  "dijit/form/DataList",
+  "dojox/mobile/ComboBox"
+]);
+</script>
+<style>@import "themes/claro/claro.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
+</head>
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+ <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
+   Autoplow: Schedule plowing</label>
+ <label style="position: absolute; z-index: 900; left: 255px; top: 20px;">
+ Log out</label>
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 155.10000610351562px; left: 80.56666564941406px; top: 329px;">
+ Add time condition</button>
+ <table border="2" style="border-collapse: collapse; table-layout: fixed; height: auto; position: absolute; z-index: 900; left: 26px; top: 81px; width: 265px;">
+   <colgroup>
+     <col></col>
+     <col></col>
+   </colgroup>
+   <tbody>
+     <tr>
+       <th>
+         Metric</th>
+       <th>
+         Condition</th>
+     </tr>
+     <tr>
+       <td>
+         &nbsp;</td>
+       <td>
+         &nbsp;</td>
+     </tr>
+     <tr>
+       <td>
+         &nbsp;<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 61.06666564941406px;">
+<label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 28.83333264941406px;">
+  Existing conditions</label>
+<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 163.9750105058594px; top: 97.03332959765625px;">
+
+   OK</button>
+<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 90.31700135058593px; top: 97.18333112353515px;">
+
+     Cancel</button>
+<select data-dojo-type="dijit/form/DataList" data-dojo-props="id: &quot;DataList_2&quot;" dojotype="dijit.form.DataList">
+<option value="AM">
+
+       AM</option>
+<option value="PM">
+
+       PM</option>
+</select>
+<select data-dojo-type="dijit/form/DataList" id="DataList_1" data-dojo-props="id:&quot;DataList_1&quot;" dojotype="dijit.form.DataList">
+  <option value="AND">
+    AND</option>
+  <option value="OR">
+    OR</option>
+</select>
+<input type="text" data-dojo-type="dojox/mobile/ComboBox" data-dojo-props="value:&quot;AND&quot;, list:&quot;DataList_1&quot;" style="position: absolute; z-index: 900; left: 147.51667462939454px; top: 26.76667462939453px; width: 36.000008804687496px;"></input>
+<label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 61.33334027880859px;">
+day</label>
+<div style="position: absolute; z-index: 900; width: 201px; height: 149px;"></div>
+</div>
+</td>
+       <td>
+         &nbsp;</td>
+     </tr>
+     <tr>
+       <td>
+         &nbsp;</td>
+       <td>
+         &nbsp;</td>
+     </tr>
+     <tr>
+       <td>
+         &nbsp;</td>
+       <td>
+         &nbsp;</td>
+     </tr>
+     <tr>
+       <td>
+         &nbsp;</td>
+       <td>
+         &nbsp;</td>
+     </tr>
+     <tr>
+       <td>
+         &nbsp;</td>
+       <td>
+         &nbsp;</td>
+     </tr>
+   </tbody>
+ </table>
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 80.56666564941406px; top: 409px;">
+   Add snowfall condition</button>
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 153.86666870117188px; left: 80.56666564941406px; top: 369px;">
+   Add day condition</button>
+</body>
+</html>
