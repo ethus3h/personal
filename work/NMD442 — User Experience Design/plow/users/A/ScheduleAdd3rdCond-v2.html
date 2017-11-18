@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <title>Untitled</title>
-<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':'', 'mblLoadCompatPattern': ''"></script>
+<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''"></script>
 <script type="text/javascript">
 require([
   "dijit/dijit",
@@ -30,7 +30,7 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
  <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
    Autoplow: Schedule plowing</label>
  <label style="position: absolute; z-index: 900; left: 255px; top: 20px;">
@@ -55,7 +55,7 @@ require([
      </tr>
      <tr>
        <td>
-         &nbsp;<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 61.06666564941406px;">
+        and day is<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 61.06666564941406px;">
 <label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 28.83333264941406px;">
   Existing conditions</label>
 <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 163.9750105058594px; top: 97.03332959765625px;">
@@ -71,6 +71,8 @@ require([
     
     
     
+    
+    
     AND</option>
   <option value="OR">
     
@@ -78,63 +80,26 @@ require([
     
     
     
+    
+    
     OR</option>
 </select>
-<input type="text" data-dojo-type="dojox/mobile/ComboBox" data-dojo-props="value:&quot;AND&quot;, list:&quot;DataList_1&quot;" style="position: absolute; z-index: 900; left: 147.51667462939454px; top: 26.76667462939453px; width: 36.000008804687496px;"></input>
+<input type="text" data-dojo-type="dojox/mobile/ComboBox" data-dojo-props="value:&quot;OR&quot;, list:&quot;DataList_1&quot;" style="position: absolute; z-index: 900; left: 147.51667462939454px; top: 26.76667462939453px; width: 36.000008804687496px;"></input>
 <select data-dojo-type="dijit/form/DataList" id="DataList_2" data-dojo-props="id:&quot;DataList_2&quot;" dojotype="dijit.form.DataList">
-  <option value="is">
-    
-    
-    
-    
-    
-    is</option>
-  <option value="isnot">
-    
-    
-    
-    
-    
-  is not</option>
+  <option value="more than">
+    more than</option>
+  <option value="less than">
+    less than</option>
 </select>
-<input type="text" data-dojo-type="dojox/mobile/ComboBox" data-dojo-props="value:&quot;is&quot;, list:&quot;DataList_2&quot;" style="position: absolute; z-index: 900; width: 52px; left: 52.73333740234375px; top: 56.93333435058594px;"></input>
+<input type="text" data-dojo-type="dojox/mobile/ComboBox" style="position: absolute; z-index: 900; width: 60px; left: 58.56666564941406px; top: 57.58332824707031px;" data-dojo-props="value:&quot;more than&quot;, list:&quot;DataList_2&quot;"></input>
 <label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 61.33334027880859px;">
-day</label>
-<select data-dojo-type="dijit/form/DataList" id="DataList_3" data-dojo-props="id:&quot;DataList_3&quot;" dojotype="dijit.form.DataList">
-  <option value="Monday">
-    
-    
-    Monday</option>
-  <option value="Tuesday">
-    
-    
-    Tuesday</option>
-  <option value="Wednesday">
-    
-    
-    Wednesday</option>
-  <option value="Thursday">
-    
-    
-    Thursday</option>
-  <option value="Friday">
-    
-    
-    Friday</option>
-  <option value="Saturday">
-    
-    
-    Saturday</option>
-  <option value="Sunday">
-    
-    
-    Sunday</option>
-</select>
-<input type="text" data-dojo-type="dojox/mobile/ComboBox" style="position: absolute; z-index: 900; left: 122.56666564941406px; top: 56.93333435058594px; width: 66px;" data-dojo-props="value:&quot;Monday&quot;, list:&quot;DataList_3&quot;"></input>
+snow</label>
+<label style="position: absolute; z-index: 900; left: 163.98333740234375px; top: 62.93333435058594px;">
+  inches</label>
 </div>
 </td>
        <td>
-         &nbsp;</td>
+         Monday</td>
      </tr>
      <tr>
        <td>
@@ -162,6 +127,7 @@ day</label>
      </tr>
    </tbody>
  </table>
+ <input type="text" data-dojo-type="dojox/mobile/TextBox" value="5" style="position: absolute; z-index: 900; left: 180.78334045410156px; top: 207.56666564941406px; width: 21px;"></input>
  <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 80.56666564941406px; top: 409px;">
    Add snowfall condition</button>
  <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 153.86666870117188px; left: 80.56666564941406px; top: 369px;">
