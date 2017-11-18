@@ -22,7 +22,8 @@ require([
   "dojox/mobile/ValuePicker",
   "dojox/mobile/ValuePickerSlot",
   "dijit/form/DataList",
-  "dojox/mobile/ComboBox"
+  "dojox/mobile/ComboBox",
+  "clipart/Delete"
 ]);
 </script>
 <style>@import "themes/claro/claro.css";@import "app.css";
@@ -30,7 +31,7 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
  <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
    Autoplow: Schedule plowing</label>
  <table border="2" style="border-collapse: collapse; table-layout: fixed; height: auto; position: absolute; z-index: 900; left: 26px; top: 81px; width: 265px;">
@@ -43,20 +44,26 @@ require([
      <tr>
        <td>Time is</td>
        <td>8&colon;30 AM</td>
-     </tr>
+      <td>
+         &nbsp;<img data-dojo-type="clipart/Delete"></img>
+</td>
+    </tr>
      <tr>
        <td>
         and day is<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 61.06666564941406px;">
 <label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 28.83333264941406px;">
   Existing conditions</label>
-<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 163.9750105058594px; top: 97.03332959765625px;">
+<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 163.9750105058594px; top: 97.03332959765625px;" onclick="location.href='ScheduleAdded3rdCond.html'">
 
    OK</button>
-<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 90.31700135058593px; top: 97.18333112353515px;">
+<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 90.31700135058593px; top: 97.18333112353515px;" onclick="location.href='ScheduleAdded2ndCond.html'">
 
      Cancel</button>
 <select data-dojo-type="dijit/form/DataList" id="DataList_1" data-dojo-props="id:&quot;DataList_1&quot;" dojotype="dijit.form.DataList">
   <option value="AND">
+    
+    
+    
     
     
     
@@ -83,6 +90,9 @@ require([
     
     
     
+    
+    
+    
     OR</option>
 </select>
 <input type="text" data-dojo-type="dojox/mobile/ComboBox" data-dojo-props="value:&quot;OR&quot;, list:&quot;DataList_1&quot;" style="position: absolute; z-index: 900; left: 147.51667462939454px; top: 26.76667462939453px; width: 36.000008804687496px;"></input>
@@ -93,8 +103,14 @@ require([
     
     
     
+    
+    
+    
     more than</option>
   <option value="less than">
+    
+    
+    
     
     
     
@@ -108,32 +124,44 @@ snow</label>
 <label style="position: absolute; z-index: 900; left: 163.9833418046875px; top: 62.33333264941406px;">
   inches</label>
 </div>
-</td>
+
+  </td>
        <td>
          Monday</td>
+     <td>
+         &nbsp;<img data-dojo-type="clipart/Delete"></img>
+</td>
      </tr>
      <tr>
        <td>
          &nbsp;</td>
        <td>
          &nbsp;</td>
+       <td>
+         &nbsp;</td>
+   </tr>
+     <tr>
+       <td>
+         &nbsp;</td>
+       <td>
+         &nbsp;</td>
+     <td>
+         &nbsp;</td>
      </tr>
      <tr>
        <td>
          &nbsp;</td>
        <td>
          &nbsp;</td>
-     </tr>
+      <td>
+         &nbsp;</td>
+    </tr>
      <tr>
        <td>
          &nbsp;</td>
        <td>
          &nbsp;</td>
-     </tr>
-     <tr>
-       <td>
-         &nbsp;</td>
-       <td>
+     <td>
          &nbsp;</td>
      </tr>
    </tbody>
