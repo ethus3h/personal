@@ -30,7 +30,7 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
  <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
    Autoplow: Schedule plowing</label>
  <label style="position: absolute; z-index: 900; left: 255px; top: 20px;">
@@ -66,21 +66,28 @@ require([
 <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 90.31700135058593px; top: 97.18333112353515px;">
 
      Cancel</button>
-<select data-dojo-type="dijit/form/DataList" data-dojo-props="id: &quot;DataList_2&quot;" dojotype="dijit.form.DataList">
-<option value="AM">
-
-       AM</option>
-<option value="PM">
-
-       PM</option>
-</select>
 <select data-dojo-type="dijit/form/DataList" id="DataList_1" data-dojo-props="id:&quot;DataList_1&quot;" dojotype="dijit.form.DataList">
   <option value="AND">
+    
+    
     AND</option>
   <option value="OR">
+    
+    
     OR</option>
 </select>
 <input type="text" data-dojo-type="dojox/mobile/ComboBox" data-dojo-props="value:&quot;AND&quot;, list:&quot;DataList_1&quot;" style="position: absolute; z-index: 900; left: 147.51667462939454px; top: 26.76667462939453px; width: 36.000008804687496px;"></input>
+<select data-dojo-type="dijit/form/DataList" id="DataList_2" data-dojo-props="id:&quot;DataList_2&quot;" dojotype="dijit.form.DataList">
+  <option value="is">
+    
+    
+    is</option>
+  <option value="isnot">
+    
+    
+  is not</option>
+</select>
+<input type="text" data-dojo-type="dojox/mobile/ComboBox" data-dojo-props="value:&quot;is&quot;, list:&quot;DataList_2&quot;" style="position: absolute; z-index: 900; left: 60.65000915527344px; top: 59.18333435058594px; width: 52px;"></input>
 <label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 61.33334027880859px;">
 day</label>
 </div>
