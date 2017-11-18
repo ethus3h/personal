@@ -30,7 +30,7 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
  <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
    Autoplow: Schedule plowing</label>
  <label style="position: absolute; z-index: 900; left: 255px; top: 20px;">
@@ -43,73 +43,23 @@ require([
      <col></col>
    </colgroup>
    <tbody>
-     <tr>
-       <th>
-         Metric</th>
-       <th>
-         Condition</th>
-     </tr>
-     <tr>
-       <td>Time is</td>
-       <td>8&colon;30 AM</td>
+      <tr>
+       <td>
+         Time is</td>
+       <td>
+         8:30 AM</td>
      </tr>
      <tr>
        <td>
-        and day is<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 61.06666564941406px;">
-<label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 28.83333264941406px;">
-  Existing conditions</label>
-<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 163.9750105058594px; top: 97.03332959765625px;">
-
-   OK</button>
-<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 90.31700135058593px; top: 97.18333112353515px;">
-
-     Cancel</button>
-<select data-dojo-type="dijit/form/DataList" id="DataList_1" data-dojo-props="id:&quot;DataList_1&quot;" dojotype="dijit.form.DataList">
-  <option value="AND">
-    
-    
-    
-    
-    
-    
-    
-    
-    AND</option>
-  <option value="OR">
-    
-    
-    
-    
-    
-    
-    
-    
-    OR</option>
-</select>
-<input type="text" data-dojo-type="dojox/mobile/ComboBox" data-dojo-props="value:&quot;OR&quot;, list:&quot;DataList_1&quot;" style="position: absolute; z-index: 900; left: 147.51667462939454px; top: 26.76667462939453px; width: 36.000008804687496px;"></input>
-<select data-dojo-type="dijit/form/DataList" id="DataList_2" data-dojo-props="id:&quot;DataList_2&quot;" dojotype="dijit.form.DataList">
-  <option value="more than">
-    
-    more than</option>
-  <option value="less than">
-    
-    less than</option>
-</select>
-<input type="text" data-dojo-type="dojox/mobile/ComboBox" style="position: absolute; z-index: 900; width: 60px; left: 58.56666564941406px; top: 57.58332824707031px;" data-dojo-props="value:&quot;more than&quot;, list:&quot;DataList_2&quot;"></input>
-<label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 61.33334027880859px;">
-snow</label>
-<label style="position: absolute; z-index: 900; left: 163.9833418046875px; top: 62.33333264941406px;">
-  inches</label>
-</div>
-</td>
+         and day is</td>
        <td>
          Monday</td>
      </tr>
      <tr>
        <td>
-         &nbsp;</td>
+         or snow is more than</td>
        <td>
-         &nbsp;</td>
+         5 inches</td>
      </tr>
      <tr>
        <td>
@@ -131,7 +81,6 @@ snow</label>
      </tr>
    </tbody>
  </table>
- <input type="text" data-dojo-type="dojox/mobile/TextBox" value="5" style="position: absolute; z-index: 900; left: 180.78334045410156px; top: 207.56666564941406px; width: 21px;"></input>
  <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 80.56666564941406px; top: 409px;">
    Add snowfall condition</button>
  <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 153.86666870117188px; left: 80.56666564941406px; top: 369px;">
