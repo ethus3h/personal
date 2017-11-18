@@ -30,7 +30,7 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
  <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
    Autoplow: Schedule plowing</label>
  <label style="position: absolute; z-index: 900; left: 255px; top: 20px;">
@@ -58,7 +58,7 @@ require([
          &nbsp;<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 61.06666564941406px;">
 <label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 28.83333264941406px;">
   Existing conditions</label>
-<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 163.9750105058594px; top: 97.03332959765625px;">
+<button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 163.9750105058594px; top: 97.03332959765625px;" onclick="location.href='ScheduleAdded2ndCond.html'">
 
    OK</button>
 <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 90.31700135058593px; top: 97.18333112353515px;">
@@ -70,8 +70,10 @@ require([
     
     
     
+    
     AND</option>
   <option value="OR">
+    
     
     
     
@@ -85,8 +87,10 @@ require([
     
     
     
+    
     is</option>
   <option value="isnot">
+    
     
     
     
@@ -99,23 +103,30 @@ day</label>
 <select data-dojo-type="dijit/form/DataList" id="DataList_3" data-dojo-props="id:&quot;DataList_3&quot;" dojotype="dijit.form.DataList">
   <option value="Monday">
     
+    
     Monday</option>
   <option value="Tuesday">
+    
     
     Tuesday</option>
   <option value="Wednesday">
     
+    
     Wednesday</option>
   <option value="Thursday">
+    
     
     Thursday</option>
   <option value="Friday">
     
+    
     Friday</option>
   <option value="Saturday">
     
+    
     Saturday</option>
   <option value="Sunday">
+    
     
     Sunday</option>
 </select>
