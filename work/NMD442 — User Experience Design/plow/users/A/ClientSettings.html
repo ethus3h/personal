@@ -26,16 +26,28 @@ require([
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
 <body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
- <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
- Autoplow: Settings</label>
- <input type="radio" data-dojo-type="dojox/mobile/RadioButton" style="position: absolute; z-index: 900; left: 62.55000305175781px; top: 128.95px;"></input>
- <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 171.95px; top: 220px; width: 114.53334045410156px;" onclick="location.href='ScheduleRegularPlow-v2.html'">
- OK</button>
- <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 106.5333251953125px; left: 40.2833px; top: 220px;" onclick="location.href='ScheduleRegularPlow-v2.html'">
-Cancel</button>
- <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 238.5333251953125px; left: 43.166664123535156px; top: 400.49998474121094px;" onclick="location.href='ScheduleRegularPlow-v2.html'">
+ <label style="position: absolute; z-index: 900; left: 19px; top: 20px;" onclick="location.href='HomeScreenClient.html'">
+   Autoplow: Settings</label>
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 106.5333251953125px; left: 109.16667175292969px; top: 424px;" onclick="location.href='ScheduleRegularPlow-v2.html'">
+   Done</button>
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 238.5333251953125px; left: 43.16667175292969px; top: 334.99998474121094px;" onclick="location.href='ScheduleRegularPlow-v2.html'">
    Update payment information...</button>
- <div data-dojo-type="shapes/Rectangle" style="border-width: 3px; border-style: solid; border-color: black; border-radius: 10px; position: absolute; width: 281.00000870117185px; height: 198.00000870117188px; left: 19px; top: 65.3333px; z-index: 50;"></div>
- <div data-dojo-type="shapes/Rectangle" style="border-width: 3px; border-style: solid; border-color: black; border-radius: 10px; width: 281.00000870117185px; position: absolute; z-index: 50; height: 77.00000870117188px; left: 19px; top: 373.566650390625px;"></div>
+ <div data-dojo-type="shapes/Rectangle" style="border-width: 3px; border-style: solid; border-color: black; border-radius: 10px; position: absolute; width: 281px; height: 198px; z-index: 50; left: 19px; top: 65.3333px;">
+  <input type="radio" data-dojo-type="dojox/mobile/RadioButton" baseClass="mblRadioButton" style="position: absolute; z-index: 900; left: 6.616673051757813px; top: 66.58333870117188px;"></input>
+  <label style="position: absolute; z-index: 900; left: 46.19997000000001px; top: 17.766341752929687px;">
+    Bill immediately upon service</label>
+  <input type="radio" data-dojo-type="dojox/mobile/RadioButton" baseClass="mblRadioButton" style="position: absolute; z-index: 900; left: 6.616673051757813px; top: 137.0333432788086px;"></input>
+  <label style="position: absolute; z-index: 900; left: 46.19997000000001px; top: 61.84967000000002px;">
+Pre-pay monthly ($100: 4 services)</label>
+  <label style="position: absolute; z-index: 900; left: 52.06663870117188px; top: 83.99966389648439px;">
+(any remaining credit will carry over; refunded at end of season)</label>
+  <label style="position: absolute; z-index: 900; left: 46.20000129882813px; top: 133.15000282470703px;">
+    Pre-pay seasonally ($600: 24 services)</label>
+  <input type="radio" data-dojo-type="dojox/mobile/RadioButton" baseClass="mblRadioButton" style="position: absolute; z-index: 900; left: 46.19997000000001px; top: -95.25032084472655px;" checked="true"></input>
+  <input type="radio" data-dojo-type="dojox/mobile/RadioButton" baseClass="mblRadioButton" style="position: absolute; z-index: 900; left: 6.616673051757813px; top: 20.133346330566408px;" checked="true"></input>
+  <label style="position: absolute; z-index: 900; left: 46.20000129882813px; top: 151.48334175292968px;">
+    (any remaining credit refunded at end of season)</label>
+</div>
+ <div data-dojo-type="shapes/Rectangle" style="border-width: 3px; border-style: solid; border-color: black; border-radius: 10px; width: 281px; position: absolute; z-index: 50; height: 77px; left: 19px; top: 308.066650390625px;"></div>
 </body>
 </html>
