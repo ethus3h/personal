@@ -31,7 +31,7 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
  <div style="position: absolute; background-color: white; width: 324px; height: 492px; z-index: 0; left: -1.850006103515625px; top: -15.5px;">
   <div style="border: 3px solid black; position: absolute; z-index: 900; width: 279.1000061035156px; background-color: #0f7b85; height: 349.00000870117185px; left: 19.516677856445312px; top: 119.83332824707031px;">
    <button data-dojo-type="dojox/mobile/Button" style="width: 90.10000610351562px; position: absolute; z-index: 900; left: 16.91666084472656px; top: 306.7333417529297px;">
@@ -88,8 +88,10 @@ require([
     
     
     
+    
     AND</option>
   <option value="OR">
+    
     
     
     
@@ -127,8 +129,10 @@ require([
     
     
     
+    
     is</option>
   <option value="isnot">
+    
     
     
     
@@ -151,111 +155,28 @@ require([
 <label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 61.33334027880859px;">
 day</label>
 <select data-dojo-type="dijit/form/DataList" id="DataList_3" data-dojo-props="id:&quot;DataList_3&quot;" dojotype="dijit.form.DataList">
+  <option value="Weekday">
+    Weekday</option>
+  <option value="Weekend">
+    Weekend</option>
   <option value="Monday">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     Monday</option>
   <option value="Tuesday">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     Tuesday</option>
   <option value="Wednesday">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     Wednesday</option>
   <option value="Thursday">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     Thursday</option>
   <option value="Friday">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     Friday</option>
   <option value="Saturday">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     Saturday</option>
   <option value="Sunday">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     Sunday</option>
+  <option value="M/W/F">
+    M/W/F</option>
+  <option value="Tues/Thurs">
+    Tues/Thurs</option>
 </select>
 <input type="text" data-dojo-type="dojox/mobile/ComboBox" style="position: absolute; z-index: 900; left: 122.56666564941406px; top: 56.93333435058594px; width: 66px;" data-dojo-props="value:&quot;Monday&quot;, list:&quot;DataList_3&quot;"></input>
 </div>
