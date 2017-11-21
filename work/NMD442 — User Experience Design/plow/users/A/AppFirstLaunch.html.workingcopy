@@ -23,9 +23,11 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" style="background-color: blue;" data-maq-appstates="{}" id="myapp">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" style="background-color: blue;" id="myapp" data-maq-appstates="{}">
  <div style="position: absolute; background-color: white; width: 324px; height: 492px; z-index: 0; left: -1.850006103515625px; top: -15.5px;">
   <div style="border: 3px solid black; position: absolute; z-index: 900; width: 279.1000061035156px; height: 383.00000870117185px; left: 19.516677856445312px; top: 85.83332824707031px; background-color: #0f7b85;">
+   <button data-dojo-type="dojox/mobile/Button" style="width: 182.5333251953125px; position: absolute; z-index: 900; left: 47.3499951953125px; top: 239.73334175292968px;" onclick="location.href='ClientSettings.html'">
+     Log out</button>
  </div>
   <img src="2017nov20.png" style="position: absolute; z-index: 900; height: 51.30000305175781px; width: 322px; left: 0px; top: 14.53333px;"></img>
 </div>
@@ -35,8 +37,5 @@ require([
    Request on-demand plowing</button>
  <button data-dojo-type="dojox/mobile/Button" style="width: 182.5333251953125px; position: absolute; z-index: 900; left: 67.94999694824219px; top: 210px;" onclick="location.href='ClientSettings.html'">
    Settings</button>
-    <button data-dojo-type="dojox/mobile/Button" style="width: 182.5333251953125px; position: absolute; z-index: 900; left: 67.94999694824219px; top: 331.733px;" onclick="location.href='AppFirstLaunch.html'">
-     
-     Log out</button>
 </body>
 </html>
