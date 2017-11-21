@@ -1,0 +1,20 @@
+Opening WARC file ‘wget-20171120191108594183236_2d303530300ad7b74066fb324e1e8ee97d30cd422bc3-00000.warc.gz’.
+
+Cannot open cookies file ‘cookies.txt’: No such file or directory
+--2017-11-20 19:11:08--  https://media.defense.gov/2012/Jan/20/2000185304/670/394/0/120114-F-EY492-068.JPG
+Resolving media.defense.gov (media.defense.gov)... 104.98.49.7, 2600:1400:d:39b::221c, 2600:1400:d:383::221c
+Connecting to media.defense.gov (media.defense.gov)|104.98.49.7|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 19642 (19K) [image/jpg]
+Saving to: ‘media.defense.gov/2012/Jan/20/2000185304/670/394/0/120114-F-EY492-068.JPG’
+
+     0K .......... .........                                  100%  174M=0s
+
+2017-11-20 19:11:14 (174 MB/s) - ‘media.defense.gov/2012/Jan/20/2000185304/670/394/0/120114-F-EY492-068.JPG’ saved [19642/19642]
+
+FINISHED --2017-11-20 19:11:14--
+Total wall clock time: 5.4s
+Downloaded: 1 files, 19K in 0s (174 MB/s)
+Converted links in 0 files in 0 seconds.
+Opening WARC file ‘wget-20171120191108594183236_2d303530300ad7b74066fb324e1e8ee97d30cd422bc3-meta.warc.gz’.
+
