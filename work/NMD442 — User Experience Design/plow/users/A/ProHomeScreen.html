@@ -15,7 +15,8 @@ require([
   "dojox/mobile/deviceTheme",
   "dojox/mobile/TextBox",
   "dojox/mobile/ToggleButton",
-  "dojox/mobile/Button"
+  "dojox/mobile/Button",
+  "dojox/mobile/RadioButton"
 ]);
 </script>
 <style>@import "themes/claro/claro.css";@import "app.css";
@@ -26,7 +27,13 @@ require([
 <body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" style="background-color: blue;" id="myapp" data-maq-appstates="{}">
  <div style="position: absolute; background-color: white; width: 324px; height: 492px; z-index: 0; left: -1.850006103515625px; top: -15.5px;">
   <div style="border: 3px solid black; position: absolute; z-index: 900; width: 279.1000061035156px; height: 383.00000870117185px; left: 19.516677856445312px; top: 85.83332824707031px; background-color: #0f7b85;">
-   </div>
+   <input type="radio" data-dojo-type="dojox/mobile/RadioButton" baseClass="mblRadioButton" style="position: absolute; z-index: 900; left: 33.99999084472656px; top: 177.90000610351564px;" checked="true"></input>
+   <label style="position: absolute; z-index: 900; color: white; left: 80.00002824707032px; top: 176.20834197998047px;">
+     Taking requests</label>
+   <input type="radio" data-dojo-type="dojox/mobile/RadioButton" baseClass="mblRadioButton" style="position: absolute; z-index: 900; left: 33.99999084472656px; top: 212.46667175292967px;"></input>
+   <label style="color: white; position: absolute; z-index: 900; left: 79.99999084472657px; top: 210.77499237060547px;">
+     Not taking requests</label>
+ </div>
   <img src="2017nov20.png" style="position: absolute; z-index: 900; height: 51.30000305175781px; width: 322px; left: 0px; top: 14.53333px;"></img>
 </div>
  <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; height: 33px; left: 39.94999694824219px; top: 130px; width: 239.3000030517578px;" onclick="location.href='OnDemand.html'">
