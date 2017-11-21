@@ -30,11 +30,21 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
- <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
-   Autoplow: Schedule plowing</label>
-
- <table border="2" style="border-collapse: collapse; table-layout: fixed; height: auto; position: absolute; z-index: 900; left: 26px; top: 81px; width: 265px;">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
+  <div style="position: absolute; background-color: white; width: 324px; height: 492px; z-index: 0; left: -1.850006103515625px; top: -15.5px;">
+  <div style="border: 3px solid black; position: absolute; z-index: 900; width: 279.1000061035156px; background-color: #0f7b85; height: 349.00000870117185px; left: 19.516677856445312px; top: 119.83332824707031px;">
+   <button data-dojo-type="dojox/mobile/Button" style="width: 90.10000610351562px; position: absolute; z-index: 900; left: 16.91666084472656px; top: 306.7333417529297px;">
+     
+ Cancel</button>
+   <button data-dojo-type="dojox/mobile/Button" style="width: 102.10000610351562px; position: absolute; z-index: 900; left: 164.78332954589843px; top: 306.7333417529297px;">
+     
+   OK</button>
+ </div>
+  <img src="2017nov20.png" style="position: absolute; z-index: 900; height: 51.30000305175781px; width: 322px; left: 0px; top: 14.533340454101562px;"></img>
+  <label style="position: absolute; z-index: 900; font-weight: bold; left: 88.85001373291016px; top: 84.3333px;" onclick="location.href='ScheduleAskDiscard.html'">
+    Scheduled plow service</label>
+ </div>
+<table border="2" style="border-collapse: collapse; table-layout: fixed; height: auto; position: absolute; z-index: 900; width: 265px; color: white; left: 27px; top: 130px;">
    <colgroup>
       <col style="width: 87.41667175292969px;"></col>
      <col style="width: 88px; height: 129px;"></col>
@@ -51,7 +61,7 @@ require([
      </tr>
      <tr>
        <td>
-         &nbsp;<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 61.06666564941406px;">
+         &nbsp;<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; color: black; left: 13.416656494140625px; top: -13.73333740234375px;">
 <label style="position: absolute; z-index: 900; left: 33.33333264941406px; top: 27.84998761767578px;">
 Get plowing when time is</label>
 <input type="text" data-dojo-type="dojox/mobile/TextBox" value="8:30" style="position: absolute; z-index: 900; height: 21.999993545898437px; width: 35.999993545898434px; left: 33.33333264941406px; top: 54.53333722705078px;"></input>
@@ -117,10 +127,5 @@ Get plowing when time is</label>
    Add day condition</button>
  <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 82.5667px; top: 368px;">
    Add snowfall condition</button>
- <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 90.10000610351562px; left: 26px; top: 430px;">
- Cancel</button>
- <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 102.10000610351562px; left: 199px; top: 430px;">
-   OK</button>
-
-</body>
+ </body>
 </html>
