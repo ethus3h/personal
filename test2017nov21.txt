@@ -1,10 +1,1 @@
-source ember_bash_setup &> /dev/null
-set -x
-TMPDIR='/Volumes/Everything 2017 November 3/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p'
-export TMPDIR
-echo "example-crystal-passphrase" > '/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/.passhprase-2017nov21test'
-temp="$(tempFile)"
-tar -c -P -S --format pax '/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/' | sponge "$temp"
-stat "$temp"
-rm "$temp"
-set +x
+bash -c 'source ember_bash_setup &> /dev/null; set -x; TMPDIR='\''/Volumes/Everything 2017 November 3/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p'\''; export TMPDIR; echo "example-crystal-passphrase" > '\''/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 201;  939p/.passhprase-2017nov21test'\''; temp="$(tempFile)"; tar -c -P -S --format pax '\''/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/'\'' | sponge "$temp"; stat "$temp"; rm "$temp"; set +x'
