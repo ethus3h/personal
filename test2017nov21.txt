@@ -1,1 +1,1 @@
-bash -c 'trap - ERR; source ember_bash_setup &> /dev/null; TMPDIR='\''/Volumes/Everything 2017 November 3/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p'\''; export TMPDIR; temp="$(tempFile)"; "$(which sponge)" "$temp" < /dev/random; stat "$temp"; rm "$temp"; set +x'
+bash -c 'trap - ERR; source ember_bash_setup &> /dev/null; temp="$(tempFile)"; "$(which sponge)" "$temp" < /dev/random; stat "$temp"; rm "$temp"; set +x'
