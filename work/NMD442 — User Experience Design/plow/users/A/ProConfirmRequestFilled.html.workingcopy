@@ -33,7 +33,7 @@ require([
 </div>
  <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 207.53334045410156px; left: 56.383323669433594px; top: 230.5px;" onclick="location.href='ProHomeScreen.html'">
  Yes, request is filled</button>
- <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; height: 28px; width: 207.53334045410156px; left: 56.383323669433594px; top: 331.767px;" onclick="location.href='ProHomeScreen.html'">
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; height: 28px; width: 207.53334045410156px; left: 56.383331298828125px; top: 330.767px;" onclick="location.href='ProHomeScreen.html'">
    No, return to request page</button>
 </body>
 </html>
