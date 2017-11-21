@@ -1,1 +1,10 @@
-bash -c 'source ember_bash_setup &> /dev/null; set -x; TMPDIR='\''/Volumes/Everything 2017 November 3/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p'\''; export TMPDIR; echo "example-crystal-passphrase" > '\''/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/.passhprase-2017nov21test'\''; tar -c -P -S --format pax '\''/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/'\'' | checkedxz --request-wait-after - -k -C sha256 -T 0 --lzma2=preset=1 > /dev/null; echo $'\''\n\n\n\n\n'\''; tar -c -P -S --format pax '\''/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/'\'' | checkedxz --request-wait-after - -k -C sha256 -T 0 --lzma2=preset=1 | gpg --yes -c -v --cipher-algo AES256 --batch --passphrase-file '\''/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/.passhprase-2017nov21test'\'' - > /dev/null; set +x'
+source ember_bash_setup &> /dev/null
+set -x
+TMPDIR='/Volumes/Everything 2017 November 3/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p'
+export TMPDIR
+echo "example-crystal-passphrase" > '/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/.passhprase-2017nov21test'
+temp="$(tempFile)"
+tar -c -P -S --format pax '/Volumes/Archives/Elliot/Crystallize workspace begun 25 May 2017 939p/' | sponge "$temp"
+stat "$temp"
+rm "$temp"
+set +x
