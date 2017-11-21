@@ -31,10 +31,14 @@ require([
 <script type="text/javascript" src="app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
 </head>
-<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
- <label style="position: absolute; z-index: 900; left: 19px; top: 20px;">
-   Autoplow: Schedule plowing</label>
- <table border="2" style="border-collapse: collapse; table-layout: fixed; height: auto; position: absolute; z-index: 900; left: 26px; top: 81px; width: 265px;">
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
+ <div style="position: absolute; background-color: white; width: 324px; height: 492px; z-index: 0; left: -1.850006103515625px; top: -15.5px;">
+  <div style="border: 3px solid black; position: absolute; z-index: 900; width: 279.1000061035156px; background-color: #0f7b85; height: 349.00000870117185px; left: 19.516677856445312px; top: 119.83332824707031px;"></div>
+  <img src="2017nov20.png" style="position: absolute; z-index: 900; height: 51.30000305175781px; width: 322px; left: 0px; top: 14.533340454101562px;"></img>
+  <label style="position: absolute; z-index: 900; font-weight: bold; left: 88.85001373291016px; top: 84.3333px;" onclick="location.href='ScheduleAskDiscard.html'">
+    Scheduled plow service</label>
+ </div>
+<table border="2" style="border-collapse: collapse; table-layout: fixed; height: auto; position: absolute; z-index: 900; width: 265px; left: 27.650009155273438px; top: 114px;">
    <colgroup>
     <col style="width: 87.41667175292969px;"></col>
      <col style="width: 88px; height: 129px;"></col>
@@ -50,7 +54,7 @@ require([
       </tr>
      <tr>
        <td>
-         &nbsp;<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 61.06666564941406px;">
+         &nbsp;<div data-dojo-type="dojox/mobile/RoundRect" shadow="false" style="width: 200.0000088046875px; height: 115.99999354589843px; position: absolute; z-index: 900; left: 13.766670227050781px; top: 10.29998779296875px;">
 <label style="position: absolute; z-index: 900; left: 25.899998298828123px; top: 28.83333264941406px;">
   Existing conditions</label>
 <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; left: 163.9750105058594px; top: 97.03332959765625px;" onclick="location.href='ScheduleAdded2ndCond.html'">
@@ -75,8 +79,12 @@ require([
     
     
     
+    
+    
     AND</option>
   <option value="OR">
+    
+    
     
     
     
@@ -110,8 +118,12 @@ require([
     
     
     
+    
+    
     is</option>
   <option value="isnot">
+    
+    
     
     
     
@@ -144,8 +156,12 @@ day</label>
     
     
     
+    
+    
     Monday</option>
   <option value="Tuesday">
+    
+    
     
     
     
@@ -170,8 +186,12 @@ day</label>
     
     
     
+    
+    
     Wednesday</option>
   <option value="Thursday">
+    
+    
     
     
     
@@ -196,6 +216,8 @@ day</label>
     
     
     
+    
+    
     Friday</option>
   <option value="Saturday">
     
@@ -209,8 +231,12 @@ day</label>
     
     
     
+    
+    
     Saturday</option>
   <option value="Sunday">
+    
+    
     
     
     
