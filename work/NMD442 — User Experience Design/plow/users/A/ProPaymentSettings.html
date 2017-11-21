@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dojox/mobile",
+  "dojox/mobile/deviceTheme",
+  "dojox/mobile/TextBox",
+  "dojox/mobile/ToggleButton",
+  "dojox/mobile/Button",
+  "dojox/mobile/RadioButton",
+  "shapes/Rectangle"
+]);
+</script>
+<style>@import "themes/claro/claro.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
+</head>
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+   <div style="position: absolute; background-color: white; width: 324px; height: 492px; z-index: 0; left: -1.8499999999999943px; top: -15.5px;">
+
+  <img src="2017nov20.png" style="position: absolute; z-index: 900; height: 51.30000305175781px; width: 322px; left: 0px; top: 14.53333px;"></img>
+  <div style="border: 3px solid black; width: 279.1000061035156px; background-color: #0f7b85; position: absolute; z-index: 900; height: 366.9999781835937px; left: 19.516677856445312px; top: 105.53334045410156px;"></div>
+</div>
+<label style="position: absolute; z-index: 900; font-weight: bold; left: 115.8833236694336px; top: 62.0333px;" onclick="location.href='ScheduleAskDiscard.html'">
+  Payout target</label>
+<label style="position: absolute; z-index: 900; left: 35.566637402343744px; top: 115px; color: white;">
+  Payout card number:</label>
+<input type="text" data-dojo-type="dojox/mobile/TextBox" style="position: absolute; z-index: 900; left: 75.3333px; top: 149px;" placeHolder="**** **** **** ****"></input>
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 106.5333251953125px; left: 178.933px; top: 417.5px;" onclick="location.href='ProHomeScreenUpdated.html'">
+   OK</button>
+ <label style="position: absolute; z-index: 900; color: white; left: 35.56666564941406px; top: 204px;">
+   Payout card expiration date:</label>
+ <input type="text" data-dojo-type="dojox/mobile/TextBox" placeHolder="MM" style="position: absolute; z-index: 900; width: 30.0000088046875px; left: 104.99997175292968px; top: 239px;"></input>
+ <input type="text" data-dojo-type="dojox/mobile/TextBox" placeHolder="YY" style="width: 30.0000088046875px; position: absolute; z-index: 900; left: 174.43330610351563px; top: 239px;"></input>
+ <label style="position: absolute; z-index: 900; color: white; left: 35.56666564941406px; top: 291px;">
+   Payout card security code:</label>
+ <input type="text" data-dojo-type="dojox/mobile/TextBox" placeHolder="***" style="position: absolute; z-index: 900; width: 30.0000088046875px; left: 138.46663129882813px; top: 325px;"></input>
+ <button data-dojo-type="dojox/mobile/Button" style="width: 106.5333251953125px; position: absolute; z-index: 900; left: 35.56666564941406px; top: 417.5px;" onclick="location.href='ProAskDiscard.html'">
+   Cancel</button>
+</body>
+</html>

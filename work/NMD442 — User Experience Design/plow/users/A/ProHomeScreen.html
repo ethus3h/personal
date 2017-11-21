@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dojox/mobile",
+  "dojox/mobile/deviceTheme",
+  "dojox/mobile/TextBox",
+  "dojox/mobile/ToggleButton",
+  "dojox/mobile/Button"
+]);
+</script>
+<style>@import "themes/claro/claro.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
+</head>
+<body data-maq-device="iphone" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" style="background-color: blue;" id="myapp" data-maq-appstates="{}">
+ <div style="position: absolute; background-color: white; width: 324px; height: 492px; z-index: 0; left: -1.850006103515625px; top: -15.5px;">
+  <div style="border: 3px solid black; position: absolute; z-index: 900; width: 279.1000061035156px; height: 383.00000870117185px; left: 19.516677856445312px; top: 85.83332824707031px; background-color: #0f7b85;">
+   </div>
+  <img src="2017nov20.png" style="position: absolute; z-index: 900; height: 51.30000305175781px; width: 322px; left: 0px; top: 14.53333px;"></img>
+</div>
+ <button data-dojo-type="dojox/mobile/Button" style="position: absolute; z-index: 900; width: 182.3000030517578px; left: 67.94999694824219px; top: 130px;" onclick="location.href='OnDemand.html'">
+   Get nearest service request</button>
+ <button data-dojo-type="dojox/mobile/Button" style="width: 182.5333251953125px; position: absolute; z-index: 900; left: 67.94999694824219px; top: 201.5px;" onclick="location.href='ClientSettings.html'">
+   Settings</button>
+ <button data-dojo-type="dojox/mobile/Button" style="width: 182.5333251953125px; position: absolute; z-index: 900; left: 67.94999694824219px; top: 331.733px;" onclick="location.href='AppFirstLaunch.html'">
+     
+     Log out</button>
+</body>
+</html>
