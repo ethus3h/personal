@@ -1,0 +1,1277 @@
+\batchmode
+\makeatletter
+\def\input@path{{\string"/Ember Library/Ember satellite projects/personal/work/COS301 — Programming Languages/8. Project part 4/\string"/}}
+\makeatother
+\documentclass[17pt,english]{extarticle}
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle]{Wreathe}
+\setsansfont[Scale=0.7,Mapping=tex-text]{Linux Biolinum O}
+\setmonofont[Scale=0.7]{Fira Code}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage[authoryear]{natbib}
+\setstretch{1.5}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{indentfirst}
+\setmonofont[
+  Contextuals={Alternate}
+]{Fira Code}
+\usepackage{hyperref}
+\usepackage{url}
+
+\makeatother
+
+\usepackage{listings}
+\lstset{basicstyle={\texttt},
+columns=fullflexible,
+keepspaces=true,
+literate={-->}{\texttt{-->}}{1} {->}{\texttt{->}}{1} {==>}{\texttt{==>}}{1} {=>}{\texttt{=>}}{1}}
+\usepackage{xunicode}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\begin{document}
+
+\title{Perl 6: Project: Part 4}
+
+
+\author{Elliot Chandler (Wallace)}
+
+
+\date{10 October 2017}
+
+\maketitle
+
+\subsubsection*{Data types available in the language beyond primitive data types
+(such as ints, floats, etc.). This could include arrays, vectors,
+structures, strings, pointers, objects, and classes. You should include
+higher-level structures, such as hashs, stacks, etc., if they are
+part of the language itself and not just part of a standard or other
+library.}
+
+Perl 6 includes a large amount of non-primitive types in the language
+itself: 33 compound types, 56 ``domain-specific'' types, and 113
+exception types. This includes common compound types such as arrays,
+lists, and hashes, as well as various other types for a range of applications.
+By including a large amount of capabilities within the language core
+itself, it enables the base package to be quite functional without
+the need for as many additional libraries to have a practical base
+of tools to work from.
+
+
+\subsubsection*{Summary of standard libraries or classes that extend the language’s
+type system.}
+
+Perl 6 does not itself have a specified standard library \emph{per
+se}, but the Rakudo implementation does include a variety of additional
+\emph{modules} (46 of them).\citep{New1} It includes tools for performance
+debugging and profiling, such as \texttt{debugger-ui-commandline},
+\texttt{grammar-debugger} and \texttt{Grammar-Profiler-Simple}. It
+provides the \texttt{Terminal-ANSIColor} module for creating colored
+output from command-line programs, and \texttt{test-mock} and \texttt{Test-META}
+for creating unit tests. For data interchange and serialization, it
+provides seven modules for working with JSON, and one for XML, as
+well as a database interface module (\texttt{DBIlish}). For graphics,
+Rakudo Star comes with the \texttt{svg} and \texttt{svg-plot} modules.
+It also includes several such as \texttt{perl6-http-easy} and \texttt{perl6-http-status}
+for network interoperation. Perl 6 includes a package manager, also,
+called \texttt{zef}, which provides a command-line interface for managing
+the packages installed in a system.
+
+
+\subsubsection*{Semantics of expression evaluation.}
+
+Perl 6 makes a distinction between \emph{statements} and \emph{expressions},
+where expressions are statements that return a value. A program in
+Perl 6 semantically represents a list of statements (things for the
+computer to do). To make a statement act as an expression, the \texttt{do}
+keyword can be used, which will cause the statement given to represent
+its value in the given context.
+
+
+\subsubsection*{Coercions/implicit type conversions that are performed in expression
+evaluation.}
+
+By default, Perl 6 when encountering a variable that does not have
+a specified type will convert it to the necessary type when it is
+used in a context where its current type is not applicable. To override
+this behavior, types can be specified for each object, allowing strict
+type checking.
+
+
+\subsubsection*{Semantics of assignment statements.}
+
+Perl 6 has somewhat complicated assignment semantics, similar to Java,
+because it uses containers for some things, but things can also exist
+without containers. The documentation writes that ``The assignment
+operator asks the container on the left to store the value on its
+right''. This means that the actual effect of assigning a value to
+a name depends on the type of container that has been created by variable
+declaration. In practice, this is largely transparent to the user,
+and the context of a reference to a variable will affect whether the
+container is used or the value within the container is used. If the
+user wants control over this, the language provides some constructs
+for controlling these issues, but the defaults seem to generally work
+well. A list can contain containers or values. Because of this, it
+is not always possible to assign to list elements, because lists are
+immutable and values cannot be changed. However, if the items in a
+list are containers, they can be changed because the container itself
+will stay the same (the list would not be changing, but what one of
+the elements in the list refers to would be changing). Arrays, however,
+only hold containers; thus their contents can be changed. 
+
+\newpage{}\bibliographystyle{apa}
+\nocite{*}
+\bibliography{0_Ember_Library_Ember_satellite_projects_person___anguages_8__Project_part_4_2017sept20-p6bib}
+\newpage{}
+
+
+\part*{Appendix: Tables — after \citealp{Documentation}}
+
+
+\subsubsection*{Composite types}
+
+\begin{longtable}{|>{\centering}p{0.21\columnwidth}|c|>{\centering}p{0.31\columnwidth}}
+\hline 
+Category &
+Name &
+Description\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Array } &
+Sequence of itemized values\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Associative } &
+Object that supports looking up values by key\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Bag } &
+Immutable collection of distinct objects with integer weights\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{BagHash } &
+Mutable collection of distinct objects with integer weights\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Baggy } &
+Collection of distinct weighted objects\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Blob } &
+Immutable buffer for binary data ('Binary Large OBject')\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Buf } &
+Mutable buffer for binary data\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Capture } &
+Argument list suitable for passing to a\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Hash } &
+Mapping from strings to itemized values\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Iterable } &
+Interface for container objects that can be iterated over\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Iterator } &
+Generic API for producing a sequence of values\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{List } &
+Sequence of values\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Map } &
+Immutable mapping from strings to values\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Mix } &
+Immutable collection of distinct objects with Real weights\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{MixHash } &
+Mutable collection of distinct objects with Real weights\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Mixy } &
+Collection of distinct objects with Real weights\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{NFC } &
+Codepoint-String in Normal Form C (Composed)\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{NFD } &
+Codepoint-String in Normal Form D (Decomposed)\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{NFKC } &
+Codepoint-String in Normal Form KC (Compatibility Composed)\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{NFKD } &
+Codepoint-String in Normal Form KD (Compatibility Decomposed)\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pair } &
+Key/value pair\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Positional } &
+Object that supports looking up values by index\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{PositionalBindFailover } &
+Failover for binding to a Positional\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{PseudoStash } &
+Stash type for pseudo-packages\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{QuantHash } &
+Collection of objects represented as hash keys\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Range } &
+Interval of ordered values\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Seq } &
+An iterable, lazy sequence of values\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Set } &
+Immutable collection of distinct objects\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{SetHash } &
+Mutable collection of distinct objects\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Setty } &
+Collection of distinct objects\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Slip } &
+A kind of List that automatically flattens into an outer container\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Stash } &
+Table for \textquotedbl{}our\textquotedbl{}-scoped symbols\tabularnewline
+\hline 
+\hline 
+class &
+\texttt{Uni} &
+A string of Unicode codepoints\tabularnewline
+\hline 
+\end{longtable}
+
+
+\subsubsection*{Domain-specific types}
+
+\begin{longtable}{|>{\centering}p{0.31\columnwidth}|c|>{\centering}p{0.21\columnwidth}}
+\hline 
+Category &
+Name &
+Description\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Attribute } &
+Member variable\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Cancellation } &
+Removal of a task from a Scheduler before normal completion\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Channel } &
+Thread-safe queue for sending values from producers to consumers\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{CurrentThreadScheduler } &
+Scheduler that synchronously executes code on the current thread\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Cursor } &
+Internal state of the regex engine during parsing\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Distro } &
+Distribution related information\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Grammar } &
+Group of named regexes that form a formal grammar\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{IO } &
+Input/output related routines\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::ArgFiles } &
+Iterate over contents of files specified on command line\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::CatHandle } &
+Use multiple IO handles as if they were one\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Handle } &
+Opened file or stream\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Notification } &
+Asynchronous notification for file and directory changes\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Path } &
+File or directory path\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Path::Cygwin } &
+IO::Path pre-loaded with IO::Spec::Cygwin\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Path::QNX } &
+IO::Path pre-loaded with IO::Spec::QNX\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Path::Unix } &
+IO::Path pre-loaded with IO::Spec::Unix\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Path::Win32 } &
+IO::Path pre-loaded with IO::Spec::Win32\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Pipe } &
+Buffered inter-process string or binary stream\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{IO::Socket } &
+Network socket\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Socket::Async } &
+Asynchronous TCP socket\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Socket::INET } &
+TCP Socket\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Spec } &
+Platform specific operations on file and directory paths\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Spec::Cygwin } &
+Platform specific operations on file and directory paths for Cygwin\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Spec::QNX } &
+Platform specific operations on file and directory paths QNX\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Spec::Unix } &
+Platform specific operations on file and directory paths for POSIX\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Spec::Win32 } &
+Platform specific operations on file and directory paths for Windows\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{IO::Special } &
+Path to Special I/O device\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Kernel } &
+Kernel related information\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Lock } &
+Low-level thread locking primitive\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Match } &
+Result of a successful regex match\tabularnewline
+\hline 
+\hline 
+enum  &
+\texttt{Order } &
+Human readable form for comparison operators.\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Block } &
+Block in a Pod document\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Block::Code } &
+Verbatim code block in a Pod document\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Block::Comment } &
+Comment in a Pod document\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Block::Declarator } &
+Declarator block in a Pod document\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Block::Named } &
+Named block in a Pod document\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Block::Para } &
+Paragraph in a Pod document\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Block::Table } &
+Table in a Pod document\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Heading } &
+Heading in a Pod document\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Pod::Item } &
+Item in a Pod enumeration list\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Proc } &
+Running process (filehandle-based interface)\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Proc::Async } &
+Running process (asynchronous interface)\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Promise } &
+Status/result of an asynchronous computation\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Regex } &
+String pattern\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{Scheduler } &
+Scheme for automatically assigning tasks to threads\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Semaphore } &
+Control access to shared resources by multiple processes\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Supplier } &
+Live\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Supplier::Preserving } &
+Cached live\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Supply } &
+Asynchronous data stream with multiple subscribers\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Tap } &
+Subscription to a Supply\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Telemetry } &
+Collect performance state for analysis\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Telemetry::Period } &
+Performance data over a period\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Thread } &
+Concurrent execution of code (low-level)\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{ThreadPoolScheduler } &
+Scheduler that distributes work among a pool of threads\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{VM } &
+Perl 6 Virtual Machine related information\tabularnewline
+\hline 
+\end{longtable}
+
+
+\subsubsection*{Exception types}
+
+\begin{longtable}{|c||>{\centering}p{0.21\columnwidth}||>{\centering}p{0.21\textwidth}|}
+\hline 
+Category &
+Name &
+Description\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Backtrace } &
+Snapshot of the dynamic call stack\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Backtrace::Frame } &
+Single frame of a\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Exception } &
+Anomalous event capable of interrupting normal control-flow\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{Failure } &
+Delayed exception\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::AdHoc } &
+Error with a custom error message\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Anon::Augment } &
+Compilation error due to augmenting an anonymous package\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Anon::Multi } &
+Compilation error due to declaring an anonymous multi\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Assignment::RO } &
+Exception thrown when trying to assign to something read-only\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Attribute::NoPackage } &
+Compilation error due to declaring an attribute outside of a package\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Attribute::Package } &
+Compilation error due to declaring an attribute in an ineligible package\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Attribute::Undeclared } &
+Compilation error due to an undeclared attribute\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Augment::NoSuchType } &
+Compilation error due to augmenting a non-existing type\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Bind } &
+Error due to binding to something that is not a variable or container\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Bind::NativeType } &
+Compilation error due to binding to a natively typed variable\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Bind::Slice } &
+Error due to binding to a slice\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Caller::NotDynamic } &
+Error while trying to access a non dynamic variable through CALLER\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Channel::ReceiveOnClosed } &
+Error due to calling\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Channel::SendOnClosed } &
+Error due to calling\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{X::Comp } &
+Common role for compile-time errors\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Composition::NotComposable } &
+Compilation error due to composing an ineligible type\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Constructor::Positional } &
+Error due to passing positional arguments to a default constructor\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::ControlFlow } &
+Error due to calling a loop control command in an ineligible scope\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::ControlFlow::Return } &
+Error due to calling return outside a routine\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::DateTime::TimezoneClash } &
+Error due to using both timezone offset and :timezone\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Declaration::Scope } &
+Compilation error due to a declaration with an ineligible scope\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Declaration::Scope::Multi } &
+Compilation error due to declaring a multi with an ineligible scope\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Does::TypeObject } &
+Error due to mixing into a type object\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Eval::NoSuchLang } &
+Error due to specifying an unknown language for EVAL\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Export::NameClash } &
+Compilation error due to exporting the same symbol twice\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{X::IO } &
+IO related error\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Chdir } &
+Error while trying to change the working directory\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Chmod } &
+Error while trying to change file permissions\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Copy } &
+Error while trying to copy a file\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Cwd } &
+Error while trying to determine the current working directory\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Dir } &
+Error while trying to get a directory's contents\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::DoesNotExist } &
+Error while doing file tests on a non existing path\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Link } &
+Error while trying to create a link\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Mkdir } &
+Error while trying to create a directory\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Move } &
+Error while trying to move a file\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Rename } &
+Error while trying to rename a file or directory\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Rmdir } &
+Error while trying to remove a directory\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Symlink } &
+Error while trying to create a symbolic link\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::IO::Unlink } &
+Error while trying to remove a file\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Inheritance::NotComposed } &
+Error due to inheriting from a type that's not composed yet\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Inheritance::Unsupported } &
+Compilation error due to inheriting from an ineligible type\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Method::InvalidQualifier } &
+Error due to calling a qualified method from an ineligible class\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Method::NotFound } &
+Error due to calling a method that isn't there\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Method::Private::Permission } &
+Compilation error due to calling a private method without permission\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Method::Private::Unqualified } &
+Compilation error due to an unqualified private method call\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Mixin::NotComposable } &
+Error due to using an ineligible type as a mixin\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::NYI } &
+Error due to use of an unimplemented feature\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::NoDispatcher } &
+Error due to calling a dispatch command in an ineligible scope\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Numeric::Real } &
+Error while trying to coerce a number to a Real type\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{X::OS } &
+Error reported by the operating system\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Obsolete } &
+Compilation error due to use of obsolete syntax\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::OutOfRange } &
+Error due to indexing outside of an allowed range\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Package::Stubbed } &
+Compilation error due to a stubbed package that is never defined\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Parameter::Default } &
+Compilation error due to an unallowed default value in a signature\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Parameter::MultipleTypeConstraints } &
+Compilation error due to a parameter with multiple type constraints\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Parameter::Placeholder } &
+Compilation error due to an unallowed placeholder in a signature\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Parameter::Twigil } &
+Compilation error due to an unallowed twigil in a signature\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Parameter::WrongOrder } &
+Compilation error due to passing parameters in the wrong order\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Phaser::Multiple } &
+Compilation error due to multiple phasers of the same type\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Phaser::PrePost } &
+Error due to a false return value of a PRE/POST phaser\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Placeholder::Block } &
+Compilation error due to a placeholder in an ineligible block\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Placeholder::Mainline } &
+Compilation error due to a placeholder in the mainline\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{X::Pod } &
+Pod related error\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{X::Proc::Async } &
+Exception thrown by\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Proc::Async::AlreadyStarted } &
+Error due to calling\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Proc::Async::CharsOrBytes } &
+Error due to tapping the same\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Proc::Async::MustBeStarted } &
+Error due to interacting with a\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Proc::Async::OpenForWriting } &
+Error due to writing to a read-only\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Proc::Async::TapBeforeSpawn } &
+Error due to tapping a Proc::Async stream after spawning its process\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Proc::Unsuccessful } &
+Exception thrown if a Proc object is sunk after the process it ran
+exited unsuccessfully\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Promise::CauseOnlyValidOnBroken } &
+Error due to asking why an unbroken promise has been broken.\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Promise::Vowed } &
+Error due to directly trying to keep/break a vowed promise.\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Redeclaration } &
+Compilation error due to declaring an already declared symbol\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Role::Initialization } &
+Error due to passing an initialization value to an ineligible role\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Seq::Consumed } &
+Error due to trying to reuse a consumed sequence\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Sequence::Deduction } &
+Error due to constructing a sequence from ineligible input\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Signature::NameClash } &
+Compilation error due to two named parameters with the same name\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Signature::Placeholder } &
+Compilation error due to placeholders in a block with a signature\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Str::Numeric } &
+Error while trying to coerce a string to a number\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::StubCode } &
+Runtime error due to execution of stub code\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{X::Syntax } &
+Syntax error thrown by the compiler\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Augment::WithoutMonkeyTyping } &
+Compilation error due to augmenting a type without `MONKEY-TYPING`\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Comment::Embedded } &
+Compilation error due to a malformed inline comment\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Confused } &
+Compilation error due to unrecognized syntax\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::InfixInTermPosition } &
+Compilation error due to an infix in term position\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Malformed } &
+Compilation error due to a malformed construct (usually a declarator)\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Missing } &
+Compilation error due to a missing piece of syntax\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::NegatedPair } &
+Compilation error due to passing an argument to a negated colonpair\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::NoSelf } &
+Compilation error due to implicitly using a `self` that is not there\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Number::RadixOutOfRange } &
+Compilation error due to an unallowed radix in a number literal\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::P5 } &
+Compilation error due to use of Perl 5-only syntax\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Regex::Adverb } &
+Compilation error due to an unrecognized regex adverb\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Regex::SolitaryQuantifier } &
+Compilation error due to a regex quantifier without preceding atom\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Reserved } &
+Compilation error due to use of syntax reserved for future use\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Self::WithoutObject } &
+Compilation error due to invoking `self` in an ineligible scope\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Signature::InvocantMarker } &
+Compilation error due to a misplaced invocant marker in a signature\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Term::MissingInitializer } &
+Compilation error due to declaring a term without initialization\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::UnlessElse } &
+Compilation error due to an `unless` clause followed by `else`\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Variable::Match } &
+Compilation error due to declaring a match variable\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Variable::Numeric } &
+Compilation error due to declaring a numeric symbol\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Syntax::Variable::Twigil } &
+Compilation error due to an unallowed twigil in a declaration\tabularnewline
+\hline 
+\hline 
+role  &
+\texttt{X::Temporal } &
+Error related to DateTime or Date\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Temporal::InvalidFormat } &
+Error due to using an invalid format when creating a DateTime or Date\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::TypeCheck } &
+Error due to a failed type check\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::TypeCheck::Assignment } &
+Error due to a failed type check during assignment\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::TypeCheck::Binding } &
+Error due to a failed type check during binding\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::TypeCheck::Return } &
+Error due to a failed typecheck during `return`\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::TypeCheck::Splice } &
+Compilation error due to a macro trying to splice a non-AST value\tabularnewline
+\hline 
+\hline 
+class  &
+\texttt{X::Undeclared } &
+Compilation error due to an undeclared symbol\tabularnewline
+\hline 
+\end{longtable}
+
+
+\subsubsection*{List of modules included with Rakudo Star}
+
+\begin{longtable}{|c|}
+\hline 
+\texttt{DBIish}\tabularnewline
+\hline 
+\texttt{debugger-ui-commandline}\tabularnewline
+\hline 
+\texttt{doc}\tabularnewline
+\hline 
+\texttt{file-find}\tabularnewline
+\hline 
+\texttt{grammar-debugger}\tabularnewline
+\hline 
+\texttt{Grammar-Profiler-Simple}\tabularnewline
+\hline 
+\texttt{json}\tabularnewline
+\hline 
+\texttt{json\_fast}\tabularnewline
+\hline 
+\texttt{JSON-Class}\tabularnewline
+\hline 
+\texttt{JSON-Marshal}\tabularnewline
+\hline 
+\texttt{JSON-Name}\tabularnewline
+\hline 
+\texttt{JSON-Unmarshal}\tabularnewline
+\hline 
+\texttt{jsonrpc}\tabularnewline
+\hline 
+\texttt{library-make}\tabularnewline
+\hline 
+\texttt{Linenoise}\tabularnewline
+\hline 
+\texttt{META6}\tabularnewline
+\hline 
+\texttt{NativeHelpers-Blob}\tabularnewline
+\hline 
+\texttt{oo-monitors}\tabularnewline
+\hline 
+\texttt{p6-file-directory-tree}\tabularnewline
+\hline 
+\texttt{p6-File-Temp}\tabularnewline
+\hline 
+\texttt{p6-io-string}\tabularnewline
+\hline 
+\texttt{p6-Template-Mustache}\tabularnewline
+\hline 
+\texttt{panda-stub}\tabularnewline
+\hline 
+\texttt{perl6-datetime-format}\tabularnewline
+\hline 
+\texttt{perl6-digest-md5}\tabularnewline
+\hline 
+\texttt{perl6-encode}\tabularnewline
+\hline 
+\texttt{perl6-file-which}\tabularnewline
+\hline 
+\texttt{perl6-http-easy}\tabularnewline
+\hline 
+\texttt{perl6-http-status}\tabularnewline
+\hline 
+\texttt{perl6-lwp-simple}\tabularnewline
+\hline 
+\texttt{Perl6-MIME-Base64}\tabularnewline
+\hline 
+\texttt{perl6-pod-to-bigpage}\tabularnewline
+\hline 
+\texttt{perl6-Test-When}\tabularnewline
+\hline 
+\texttt{Pod-To-HTML}\tabularnewline
+\hline 
+\texttt{PSGI}\tabularnewline
+\hline 
+\texttt{shell-command}\tabularnewline
+\hline 
+\texttt{svg}\tabularnewline
+\hline 
+\texttt{svg-plot}\tabularnewline
+\hline 
+\texttt{tap-harness6}\tabularnewline
+\hline 
+\texttt{Template-Mojo}\tabularnewline
+\hline 
+\texttt{Terminal-ANSIColor}\tabularnewline
+\hline 
+\texttt{Test-META}\tabularnewline
+\hline 
+\texttt{test-mock}\tabularnewline
+\hline 
+\texttt{uri}\tabularnewline
+\hline 
+\texttt{xml-writer}\tabularnewline
+\hline 
+\texttt{zef}\tabularnewline
+\hline 
+\end{longtable}
+\end{document}
