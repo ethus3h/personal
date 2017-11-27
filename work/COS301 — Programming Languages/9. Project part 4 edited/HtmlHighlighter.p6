@@ -17,6 +17,10 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     say "Running tests";
 
     ok highlightHtml("foo", "o");
+    
+    ok runParserTest(q:to/♥/;
+
+    ♥, 'TOP');
 
     say "Done running tests. Report:";
     done-testing;
