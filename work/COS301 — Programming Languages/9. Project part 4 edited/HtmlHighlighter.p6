@@ -5,8 +5,8 @@ use Test;
 use DOM::Tiny;
 
 sub highlightHtml(Str $html, Str $keyword --> Str) {
-    my $dom = DOM::Tiny.parse($html);
-    say $dom.WHAT;
+    my Tiny $dom = DOM::Tiny.parse($html);
+    return "Blah";
 }
 
 # Test suite
