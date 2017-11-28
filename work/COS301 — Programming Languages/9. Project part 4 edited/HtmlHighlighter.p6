@@ -10,7 +10,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
         if .WHAT === (Text) {
             my Str $html = "<br>";
             my Bool $xml = False;
-            my $tree = DOM::Tiny::HTML::_parse($html, :$xml).tree;
+            my $tree = DOM::Tiny::HTML::_parse($html, :$xml);
             my sub _link($parent, @children) {
                 # From DOM::Tiny
                 # Link parent to children
@@ -21,7 +21,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
             }
             .tree.content(
                 _link(
-                    .tree, $tree.tree.children
+                    .parent, $tree.tree.children
                 )
             )
             # .content((
