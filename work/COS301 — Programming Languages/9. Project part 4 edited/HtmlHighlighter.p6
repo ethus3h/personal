@@ -9,7 +9,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     for $dom.tree.descendant-nodes {
         my $node = $_;
         if $node.WHAT === (Text) {
-            $node.replace("blue");
+            $node.content("blue");
         }
     };
 
