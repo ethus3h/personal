@@ -11,6 +11,14 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
             my Str $html = "<br>";
             my Bool $xml = False;
             my $tree = DOM::Tiny::HTML::_parse($html, :$xml).tree;
+            my sub _link($parent, @children) {
+                # From DOM::Tiny
+                # Link parent to children
+                for @children -> $node {
+                    $node.parent = $parent;
+                }
+                return @children;
+            }
             .tree.content(
                 _link(
                     .tree, $tree.tree.children
