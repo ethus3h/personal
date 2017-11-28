@@ -14,6 +14,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
 
         say S:g/a/b/ with "blah";
         #with .content
+        .content( "blbh" );
         .content( S:g/a/b/ with "blah"; )
     };
     return $dom.render()
