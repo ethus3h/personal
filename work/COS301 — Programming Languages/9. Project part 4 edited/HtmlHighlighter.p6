@@ -21,7 +21,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
             }
             .tree.content(
                 _link(
-                    .parent, DOM::Tiny::HTML::_parse($html, :$xml)
+                    .parent, @=$tree
                 )
             )
             # .content((
