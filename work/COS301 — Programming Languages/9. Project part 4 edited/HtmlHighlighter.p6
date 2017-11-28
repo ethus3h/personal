@@ -19,7 +19,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     ok highlightHtml("foo", "o");
     
     ok runParserTest(q:to/♥/;
-
+    <span style="background-color: blue; color: white">keyword</span>
     ♥, 'TOP');
 
     say "Done running tests. Report:";
