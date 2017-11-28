@@ -6,7 +6,12 @@ use DOM::Tiny;
 
 sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
-    for $dom.tree.Array { my $node = $_; say $node.WHAT };
+    for $dom.tree.descendant-nodes {
+        my $node = $_;
+        if $node.WHAT === (Text) {
+            say "True"
+        }
+    };
 
     #say $dom.replace('blue').render();
     return "Blah";
