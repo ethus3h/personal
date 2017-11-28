@@ -6,8 +6,7 @@ use DOM::Tiny;
 
 sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
-    #say $dom;
-    $dom»{ .say }
+    $dom»{ .say };
     
     say $dom.replace('blue').render();
     return "Blah";
