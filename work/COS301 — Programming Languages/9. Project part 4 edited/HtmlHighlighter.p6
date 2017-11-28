@@ -11,7 +11,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
             .content((
                 DOM::Tiny.parse((
                     S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
-                        with .content
+                        with .content.render
                 )).root
             ))
         }
