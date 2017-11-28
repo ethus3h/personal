@@ -11,10 +11,10 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
             my Str $newContent = S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
                 with .content;
             my DOM::Tiny $newParsed = DOM::Tiny.parse("blah");
-            .content (
+            .content((
                 S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
-                with .content
-            )
+                    with .content
+            ))
         }
     };
     return $dom.render()
