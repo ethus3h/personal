@@ -6,8 +6,8 @@ use DOM::Tiny;
 
 sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
-    say $dom;
-    $dom.find('p')».replace('');
+    #say $dom;
+    $dom»{ .say }
     
     say $dom.replace('blue').render();
     return "Blah";
@@ -18,7 +18,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     # Test lexer
     say "Running tests";
 
-    ok highlightHtml("foo", "o");
+    #ok highlightHtml("foo", "o");
     
     ok highlightHtml(q:to/♥/, 'blue');
     <span style="background-color: blue; color: white">blue<blue></blue</span>
