@@ -6,9 +6,8 @@ use DOM::Tiny;
 
 sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
-    for $dom.tree.descendant-nodes {
-        my $node = $_;
-        if $node.WHAT === (Text) {
+    $dom.tree.descendant-nodes»{
+        if .WHAT === (Text) {
             $node.content("blue");
         }
     };
