@@ -11,7 +11,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
             my Str $newContent = S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
                 with .content;
             my DOM::Tiny $newParsed = DOM::Tiny.parse("blah");
-            .content( $newParsed )
+            .content( $newParsed.root )
         }
     };
     return $dom.render()
