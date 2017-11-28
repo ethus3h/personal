@@ -9,11 +9,14 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     for $dom.tree.descendant-nodes {
         if .WHAT === (Text) {
             .content((
-                DOM::Tiny.parse((
-                    S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
-                        with .content.render
-                )).root
+                DOM::Tiny.parse("<br>").content
             ))
+            # .content((
+            #     DOM::Tiny.parse((
+            #         S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
+            #             with .content
+            #     )).content
+            # ))
         }
     };
     return $dom.render()
