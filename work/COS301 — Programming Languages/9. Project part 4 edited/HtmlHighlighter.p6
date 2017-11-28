@@ -16,9 +16,9 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     return $dom.render()
 }
 
-ok highlightHtml("foo", "o");
+say highlightHtml("foo", "o");
 
-ok highlightHtml(q:to/♥/, 'blue');
+say highlightHtml(q:to/♥/, 'blue');
 <span style="background-color: blue; color: white">blue<blue></blue</span>
 ♥
 
