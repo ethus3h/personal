@@ -7,11 +7,14 @@ use DOM::Tiny;
 sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
     for $dom.tree.descendant-nodes {
-        #my $blah = S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄 with "blah";
-        #say $blah;
+        my $blah = S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
+        with "blah";
+        say $blah;
         #with .content
-        .WHAT === (Text) and .content('blah'
-            S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄 with .content
+        .WHAT === (Text) and .content(
+            'blah'
+            #S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
+            #with .content
         )
     };
     return $dom.render()
