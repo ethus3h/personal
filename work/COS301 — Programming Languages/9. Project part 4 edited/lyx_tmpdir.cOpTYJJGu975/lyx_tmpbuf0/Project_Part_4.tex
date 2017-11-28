@@ -1,0 +1,132 @@
+\batchmode
+\makeatletter
+\def\input@path{{\string"/Ember Library/Ember satellite projects/personal/work/COS301 — Programming Languages/9. Project part 4 edited/\string"/}}
+\makeatother
+\documentclass[14pt,english]{extarticle}
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle]{Computer Modern}
+\setsansfont[Scale=0.7,Mapping=tex-text]{Linux Biolinum O}
+\setmonofont[Scale=0.7]{Fira Code}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\usepackage{setspace}
+\setstretch{1.5}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{indentfirst}
+\setmonofont[
+  Contextuals={Alternate}
+]{Fira Code}
+\usepackage{hyperref}
+\usepackage{url}
+
+\makeatother
+
+\usepackage{listings}
+\lstset{basicstyle={\texttt},
+columns=fullflexible,
+keepspaces=true,
+literate={-->}{\texttt{-->}}{1} {->}{\texttt{->}}{1} {==>}{\texttt{==>}}{1} {=>}{\texttt{=>}}{1}}
+\usepackage{xunicode}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\begin{document}
+
+\title{Perl 6: Project: Part 4}
+
+
+\author{Elliot Chandler (Wallace)}
+
+
+\date{10 October 2017}
+
+\maketitle
+
+\subsubsection*{1. Data types}
+
+Perl 6 includes a large amount of non-primitive types in the language
+itself: 33 compound types, 56 ``domain-specific'' types, and 113
+exception types. This includes common compound types such as arrays,
+lists, and hashes, as well as various other types for a range of applications.
+Perl 6 includes a large amount of capabilities within the language
+core itself. That allows the base language installation to be quite
+functional. It means that it is not necessary to install as many additional
+libraries to have a practical base of tools.
+
+
+\subsubsection*{2. Standard library}
+
+Perl 6 does not itself have a specified standard library \emph{per
+se}, but the Rakudo Star distribution (the primary way to obtain an
+implementation of the language) does include a variety of additional
+\emph{modules} (46 of them) \cite{New1}. Rakudo Star includes tools
+for performance debugging and profiling, such as \texttt{debugger-ui-commandline},
+\texttt{grammar-debugger} and \texttt{Grammar-Profiler-Simple}. It
+provides the \texttt{Terminal-ANSIColor} module for creating colored
+output from command-line programs, and \texttt{test-mock} and \texttt{Test-META}
+for creating unit tests. Rakudo Star provides tools for data interchange
+and serialization, in the form of seven modules for working with JSON,
+and one for XML, as well as a database interface module (\texttt{DBIlish}).
+For graphics, Rakudo Star comes with the \texttt{svg} and \texttt{svg-plot}
+modules. It also includes several such as \texttt{perl6-http-easy}
+and \texttt{perl6-http-status} for network interoperation. Perl 6
+includes a package manager module, also, called \texttt{zef}, which
+provides a command-line interface for managing the packages installed
+in a system.
+
+
+\subsubsection*{3. Semantics of expression evaluation}
+
+Perl 6 makes a distinction between ``statements'' and ``expressions''.
+Expressions in Perl 6 are statements that return a value. A program
+in Perl 6 semantically represents a list of statements (things for
+the computer to do). To make a statement act as an expression, the
+\texttt{do} keyword can be used, which will cause the statement given
+to represent its value in the given context. Perl 6 generally evaluates
+statements in the order in which they are presented in the program
+(following the natural control flow), although internally it will
+divide up statements to be run concurrently in multiple threads if
+the result is the same.
+
+
+\subsubsection*{4. Type coercion}
+
+By default, Perl 6 when encountering a variable that does not have
+a specified type will convert it to the necessary type when it is
+used in a context where its current type is not applicable. To override
+this behavior, types can be specified for each object, allowing strict
+type checking. When a specific type is requested for a variable, assignments
+to that variable will not be coerced, and explicit casting is required.
+
+
+\subsubsection*{5. Semantics of assignment statements}
+
+Perl 6 has complex assignment semantics, similar to Java, because
+it uses containers for some values, but values can also exist without
+containers. Containers are object-oriented wrappers around the native
+(native to the Perl 6 virtual machine) types. The documentation writes
+that ``The assignment operator asks the container on the left to
+store the value on its right'' \cite{Documentation}. Because of
+this, the actual effect of assigning a value to a name depends on
+the type of container that has been created by variable declaration.
+In practice, this is largely transparent to the user, and the context
+of a reference to a variable will affect whether the container is
+used or the value within the container is used. If the user wants
+control over this, the language provides some constructs for controlling
+these issues, but in my experience the defaults have generally worked
+well.
+
+A list can contain containers or values. Because of this, it is not
+always possible to assign to list elements, because lists are immutable
+and values cannot be changed. However, if the items in a list are
+containers, they can be changed because the container itself will
+stay the same. That is because the containers themselves do not change;
+rather, what they point to changes. Unlike lists, arrays only hold
+containers. Consequently, their contents can be changed. 
+
+\newpage{}\bibliographystyle{ieeetr}
+\nocite{*}
+\bibliography{0_Ember_Library_Ember_satellite_projects_person___s_9__Project_part_4_edited_2017sept20-p6bib}
+
+\end{document}

@@ -1,0 +1,89 @@
+\begin{thebibliography}{10}
+
+\bibitem{New1}
+{Rakudo organization on GitHub}, ``{Rakudo Star: star/modules at master}:
+  {\url{https://github.com/rakudo/star/tree/master/modules}},'' 2017.
+
+\bibitem{Documentation}
+{Perl 6 Documentation}, ``Perl 6 documentation:
+  {\url{https://docs.perl6.org/}},'' 19 Sept. 2017.
+\newblock The official Perl 6 documentation is very helpful for getting an
+  understanding of the language.
+
+\bibitem{P6FAQ}
+{Perl 6 Documentation}, ``{FAQ}: Frequently asked questions about {Perl} 6:
+  {\url{https://docs.perl6.org/language/faq}},'' 19 Sept. 2017.
+\newblock I used this article to learn some basic information about Perl 6.
+
+\bibitem{Holloway}
+R.~Holloway, ``The must-have features for {Perl} 6:
+  {\url{https://opensource.com/life/16/9/perl-6-features}},'' 23 Sept. 2016.
+\newblock This article provided a resource for learning about some of the
+  things that distinguish and differentiate Perl 6 from other languages.
+
+\bibitem{Miller}
+E.~Miller, ``A review of {Perl} 6:
+  {\url{https://www.evanmiller.org/a-review-of-perl-6.html}},'' 13 Aug. 2017.
+\newblock This article discusses Perl 6's merits and weaknesses.
+
+\bibitem{jnthnwrthngtn}
+jnthnwrthngtn, ``{Grammar}::{Tracer} and {Grammar}::{Debugger}:
+  {\url{https://perl6advent.wordpress.com/2011/12/02/grammartracer-and-grammardebugger/}},''
+  {\em Perl 6 Advent Calendar}, 2 Dec. 2011.
+\newblock Debugging grammars is hard out of the box.
+
+\bibitem{Lenz2017}
+M.~Lenz, {\em Perl 6 Fundamentals: A Primer with Examples, Projects, and Case
+  Studies}.
+\newblock 2017.
+\newblock This book provides a general introduction to Perl 6. It seems quite
+  accessible to me.
+
+\bibitem{Lenz2010}
+M.~Lenz, ``How to debug a {Perl} 6 grammar:
+  {\url{https://perlgeek.de/en/article/debug-a-perl-6-grammar}},'' 1 Sept.
+  2010.
+\newblock This is more information on debugging Perl 6 grammars.
+
+\bibitem{Overflow}
+{Stack Overflow}, ``Floating point inaccuracy examples:
+  {\url{https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples}},''
+  2010–2013.
+\newblock A citation for the claim regarding floating points being a little
+  odd.
+
+\bibitem{News}
+{Hacker News}, ``Why hasn't {Perl} 6 taken off yet?:
+  {\url{https://news.ycombinator.com/item?id=12888784}},'' Nov. 2016.
+\newblock This is where I learned that Perl 6 Rationals aren't
+  arbitrary-precision.
+
+\bibitem{Language}
+{The Perl 6 Programming Language}, ``The {Perl} 6 programming language:
+  {\url{https://perl6.org/}},'' n.d.
+\newblock This home page for the Perl 6 language introduces it and its culture.
+  Retrieved 20 Sept. 2017.
+
+\bibitem{RosenfeldDowney}
+L.~Rosenfeld and A.~B. Downey, ``Think {Perl} 6,'' 2017.
+\newblock I used this book as a supplementary resource for getting an overview
+  of Perl 6.
+
+\bibitem{project}
+{Perl 6 project}, ``{NQP — Not Quite Perl (6): README.pod}:
+  {\url{https://github.com/perl6/nqp}},'' 31 May 2017.
+\newblock This is where I got information about how Perl 6 is implemented, and
+  its portability.
+
+\bibitem{Documentation_2}
+{Perl 6 Documentation}, ``Grammars:
+  {\url{https://docs.perl6.org/language/grammars}},'' 19 Sept. 2017.
+\newblock This documentation page was one of my primary sources for getting an
+  understanding of the scope and capabilities of grammars in Perl 6.
+
+\bibitem{Wikipedia}
+Wikipedia, ``Perl 6: {\url{https://en.wikipedia.org/wiki/Perl_6}},''
+\newblock I used Wikipedia's article on Perl 6 as a way to find other articles
+  and books to look at (as well as Fogler Library and Web search).
+
+\end{thebibliography}
