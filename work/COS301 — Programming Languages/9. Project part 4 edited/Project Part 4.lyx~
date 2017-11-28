@@ -300,7 +300,7 @@ A list can contain containers or values.
  the container itself will stay the same.
  That is because the containers themselves do not change; rather, what they
  point to changes.
- Unlike lists, arrays only hold containers.
+ Arrays, however, only hold containers.
  Consequently, their contents can be changed.
  
 \end_layout
