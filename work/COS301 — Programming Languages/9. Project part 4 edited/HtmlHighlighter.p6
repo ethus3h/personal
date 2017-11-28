@@ -8,8 +8,9 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
     for $dom.tree.descendant-nodes {
         if .WHAT === (Text) {
-            .replace((
-                DOM::Tiny.parse("<br>")
+            my $tree = DOM::Tiny::HTML::_parse("<br>", False);
+            .content((
+                DOM::Tiny.new(:$tree, False)
             ))
             # .content((
             #     DOM::Tiny.parse((
