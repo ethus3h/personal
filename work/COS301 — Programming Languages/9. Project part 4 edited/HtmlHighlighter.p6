@@ -12,10 +12,14 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
         #S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
         #with .content
 
-        say S:g/a/b/ with "blah";
+        my $blah = S:g/a/b/ with "blah";
+        say $blah;
         #with .content
-        .content( "blbh" );
-        .content( S:g/a/b/ with "blah"; )
+        .WHAT === (Text) and {
+            my $newContent = S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
+                with .content;
+            .content( $newContent )
+        }
     };
     return $dom.render()
 }
