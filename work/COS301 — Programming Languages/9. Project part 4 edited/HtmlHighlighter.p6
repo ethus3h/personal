@@ -8,20 +8,18 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
     for $dom.tree.descendant-nodes {
         if .WHAT === (Text) {
-            say "blah";
-            say .content;
             my $newContent = S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
                 with .content;
-            say $newContent;
-            .content( $newContent )
+            my $newParsed = DOM::Tiny.parse($newContent);
+            .content( $newParsed )
         }
     };
     return $dom.render()
 }
 
-ok highlightHtml("foo", "o");
+say highlightHtml("foo", "o");
 
-ok highlightHtml(q:to/♥/, 'blue');
+say highlightHtml(q:to/♥/, 'blue');
 <span style="background-color: blue; color: white">blue<blue></blue</span>
 ♥
 
