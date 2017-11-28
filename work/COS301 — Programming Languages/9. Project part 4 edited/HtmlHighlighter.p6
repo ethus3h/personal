@@ -8,9 +8,22 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
     for $dom.tree.descendant-nodes {
         if .WHAT === (Text) {
-            .content((
-                DOM::Tiny.parse("<br>")
-            ))
+            my Str $html = "<br>";
+            my Bool $xml = False;
+            my $tree = DOM::Tiny::HTML::_parse($html, :$xml);
+            my sub _link($parent, @children) {
+                # From DOM::Tiny
+                # Link parent to children
+                for @children -> $node {
+                    $node.parent = $parent;
+                }
+                return @children;
+            }
+            .tree.content(
+                _link(
+                    .parent, $tree.tree.contentz
+                )
+            )
             # .content((
             #     DOM::Tiny.parse((
             #         S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
