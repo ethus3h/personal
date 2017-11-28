@@ -25,3 +25,4 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     say "Done running tests. Report:";
     done-testing;
 );
+ 
