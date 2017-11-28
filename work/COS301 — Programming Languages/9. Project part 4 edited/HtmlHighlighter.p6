@@ -9,11 +9,11 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     for $dom.tree.descendant-nodes {
         my $node = $_;
         if $node.WHAT === (Text) {
-            say "True"
+            $node.replace("blue");
         }
     };
 
-    #say $dom.replace('blue').render();
+    say $dom.render();
     return "Blah";
 }
 
