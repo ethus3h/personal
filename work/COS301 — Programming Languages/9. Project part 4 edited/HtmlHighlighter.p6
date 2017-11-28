@@ -12,8 +12,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
         #S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
         #with .content
 
-        my $blah = S:g/a/b/ with "blah";
-        say $blah;
+        say S:g/a/b/ with "blah";
         #with .content
         .WHAT === (Text) and .content( S:g/a/b/ with "blah" )
     };
