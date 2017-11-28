@@ -7,18 +7,16 @@ use DOM::Tiny;
 sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
     for $dom.tree.descendant-nodes {
-        .WHAT === (Text) and .content('<span style="background-color: blue; color: white">' ~ .content ~ '</span>')
+        .WHAT === (Text) and .content(S:g/($keyword)/'<span style="background-color: blue; color: white">' $0 '</span>'/ with .content)
     };
     return $dom.render()
 }
 
-    ok highlightHtml("foo", "o");
-    
-    ok highlightHtml(q:to/♥/, 'blue');
-    <span style="background-color: blue; color: white">blue<blue></blue</span>
-    ♥
+ok highlightHtml("foo", "o");
 
-    say "Test results:";
-    done-testing;
-);
- 
+ok highlightHtml(q:to/♥/, 'blue');
+<span style="background-color: blue; color: white">blue<blue></blue</span>
+♥
+
+say "Test results:";
+done-testing;
