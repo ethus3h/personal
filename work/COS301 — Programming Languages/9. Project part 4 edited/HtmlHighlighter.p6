@@ -10,10 +10,8 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
         if .WHAT === (Text) {
             my Str $html = "<br>";
             my Bool $xml = False;
-            my $tree = DOM::Tiny::HTML::_parse($html, :$xml);
-            .content((
-                DOM::Tiny.new(:$tree, :$xml)
-            ))
+            my $tree = DOM::Tiny::HTML::_parse($html, :$xml).tree;
+            .$tree.content(_link(.$tree, $tree.tree.children))
             # .content((
             #     DOM::Tiny.parse((
             #         S:g🍄($keyword)🍄<span style="background-color: blue; color: white"> $0 </span>🍄
