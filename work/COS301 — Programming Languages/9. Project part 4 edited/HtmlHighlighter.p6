@@ -9,9 +9,10 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     for $dom.tree.descendant-nodes {
         if .WHAT === (Text) {
             my Str $html = "<br>";
-            my $tree = DOM::Tiny::HTML::_parse($html, :xml<False>);
+            my Bool $xml = False;
+            my $tree = DOM::Tiny::HTML::_parse($html, :$xml);
             .content((
-                DOM::Tiny.new(:$tree, False)
+                DOM::Tiny.new(:$tree, :$xml)
             ))
             # .content((
             #     DOM::Tiny.parse((
