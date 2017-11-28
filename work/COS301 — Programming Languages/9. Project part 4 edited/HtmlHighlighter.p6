@@ -6,7 +6,7 @@ use DOM::Tiny;
 
 sub highlightHtml(Str $html, Str $keyword --> Str) {
     my DOM::Tiny $dom = DOM::Tiny.parse($html);
-    @$dom.tree: { my $node = $_; say $node.WHAT };
+    for $dom.tree.Array { my $node = $_; say $node.WHAT };
 
     #say $dom.replace('blue').render();
     return "Blah";
