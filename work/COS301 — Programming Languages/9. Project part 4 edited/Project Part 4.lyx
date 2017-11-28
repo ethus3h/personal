@@ -111,12 +111,20 @@ domain-specific
 
  types, and 113 exception types.
  This includes common compound types such as arrays, lists, and hashes,
- as well as various other types for a range of applications.
+ as well as various other types for a range of applications, such as for
+ documentation, concurrent programming, and I/O for various operating systems.
  Perl 6 includes a large amount of capabilities within the language core
  itself.
  That allows the base language installation to be quite functional.
  It means that it is not necessary to install as many additional libraries
- to have a practical base of tools.
+ to have a practical base of tools 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -199,7 +207,14 @@ perl6-http-status
 zef
 \family default
 , which provides a command-line interface for managing the packages installed
- in a system.
+ in a system 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "New1"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -237,7 +252,14 @@ do
  Perl 6 generally evaluates statements in the order in which they are presented
  in the program (following the natural control flow), although internally
  it will divide up statements to be run concurrently in multiple threads
- if the result is the same.
+ if the result is the same 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -252,7 +274,14 @@ By default, Perl 6 when encountering a variable that does not have a specified
  To override this behavior, types can be specified for each object, allowing
  strict type checking.
  When a specific type is requested for a variable, assignments to that variable
- will not be coerced, and explicit casting is required.
+ will not be coerced, and explicit casting is required 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -288,8 +317,14 @@ key "Documentation"
  a reference to a variable will affect whether the container is used or
  the value within the container is used.
  If the user wants control over this, the language provides some constructs
- for controlling these issues, but in my experience the defaults have generally
- worked well.
+ for controlling these issues 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+, but in my experience the defaults have generally worked well.
 \end_layout
 
 \begin_layout Standard
@@ -301,8 +336,14 @@ A list can contain containers or values.
  That is because the containers themselves do not change; rather, what they
  point to changes.
  Unlike lists, arrays only hold containers.
- Consequently, their contents can be changed.
- 
+ Consequently, their contents can be changed 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -319,6 +360,32 @@ options "ieeetr"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection*
+Appendix
+\end_layout
+
+\begin_layout Standard
+The appendices are not included here due to length.
+ Tables of the composite types, domain-specific types, and exception types
+ are available in the Perl 6 documentation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+ A list of modules included with Rakudo Star is available on request from
+ this author, based on the information from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "New1"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
