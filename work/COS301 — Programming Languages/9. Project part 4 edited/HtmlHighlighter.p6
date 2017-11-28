@@ -15,14 +15,14 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
                 # From DOM::Tiny
                 # Link parent to children
                 for @children -> $node {
-                    say $node.WHAT;
+                    say $parent.WHAT;
                     $node.parent = $parent;
                 }
                 return @children;
             }
             .tree.content(
                 _link(
-                    .tree, @=$tree.tree
+                    .tree, @=$tree.tree.children
                 )
             )
             # .content((
