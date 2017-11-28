@@ -300,7 +300,7 @@ A list can contain containers or values.
  the container itself will stay the same.
  That is because the containers themselves do not change; rather, what they
  point to changes.
- Arrays, however, only hold containers.
+ Unlike lists, arrays only hold containers.
  Consequently, their contents can be changed.
  
 \end_layout
@@ -314,7 +314,7 @@ A list can contain containers or values.
 LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "2017sept20-p6bib"
-options "apa"
+options "ieeetr"
 
 \end_inset
 

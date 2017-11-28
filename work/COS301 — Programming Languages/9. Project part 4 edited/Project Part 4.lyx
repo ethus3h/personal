@@ -47,8 +47,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine natbib
-\cite_engine_type authoryear
+\cite_engine basic
+\cite_engine_type default
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -136,7 +136,7 @@ modules
 \emph default
  (46 of them) 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "New1"
 
 \end_inset
@@ -314,7 +314,7 @@ A list can contain containers or values.
 LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "2017sept20-p6bib"
-options "apa"
+options "ieeetr"
 
 \end_inset
 
