@@ -19,8 +19,8 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
     ok highlightHtml("foo", "o");
     
     ok highlightHtml(q:to/♥/, 'blue');
-    <span style="background-color: blue; color: white">keyword</span>
-♥
+    <span style="background-color: blue; color: white">blue<blue></blue</span>
+    ♥
 
     say "Done running tests. Report:";
     done-testing;
