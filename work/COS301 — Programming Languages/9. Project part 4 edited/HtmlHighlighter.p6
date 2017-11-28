@@ -21,7 +21,7 @@ sub highlightHtml(Str $html, Str $keyword --> Str) {
             }
             .tree.content(
                 _link(
-                    .parent, @=$tree
+                    .tree, @=$tree
                 )
             )
             # .content((
