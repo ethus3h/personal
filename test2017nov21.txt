@@ -1,1 +1,0 @@
-bash -c 'trap - ERR; source ember_bash_setup &> /dev/null; temp="$(tempFile)"; "$(which sponge)" "$temp" < /dev/random; stat "$temp"; rm "$temp"; set +x'
