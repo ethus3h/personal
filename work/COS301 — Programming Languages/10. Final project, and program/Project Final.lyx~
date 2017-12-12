@@ -182,12 +182,24 @@ Perl (used it for one tiny project about eight years ago, but don't remember
 \end_layout
 
 \begin_layout Itemize
-Java (I don't really get it, and found it frustra
+Java (I don't really get it, and found it frustrating when I tried it)
+\end_layout
+
+\begin_layout Itemize
+C++ (poked around briefly trying to patch a couple of apps in it, no real
+ understanding)
+\end_layout
+
+\begin_layout Part*
+Part 2
 \end_layout
 
 \begin_layout Standard
-ourse of its development (begun in 2000), it was split from the older language,
- which will continue to be maintained separately.
+Perl 6 is a programming language first released at the end of 2015.
+ It was originally conceived as a revision of the Perl programming language,
+ but because it evolved during the course of its development (begun in 2000),
+ it was split from the older language, which will continue to be maintained
+ separately.
  It uses a specification and test-suite driven language development process,
  rather than an implementation-driven process.
  Consequently, there is not a single official implementation, although the
@@ -324,20 +336,11 @@ key "Documentation"
  not being available in Perl 6, thus necessitating working around their
  absence.
  For example, the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstinline!wantsarray!
-\end_layout
-
-\end_inset
-
- construct from Perl is apparently not available in Perl 6, according to
- the language FAQ 
+\family typewriter
+wantsarray
+\family default
+ from Perl is apparently not available in Perl 6, according to the language
+ FAQ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "P6FAQ"

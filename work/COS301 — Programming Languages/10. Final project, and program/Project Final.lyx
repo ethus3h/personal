@@ -335,8 +335,12 @@ key "Documentation"
  Perl, and consequently it is somewhat different, with some language constructs
  not being available in Perl 6, thus necessitating working around their
  absence.
- For example, thonstruct from Perl is apparently not available in Perl 6,
- according to the language FAQ 
+ For example, the 
+\family typewriter
+wantsarray
+\family default
+ construct from Perl is apparently not available in Perl 6, according to
+ the language FAQ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "P6FAQ"
