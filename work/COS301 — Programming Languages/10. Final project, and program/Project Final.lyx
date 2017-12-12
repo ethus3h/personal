@@ -698,6 +698,278 @@ S///
  to them.
 \end_layout
 
+\begin_layout Part*
+Part 4
+\end_layout
+
+\begin_layout Subsubsection*
+1.
+ Data types
+\end_layout
+
+\begin_layout Standard
+Perl 6 includes a large amount of non-primitive types in the language itself:
+ 33 compound types, 56 
+\begin_inset Quotes eld
+\end_inset
+
+domain-specific
+\begin_inset Quotes erd
+\end_inset
+
+ types, and 113 exception types.
+ This includes common compound types such as arrays, lists, and hashes,
+ as well as various other types for a range of applications, such as for
+ documentation, concurrent programming, and I/O for various operating systems.
+ Perl 6 includes a large amount of capabilities within the language core
+ itself.
+ That allows the base language installation to be quite functional.
+ It means that it is not necessary to install as many additional libraries
+ to have a practical base of tools 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+2.
+ Standard library
+\end_layout
+
+\begin_layout Standard
+Perl 6 does not itself have a specified standard library 
+\emph on
+per se
+\emph default
+, but the Rakudo Star distribution (the primary way to obtain an implementation
+ of the language) does include a variety of additional 
+\emph on
+modules
+\emph default
+ (46 of them) 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "New1"
+
+\end_inset
+
+.
+ Rakudo Star includes tools for performance debugging and profiling, such
+ as 
+\family typewriter
+debugger-ui-commandline
+\family default
+, 
+\family typewriter
+grammar-debugger
+\family default
+ and 
+\family typewriter
+Grammar-Profiler-Simple
+\family default
+.
+ It provides the 
+\family typewriter
+Terminal-ANSIColor
+\family default
+ module for creating colored output from command-line programs, and 
+\family typewriter
+test-mock
+\family default
+ and 
+\family typewriter
+Test-META
+\family default
+ for creating unit tests.
+ Rakudo Star provides tools for data interchange and serialization, in the
+ form of seven modules for working with JSON, and one for XML, as well as
+ a database interface module (
+\family typewriter
+DBIlish
+\family default
+).
+ For graphics, Rakudo Star comes with the 
+\family typewriter
+svg
+\family default
+ and 
+\family typewriter
+svg-plot
+\family default
+ modules.
+ It also includes several such as 
+\family typewriter
+perl6-http-easy
+\family default
+ and 
+\family typewriter
+perl6-http-status
+\family default
+ for network interoperation.
+ Perl 6 includes a package manager module, also, called 
+\family typewriter
+zef
+\family default
+, which provides a command-line interface for managing the packages installed
+ in a system 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "New1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+3.
+ Semantics of expression evaluation
+\end_layout
+
+\begin_layout Standard
+Perl 6 makes a distinction between 
+\begin_inset Quotes eld
+\end_inset
+
+statements
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+expressions
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Expressions in Perl 6 are statements that return a value.
+ A program in Perl 6 semantically represents a list of statements (things
+ for the computer to do).
+ To make a statement act as an expression, the 
+\family typewriter
+do
+\family default
+ keyword can be used, which will cause the statement given to represent
+ its value in the given context.
+ Perl 6 generally evaluates statements in the order in which they are presented
+ in the program (following the natural control flow), although internally
+ it will divide up statements to be run concurrently in multiple threads
+ if the result is the same 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+4.
+ Type coercion
+\end_layout
+
+\begin_layout Standard
+By default, Perl 6 when encountering a variable that does not have a specified
+ type will convert it to the necessary type when it is used in a context
+ where its current type is not applicable.
+ To override this behavior, types can be specified for each object, allowing
+ strict type checking.
+ When a specific type is requested for a variable, assignments to that variable
+ will not be coerced, and explicit casting is required 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+5.
+ Semantics of assignment statements
+\end_layout
+
+\begin_layout Standard
+Perl 6 has complex assignment semantics, similar to Java, because it uses
+ containers for some values, but values can also exist without containers.
+ Containers are object-oriented wrappers around the native (native to the
+ Perl 6 virtual machine) types.
+ The documentation writes that 
+\begin_inset Quotes eld
+\end_inset
+
+The assignment operator asks the container on the left to store the value
+ on its right
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+ Because of this, the actual effect of assigning a value to a name depends
+ on the type of container that has been created by variable declaration.
+ In practice, this is largely transparent to the user, and the context of
+ a reference to a variable will affect whether the container is used or
+ the value within the container is used.
+ If the user wants control over this, the language provides some constructs
+ for controlling these issues 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+, but in my experience the defaults have generally worked well.
+\end_layout
+
+\begin_layout Standard
+A list can contain containers or values.
+ Because of this, it is not always possible to assign to list elements,
+ because lists are immutable and values cannot be changed.
+ However, if the items in a list are containers, they can be changed because
+ the container itself will stay the same.
+ That is because the containers themselves do not change; rather, what they
+ point to changes.
+ Unlike lists, arrays only hold containers.
+ Consequently, their contents can be changed 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "2017sept20-p6bib"
+options "ieeetr"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Part 3 Appendix: Tables — after 
 \begin_inset CommandInset citation
@@ -4372,264 +4644,8 @@ Terminator
 
 \end_layout
 
-\begin_layout Part*
-Part 4
-\end_layout
-
-\begin_layout Subsubsection*
-1.
- Data types
-\end_layout
-
-\begin_layout Standard
-Perl 6 includes a large amount of non-primitive types in the language itself:
- 33 compound types, 56 
-\begin_inset Quotes eld
-\end_inset
-
-domain-specific
-\begin_inset Quotes erd
-\end_inset
-
- types, and 113 exception types.
- This includes common compound types such as arrays, lists, and hashes,
- as well as various other types for a range of applications, such as for
- documentation, concurrent programming, and I/O for various operating systems.
- Perl 6 includes a large amount of capabilities within the language core
- itself.
- That allows the base language installation to be quite functional.
- It means that it is not necessary to install as many additional libraries
- to have a practical base of tools 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Documentation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection*
-2.
- Standard library
-\end_layout
-
-\begin_layout Standard
-Perl 6 does not itself have a specified standard library 
-\emph on
-per se
-\emph default
-, but the Rakudo Star distribution (the primary way to obtain an implementation
- of the language) does include a variety of additional 
-\emph on
-modules
-\emph default
- (46 of them) 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "New1"
-
-\end_inset
-
-.
- Rakudo Star includes tools for performance debugging and profiling, such
- as 
-\family typewriter
-debugger-ui-commandline
-\family default
-, 
-\family typewriter
-grammar-debugger
-\family default
- and 
-\family typewriter
-Grammar-Profiler-Simple
-\family default
-.
- It provides the 
-\family typewriter
-Terminal-ANSIColor
-\family default
- module for creating colored output from command-line programs, and 
-\family typewriter
-test-mock
-\family default
- and 
-\family typewriter
-Test-META
-\family default
- for creating unit tests.
- Rakudo Star provides tools for data interchange and serialization, in the
- form of seven modules for working with JSON, and one for XML, as well as
- a database interface module (
-\family typewriter
-DBIlish
-\family default
-).
- For graphics, Rakudo Star comes with the 
-\family typewriter
-svg
-\family default
- and 
-\family typewriter
-svg-plot
-\family default
- modules.
- It also includes several such as 
-\family typewriter
-perl6-http-easy
-\family default
- and 
-\family typewriter
-perl6-http-status
-\family default
- for network interoperation.
- Perl 6 includes a package manager module, also, called 
-\family typewriter
-zef
-\family default
-, which provides a command-line interface for managing the packages installed
- in a system 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "New1"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection*
-3.
- Semantics of expression evaluation
-\end_layout
-
-\begin_layout Standard
-Perl 6 makes a distinction between 
-\begin_inset Quotes eld
-\end_inset
-
-statements
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-expressions
-\begin_inset Quotes erd
-\end_inset
-
-.
- Expressions in Perl 6 are statements that return a value.
- A program in Perl 6 semantically represents a list of statements (things
- for the computer to do).
- To make a statement act as an expression, the 
-\family typewriter
-do
-\family default
- keyword can be used, which will cause the statement given to represent
- its value in the given context.
- Perl 6 generally evaluates statements in the order in which they are presented
- in the program (following the natural control flow), although internally
- it will divide up statements to be run concurrently in multiple threads
- if the result is the same 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Documentation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection*
-4.
- Type coercion
-\end_layout
-
-\begin_layout Standard
-By default, Perl 6 when encountering a variable that does not have a specified
- type will convert it to the necessary type when it is used in a context
- where its current type is not applicable.
- To override this behavior, types can be specified for each object, allowing
- strict type checking.
- When a specific type is requested for a variable, assignments to that variable
- will not be coerced, and explicit casting is required 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Documentation"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection*
-5.
- Semantics of assignment statements
-\end_layout
-
-\begin_layout Standard
-Perl 6 has complex assignment semantics, similar to Java, because it uses
- containers for some values, but values can also exist without containers.
- Containers are object-oriented wrappers around the native (native to the
- Perl 6 virtual machine) types.
- The documentation writes that 
-\begin_inset Quotes eld
-\end_inset
-
-The assignment operator asks the container on the left to store the value
- on its right
-\begin_inset Quotes erd
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Documentation"
-
-\end_inset
-
-.
- Because of this, the actual effect of assigning a value to a name depends
- on the type of container that has been created by variable declaration.
- In practice, this is largely transparent to the user, and the context of
- a reference to a variable will affect whether the container is used or
- the value within the container is used.
- If the user wants control over this, the language provides some constructs
- for controlling these issues 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Documentation"
-
-\end_inset
-
-, but in my experience the defaults have generally worked well.
-\end_layout
-
-\begin_layout Standard
-A list can contain containers or values.
- Because of this, it is not always possible to assign to list elements,
- because lists are immutable and values cannot be changed.
- However, if the items in a list are containers, they can be changed because
- the container itself will stay the same.
- That is because the containers themselves do not change; rather, what they
- point to changes.
- Unlike lists, arrays only hold containers.
- Consequently, their contents can be changed 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Documentation"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Section*
-Appendix Part 4
+Part 4 Appendix
 \end_layout
 
 \begin_layout Standard
@@ -4652,22 +4668,6 @@ key "New1"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintAll"
-bibfiles "2017sept20-p6bib"
-options "ieeetr"
-
-\end_inset
-
-
 \end_layout
 
 \end_body

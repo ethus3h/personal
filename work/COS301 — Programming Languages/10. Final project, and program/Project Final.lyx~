@@ -339,8 +339,8 @@ key "Documentation"
 \family typewriter
 wantsarray
 \family default
- from Perl is apparently not available in Perl 6, according to the language
- FAQ 
+ construct from Perl is apparently not available in Perl 6, according to
+ the language FAQ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "P6FAQ"
