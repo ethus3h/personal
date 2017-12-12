@@ -405,7 +405,7 @@ key "Documentation"
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Sigils
 \end_layout
 
@@ -718,7 +718,7 @@ none (declared with
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Declarators
 \end_layout
 
@@ -993,7 +993,7 @@ y
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Twigils
 \end_layout
 
@@ -1287,7 +1287,7 @@ The sublanguage seen by the parser at this lexical spot
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Built-in types
 \end_layout
 
@@ -3035,7 +3035,7 @@ Integer (native storage; machine precision)
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Levels of precedence
 \end_layout
 
