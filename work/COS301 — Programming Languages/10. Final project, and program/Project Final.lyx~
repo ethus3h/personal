@@ -100,12 +100,94 @@ This article introduces and summarizes the Perl 6 programming language and
  applications, effective uses, popularity, prospects, and limitations.
 \end_layout
 
+\begin_layout Part*
+Part 1
+\end_layout
+
 \begin_layout Standard
-Perl 6 is a programming language first released at the end of 2015.
- It was originally conceived as a revision of the Perl programming language,
- but because it evolved during the course of its development (begun in 2000),
- it was split from the older language, which will continue to be maintained
- separately.
+My first choice of language is Perl 6.
+\end_layout
+
+\begin_layout Standard
+My second choice of language is COBOL.
+\end_layout
+
+\begin_layout Standard
+Perl 6 is my first choice of language for two main reasons.
+ First, Perl 6 has strong built-in support for implementing other languages,
+ and I would like to learn to use this: I would like to implement a document
+ format that I have been developing, and I think that knowing Perl 6 Grammars
+ could help me with that.
+ While Perl 6 reportedly has issues with performance, and may not be an
+ appropriate long-term choice for implementing the format, it seems like
+ it would be excellent for rapid prototyping and iterative development of
+ the format.
+ Second, Perl 6 has a number of features that I have heard about, that seem
+ to have a lot of "buzz", and that seem to have wide applicability and popular
+ use, but that I don't have any significant experience with or understanding
+ of the use of: multiple dispatch, promises, asynchronous I/O, polymorphism,
+ functional programming, introspection, generic programming, meta-object
+ programming, and macros.
+ Because that would be a lot of things to learn in only a semester, I would
+ presumably select a few areas to focus on.
+\end_layout
+
+\begin_layout Standard
+My second language choice is COBOL, because it has a long history of being
+ very capable for data processing work and file handling, and a lot of businesse
+s seem to use it successfully.
+ Because of that history of success with it, I think that it would be good
+ to have experience with.
+ (While C and Java have similar histories of successful use, I do not propose
+ studying them as I have used them briefly.) I am also interested in learning
+ about COBOL because, as a file processing and business language, it is
+ quite different from the languages I have experience using.
+ (Perl 6 is also quite different, because of its capacity for functional
+ programming.)
+\end_layout
+
+\begin_layout Standard
+For reference, the languages with which I have the most confidence and experienc
+e in are, in roughly descending order:
+\end_layout
+
+\begin_layout Itemize
+Bash (along with PHP, which is a reasonably close second, I have by far
+ the most confidence and experience in Bash, and generally find it enjoyable
+ to use)
+\end_layout
+
+\begin_layout Itemize
+PHP 5 (I used it a lot until I switched to writing most things in Bash)
+\end_layout
+
+\begin_layout Itemize
+C (don't have a lot of experience with it, only having written small patches,
+ but I've appreciated the readability of it in working with others’ code)
+\end_layout
+
+\begin_layout Itemize
+Python (All the apps I wrote in Python that I still use I have since re-written
+ in Bash, and found it much more appropriate for them)
+\end_layout
+
+\begin_layout Itemize
+C# (mostly from doing game programming in Unity using Microsoft Visual Studio
+ for a class)
+\end_layout
+
+\begin_layout Itemize
+Perl (used it for one tiny project about eight years ago, but don't remember
+ anything about it really)
+\end_layout
+
+\begin_layout Itemize
+Java (I don't really get it, and found it frustra
+\end_layout
+
+\begin_layout Standard
+ourse of its development (begun in 2000), it was split from the older language,
+ which will continue to be maintained separately.
  It uses a specification and test-suite driven language development process,
  rather than an implementation-driven process.
  Consequently, there is not a single official implementation, although the
