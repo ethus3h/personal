@@ -1145,7 +1145,7 @@ redo
 \family default
  keywords can be used to continue the loop without finishing the current
  iteration, to leave the loop without finishing the current iteration, and
- to start the current iteration of the loop body again, respectively.
+ to start the current iteration of the loop body again, r.
  To return from a block, the 
 \family typewriter
 return
