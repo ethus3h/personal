@@ -4707,7 +4707,8 @@ key "Documentation"
 
 , the with, orwith, and without statements can be used, corresponding to
  the if, elsif, and unless statements, respectively.
- 
+ when is similar to if, but exits the enclosing block, and does not resume
+ with it after the selected block finishes.
 \end_layout
 
 \begin_layout Subsection*

@@ -4707,8 +4707,13 @@ key "Documentation"
 
 , the with, orwith, and without statements can be used, corresponding to
  the if, elsif, and unless statements, respectively.
- when is similar to if, but exits the enclosing block, and does not continue
- it after the .
+ when is similar to if, but exits the enclosing block, and does not resume
+ with it after the selected block finishes.
+ With the when keyword, the default keyword can be used to construct multi-way
+ branches similar to a switch statement.
+ Another way of doing that is to use the given statement, which can be used
+ to select a topic variable for when and default statements.
+ Using proceed and succeed statements, 
 \end_layout
 
 \begin_layout Subsection*
