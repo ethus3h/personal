@@ -4923,6 +4923,16 @@ sub
 multi
 \family default
  keyword.
+ The 
+\family typewriter
+proto
+\family default
+ keyword can be used to specify a template for type signatures that all
+ the 
+\family typewriter
+multi
+\family default
+ subprograms sharing that name must match.
  Subprograms can be used as operators, or as 
 \emph on
 traits
