@@ -4678,12 +4678,18 @@ Part 5: Control constructs and subprograms
 Control flow constructs in Perl 6
 \end_layout
 
-\begin_layout Subsection*
-Subprograms in Perl 6
+\begin_layout Standard
+Perl 6 control flow takes the form of statements.
+ Statements can be grouped into blocks using braces.
+ A block can be treated as a statement, used alone on a logical line, in
+ which case it will be executed, or it can be used as a literal anonymous
+ subprogram.
+ In contexts where it would usually be treated as a literal, it can be prefaced
+ with the do keyword to execute it instead.
 \end_layout
 
-\begin_layout Standard
-
+\begin_layout Subsection*
+Subprograms in Perl 6
 \end_layout
 
 \end_body
