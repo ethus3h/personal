@@ -4686,11 +4686,39 @@ Perl 6 control flow takes the form of statements.
  subprogram.
  Keywords can be used to guide a program's control flow.
  In contexts where it would usually be treated as a literal, it can be prefaced
- with the do keyword to execute it instead.
- For conditional branching, if can be used instead, which uses a condition
- to determine whether to execute a given block.
- Along with if, else and elsif can be used to select other blocks to execute.
- There is also unless, which acts similar to if with the condition inverted.
+ with the 
+\family typewriter
+do
+\family default
+ keyword to execute it instead.
+ For conditional branching, 
+\family typewriter
+if
+\family default
+ can be used instead, which uses a condition to determine whether to execute
+ a given block.
+ Along with 
+\family typewriter
+if
+\family default
+, 
+\family typewriter
+else
+\family default
+ and 
+\family typewriter
+elsif
+\family default
+ can be used to select other blocks to execute.
+ There is also 
+\family typewriter
+unless
+\family default
+, which acts similar to 
+\family typewriter
+if
+\family default
+ with the condition inverted.
  For testing 
 \begin_inset Quotes eld
 \end_inset
@@ -4706,19 +4734,98 @@ key "Documentation"
 
 \end_inset
 
-, the with, orwith, and without statements can be used, corresponding to
- the if, elsif, and unless statements, respectively.
- when is similar to if, but exits the enclosing block, and does not resume
- with it after the selected block finishes.
- With the when keyword, the default keyword can be used to construct multi-way
- branches similar to a switch statement.
- This is often done using the given statement, which can be used to select
- a topic variable for when and default statements.
- Using proceed and succeed statements, the behavior of when and default
+, the 
+\family typewriter
+with
+\family default
+, 
+\family typewriter
+orwith
+\family default
+, and 
+\family typewriter
+without
+\family default
+ statements can be used, corresponding to the 
+\family typewriter
+if
+\family default
+, 
+\family typewriter
+elsif
+\family default
+, and 
+\family typewriter
+unless
+\family default
+ statements, respectively.
+ 
+\family typewriter
+when
+\family default
+ is similar to 
+\family typewriter
+if
+\family default
+, but exits the enclosing block, and does not resume with it after the selected
+ block finishes.
+ With the 
+\family typewriter
+when
+\family default
+ keyword, the 
+\family typewriter
+default
+\family default
+ keyword can be used to construct multi-way branches similar to a C switch
+ statement.
+ This is often done using the 
+\family typewriter
+given
+\family default
+ statement, which can be used to select a topic variable for 
+\family typewriter
+when
+\family default
+ and 
+\family typewriter
+default
+\family default
+ statements.
+ Using 
+\family typewriter
+proceed
+\family default
+ and 
+\family typewriter
+succeed
+\family default
+ statements, the behavior of 
+\family typewriter
+when
+\family default
+ and 
+\family typewriter
+default
+\family default
  blocks can be controlled.
- For iteration, loop provides simple incremental looping, and while and
- until keywords can be used for other types of looping; the for keyword
- is also available for iterating over lists.
+ For iteration, 
+\family typewriter
+loop
+\family default
+ provides simple incremental or infinite looping, and 
+\family typewriter
+while
+\family default
+ and 
+\family typewriter
+until
+\family default
+ keywords can be used for other types of looping; the 
+\family typewriter
+for
+\family default
+ keyword is also available for iterating over lists.
  Within a 
 \begin_inset Quotes eld
 \end_inset
@@ -4734,15 +4841,60 @@ key "Documentation"
 
 \end_inset
 
-, the once keyword can be used to specify that a subblock of the loop body
- should only be executed once.
- The next, last, and redo keywords can be used to continue the loop without
- finishing the current iteration, to leave the loop without finishing the
- current iteration, and to start the current iteration of the loop body
- again.
- To return from a block, the return or return-rw keywords can be used (return-rw
+, the 
+\family typewriter
+once
+\family default
+ keyword can be used to specify that a subblock of the loop body should
+ only be executed once.
+ The 
+\family typewriter
+next
+\family default
+, 
+\family typewriter
+last
+\family default
+, and 
+\family typewriter
+redo
+\family default
+ keywords can be used to continue the loop without finishing the current
+ iteration, to leave the loop without finishing the current iteration, and
+ to start the current iteration of the loop body again.
+ To return from a block, the 
+\family typewriter
+return
+\family default
+ or 
+\family typewriter
+return-rw
+\family default
+ keywords can be used (
+\family typewriter
+return-rw
+\family default
  gives a mutable result).
- Within a block, the fail keyword can be used to throw an exception.
+ Within a block, the 
+\family typewriter
+fail
+\family default
+ keyword can be used to throw an exception.
+ Additionally, 
+\begin_inset Quotes eld
+\end_inset
+
+phasers
+\begin_inset Quotes erd
+\end_inset
+
+ can be used to restrict execution of subsets of a program to certain contexts,
+ such as the 
+\family typewriter
+CATCH
+\family default
+ phaser for when an exception is thrown, or various phasers for important
+ points within a program such as entering and leaving blocks.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4755,6 +4907,45 @@ key "Documentation"
 
 \begin_layout Subsection*
 Subprograms in Perl 6
+\end_layout
+
+\begin_layout Standard
+In Perl 6, subprograms are declared using the 
+\family typewriter
+sub
+\family default
+ keyword.
+ For anonymous functions, a literal inline block is more concise in some
+ contexts.
+ To indicate that multiple dispatch should be allowed for a named subprogram,
+ it must be declared with the 
+\family typewriter
+multi
+\family default
+ keyword.
+ Subprograms can be used as operators, or as 
+\emph on
+traits
+\emph default
+, which 
+\begin_inset Quotes eld
+\end_inset
+
+modify the behavior of a ...
+ language object
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+ Perl 6 also provides tools for re-dispatching, which is giving another
+ subprogram the same arguments the current one was called with.
 \end_layout
 
 \end_body

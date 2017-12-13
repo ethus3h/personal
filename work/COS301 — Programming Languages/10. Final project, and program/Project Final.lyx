@@ -4880,6 +4880,21 @@ return-rw
 fail
 \family default
  keyword can be used to throw an exception.
+ Additionally, 
+\begin_inset Quotes eld
+\end_inset
+
+phasers
+\begin_inset Quotes erd
+\end_inset
+
+ can be used to restrict execution of subsets of a program to certain contexts,
+ such as the 
+\family typewriter
+CATCH
+\family default
+ phaser for when an exception is thrown, or various phasers for important
+ points within a program such as entering and leaving blocks.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4892,6 +4907,55 @@ key "Documentation"
 
 \begin_layout Subsection*
 Subprograms in Perl 6
+\end_layout
+
+\begin_layout Standard
+In Perl 6, subprograms are declared using the 
+\family typewriter
+sub
+\family default
+ keyword.
+ For anonymous functions, a literal inline block is more concise in some
+ contexts.
+ To indicate that multiple dispatch should be allowed for a named subprogram,
+ it must be declared with the 
+\family typewriter
+multi
+\family default
+ keyword.
+ The 
+\family typewriter
+proto
+\family default
+ keyword can be used to specify a template for type signatures that all
+ the 
+\family typewriter
+multi
+\family default
+ subprograms sharing that name must match.
+ Subprograms can be used as operators, or as 
+\emph on
+traits
+\emph default
+, which 
+\begin_inset Quotes eld
+\end_inset
+
+modify the behavior of a ...
+ language object
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+.
+ Perl 6 also provides tools for re-dispatching, which is giving another
+ subprogram the same arguments the current one was called with.
 \end_layout
 
 \end_body
