@@ -4686,6 +4686,28 @@ Perl 6 control flow takes the form of statements.
  subprogram.
  In contexts where it would usually be treated as a literal, it can be prefaced
  with the do keyword to execute it instead.
+ For conditional branching, if can be used instead, which uses a condition
+ to determine whether to execute a given block.
+ Along with if, else and elsif can be used to select other blocks to execute.
+ There is also unless, which acts similar to if with the condition inverted.
+ For testing 
+\begin_inset Quotes eld
+\end_inset
+
+definedness rather than truth
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+, the with, orwith, and without statements can be used, corresponding to
+ the if, elsif, and unless statements, respectively.
+ 
 \end_layout
 
 \begin_layout Subsection*
