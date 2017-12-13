@@ -4719,6 +4719,37 @@ key "Documentation"
  For iteration, loop provides simple incremental looping, and while and
  until keywords can be used for other types of looping; the for keyword
  is also available for iterating over lists.
+ Within a 
+\begin_inset Quotes eld
+\end_inset
+
+loop or recursive routine
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+, the once keyword can be used to specify that a subblock of the loop body
+ should only be executed once.
+ The next, last, and redo keywords can be used to continue the loop without
+ finishing the current iteration, to leave the loop without finishing the
+ current iteration, and to start the current iteration of the loop body
+ again.
+ To return from a block, the return or return-rw keywords can be used (return-rw
+ gives a mutable result).
+ Within a block, the fail keyword can be used to throw an exception.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Documentation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
