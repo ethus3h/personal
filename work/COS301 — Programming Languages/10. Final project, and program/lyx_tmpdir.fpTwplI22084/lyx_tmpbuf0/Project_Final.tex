@@ -1,0 +1,920 @@
+\batchmode
+\makeatletter
+\def\input@path{{\string"/Ember Library/Ember satellite projects/personal/work/COS301 — Programming Languages/10. Final project, and program/\string"/}}
+\makeatother
+\documentclass[14pt,english]{extarticle}
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle]{Computer Modern}
+\setsansfont[Scale=0.7,Mapping=tex-text]{Linux Biolinum O}
+\setmonofont[Scale=0.7]{Fira Code}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{setspace}
+\setstretch{1.5}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{indentfirst}
+\setmonofont[
+  Contextuals={Alternate}
+]{Fira Code}
+\usepackage{hyperref}
+\usepackage{url}
+
+\makeatother
+
+\usepackage{listings}
+\lstset{basicstyle={\texttt},
+columns=fullflexible,
+keepspaces=true,
+literate={-->}{\texttt{-->}}{1} {->}{\texttt{->}}{1} {==>}{\texttt{==>}}{1} {=>}{\texttt{=>}}{1}}
+\usepackage{xunicode}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\begin{document}
+
+\title{Perl 6: Project}
+
+
+\author{Elliot Chandler (Wallace)}
+
+
+\date{11 December 2017}
+\maketitle
+\begin{abstract}
+This article introduces and summarizes the Perl 6 programming language
+and some of its various features and capabilities, as well as discussing
+its applications, effective uses, popularity, prospects, and limitations.
+\end{abstract}
+
+\part*{Part 1}
+
+My first choice of language is Perl 6.
+
+My second choice of language is COBOL.
+
+Perl 6 is my first choice of language for two main reasons. First,
+Perl 6 has strong built-in support for implementing other languages,
+and I would like to learn to use this: I would like to implement a
+document format that I have been developing, and I think that knowing
+Perl 6 Grammars could help me with that. While Perl 6 reportedly has
+issues with performance, and may not be an appropriate long-term choice
+for implementing the format, it seems like it would be excellent for
+rapid prototyping and iterative development of the format. Second,
+Perl 6 has a number of features that I have heard about, that seem
+to have a lot of \textquotedbl{}buzz\textquotedbl{}, and that seem
+to have wide applicability and popular use, but that I don't have
+any significant experience with or understanding of the use of: multiple
+dispatch, promises, asynchronous I/O, polymorphism, functional programming,
+introspection, generic programming, meta-object programming, and macros.
+Because that would be a lot of things to learn in only a semester,
+I would presumably select a few areas to focus on.
+
+My second language choice is COBOL, because it has a long history
+of being very capable for data processing work and file handling,
+and a lot of businesses seem to use it successfully. Because of that
+history of success with it, I think that it would be good to have
+experience with. (While C and Java have similar histories of successful
+use, I do not propose studying them as I have used them briefly.)
+I am also interested in learning about COBOL because, as a file processing
+and business language, it is quite different from the languages I
+have experience using. (Perl 6 is also quite different, because of
+its capacity for functional programming.)
+
+For reference, the languages with which I have the most confidence
+and experience in are, in roughly descending order:
+\begin{itemize}
+\item Bash (along with PHP, which is a reasonably close second, I have by
+far the most confidence and experience in Bash, and generally find
+it enjoyable to use)
+\item PHP 5 (I used it a lot until I switched to writing most things in
+Bash)
+\item C (don't have a lot of experience with it, only having written small
+patches, but I've appreciated the readability of it in working with
+others’ code)
+\item Python (All the apps I wrote in Python that I still use I have since
+re-written in Bash, and found it much more appropriate for them)
+\item C\# (mostly from doing game programming in Unity using Microsoft Visual
+Studio for a class)
+\item Perl (used it for one tiny project about eight years ago, but don't
+remember anything about it really)
+\item Java (I don't really get it, and found it frustrating when I tried
+it)
+\item C++ (poked around briefly trying to patch a couple of apps in it,
+no real understanding)
+\end{itemize}
+
+\part*{Part 2}
+
+Perl 6 is a programming language first released at the end of 2015.
+It was originally conceived as a revision of the Perl programming
+language, but because it evolved during the course of its development
+(begun in 2000), it was split from the older language, which will
+continue to be maintained separately. It uses a specification and
+test-suite driven language development process, rather than an implementation-driven
+process. Consequently, there is not a single official implementation,
+although the Rakudo implementation is currently the most complete
+implementation available, and is the only implementation that is currently
+available.
+
+Perl 6 is a general purpose language that by default for modules is
+just-in-time compiled to bytecode, and for scripts is interpreted,
+although this can be changed. The language is implemented using a
+subset language called NQP, which is run by a virtual machine. There
+are a few virtual machine implementations available, including a native
+one, one running on the Java Virtual Machine, and one for JavaScript.
+The native one, ``MoarVM'', is the most complete of these, in that
+it has support for the most language features of the various implementations.
+\cite{project} Perl 6 has many complex and capable programming constructs
+included with it. Because of this, it seems quite capable to me. The
+main detriment compared to other programming languages in general
+that it seems very module-centric, and that it is fairly a new language,
+and consequently that it does not have a substantial amount of documentation
+available for it. Another issue that bothers me specifically, is that
+it lacks strong facilities out of the box for use as a shell REPL
+environment and shell-style use for executing external shell commands
+and manipulating their output, although this is a problem shared by
+many languages that are not purpose-built as shell languages.
+
+Perl 6 is a module-centric language, including its own package management
+and package repository. One problem caused by it being a module-centric
+language, exacerbated by it being a new language, is that packages
+for it are not available easily as native packages. This is also a
+common issue with languages that come with their own package managers,
+such as .NET's NuGet, Node.js's npm, and Python's pip. There are several
+other issues caused by languages using their own package managers,
+as well. Another major consequence of this is that there is no significant
+pressure on package maintainers to keep their packages up to date
+and interoperable, because any given app only needs to work with one
+version of each package on which it depends. That system, however,
+breaks down when an app depends on two packages, each of which depend
+on a conflicting version of the same package, and one wants to avoid
+having outdated versions of the packages installed on one's system:
+the standard model of an elegant one-minor-version-per-package used
+by system package managers is broken, and rendered unable to ship
+the app properly.
+
+While being a new language could conceivably be a problem because
+of a lack of available libraries for a language, this problem is avoided
+by Perl 6 by including a system for interacting with ``C, Python,
+Perl 5, and Ruby'' \cite[p. 2]{Lenz2017}. Perl 6 contains a wide
+range of capabilities and features. The feature that interested me
+the most is grammars. That is what made me choose to pursue learning
+about the language. Perl 6's grammars allow writing code that parses
+a language and returns an abstract syntax tree without having to manually
+write the parser: rather, one can write a set of rules that combine
+to express the syntax of the language. This provides a powerful facility
+for being able to handle problems of implementing languages and document
+formats, and consequently is something that interests me, as I have
+a document format that I would like to implement. The rules in Perl
+6 are created using \emph{patterns}, which are somewhat similar to
+regular expressions in other languages, and generally take their place
+in Perl 6, although Perl 5–style regular expressions are still available
+in Perl 6 in case they are needed.
+
+In addition to these abilities, Perl 6 has many other features, as
+well, that contribute to it being effective and capable at solving
+a variety of other problems: rather than focusing exclusively on one
+problem domain at the expense of facility in others, it is a general-purpose
+language that provides a range of tools that can be used, combined,
+and adapted for various applications. \cite{Documentation} Its mascot
+is a butterfly named Camelia \cite{Documentation}. It integrates
+several techniques different from the way Perl works, such as using
+lazy evaluation. This creates some changes in the way the language
+operates compared to Perl, and consequently it is somewhat different,
+with some language constructs not being available in Perl 6, thus
+necessitating working around their absence. For example, the \texttt{wantsarray}
+construct from Perl is apparently not available in Perl 6, according
+to the language FAQ \cite{P6FAQ}. My lack of familiarity with Perl
+prevents my assessing thoroughly the extent of a problem that this
+causes. Perl 6 uses (limited-precision \cite{News}) rational numbers
+by default, rather than floating point, so that decimals will follow
+the traditional rules of arithmetic rather than the slightly strange
+behavior of floating-point numbers (floating-point numbers will produce
+unexpected results in some cases when doing arithmetic on them \cite{Overflow}),
+but at the cost of performance. Floating-point numbers can be used
+if they are desired, though.
+
+Perl 6 \emph{grammars} are an extremely expressive tool for writing
+parsers for languages and document formats. \cite{Documentation}
+They are a way to specify the syntax of a language in such a way that
+given a grammar and a string to parse using it, the Perl 6 language
+can build an abstract syntax tree that can be used by code generators
+for compiling a language, or by other tools that can work with abstract
+syntax trees. A grammar is a set of patterns (which can be named,
+and reference each other) using which the input string is parsed.
+A Perl 6 grammar is a class, so it can be used as other classes. To
+allow better expressivity from grammars, \emph{actions} are available
+(a type of class that allows the parse process to call its methods).
+\cite{Documentation_2} This allows hooking into the parse process
+with other code, to allow a wide range of uses outside the traditional
+scope of grammars.
+
+Perl 6 seems to have good prospects ahead of it, being a new language.
+Now that it has been released, it will presumably see extensive testing,
+and consequent development, due to its being in more widespread use.
+In summary, it is a capable and flexible general-purpose language
+that, while being new and having some rough edges, is quite capable
+and useful.
+
+
+\part*{Part 3}
+
+
+\subsubsection*{Basic syntactic structure, including statement terminators or separators,
+block structure, syntactic peculiarities, etc.}
+
+In Perl 6, blocks are typically denoted by braces (\texttt{\{}, \texttt{\}})
+and can be nested. Statements are delimited by semicolons (\texttt{;}),
+but the semicolons can be omitted in some circumstances, when the
+end of a statement is unambiguous. A block can be preceded by \texttt{-‌>},
+with an interceding list of variables, called a \emph{pointy block},
+which acts similarly to an anonymous function. Parentheses can be
+used to denote semantic divisions within a given block. Perl 6 has
+five types of variables, denoted by one of four indicators called
+\emph{sigils}, or by the absence of a sigil; these determine the default
+type of the variable, affect how assignment to the variable takes
+place, and possibly introduce a type constraint on the variable \cite{Documentation}.
+
+
+\subsubsection*{The units or levels of scope and the nature and type (runtime or
+compile-time) of name bindings within the different levels of scope.}
+
+By default, the scope of variables in Perl 6 is determined by the
+\emph{declarator} with which the variable was declared (most commonly
+\texttt{my}). Perl 6 uses a variety of modifiers, called \emph{twigils},
+to alter the default scoping \cite{Documentation}. There are seven
+declarators and two declarator-style prefixes, and there are nine
+twigils (not counting the absence of a twigil) \cite{Documentation}. 
+
+
+\subsubsection*{Primitive data types available, including range limitations or lack
+thereof.}
+
+Of the 260 built-in types in Perl 6, 47 of them are primitive types.
+All types are subtypes of \texttt{Mu} \cite{Documentation}. Things
+that can be numbers are subtypes of \texttt{Numeric}. Common number
+types are \texttt{Int}, \texttt{Num}, and \texttt{Rat}. \texttt{Int}s
+do not restrict the range of values they can hold, beyond only accepting
+integers. \texttt{Num}s usually hold either ``an IEEE 754 64-bit
+floating point'' \cite{Documentation} value, \texttt{Inf} (infinity,
+or a number too large to store in a \texttt{Num}), or \texttt{NaN}
+(not a number). \texttt{Rat}s are rational numbers, so they do not
+accumulate errors like floating-point numbers (in Perl 6, \texttt{Num}s)
+do. Their denominators are limited to 64 bits. If one desires a \texttt{Rat}
+that does not have a restriction on the values of its numerator and
+denominator, a \texttt{FatRat} can be used instead. In addition, the
+\texttt{Real} and \texttt{Complex} types are available. A \texttt{Real}
+can be created from the non-imaginary numeric types, and a \texttt{Complex}
+can be created from two \texttt{Real}s representing the number's real
+and imaginary parts \cite{Documentation}. 
+
+
+\subsubsection*{Operators for primitive data types and their precedence and associativity.}
+
+Perl 6 has twenty-seven levels of precedence. All operators can be
+written as subroutines \cite{Documentation}. Custom operators are
+allowed, and can have their precedence specified relative to the built-in
+operators. Most operators can be overloaded. There are three types
+of associativity for unary operators: left-associative, right-associative,
+and non-associative. Binary operators add to these three chain-associative
+and list-associative. The position of operators relative to their
+operand(s) has five categories: prefix (preceding the operand), infix
+(between two operands), postfix (succeding the operand), circumfix
+(surrounding the operand — `bracketing' operators), and postcircumfix
+(bracketing the second of two operands). These five categories, combined
+with the operator, can be written as subroutines, as in this example
+from the documentation: \texttt{circumfix:«{[} {]}»(<a b c>)}, being
+equivalent to \texttt{{[}<a b c>{]}}. Some operators can be created
+by combining other operators together, such as type coersion and assignment
+(\texttt{\textasciitilde{}} coerces to a string, and \texttt{=} assigns;
+combined, \texttt{\textasciitilde{}=} coerces the right operand to
+a string and assigns it to the left operand). There are also the \texttt{s///}
+and \texttt{S///} substitution operators, but the documentation is,
+as far as I could tell, unclear on which of the above types of operator
+they fall into, and does not state clearly whether the regular rules
+that apply to operators apply to them.
+
+
+\part*{Part 4}
+
+
+\subsubsection*{1. Data types}
+
+Perl 6 includes a large amount of non-primitive types in the language
+itself: 33 compound types, 56 ``domain-specific'' types, and 113
+exception types. This includes common compound types such as arrays,
+lists, and hashes, as well as various other types for a range of applications,
+such as for documentation, concurrent programming, and I/O for various
+operating systems. Perl 6 includes a large amount of capabilities
+within the language core itself. That allows the base language installation
+to be quite functional. It means that it is not necessary to install
+as many additional libraries to have a practical base of tools \cite{Documentation}.
+
+
+\subsubsection*{2. Standard library}
+
+Perl 6 does not itself have a specified standard library \emph{per
+se}, but the Rakudo Star distribution (the primary way to obtain an
+implementation of the language) does include a variety of additional
+\emph{modules} (46 of them) \cite{New1}. Rakudo Star includes tools
+for performance debugging and profiling, such as \texttt{debugger-ui-commandline},
+\texttt{grammar-debugger} and \texttt{Grammar-Profiler-Simple}. It
+provides the \texttt{Terminal-ANSIColor} module for creating colored
+output from command-line programs, and \texttt{test-mock} and \texttt{Test-META}
+for creating unit tests. Rakudo Star provides tools for data interchange
+and serialization, in the form of seven modules for working with JSON,
+and one for XML, as well as a database interface module (\texttt{DBIlish}).
+For graphics, Rakudo Star comes with the \texttt{svg} and \texttt{svg-plot}
+modules. It also includes several such as \texttt{perl6-http-easy}
+and \texttt{perl6-http-status} for network interoperation. Perl 6
+includes a package manager module, also, called \texttt{zef}, which
+provides a command-line interface for managing the packages installed
+in a system \cite{New1}.
+
+
+\subsubsection*{3. Semantics of expression evaluation}
+
+Perl 6 makes a distinction between ``statements'' and ``expressions''.
+Expressions in Perl 6 are statements that return a value. A program
+in Perl 6 semantically represents a list of statements (things for
+the computer to do). To make a statement act as an expression, the
+\texttt{do} keyword can be used, which will cause the statement given
+to represent its value in the given context. Perl 6 generally evaluates
+statements in the order in which they are presented in the program
+(following the natural control flow), although internally it will
+divide up statements to be run concurrently in multiple threads if
+the result is the same \cite{Documentation}.
+
+
+\subsubsection*{4. Type coercion}
+
+By default, Perl 6 when encountering a variable that does not have
+a specified type will convert it to the necessary type when it is
+used in a context where its current type is not applicable. To override
+this behavior, types can be specified for each object, allowing strict
+type checking. When a specific type is requested for a variable, assignments
+to that variable will not be coerced, and explicit casting is required
+\cite{Documentation}.
+
+
+\subsubsection*{5. Semantics of assignment statements}
+
+Perl 6 has complex assignment semantics, similar to Java, because
+it uses containers for some values, but values can also exist without
+containers. Containers are object-oriented wrappers around the native
+(native to the Perl 6 virtual machine) types. The documentation writes
+that ``The assignment operator asks the container on the left to
+store the value on its right'' \cite{Documentation}. Because of
+this, the actual effect of assigning a value to a name depends on
+the type of container that has been created by variable declaration.
+In practice, this is largely transparent to the user, and the context
+of a reference to a variable will affect whether the container is
+used or the value within the container is used. If the user wants
+control over this, the language provides some constructs for controlling
+these issues \cite{Documentation}, but in my experience the defaults
+have generally worked well.
+
+A list can contain containers or values. Because of this, it is not
+always possible to assign to list elements, because lists are immutable
+and values cannot be changed. However, if the items in a list are
+containers, they can be changed because the container itself will
+stay the same. That is because the containers themselves do not change;
+rather, what they point to changes. Unlike lists, arrays only hold
+containers. Consequently, their contents can be changed \cite{Documentation}.
+
+
+\part*{Part 5: Control constructs and subprograms}
+
+
+\subsection*{Control flow constructs in Perl 6}
+
+Perl 6 control flow takes the form of statements. Statements can be
+grouped into blocks using braces. A block can be treated as a statement,
+used alone on a logical line, in which case it will be executed, or
+it can be used as a literal anonymous subprogram. Keywords can be
+used to guide a program's control flow. In contexts where it would
+usually be treated as a literal, it can be prefaced with the \texttt{do}
+keyword to execute it instead. For conditional branching, \texttt{if}
+can be used instead, which uses a condition to determine whether to
+execute a given block. Along with \texttt{if}, \texttt{else} and \texttt{elsif}
+can be used to select other blocks to execute. There is also \texttt{unless},
+which acts similar to \texttt{if} with the condition inverted. For
+testing ``definedness rather than truth'' \cite{Documentation},
+the \texttt{with}, \texttt{orwith}, and \texttt{without} statements
+can be used, corresponding to the \texttt{if}, \texttt{elsif}, and
+\texttt{unless} statements, respectively. \texttt{when} is similar
+to \texttt{if}, but exits the enclosing block, and does not resume
+with it after the selected block finishes. With the \texttt{when}
+keyword, the \texttt{default} keyword can be used to construct multi-way
+branches similar to a C switch statement. This is often done using
+the \texttt{given} statement, which can be used to select a topic
+variable for \texttt{when} and \texttt{default} statements. Using
+\texttt{proceed} and \texttt{succeed} statements, the behavior of
+\texttt{when} and \texttt{default} blocks can be controlled. For iteration,
+\texttt{loop} provides simple incremental or infinite looping, and
+\texttt{while} and \texttt{until} keywords can be used for other types
+of looping; the \texttt{for} keyword is also available for iterating
+over lists. Within a ``loop or recursive routine'' \cite{Documentation},
+the \texttt{once} keyword can be used to specify that a subblock of
+the loop body should only be executed once. The \texttt{next}, \texttt{last},
+and \texttt{redo} keywords can be used to continue the loop without
+finishing the current iteration, to leave the loop without finishing
+the current iteration, and to start the current iteration of the loop
+body again. To return from a block, the \texttt{return} or \texttt{return-rw}
+keywords can be used (\texttt{return-rw} gives a mutable result).
+Within a block, the \texttt{fail} keyword can be used to throw an
+exception. Additionally, ``phasers'' can be used to restrict execution
+of subsets of a program to certain contexts, such as the \texttt{CATCH}
+phaser for when an exception is thrown, or various phasers for important
+points within a program such as entering and leaving blocks. \cite{Documentation}
+
+
+\subsection*{Subprograms in Perl 6}
+
+In Perl 6, subprograms are declared using the \texttt{sub} keyword.
+For anonymous functions, a literal inline block is more concise in
+some contexts. To indicate that multiple dispatch should be allowed
+for a named subprogram, it must be declared with the \texttt{multi}
+keyword. The \texttt{proto} keyword can be used to specify a template
+for type signatures that all the \texttt{multi} subprograms sharing
+that name must match. Subprograms can be used as operators, or as
+\emph{traits}, which ``modify the behavior of a ... language object''
+\cite{Documentation}. Perl 6 also provides tools for re-dispatching,
+which is giving another subprogram the same arguments the current
+one was called with.
+
+\newpage{}\bibliographystyle{ieeetr}
+\nocite{*}
+\bibliography{0_Ember_Library_Ember_satellite_projects_person___Final_project__and_program_2017sept20-p6bib}
+
+
+
+\section*{Part 3 Appendix: Tables — after \cite{Documentation} }
+
+
+\subsection*{Sigils}
+
+{\scriptsize{}}%
+\begin{tabular}{|c|c|>{\centering}p{0.2\linewidth}|c|}
+\hline 
+\textbf{\small{}Sigil} &
+\textbf{\small{}Type constraint} &
+\textbf{\small{}Default type} &
+\textbf{\small{}Assignment}\tabularnewline
+\hline 
+\hline 
+\texttt{\small{}\$} &
+\texttt{\small{}Mu}{\small{} (no constraint)} &
+{\small{}Any} &
+{\small{}item}\tabularnewline
+\hline 
+\texttt{\small{}@} &
+\texttt{\small{}Positional} &
+{\small{}Array} &
+{\small{}list}\tabularnewline
+\hline 
+\texttt{\small{}\%} &
+\texttt{\small{}Associative} &
+{\small{}Hash} &
+{\small{}list}\tabularnewline
+\hline 
+\texttt{\small{}\&} &
+\texttt{\small{}Callable} &
+{\small{}Callable} &
+{\small{}item}\tabularnewline
+\hline 
+{\small{}none (declared with }\texttt{\small{}\textbackslash{}}{\small{})} &
+ &
+{\small{}(does not create containers or enforce context)} &
+\tabularnewline
+\hline 
+\end{tabular}{\scriptsize \par}
+
+
+\subsection*{Declarators}
+
+{\scriptsize{}}%
+\begin{tabular}{|c|>{\centering}p{0.3\linewidth}|}
+\hline 
+\textbf{\small{}Declarator} &
+\textbf{\small{}Effect}\tabularnewline
+\hline 
+\hline 
+\texttt{\small{}my} &
+{\small{}Introduces lexically scoped names}\tabularnewline
+\hline 
+\texttt{\small{}our} &
+{\small{}Introduces package-scoped names}\tabularnewline
+\hline 
+\texttt{\small{}has} &
+{\small{}Introduces attribute names}\tabularnewline
+\hline 
+\texttt{\small{}anon} &
+{\small{}Introduces names that are private to the construct}\tabularnewline
+\hline 
+\texttt{\small{}state} &
+{\small{}Introduces lexically scoped but persistent names}\tabularnewline
+\hline 
+\texttt{\small{}augment} &
+{\small{}Adds definitions to an existing name}\tabularnewline
+\hline 
+\texttt{\small{}supersede} &
+{\small{}Replaces definitions of an existing name}\tabularnewline
+\hline 
+\texttt{\small{}temp}{\small{} (prefix: not a declarator)} &
+{\small{}Restores a variable's value at the end of scope}\tabularnewline
+\hline 
+\texttt{\small{}let}{\small{} (prefix: not a declarator)} &
+{\small{}Restores a variable's value at the end of scope if the block
+exits unsuccessfully}\tabularnewline
+\hline 
+\end{tabular}{\scriptsize \par}
+
+
+\subsection*{Twigils}
+
+{\scriptsize{}}%
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{\small{}Twigil} &
+\textbf{\small{}Scope}\tabularnewline
+\hline 
+\hline 
+{\small{}(none)} &
+{\small{}Based only on declarator}\tabularnewline
+\hline 
+\texttt{\small{}{*}} &
+{\small{}Dynamic}\tabularnewline
+\hline 
+\texttt{\small{}!} &
+{\small{}Attribute (class member)}\tabularnewline
+\hline 
+\texttt{\small{}?} &
+{\small{}Compile-time variable}\tabularnewline
+\hline 
+\texttt{\small{}.} &
+{\small{}Method (not really a variable)}\tabularnewline
+\hline 
+\texttt{\small{}<} &
+{\small{}Index into match object (not really a variable)}\tabularnewline
+\hline 
+\texttt{\small{}\textasciicircum{}} &
+{\small{}Self-declared formal positional parameter}\tabularnewline
+\hline 
+\texttt{\small{}:} &
+{\small{}Self-declared formal named parameter}\tabularnewline
+\hline 
+\texttt{\small{}=} &
+{\small{}Pod variables}\tabularnewline
+\hline 
+\texttt{\small{}\textasciitilde{}} &
+{\small{}The sublanguage seen by the parser at this lexical spot}\tabularnewline
+\hline 
+\end{tabular}{\scriptsize \par}
+
+
+\subsection*{Built-in types}
+
+\begin{longtable}{|c|c|c|}
+\hline 
+\textbf{\small{}Category} &
+\textbf{\small{}Type} &
+\textbf{\small{}Description}\tabularnewline
+\hline 
+\hline 
+{\small{}class} &
+\texttt{\small{}AST} &
+{\small{}Abstract representation of a piece of source code}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Any} &
+{\small{}Thing/object}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Block} &
+{\small{}Code object with its own lexical scope}\tabularnewline
+\hline 
+{\small{}enum} &
+\texttt{\small{}Bool} &
+{\small{}Logical boolean}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}CallFrame} &
+{\small{}Capturing current frame state}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Callable} &
+{\small{}Invocable code object}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Code} &
+{\small{}Code object}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Complex} &
+{\small{}Complex number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}ComplexStr} &
+{\small{}Dual Value Complex number and String}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Cool} &
+{\small{}Object that can be treated as both a string and number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Date} &
+{\small{}Calendar date}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}DateTime} &
+{\small{}Calendar date with time}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Dateish} &
+{\small{}Object that can be treated as a date}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Duration} &
+{\small{}Length of time}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}FatRat} &
+{\small{}Rational number (arbitrary-precision)}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Instant} &
+{\small{}Specific moment in time}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Int} &
+{\small{}Integer (arbitrary-precision)}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}IntStr} &
+{\small{}Dual Value Integer and String}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Junction} &
+{\small{}Logical superposition of values}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Label} &
+{\small{}Tagged location in the source code}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Macro} &
+{\small{}Compile-time routine}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Method} &
+{\small{}Member function}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Mu} &
+{\small{}The root of the Perl 6 type hierarchy.}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Nil} &
+{\small{}Absence of a value or a benign failure}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Num} &
+{\small{}Floating-point number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}NumStr} &
+{\small{}Dual Value Floating-point number and String}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Numeric} &
+{\small{}Number or object that can act as a number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}ObjAt} &
+{\small{}Unique identification for an object}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Parameter} &
+{\small{}Element of a signature}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Proxy} &
+{\small{}Item container with custom storage and retrieval}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Rat} &
+{\small{}Rational number (limited-precision)}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}RatStr} &
+{\small{}Dual Value Rational number and String}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Rational} &
+{\small{}Number stored as numerator and denominator}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Real} &
+{\small{}Non-complex number}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Routine} &
+{\small{}Code object with its own lexical scope and `return` handling}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Scalar} &
+{\small{}A mostly transparent container used for indirections}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Signature} &
+{\small{}Parameter list pattern}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Str} &
+{\small{}String of characters}\tabularnewline
+\hline 
+{\small{}role} &
+\texttt{\small{}Stringy} &
+{\small{}String or object that can act as a string}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Sub} &
+{\small{}Subroutine}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Submethod} &
+{\small{}Member function that is not inherited by subclasses}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Variable} &
+{\small{}Object representation of a variable for use in traits}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Version} &
+{\small{}Module version descriptor}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}Whatever} &
+{\small{}Placeholder for an unspecified value/argument}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}WhateverCode} &
+{\small{}Code object constructed by Whatever-currying}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}atomicint} &
+{\small{}Integer (native storage at the platform's atomic operation
+size)}\tabularnewline
+\hline 
+{\small{}class} &
+\texttt{\small{}int} &
+{\small{}Integer (native storage; machine precision)}\tabularnewline
+\hline 
+\end{longtable}
+
+
+\subsection*{Levels of precedence}
+
+{\scriptsize{}}%
+\begin{longtable}{|c|c|>{\centering}p{0.3\linewidth}|}
+\hline 
+\textbf{\small{}Associativity} &
+\textbf{\small{}Level of precedence} &
+\textbf{\small{}Examples}\tabularnewline
+\hline 
+\hline 
+{\small{}N} &
+{\small{}Terms } &
+\texttt{\small{}42 3.14 \textquotedbl{}eek\textquotedbl{} qq{[}\textquotedbl{}foo\textquotedbl{}{]}
+\$x :!verbose @\$array}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Method postfix } &
+\texttt{\small{}.meth .+ .? .{*} .() .{[}{]} .\{\} .<> .«» .:: .=
+.\textasciicircum{} .:}\tabularnewline
+\hline 
+{\small{}N} &
+{\small{}Autoincrement } &
+\texttt{\small{}++ -{}-}\tabularnewline
+\hline 
+{\small{}R} &
+{\small{}Exponentiation } &
+\texttt{\small{}{*}{*}}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Symbolic unary } &
+\texttt{\small{}! + - \textasciitilde{} ? | || +\textasciicircum{}
+\textasciitilde{}\textasciicircum{} ?\textasciicircum{} \textasciicircum{}}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Dotty infix } &
+\texttt{\small{}.= .}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Multiplicative } &
+\texttt{\small{}{*} / \% \%\% +\& +< +> \textasciitilde{}\& \textasciitilde{}<
+\textasciitilde{}> ?\& div mod gcd lcm}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Additive } &
+\texttt{\small{}+ - +| +\textasciicircum{} \textasciitilde{}| \textasciitilde{}\textasciicircum{}
+?| ?\textasciicircum{}}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Replication } &
+\texttt{\small{}x xx}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Concatenation } &
+\texttt{\small{}\textasciitilde{}}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Junctive and } &
+\texttt{\small{}\&}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Junctive or } &
+\texttt{\small{}| \textasciicircum{}}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Named unary } &
+\texttt{\small{}temp let}\tabularnewline
+\hline 
+{\small{}N} &
+{\small{}Structural infix } &
+\texttt{\small{}but does <=> leg cmp .. ..\textasciicircum{} \textasciicircum{}.. \textasciicircum{}..\textasciicircum{}}\tabularnewline
+\hline 
+{\small{}C} &
+{\small{}Chaining infix } &
+\texttt{\small{}!= == < <= > >= eq ne lt le gt ge \textasciitilde{}\textasciitilde{}
+=== eqv !eqv =\textasciitilde{}=}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Tight and } &
+\texttt{\small{}\&\&}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Tight or } &
+\texttt{\small{}|| \textasciicircum{}\textasciicircum{} // min max}\tabularnewline
+\hline 
+{\small{}R} &
+{\small{}Conditional } &
+\texttt{\small{}?? !! ff fff}\tabularnewline
+\hline 
+{\small{}R} &
+{\small{}Item assignment } &
+\texttt{\small{}= => += -= {*}{*}= xx=}\tabularnewline
+\hline 
+{\small{}L} &
+{\small{}Loose unary } &
+\texttt{\small{}so not}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Comma operator } &
+\texttt{\small{}, :}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}List infix } &
+\texttt{\small{}Z minmax X X\textasciitilde{} X{*} Xeqv ...}\tabularnewline
+\hline 
+{\small{}R} &
+{\small{}List prefix } &
+\texttt{\small{}print push say die map substr ... {[}+{]} {[}{*}{]}
+any Z=}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Loose and } &
+\texttt{\small{}and andthen notandthen}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Loose or } &
+\texttt{\small{}or xor orelse}\tabularnewline
+\hline 
+{\small{}X} &
+{\small{}Sequencer } &
+\texttt{\small{}<==, ==>, <\textcompwordmark{}<==, ==>\textcompwordmark{}>}\tabularnewline
+\hline 
+{\small{}N} &
+{\small{}Terminator } &
+\texttt{\small{}; \{...\}, unless, extra ), {]}, \}}\tabularnewline
+\hline 
+\end{longtable}{\scriptsize \par}
+
+
+\section*{Part 4 Appendix}
+
+The appendices are not included here due to length. Tables of the
+composite types, domain-specific types, and exception types are available
+in the Perl 6 documentation \cite{Documentation}. A list of modules
+included with Rakudo Star is available on request from this author,
+based on the information from \cite{New1}.
+\end{document}

@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Project_Final.aux
+The style file: ieeetr.bst
+Database file #1: 0_Ember_Library_Ember_satellite_projects_person___Final_project__and_program_2017sept20-p6bib.bib
+Warning--empty journal in project
+Warning--empty publisher in Lenz2017
+Warning--empty journal in Documentation
+Warning--empty journal in P6FAQ
+Warning--empty journal in News
+Warning--empty journal in Overflow
+Warning--empty journal in Documentation_2
+Warning--empty journal in New1
+Warning--empty journal in Holloway
+Warning--empty journal in Miller
+Warning--empty journal in Lenz2010
+Warning--empty journal in Language
+Warning--empty journal in RosenfeldDowney
+Warning--empty journal in Wikipedia
+Warning--empty year in Wikipedia
+You've used 15 entries,
+            1876 wiz_defined-function locations,
+            564 strings with 6601 characters,
+and the built_in function-call counts, 2135 in all, are:
+= -- 197
+> -- 64
+< -- 0
++ -- 31
+- -- 16
+* -- 128
+:= -- 357
+add.period$ -- 29
+call.type$ -- 15
+change.case$ -- 14
+chr.to.int$ -- 0
+cite$ -- 30
+duplicate$ -- 126
+empty$ -- 240
+format.name$ -- 16
+if$ -- 486
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 16
+newline$ -- 63
+num.names$ -- 15
+pop$ -- 67
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 24
+stack$ -- 0
+substring$ -- 0
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 15
+while$ -- 15
+width$ -- 17
+write$ -- 136
+(There were 15 warnings)
