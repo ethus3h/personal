@@ -4743,6 +4743,7 @@ key "Documentation"
  To return from a block, the return or return-rw keywords can be used (return-rw
  gives a mutable result).
  Within a block, the fail keyword can be used to throw an exception.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Documentation"
