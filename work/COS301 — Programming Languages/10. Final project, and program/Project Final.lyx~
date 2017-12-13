@@ -4684,6 +4684,7 @@ Perl 6 control flow takes the form of statements.
  A block can be treated as a statement, used alone on a logical line, in
  which case it will be executed, or it can be used as a literal anonymous
  subprogram.
+ Keywords can be used to guide a program's control flow.
  In contexts where it would usually be treated as a literal, it can be prefaced
  with the do keyword to execute it instead.
  For conditional branching, if can be used instead, which uses a condition
@@ -4709,6 +4710,15 @@ key "Documentation"
  the if, elsif, and unless statements, respectively.
  when is similar to if, but exits the enclosing block, and does not resume
  with it after the selected block finishes.
+ With the when keyword, the default keyword can be used to construct multi-way
+ branches similar to a switch statement.
+ This is often done using the given statement, which can be used to select
+ a topic variable for when and default statements.
+ Using proceed and succeed statements, the behavior of when and default
+ blocks can be controlled.
+ For iteration, loop provides simple incremental looping, and while and
+ until keywords can be used for other types of looping; the for keyword
+ is also available for iterating over lists.
 \end_layout
 
 \begin_layout Subsection*
