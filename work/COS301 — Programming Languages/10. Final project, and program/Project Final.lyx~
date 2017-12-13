@@ -4670,5 +4670,21 @@ key "New1"
 .
 \end_layout
 
+\begin_layout Part*
+Part 5: Control constructs and subprograms
+\end_layout
+
+\begin_layout Subsection*
+Control flow constructs in Perl 6
+\end_layout
+
+\begin_layout Subsection*
+Subprograms in Perl 6
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

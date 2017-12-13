@@ -4682,10 +4682,7 @@ Control flow constructs in Perl 6
 Perl 6 control flow takes the form of statements.
  Statements can be grouped into blocks using braces.
  A block can be treated as a statement, used alone on a logical line, in
- which case it will be executed, or it can be used as a literal anonymous
- subprogram.
- In contexts where it would usually be treated as a literal, it can be prefaced
- with the do keyword to execute it instead.
+ which case it will be executed, or it can be used to 
 \end_layout
 
 \begin_layout Subsection*
