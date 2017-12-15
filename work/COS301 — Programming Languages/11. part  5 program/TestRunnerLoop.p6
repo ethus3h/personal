@@ -280,6 +280,9 @@ my @tests = ('String qux?', 'optionalParameter'),
             ('foo(bar)', 'TOP'),
             ('foo=5', 'TOP');
 
+for @tests -> List $item {
+    ok runParserTest $item
+}
 
 say "Done running tests. Report:";
 done-testing;
