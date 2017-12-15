@@ -5,6 +5,8 @@ use Test;
 use Grammar::Tracer;
 use Grammar::ErrorReporting;
 
+# Test runner for a grammar I'm developing. The actual version just uses a list of test statements to run. This is a loop version.
+
 # General support code
 (
     # This class is originally by Moritz Lenz
@@ -221,6 +223,8 @@ grammar EM does Grammar::ErrorReporting {
         }
     );
 }
+
+my @tests = 
 say 'Testing optionalParameter';
 (
     ok runParserTest('String qux?', 'optionalParameter');
