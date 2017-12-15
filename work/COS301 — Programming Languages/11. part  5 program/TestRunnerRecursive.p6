@@ -282,7 +282,9 @@ my @tests = ('String qux?', 'optionalParameter'),
 
 sub runTest(Int $whichTest) {
     ok runParserTest(@tests[$whichTest][0], @tests[$whichTest][1]);
-    runTest $whichTest + 1
+    if ( @tests.length > $whichTest ) {
+        runTest ($whichTest + 1)
+    }
 }
 
 say "Done running tests. Report:";
