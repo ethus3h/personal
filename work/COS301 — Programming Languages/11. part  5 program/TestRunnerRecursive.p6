@@ -5,7 +5,7 @@ use Test;
 use Grammar::Tracer;
 use Grammar::ErrorReporting;
 
-# Test runner for a grammar I'm developing. The actual version just uses a list of test statements to run. This is a loop version.
+# Test runner for a grammar I'm developing. The actual version just uses a list of test statements to run. This is a recursive version.
 
 # General support code
 (
@@ -280,8 +280,9 @@ my @tests = ('String qux?', 'optionalParameter'),
             ('foo(bar)', 'TOP'),
             ('foo=5', 'TOP');
 
-for @tests -> List $item {
-    ok runParserTest($item[0], $item[1])
+sub runTest(Int $whichTest) {
+    ok runParserTest($tests[$whichTest][0], $tests[$whichTest][1]);
+    runTest $whichTest + 1
 }
 
 say "Done running tests. Report:";
