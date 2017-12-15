@@ -282,7 +282,7 @@ my @tests = ('String qux?', 'optionalParameter'),
 
 sub runTest(Int $whichTest) {
     ok runParserTest(@tests[$whichTest][0], @tests[$whichTest][1]);
-    if ( @tests.length > $whichTest ) {
+    if ( @tests.elems >= $whichTest ) {
         runTest ($whichTest + 1)
     }
 }
