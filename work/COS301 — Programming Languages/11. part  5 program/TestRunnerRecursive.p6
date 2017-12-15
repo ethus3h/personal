@@ -281,7 +281,7 @@ my @tests = ('String qux?', 'optionalParameter'),
             ('foo=5', 'TOP');
 
 sub runTest(Int $whichTest) {
-    ok runParserTest($tests[$whichTest][0], $tests[$whichTest][1]);
+    ok runParserTest(@tests[$whichTest][0], @tests[$whichTest][1]);
     runTest $whichTest + 1
 }
 
