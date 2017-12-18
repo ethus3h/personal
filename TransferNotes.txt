@@ -1,1 +1,3 @@
-T
+* Run sreg_flush_localstore on stream registry repos
+* Find stray files in RubberFS and in /
+* Go through other partitions
