@@ -10,7 +10,7 @@
 /dev/nvme0n1p7   786999296 1525710847 738711552 352.3G Linux filesystem
 /dev/nvme0n1p5   393783296  784951295 391168000 186.5G Linux filesystem
 
-Little ones: dded, copied to mac.
+Little ones: dded, copying to mac.
 /dev/nvme0n1p1        2048     534527    532480   260M EFI System
 /dev/nvme0n1p2      534528     567295     32768    16M Microsoft reserved
 /dev/nvme0n1p4   390156288  393781247   3624960   1.7G Windows recovery environment
