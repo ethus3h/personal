@@ -1,5 +1,6 @@
 * Run sreg_flush_localstore on stream registry repos
 * Find stray files in RubberFS and in /
+* Lists of apps
 * Go through other partitions
 
 /dev/nvme0n1p10 1953746944 1978322943  24576000  11.7G Linux swap
