@@ -1,0 +1,95 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ csum /nvme0n1p5/nvme0n1p8
+Password: 
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /home/kyan at 20171219135058157323193_2d303530300a:
+An error was reported on  line 1 in /home/kyan at 20171219135058135658860_2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ csum /nvme0n1p5/nvme0n1p*
+Password: 
+kyan@elegiac ~ nohup compiz --replace openbox $                           
+kyan@elegiac ~ nohup compiz --replace openbox $ csum /nvme0n1p5/nvme0n1p* cat^C
+kyan@elegiac ~ nohup compiz --replace openbox $ man csmu^C
+kyan@elegiac ~ nohup compiz --replace openbox $ csum /nvme0n1p5/nvme0n1p* -
+^Cnvme0n1p5/nvme...1p6-2017dec19.dd 35MB of 1000MB done, 00:00:27 left    
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /home/kyan at 20171219135505851195855_2d303530300a:
+An error was reported on  line 6 in /home/kyan at 20171219135505832906790_2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ csum /nvme0n1p5/nvme0n1p* -
+/home/kyan\n                                                              
+%%%% HASHDEEP-1.0
+%%%% size,md5,sha1,sha256,tiger,whirlpool,filename
+## Invoked from: /
+## # hashdeep -c md5,sha1,sha256,tiger,whirlpool -j0 -e -o fbsd -r -l ./nvme0n1p5/nvme0n1p1-2017dec19.dd ./nvme0n1p5/nvme0n1p2-2017dec19.dd ./nvme0n1p5/nvme0n1p4-2017dec19.dd ./nvme0n1p5/nvme0n1p6-2017dec19.dd ./nvme0n1p5/nvme0n1p8-2017dec19.dd
+## 
+272629760,1b2df1243533ce562f770a80f545920c,b49ff6c06887cc5af99265465bc3a1dbb7a6e6c1,ce6d0f387f319cbf3e372dfb7bf1c2f5fb47b03e9f8fba6f6232cc2ee6eeda8f,ac03fbb0bee88dd45213ed5d59bcecd4cd96e89f05a72cff,37f8380be89d836b185ed3ff3334eb783b0dfb3fc3d77a79254000116989bd083452186815f5b4c7f8c3041dc65176fe3620a118590ba1d6a208821b99041f35,./nvme0n1p5/nvme0n1p1-2017dec19.dd
+16777216,9a9556e8d8d45ddbe46e4d250266b8e7,f6835650064a5a995b9a7d8fd92a762b51706e51,bbe21aa61204347d474ac160548e03a515d57370756fe7d48feea705f803c64a,bbf6322311e981567365a487e1bf8cb133c6bc88bb8f4c20,67b5811112186f6db2010828790d76aba3e9083edbc0b2ca467995820caab9ee41692264169487f3cd3f2ee2bd67e57a1ac79bf1f8768217aacc699d65e3df98,./nvme0n1p5/nvme0n1p2-2017dec19.dd
+1855979520,40126be7095d1e25fbc48c4f5125051d,b680ba700b5276551d3e23f45f9d950e64352cf0,bacb448459274019557ebffa6f5dc3f0176a69dd8bd286448cf0f4413c251b61,95b150bb0452c0bc18a911c32965b28cd73fc7a15c49f22c,8a545b2556c3184c85a19bdc196dabfc92d7af51b35e593069a47a449837aea6e4d34aa3cb6a2e3506277884dd4b3543dfbe51129e6e1b6851a1f17923570093,./nvme0n1p5/nvme0n1p4-2017dec19.dd
+1048576000,c6a156338c780436e19a4c69a0c346ba,43ce18af7dfbcaebf1e8889b76fc87fc85f14ad0,6ad4c4def7db838f4df83bb3e9c2643f6ed05af517368a2916c6ebb8c8bdadfb,fc0ccbbfc5ecf8bb462d9e40c504ccbe6857c848ed0f9dbc,30228af4b7ea734989d269bf5455a3a63f07fc39c8b3be9fbf80417534a7f9e2576538015504e3bde6654909541b5d8cba10f8b44fadcf869c26f4cb10648cc2,./nvme0n1p5/nvme0n1p6-2017dec19.dd
+1048576000,d288b7161fdd466b0cb4ec90c2001d1b,13df8c1cefbb7ff357c9994e899a3da1281adb78,3926342137b7ff4c48c737531de3d93629ec46e7991fb9fb98f9583dc31b4b11,da98c857d6d1dfb1aee08da378b46cb7890b1deb8ba6de5f,cba3153e43529e81271d9bd52b71e2608a2bb7c0a69146266b286243ccf53ba8b533793c0622843623c223d09663f7fcaf63056f628151c4e9c7b1f981fe205e,./nvme0n1p5/nvme0n1p8-2017dec19.dd
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p2 of=/nvme0n1p5/nvme0n1p2-2017dec19.dd
+32768+0 records in
+32768+0 records out
+16777216 bytes (17 MB, 16 MiB) copied, 0.0461736 s, 363 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p1 of=/nvme0n1p5/nvme0n1p1-2017dec19.dd
+532480+0 records in
+532480+0 records out
+272629760 bytes (273 MB, 260 MiB) copied, 0.911807 s, 299 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p4 of=/nvme0n1p5/nvme0n1p4-2017dec19.dd
+sudo dd if=/dev/nvme0n1p6 of=/nvme0n1p5/nvme0n1p6-2017dec19.dd
+3624960+0 records in
+3624960+0 records out
+1855979520 bytes (1.9 GB, 1.7 GiB) copied, 11.5206 s, 161 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p6 of=/nvme0n1p5/nvme0n1p6-2017dec19.dd
+sudo dd if=/dev/nvme0n1p8 of=/nvme0n1p5/nvme0n1p8-2017dec19.dd
+2048000+0 records in
+2048000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 4.66815 s, 225 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p8 of=/nvme0n1p5/nvme0n1p8-2017dec19.dd
+2048000+0 records in
+2048000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 6.53755 s, 160 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ csum /nvme0n1p5/nvme0n1p* -./nvme0n1p5/nvme...1p4-2017dec19.dd 283MB of 1770MB done, 00:00:42 left   
+
+./nvme0n1p5/nvme...1p4-2017dec19.dd 319MB of 1770MB done, 00:00:40 left
+sshpass -p "Elliot" rsync -azv --progress --checksum --no-i-r -e "ssh -o StrictHostKeyChecking=no" /nvme0n1p5/nvme0n1p* "ECW@10.0.0.3:/users/ECW/BackedUpFromHPnvme0n1p5-2017Dec19/"./nvme0n1p5/nvme...1p4-2017dec19.dd 356MB of 1770MB done, 00:00:39 left
+
+
+sshpass -p "Elliot" rsync -azv --progress --checksum --no-i-r -e "ssh -o StrictHostKeyChecking=no" /nvme0n1p5/nvme0n1p* "ECW@10.0.0.3:/users/ECW/BackedUpFromHPnvme0n1p5-2017Dec19/"
+./nvme0n1p5/nvme...1p4-2017dec19.dd 423MB of 1770MB done, 00:00:38 left
+
+
+/home/kyan\n                                                              
+%%%% HASHDEEP-1.0
+%%%% size,md5,sha1,sha256,tiger,whirlpool,filename
+## Invoked from: /
+## # hashdeep -c md5,sha1,sha256,tiger,whirlpool -j0 -e -o fbsd -r -l ./nvme0n1p5/nvme0n1p1-2017dec19.dd ./nvme0n1p5/nvme0n1p2-2017dec19.dd ./nvme0n1p5/nvme0n1p4-2017dec19.dd ./nvme0n1p5/nvme0n1p6-2017dec19.dd ./nvme0n1p5/nvme0n1p8-2017dec19.dd
+## 
+272629760,1b2df1243533ce562f770a80f545920c,b49ff6c06887cc5af99265465bc3a1dbb7a6e6c1,ce6d0f387f319cbf3e372dfb7bf1c2f5fb47b03e9f8fba6f6232cc2ee6eeda8f,ac03fbb0bee88dd45213ed5d59bcecd4cd96e89f05a72cff,37f8380be89d836b185ed3ff3334eb783b0dfb3fc3d77a79254000116989bd083452186815f5b4c7f8c3041dc65176fe3620a118590ba1d6a208821b99041f35,./nvme0n1p5/nvme0n1p1-2017dec19.dd
+16777216,9a9556e8d8d45ddbe46e4d250266b8e7,f6835650064a5a995b9a7d8fd92a762b51706e51,bbe21aa61204347d474ac160548e03a515d57370756fe7d48feea705f803c64a,bbf6322311e981567365a487e1bf8cb133c6bc88bb8f4c20,67b5811112186f6db2010828790d76aba3e9083edbc0b2ca467995820caab9ee41692264169487f3cd3f2ee2bd67e57a1ac79bf1f8768217aacc699d65e3df98,./nvme0n1p5/nvme0n1p2-2017dec19.dd
+1855979520,40126be7095d1e25fbc48c4f5125051d,b680ba700b5276551d3e23f45f9d950e64352cf0,bacb448459274019557ebffa6f5dc3f0176a69dd8bd286448cf0f4413c251b61,95b150bb0452c0bc18a911c32965b28cd73fc7a15c49f22c,8a545b2556c3184c85a19bdc196dabfc92d7af51b35e593069a47a449837aea6e4d34aa3cb6a2e3506277884dd4b3543dfbe51129e6e1b6851a1f17923570093,./nvme0n1p5/nvme0n1p4-2017dec19.dd
+1048576000,c6a156338c780436e19a4c69a0c346ba,43ce18af7dfbcaebf1e8889b76fc87fc85f14ad0,6ad4c4def7db838f4df83bb3e9c2643f6ed05af517368a2916c6ebb8c8bdadfb,fc0ccbbfc5ecf8bb462d9e40c504ccbe6857c848ed0f9dbc,30228af4b7ea734989d269bf5455a3a63f07fc39c8b3be9fbf80417534a7f9e2576538015504e3bde6654909541b5d8cba10f8b44fadcf869c26f4cb10648cc2,./nvme0n1p5/nvme0n1p6-2017dec19.dd
+1048576000,d288b7161fdd466b0cb4ec90c2001d1b,13df8c1cefbb7ff357c9994e899a3da1281adb78,3926342137b7ff4c48c737531de3d93629ec46e7991fb9fb98f9583dc31b4b11,da98c857d6d1dfb1aee08da378b46cb7890b1deb8ba6de5f,cba3153e43529e81271d9bd52b71e2608a2bb7c0a69146266b286243ccf53ba8b533793c0622843623c223d09663f7fcaf63056f628151c4e9c7b1f981fe205e,./nvme0n1p5/nvme0n1p8-2017dec19.dd
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ sshpass -p "Elliot" rsync -azv --progress --checksum --no-i-r -e "ssh -o StrictHostKeyChecking=no" /nvme0n1p5/nvme0n1p* "ECW@10.0.0.3:/users/ECW/BackedUpFromHPnvme0n1p5-2017Dec19/"
+building file list ... 
+5 files to consider
+
+sent 279 bytes  received 54 bytes  3.60 bytes/sec
+total size is 4,242,538,496  speedup is 12,740,355.84
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ sshpass -p "Elliot" rsync -azv --progress --checksum --no-i-r -e "ssh -o StrictHostKeyChecking=no" /nvme0n1p5/nvme0n1p* "ECW@10.0.0.3:/users/ECW/BackedUpFromHPnvme0n1p5-2017Dec19/"
+building file list ... 
+5 files to consider
+
+sent 249 bytes  received 20 bytes  2.31 bytes/sec
+total size is 4,242,538,496  speedup is 15,771,518.57
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
