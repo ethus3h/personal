@@ -1,0 +1,20 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p2 of=/nvme0n1p5/nvme0n1p2-2017dec19.dd
+Password: 
+Sorry, try again.
+Password: 
+32768+0 records in
+32768+0 records out
+16777216 bytes (17 MB, 16 MiB) copied, 0.0496987 s, 338 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p4 of=/nvme0n1p5/nvme0n1p4-2017dec19.dd
+3624960+0 records in
+3624960+0 records out
+1855979520 bytes (1.9 GB, 1.7 GiB) copied, 11.7643 s, 158 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p6 of=/nvme0n1p5/nvme0n1p6-2017dec19.dd
+2048000+0 records in
+2048000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 3.45227 s, 304 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo dd if=/dev/nvme0n1p8 of=/nvme0n1p5/nvme0n1p8-2017dec19.dd
+2048000+0 records in
+2048000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 3.69114 s, 284 MB/s
+kyan@elegiac ~ nohup compiz --replace openbox $ 
