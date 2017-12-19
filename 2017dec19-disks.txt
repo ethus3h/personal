@@ -1,0 +1,119 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo fdisk -l
+Password: 
+Disk /dev/ram0: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram1: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram2: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram3: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram4: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram5: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram6: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram7: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram8: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram9: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram10: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram11: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram12: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram13: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram14: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram15: 8 MiB, 8388608 bytes, 16384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/nvme0n1: 953.9 GiB, 1024209543168 bytes, 2000409264 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 796F3FB6-3B52-4F44-8AA2-DF03E0A5E322
+
+Device               Start        End   Sectors   Size Type
+/dev/nvme0n1p1        2048     534527    532480   260M EFI System
+/dev/nvme0n1p2      534528     567295     32768    16M Microsoft reserved
+/dev/nvme0n1p3      567296  390154707 389587412 185.8G Microsoft basic data
+/dev/nvme0n1p4   390156288  393781247   3624960   1.7G Windows recovery environment
+/dev/nvme0n1p5   393783296  784951295 391168000 186.5G Linux filesystem
+/dev/nvme0n1p6   784951296  786999295   2048000  1000M Linux filesystem
+/dev/nvme0n1p7   786999296 1525710847 738711552 352.3G Linux filesystem
+/dev/nvme0n1p8  1525710848 1527758847   2048000  1000M Linux filesystem
+/dev/nvme0n1p9  1527758848 1953746943 425988096 203.1G Apple HFS/HFS+
+/dev/nvme0n1p10 1953746944 1978322943  24576000  11.7G Linux swap
+/dev/nvme0n1p11 1978322944 1979744255   1421312   694M Windows recovery environment
+/dev/nvme0n1p12 1979744256 2000398335  20654080   9.9G Microsoft basic data
+kyan@elegiac ~ nohup compiz --replace openbox $ 
