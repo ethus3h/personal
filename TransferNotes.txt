@@ -2,6 +2,9 @@
 * Find stray files in RubberFS and in / (copy ones from rubberfs to mac, probably)
 * Lists of apps
 * Go through other partitions
+* Last things to do:
+    * Copy any remaining files from crystallizeWorkdir into new folder in a git repo
+    * Copy any remaining Crystal Index entries into another new folder in a git repo
 
 /dev/nvme0n1p10 1953746944 1978322943  24576000  11.7G Linux swap
 /dev/nvme0n1p12 1979744256 2000398335  20654080   9.9G Microsoft basic data
@@ -10,7 +13,7 @@
 /dev/nvme0n1p3      567296  390154707 389587412 185.8G Microsoft basic data
 /dev/nvme0n1p7   786999296 1525710847 738711552 352.3G Linux filesystem
 
-Working partition: In progress. Remaining: dreaminginpop, and any temp files left over by crystallize/sreg running (which will be the last thing to do).
+Working partition: In progress. Remaining: dreaminginpop, and any temp files left over by crystallize/sreg running (one of the last things to do).
 /dev/nvme0n1p5   393783296  784951295 391168000 186.5G Linux filesystem
 
 Little ones: dded, copied to mac.
