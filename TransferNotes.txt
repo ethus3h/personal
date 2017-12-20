@@ -3,8 +3,9 @@
 * Go through other partitions
 * Last things to do:
    * Run sreg_flush_localstore on stream registry repos
+   * Update the crystal index sync: sshpass -p "..." rsync -avz --progress --no-i-r /library/Futuramerlin\ Projects/Data/Crystal\ Index /library/Futuramerlin\ Projects/Data/ColistarrCollectionIndex "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-Begun-2017Dec19a20/"
    * Copy any remaining files from crystallizeWorkdir into new folder in ember-library-2 git repo
-   * Copy any remaining Crystal Index entries into another new folder in ember-library-2 git repo
+   * Copy any remaining Crystal Index entries (not in crystal index pointers folder) into another new folder in ember-library-2 git repo
 
 /dev/nvme0n1p10 1953746944 1978322943  24576000  11.7G Linux swap
 /dev/nvme0n1p12 1979744256 2000398335  20654080   9.9G Microsoft basic data
