@@ -10,9 +10,6 @@
    * Copy any remaining files from crystallizeWorkdir into new folder in ember-library-2 git repo
    * Copy any remaining Crystal Index entries (not in crystal index pointers folder) into another new folder in ember-library-2 git repo
 
-/dev/nvme0n1p10 1953746944 1978322943  24576000  11.7G Linux swap
-/dev/nvme0n1p12 1979744256 2000398335  20654080   9.9G Microsoft basic data
-
 /dev/nvme0n1p9  1527758848 1953746943 425988096 203.1G Apple HFS/HFS+
 
 Copying parts to mac:
@@ -31,3 +28,9 @@ Little ones: dded, copied to mac.
 /dev/nvme0n1p6   784951296  786999295   2048000  1000M Linux filesystem
 /dev/nvme0n1p8  1525710848 1527758847   2048000  1000M Linux filesystem
 /dev/nvme0n1p11 1978322944 1979744255   1421312   694M Windows recovery environment
+
+Swap, skipping:
+/dev/nvme0n1p10 1953746944 1978322943  24576000  11.7G Linux swap
+Microsoft recovery partition, skipping:
+/dev/nvme0n1p12 1979744256 2000398335  20654080   9.9G Microsoft basic data
+
