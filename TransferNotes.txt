@@ -11,7 +11,7 @@
    * Copy any remaining Crystal Index entries (not in crystal index pointers folder) into another new folder in ember-library-2 git repo
    * egup; rubberfs save; rubberfs delta (to mac)
 
-Copying parts to mac: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /run/media/kyan/Macintosh\ HD/Users/Shared /run/media/kyan/Macintosh\ HD/Users/Guest /run/media/kyan/Macintosh\ HD/Users/elliot "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-Begun-2017Dec20n2/"
+Copying parts to mac: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /run/media/kyan/Macintosh\ HD/Users/Shared /run/media/kyan/Macintosh\ HD/Users/Guest /run/media/kyan/Macintosh\ HD/Users/elliot /run/media/kyan/Macintosh\ HD/Applications/MAM* "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-Begun-2017Dec20n2/"
 /dev/nvme0n1p9  1527758848 1953746943 425988096 203.1G Apple HFS/HFS+
 
 Copying parts to mac (despite the name of the folder, it's not all copied on the 16th, rather that is the date begun): sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /home "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-2017Dec16/"
