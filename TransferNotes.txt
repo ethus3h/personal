@@ -1,5 +1,6 @@
 * Find stray files in RubberFS and in / (copy ones from rubberfs to mac, probably)
-* Packages; distfiles
+* Packages: srsync /usr/portage/packages /Ember\ Library/Ember\ satellite\ projects/wreathe-packages/
+* Distfiles: srsync /usr/portage/distfiles /Ember\ Library/Ember\ satellite\ projects/wreathe-packages/
 * Go through other partitions
 * Crystallize rubberfs .Trash-1000
 * Crystallize home trash
@@ -9,6 +10,7 @@
    * Update the crystal index sync: sshpass -p "..." rsync -avz --progress --checksum --no-i-r /library/Futuramerlin\ Projects/Data/Crystal\ Index /library/Futuramerlin\ Projects/Data/ColistarrCollectionIndex "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-Begun-2017Dec19a20/"
    * Copy any remaining files from crystallizeWorkdir into new folder in ember-library-2 git repo
    * Copy any remaining Crystal Index entries (not in crystal index pointers folder) into another new folder in ember-library-2 git repo
+   * egup; rubberfs save; rubberfs delta (to mac)
 
 /dev/nvme0n1p9  1527758848 1953746943 425988096 203.1G Apple HFS/HFS+
 
@@ -18,7 +20,7 @@ Copying parts to mac (despite the name of the folder, it's not all copied on the
 Copying parts to mac: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r windowsmp-2017dec20/SYSTEM.SAV windowsmp-2017dec20/Games windowsmp-2017dec20/Created2017oct03 windowsmp-2017dec20/Users "ECW@10.0.0.3:/Users/ECW/BackedUpFromHPWinPartition-Begun-2017Dec20/"
 /dev/nvme0n1p3      567296  390154707 389587412 185.8G Microsoft basic data
 
-Working partition: In progress. Remaining: dreaminginpop, and any temp files left over by crystallize/sreg running (one of the last things to do).
+Working partition: In progress. Remaining: dreaminginpop, and any temp files left over by crystallize/sreg running (one of the last things to do). srsync /nvme0n1p5/.dreaminginpop-git-begun-2017may13/dreaminginpop-git-begun-2017may13 /Ember\ Library/staging/
 /dev/nvme0n1p5   393783296  784951295 391168000 186.5G Linux filesystem
 
 Little ones: dded, copied to mac.
