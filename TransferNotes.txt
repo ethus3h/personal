@@ -1,9 +1,9 @@
-* Run sreg_flush_localstore on stream registry repos
 * Find stray files in RubberFS and in / (copy ones from rubberfs to mac, probably)
 * Lists of apps
 * Go through other partitions
 * Last things to do:
-    * Copy any remaining files from crystallizeWorkdir into new folder in ember-library-2 git repo
+   * Run sreg_flush_localstore on stream registry repos
+   * Copy any remaining files from crystallizeWorkdir into new folder in ember-library-2 git repo
     * Copy any remaining Crystal Index entries into another new folder in ember-library-2 git repo
 
 /dev/nvme0n1p10 1953746944 1978322943  24576000  11.7G Linux swap
