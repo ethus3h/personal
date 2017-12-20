@@ -1,6 +1,9 @@
 * Find stray files in RubberFS and in / (copy ones from rubberfs to mac, probably)
 * Lists of apps
 * Go through other partitions
+* Crystallize rubberfs .Trash-1000
+* Crystallize home trash
+* Crystallize --keep selected home dotfiles just in case?
 * Last things to do:
    * Run sreg_flush_localstore on stream registry repos
    * Update the crystal index sync: sshpass -p "..." rsync -avz --progress --no-i-r /library/Futuramerlin\ Projects/Data/Crystal\ Index /library/Futuramerlin\ Projects/Data/ColistarrCollectionIndex "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-Begun-2017Dec19a20/"
