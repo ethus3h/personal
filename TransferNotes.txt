@@ -1,5 +1,5 @@
 * Find stray files in RubberFS and in / (copy ones from rubberfs to mac, probably)
-* Lists of apps
+* Packages; distfiles
 * Go through other partitions
 * Crystallize rubberfs .Trash-1000
 * Crystallize home trash
