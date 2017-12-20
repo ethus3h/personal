@@ -14,8 +14,12 @@
 /dev/nvme0n1p12 1979744256 2000398335  20654080   9.9G Microsoft basic data
 
 /dev/nvme0n1p9  1527758848 1953746943 425988096 203.1G Apple HFS/HFS+
-/dev/nvme0n1p3      567296  390154707 389587412 185.8G Microsoft basic data
+
+Copying parts to mac:
 /dev/nvme0n1p7   786999296 1525710847 738711552 352.3G Linux filesystem
+
+Copying parts to mac: sudo sshpass -p "..." rsync -avz --progress --no-i-r windowsmp-2017dec20/SYSTEM.SAV windowsmp-2017dec20/Games windowsmp-2017dec20/Created2017oct03 windowsmp-2017dec20/Users "ECW@10.0.0.3:/Users/ECW/BackedUpFromHPWinPartition-Begun-2017Dec20/"
+/dev/nvme0n1p3      567296  390154707 389587412 185.8G Microsoft basic data
 
 Working partition: In progress. Remaining: dreaminginpop, and any temp files left over by crystallize/sreg running (one of the last things to do).
 /dev/nvme0n1p5   393783296  784951295 391168000 186.5G Linux filesystem
