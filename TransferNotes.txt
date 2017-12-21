@@ -1,4 +1,3 @@
-* Distfiles: srsync /usr/portage/distfiles /Ember\ Library/Ember\ satellite\ projects/wreathe-packages/
 * Last things to do:
    * Run sreg_flush_localstore on stream registry repos: ( cd /library; sreg_flush_localstore; ); ( cd /library/Ember\ satellite\ projects/ember-history; sreg_flush_localstore; ); ( cd /library/Ember\ satellite\ projects/personal; sreg_flush_localstore; ); ( cd /library/Ember\ satellite\ projects/personal-private; sreg_flush_localstore; ); ( cd /library/Ember\ satellite\ projects/wreathe-packages; sreg_flush_localstore; )
    * Update the crystal index sync: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /library/Futuramerlin\ Projects/Data/Crystal\ Index /library/Futuramerlin\ Projects/Data/ColistarrCollectionIndex "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-Begun-2017Dec19a20/"
