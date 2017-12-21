@@ -21,16 +21,3 @@ Copying parts to mac: sudo sshpass -p "..." rsync -avz --progress --checksum --n
 
 Working partition: In progress. Remaining: dreaminginpop, and any temp files left over by crystallize/sreg running (one of the last things to do). srsync /nvme0n1p5/.dreaminginpop-git-begun-2017may13/dreaminginpop-git-begun-2017may13 /Ember\ Library/staging/
 /dev/nvme0n1p5   393783296  784951295 391168000 186.5G Linux filesystem
-
-Little ones: dded, copied to mac.
-/dev/nvme0n1p1        2048     534527    532480   260M EFI System
-/dev/nvme0n1p2      534528     567295     32768    16M Microsoft reserved
-/dev/nvme0n1p4   390156288  393781247   3624960   1.7G Windows recovery environment
-/dev/nvme0n1p6   784951296  786999295   2048000  1000M Linux filesystem
-/dev/nvme0n1p8  1525710848 1527758847   2048000  1000M Linux filesystem
-/dev/nvme0n1p11 1978322944 1979744255   1421312   694M Windows recovery environment
-
-Swap, skipping:
-/dev/nvme0n1p10 1953746944 1978322943  24576000  11.7G Linux swap
-Microsoft recovery partition, skipping:
-/dev/nvme0n1p12 1979744256 2000398335  20654080   9.9G Microsoft basic data
