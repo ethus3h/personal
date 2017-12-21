@@ -1,4 +1,3 @@
-* Packages: srsync /usr/portage/packages /Ember\ Library/Ember\ satellite\ projects/wreathe-packages/
 * Distfiles: srsync /usr/portage/distfiles /Ember\ Library/Ember\ satellite\ projects/wreathe-packages/
 * Crystallize rubberfs .Trash-1000
 * Last things to do:
