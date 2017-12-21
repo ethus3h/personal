@@ -1,7 +1,5 @@
-1 Find stray files in RubberFS and in / (copy ones from rubberfs to mac, probably)
 * Packages: srsync /usr/portage/packages /Ember\ Library/Ember\ satellite\ projects/wreathe-packages/
 * Distfiles: srsync /usr/portage/distfiles /Ember\ Library/Ember\ satellite\ projects/wreathe-packages/
-1 Go through other partitions
 * Crystallize rubberfs .Trash-1000
 * Last things to do:
    * Run sreg_flush_localstore on stream registry repos: ( cd /library; sreg_flush_localstore; ); ( cd /library/Ember\ satellite\ projects/ember-history; sreg_flush_localstore; ); ( cd /library/Ember\ satellite\ projects/personal; sreg_flush_localstore; ); ( cd /library/Ember\ satellite\ projects/personal-private; sreg_flush_localstore; ); ( cd /library/Ember\ satellite\ projects/wreathe-packages; sreg_flush_localstore; )
