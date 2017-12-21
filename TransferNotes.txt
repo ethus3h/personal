@@ -13,6 +13,3 @@ Root partition (despite the name of the folder, it's not all copied on the 16th,
 
 Windows partition: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r windowsmp-2017dec20/SYSTEM.SAV windowsmp-2017dec20/Games windowsmp-2017dec20/Created2017oct03 windowsmp-2017dec20/Users "ECW@10.0.0.3:/Users/ECW/BackedUpFromHPWinPartition-Begun-2017Dec20/"
 /dev/nvme0n1p3      567296  390154707 389587412 185.8G Microsoft basic data
-
-Working partition: In progress. Remaining: dreaminginpop, and any temp files left over by crystallize/sreg running (one of the last things to do). srsync /nvme0n1p5/.dreaminginpop-git-begun-2017may13/dreaminginpop-git-begun-2017may13 /Ember\ Library/staging/
-/dev/nvme0n1p5   393783296  784951295 391168000 186.5G Linux filesystem
