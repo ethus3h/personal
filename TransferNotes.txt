@@ -5,7 +5,7 @@
    * Update the crystal index sync: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /library/Futuramerlin\ Projects/Data/Crystal\ Index /library/Futuramerlin\ Projects/Data/ColistarrCollectionIndex "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-Begun-2017Dec19a20/"
    * Copy any remaining files from crystallizeWorkdir into new folder in ember-library-2 git repo
    * Copy any remaining Crystal Index entries (not in crystal index pointers folder) into another new folder in ember-library-2 git repo
-   * egup; rubberfs save; rubberfs delta (to mac)
+   * egup; rubberfs save; rubberfs delta (to mac): sudo rm -r /nvme0n1p5/.CrystalCache/ /nvme0n1p5/.LocalStoreCache/ /nvme0n1p5/.StreamCache/; sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /nvme0n1p5 "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-2017Dec21/"
 
 Copying parts to mac: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /run/media/kyan/Macintosh\ HD/Users/Shared /run/media/kyan/Macintosh\ HD/Users/Guest /run/media/kyan/Macintosh\ HD/Users/elliot /run/media/kyan/Macintosh\ HD/Applications/MAM* "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-Begun-2017Dec20n2/"
 /dev/nvme0n1p9  1527758848 1953746943 425988096 203.1G Apple HFS/HFS+
