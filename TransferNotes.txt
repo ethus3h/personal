@@ -4,6 +4,3 @@
    * Copy any remaining files from crystallizeWorkdir into new folder in ember-library-2 git repo
    * Copy any remaining Crystal Index entries (not in crystal index pointers folder) into another new folder in ember-library-2 git repo
    * egup; rubberfs save; rubberfs delta; send to mac: sudo rm -r /nvme0n1p5/.CrystalCache/ /nvme0n1p5/.LocalStoreCache/ /nvme0n1p5/.StreamCache/ /nvme0n1p5/.dreaminginpop-git-begun-2017may13/; sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /nvme0n1p5 "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-2017Dec21/"
-
-Root partition (despite the name of the folder, it's not all copied on the 16th, rather that is the date begun): sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /home "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-2017Dec16/"
-/dev/nvme0n1p7   786999296 1525710847 738711552 352.3G Linux filesystem
