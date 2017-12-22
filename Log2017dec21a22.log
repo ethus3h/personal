@@ -1,0 +1,136 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ csum /nvme0n1p5 > /Ember\ Library/Ember\ satellite\ projects/personal/nvme0n1p5-2017dec21a22.csum
+Password: 
+./nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78: No such file or directory
+./nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78: unknown file type
+./nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78: No such file or directory
+./nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78: unknown file type
+sudo -- /usr/local/bin/csum /nvme0n1p5                                    
+failed with the error on /usr/local/bin/error-notify line 28 in /home/kyan at 20171222033632514464058_2d303530300a:
+Assertion failed: 8174272d1001a061eb24460aa2e377170d96f91a73838c1f98c62cd052768501be1b98a3c1b8f9664753e390e28f7d6243d9f0e8592a320f90c134a49127fd1b, 5ecfff77b24aca66fd0d2f48a7828c37bcf91c7dfaee2b9ed88d858119dc6d14d71d74ab7d74ae8d8ca88650ee156fa10c3196ca56c555635dc25de760fd0d42 on /usr/local/bin/ember_bash_setup line 724 in /home/kyan at 20171222033632494691095_2d303530300a.
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /home/kyan at 20171222033632549352533_2d303530300a:
+An error was reported on  line 1 in /home/kyan at 20171222033632524191992_2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo rm /nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b928e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78 
+Password: 
+rm: cannot remove '/nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b928e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78': No such file or directory
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /home/kyan at 20171222033757670430233_2d303530300a:
+An error was reported on  line 2 in /home/kyan at 20171222033757643350712_2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo rm -f /nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b928e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78 
+kyan@elegiac ~ nohup compiz --replace openbox $ ls /nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9\"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78 ^C
+kyan@elegiac ~ nohup compiz --replace openbox $ hashdeep ^C
+kyan@elegiac ~ nohup compiz --replace openbox $ cd /
+kyan@elegiac / nohup compiz --replace openbox $ hashdeep ^C
+kyan@elegiac / nohup compiz --replace openbox $ cat $(which csum)
+#!/usr/bin/env bash
+# shellcheck disable=SC1091
+source ember_bash_setup &> /dev/null
+#set -x
+
+((EUID)) && exec sudo -- "$0" "$@"
+
+trap 'error-notify "A fatal error was reported on ${BASH_SOURCE[0]} line ${LINENO} in $(pwd) at $(emdate)."; exit 1' ERR
+
+action="--save"
+if [[ "$1" == "--save" ]]; then
+    shift
+elif [[ "$1" == "--check" ]]; then
+    action="--check"
+    shift
+fi
+
+# No arguments: Csum current dir to stdout. One argument: Csum to stdout. Two+ arguments: last is csum file.
+
+if [[ "$#" == "0" ]]; then
+    pathsToCsum=(".")
+    checksumFile=""
+elif [[ "$#" == "1" ]]; then
+    pathsToCsum=("$1")
+    checksumFile=""
+else
+    pathsToCsum=("${@:1:$(($#-1))}") # all but last argument
+    checksumFile="${!#}" # last argument
+fi
+
+if [[ "$checksumFile" == "-" ]]; then
+    checksumFile=""
+fi
+
+case $action in
+--save)
+    setVariableToCommandOutput currentworkingdir pwd -P
+    currentworkingdir="${currentworkingdir:?}"
+    currentworkingdir="${currentworkingdir//$'\n'/'\n'}"
+    argsRelativeToRoot=()
+    for arg in "${pathsToCsum[@]}"; do
+        argsRelativeToRoot+=(".$(abspath "$arg")")
+    done
+    # Do two passes to make sure nothing changed while reading and there weren't other errors
+    # First pass
+    firstPass="$(tempFile)"
+    {
+        printf '%s\n' "${currentworkingdir//$'\r'/'\r'}"
+        (
+            cd / || die
+            hashdeep -c md5,sha1,sha256,tiger,whirlpool -j0 -e -o fbsd -r -l "${argsRelativeToRoot[@]}"
+        ) || die
+    } > "$firstPass"
+    # Second pass
+    secondPass="$(tempFile)"
+    {
+        printf '%s\n' "${currentworkingdir//$'\r'/'\r'}"
+        (
+            cd / || die
+            hashdeep -c md5,sha1,sha256,tiger,whirlpool -j0 -e -o fbsd -r -l "${argsRelativeToRoot[@]}"
+        ) || die
+    } > "$secondPass"
+    assert fileEquals "$firstPass" "$secondPass" || die
+    if [[ -z "$checksumFile" ]]; then
+        cat "$firstPass"
+        rm "$firstPass"
+    else
+        mv "$firstPass" "$checksumFile"
+    fi
+    rm "$secondPass"
+    ;;
+--check)
+    streamId="csum-$(date-uuid)"
+
+    finish() {
+        if [[ -e "/tmp/${streamId:?}" ]]; then
+            rm "/tmp/${streamId:?}"
+        fi
+    }
+    trap 'error-notify "A fatal error was reported on ${BASH_SOURCE[0]} line ${LINENO} in $(pwd) at $(emdate)."; finish; exit 1' ERR
+    trap finish EXIT
+
+    if [[ -z "$checksumFile" ]]; then
+        cat > "/tmp/$streamId"
+        tail -n +2 < "/tmp/$streamId" | sponge "/tmp/$streamId"
+    else
+        tail -n +2 "$checksumFile" > "/tmp/$streamId"
+    fi
+
+    hashdeep -k "/tmp/$streamId" -e -o fbsd -r -l -a -v -v "${pathsToCsum[@]}" || {
+            die "Hashdeep failed checksum verification! Reported on ${BASH_SOURCE[0]} line ${LINENO} in $(pwd) at $(emdate). Hashdeep version: $(hashdeep -V)."
+        }
+    finish
+    ;;
+*)
+    echo "Unknown action."
+    exit 1
+    ;;
+esac
+kyan@elegiac / nohup compiz --replace openbox $ ^C
+kyan@elegiac / nohup compiz --replace openbox $ sudo hashdeep -c md5,sha1,sha256,tiger,whirlpool -j0 -e -o fbsd -r -l /nvme0n1p5 > /Ember\ Library/Ember\ satellite\ projects/personal/nvme0n1p5-2017dec21a22-hashdeep-1.hashdeep
+/nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78: No such file or directory
+/nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78: unknown file type
+kyan@elegiac / nohup compiz --replace openbox $ sudo hashdeep -c md5,sha1,sha256,tiger,whirlpool -j0 -e -o fbsd -r -l /nvme0n1p5 > /Ember\ Library/Ember\ satellite\ projects/personal/nvme0n1p5-2017dec21a22-hashdeep-2.hashdeep
+Password: 
+/nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78: No such file or directory
+/nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78: unknown file type
+kyan@elegiac / nohup compiz --replace openbox $                            time.
+kyan@elegiac / nohup compiz --replace openbox $ sudo find /nvme0n1p5 -exec stat {} \; > /Ember\ Library/Ember\ satellite\ projects/personal/'sudo find ⌿nvme0n1p5 -exec stat {} \;. > '
+Password: 
+stat: cannot stat '/nvme0n1p5/.StreamCache/7/2/a/72ae2bf51ef0261b4556cc51d40b34b9"8e7e3761a28143b44e486555534858137eebadca82694e5bfa2d3a5deaf6b1ee3d4a81aeb1f969b8cb0944862653c78': No such file or directory
+kyan@elegiac / nohup compiz --replace openbox $ 
