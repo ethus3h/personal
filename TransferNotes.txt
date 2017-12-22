@@ -1,1 +1,6 @@
-   * egup; rubberfs save; rubberfs delta; send to mac: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /nvme0n1p5 "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-2017Dec21a22/"
+egup
+rubberfs save
+rubberfs delta
+
+
+send to mac: sudo sshpass -p "..." rsync -avz --progress --checksum --no-i-r /nvme0n1p5 "ECW@10.0.0.3:/Users/ECW/BackedUpFromHP-2017Dec21a22/"
