@@ -1,0 +1,508 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ find . -maxdepth 1 -size +10M -not -name '*.coal5' -exec rsync -av --checksum {} 5/ \;
+sending incremental file list
+created directory 5
+2017may07n19-psy.mp4
+
+sent 93,780,255 bytes  received 59 bytes  62,520,209.33 bytes/sec
+total size is 93,757,241  speedup is 1.00
+sending incremental file list
+2017apr24a25n3-02-dreaming.mp4
+
+sent 16,428,502 bytes  received 35 bytes  32,857,074.00 bytes/sec
+total size is 16,424,358  speedup is 1.00
+sending incremental file list
+Macintosh Development Notes.pdf
+^C
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /home/kyan at 20171222011519285545857_2d303530300a:
+An error was reported on  line 1 in /home/kyan at 20171222011519269600971_2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(636) [sender=3.1.2]
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at io.c(504) [generator=3.1.2]
+^C
+kyan@elegiac ~ nohup compiz --replace openbox $ rm -r 5
+kyan@elegiac ~ nohup compiz --replace openbox $ cd /nvme0n1p5/
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ find . -maxdepth 1 -size +10M -not -name '*.coal5' -exec rsync -av --checksum {} 5/ \;
+sending incremental file list
+
+sent 76 bytes  received 12 bytes  176.00 bytes/sec
+total size is 68,798,166  speedup is 781,797.34
+sending incremental file list
+
+sent 107 bytes  received 12 bytes  238.00 bytes/sec
+total size is 59,088,773  speedup is 496,544.31
+sending incremental file list
+
+sent 126 bytes  received 12 bytes  276.00 bytes/sec
+total size is 18,389,594  speedup is 133,257.93
+sending incremental file list
+
+sent 100 bytes  received 12 bytes  224.00 bytes/sec
+total size is 12,514,742  speedup is 111,738.77
+sending incremental file list
+sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > 
+
+sent 659,010,127 bytes  received 35 bytes  188,288,617.71 bytes/sec
+total size is 658,849,100  speedup is 1.00
+sending incremental file list
+Indices2017dec21.csum
+
+sent 18,884,440 bytes  received 35 bytes  37,768,950.00 bytes/sec
+total size is 18,879,701  speedup is 1.00
+sending incremental file list
+home-2017dec21.hashdeep
+
+sent 108,462,500 bytes  received 35 bytes  72,308,356.67 bytes/sec
+total size is 108,435,895  speedup is 1.00
+sending incremental file list
+sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > 
+
+sent 391,377,674 bytes  received 35 bytes  156,551,083.60 bytes/sec
+total size is 391,281,977  speedup is 1.00
+sending incremental file list
+home-2017dec21n2.hashdeep
+
+sent 115,264,965 bytes  received 35 bytes  230,530,000.00 bytes/sec
+total size is 115,236,701  speedup is 1.00
+sending incremental file list
+Windows-2017dec21.csum
+
+sent 75,674,493 bytes  received 35 bytes  50,449,685.33 bytes/sec
+total size is 75,655,896  speedup is 1.00
+sending incremental file list
+home-2017dec21n4.hashdeep
+
+sent 116,150,607 bytes  received 35 bytes  232,301,284.00 bytes/sec
+total size is 116,122,127  speedup is 1.00
+sending incremental file list
+.unpack-test-20171219230114275622541_2d303530300a80e9382ab15b43748b107479e618517d.csum
+
+sent 213,744,274 bytes  received 35 bytes  142,496,206.00 bytes/sec
+total size is 213,691,922  speedup is 1.00
+sending incremental file list
+.tempFile-20171220002841928931490_2d303530300a13594ef7e35f4997a534c3846aaa5034
+
+sent 21,984,672 bytes  received 35 bytes  43,969,414.00 bytes/sec
+total size is 21,979,136  speedup is 1.00
+sending incremental file list
+.tempFile-20171220002841957297161_2d303530300a8d66f573c6594490b7ee2a8d56009748
+
+sent 100,274,248 bytes  received 35 bytes  66,849,522.00 bytes/sec
+total size is 100,249,600  speedup is 1.00
+sending incremental file list
+.unpack-test-20171220010516289462563_2d303530300a8c57a70066a9497bad321819caba41e2.csum
+
+sent 177,360,999 bytes  received 35 bytes  118,240,689.33 bytes/sec
+total size is 177,317,528  speedup is 1.00
+sending incremental file list
+.tempFile-20171221192621147726210_2d303530300ab60c17bcebcf46cfa3cce0fb62366b2c
+
+sent 75,674,537 bytes  received 35 bytes  50,449,714.67 bytes/sec
+total size is 75,655,896  speedup is 1.00
+sending incremental file list
+.tempFile-20171221192644852397690_2d303530300afac63ed56d104ffc88dbde93fb87e3b0
+
+sent 47,216,895 bytes  received 35 bytes  94,433,860.00 bytes/sec
+total size is 47,205,198  speedup is 1.00
+sending incremental file list
+.tempFile-20171221201438395244133_2d303530300aea046580a8544e18a572bf6b41a71861
+
+sent 75,674,536 bytes  received 35 bytes  151,349,142.00 bytes/sec
+total size is 75,655,896  speedup is 1.00
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ find . -maxdepth 1 -size +10M -not -name '*.coal5' -exec rsync -av --checksum {} 5/ \;
+sending incremental file list
+
+sent 76 bytes  received 12 bytes  176.00 bytes/sec
+total size is 68,798,166  speedup is 781,797.34
+sending incremental file list
+
+sent 107 bytes  received 12 bytes  79.33 bytes/sec
+total size is 59,088,773  speedup is 496,544.31
+sending incremental file list
+
+sent 126 bytes  received 12 bytes  276.00 bytes/sec
+total size is 18,389,594  speedup is 133,257.93
+sending incremental file list
+
+sent 100 bytes  received 12 bytes  224.00 bytes/sec
+total size is 12,514,742  speedup is 111,738.77
+sending incremental file list
+
+sent 136 bytes  received 12 bytes  59.20 bytes/sec
+total size is 658,849,100  speedup is 4,451,683.11
+sending incremental file list
+
+sent 88 bytes  received 12 bytes  200.00 bytes/sec
+total size is 18,879,701  speedup is 188,797.01
+sending incremental file list
+
+sent 90 bytes  received 12 bytes  68.00 bytes/sec
+total size is 108,435,895  speedup is 1,063,097.01
+sending incremental file list
+
+sent 134 bytes  received 12 bytes  97.33 bytes/sec
+total size is 391,281,977  speedup is 2,680,013.54
+sending incremental file list
+
+sent 93 bytes  received 12 bytes  70.00 bytes/sec
+total size is 115,236,701  speedup is 1,097,492.39
+sending incremental file list
+
+sent 90 bytes  received 12 bytes  204.00 bytes/sec
+total size is 75,655,896  speedup is 741,724.47
+sending incremental file list
+
+sent 93 bytes  received 12 bytes  210.00 bytes/sec
+total size is 116,122,127  speedup is 1,105,925.02
+sending incremental file list
+
+sent 141 bytes  received 12 bytes  102.00 bytes/sec
+total size is 213,691,922  speedup is 1,396,679.23
+sending incremental file list
+
+sent 133 bytes  received 12 bytes  290.00 bytes/sec
+total size is 21,979,136  speedup is 151,580.25
+sending incremental file list
+
+sent 133 bytes  received 12 bytes  96.67 bytes/sec
+total size is 100,249,600  speedup is 691,376.55
+sending incremental file list
+
+sent 140 bytes  received 12 bytes  304.00 bytes/sec
+total size is 177,317,528  speedup is 1,166,562.68
+sending incremental file list
+
+sent 134 bytes  received 12 bytes  97.33 bytes/sec
+total size is 75,655,896  speedup is 518,191.07
+sending incremental file list
+
+sent 134 bytes  received 12 bytes  292.00 bytes/sec
+total size is 47,205,198  speedup is 323,323.27
+sending incremental file list
+
+sent 133 bytes  received 12 bytes  290.00 bytes/sec
+total size is 75,655,896  speedup is 521,764.80
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ diff -uraN 4 5
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ sudo rsync -av --checksum --progress 3 /Ember\ Library/Ember\ satellite\ projects/personal-private/TransferInfoCopied2017dec22/
+Password: 
+sending incremental file list
+created directory /Ember Library/Ember satellite projects/personal-private/TransferInfoCopied2017dec22
+3/
+3/.tempFile-20171220002841928931490_2d303530300a13594ef7e35f4997a534c3846aaa5034
+     21,979,136 100%  232.55MB/s    0:00:00 (xfr#1, to-chk=17/19)
+3/.tempFile-20171220002841957297161_2d303530300a8d66f573c6594490b7ee2a8d56009748
+    100,249,600 100%  145.96MB/s    0:00:00 (xfr#2, to-chk=16/19)
+3/.tempFile-20171221192621147726210_2d303530300ab60c17bcebcf46cfa3cce0fb62366b2c
+     75,655,896 100%   43.46MB/s    0:00:01 (xfr#3, to-chk=15/19)
+3/.tempFile-20171221192644852397690_2d303530300afac63ed56d104ffc88dbde93fb87e3b0
+     47,205,198 100%   52.96MB/s    0:00:00 (xfr#4, to-chk=14/19)
+3/.tempFile-20171221201438395244133_2d303530300aea046580a8544e18a572bf6b41a71861
+     75,655,896 100%   44.43MB/s    0:00:01 (xfr#5, to-chk=13/19)
+3/.unpack-test-20171219230114275622541_2d303530300a80e9382ab15b43748b107479e618517d.csum
+    213,691,922 100%   61.96MB/s    0:00:03 (xfr#6, to-chk=12/19)
+3/.unpack-test-20171220010516289462563_2d303530300a8c57a70066a9497bad321819caba41e2.csum
+    177,317,528 100%   47.22MB/s    0:00:03 (xfr#7, to-chk=11/19)
+3/2017dec21-Distfiles.Finished.txt.xz
+      1,080,396 100%    3.06MB/s    0:00:00 (xfr#8, to-chk=10/19)
+3/C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.xz
+      3,188,980 100%    6.94MB/s    0:00:00 (xfr#9, to-chk=9/19)
+3/DreamingInPop-final-report-2017dec21.txt.xz
+      4,905,008 100%   10.13MB/s    0:00:00 (xfr#10, to-chk=8/19)
+3/Indices2017dec21.csum.xz
+      6,644,488 100%   12.80MB/s    0:00:00 (xfr#11, to-chk=7/19)
+3/Mac.csum.xz
+     19,378,704 100%   31.65MB/s    0:00:00 (xfr#12, to-chk=6/19)
+3/Windows-2017dec21.csum.xz
+     19,064,216 100%   24.91MB/s    0:00:00 (xfr#13, to-chk=5/19)
+3/home-2017dec21.hashdeep.xz
+     43,076,836 100%   38.65MB/s    0:00:01 (xfr#14, to-chk=4/19)
+3/home-2017dec21n2.hashdeep.xz
+     46,037,764 100%   77.85MB/s    0:00:00 (xfr#15, to-chk=3/19)
+3/home-2017dec21n4.hashdeep.xz
+     46,487,008 100%   47.26MB/s    0:00:00 (xfr#16, to-chk=2/19)
+3/sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > .xz
+     20,057,048 100%   16.91MB/s    0:00:01 (xfr#17, to-chk=1/19)
+3/sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > .xz
+         32,768   0%  250.00kB/s    0:01:15  ^C
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(636) [sender=3.1.2]
+rsync: [sender] write error: Broken pipe (32)
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /nvme0n1p5 at 20171222011728871518671_2d303530300a:
+An error was reported on  line 8 in /nvme0n1p5 at 20171222011728732131228_2d303530300a.
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ ^C
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ ^C
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ cd 3
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ lss
+bash: lss: command not found
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /nvme0n1p5/3 at 20171222011744174235103_2d303530300a:
+An error was reported on  line 12 in /nvme0n1p5/3 at 20171222011744154087471_2d303530300a.
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ ls
+ 2017dec21-Distfiles.Finished.txt.xz
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.xz
+ DreamingInPop-final-report-2017dec21.txt.xz
+ home-2017dec21.hashdeep.xz
+ home-2017dec21n2.hashdeep.xz
+ home-2017dec21n4.hashdeep.xz
+ Indices2017dec21.csum.xz
+ Mac.csum.xz
+'sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > .xz'
+'sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > .xz'
+ Windows-2017dec21.csum.xz
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ find . -name ".*"
+.
+./.tempFile-20171221201438395244133_2d303530300aea046580a8544e18a572bf6b41a71861
+./.tempFile-20171221192621147726210_2d303530300ab60c17bcebcf46cfa3cce0fb62366b2c
+./.unpack-test-20171219230114275622541_2d303530300a80e9382ab15b43748b107479e618517d.csum
+./.tempFile-20171220002841928931490_2d303530300a13594ef7e35f4997a534c3846aaa5034
+./.tempFile-20171221192644852397690_2d303530300afac63ed56d104ffc88dbde93fb87e3b0
+./.unpack-test-20171220010516289462563_2d303530300a8c57a70066a9497bad321819caba41e2.csum
+./.tempFile-20171220002841957297161_2d303530300a8d66f573c6594490b7ee2a8d56009748
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ find . -name ".*" -delete
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ cd ..
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ sudo rsync -av --checksum --progress 3 /Ember\ Library/Ember\ satellite\ projects/personal-private/TransferInfoCopied2017dec22/^C
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ rm -r /Ember\ Library/Ember\ satellite\ projects/personal-private/TransferInfoCopied2017dec22/
+rm: descend into write-protected directory '/Ember Library/Ember satellite projects/personal-private/TransferInfoCopied2017dec22/'? y^C
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /nvme0n1p5 at 20171222011804902069480_2d303530300a:
+An error was reported on  line 18 in /nvme0n1p5 at 20171222011804883913827_2d303530300a.
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ sudo !!
+sudo rm -r /Ember\ Library/Ember\ satellite\ projects/personal-private/TransferInfoCopied2017dec22/
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ sudo rsync -av --checksum --progress 3 /Ember\ Library/Ember\ satellite\ projects/personal-private/TransferInfoCopied2017dec22/
+sending incremental file list
+created directory /Ember Library/Ember satellite projects/personal-private/TransferInfoCopied2017dec22
+3/
+3/2017dec21-Distfiles.Finished.txt.xz
+      1,080,396 100%  499.55MB/s    0:00:00 (xfr#1, to-chk=10/12)
+3/C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.xz
+      3,188,980 100%  276.48MB/s    0:00:00 (xfr#2, to-chk=9/12)
+3/DreamingInPop-final-report-2017dec21.txt.xz
+      4,905,008 100%  203.38MB/s    0:00:00 (xfr#3, to-chk=8/12)
+3/Indices2017dec21.csum.xz
+      6,644,488 100%  154.55MB/s    0:00:00 (xfr#4, to-chk=7/12)
+3/Mac.csum.xz
+     19,378,704 100%  177.70MB/s    0:00:00 (xfr#5, to-chk=6/12)
+3/Windows-2017dec21.csum.xz
+     19,064,216 100%  120.40MB/s    0:00:00 (xfr#6, to-chk=5/12)
+3/home-2017dec21.hashdeep.xz
+     43,076,836 100%   82.66MB/s    0:00:00 (xfr#7, to-chk=4/12)
+3/home-2017dec21n2.hashdeep.xz
+     46,037,764 100%   57.92MB/s    0:00:00 (xfr#8, to-chk=3/12)
+3/home-2017dec21n4.hashdeep.xz
+     46,487,008 100%   40.19MB/s    0:00:01 (xfr#9, to-chk=2/12)
+3/sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > .xz
+     20,057,048 100%   73.01MB/s    0:00:00 (xfr#10, to-chk=1/12)
+3/sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > .xz
+     18,816,328 100%   51.42MB/s    0:00:00 (xfr#11, to-chk=0/12)
+
+sent 228,793,870 bytes  received 336 bytes  91,517,682.40 bytes/sec
+total size is 228,736,776  speedup is 1.00
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ sudo rsync -av --checksum --progress 3 /Ember\ Library/Ember\ satellite\ projects/personal-private/TransferInfoCopied2017dec22/
+sending incremental file list
+
+sent 830 bytes  received 17 bytes  564.67 bytes/sec
+total size is 228,736,776  speedup is 270,055.23
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ cd 3
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ ls
+ 2017dec21-Distfiles.Finished.txt.xz
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.xz
+ DreamingInPop-final-report-2017dec21.txt.xz
+ home-2017dec21.hashdeep.xz
+ home-2017dec21n2.hashdeep.xz
+ home-2017dec21n4.hashdeep.xz
+ Indices2017dec21.csum.xz
+ Mac.csum.xz
+'sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > .xz'
+'sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > .xz'
+ Windows-2017dec21.csum.xz
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ find . -largest
+find: unknown predicate `-largest'
+/bin/bash
+failed with the error on /usr/local/bin/error-notify line 28 in /nvme0n1p5/3 at 20171222011907379349643_2d303530300a:
+An error was reported on  line 24 in /nvme0n1p5/3 at 20171222011907361879614_2d303530300a.
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ find . -size +50M
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ find . -size +40M
+./home-2017dec21n2.hashdeep.xz
+./home-2017dec21n4.hashdeep.xz
+./home-2017dec21.hashdeep.xz
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ find . -size +10M
+./home-2017dec21n2.hashdeep.xz
+./home-2017dec21n4.hashdeep.xz
+./home-2017dec21.hashdeep.xz
+./sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > .xz
+./sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > .xz
+./Windows-2017dec21.csum.xz
+./Mac.csum.xz
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ find . -size -10M
+.
+./C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.xz
+./2017dec21-Distfiles.Finished.txt.xz
+./DreamingInPop-final-report-2017dec21.txt.xz
+./Indices2017dec21.csum.xz
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ find . -size +10M -delete
+kyan@elegiac /nvme0n1p5/3 nohup compiz --replace openbox $ cd ../4
+kyan@elegiac /nvme0n1p5/4 nohup compiz --replace openbox $ find . -size +10M
+./Windows-2017dec21.csum
+./home-2017dec21n2.hashdeep
+./home-2017dec21.hashdeep
+./.tempFile-20171221201438395244133_2d303530300aea046580a8544e18a572bf6b41a71861
+./DreamingInPop-final-report-2017dec21.txt
+./.tempFile-20171221192621147726210_2d303530300ab60c17bcebcf46cfa3cce0fb62366b2c
+./home-2017dec21n4.hashdeep
+./Indices2017dec21.csum
+./sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > 
+./.unpack-test-20171219230114275622541_2d303530300a80e9382ab15b43748b107479e618517d.csum
+./sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > 
+./2017dec21-Distfiles.Finished.txt
+./.tempFile-20171220002841928931490_2d303530300a13594ef7e35f4997a534c3846aaa5034
+./Mac.csum
+./.tempFile-20171221192644852397690_2d303530300afac63ed56d104ffc88dbde93fb87e3b0
+./C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914
+./.unpack-test-20171220010516289462563_2d303530300a8c57a70066a9497bad321819caba41e2.csum
+./.tempFile-20171220002841957297161_2d303530300a8d66f573c6594490b7ee2a8d56009748
+kyan@elegiac /nvme0n1p5/4 nohup compiz --replace openbox $ find . -size +20M
+./Windows-2017dec21.csum
+./home-2017dec21n2.hashdeep
+./home-2017dec21.hashdeep
+./.tempFile-20171221201438395244133_2d303530300aea046580a8544e18a572bf6b41a71861
+./DreamingInPop-final-report-2017dec21.txt
+./.tempFile-20171221192621147726210_2d303530300ab60c17bcebcf46cfa3cce0fb62366b2c
+./home-2017dec21n4.hashdeep
+./sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > 
+./.unpack-test-20171219230114275622541_2d303530300a80e9382ab15b43748b107479e618517d.csum
+./sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > 
+./.tempFile-20171220002841928931490_2d303530300a13594ef7e35f4997a534c3846aaa5034
+./Mac.csum
+./.tempFile-20171221192644852397690_2d303530300afac63ed56d104ffc88dbde93fb87e3b0
+./.unpack-test-20171220010516289462563_2d303530300a8c57a70066a9497bad321819caba41e2.csum
+./.tempFile-20171220002841957297161_2d303530300a8d66f573c6594490b7ee2a8d56009748
+kyan@elegiac /nvme0n1p5/4 nohup compiz --replace openbox $ ls
+ 2017dec21-Distfiles.Finished.txt
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914
+ DreamingInPop-final-report-2017dec21.txt
+ home-2017dec21.hashdeep
+ home-2017dec21n2.hashdeep
+ home-2017dec21n4.hashdeep
+ Indices2017dec21.csum
+ Mac.csum
+'sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > '
+'sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > '
+ Windows-2017dec21.csum
+kyan@elegiac /nvme0n1p5/4 nohup compiz --replace openbox $ find . -size +20M -delete
+kyan@elegiac /nvme0n1p5/4 nohup compiz --replace openbox $ ls
+2017dec21-Distfiles.Finished.txt                                         Indices2017dec21.csum
+C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914
+kyan@elegiac /nvme0n1p5/4 nohup compiz --replace openbox $ cd ..
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ cd 5
+kyan@elegiac /nvme0n1p5/5 nohup compiz --replace openbox $ ls
+ 2017dec21-Distfiles.Finished.txt
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914
+ DreamingInPop-final-report-2017dec21.txt
+ home-2017dec21.hashdeep
+ home-2017dec21n2.hashdeep
+ home-2017dec21n4.hashdeep
+ Indices2017dec21.csum
+ Mac.csum
+'sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > '
+'sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > '
+ Windows-2017dec21.csum
+kyan@elegiac /nvme0n1p5/5 nohup compiz --replace openbox $ find . -size +20M -delete
+kyan@elegiac /nvme0n1p5/5 nohup compiz --replace openbox $ cd ..
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ ls
+ 2
+ 2017dec21-Distfiles.Finished.txt
+ 2017dec21-ditsfiles.txt
+ 3
+ 4
+ 5
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.checksums
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.coal5
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.csum
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.deep.idx
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.forks
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.forks-csum
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.ip.warc.gz
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.local.idx
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.ostype
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.time-env.warc.gz
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.time-start.warc.gz
+ C3-20171220002827617257931_2d303530300afb580b517c5b4f189e7378a9c5eba924.tmp
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.checksums
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.coal5
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.csum
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.deep.idx
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.forks
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.forks-csum
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.ip.warc.gz
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.local.idx
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.ostype
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.time-env.warc.gz
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.time-start.warc.gz
+ C3-20171220140506018245369_2d303530300a770f47f04d454a59b1d29a54c8561914.tmp
+ C3-20171220151120443345614_2d303530300a20e24233fe8346c491f830c550d682b5
+ C3-20171220151120443345614_2d303530300a20e24233fe8346c491f830c550d682b5.forkdir
+ C3-20171220151120443345614_2d303530300a20e24233fe8346c491f830c550d682b5.ip.warc.gz
+ C3-20171220151120443345614_2d303530300a20e24233fe8346c491f830c550d682b5.ostype
+ C3-20171220151120443345614_2d303530300a20e24233fe8346c491f830c550d682b5.time-env.warc.gz
+ C3-20171220151120443345614_2d303530300a20e24233fe8346c491f830c550d682b5.time-start.warc.gz
+ C3-20171220151120443345614_2d303530300a20e24233fe8346c491f830c550d682b5.tmp
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a.csum
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a.forks
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a.forks-csum
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a.ip.warc.gz
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a.ostype
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a.time-env.warc.gz
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a.time-start.warc.gz
+ C3-20171220151209717613811_2d303530300a7ee7985c49d34835ae5765a694bd4d9a.tmp
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.checksums
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.coal5
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.csum
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.deep.idx
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.forks
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.forks-csum
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.ip.warc.gz
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.local.idx
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.ostype
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.time-env.warc.gz
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.time-start.warc.gz
+ C3-20171221145149785598708_2d303530300add692469ca4e49b0829581e471873045.tmp
+ CrystalCsumReport2017dec21.txt
+ CrystalIndexAll_2017dec22.txt
+ CrystalIndexArgs_2017dec22.txt
+ CrystalIndexFiltered_2017dec22.txt
+ CrystalIndexPointers_2017dec22.txt
+ CrystalRsyncReport2017dec21a22.txt
+ Distfiles-2017dec21.lst
+ distfiles-2017dec21n2.txt
+ Distfiles-filtered-2017dec21.lst
+ Distfiles-remaining-2017dec21.lst
+ Distfiles-sunk-2017dec21.lst
+ distfiles.sync-report-2017dec21.txt
+ DreamingInPop-final-report-2017dec21.txt
+ Fuck-2017dec21a22.txt
+ GNULinuxCsumReport-2017dec21.txt
+ GNULinuxFinalReport-2017dec21.txt
+ home-2017dec21.csum
+ home-2017dec21.hashdeep
+ home-2017dec21n2.hashdeep
+ home-2017dec21n3.hashdeep
+ home-2017dec21n4.hashdeep
+ Homehashedepp-saved2017dec21a22.txt
+ Indices2017dec21.csum
+ LocalStoreFilesList-2017dec21a22.txt
+ Mac-2017dec21.csum
+ Mac.csum
+ MacReportFullCsum-2017dec21.txt
+ MacWinFinalReport-2017dec21.txt
+'Packages final log 2017dec21.txt'
+ pointers
+'sudo find ⌿home⌿kyan⌿windowsmp-2017dec20 -exec stat {} \;. > '
+'sudo find ?run?media?kyan?Macintosh\ HD -exec stat {} \;. > '
+'sudo find ⌿run⌿media⌿kyan⌿Macintosh\ HD -exec stat {} \;. > '
+ Windows-2017dec21.csum
+ Windows2017dec21n2.csum
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ ndu
+kyan@elegiac /nvme0n1p5 nohup compiz --replace openbox $ 
