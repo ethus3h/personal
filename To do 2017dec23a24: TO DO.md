@@ -11,3 +11,5 @@ Possible to ML:
 "The worldʼs writing systems"-	Peter T. Daniels, William Bright 8BC3E482B8D29AE07DBB1961449C49B1
 
 "	Introduction to Concurrency in Programming Languages"—	Matthew J. Sottile, Timothy G. Mattson, Craig E Rasmussen 59AD917DF7C28AD7964E697549D8D926
+
+William Pearson - "Interstellar Spheres" https://www.youtube.com/watch?v=6IXcxQj0KZU
