@@ -19,3 +19,5 @@ https://www.youtube.com/watch?v=86g4_w4j3jU
 https://www.youtube.com/watch?v=5PYbtNP-g4Q "Balans 2k18 (French Version) (Deep Matter & Damon Hess English Remix)"
 
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
+
+https://www.mediawiki.org/wiki/Directionality_support
