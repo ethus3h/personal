@@ -29,3 +29,6 @@ https://github.com/kylemcdonald/OpenFit
 https://github.com/fashionfreedom/seamly2d
 
 https://web.archive.org/web/20100425130754/http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=42
+
+https://www.theatlantic.com/technology/archive/2015/10/how-wikipedia-is-hostile-to-women/411619/
+
