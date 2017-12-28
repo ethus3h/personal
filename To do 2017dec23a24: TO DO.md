@@ -28,3 +28,4 @@ https://github.com/kylemcdonald/OpenFit
 
 https://github.com/fashionfreedom/seamly2d
 
+https://web.archive.org/web/20100425130754/http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=42
