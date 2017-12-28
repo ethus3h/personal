@@ -26,3 +26,5 @@ http://msi.higg.org/page/msi-home
 
 https://github.com/kylemcdonald/OpenFit
 
+https://github.com/fashionfreedom/seamly2d
+
