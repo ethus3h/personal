@@ -9,6 +9,7 @@ Possible to ML:
 "Living a Feminist Life"-Sara Ahmed 92A4D6BF34FB765662141ED5EB317056
 
 "The worldʼs writing systems"-	Peter T. Daniels, William Bright 8BC3E482B8D29AE07DBB1961449C49B1
+"	The Ice Chronicles: The Quest to Understand Global Climate Change" — 	Paul Andrew Mayewski, Frank White, Lynn Margulis 7D93A1D5D0EA41539CA6C634483BA2C9
 
 "	Introduction to Concurrency in Programming Languages"—	Matthew J. Sottile, Timothy G. Mattson, Craig E Rasmussen 59AD917DF7C28AD7964E697549D8D926
 
@@ -34,6 +35,7 @@ https://www.theatlantic.com/technology/archive/2015/10/how-wikipedia-is-hostile-
 
 https://commons.wikimedia.org/wiki/File:Rainbow-Jello-Cut-2004-Jul-30.jpg
 
+http://post.at.moma.org/content_items/708-by-the-way-what-s-fluxus-jon-hendricks-on-the-formation-of-the-gilbert-and-lila-silverman-fluxus-collection (Complicated: part of the content is hidden under "Show More" link)
 
 the ice chronicles
 the fluxus codex
