@@ -37,11 +37,5 @@ https://commons.wikimedia.org/wiki/File:Rainbow-Jello-Cut-2004-Jul-30.jpg
 
 http://post.at.moma.org/content_items/708-by-the-way-what-s-fluxus-jon-hendricks-on-the-formation-of-the-gilbert-and-lila-silverman-fluxus-collection (Complicated: part of the content is hidden under "Show More" link)
 
-the ice chronicles
 the fluxus codex
 low-tech (magazine)
-
-
-longevity, rugged, able to work in adverse conditions, safe to build/use/disassemble, should not leave unnatural nonbiodegradeable junk everywhera like the microparticles of plastic that get dropped by syntheitc textiles.
-
-Info in reference (library pt 1): Eeach seaction should list all other sections that mut be understood as prerequisites for understanding it; the dependency tree of every section should culminate in a single section that gives a basic understanding of the dominant language of the reference (probably English), so that by translating that one section into another languag, every other concept in the reference can be understood by readingits section and its section's prerequisites.
