@@ -15,7 +15,7 @@ Possible to ML:
 
 "Fluxus Codex" — Jon Hendricks
 
-"Low Tech Magazine" http://www.lowtechmagazine.com/
+"Low-Tech Magazine" http://www.lowtechmagazine.com/
 
 William Pearson - "Interstellar Spheres" https://www.youtube.com/watch?v=6IXcxQj0KZU
 
