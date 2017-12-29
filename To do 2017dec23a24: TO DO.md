@@ -34,3 +34,12 @@ https://www.theatlantic.com/technology/archive/2015/10/how-wikipedia-is-hostile-
 
 https://commons.wikimedia.org/wiki/File:Rainbow-Jello-Cut-2004-Jul-30.jpg
 
+
+the ice chronicles
+the fluxus codex
+low-tech (magazine)
+
+
+longevity, rugged, able to work in adverse conditions, safe to build/use/disassemble, should not leave unnatural nonbiodegradeable junk everywhera like the microparticles of plastic that get dropped by syntheitc textiles.
+
+Info in reference (library pt 1): Eeach seaction should list all other sections that mut be understood as prerequisites for understanding it; the dependency tree of every section should culminate in a single section that gives a basic understanding of the dominant language of the reference (probably English), so that by translating that one section into another languag, every other concept in the reference can be understood by readingits section and its section's prerequisites.
