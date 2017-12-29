@@ -13,6 +13,10 @@ Possible to ML:
 
 "	Introduction to Concurrency in Programming Languages"—	Matthew J. Sottile, Timothy G. Mattson, Craig E Rasmussen 59AD917DF7C28AD7964E697549D8D926
 
+"Fluxus Codex" — Jon Hendricks
+
+"Low Tech Magazine" http://www.lowtechmagazine.com/
+
 William Pearson - "Interstellar Spheres" https://www.youtube.com/watch?v=6IXcxQj0KZU
 
 https://www.youtube.com/watch?v=86g4_w4j3jU
@@ -36,6 +40,3 @@ https://www.theatlantic.com/technology/archive/2015/10/how-wikipedia-is-hostile-
 https://commons.wikimedia.org/wiki/File:Rainbow-Jello-Cut-2004-Jul-30.jpg
 
 http://post.at.moma.org/content_items/708-by-the-way-what-s-fluxus-jon-hendricks-on-the-formation-of-the-gilbert-and-lila-silverman-fluxus-collection (Complicated: part of the content is hidden under "Show More" link)
-
-the fluxus codex
-low-tech (magazine)
