@@ -19,6 +19,8 @@ Possible to ML:
 
 "Low-Tech Magazine" http://www.lowtechmagazine.com/
 
+"Like a Stone" — Audioslave https://www.youtube.com/watch?v=C6uqTWHzHvo
+
 William Pearson - "Interstellar Spheres" https://www.youtube.com/watch?v=6IXcxQj0KZU
 
 https://www.youtube.com/watch?v=86g4_w4j3jU
