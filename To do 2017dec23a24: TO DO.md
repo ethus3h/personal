@@ -15,7 +15,7 @@ Possible to ML:
 
 "	Introduction to Concurrency in Programming Languages"—	Matthew J. Sottile, Timothy G. Mattson, Craig E Rasmussen 59AD917DF7C28AD7964E697549D8D926
 
-"	Biblical Interpretation in the Early Church"—	Karlfried Froehlich
+"	Biblical Interpretation in the Early Church"—	Karlfried Froehlich B407A6CDFAB89A6E33D2209C098891B1
 
 "Fluxus Codex" — Jon Hendricks
 
