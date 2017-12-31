@@ -51,7 +51,7 @@ http://post.at.moma.org/content_items/708-by-the-way-what-s-fluxus-jon-hendricks
 
 https://en.wikipedia.org/wiki/Wikipedia:Beware_of_the_tigers
 
-https://commons.wikimedia.org/w/index.php?title=File:The_India_Chronicles_(300dpi).pdf&page=20
+https://commons.wikimedia.org/wiki/File:The_India_Chronicles_(300dpi).pdf
 
 
 To archive: https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
