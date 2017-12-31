@@ -48,3 +48,6 @@ https://www.theatlantic.com/technology/archive/2015/10/how-wikipedia-is-hostile-
 https://commons.wikimedia.org/wiki/File:Rainbow-Jello-Cut-2004-Jul-30.jpg
 
 http://post.at.moma.org/content_items/708-by-the-way-what-s-fluxus-jon-hendricks-on-the-formation-of-the-gilbert-and-lila-silverman-fluxus-collection (Complicated: part of the content is hidden under "Show More" link)
+
+
+To archive: https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
