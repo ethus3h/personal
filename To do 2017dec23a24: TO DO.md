@@ -1,6 +1,6 @@
 TO DO
 
-
+Add MusE Sequencer to missing apps issue
 Possible to ML:
 
 "Moralising Poverty : The ‘Undeserving’ Poor in the Public Gaze"–Serena Romano 3ABA5B3F516A5F9F3C7097C44DC73967
