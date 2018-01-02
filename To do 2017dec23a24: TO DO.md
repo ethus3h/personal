@@ -57,7 +57,7 @@ https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralize
 
 https://github.com/ssbc/secure-scuttlebutt
 
-
+https://github.com/cjb/GitTorrent
 
 
 To archive: https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
