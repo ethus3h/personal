@@ -53,5 +53,7 @@ https://en.wikipedia.org/wiki/Wikipedia:Beware_of_the_tigers
 
 https://commons.wikimedia.org/wiki/File:The_India_Chronicles_(300dpi).pdf
 
+https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/
+
 
 To archive: https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
