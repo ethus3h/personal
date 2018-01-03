@@ -1,6 +1,6 @@
 TO DO
 
-
+Add MusE Sequencer to missing apps issue
 Possible to ML:
 
 "Moralising Poverty : The ‘Undeserving’ Poor in the Public Gaze"–Serena Romano 3ABA5B3F516A5F9F3C7097C44DC73967
@@ -31,6 +31,14 @@ https://www.youtube.com/watch?v=86g4_w4j3jU
 
 https://www.youtube.com/watch?v=5PYbtNP-g4Q "Balans 2k18 (French Version) (Deep Matter & Damon Hess English Remix)"
 
+https://www.youtube.com/watch?v=TKsVvVxQoi4 Purity Ring: "bodyache"
+
+https://www.youtube.com/watch?v=CL1cKfCQWyA Zedd / Foxes: "Clarity"
+
+https://www.youtube.com/watch?v=vjI1QTjfyYE WRLD: "Oceans" feat. Laura Brehm
+
+https://www.youtube.com/watch?v=heeqMP_wwFw Vanic: "Too Soon" feat. Maty Noyes
+
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
 https://www.mediawiki.org/wiki/Directionality_support
@@ -52,6 +60,12 @@ http://post.at.moma.org/content_items/708-by-the-way-what-s-fluxus-jon-hendricks
 https://en.wikipedia.org/wiki/Wikipedia:Beware_of_the_tigers
 
 https://commons.wikimedia.org/wiki/File:The_India_Chronicles_(300dpi).pdf
+
+https://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/
+
+https://github.com/ssbc/secure-scuttlebutt
+
+https://github.com/cjb/GitTorrent
 
 
 To archive: https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
