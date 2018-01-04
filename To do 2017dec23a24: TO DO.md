@@ -61,6 +61,8 @@ https://www.youtube.com/watch?v=LbkXQ_DeyQI Kevin Gates: "Satellites"
 
 https://www.youtube.com/watch?v=YH8pinr_xsU Sigrid: "Strangers"
 
+https://www.youtube.com/watch?v=SiCB2YbKftc Jon Bellion: "All Time Low (Shew Remix)"
+
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
 https://www.mediawiki.org/wiki/Directionality_support
