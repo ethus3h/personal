@@ -53,7 +53,13 @@ https://www.youtube.com/watch?v=d1FbCcsmzQk Pale Waves: "Television Romance"
 
 https://www.youtube.com/watch?v=8joX4UUty5U Sigma / Birdy: "Find Me"
 
+https://www.youtube.com/watch?v=0XZJ5mD6nSU in love with a ghost: "we've never met but, can we have a coffee or something?"
 
+https://www.youtube.com/watch?v=rMV_J2898LI Era Istrefi: "Bonbon"
+
+https://www.youtube.com/watch?v=LbkXQ_DeyQI Kevin Gates: "Satellites"
+
+https://www.youtube.com/watch?v=YH8pinr_xsU Sigrid: "Strangers"
 
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
