@@ -39,6 +39,22 @@ https://www.youtube.com/watch?v=vjI1QTjfyYE WRLD: "Oceans" feat. Laura Brehm
 
 https://www.youtube.com/watch?v=heeqMP_wwFw Vanic: "Too Soon" feat. Maty Noyes
 
+https://www.youtube.com/watch?v=NhLXSsUsf5o Iggy Azalea / Jennifer Lopez: "Booty"
+
+https://www.youtube.com/watch?v=zxoz06049YM Willow: "21st Century Girl"
+
+https://www.youtube.com/watch?v=3WGwKkiv35E Viktoria Modesta: "Prototype"
+
+https://www.youtube.com/watch?v=SwOBl7VoQYQ Lights: "Skydiving"
+
+https://www.youtube.com/watch?v=IMl5B7f2ivk Nicki Minaj / Willow: "Fireball"
+
+https://www.youtube.com/watch?v=d1FbCcsmzQk Pale Waves: "Television Romance"
+
+https://www.youtube.com/watch?v=8joX4UUty5U Sigma / Birdy: "Find Me"
+
+
+
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
 https://www.mediawiki.org/wiki/Directionality_support
