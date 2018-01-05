@@ -66,7 +66,7 @@ https://www.youtube.com/watch?v=YH8pinr_xsU Sigrid: "Strangers"
 
 https://www.youtube.com/watch?v=QkTyxpcfTok Ginette Reno: "Je ne suis qu'une chanson"
 
-https://www.youtube.com/watch?v=SiCB2YbKftc Jon Bellion: "All Time Low (Shew Remix)"
+https://www.youtube.com/watch?v=SiCB2YbKftc Jon Bellion: "All Time Low" (Shew Remix)
 
 https://www.youtube.com/watch?v=KLtn2qA7WxE Light Years Away: "Melrose at Midnight"
 
@@ -111,6 +111,8 @@ https://www.youtube.com/watch?v=MnaA85nYEeE Camila Cabello: "I Have Questions"
 https://www.youtube.com/watch?v=n984dxtzStw Florrie: "Real Love"
 
 https://www.youtube.com/watch?v=JnRTpysSbwE Maty Noyes: "Say It To My Face"
+
+https://www.youtube.com/watch?v=7qzjHwMmIXE Enkidu: "Falling" (Embody Remix)
 
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
