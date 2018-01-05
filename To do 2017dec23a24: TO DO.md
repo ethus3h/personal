@@ -4,23 +4,23 @@ Add MusE Sequencer to missing apps issue
 
 Possible to ML:
 
-"Moralising Poverty : The ‘Undeserving’ Poor in the Public Gaze"–Serena Romano 3ABA5B3F516A5F9F3C7097C44DC73967
+Serena Romano: "Moralising Poverty: The ‘Undeserving’ Poor in the Public Gaze" 3ABA5B3F516A5F9F3C7097C44DC73967
 
-"Design for Safety"-Louis J. Gullo, Jack Dixon 674BDEE144FDC38197942FAEE75ED6C5
+Louis J. Gullo, Jack Dixon: "Design for Safety" 674BDEE144FDC38197942FAEE75ED6C5
 
-"Living a Feminist Life"-Sara Ahmed 92A4D6BF34FB765662141ED5EB317056
+Sara Ahmed: "Living a Feminist Life" 92A4D6BF34FB765662141ED5EB317056
 
-"The worldʼs writing systems"-	Peter T. Daniels, William Bright 8BC3E482B8D29AE07DBB1961449C49B1
+Peter T. Daniels, William Bright: "The world's writing systems" 8BC3E482B8D29AE07DBB1961449C49B1
 
-"	The Ice Chronicles: The Quest to Understand Global Climate Change" — 	Paul Andrew Mayewski, Frank White, Lynn Margulis 7D93A1D5D0EA41539CA6C634483BA2C9
+Paul Andrew Mayewski, Frank White, Lynn Margulis: "The Ice Chronicles: The Quest to Understand Global Climate Change" 7D93A1D5D0EA41539CA6C634483BA2C9
 
-"	Introduction to Concurrency in Programming Languages"—	Matthew J. Sottile, Timothy G. Mattson, Craig E Rasmussen 59AD917DF7C28AD7964E697549D8D926
+Matthew J. Sottile, Timothy G. Mattson, Craig E Rasmussen: "Introduction to Concurrency in Programming Languages" 59AD917DF7C28AD7964E697549D8D926
 
-"	Biblical Interpretation in the Early Church"—	Karlfried Froehlich B407A6CDFAB89A6E33D2209C098891B1
+Karlfried Froehlich: "Biblical Interpretation in the Early Church" B407A6CDFAB89A6E33D2209C098891B1
 
-Gone to Earth by Mary Gladys Meredith Webb http://www.gutenberg.org/ebooks/7055
+Mary Gladys Meredith Webb: "Gone to Earth" http://www.gutenberg.org/ebooks/7055
 
-"Fluxus Codex" — Jon Hendricks
+Jon Hendricks: "Fluxus Codex"
 
 "Low-Tech Magazine" http://www.lowtechmagazine.com/
 
