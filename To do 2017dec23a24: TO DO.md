@@ -1,6 +1,7 @@
 TO DO
 
 Add MusE Sequencer to missing apps issue
+
 Possible to ML:
 
 "Moralising Poverty : The ‘Undeserving’ Poor in the Public Gaze"–Serena Romano 3ABA5B3F516A5F9F3C7097C44DC73967
@@ -68,6 +69,18 @@ https://www.youtube.com/watch?v=SiCB2YbKftc Jon Bellion: "All Time Low (Shew Rem
 https://www.youtube.com/watch?v=KLtn2qA7WxE Light Years Away: "Melrose at Midnight"
 
 https://www.youtube.com/watch?v=mDulNkJC1CE Chime & Adam Tell: "Whole"
+
+https://www.youtube.com/watch?v=MqCL5w0EmZ0 Transviolet: "Pretty Head"
+
+https://www.youtube.com/watch?v=CU89vXiF5CA Transviolet: "Kaleidoscopes" feat. Reo Cragun
+
+https://www.youtube.com/watch?v=DCak3CUiyFY Jaira Burns: "Ugly"
+
+https://www.youtube.com/watch?v=0gqvYbTY0gI Marshmello: "TaKe IT BaCk"
+
+https://www.youtube.com/watch?v=ELXfTtJAIWE Marshmello: "Want U 2" (Slushii VIP)
+
+https://www.youtube.com/watch?v=bnsUkE8i0tU Infected Mushroom: "Spitfire"
 
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
