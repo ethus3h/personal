@@ -82,6 +82,16 @@ https://www.youtube.com/watch?v=ELXfTtJAIWE Marshmello: "Want U 2" (Slushii VIP)
 
 https://www.youtube.com/watch?v=bnsUkE8i0tU Infected Mushroom: "Spitfire"
 
+https://www.youtube.com/watch?v=Hfsm9DplcJc Zedd: "Get Low" feat. Liam Payne
+
+https://www.youtube.com/watch?v=OWE7Pe6lEis Calvin Harris: "Pray to God" feat. HAIM
+
+https://www.youtube.com/watch?v=UGT6v4No9U8 Calvin Harris: "Under Control" feat. Alesso & Hurts
+
+https://www.youtube.com/watch?v=0lpkh_tGzWM Emblem3: "Chloe"
+
+https://www.youtube.com/watch?v=PdnAOfSGkww The Click Five: "Just The Girl" (nightcore)
+
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
 https://www.mediawiki.org/wiki/Directionality_support
