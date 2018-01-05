@@ -114,6 +114,16 @@ https://www.youtube.com/watch?v=JnRTpysSbwE Maty Noyes: "Say It To My Face"
 
 https://www.youtube.com/watch?v=7qzjHwMmIXE Enkidu: "Falling" (Embody Remix)
 
+https://www.youtube.com/watch?v=TY6NtF0wXHk Halsey: "Strangers" feat. Lauren Jauregui
+
+https://www.youtube.com/watch?v=4mAefuRTI1M Borgore: "My Favorite Tingz"
+
+https://www.youtube.com/watch?v=1iDcSrk_e00 David Guetta: "Light My Body Up" feat. Nicki Minaj & Lil Wayne
+
+https://www.youtube.com/watch?v=TIbO4EIEtYc Fall Out Boy: "Young and Menace" [or a remix]
+
+https://www.youtube.com/watch?v=c7xGPu27Jyk The Ready Set: "Give Me Your Hand (Best Song Ever)"
+
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
 https://www.mediawiki.org/wiki/Directionality_support
