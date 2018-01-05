@@ -92,6 +92,14 @@ https://www.youtube.com/watch?v=0lpkh_tGzWM Emblem3: "Chloe"
 
 https://www.youtube.com/watch?v=PdnAOfSGkww The Click Five: "Just The Girl" (nightcore)
 
+https://www.youtube.com/watch?v=7EosYvUJZKg Calvin Harris: "Skrt On Me" feat. Nicki Minaj
+
+https://www.youtube.com/watch?v=xygkT0-alQc Nina Nesbitt: "Chewing Gum"
+
+https://www.youtube.com/watch?v=V5iAOTF38QY Britney Spears: "Alien (Solo Vocal Version)"
+
+https://www.youtube.com/watch?v=UGMO6Ct_bf4 Britney Spears: "Perfume (Feat. Sia) (Version 2)"
+
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
 https://www.mediawiki.org/wiki/Directionality_support
