@@ -26,15 +26,15 @@ Jon Hendricks: "Fluxus Codex"
 
 "Low-Tech Magazine" http://www.lowtechmagazine.com/
 
-"Like a Stone" — Audioslave https://www.youtube.com/watch?v=C6uqTWHzHvo
-
-"I Don't Care" — Die Antwoord https://www.youtube.com/watch?v=crSBCZd5fCM
-
-William Pearson - "Interstellar Spheres" https://www.youtube.com/watch?v=6IXcxQj0KZU
-
 https://www.youtube.com/watch?v=86g4_w4j3jU
 
-https://www.youtube.com/watch?v=5PYbtNP-g4Q "Balans 2k18 (French Version) (Deep Matter & Damon Hess English Remix)"
+https://www.youtube.com/watch?v=C6uqTWHzHvo Audioslave: "Like a Stone"
+
+https://www.youtube.com/watch?v=crSBCZd5fCM Die Antwoord: "I Don't Care"
+
+https://www.youtube.com/watch?v=6IXcxQj0KZU William Pearson: "Interstellar Spheres"
+
+https://www.youtube.com/watch?v=5PYbtNP-g4Q Alexandra Stan: "Balans 2k18 (French Version) (Deep Matter & Damon Hess English Remix)"
 
 https://www.youtube.com/watch?v=TKsVvVxQoi4 Purity Ring: "bodyache"
 
