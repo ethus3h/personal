@@ -61,6 +61,8 @@ https://www.youtube.com/watch?v=LbkXQ_DeyQI Kevin Gates: "Satellites"
 
 https://www.youtube.com/watch?v=YH8pinr_xsU Sigrid: "Strangers"
 
+https://www.youtube.com/watch?v=QkTyxpcfTok Ginette Reno: "Je ne suis qu'une chanson"
+
 https://www.youtube.com/watch?v=SiCB2YbKftc Jon Bellion: "All Time Low (Shew Remix)"
 
 https://www.youtube.com/watch?v=KLtn2qA7WxE Light Years Away: "Melrose at Midnight"
