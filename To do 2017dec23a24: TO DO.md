@@ -18,6 +18,8 @@ Possible to ML:
 
 "	Biblical Interpretation in the Early Church"—	Karlfried Froehlich B407A6CDFAB89A6E33D2209C098891B1
 
+Gone to Earth by Mary Gladys Meredith Webb http://www.gutenberg.org/ebooks/7055
+
 "Fluxus Codex" — Jon Hendricks
 
 "Low-Tech Magazine" http://www.lowtechmagazine.com/
@@ -99,6 +101,10 @@ https://www.youtube.com/watch?v=xygkT0-alQc Nina Nesbitt: "Chewing Gum"
 https://www.youtube.com/watch?v=V5iAOTF38QY Britney Spears: "Alien (Solo Vocal Version)"
 
 https://www.youtube.com/watch?v=UGMO6Ct_bf4 Britney Spears: "Perfume (Feat. Sia) (Version 2)"
+
+https://www.youtube.com/watch?v=4uTVqj2voJc Loote: "High Without Your Love"
+
+https://www.youtube.com/watch?v=daqlqFiF3s8 Loote: "Out Of My Head"
 
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
 
