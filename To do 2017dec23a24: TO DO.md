@@ -1,8 +1,10 @@
-TO DO
+# TO DO
 
 Add MusE Sequencer to missing apps issue
 
-Possible to ML:
+https://stackoverflow.com/questions/39320990/google-code-archive-to-github : https://code.google.com/archive/p/arcmaj3-client/source/default/source / https://archive.org/download/code-urls-2015may03/code-urls-2015may03.txt
+
+### Possible to ML:
 
 Serena Romano: "Moralising Poverty: The ‘Undeserving’ Poor in the Public Gaze" 3ABA5B3F516A5F9F3C7097C44DC73967
 
@@ -152,5 +154,10 @@ https://github.com/ssbc/secure-scuttlebutt
 
 https://github.com/cjb/GitTorrent
 
+https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/pdf
 
-To archive: https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
+https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext
+
+### To archive:
+
+https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
