@@ -6,6 +6,12 @@ https://stackoverflow.com/questions/39320990/google-code-archive-to-github : htt
 
 ### Possible to ML:
 
+Caragh M. O'Brien: "Birthmarked" series
+
+Ellen Jensen Abbott: "Watersmeet" series
+
+Katherine Arden: "Winternight Trilogy"
+
 Serena Romano: "Moralising Poverty: The ‘Undeserving’ Poor in the Public Gaze" 3ABA5B3F516A5F9F3C7097C44DC73967
 
 Louis J. Gullo, Jack Dixon: "Design for Safety" 674BDEE144FDC38197942FAEE75ED6C5
