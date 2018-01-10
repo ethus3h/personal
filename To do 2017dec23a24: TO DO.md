@@ -188,6 +188,8 @@ https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines
 
 https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext
 
+http://www.imdb.com/title/tt5519340/ "Bright", 2017 (rating: 4?)
+
 ### To archive:
 
 https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
