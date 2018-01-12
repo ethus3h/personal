@@ -194,6 +194,8 @@ https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines
 
 http://www.imdb.com/title/tt5519340/ "Bright", 2017 (rating: 4? Just finished watching it; it was pretty good)
 
+https://www.youtube.com/watch?v=k5TqNsr6YuQ Troye Sivan: "My My My!" (Music video)
+
 ### To archive:
 
 https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
