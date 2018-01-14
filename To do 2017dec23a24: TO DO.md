@@ -16,6 +16,8 @@ Louis J. Gullo, Jack Dixon: "Design for Safety" 674BDEE144FDC38197942FAEE75ED6C5
 
 Sara Ahmed: "Living a Feminist Life" 92A4D6BF34FB765662141ED5EB317056
 
+Judith Halberstam: "Female Masculinity" 99627646805767C556D0C10AC198A12A
+
 Peter T. Daniels, William Bright: "The world's writing systems" 8BC3E482B8D29AE07DBB1961449C49B1
 
 Paul Andrew Mayewski, Frank White, Lynn Margulis: "The Ice Chronicles: The Quest to Understand Global Climate Change" 7D93A1D5D0EA41539CA6C634483BA2C9
