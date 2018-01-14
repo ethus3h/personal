@@ -158,6 +158,10 @@ https://www.youtube.com/watch?v=PGW0TZidXiQ Taylor Swift: "Style"
 
 https://www.youtube.com/watch?v=k5TqNsr6YuQ Troye Sivan: "My My My!"
 
+https://www.youtube.com/watch?v=h2reCIR2APk Michael W. Smith: "Place In This World"
+
+https://www.youtube.com/watch?v=0IeuWH1p_R0 Cher Lloyd: "Swagger Jagger"
+
 Max Reger: Der 100. Psalm: ( https://www.youtube.com/watch?v=GrbE65KjUmA ? Leon Botstein / American Symphony Orchestra / Concert Chorale of New York: "Psalm 100, Op. 106")
 
 https://www.mediawiki.org/wiki/Extension:RevisionSlider/Developing_a_RTL-accessible_feature_in_MediaWiki_-_what_we%27ve_learned_while_creating_the_RevisionSlider
