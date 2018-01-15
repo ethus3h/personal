@@ -115,7 +115,6 @@ app-dicts/aspell-sr \
 app-dicts/aspell-sv \
 app-dicts/aspell-uk \
 app-dicts/aspell-vi \
-app-dicts/bookview \
 app-dicts/canna-cannadic \
 app-dicts/dictd-devils \
 app-dicts/dictd-dicts \
