@@ -126,9 +126,7 @@ app-dicts/dictd-dicts \
 app-dicts/dictd-vera \
 =app-dicts/dictd-web1913-1.4-r1 \
 app-dicts/dictd-wn \
-app-dicts/dikt \
 =app-dicts/duali-data-0.1b-r1 \
-app-dicts/eblook \
 app-dicts/edictionary \
 app-dicts/freedict-deu-eng \
 app-dicts/freedict-eng-fra \
