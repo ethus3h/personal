@@ -499,8 +499,6 @@ emerge -av1 \
 =app-misc/jq-1.5-r3 \
 =app-misc/lirc-0.9.0-r6 \
 =app-misc/media-player-info-22 \
-=app-misc/-MERGING-crystallize-3.1.2.5.13.48 \
-=app-misc/-MERGING-crystallize-3.1.2.5.13.84 \
 =app-misc/onboard-emoji-0_pre20150710 \
 =app-misc/pax-utils-1.1.7 \
 =app-misc/recoll-1.22.3 \
@@ -4080,7 +4078,6 @@ emerge -av1 \
 =x11-plugins/compiz-plugins-main-9999 \
 =x11-plugins/compiz-plugins-meta-9999 \
 =x11-plugins/enigmail-1.9.9 \
-=x11-plugins/-MERGING-moz-ext-ublock-origin-1.13.8 \
 =x11-plugins/moz-ext-2-2-pane-bookmarks-1.0.2016020701 \
 =x11-plugins/moz-ext-abduction-fixed-4.0.2 \
 =x11-plugins/moz-ext-beyond-australis-1.4.8 \
@@ -4209,4 +4206,4 @@ emerge -av1 \
 =xfce-base/libxfce4ui-4.13.0 \
 =xfce-base/libxfce4util-4.12.1-r1 \
 =xfce-base/xfce4-panel-4.12.0-r1 \
-=xfce-base/xfconf-4.12.0-r1 
+=xfce-base/xfconf-4.12.0-r1
