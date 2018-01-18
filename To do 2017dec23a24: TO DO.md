@@ -2,7 +2,7 @@
 
 https://stackoverflow.com/questions/39320990/google-code-archive-to-github : https://code.google.com/archive/p/arcmaj3-client/source/default/source / https://archive.org/download/code-urls-2015may03/code-urls-2015may03.txt
 
-Swagger Jagger (Cher Lloyd) https://www.youtube.com/watch?v=0IeuWH1p_R0; Wild Out (Borgore feat. Waka Flocka Flame and Paige) https://www.youtube.com/watch?v=Lo-uDqBsR3I; We Rise (Acoustic) (San Holo): https://www.youtube.com/watch?v=eDSAkeIn8oU; We Rise (San Holo) https://www.youtube.com/watch?v=v8B5AOljhsY Younger (Seynabo Sey) https://youtube.com/watch?v=GI5E5ewwN1s; When We Were Young (Adele) https://www.youtube.com/watch?v=WyVS2N8aK-U; Kogda mi bili (Astero Remix) (Ruki Vverh) https://www.youtube.com/watch?v=0eUaC95UNIA; Anxiety (FRND) https://www.youtube.com/watch?v=eg_N1sqZUVM; Believer (AURORA) https://www.youtube.com/watch?v=ucY21wLJhOo; Rainbow (Kesha) https://www.youtube.com/watch?v=jL8O-zUrR2g
+Swagger Jagger (Cher Lloyd) https://www.youtube.com/watch?v=0IeuWH1p_R0; Wild Out (Borgore feat. Waka Flocka Flame and Paige) https://www.youtube.com/watch?v=Lo-uDqBsR3I; We Rise (Acoustic) (San Holo): https://www.youtube.com/watch?v=WRtfCeGM9i0; We Rise (San Holo) https://www.youtube.com/watch?v=v8B5AOljhsY Younger (Seynabo Sey) https://youtube.com/watch?v=GI5E5ewwN1s; When We Were Young (Adele) https://www.youtube.com/watch?v=WyVS2N8aK-U; Kogda mi bili (Astero Remix) (Ruki Vverh) https://www.youtube.com/watch?v=0eUaC95UNIA; Anxiety (FRND) https://www.youtube.com/watch?v=eg_N1sqZUVM; Believer (AURORA) https://www.youtube.com/watch?v=ucY21wLJhOo; Rainbow (Kesha) https://www.youtube.com/watch?v=jL8O-zUrR2g
 
 ### Possible to ML:
 
@@ -166,7 +166,7 @@ https://www.youtube.com/watch?v=h2reCIR2APk Michael W. Smith: "Place In This Wor
 
 https://www.youtube.com/watch?v=0IeuWH1p_R0 Cher Lloyd: "Swagger Jagger"
 
-https://www.youtube.com/watch?v=eDSAkeIn8oU San Holo: "We Rise" (Acoustic)
+https://www.youtube.com/watch?v=WRtfCeGM9i0 San Holo: "We Rise" (Acoustic)
 
 https://www.youtube.com/watch?v=v8B5AOljhsY San Holo: "We Rise"
 
