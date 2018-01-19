@@ -1,0 +1,664 @@
+elegiac ~ # revdep-rebuild --library 'libstdc++.so.6' -- --exclude gcc                                   
+ * This is the new python coded version                                                                        
+ * Please report any bugs found using it.                                                                      
+ * The original revdep-rebuild script is installed as revdep-rebuild.sh                                                   
+ * Please file bugs at: https://bugs.gentoo.org/                                                                          
+ * Collecting system binaries and libraries                                                                                        
+ * Checking dynamic linking consistency                                                                                            
+ * Assign files to packages                                                                                                        
+                                                                                                                                                  
+ !!! Dependant orphaned files: No installed package was found for the following:                                                                  
+        * /library/Ember satellite projects/wreathe-base/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/bin/linux/x64.m46.node
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/liblgpllibs.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/libnspr4.so
+        * /usr/lib64/libgpgme++-pthread.so.2.8.0
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/jd2/jre/lib/i386/libjfxwebkit.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/bin/linux/x64.m47.node
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/crashreporter
+        * /library/Ember satellite projects/wreathe-base/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/bin/linux/x64.m49.node
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/libmozavutil.so
+        * /library/.Trash-1000/files/CMakeFiles/3.8.2/CompilerIdCXX/a.out
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/firefox
+        * /library/Ember satellite projects/wreathe-base/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/bin/linux/ia32.m46.node
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/bin/linux/ia32.m46.node
+        * /library/Ember satellite projects/wreathe-base/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/bin/linux/x64.m47.node
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/build/Release/pty.node
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/gmp-clearkey/0.1/libclearkey.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/jd2/tmp/7zip/SevenZipJBinding-klWx7/lib7-Zip-JBinding.so
+        * /library/.Trash-1000/files/CMakeFiles/feature_tests.bin
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/plugin-container
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/browser/components/libbrowsercomps.so
+        * /library/Ember satellite projects/wreathe-base/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/build/Release/pty.node
+        * /usr/lib64/libkolab.so.0.5.2
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/libmozsqlite3.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/bin/linux/x64.m46.node
+        * /usr/lib64/libqgpgme.so.1.0.1
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/usr/share/atom/packages/platformio-ide-terminal/node_modules/pty.js/bin/linux/x64.m49.node
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/libplds4.so
+        * /library/.Trash-1000/files/CMakeFiles/3.8.2/CMakeDetermineCompilerABI_CXX.bin
+        * /usr/lib64/qt5/plugins/plasma/dataengine/plasma_engine_playbar.so
+        * /usr/lib64/libgpgme++.so.2.8.0
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/libplc4.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/webapprt-stub
+        * /usr/lib64/libkolabxml.so.1.0.1
+        * /usr/lib64/libbaloopim.so.4.14.3
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/libxul.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/libmozavcodec.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/jd2/jre/lib/i386/libglass.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/firefox-bin
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/jd2/jre/lib/i386/libjavafx-font.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/jd2/jre/lib/i386/libjfxmedia.so
+        * /library/Ember satellite projects/ember-history/wreathe-old-renamed-2017feb07/Wreathe.disabled2016jul24/.Resources/Apps/firefox/updater
+        * Warning: "kde-misc/krename-4.0.9-r3" ebuild not found..
+        !! Could not find ebuild for kde-misc/krename:4
+        * Warning: "kde-apps/libkipi-16.08.3-r1" ebuild not found..
+        !! Could not find ebuild for kde-apps/libkipi:5/31
+        * Warning: "kde-apps/ktuberling-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kdenlive-16.08.3" ebuild not found..
+        * Warning: "app-office/kmymoney-4.7.2" ebuild not found..
+        * Warning: "app-text/podofo-0.9.2" ebuild not found..
+        * Warning: "kde-apps/ksystemlog-16.08.3" ebuild not found..
+        * Warning: "dev-util/anjuta-3.20.0" ebuild not found..
+        * Warning: "kde-plasma/kde-gtk-config-5.8.3" ebuild not found..
+        * Warning: "dev-lang/php-7.0.23" ebuild not found..
+        * Warning: "kde-apps/libksane-15.08.3-r1" ebuild not found..
+        !! Could not find ebuild for kde-apps/libksane:4/15.08
+        * Warning: "kde-apps/korganizer-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/korganizer:4/4.14
+        * Warning: "kde-apps/kcalc-16.08.3" ebuild not found..
+        * Warning: "kde-apps/cervisia-16.08.3" ebuild not found..
+        * Warning: "dev-util/kdevelop-pg-qt-2.0.0" ebuild not found..
+        * Warning: "dev-qt/qtimageformats-5.6.2" ebuild not found..
+        !! Could not find ebuild for dev-qt/qtimageformats:5/5.6
+        * Warning: "kde-apps/sweeper-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/sweeper:4/16.08
+        * Warning: "kde-apps/blinken-16.08.3" ebuild not found..
+        * Warning: "media-libs/mesa-17.0.6" ebuild not found..
+        * Warning: "kde-apps/ktp-contact-runner-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kate-16.08.3" ebuild not found..
+        * Warning: "www-client/chromium-56.0.2924.76-r1" ebuild not found..
+        * Warning: "kde-apps/kgoldrunner-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kgoldrunner:4/16.08
+        * Warning: "games-action/supertuxkart-0.9.1" ebuild not found..
+        !! Could not find ebuild for games-action/supertuxkart:0
+        !! Could not find ebuild for games-action/supertuxkart
+        Installed package: games-action/supertuxkart is no longer available
+        * Warning: "kde-apps/kpasswdserver-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kpasswdserver:4/16.04
+        !! Could not find ebuild for kde-apps/kpasswdserver
+        Installed package: kde-apps/kpasswdserver is no longer available
+        * Warning: "kde-apps/kalarm-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/kalarm:4/4.14
+        * Warning: "kde-apps/ktimer-16.08.3" ebuild not found..
+        * Warning: "kde-apps/lokalize-16.08.3" ebuild not found..
+        * Warning: "kde-apps/knotes-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/knotes:4/4.14
+        * Warning: "kde-apps/kurifilter-plugins-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kurifilter-plugins:4/16.04
+        !! Could not find ebuild for kde-apps/kurifilter-plugins
+        Installed package: kde-apps/kurifilter-plugins is no longer available
+        * Warning: "kde-apps/kscd-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kscd:4/16.08
+        !! Could not find ebuild for kde-apps/kscd
+        Installed package: kde-apps/kscd is no longer available
+        * Warning: "kde-apps/kmahjongg-16.08.3" ebuild not found..
+        * Warning: "kde-plasma/systemsettings-5.8.3" ebuild not found..
+        * Warning: "kde-frameworks/bluez-qt-5.29.0" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/bluez-qt:5/5.29
+        * Warning: "kde-apps/kolf-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kolf:4/16.08
+        * Warning: "media-sound/lmms-1.1.3" ebuild not found..
+        !! Could not find ebuild for media-sound/lmms:0
+        !! Could not find ebuild for media-sound/lmms
+        Installed package: media-sound/lmms is no longer available
+        * Warning: "kde-apps/kfilereplace-16.12.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kfilereplace:4/16.12
+        !! Could not find ebuild for kde-apps/kfilereplace
+        Installed package: kde-apps/kfilereplace is no longer available
+        * Warning: "kde-apps/bomber-16.08.3" ebuild not found..
+        * Warning: "games-board/knights-2.5.0-r1" ebuild not found..
+        !! Could not find ebuild for games-board/knights:4
+        !! Could not find ebuild for games-board/knights
+        Installed package: games-board/knights is no longer available
+        * Warning: "kde-misc/krusader-2.5.0" ebuild not found..
+        * Warning: "games-util/catcodec-1.0.3" ebuild not found..
+        !! Could not find ebuild for games-util/catcodec:0
+        !! Could not find ebuild for games-util/catcodec
+        Installed package: games-util/catcodec is no longer available
+        * Warning: "kde-apps/kompare-16.08.3" ebuild not found..
+        * Warning: "x11-themes/oxygen-gtk-1.4.6" ebuild not found..
+        * Warning: "gnome-extra/evolution-data-server-3.20.5" ebuild not found..
+        !! Could not find ebuild for gnome-extra/evolution-data-server:0/57
+        * Warning: "x11-themes/oxygen-gtk-1.4.1" ebuild not found..
+        * Warning: "dev-db/sqliteman-1.2.2-r2" ebuild not found..
+        * Warning: "kde-apps/kcmshell-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kcmshell:4/16.04
+        !! Could not find ebuild for kde-apps/kcmshell
+        Installed package: kde-apps/kcmshell is no longer available
+        * Warning: "kde-apps/klickety-16.08.3" ebuild not found..
+        * Warning: "kde-apps/konsolekalendar-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/konsolekalendar:4/4.14
+        * Warning: "kde-apps/kalgebra-16.08.3" ebuild not found..
+        * Warning: "net-ftp/filezilla-3.12.0.2" ebuild not found..
+        * Warning: "kde-apps/kdepim-common-libs-4.14.11_pre20160211-r1" ebuild not found..
+        !! Could not find ebuild for kde-apps/kdepim-common-libs:4/4.14
+        !! Could not find ebuild for kde-apps/kdepim-common-libs
+        Installed package: kde-apps/kdepim-common-libs is no longer available
+        * Warning: "kde-apps/kwalletd-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kwalletd:4/16.04
+        !! Could not find ebuild for kde-apps/kwalletd
+        Installed package: kde-apps/kwalletd is no longer available
+        * Warning: "kde-apps/kaddressbook-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/kaddressbook:4/4.14
+        * Warning: "app-text/libwpg-0.2.2" ebuild not found..
+        !! Could not find ebuild for app-text/libwpg:0.2
+        * Warning: "kde-apps/kdesdk-thumbnailers-16.08.3" ebuild not found..
+        * Warning: "kde-apps/ktp-contact-list-16.08.3" ebuild not found..
+        * Warning: "media-libs/qimageblitz-0.0.6-r1" ebuild not found..
+        * Warning: "media-libs/libsfml-2.3.2-r1" ebuild not found..
+        * Warning: "games-board/stockfish-6-r2" ebuild not found..
+        * Warning: "kde-apps/ktimetracker-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/ktimetracker:4/4.14
+        !! Could not find ebuild for kde-apps/ktimetracker
+        Installed package: kde-apps/ktimetracker is no longer available
+        * Warning: "media-sound/qjackctl-0.3.10" ebuild not found..
+        * Warning: "app-office/libalkimia-4.3.2-r1" ebuild not found..
+        * Warning: "kde-apps/khelpcenter-17.04.3" ebuild not found..
+        * Warning: "kde-apps/kaccounts-integration-16.08.3" ebuild not found..
+        * Warning: "games-puzzle/gnome-sudoku-3.20.5" ebuild not found..
+        * Warning: "dev-qt/qt-creator-3.6.1" ebuild not found..
+        * Warning: "kde-apps/kqtquickcharts-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kqtquickcharts:4/16.08
+        * Warning: "x11-libs/qscintilla-2.9.4" ebuild not found..
+        !! Could not find ebuild for x11-libs/qscintilla:0/12
+        * Warning: "kde-apps/kfind-4.14.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kfind:4/4.14
+        !! Could not find ebuild for kde-apps/kfind
+        Installed package: kde-apps/kfind is no longer available
+        * Warning: "kde-apps/pykde4-4.14.3-r1" ebuild not found..
+        !! Could not find ebuild for kde-apps/pykde4:4/4.14
+        !! Could not find ebuild for kde-apps/pykde4
+        Installed package: kde-apps/pykde4 is no longer available
+        * Warning: "kde-frameworks/khtml-5.37.0" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/khtml:5/5.37
+        * Warning: "kde-apps/libkeduvocdocument-16.08.3" ebuild not found..
+        * Warning: "kde-apps/knetwalk-16.08.3" ebuild not found..
+        * Warning: "kde-apps/ktnef-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/ktnef:4/4.14
+        !! Could not find ebuild for kde-apps/ktnef
+        Installed package: kde-apps/ktnef is no longer available
+        * Warning: "kde-apps/ktp-filetransfer-handler-16.08.3" ebuild not found..
+        * Warning: "dev-libs/grantlee-0.4.0" ebuild not found..
+        !! Could not find ebuild for dev-libs/grantlee:0
+        * Warning: "dev-cpp/libfrontend-elements-1.1.4" ebuild not found..
+        !! Could not find ebuild for dev-cpp/libfrontend-elements:0
+        !! Could not find ebuild for dev-cpp/libfrontend-elements
+        Installed package: dev-cpp/libfrontend-elements is no longer available
+        * Warning: "kde-apps/kruler-16.08.3" ebuild not found..
+        * Warning: "kde-apps/ark-16.08.3-r1" ebuild not found..
+        * Warning: "kde-apps/kleopatra-4.14.11_pre20160211-r1" ebuild not found..
+        !! Could not find ebuild for kde-apps/kleopatra:4/4.14
+        * Warning: "kde-apps/libkomparediff2-16.08.3" ebuild not found..
+        * Warning: "app-misc/recoll-1.22.3" ebuild not found..
+        * Warning: "dev-util/kdevplatform-5.1.1" ebuild not found..
+        !! Could not find ebuild for dev-util/kdevplatform:5
+        !! Could not find ebuild for dev-util/kdevplatform
+        Installed package: dev-util/kdevplatform is no longer available
+        * Warning: "app-admin/elektra-0.8.15" ebuild not found..
+        !! Could not find ebuild for app-admin/elektra:0/0.8.15
+        * Warning: "kde-apps/kmplot-16.08.3" ebuild not found..
+        * Warning: "kde-apps/okteta-16.08.3" ebuild not found..
+        * Warning: "dev-util/kdevelop-5.1.1" ebuild not found..
+        * Warning: "kde-apps/ksnakeduel-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/ksnakeduel:4/16.08
+        * Warning: "games-board/pouetchess-0.2.0-r1" ebuild not found..
+        !! Could not find ebuild for games-board/pouetchess:0
+        !! Could not find ebuild for games-board/pouetchess
+        Installed package: games-board/pouetchess is no longer available
+        * Warning: "kde-apps/kdf-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kshisen-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kstars-16.08.3" ebuild not found..
+        * Warning: "kde-apps/klines-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kreversi-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kreversi:4/16.08
+        * Warning: "kde-frameworks/prison-1.1.1" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/prison:4
+        * Warning: "kde-plasma/oxygen-5.8.3" ebuild not found..
+        * Warning: "app-text/goldendict-1.0.1" ebuild not found..
+        * Warning: "kde-plasma/bluedevil-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kimagemapeditor-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kimagemapeditor:4/16.08
+        * Warning: "kde-apps/kdenetwork-filesharing-16.08.3" ebuild not found..
+        * Warning: "kde-plasma/kwayland-integration-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kommander-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kommander:4/16.08
+        !! Could not find ebuild for kde-apps/kommander
+        Installed package: kde-apps/kommander is no longer available
+        * Warning: "games-sports/billardgl-1.75-r1" ebuild not found..
+        !! Could not find ebuild for games-sports/billardgl:0
+        !! Could not find ebuild for games-sports/billardgl
+        Installed package: games-sports/billardgl is no longer available
+        * Warning: "kde-apps/libkcompactdisc-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/libkcompactdisc:4/16.08
+        * Warning: "kde-apps/dragon-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kimgio-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kimgio:4/16.04
+        !! Could not find ebuild for kde-apps/kimgio
+        Installed package: kde-apps/kimgio is no longer available
+        * Warning: "kde-apps/ktimezoned-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/ktimezoned:4/16.04
+        !! Could not find ebuild for kde-apps/ktimezoned
+        Installed package: kde-apps/ktimezoned is no longer available
+        * Warning: "kde-apps/kigo-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kigo:4/16.08
+        * Warning: "kde-apps/kmouth-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kmouth:4/16.08
+        * Warning: "kde-apps/kteatime-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kanagram-16.08.3" ebuild not found..
+        * Warning: "sys-block/partitionmanager-2.2.1" ebuild not found..
+        * Warning: "kde-apps/artikulate-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kdepim-runtime-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/kdepim-runtime:4/4.14
+        * Warning: "x11-misc/accessx-0951-r1" ebuild not found..
+        !! Could not find ebuild for x11-misc/accessx:0
+        !! Could not find ebuild for x11-misc/accessx
+        Installed package: x11-misc/accessx is no longer available
+        * Warning: "media-libs/libvisio-0.1.5-r1" ebuild not found..
+        * Warning: "kde-frameworks/kross-5.29.0" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/kross:5/5.29
+        * Warning: "kde-apps/ktp-common-internals-16.08.3" ebuild not found..
+        * Warning: "app-text/libmwaw-0.3.11-r1" ebuild not found..
+        * Warning: "media-sound/mixxx-1.10.1" ebuild not found..
+        * Warning: "net-print/hplip-3.16.5-r1" ebuild not found..
+        * Warning: "media-video/simplescreenrecorder-0.3.6-r2" ebuild not found..
+        * Warning: "kde-apps/kfile-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kfile:4/16.04
+        !! Could not find ebuild for kde-apps/kfile
+        Installed package: kde-apps/kfile is no longer available
+        * Warning: "kde-apps/cantor-16.08.3" ebuild not found..
+        * Warning: "kde-plasma/khotkeys-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kdebugsettings-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kollision-16.08.3" ebuild not found..
+        * Warning: "dev-libs/gjs-1.45.4" ebuild not found..
+        * Warning: "kde-apps/libkmahjongg-16.08.3" ebuild not found..
+        * Warning: "kde-plasma/kscreen-5.8.3" ebuild not found..
+        * Warning: "media-libs/qt-gstreamer-1.2.0-r2" ebuild not found..
+        * Warning: "kde-apps/rocs-16.08.3" ebuild not found..
+        * Warning: "kde-plasma/libkscreen-5.8.3" ebuild not found..
+        * Warning: "kde-apps/libkcddb-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/libkcddb:4/16.08
+        * Warning: "kde-apps/ksquares-16.08.3" ebuild not found..
+        * Warning: "sys-devel/gcc-4.9.3" ebuild not found..
+        !! Could not find ebuild for sys-devel/gcc:4.9.3
+        * Warning: "kde-apps/solid-runtime-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/solid-runtime:4/16.04
+        !! Could not find ebuild for kde-apps/solid-runtime
+        Installed package: kde-apps/solid-runtime is no longer available
+        * Warning: "kde-apps/kapptemplate-16.08.3" ebuild not found..
+        * Warning: "dev-lang/php-5.6.31" ebuild not found..
+        * Warning: "games-action/minetest-0.4.14" ebuild not found..
+        * Warning: "dev-libs/qjson-0.8.1-r1" ebuild not found..
+        * Warning: "sys-devel/gcc-5.4.0-r3" ebuild not found..
+        !! Could not find ebuild for sys-devel/gcc:5.4.0
+        * Warning: "kde-plasma/user-manager-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kbounce-16.08.3" ebuild not found..
+        * Warning: "kde-apps/knotify-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/knotify:4/16.04
+        !! Could not find ebuild for kde-apps/knotify
+        Installed package: kde-apps/knotify is no longer available
+        * Warning: "sys-auth/polkit-qt-0.112.0-r1" ebuild not found..
+        * Warning: "kde-frameworks/kdelibs-4.14.34" ebuild not found..
+        * Warning: "net-libs/libktorrent-2.0.1" ebuild not found..
+        * Warning: "kde-apps/kopete-15.12.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kopete:4/15.12
+        !! Could not find ebuild for kde-apps/kopete
+        Installed package: kde-apps/kopete is no longer available
+        * Warning: "kde-apps/kio-extras-17.04.3" ebuild not found..
+        * Warning: "kde-plasma/plasma-sdk-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kontact-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/kontact:4/4.14
+        * Warning: "kde-apps/krdc-16.08.3" ebuild not found..
+        * Warning: "x11-libs/vte-0.44.3" ebuild not found..
+        * Warning: "dev-vcs/qgit-2.6" ebuild not found..
+        * Warning: "net-libs/webkit-gtk-2.16.6" ebuild not found..
+        * Warning: "kde-apps/kaccessible-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kaccessible:4/16.08
+        !! Could not find ebuild for kde-apps/kaccessible
+        Installed package: kde-apps/kaccessible is no longer available
+        * Warning: "kde-apps/kdepim-kresources-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/kdepim-kresources:4/4.14
+        !! Could not find ebuild for kde-apps/kdepim-kresources
+        Installed package: kde-apps/kdepim-kresources is no longer available
+        * Warning: "kde-apps/kross-interpreters-16.08.3" ebuild not found..
+        * Warning: "kde-apps/ksirk-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/ksirk:4/16.08
+        * Warning: "kde-apps/kcharselect-16.08.3" ebuild not found..
+        * Warning: "media-libs/mlt-6.4.1-r1" ebuild not found..
+        * Warning: "app-dicts/dikt-2l" ebuild not found..
+        !! Could not find ebuild for app-dicts/dikt:4
+        !! Could not find ebuild for app-dicts/dikt
+        Installed package: app-dicts/dikt is no longer available
+        * Warning: "kde-plasma/breeze-gtk-5.8.3" ebuild not found..
+        * Warning: "kde-apps/blogilo-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/blogilo:4/4.14
+        !! Could not find ebuild for kde-apps/blogilo
+        Installed package: kde-apps/blogilo is no longer available
+        * Warning: "kde-misc/kdiff3-0.9.98-r1" ebuild not found..
+        !! Could not find ebuild for kde-misc/kdiff3:4
+        * Warning: "kde-plasma/plasma-desktop-5.8.3" ebuild not found..
+        * Warning: "dev-libs/botan-1.10.16" ebuild not found..
+        * Warning: "net-libs/signond-8.58" ebuild not found..
+        * Warning: "games-board/scid-4.6.2" ebuild not found..
+        !! Could not find ebuild for games-board/scid:0
+        !! Could not find ebuild for games-board/scid
+        Installed package: games-board/scid is no longer available
+        * Warning: "kde-apps/audiocd-kio-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/audiocd-kio:4/16.08
+        * Warning: "kde-apps/keditfiletype-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/keditfiletype:4/16.04
+        !! Could not find ebuild for kde-apps/keditfiletype
+        Installed package: kde-apps/keditfiletype is no longer available
+        * Warning: "kde-apps/step-16.08.3" ebuild not found..
+        * Warning: "media-sound/drumstick-1.0.2" ebuild not found..
+        * Warning: "app-emulation/bochs-2.6.8" ebuild not found..
+        * Warning: "x11-libs/gtkmathview-0.8.0-r2" ebuild not found..
+        * Warning: "media-libs/musicbrainz-5.0.1" ebuild not found..
+        * Warning: "kde-apps/katomic-16.08.3" ebuild not found..
+        * Warning: "media-libs/libmediaart-1.9.0" ebuild not found..
+        * Warning: "kde-apps/kwrite-16.08.3" ebuild not found..
+        * Warning: "app-text/libetonyek-0.1.6" ebuild not found..
+        * Warning: "kde-apps/baloo-widgets-16.04.3" ebuild not found..
+        * Warning: "kde-apps/parley-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kblackbox-16.08.3" ebuild not found..
+        * Warning: "dev-util/gource-0.44" ebuild not found..
+        * Warning: "kde-apps/kturtle-16.08.3" ebuild not found..
+        * Warning: "kde-apps/umbrello-16.08.3" ebuild not found..
+        * Warning: "dev-cpp/gtkmm-3.20.1" ebuild not found..
+        * Warning: "kde-apps/ksudoku-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/ksudoku:4/16.08
+        * Warning: "kde-misc/kdeconnect-1.0.3" ebuild not found..
+        * Warning: "kde-apps/plasma-runtime-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/plasma-runtime:4/16.04
+        !! Could not find ebuild for kde-apps/plasma-runtime
+        Installed package: kde-apps/plasma-runtime is no longer available
+        * Warning: "kde-apps/gwenview-16.08.3" ebuild not found..
+        * Warning: "kde-apps/khangman-16.08.3" ebuild not found..
+        * Warning: "kde-apps/konquest-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/konquest:4/16.08
+        * Warning: "kde-apps/svgpart-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/svgpart:4/16.08
+        * Warning: "kde-apps/kapman-16.08.3" ebuild not found..
+        * Warning: "kde-apps/jovie-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/jovie:4/16.08
+        !! Could not find ebuild for kde-apps/jovie
+        Installed package: kde-apps/jovie is no longer available
+        * Warning: "kde-apps/granatier-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kioclient-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kioclient:4/16.04
+        !! Could not find ebuild for kde-apps/kioclient
+        Installed package: kde-apps/kioclient is no longer available
+        * Warning: "kde-apps/kquitapp-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kquitapp:4/16.04
+        !! Could not find ebuild for kde-apps/kquitapp
+        Installed package: kde-apps/kquitapp is no longer available
+        * Warning: "kde-apps/kmousetool-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kmousetool:4/16.08
+        * Warning: "app-text/libwpd-0.10.1-r1" ebuild not found..
+        * Warning: "kde-plasma/powerdevil-5.8.3" ebuild not found..
+        * Warning: "media-libs/libcdr-0.1.3" ebuild not found..
+        * Warning: "dev-libs/qoauth-1.0.1" ebuild not found..
+        !! Could not find ebuild for dev-libs/qoauth:0
+        * Warning: "dev-libs/libdbusmenu-qt-0.9.3_pre20160218" ebuild not found..
+        * Warning: "media-sound/clementine-1.3.1-r5" ebuild not found..
+        * Warning: "dev-util/electron-1.3.13-r1" ebuild not found..
+        !! Could not find ebuild for dev-util/electron:1.3
+        * Warning: "dev-java/icedtea-7.2.6.11" ebuild not found..
+        !! Could not find ebuild for dev-java/icedtea:7
+        * Warning: "media-sound/ardour-4.7" ebuild not found..
+        * Warning: "kde-apps/kgeography-16.08.3" ebuild not found..
+        * Warning: "kde-apps/krfb-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kabcclient-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/kabcclient:4/4.14
+        !! Could not find ebuild for kde-apps/kabcclient
+        Installed package: kde-apps/kabcclient is no longer available
+        * Warning: "kde-apps/kcron-16.08.3" ebuild not found..
+        * Warning: "kde-apps/zeroconf-ioslave-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/zeroconf-ioslave:4/16.08
+        * Warning: "sys-libs/kpmcore-2.2.1" ebuild not found..
+        !! Could not find ebuild for sys-libs/kpmcore:5/3
+        * Warning: "media-gfx/scantailor-0.9.11.1" ebuild not found..
+        * Warning: "kde-apps/kcolorchooser-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kremotecontrol-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kremotecontrol:4/16.08
+        !! Could not find ebuild for kde-apps/kremotecontrol
+        Installed package: kde-apps/kremotecontrol is no longer available
+        * Warning: "kde-apps/knewstuff-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/knewstuff:4/16.04
+        !! Could not find ebuild for kde-apps/knewstuff
+        Installed package: kde-apps/knewstuff is no longer available
+        * Warning: "app-office/calligra-2.9.11" ebuild not found..
+        !! Could not find ebuild for app-office/calligra:4
+        * Warning: "kde-apps/kfourinline-16.08.3" ebuild not found..
+        * Warning: "media-gfx/librecad-2.0.3" ebuild not found..
+        * Warning: "kde-frameworks/kactivities-stats-5.29.0" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/kactivities-stats:5/5.29
+        * Warning: "net-analyzer/wireshark-2.2.4" ebuild not found..
+        !! Could not find ebuild for net-analyzer/wireshark:0/2.2.4
+        * Warning: "app-office/lyx-2.1.5" ebuild not found..
+        * Warning: "kde-apps/kholidays-17.04.3" ebuild not found..
+        * Warning: "kde-apps/ktp-desktop-applets-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kspaceduel-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kspaceduel:4/16.08
+        * Warning: "kde-apps/kwalletmanager-16.08.3" ebuild not found..
+        * Warning: "kde-apps/libkexiv2-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kmines-16.08.3" ebuild not found..
+        * Warning: "net-print/npadmin-0.8.7" ebuild not found..
+        * Warning: "games-util/grfcodec-6.0.5" ebuild not found..
+        !! Could not find ebuild for games-util/grfcodec:0
+        !! Could not find ebuild for games-util/grfcodec
+        Installed package: games-util/grfcodec is no longer available
+        * Warning: "kde-apps/picmi-16.08.3" ebuild not found..
+        * Warning: "dev-cpp/libxsd-frontend-1.18.0-r3" ebuild not found..
+        !! Could not find ebuild for dev-cpp/libxsd-frontend:0
+        !! Could not find ebuild for dev-cpp/libxsd-frontend
+        Installed package: dev-cpp/libxsd-frontend is no longer available
+        * Warning: "kde-apps/libkmahjongg-4.14.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/libkmahjongg:4/4.14
+        * Warning: "kde-apps/kiten-16.08.3" ebuild not found..
+        * Warning: "net-libs/telepathy-qt-0.9.7" ebuild not found..
+        * Warning: "app-text/fbreader-0.99.4-r2" ebuild not found..
+        * Warning: "sys-apps/smartmontools-6.5" ebuild not found..
+        * Warning: "kde-apps/keditbookmarks-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/keditbookmarks:4/16.04
+        * Warning: "kde-apps/kmag-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kmag:4/16.08
+        * Warning: "kde-apps/knavalbattle-16.08.3" ebuild not found..
+        * Warning: "app-text/sword-1.7.4" ebuild not found..
+        * Warning: "kde-apps/ktp-send-file-16.08.3" ebuild not found..
+        * Warning: "dev-cpp/xsd-3.3.0-r3" ebuild not found..
+        !! Could not find ebuild for dev-cpp/xsd:0
+        !! Could not find ebuild for dev-cpp/xsd
+        Installed package: dev-cpp/xsd is no longer available
+        * Warning: "kde-apps/signon-kwallet-extension-16.08.3" ebuild not found..
+        * Warning: "kde-apps/filelight-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kpat-16.08.3" ebuild not found..
+        * Warning: "kde-apps/akonadiconsole-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/akonadiconsole:4/4.14
+        * Warning: "kde-apps/libkdegames-16.08.3" ebuild not found..
+        * Warning: "app-text/libwpg-0.3.1" ebuild not found..
+        * Warning: "dev-db/sqlitebrowser-3.8.0-r1" ebuild not found..
+        * Warning: "kde-apps/kde-dev-utils-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kde-dev-utils:4/16.08
+        * Warning: "kde-plasma/kmenuedit-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kdesdk-kioslaves-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kdesdk-kioslaves:4/16.08
+        * Warning: "kde-apps/kmail-4.14.11_pre20160211-r1" ebuild not found..
+        !! Could not find ebuild for kde-apps/kmail:4/4.14
+        * Warning: "media-plugins/kipi-plugins-5.3.0" ebuild not found..
+        * Warning: "kde-apps/kig-16.08.3" ebuild not found..
+        * Warning: "kde-plasma/ksshaskpass-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kppp-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kppp:4/16.08
+        !! Could not find ebuild for kde-apps/kppp
+        Installed package: kde-apps/kppp is no longer available
+        * Warning: "kde-apps/palapeli-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/palapeli:4/16.08
+        * Warning: "gnome-extra/gnome-color-manager-3.20.0" ebuild not found..
+        * Warning: "net-analyzer/nmap-7.31" ebuild not found..
+        * Warning: "kde-apps/ktp-call-ui-16.08.3" ebuild not found..
+        * Warning: "kde-apps/libkgapi-2.2.0" ebuild not found..
+        !! Could not find ebuild for kde-apps/libkgapi:4
+        * Warning: "app-office/abiword-3.0.1" ebuild not found..
+        * Warning: "dev-libs/crypto++-5.6.2-r3" ebuild not found..
+        * Warning: "kde-apps/kdialog-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kdialog:4/16.08
+        * Warning: "kde-apps/kdebugdialog-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kdebugdialog:4/16.04
+        !! Could not find ebuild for kde-apps/kdebugdialog
+        Installed package: kde-apps/kdebugdialog is no longer available
+        * Warning: "kde-apps/klettres-16.08.3" ebuild not found..
+        * Warning: "kde-apps/renamedlg-plugins-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/renamedlg-plugins:4/16.04
+        !! Could not find ebuild for kde-apps/renamedlg-plugins
+        Installed package: kde-apps/renamedlg-plugins is no longer available
+        * Warning: "kde-apps/ktraderclient-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/ktraderclient:4/16.04
+        !! Could not find ebuild for kde-apps/ktraderclient
+        Installed package: kde-apps/ktraderclient is no longer available
+        * Warning: "games-sports/trigger-0.6.1" ebuild not found..
+        !! Could not find ebuild for games-sports/trigger:0
+        !! Could not find ebuild for games-sports/trigger
+        Installed package: games-sports/trigger is no longer available
+        * Warning: "kde-apps/kjumpingcube-16.08.3" ebuild not found..
+        * Warning: "kde-apps/okular-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/okular:4/16.08
+        * Warning: "app-portage/eix-0.31.7-r1" ebuild not found..
+        * Warning: "kde-apps/minuet-16.04.3" ebuild not found..
+        * Warning: "kde-apps/lskat-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/lskat:4/16.08
+        * Warning: "app-text/libwps-0.4.6" ebuild not found..
+        * Warning: "kde-apps/kblocks-16.08.3" ebuild not found..
+        * Warning: "kde-apps/ktouch-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/ktouch:4/16.08
+        * Warning: "kde-apps/ktp-approver-16.08.3" ebuild not found..
+        * Warning: "kde-apps/knode-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/knode:4/4.14
+        !! Could not find ebuild for kde-apps/knode
+        Installed package: kde-apps/knode is no longer available
+        * Warning: "dev-libs/libqtxdg-1.3.0" ebuild not found..
+        * Warning: "kde-apps/juk-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/juk:4/16.08
+        * Warning: "dev-cpp/libcult-1.4.6-r1" ebuild not found..
+        !! Could not find ebuild for dev-cpp/libcult:0
+        !! Could not find ebuild for dev-cpp/libcult
+        Installed package: dev-cpp/libcult is no longer available
+        * Warning: "kde-apps/marble-4.14.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/marble:4/4.14
+        * Warning: "media-sound/carla-9999" ebuild not found..
+        * Warning: "kde-apps/kbruch-16.08.3" ebuild not found..
+        * Warning: "kde-apps/bovo-16.08.3" ebuild not found..
+        * Warning: "dev-qt/qtwebkit-4.8.7" ebuild not found..
+        !! Could not find ebuild for dev-qt/qtwebkit:4
+        * Warning: "app-office/texmaker-4.5" ebuild not found..
+        * Warning: "app-text/calibre-2.73.0" ebuild not found..
+        * Warning: "kde-apps/kalzium-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kalzium:4/16.08
+        * Warning: "kde-apps/kget-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kget:4/16.08
+        * Warning: "kde-apps/killbots-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kaccounts-providers-16.08.3" ebuild not found..
+        * Warning: "kde-apps/calendarjanitor-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/calendarjanitor:4/4.14
+        * Warning: "kde-apps/spectacle-16.08.3" ebuild not found..
+        * Warning: "kde-plasma/kwrited-5.8.3" ebuild not found..
+        * Warning: "kde-apps/ktp-auth-handler-16.08.3" ebuild not found..
+        * Warning: "sci-libs/geos-3.5.0" ebuild not found..
+        * Warning: "kde-plasma/kgamma-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kiriki-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kdebase-menu-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kdebase-menu:4/16.04
+        !! Could not find ebuild for kde-apps/kdebase-menu
+        Installed package: kde-apps/kdebase-menu is no longer available
+        * Warning: "kde-apps/akregator-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/akregator:4/4.14
+        * Warning: "kde-frameworks/kimageformats-5.29.0" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/kimageformats:5/5.29
+        * Warning: "app-editors/kile-2.1.3-r3" ebuild not found..
+        !! Could not find ebuild for app-editors/kile:4
+        * Warning: "kde-apps/kbreakout-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kolourpaint-16.08.3" ebuild not found..
+        * Warning: "kde-apps/analitza-16.08.3" ebuild not found..
+        * Warning: "dev-qt/assistant-4.8.6-r1" ebuild not found..
+        * Warning: "kde-plasma/plasma-pa-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kmix-16.08.3" ebuild not found..
+        * Warning: "kde-frameworks/kactivities-4.13.3-r2" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/kactivities:4/4.13
+        * Warning: "net-p2p/ktorrent-5.0.1" ebuild not found..
+        * Warning: "kde-plasma/kdeplasma-addons-5.8.3" ebuild not found..
+        * Warning: "kde-frameworks/kdnssd-5.37.0" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/kdnssd:5/5.37
+        * Warning: "kde-apps/phonon-kde-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/phonon-kde:4/16.04
+        !! Could not find ebuild for kde-apps/phonon-kde
+        Installed package: kde-apps/phonon-kde is no longer available
+        * Warning: "media-libs/suil-0.8.4" ebuild not found..
+        * Warning: "kde-apps/kamera-16.08.3" ebuild not found..
+        * Warning: "dev-python/qscintilla-python-2.9.2-r1" ebuild not found..
+        * Warning: "app-text/libwpd-0.9.9" ebuild not found..
+        !! Could not find ebuild for app-text/libwpd:0.9
+        * Warning: "kde-apps/ktp-accounts-kcm-16.08.3" ebuild not found..
+        * Warning: "dev-qt/qdoc-5.6.2" ebuild not found..
+        !! Could not find ebuild for dev-qt/qdoc:5/5.6
+        * Warning: "kde-apps/print-manager-16.08.3" ebuild not found..
+        * Warning: "kde-frameworks/kpeople-5.29.0" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/kpeople:5/5.29
+        * Warning: "media-libs/libfreehand-0.1.1" ebuild not found..
+        * Warning: "kde-frameworks/kirigami-1.1.0" ebuild not found..
+        !! Could not find ebuild for kde-frameworks/kirigami:1
+        * Warning: "kde-apps/libksane-16.08.3" ebuild not found..
+        * Warning: "kde-apps/libkdcraw-16.08.3" ebuild not found..
+        * Warning: "app-crypt/pinentry-0.9.7-r1" ebuild not found..
+        * Warning: "kde-apps/ktp-text-ui-16.08.3" ebuild not found..
+        * Warning: "kde-apps/kjots-4.14.11_pre20160211" ebuild not found..
+        !! Could not find ebuild for kde-apps/kjots:4/4.14
+        !! Could not find ebuild for kde-apps/kjots
+        Installed package: kde-apps/kjots is no longer available
+        * Warning: "gnome-extra/gnome-system-monitor-3.20.1" ebuild not found..
+        * Warning: "media-libs/opencv-2.4.13" ebuild not found..
+        * Warning: "kde-apps/kstart-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kstart:4/16.04
+        !! Could not find ebuild for kde-apps/kstart
+        Installed package: kde-apps/kstart is no longer available
+        * Warning: "kde-apps/kdiamond-16.08.3" ebuild not found..
+        * Warning: "kde-plasma/sddm-kcm-5.8.3" ebuild not found..
+        * Warning: "kde-apps/kcachegrind-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kcachegrind:4/16.08
+        * Warning: "app-text/kbibtex-0.6" ebuild not found..
+        !! Could not find ebuild for app-text/kbibtex:4
+        * Warning: "kde-apps/kreadconfig-16.04.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kreadconfig:4/16.04
+        !! Could not find ebuild for kde-apps/kreadconfig
+        Installed package: kde-apps/kreadconfig is no longer available
+        * Warning: "kde-plasma/kinfocenter-5.8.3" ebuild not found..
+        * Warning: "kde-plasma/plasma-nm-5.8.3" ebuild not found..
+        * Warning: "kde-apps/ksaneplugin-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/ksaneplugin:4/16.08
+        !! Could not find ebuild for kde-apps/ksaneplugin
+        Installed package: kde-apps/ksaneplugin is no longer available
+        * Warning: "dev-cpp/gtest-1.7.0" ebuild not found..
+        * Warning: "kde-apps/kubrick-16.08.3" ebuild not found..
+        !! Could not find ebuild for kde-apps/kubrick:4/16.08
+        * Warning: "kde-apps/kwordquiz-16.08.3" ebuild not found..
+        * Warning: "kde-apps/ktp-kded-module-16.08.3" ebuild not found..
+
+emerge --exclude gcc --oneshot --complete-graph=y kde-misc/krename kde-apps/libkipi kde-apps/ktuberling:5 dev-python/thrift:0 dev-cpp/cairomm:0 ga            mes-action/extreme-tuxracer:0 kde-apps/kdenlive:5 kde-plasma/kdecoration:5 app-office/kmymoney:4 app-text/podofo:0 media-libs/libsidplay:1 kde-frameworks/kinit:5/5.40 kde-apps/ksystemlog:5 media-libs/openimageio:0 dev-util/anjuta:0 kde-frameworks/solid:5/5.40 kde-plasma/kde-gtk-config:5 kde-frameworks/kactivities:5/5.40 media-gfx/povray:0 dev-lang/php:7 sci-libs/gdal:0/2 net-print/splix:0 kde-apps/libksane app-arch/unrar:0/5 dev-util/ddd:0 x11-misc/appmenu-qt:0 media-libs/ladspa-sdk:0 kde-apps/korganizer sci-electronics/kicad:0 dev-libs/liborcus:0/0.12 sci-geosciences/opencpn-plugin-weather_routing:0 app-text/chasen:0 kde-apps/kcalc:5 kde-frameworks/kdesu:5/5.40 kde-apps/cervisia:5 x11-misc/sddm:0 dev-qt/qtlockedfile:0 media-libs/opencolorio:0 kde-frameworks/kjobwidgets:5/5.40 dev-util/kdevelop-pg-qt:5 dev-libs/libixion:0/0.12 dev-qt/qtimageformats kde-apps/sweeper kde-frameworks/kjs:5/5.40 kde-frameworks/frameworkintegration:5/5.40 media-libs/libprojectm:0 dev-libs/elfutils:0 dev-libs/libcdio:0/15 app-crypt/gpgme:1/11 kde-apps/blinken:5 media-libs/mesa:0 dev-python/PyQt5:0 sys-fabric/mstflint:3.12 kde-apps/libkdegames:4/4.14 kde-apps/ktp-contact-runner:5 app-text/openjade:0 sys-devel/gettext:0 kde-apps/kate:5 media-plugins/gst-plugins-mplex:0.10 media-gfx/graphite2:0 sys-libs/db:4.8 sci-geosciences/opencpn-plugin-ocpndebugger:0 gnome-extra/gnome-color-chooser:0 media-plugins/gst-plugins-taglib:0.10 dev-qt/qtwebchannel:5/5.7 net-libs/webkit-gtk:2 dev-qt/tqtinterface:0 www-client/chromium:0 kde-apps/kgoldrunner dev-qt/qtcore:4 media-sound/darkice:0 kde-frameworks/knotifications:5/5.40 media-libs/libmygpo-qt:0 kde-apps/thumbnailers:4 kde-frameworks/knotifyconfig:5/5.40 media-libs/game-music-emu:0 kde-frameworks/kdbusaddons:5/5.40 dev-cpp/tbb:0 media-libs/musicbrainz:3 kde-apps/kalarm kde-apps/ktimer:5 media-libs/rtaudio:0 kde-frameworks/krunner:5/5.40 kde-apps/thumbnailers:5 dev-qt/qtmultimedia:5/5.7 kde-apps/lokalize:5 kde-apps/knotes kde-frameworks/kdewebkit:5/5.40 media-libs/taglib-extras:0 x11-misc/xvisbell:0 kde-apps/kmahjongg:5 kde-plasma/systemsettings:5 kde-misc/kolor-manager:4 kde-apps/akonadi:4 kde-frameworks/kdesignerplugin:5/5.40 app-text/lcdf-typetools:0 sci-mathematics/form:0 sci-geosciences/opencpn-plugin-dr:0 kde-frameworks/bluez-qt media-plugins/frei0r-plugins:0 kde-apps/kolf dev-libs/liblinear:0/3 kde-plasma/ksysguard:5 dev-python/pyside-tools:0 dev-libs/libmix:0 media-plugins/gst-plugins-taglib:1.0 kde-apps/bomber:5 kde-plasma/kactivitymanagerd:5 kde-plasma/breeze:5 media-libs/kodi-platform:0 media-libs/oyranos:0 sci-geosciences/opencpn-plugin-logbookkonni:0 dev-libs/re2:0/0.2016.05.01 dev-python/pyside:0 dev-qt/qtwebkit:5/5.7 kde-misc/krusader:5 x11-libs/qwt:5 app-doc/doxygen:0 app-text/enchant:0 kde-frameworks/kirigami:5/5.40 dev-qt/qtgui:5/5.7 kde-plasma/kwin:5 kde-apps/kompare:5 net-libs/xulrunner:0 x11-themes/oxygen-gtk:2 dev-qt/qtsvg:4 dev-qt/qtserialport:5/5.7 gnome-extra/evolution-data-server x11-themes/oxygen-gtk:3 dev-db/sqliteman:0 kde-apps/klickety:5 media-plugins/caps-plugins:0 dev-java/icedtea:8 kde-apps/konsolekalendar trinity-base/amor:14 media-plugins/gst-plugins-mplex:1.0 dev-lang/spidermonkey:0/mozjs185 kde-frameworks/ktextwidgets:5/5.40 kde-apps/kalgebra:5 net-ftp/filezilla:0 media-libs/id3lib:0 app-text/rarian:0 media-plugins/gst-plugins-modplug:1.0 kde-frameworks/kcodecs:5/5.40 dev-qt/qtmultimedia:4 kde-apps/kaddressbook kde-frameworks/attica:5/5.40 app-text/libwpg dev-libs/tinyxml:0 kde-apps/kdesdk-thumbnailers:5 dev-qt/qtscript:5/5.7 kde-apps/ktp-contact-list:5 media-libs/qimageblitz:0 dev-util/ninja:0 dev-libs/efl:0 media-libs/libsfml:0 dev-qt/qtwidgets:5/5.7 kde-plasma/plasma-workspace:5 dev-qt/qdbus:5/5.7 media-libs/rubberband:0 media-libs/libgltf:0 dev-libs/sni-qt:0 sys-apps/paludis:0 games-board/stockfish:0 dev-util/google-perftools:0/4 media-sound/qjackctl:0 app-office/libalkimia:0 media-libs/libcaca:0 kde-apps/khelpcenter:5 dev-lang/swig:0 dev-libs/xerces-c:0 media-sound/projectm-pulseaudio:0 media-video/plasma-mediacenter:5 kde-apps/kaccounts-integration:5 games-puzzle/gnome-sudoku:0 sci-libs/libqalculate:0/6 kde-frameworks/kdelibs4support:5/5.40 dev-qt/qt-creator:0 media-libs/plotutils:0 sys-devel/gcc:6.4.0 kde-apps/kqtquickcharts media-libs/flac:0 dev-qt/tqt:3 dev-lang/spidermonkey:38 media-sound/lilypond:0 x11-libs/qscintilla dev-qt/linguist-tools:5/5.7 kde-apps/kdepimlibs:4/4.14 dev-python/wxpython:3.0 media-gfx/ufraw:0 dev-qt/qtwebengine:5/5.7 media-libs/chromaprint:0/1 kde-frameworks/khtml games-fps/sauerbraten:0 kde-apps/libkeduvocdocument:5 kde-apps/knetwalk:5 kde-apps/kdebase-kioslaves:4/16.04 kde-apps/ktp-filetransfer-handler:5 app-text/mecab:0 dev-libs/grantlee media-plugins/gst-plugins-modplug:0.10 sci-geosciences/qmapshack:0 kde-apps/kruler:5 dev-cpp/libgnomecanvasmm:2.6 kde-apps/ark:5 kde-apps/kleopatra kde-apps/libkomparediff2:5 app-text/libabw:0 app-misc/recoll:0 app-admin/elektra media-gfx/pstoedit:0 dev-libs/libattica:0 dev-qt/qthelp:5/5.7 kde-apps/kmplot:5 kde-frameworks/prison:5/5.40 media-libs/vamp-plugin-sdk:0 kde-frameworks/kparts:5/5.40 media-libs/raul:0 dev-cpp/atkmm:0 kde-apps/okteta:5 dev-util/kdevelop:5 dev-db/xbase:0 kde-apps/ksnakeduel sci-geosciences/opencpn-plugin-findit:0 app-arch/p7zip:0 app-text/opensp:0 dev-qt/designer:4 dev-libs/libconfig:0 kde-apps/kdf:5 kde-apps/kshisen:5 app-text/html2text:0 kde-apps/kstars:5 media-video/mjpegtools:1 kde-apps/klines:5 dev-libs/pugixml:0 media-libs/glu:0 kde-frameworks/threadweaver:5/5.40 dev-cpp/gtksourceviewmm:3.0 app-text/teckit:0 dev-db/mariadb:0/18 kde-apps/kreversi app-backup/luckybackup:0 kde-frameworks/prison dev-qt/qtquickcontrols2:5/5.7 kde-frameworks/ktexteditor:5/5.40 sci-libs/cln:1 app-text/tesseract:0 dev-util/re2c:0 dev-qt/qtwayland:5/5.7 kde-plasma/oxygen:5 app-text/goldendict:0 dev-qt/qtlocation:5/5.7 kde-plasma/bluedevil:5 dev-cpp/muParser:0 kde-apps/kimagemapeditor kde-apps/kdenetwork-filesharing:5 kde-frameworks/kplotting:5/5.40 kde-plasma/kwayland-integration:5 dev-util/systemtap:0 dev-python/subunit:0 kde-apps/libkcompactdisc kde-apps/dragon:5 kde-apps/kwave:5 net-libs/gnutls:0/30 sci-geosciences/opencpn-plugin-otcurrent:0 dev-java/icedtea-web:0 kde-apps/kigo kde-apps/kmouth dev-vcs/subversion:0 kde-apps/kteatime:5 dev-python/pyqwt:5 media-libs/portaudio:0 kde-apps/libkexiv2:4/15.08 kde-plasma/plasma-integration:5 kde-apps/kanagram:5 sys-block/partitionmanager:5 kde-apps/artikulate:5 kde-apps/kdepim-runtime games-emulation/dosbox:0 media-libs/smpeg2:0 dev-qt/qtdbus:4 dev-qt/qtconcurrent:5/5.7 kde-apps/poxml:5 media-libs/libvisio:0 kde-frameworks/kross kde-apps/ktp-common-internals:5 app-text/libmwaw:0 media-sound/mixxx:0 kde-frameworks/kguiaddons:5/5.40 net-print/hplip:0 kde-frameworks/kded:5/5.40 media-gfx/asymptote:0 net-wireless/wpa_supplicant:0 dev-qt/qtxmlpatterns:4 sys-cluster/openmpi:0 dev-util/source-highlight:0 media-video/simplescreenrecorder:0 dev-libs/xapian:0/1.2.22 dev-qt/qtxml:5/5.7 kde-apps/konsolepart:4/4.14 sys-libs/db:5.3 media-libs/taglib:0 kde-frameworks/sonnet:5/5.40 kde-apps/cantor:5 kde-plasma/khotkeys:5 sci-geosciences/opencpn-plugin-launcher:0 dev-libs/icu-layoutex:0/58.2 dev-libs/quazip:0 kde-apps/kdebugsettings:5 mail-client/thunderbird:0 media-plugins/kodi-visualization-projectm:0 kde-apps/kollision:5 kde-apps/konsole:5 dev-libs/gjs:0 kde-apps/libkmahjongg:5 kde-plasma/kscreen:5 media-libs/qt-gstreamer:0 media-sound/jack-audio-connection-kit:2 dev-libs/libebml:0/4 kde-apps/rocs:5 kde-plasma/libkscreen:5 kde-frameworks/kcmutils:5/5.40 dev-qt/designer:5/5.7 media-libs/ilmbase:0/11 app-arch/lziprecover:0 kde-apps/libkcddb dev-libs/qqwing:0/2 sci-visualization/gnuplot:0 media-plugins/kodi-visualization-fishbmc:0 dev-python/PyQt4:0 kde-apps/ksquares:5 sys-devel/gcc dev-qt/qtxmlpatterns:5/5.7 kde-frameworks/kdoctools:5/5.40 kde-apps/kapptemplate:5 dev-lang/php:5 media-libs/gexiv2:0 games-action/minetest:0 kde-frameworks/kpty:5/5.40 dev-libs/qjson:0 sys-devel/gcc kde-plasma/user-manager:5 kde-plasma/polkit-kde-agent:5 kde-apps/kbounce:5 dev-embedded/uisp:0 dev-cpp/libxmlpp:2.6 kde-frameworks/kemoticons:5/5.40 sys-auth/polkit-qt:0 www-plugins/gnash:0 dev-cpp/libbinio:0 kde-frameworks/kdelibs:4 net-libs/libktorrent:5 dev-qt/qtscript:4 kde-apps/dolphin-plugins:4/4.14 kde-frameworks/kpackage:5/5.40 kde-apps/kdebase-data:4/16.04 kde-apps/kio-extras:5 kde-plasma/plasma-sdk:5 kde-apps/kontact media-gfx/synnefo:0 kde-apps/krdc:5 x11-libs/vte:2 media-gfx/exiv2:0/26 media-libs/ftgl:0 dev-vcs/qgit:0 net-libs/webkit-gtk:4 kde-apps/katepart:4/4.14 dev-cpp/yaml-cpp:0 dev-cpp/lucene++:0 app-text/qpdf:0/18 app-dicts/qvortaro:0 app-office/scribus:0 trinity-apps/kfouleggs:14 media-tv/kodi:0 app-emulation/virtualbox:0 kde-apps/kross-interpreters:5 sys-devel/llvm:0/3.9.1 dev-util/android-tools:0 dev-python/pivy:0 kde-apps/ksirk trinity-base/tdelibs:14 dev-cpp/clucene:1 kde-apps/kcharselect:5 dev-python/pyicu:0 net-libs/signon-ui:0 media-libs/mlt:0 dev-util/xxdiff:0 dev-libs/gmp:0/10.4 net-libs/libproxy:0 dev-perl/Encode-Detect:0 kde-plasma/breeze-gtk:5 sci-libs/hdf5:0/1.8.18 kde-misc/kdiff3 media-libs/x265:0/102 app-accessibility/onboard:0 x11-themes/qtstyleplugins:5 dev-libs/libcec:0 kde-plasma/plasma-desktop:5 sys-apps/groff:0 dev-libs/botan:0 www-client/firefox:0 mail-mta/nullmailer:0 net-libs/signond:0 kde-apps/audiocd-kio media-libs/opencollada:0 dev-qt/qtnetwork:5/5.7 dev-libs/dbus-1-tqt:0 media-libs/gegl:0 sys-power/acpitool:0 media-libs/audiofile:0/1 kde-frameworks/kauth:5/5.40 kde-apps/step:5 media-sound/drumstick:0 kde-plasma/qguiplatformplugin_kde:4/4.11 app-emulation/bochs:0 x11-libs/gtkmathview:0 dev-python/wxpython:2.8 kde-frameworks/kwindowsystem:5/5.40 dev-python/matplotlib:0 net-misc/hylafaxplus:0 dev-cpp/libcmis:0.5 dev-libs/icu:0/58.2 kde-frameworks/kglobalaccel:5/5.40 media-sound/musescore:0 media-libs/musicbrainz:5 kde-apps/katomic:5 dev-qt/qtprintsupport:5/5.7 dev-qt/qtsql:5/5.7 media-libs/libmediaart:2 dev-python/pycld2:0 media-libs/libclxclient:0 net-nds/openldap:0 kde-apps/kwrite:5 dev-db/sqlitestudio:0 app-admin/testdisk:0 media-sound/patchage:0 app-text/libetonyek:0 kde-frameworks/kjsembed:5/5.40 sci-mathematics/octave:0/4.2.1 gnome-extra/zeitgeist:0 kde-apps/ffmpegthumbs:4/16.08 net-libs/nodejs:0 x11-libs/flowcanvas:0 sys-apps/lshw:0 kde-apps/baloo-widgets:5 kde-apps/parley:5 app-arch/snappy:0 app-arch/zstd:0/1 kde-apps/kblackbox:5 dev-util/gource:0 dev-util/ragel:0 app-i18n/poedit:0 kde-frameworks/plasma:5/5.40 media-sound/cadence:0 kde-apps/kturtle:5 kde-apps/libkonq:4/16.08 media-gfx/krita:5 app-text/libodfgen:0 kde-apps/umbrello:5 kde-frameworks/ki18n:5/5.40 dev-cpp/gtkmm:3 kde-apps/ksudoku app-crypt/qca:2 media-libs/libfpx:0/1 kde-misc/kdeconnect:5 dev-libs/boost:0/1.63.0 kde-apps/gwenview:5 media-sound/mpd:0 x11-misc/touchegg:0 kde-apps/khangman:5 kde-apps/konquest app-text/highlight:0 kde-apps/svgpart media-libs/libmatroska:0/6 app-text/aspell:0 kde-apps/kapman:5 kde-apps/granatier:5 net-print/dymo-cups-drivers:0 x11-libs/agg:0 kde-apps/kmousetool kde-frameworks/kxmlgui:5/5.40 media-gfx/utsushi:0 sci-geosciences/opencpn-plugin-iacfleet:0 app-text/libwpd:0 kde-plasma/powerdevil:5 app-pda/libplist:0/3.1.0 kde-frameworks/kunitconversion:5/5.40 dev-libs/grail:0 media-libs/openal:0 media-libs/libcdr:0 x11-libs/wxGTK:2.8 dev-qt/qtsql:4 app-admin/systemdgenie:5 dev-libs/qcustomplot:0 dev-libs/qoauth lxqt-base/liblxqt:0 sci-libs/scipy:0 media-libs/ladspa-cmt:0 kde-frameworks/syntax-highlighting:5/5.40 dev-util/cmake:0 dev-libs/libdbusmenu-qt:0 app-i18n/uchardet:0 app-arch/unar:0 dev-libs/soprano:0 media-sound/clementine:0 dev-qt/qthelp:4 dev-python/numexpr:0 x11-plugins/compiz-plugins-experimental:0 media-libs/libzmf:0 kde-frameworks/kwallet:5/5.40 app-text/libmspub:0 dev-libs/libofx:0 dev-python/shiboken:0 media-video/movit:0 app-text/stardict:0 media-libs/phonon-gstreamer:0 dev-libs/jsoncpp:0 dev-util/electron net-wireless/gnuradio:0/3.7.11 media-libs/gegl:0.3 media-sound/jack_capture:0 dev-java/icedtea kde-frameworks/baloo:5/5.40 media-sound/ardour:4 kde-frameworks/kitemviews:5/5.40 dev-qt/qt3support:4 kde-apps/kgeography:5 kde-apps/krfb:5 dev-db/mysql-connector-c++:0 kde-apps/kcron:5 media-libs/libvpx:0/3 kde-apps/zeroconf-ioslave media-gfx/imagemagick:0/6.9.9.31 dev-util/patchelf:0 dev-qt/qtdbus:5/5.7 dev-qt/qtchooser:0 net-misc/nitroshare:0 sci-geosciences/opencpn-plugin-ocpn_draw:0 media-libs/libopenraw:0 sys-libs/kpmcore x11-misc/touchegg-gui:0 dev-libs/grantlee:5 media-gfx/scantailor:0 kde-apps/kcolorchooser:5 app-office/texmacs:0 kde-frameworks/kservice:5/5.40 app-office/calligra media-sound/alsamixer-app:0 kde-apps/kfourinline:5 dev-qt/qtsensors:5/5.7 dev-libs/protobuf-c:0 dev-vcs/monotone:1 media-libs/phonon-vlc:0 media-gfx/librecad:0 kde-frameworks/kactivities-stats kde-plasma/libksysguard:5 sci-libs/netcdf-cxx:3 dev-qt/qtsvg:5/5.7 net-analyzer/wireshark dev-games/irrlicht:0 media-sound/aeolus:0 dev-libs/leveldb:0 app-office/lyx:0 dev-qt/qtdeclarative:5/5.7 dev-lang/spidermonkey:24 kde-apps/kholidays:5 media-libs/tiff:0 app-forensics/afl:0 sci-calculators/qalculate-gtk:0 app-text/libstaroffice:0 media-sound/alsamixergui:0 sci-physics/bullet:0/2.83.4 kde-apps/ktp-desktop-applets:5 kde-apps/kspaceduel media-libs/coin:0 media-libs/webrtc-audio-processing:0 net-libs/nghttp2:0/1.14 app-emulation/fuse-utils:0 dev-libs/protobuf:0/15 kde-apps/kwalletmanager:5 kde-apps/libkexiv2:5 app-arch/par2cmdline:0 app-text/poppler:0/68 kde-apps/kmines:5 kde-plasma/kde-cli-tools:5 net-print/npadmin:0 x11-libs/fltk:1 app-dicts/kasumi:0 kde-apps/kdegraphics-mobipocket:4/16.08 dev-util/cppunit:0 kde-apps/picmi:5 media-libs/libclthreads:0 net-libs/accounts-qt:0 media-libs/libprojectm-qt:0 kde-apps/libkmahjongg dev-util/gperf:0 kde-apps/kiten:5 net-libs/telepathy-qt:0 app-text/fbreader:0 sys-apps/smartmontools:0 kde-apps/keditbookmarks media-video/vlc:0/5-8 kde-apps/kmag games-simulation/openttd:0 media-libs/lensfun:0 kde-apps/knavalbattle:5 app-text/sword:0 media-sound/pavucontrol:0 kde-apps/ktp-send-file:5 dev-libs/libsigc++:2 kde-frameworks/kxmlrpcclient:5/5.40 kde-frameworks/nepomuk-core:4/4.14 app-text/djvu:0 kde-apps/signon-kwallet-extension:5 dev-qt/qtpositioning:5/5.7 kde-apps/filelight:5 kde-apps/kpat:5 dev-cpp/antlr-cpp:2 kde-apps/akonadiconsole kde-apps/libkdcraw:4/15.08 kde-apps/libkdegames:5 app-text/libwpg:0 app-text/hunspell:0/1.6 dev-libs/double-conversion:0/1 dev-db/sqlitebrowser:0 app-dicts/verbiste:0 kde-frameworks/kfilemetadata:4 kde-apps/kde-dev-utils kde-plasma/kmenuedit:5 kde-apps/kdesdk-kioslaves kde-apps/kmail media-plugins/kipi-plugins:5 kde-apps/kig:5 kde-plasma/ksshaskpass:5 media-sound/supercollider:0 kde-apps/palapeli www-misc/htdig:0 dev-util/regexxer:0 app-text/texlive-core:0 gnome-extra/gnome-color-manager:0 net-analyzer/nmap:0 kde-apps/ktp-call-ui:5 trinity-base/arts:14 kde-apps/libkgapi dev-cpp/pangomm:1.4 app-office/abiword:2 app-arch/lzip:0 net-libs/signon-oauth2:0 dev-libs/crypto++:0 kde-apps/kdialog x11-libs/libqxt:0 kde-plasma/milou:5 kde-frameworks/kidletime:5/5.40 dev-qt/assistant:5/5.7 kde-apps/klettres:5 net-libs/telepathy-logger-qt:5 kde-apps/kjumpingcube:5 kde-apps/okular media-libs/libopenshot:0 dev-libs/darts:0 app-portage/eix:0 media-libs/adplug:0 kde-apps/minuet:5 kde-frameworks/kiconthemes:5/5.40 media-plugins/libvisual-plugins:0.4 media-libs/phonon:0 net-print/cups-filters:0 kde-apps/lskat app-text/libwps:0 dev-libs/libpqxx:0 media-libs/libopenshot-audio:0 kde-apps/kblocks:5 sys-block/thin-provisioning-tools:0 dev-cpp/gmock:0 dev-util/automoc:0 kde-apps/ktouch kde-apps/ktp-approver:5 dev-libs/libqtxdg:0 kde-apps/juk kde-apps/marble sys-libs/ncurses:0/6 media-libs/zita-alsa-pcmi:0 dev-qt/qtsingleapplication:0 dev-qt/qtgraphicaleffects:5/5.7 media-sound/carla:0 net-print/cups:0 kde-apps/kbruch:5 kde-frameworks/kcompletion:5/5.40 kde-apps/bovo:5 x11-terms/cool-retro-term:0 media-video/ffmpegthumbnailer:0 dev-cpp/gtkmm:2.4 media-gfx/inkscape:0 dev-qt/qtwebkit sci-geosciences/gpsd:0/22 app-office/texmaker:0 app-arch/advancecomp:0 app-text/calibre:0 app-text/dvisvgm:0 kde-apps/kalzium kde-apps/kget app-crypt/md5deep:0 kde-frameworks/kbookmarks:5/5.40 kde-apps/killbots:5 kde-apps/kaccounts-providers:5 media-libs/libsoundtouch:0 kde-apps/calendarjanitor kde-apps/spectacle:5 kde-plasma/kwrited:5 dev-qt/qttest:4 kde-apps/ktp-auth-handler:5 media-libs/openexr:0/21 sci-geosciences/opencpn-plugin-gxradar:0 sci-libs/geos:0 kde-plasma/kgamma:5 sci-geosciences/opencpn-plugin-watchdog:0 media-video/sswf:0 kde-frameworks/knewstuff:5/5.40 kde-frameworks/kitemmodels:5/5.40 www-plugins/adobe-flash:22 media-libs/libpagemaker:0 kde-frameworks/kwayland:5/5.40 sci-geosciences/opencpn:0 dev-cpp/glibmm:2 kde-apps/kiriki:5 media-gfx/graphviz:0 kde-frameworks/karchive:5/5.40 dev-cpp/libglademm:2.4 kde-apps/akregator kde-frameworks/kimageformats kde-frameworks/kcoreaddons:5/5.40 app-editors/kile media-sound/pulseaudio:0 kde-apps/kbreakout:5 kde-apps/kolourpaint:5 sci-geosciences/opencpn-plugin-objsearch:0 app-text/libebook:0 kde-apps/analitza:5 dev-qt/assistant:4 kde-plasma/plasma-pa:5 dev-qt/qtgui:4 kde-apps/kmix:5 kde-frameworks/kactivities media-libs/libmodplug:0 kde-frameworks/kio:5/5.40 net-p2p/ktorrent:5 kde-frameworks/kdeclarative:5/5.40 media-libs/smpeg:0 x11-libs/qwt:6/1.3 net-print/lm1100:0 media-libs/libraw:0/16 kde-frameworks/kconfig:5/5.40 net-libs/webkit-gtk:3/25 net-libs/zeromq:0/5 kde-plasma/kdeplasma-addons:5 kde-frameworks/kdnssd lxqt-base/lxqt-config:0 app-antivirus/clamav:0 media-plugins/live:0/7 kde-frameworks/kfilemetadata:5/5.40 media-libs/suil:0 kde-apps/kamera:5 dev-qt/qttest:5/5.7 app-text/mythes:0 dev-libs/libpcre:3 dev-python/qscintilla-python:0 media-sound/mumble:0 kde-frameworks/networkmanager-qt:5/5.40 app-text/libwpd kde-apps/ktp-accounts-kcm:5 dev-qt/qdoc kde-apps/print-manager:5 kde-frameworks/kpeople media-libs/libfreehand:0 kde-frameworks/kirigami media-libs/SoQt:0 x11-libs/wxGTK:3.0 kde-apps/libksane:5 kde-apps/libkdcraw:5 kde-frameworks/nepomuk-widgets:4/4.14 app-crypt/pinentry:0 kde-frameworks/kcrash:5/5.40 kde-apps/ktp-text-ui:5 gnome-extra/gnome-system-monitor:0 media-libs/opencv:0 dev-qt/qtbluetooth:5/5.7 app-office/libreoffice:0 sci-geosciences/opencpn-plugin-squiddio:0 dev-lang/php:7.1 kde-frameworks/kconfigwidgets:5/5.40 media-libs/libmp4v2:0 dev-qt/qtopengl:4 dev-libs/icu-le-hb:0 dev-libs/boehm-gc:0 kde-plasma/kscreenlocker:5 media-libs/libsidplay:2 sci-geosciences/opencpn-plugin-polar:0 dev-qt/qtwebsockets:5/5.7 kde-apps/kdiamond:5 dev-qt/qtcore:5/5.7 kde-plasma/sddm-kcm:5 media-libs/exempi:2 trinity-base/libtdegames:14 kde-apps/kcachegrind app-text/kbibtex dev-qt/qtopengl:5/5.7 dev-libs/frame:0 dev-qt/qtdeclarative:4 dev-libs/librevenge:0 kde-plasma/kinfocenter:5 kde-plasma/plasma-nm:5 dev-cpp/gtest:0 sys-apps/gptfdisk:0 dev-ruby/unf_ext:0 kde-apps/kubrick kde-apps/kwordquiz:5 app-portage/kuroo:0 kde-apps/ktp-kded-module:5 kde-frameworks/kwidgetsaddons:5/5.40 dev-qt/qtquickcontrols:5/5.7
+
+These are the packages that would be merged, in reverse order:
+
+Calculating dependencies... done!
+
+emerge: there are no ebuilds to satisfy "dev-lang/php:7".
+-bash
+failed with the error on /usr/local/bin/error-notify line 28 in /root at 20180118231335383503651_2d303530300a:
+An error was reported on  line 7509 in /root at 20180118231335362704630_2d303530300a.
+elegiac ~ # 
