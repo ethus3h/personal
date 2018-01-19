@@ -1,0 +1,127 @@
+elegiac ~ # emerge --update --newuse --deep --with-bdeps=y --backtrack 1000 @world --exclude clisp --exclude qtwebkit
+
+These are the packages that would be merged, in reverse order:
+
+Calculating dependencies... done!
+
+!!! Multiple package instances within a single package slot have been pulled
+!!! into the dependency graph, resulting in a slot conflict:
+
+sys-libs/readline:0
+
+  (sys-libs/readline-7.0_p3:0/7::gentoo, installed) pulled in by
+    sys-libs/readline:0/7= required by (media-gfx/fontforge-20170731-r3:0/0::gentoo, installed)
+                     ^^^^^                                                                                                         
+    >=sys-libs/readline-5.2:0/7= required by (sys-block/parted-3.2-r1:0/0::gentoo, installed)
+                           ^^^^^                                                                                                 
+    >=sys-libs/readline-4.1:0/7= required by (dev-lang/python-2.7.14-r1:2.7/2.7::gentoo, installed)
+                           ^^^^^                                                                                                       
+    >=sys-libs/readline-6.2_p5-r1:0/7=[abi_x86_32(-),abi_x86_64(-)] required by (dev-db/unixODBC-2.3.4-r1:0/0::gentoo, installed)
+                                 ^^^^^                                                                                                                               
+    sys-libs/readline:0/7= required by (net-dns/bind-tools-9.11.1_p3:0/0::gentoo, installed)
+                     ^^^^^                                                                                                      
+    sys-libs/readline:0/7= required by (sys-fs/xfsprogs-4.14.0:0/0::gentoo, installed)
+                     ^^^^^                                                                                                
+    >=sys-libs/readline-6.2_p5-r1:0/7=[abi_x86_64(-)] required by (sys-libs/slang-2.3.0:0/0::gentoo, installed)
+                                 ^^^^^                                                                                                             
+    >=sys-libs/readline-4.1:0/7= required by (sys-devel/bc-1.06.95-r2:0/0::gentoo, installed)
+                           ^^^^^                                                                                                 
+    sys-libs/readline:0/7= required by (dev-libs/libpcre-8.41-r1:3/3::gentoo, installed)
+                     ^^^^^                                                                                                  
+    sys-libs/readline:0/7= required by (dev-scheme/guile-1.8.8-r3:12/8::gentoo, installed)
+                     ^^^^^                                                                                                    
+    sys-libs/readline:0/7= required by (net-wireless/bluez-5.47-r1:0/3::gentoo, installed)
+                     ^^^^^                                                                                                    
+    sys-libs/readline:0/7=[abi_x86_32(-),abi_x86_64(-)] required by (sys-libs/gdbm-1.13-r2:0/1.13::gentoo, installed)
+                     ^^^^^                                                                                                                               
+    >=sys-libs/readline-4.1:0/7= required by (dev-lang/python-3.6.3-r1:3.6/3.6m::gentoo, installed)
+                           ^^^^^                                                                                                       
+    sys-libs/readline:0/7=[abi_x86_32(-),abi_x86_64(-)] required by (dev-db/sqlite-3.20.1-r1:3/3::gentoo, installed)
+                     ^^^^^                                                                                                                              
+    sys-libs/readline:0/7= required by (app-crypt/gnupg-2.2.4:0/0::gentoo, installed)
+                     ^^^^^                                                                                               
+    >=sys-libs/readline-4.1:0/7= required by (dev-lang/python-3.4.5-r1:3.4/3.4m::gentoo, installed)
+                           ^^^^^                                                                                                       
+    sys-libs/readline:0/7= required by (dev-libs/libxml2-2.9.7:2/2::gentoo, installed)
+                     ^^^^^                                                                                                
+    sys-libs/readline:0/7= required by (dev-lang/spidermonkey-1.8.5-r6:0/mozjs185::gentoo, installed)
+                     ^^^^^                                                                                                               
+
+  (sys-libs/readline-6.3_p8-r3:0/0::gentoo, ebuild scheduled for merge) pulled in by
+    sys-libs/readline:0/0= required by (net-fs/samba-4.5.10-r1:0/0::gentoo, installed)
+                     ^^^^^                                                                                                
+
+dev-libs/icu:0
+
+  (dev-libs/icu-58.2-r1:0/58.2::gentoo, installed) pulled in by
+    dev-libs/icu:0/58.2=[abi_x86_32(-),abi_x86_64(-)] required by (dev-db/sqlite-3.20.1-r1:3/3::gentoo, installed)
+                ^^^^^^^^                                                                                                                              
+    >=dev-libs/icu-51.2-r1:0/58.2=[abi_x86_32(-),abi_x86_64(-)] required by (dev-libs/libxml2-2.9.7:2/2::gentoo, installed)
+                          ^^^^^^^^                                                                                                                             
+    >=dev-libs/icu-3.6:0/58.2=[abi_x86_64(-)] required by (dev-libs/boost-1.63.0:0/1.63.0::gentoo, installed)
+                      ^^^^^^^^                                                                                                                   
+    >=dev-libs/icu-51.2-r1:0/58.2=[abi_x86_32(-),abi_x86_64(-)] required by (media-libs/harfbuzz-1.7.2:0/0.9.18::gentoo, installed)
+                          ^^^^^^^^                                                                                                                                     
+
+  (dev-libs/icu-58.1-r1:0/58.1::gentoo, ebuild scheduled for merge) pulled in by
+    dev-libs/icu:0/58.1= required by (dev-qt/qtwebengine-5.7.1-r2:5/5.7::gentoo, installed)
+                ^^^^^^^^                                                                                                       
+    dev-libs/icu:0/58.1= required by (dev-qt/qtcore-5.7.1-r3:5/5.7::gentoo, installed)
+                ^^^^^^^^                                                                                                  
+    dev-libs/icu:0/58.1= required by (dev-qt/qtwebkit-5.7.1:5/5.7::gentoo, installed)
+                ^^^^^^^^                                                                                                 
+
+x11-base/xorg-server:0
+
+  (x11-base/xorg-server-1.19.5:0/1.19.5::gentoo, ebuild scheduled for merge) pulled in by
+    (no parents that aren't satisfied by other packages in this slot)
+
+  (x11-base/xorg-server-1.19.2:0/1.19.2::gentoo, installed) pulled in by
+    x11-base/xorg-server:0/1.19.2= required by (x11-drivers/xf86-input-synaptics-1.9.0:0/0::gentoo, installed)
+                        ^^^^^^^^^^                                                                                                                
+    x11-base/xorg-server:0/1.19.2= required by (x11-drivers/xf86-input-evdev-2.10.5:0/0::gentoo, installed)
+                        ^^^^^^^^^^                                                                                                             
+    x11-base/xorg-server:0/1.19.2= required by (x11-drivers/xf86-video-vmware-13.2.1:0/0::gentoo, installed)
+                        ^^^^^^^^^^                                                                                                              
+    x11-base/xorg-server:0/1.19.2= required by (x11-drivers/xf86-video-ati-7.9.0:0/0::gentoo, installed)
+                        ^^^^^^^^^^                                                                                                          
+
+dev-libs/protobuf:0
+
+  (dev-libs/protobuf-3.1.0:0/11::gentoo, ebuild scheduled for merge) pulled in by
+    dev-libs/protobuf:0/11= required by (dev-qt/qtwebengine-5.7.1-r2:5/5.7::gentoo, installed)
+                     ^^^^^^                                                                                                       
+
+  (dev-libs/protobuf-3.5.1.1:0/15::gentoo, installed) pulled in by
+    ~dev-libs/protobuf-3.5.1.1 required by (dev-java/protobuf-java-3.5.1.1:0/15::gentoo, ebuild scheduled for merge)
+    ^                  ^^^^^^^                                                                                                                                             
+    ~dev-libs/protobuf-3.5.1.1 required by (dev-python/protobuf-python-3.5.1.1:0/15::gentoo, ebuild scheduled for merge)
+    ^                  ^^^^^^^                                                                                                                                                 
+
+
+!!! The slot conflict(s) shown above involve package(s) which may need to
+!!! be rebuilt in order to solve the conflict(s). However, the following
+!!! package(s) cannot be rebuilt for the reason(s) shown:
+
+  (dev-qt/qtwebkit-5.7.1:5/5.7::gentoo, installed): matched by --exclude argument
+
+
+It may be possible to solve this problem by using package.mask to
+prevent one of those packages from being selected. However, it is also
+possible that conflicting dependencies exist such that they are
+impossible to satisfy simultaneously.  If such a conflict exists in
+the dependencies of two different packages, then those packages can
+not be installed simultaneously.
+
+For more information, see MASKED PACKAGES section in the emerge man
+page or refer to the Gentoo Handbook.
+
+
+emerge: there are no ebuilds to satisfy "media-gfx/exiv2:0/14=".
+(dependency required by "kde-frameworks/kfilemetadata-5.40.0::gentoo" [installed])
+(dependency required by "@selected" [set])
+(dependency required by "@world" [argument])
+-bash
+failed with the error on /usr/local/bin/error-notify line 28 in /root at 20180118223010801908389_2d303530300a:
+An error was reported on  line 7507 in /root at 20180118223010783503599_2d303530300a.
+elegiac ~ # 
