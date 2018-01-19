@@ -1,0 +1,32 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo -i
+Password: 
+elegiac ~ # emerge -pqv '=dev-qt/qtwebkit-5.7.1::gentoo'
+[ebuild   R   ] dev-qt/qtwebkit-5.7.1  USE="geolocation jit multimedia opengl printsupport qml webp -debug -gstreamer -gstreamer010 -orientation {-test} -webchannel" 
+elegiac ~ # emerge -pqv '=dev-lang/clisp-2.49-r9::gentoo'
+
+emerge: there are no ebuilds to satisfy "=dev-lang/clisp-2.49-r9::gentoo".
+
+emerge: searching for similar names...
+emerge: Maybe you meant any of these: dev-lang/ispc, dev-lang/tcl, dev-lang/lisaac?
+-bash
+failed with the error on /usr/local/bin/error-notify line 28 in /root at 20180118221133113041652_2d303530300a:
+An error was reported on  line 2 in /root at 20180118221133093239728_2d303530300a.
+elegiac ~ # emerge -pqv '=dev-lang/clisp-2.49-r9'
+
+emerge: there are no ebuilds to satisfy "=dev-lang/clisp-2.49-r9".
+
+emerge: searching for similar names...
+emerge: Maybe you meant any of these: dev-lang/ispc, dev-lang/tcl, dev-lang/lisaac?
+-bash
+failed with the error on /usr/local/bin/error-notify line 28 in /root at 20180118221211597647921_2d303530300a:
+An error was reported on  line 3 in /root at 20180118221211579341205_2d303530300a.
+elegiac ~ # emerge -pqv '=dev-lang/clisp-2.49'
+
+emerge: there are no ebuilds to satisfy "=dev-lang/clisp-2.49".
+
+emerge: searching for similar names...
+emerge: Maybe you meant any of these: dev-lang/ispc, dev-lang/tcl, dev-lang/lisaac?
+-bash
+failed with the error on /usr/local/bin/error-notify line 28 in /root at 20180118221229481724178_2d303530300a:
+An error was reported on  line 4 in /root at 20180118221229462039004_2d303530300a.
+elegiac ~ # 
