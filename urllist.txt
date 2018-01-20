@@ -31,3 +31,9 @@ https://www.hastebin.com/raw/arisudavun
 http://termbin.com/hgnd
 https://www.hastebin.com/anusewaqaf.xml
 https://www.hastebin.com/raw/anusewaqaf
+https://www.hastebin.com/nocovasiqe.php
+https://www.hastebin.com/raw/nocovasiqe
+https://www.hastebin.com/ilohijomoj.php
+https://www.hastebin.com/raw/ilohijomoj
+https://www.hastebin.com/raw/hanidazuha
+https://haible.de/bruno/gnu/clisp-2.49.60.tar.bz2
