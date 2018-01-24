@@ -17,7 +17,7 @@ void draw() {
         ellipsePosX=1000 - mouseX;
       }
       if (ellipsePosX > 500) {
-        ellipsePosX=mouseX / mouseY;
+        ellipsePosX=mouseX;
       }
     }
     if ( mouseY < 1000) {
@@ -26,7 +26,7 @@ void draw() {
         ellipsePosY=1000 - mouseY;
       }
       if (ellipsePosY > 500) {
-        ellipsePosY=mouseY/ mouseX;
+        ellipsePosY=mouseY;
       }
     }
   }
