@@ -5,7 +5,7 @@ void setup() {
 }
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
   try {
-    int tempVal=(int)((y2-y1)/(x2-x1))*(dist-x1);
+    return (int)((y2-y1)/(x2-x1))*(dist-x1);
   }
   catch(Exception e) {
     return 0;
