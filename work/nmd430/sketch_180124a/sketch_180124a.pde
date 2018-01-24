@@ -12,14 +12,14 @@ void draw() {
   rect(0, 0, 1800, 1800);
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
-  int ellipsePosX=0;
-  int ellipsePosY=0;
   int ellipseHomeX=0;
   int ellipseHomeY=0;
+  int ellipsePosX=0;
+  int ellipsePosY=0;
   int distFromMouse=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
   if ( distFromMouse < 1000) {
-    ellipsePosY=linePointY(distFromMouse);
+    ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, distFromMouse);
     ellipsePosX=distFromMouse;
   }
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
