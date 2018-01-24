@@ -12,9 +12,9 @@ void draw() {
   int ellipsePosX=0;
   int ellipsePosY=0;
 
-  if ( mouseX < 1000 && mouseY < 1000) {
-    ellipsePosY=mouseX / mouseY;
-    
+  if ( dist(0,0,mouseX,mouseY) < 1000) {
+    ellipsePosY=mouseX / 1;
+
   }
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
