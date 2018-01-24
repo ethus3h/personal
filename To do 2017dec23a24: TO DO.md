@@ -36,8 +36,6 @@ Jon Hendricks: "Fluxus Codex"
 
 https://www.youtube.com/watch?v=86g4_w4j3jU
 
-https://www.youtube.com/watch?v=C6uqTWHzHvo Audioslave: "Like a Stone"
-
 https://www.youtube.com/watch?v=crSBCZd5fCM Die Antwoord: "I Don't Care"
 
 https://www.youtube.com/watch?v=6IXcxQj0KZU William Pearson: "Interstellar Spheres"
@@ -60,11 +58,7 @@ https://www.youtube.com/watch?v=3WGwKkiv35E Viktoria Modesta: "Prototype"
 
 https://www.youtube.com/watch?v=SwOBl7VoQYQ Lights: "Skydiving"
 
-https://www.youtube.com/watch?v=IMl5B7f2ivk Nicki Minaj / Willow: "Fireball"
-
 https://www.youtube.com/watch?v=d1FbCcsmzQk Pale Waves: "Television Romance"
-
-https://www.youtube.com/watch?v=8joX4UUty5U Sigma / Birdy: "Find Me"
 
 https://www.youtube.com/watch?v=0XZJ5mD6nSU in love with a ghost: "we've never met but, can we have a coffee or something?"
 
@@ -86,8 +80,6 @@ https://www.youtube.com/watch?v=MqCL5w0EmZ0 Transviolet: "Pretty Head"
 
 https://www.youtube.com/watch?v=CU89vXiF5CA Transviolet: "Kaleidoscopes" feat. Reo Cragun
 
-https://www.youtube.com/watch?v=DCak3CUiyFY Jaira Burns: "Ugly"
-
 https://www.youtube.com/watch?v=0gqvYbTY0gI Marshmello: "TaKe IT BaCk"
 
 https://www.youtube.com/watch?v=ELXfTtJAIWE Marshmello: "Want U 2" (Slushii VIP)
@@ -107,8 +99,6 @@ https://www.youtube.com/watch?v=PdnAOfSGkww The Click Five: "Just The Girl" (nig
 https://www.youtube.com/watch?v=7EosYvUJZKg Calvin Harris: "Skrt On Me" feat. Nicki Minaj
 
 https://www.youtube.com/watch?v=xygkT0-alQc Nina Nesbitt: "Chewing Gum"
-
-https://www.youtube.com/watch?v=V5iAOTF38QY Britney Spears: "Alien (Solo Vocal Version)"
 
 https://www.youtube.com/watch?v=UGMO6Ct_bf4 Britney Spears: "Perfume (Feat. Sia) (Version 2)"
 
@@ -140,31 +130,21 @@ https://www.youtube.com/watch?v=PgPwpzjRGe4 Florida Georgia Line: "Sippin' On Fi
 
 https://www.youtube.com/watch?v=57Q7ou-IZtA Keys N Krates: "NOWIMGUNNACHANGE"
 
-https://www.youtube.com/watch?v=QI4go4mf0PY Kendrick Lamar: "DNA."
-
 https://www.youtube.com/watch?v=8BbXUg4GWP8 cupcakKe: "Biggie Smalls"
 
 https://www.youtube.com/watch?v=yN9EovNK5hY ETC!ETC! x Brillz: "Callisto"
 
 https://www.youtube.com/watch?v=izV9QIBRFq8 Zedd: "Follow You Down" feat. Bright Lights (Keys N Krates Remix)
 
-https://www.youtube.com/watch?v=ULHeRdgeT54 San Holo: "Light"
-
-https://www.youtube.com/watch?v=kid6t14N9U0 Carnage: "Bootshaus" feat. Whyel
-
 https://www.youtube.com/watch?v=u-jrWqdH344 Carnage: "Toca" feat. Timmy Trumpet & KSHMR
 
 https://www.youtube.com/watch?v=HDFWnUZZMvQ Marshmello: "ShOw YoU"
-
-https://www.youtube.com/watch?v=QoitiIbdeaM Owl City: "Fireflies" (Said The Sky Remix)
 
 https://www.youtube.com/watch?v=PGW0TZidXiQ Taylor Swift: "Style"
 
 https://www.youtube.com/watch?v=k5TqNsr6YuQ Troye Sivan: "My My My!"
 
 https://www.youtube.com/watch?v=h2reCIR2APk Michael W. Smith: "Place In This World"
-
-https://www.youtube.com/watch?v=0IeuWH1p_R0 Cher Lloyd: "Swagger Jagger"
 
 https://www.youtube.com/watch?v=WRtfCeGM9i0 San Holo: "We Rise" (Acoustic)
 
@@ -175,10 +155,6 @@ https://www.youtube.com/watch?v=ukS7WyUW25I PRISMO: "Pretty Stranger"
 https://www.youtube.com/watch?v=avlEK3PTvw8 Marshmello feat. Khalid: "Silence" (Illenium Remix)
 
 https://www.youtube.com/watch?v=si81bIoZRJQ Porter Robinson: "Divinity"
-
-https://www.youtube.com/watch?v=G0IEWwtFT2M Owl City: "Lucid Dream"
-
-https://www.youtube.com/watch?v=KTL3cxmrUfw The Chainsmokers: "Sick Boy"
 
 https://www.youtube.com/watch?v=VefpeL4tqh0 Nitro Fun: "Cheat Codes"
 
