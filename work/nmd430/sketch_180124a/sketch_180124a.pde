@@ -3,7 +3,8 @@ void setup() {
   size(1800, 1800);
   background(255);
 }
-void linePoint(int x1,int y1,int x2,int y2) {
+int linePointY(int x1,int y1,int x2,int y2, int dist) {
+  return  (int)((y2-y1)/(x2-x1))*(dist-x1);
 }
 
 void draw() {
@@ -18,9 +19,8 @@ void draw() {
   int distFromMouse=(int)dist(ellipseHomeX,ellipseHomeY,mouseX,mouseY);
 
   if ( distFromMouse < 1000) {
-    // Line y = ((mouseY-startY)/(mouseX-startX))*(x-startX)
-    ellipsePosY=;
-
+    ellipsePosY=linePointY(distFromMouse);
+    ellipsePosX=distFromMouse;
   }
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
