@@ -5,9 +5,7 @@ void setup() {
 }
 
 void draw() {
-  while true {
-    background(mouseX);
-    fill(0, 128, 0);
-    ellipse(mouseX, mouseY, 100, 100);
-  }
+  background(mouseX);
+  fill(0, 128, 0);
+  ellipse(mouseX, mouseY, 100, 100);
 }
