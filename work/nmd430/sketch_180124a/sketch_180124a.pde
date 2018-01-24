@@ -5,8 +5,8 @@ void setup() {
 }
 
 void draw() {
-  fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 900);
-  rect(0,0,1000,1000);
+  fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
+  rect(0,0,1800,1800);
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
   int ellipsePosX=0;
   int ellipsePosY=0;
@@ -17,7 +17,7 @@ void draw() {
         ellipsePosX=1000 - mouseX;
       }
       if (ellipsePosX > 500) {
-        ellipsePosX=mouseX;
+        ellipsePosX=mouseX / mouseY;
       }
     }
     if ( mouseY < 1000) {
@@ -26,7 +26,7 @@ void draw() {
         ellipsePosY=1000 - mouseY;
       }
       if (ellipsePosY > 500) {
-        ellipsePosY=mouseY;
+        ellipsePosY=mouseY/ mouseX;
       }
     }
   }
