@@ -11,13 +11,13 @@ void draw() {
   int ellipsePosY=0;
   if( mouseX < 500) {
     ellipsePosX=500;
-    if (mouseX == 0) {
+    if (mouseX != 0) {
          ellipsePosX=500 / mouseX;
     }
   }
   if( mouseY < 500) {
     ellipsePosY=500 / mouseY;
-    if (mouseY == 0) {
+    if (mouseY != 0) {
          ellipsePosY=500 / mouseY;
     }
   }
