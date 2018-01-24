@@ -5,7 +5,7 @@ void setup() {
 }
 
 void draw() {
-  background(mouseX);
+  background((mouseX % 255), (mouseY % 255), ((mouseX+mouseY) % 255));
   fill(0, 128, 0);
   ellipse(mouseX, mouseY, 100, 100);
 }
