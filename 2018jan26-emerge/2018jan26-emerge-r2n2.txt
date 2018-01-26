@@ -1,0 +1,26 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo -i
+Password: 
+elegiac ~ # emerge -pqv '=dev-python/matplotlib-2.1.0-r1::gentoo'
+
+[ebuild   R   ] dev-python/matplotlib-2.1.0-r1  USE="cairo examples gtk2 latex qt5 tk wxwidgets (-doc) -excel -gtk3 -pyside {-test}" PYTHON_TARGETS="python2_7 python3_5* python3_6* -python3_4*" 
+
+!!! Multiple package instances within a single package slot have been pulled
+!!! into the dependency graph, resulting in a slot conflict:
+
+dev-python/matplotlib:0
+
+  (dev-python/matplotlib-2.1.0-r1:0/0::gentoo, ebuild scheduled for merge) pulled in by
+    =dev-python/matplotlib-2.1.0-r1::gentoo (Argument)
+
+  (dev-python/matplotlib-2.1.0-r1:0/0::gentoo, installed) pulled in by
+    dev-python/matplotlib[python_targets_python2_7(-)?,python_targets_python3_4(-)?,python_targets_python3_5(-)?,python_targets_python3_6(-)?,-python_single_target_python2_7(-),-python_single_target_python3_4(-),-python_single_target_python3_5(-),-python_single_target_python3_6(-)] required by (dev-python/ipython-3.2.1-r1:0/0::gentoo, installed)
+                                                                                                                                                                                                                                                                                                                                                                            
+    dev-python/matplotlib[python_targets_python2_7(-)?,python_targets_python3_4(-)?,python_targets_python3_5(-)?,python_targets_python3_6(-)?,-python_single_target_python2_7(-),-python_single_target_python3_4(-),-python_single_target_python3_5(-),-python_single_target_python3_6(-)] required by (dev-python/mpmath-1.0.0:0/0::gentoo, installed)
+                                                                                                                                                                                                                                                                                                                                                                        
+
+
+-bash
+failed with the error on /usr/local/bin/error-notify line 28 in /root at 20180126173616186312838_2d303530300a:
+An error was reported on  line 1 in /root at 20180126173616164480019_2d303530300a.
+elegiac ~ # 
+elegiac ~ # 

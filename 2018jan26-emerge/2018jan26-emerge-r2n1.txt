@@ -1,0 +1,366 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ sudo -i
+Password: 
+elegiac ~ # emerge --info '=dev-python/matplotlib-2.1.0-r1::gentoo'
+Portage 2.3.19 (python 2.7.14-final-0, default/linux/amd64/17.0/desktop/plasma/systemd, gcc-6.4.0, glibc-2.25-r9, 4.9.34-wreathe x86_64)
+=================================================================
+                         System Settings
+=================================================================
+System uname: Linux-4.9.34-wreathe-x86_64-Intel-R-_Core-TM-_i7-6560U_CPU_@_2.20GHz-with-gentoo-2.4.1
+KiB Mem:    16285264 total,   1089936 free
+KiB Swap:   12287996 total,  12242636 free
+Timestamp of repository gentoo: Fri, 26 Jan 2018 18:30:01 +0000
+Head commit of repository gentoo: ec566309ddd25a70e0c70a112b80a1831a022113
+Timestamp of repository R_Overlay: Sat, 30 Sep 2017 09:36:53 +0000
+sh bash 4.4_p12
+ld GNU ld (Gentoo 2.28.1 p1.0) 2.28.1
+ccache version 3.2.4 [disabled]
+app-shells/bash:          4.4_p12::gentoo
+dev-java/java-config:     2.2.0-r3::gentoo
+dev-lang/perl:            5.24.3::gentoo
+dev-lang/python:          2.7.14-r1::gentoo, 3.4.5-r1::gentoo, 3.5.4-r1::gentoo, 3.6.3-r1::gentoo
+dev-util/ccache:          3.2.4::gentoo
+dev-util/cmake:           3.9.6::gentoo
+dev-util/pkgconfig:       0.29.2::gentoo
+sys-apps/baselayout:      2.4.1-r2::gentoo
+sys-apps/openrc:          0.28::gentoo
+sys-apps/sandbox:         2.12::gentoo
+sys-devel/autoconf:       2.13::gentoo, 2.69-r4::gentoo
+sys-devel/automake:       1.10.3-r1::gentoo, 1.11.6-r2::gentoo, 1.12.6::gentoo, 1.14.1::gentoo, 1.15.1-r1::gentoo
+sys-devel/binutils:       2.28.1::gentoo, 2.29.1-r1::gentoo
+sys-devel/gcc:            4.9.3::gentoo, 5.4.0-r3::gentoo, 6.4.0-r1::gentoo
+sys-devel/gcc-config:     1.8-r1::gentoo
+sys-devel/libtool:        2.4.6-r3::gentoo
+sys-devel/make:           4.2.1::gentoo
+sys-kernel/linux-headers: 4.13::gentoo (virtual/os-headers)
+sys-libs/glibc:           2.25-r9::gentoo
+Repositories:
+
+gentoo
+    location: /usr/portage
+    sync-type: rsync
+    sync-uri: rsync://rsync.gentoo.org/gentoo-portage
+    priority: -1000
+    sync-rsync-extra-opts: 
+
+x-portage
+    location: /usr/local/portage
+    masters: gentoo
+    priority: 0
+
+haskell
+    location: /var/lib/layman/haskell
+    masters: gentoo
+    priority: 1
+
+R_Overlay
+    location: /var/lib/layman/R_Overlay
+    masters: gentoo
+    priority: 25
+
+brother-overlay
+    location: /var/lib/layman/brother-overlay
+    masters: gentoo
+    priority: 25
+
+dotnet
+    location: /var/lib/layman/dotnet
+    masters: gentoo
+    priority: 25
+
+imaging
+    location: /var/lib/layman/imaging
+    masters: gentoo
+    priority: 25
+
+stintel
+    location: /var/lib/layman/stintel
+    masters: gentoo
+    priority: 25
+
+compiz-reloaded
+    location: /var/lib/layman/compiz-reloaded
+    masters: gentoo
+    priority: 50
+
+wreathe-overlay
+    location: /var/lib/layman/wreathe-overlay
+    masters: gentoo
+    priority: 75
+
+ABI="amd64"
+ABI_X86="64"
+ACCEPT_KEYWORDS="amd64"
+ACCEPT_LICENSE="@FREE"
+ACCEPT_PROPERTIES="*"
+ACCEPT_RESTRICT="*"
+ALSA_CARDS="ali5451 als4000 atiixp atiixp-modem bt87x ca0106 cmipci emu10k1x ens1370 ens1371 es1938 es1968 fm801 hda-intel intel8x0 intel8x0m maestro3 trident usb-audio via82xx via82xx-modem ymfpci"
+ANT_HOME="/usr/share/ant"
+APACHE2_MODULES="authn_core authz_core socache_shmcb unixd actions alias auth_basic authn_alias authn_anon authn_dbm authn_default authn_file authz_dbm authz_default authz_groupfile authz_host authz_owner authz_user autoindex cache cgi cgid dav dav_fs dav_lock deflate dir disk_cache env expires ext_filter file_cache filter headers include info log_config logio mem_cache mime mime_magic negotiation rewrite setenvif speling status unique_id userdir usertrack vhost_alias"
+ARCH="amd64"
+AUTOCLEAN="yes"
+BASH_FUNC_egupexit%%="() {  if ! [[ -f .egup.environment ]]; then
+ true;
+ else
+ [[ -n "$egupDir" ]] || egupDir=".";
+ if [[ -f "${egupDir:?}/.egup.useOverrides" ]]; then
+ if [[ "$(readlink -f "$(pwd)")" != "$(readlink -f "$egupDir")" ]]; then
+ if [[ -f .egup.nopush ]]; then
+ mv -vf .egup.nopush "$egupDir/.egup.nopush";
+ fi;
+ if [[ -f .egup.nopush.bak ]]; then
+ echo "Restoring .egup.nopush";
+ mv -v .egup.nopush.bak .egup.nopush;
+ fi;
+ if [[ -f .gitattributes ]]; then
+ mv -vf .gitattributes "$egupDir/.egup.gitattributes";
+ fi;
+ if [[ -f .egup.gitattributes.bak ]]; then
+ echo "Restoring overridden .gitattributes";
+ mv -v .egup.gitattributes.bak .gitattributes;
+ fi;
+ if [[ -f .gitignore ]]; then
+ mv -vf .gitignore "$egupDir/.egup.gitignore";
+ fi;
+ if [[ -f .egup.gitignore.bak ]]; then
+ echo "Restoring overridden .gitignore";
+ mv -v .egup.gitignore.bak .gitignore;
+ fi;
+ if [[ -f .gitmodules ]]; then
+ mv -vf .gitmodules "$egupDir/.egup.gitmodules";
+ fi;
+ if [[ -f .egup.gitmodules.bak ]]; then
+ echo "Restoring overridden .gitmodules";
+ mv -v .egup.gitmodules.bak .gitmodules;
+ fi;
+ if [[ -f README.md ]]; then
+ mv -vf README.md "$egupDir/.egup.readme";
+ fi;
+ if [[ -f .egup.readme.bak ]]; then
+ echo "Restoring overridden README.md";
+ mv -v .egup.readme.bak README.md;
+ fi;
+ if [[ -f .egup.branches ]]; then
+ mv -vf .egup.branches "$egupDir/.egup.branches";
+ fi;
+ if [[ -f .egup.branches.bak ]]; then
+ echo "Restoring overridden .egup.branches";
+ mv -v .egup.branches.bak .egup.branches;
+ fi;
+ if [[ -f .egup.refs ]]; then
+ mv -vf .egup.refs "$egupDir/.egup.refs";
+ fi;
+ if [[ -f .egup.refs.bak ]]; then
+ echo "Restoring overridden .egup.refs";
+ mv -v .egup.refs.bak .egup.refs;
+ fi;
+ if [[ -f .egup.tags ]]; then
+ mv -vf .egup.tags "$egupDir/.egup.tags";
+ fi;
+ if [[ -f .egup.tags.bak ]]; then
+ echo "Restoring overridden .egup.tags";
+ mv -v .egup.tags.bak .egup.tags;
+ fi;
+ fi;
+ GIT_WORK_TREE="$worktreebak";
+ export GIT_WORK_TREE;
+ GIT_DIR="$gitdirbak";
+ export GIT_DIR;
+ PS1="$egupEnvPsbak";
+ rm .egup.environment;
+ cd "$egupDir" || exit 1;
+ fi;
+ fi
+}"
+BOOTSTRAP_USE="cxx unicode internal-glib python_targets_python3_5 python_targets_python2_7 multilib systemd udev"
+CALLIGRA_FEATURES="author braindump flow gemini karbon kexi plan sheets stage words"
+CBUILD="x86_64-pc-linux-gnu"
+CCACHE_SIZE="2G"
+CFLAGS="-march=core2 -O2 -pipe"
+CFLAGS_amd64="-m64"
+CFLAGS_x32="-mx32"
+CFLAGS_x86="-m32"
+CHOST="x86_64-pc-linux-gnu"
+CHOST_amd64="x86_64-pc-linux-gnu"
+CHOST_x32="x86_64-pc-linux-gnux32"
+CHOST_x86="i686-pc-linux-gnu"
+CLEAN_DELAY="5"
+COLLECTD_PLUGINS="df interface irq load memory rrdtool swap syslog"
+COLLISION_IGNORE="/lib/modules/* *.py[co] *$py.class */dropin.cache"
+COLORTERM="truecolor"
+CONFIG_PROTECT="/etc /usr/lib64/fax /usr/local/etc /usr/share/X11/xkb/symbols/us /usr/share/config /usr/share/gnupg/qualified.txt /usr/share/themes/oxygen-gtk/gtk-2.0 /usr/share/themes/oxygen-gtk/gtk-3.0 /usr/trinity/14/env /usr/trinity/14/share/config /usr/trinity/14/shutdown /var/lib/hsqldb /var/spool/fax/etc"
+CONFIG_PROTECT_MASK="/etc/ca-certificates.conf /etc/dconf /etc/env.d /etc/fonts/fonts.conf /etc/gconf /etc/gentoo-release /etc/php/apache2-php5.6/ext-active/ /etc/php/apache2-php7.0/ext-active/ /etc/php/apache2-php7.1/ext-active/ /etc/php/cgi-php5.6/ext-active/ /etc/php/cgi-php7.0/ext-active/ /etc/php/cgi-php7.1/ext-active/ /etc/php/cli-php5.6/ext-active/ /etc/php/cli-php7.0/ext-active/ /etc/php/cli-php7.1/ext-active/ /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo /etc/texmf/language.dat.d /etc/texmf/language.def.d /etc/texmf/updmap.d /etc/texmf/web2c"
+CPU_FLAGS_X86="mmx mmxext sse sse2"
+CXXFLAGS="-march=core2 -O2 -pipe"
+DEFAULT_ABI="amd64"
+DISPLAY=":0"
+DISTDIR="/usr/portage/distfiles"
+DOTNET_TARGETS="net45 net40"
+EDITOR="/bin/nano"
+ELIBC="glibc"
+EMERGE_DEFAULT_OPTS=" --buildpkg y --tree --verbose --verbose-conflicts --autounmask-write=n --autounmask=n"
+EMERGE_WARNING_DELAY="10"
+EPREFIX=""
+EROOT="/"
+FCFLAGS="-O2 -pipe"
+FEATURES="assume-digests binpkg-logs buildpkg config-protect-if-modified distlocks ebuild-locks fixlafiles merge-sync multilib-strict news parallel-fetch preserve-libs protect-owned sandbox sfperms strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync xattr"
+FETCHCOMMAND="wget -t 3 -T 60 --passive-ftp -O "${DISTDIR}/${FILE}" "${URI}""
+FETCHCOMMAND_RSYNC="rsync -avP "${URI}" "${DISTDIR}/${FILE}""
+FETCHCOMMAND_SFTP="bash -c "x=\${2#sftp://} ; host=\${x%%/*} ; port=\${host##*:} ; host=\${host%:*} ; [[ \${host} = \${port} ]] && port= ; eval \"declare -a ssh_opts=(\${3})\" ; exec sftp \${port:+-P \${port}} \"\${ssh_opts[@]}\" \"\${host}:/\${x#*/}\" \"\$1\"" sftp "${DISTDIR}/${FILE}" "${URI}" "${PORTAGE_SSH_OPTS}""
+FETCHCOMMAND_SSH="bash -c "x=\${2#ssh://} ; host=\${x%%/*} ; port=\${host##*:} ; host=\${host%:*} ; [[ \${host} = \${port} ]] && port= ; exec rsync --rsh=\"ssh \${port:+-p\${port}} \${3}\" -avP \"\${host}:/\${x#*/}\" \"\$1\"" rsync "${DISTDIR}/${FILE}" "${URI}" "${PORTAGE_SSH_OPTS}""
+FFLAGS="-O2 -pipe"
+FLTK_DOCDIR="/usr/share/doc/fltk-1.3.3-r3/html"
+GCC_SPECS=""
+GENTOO_MIRRORS="http://lug.mtu.edu/gentoo/ http://gentoo.osuosl.org/ http://gentoo.mirrors.pair.com/ rsync://mirrors.rit.edu/gentoo/ http://mirrors.rit.edu/gentoo/ http://gentoo.mirrors.tds.net/gentoo http://cosmos.illinois.edu/pub/gentoo/ rsync://gentoo.cs.uni.edu/gentoo-distfiles http://gentoo.cs.uni.edu/ http://distfiles.gentoo.org/"
+GPSD_PROTOCOLS="aivdm ashtech earthmate evermore fury fv18 garmin garmintxt geostar gpsclock itrax mtk3301 navcom nmea nmea0183 nmea2000 ntrip oceanserver oncore passthrough rtcm104v2 rtcm104v3 sirf superstar2 tnt tripmate tsip ublox ubx"
+GRUB_PLATFORMS="efi-64"
+GSETTINGS_BACKEND="dconf"
+GTK_CSD="0"
+GUILE_LOAD_PATH="/usr/share/guile/1.8"
+HOME="/root"
+IBPATH="/usr/sbin"
+INFINALITY_FT_FILTER_PARAMS="08 24 36 24 08"
+INFINALITY_FT_FRINGE_FILTER_STRENGTH="25"
+INFINALITY_FT_STEM_ALIGNMENT_STRENGTH="15"
+INFINALITY_FT_STEM_FITTING_STRENGTH="15"
+INFINALITY_FT_USE_VARIOUS_TWEAKS="true"
+INFINALITY_FT_WINDOWS_STYLE_SHARPENING_STRENGTH="25"
+INFOPATH="/usr/share/gcc-data/x86_64-pc-linux-gnu/6.4.0/info:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.28.1/info:/usr/share/info:/usr/share/info/emacs-24"
+INPUT_DEVICES="evdev synaptics"
+IUSE_IMPLICIT="abi_x86_64 prefix prefix-chain prefix-guest"
+JAVAC="/etc/java-config-2/current-system-vm/bin/javac"
+JAVACC_HOME="/usr/share/javacc/"
+JAVA_HOME="/etc/java-config-2/current-system-vm"
+JDK_HOME="/etc/java-config-2/current-system-vm"
+KDEPIM_FEATURES="akonadiconsole akregator blogilo console kaddressbook kalarm kleopatra kmail knotes kontact korganizer ktnef"
+KERNEL="linux"
+L10N="sa eu fa fi fo fr fy ga gd gl gu gug he hi hr hsb hu hy ia id is it ja ka kk km kmr-Latn kn ko kok bs ca ca-valencia chr cs csb cy da de de-1901 dgo doi dz el en en-GB en-ZA eo es es-AR es-CL es-ES es-MX et ks ku la lb lo lt lv mai mk ml mn mni mr ms my nb nds ne nl nn no nr nso oc om or pa pl pt pt-BR pt-PT rm ro ru rw sat sco sd si ach af am an ar as ast az be bg bn bn-BD bn-IN bo br brx es-419 fil ta-LK te tg th tk tl tn tr ts tt ug uk ur-PK uz ve vi sid sk sl son sq sr sr-Latn ss st sv sw sw-TZ syc ta wa xh zh zh-CN zh-TW zu mi hne se sr-ijekavsk sr-Latn-ijekavsk uz-Cyrl zh-HK en-US fr-CA sr-ME ky cak dsb ff gn lij kab"
+LADSPA_PATH="/usr/lib64/ladspa"
+LANG="en_US.utf8"
+LANGUAGE="en_GB"
+LCD_DEVICES="bayrad cfontz cfontz633 glk hd44780 lb216 lcdm001 mtxorb ncurses text"
+LC_MESSAGES="C"
+LDFLAGS="-Wl,-O1 -Wl,--as-needed"
+LDFLAGS_amd64="-m elf_x86_64"
+LDFLAGS_x32="-m elf32_x86_64"
+LDFLAGS_x86="-m elf_i386"
+LD_PRELOAD="/usr/lib/libgtk3-nocsd.so.0"
+LESS="-R -M --shift 5"
+LESSOPEN="|lesspipe %s"
+LIBDIR_amd64="lib64"
+LIBDIR_x32="libx32"
+LIBDIR_x86="lib32"
+LIBREOFFICE_EXTENSIONS="presenter-console presenter-minimizer"
+LINGUAS="ach af af_ZA ak am an ar ar_JO ar_SA ar_SY as ast az be be@latin be_BY bg bg_BG bn bn_BD bn_IN bo br brx bs byn ca ca@valencia ca_ES ca_XV cmn crh cs cs_CZ csb cy cy_GB da da_DK de de_CH de_DE dgo doi dz ee el el_GR en en@shaw en_AU en_CA en_EN en_GB en_US en_ZA eo eo_UY es es_419 es_AR es_CL es_CO es_DO es_ES es_LA es_MX es_UY es_VE et et_EE eu eu_ES fa fa_IR fi fi_FI fil fo fr fr_CA fr_FR fy fy_NL ga ga_IE gd gez gl gl_ES gu gu_IN gug haw he he_IL hi hi_IN hne hr hr_HR hsb hu hu_HU hy hy_AM ia id id_ID is is_IS it it_IT ja ja_JP jv ka ka_GE kk kk_KZ km kn kn_IN ko ko_KR kok ks ksw ku ky ky_KG lb lg li lo lt lt_LT lv lv_LV mai me mg mi mk ml mn mni mr ms ms_MY mt my nan nb nb_NO nds ne nl nl_BE nl_NL nn nn_NO no nqo nr nso oc om or pa pa_IN pam pl pl_PL ps pt pt_BR pt_PT rm ro ro_RO ru ru_RU rue rw sa sa_IN sat sco sd se shn si si_LK sk sk_SK sl sl_SI so son sq sq_AL sr sr@Latn sr@ijekavian sr@ijekavianlatin sr@latin sr_RS sr_RS@cyrillic sr_RS@latin ss st sv sv_SE sw sw_TZ syc ta ta_IN ta_LK te tg tg_TJ th th_TH ti tig tk tl tlh tn tpi tr tr_TR ts tt tt@iqtelif tt_RU ug uk uk_UA ur ur_PK uz uz@Cyrl uz@Latn uz@cyrillic uz_UZ ve vi vi_VN wa wal wo xh yi zh zh_CN zh_HK zh_TW zu kab no_NO frp mk_MK fur la sah ckb co ii pap sc ku_IQ de@1901"
+LLVM_TARGETS="AArch64 AMDGPU ARM BPF Hexagon Lanai MSP430 Mips NVPTX PowerPC RISCV Sparc SystemZ X86 XCore"
+LOGNAME="root"
+LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.cfg=00;32:*.conf=00;32:*.diff=00;32:*.doc=00;32:*.ini=00;32:*.log=00;32:*.patch=00;32:*.pdf=00;32:*.ps=00;32:*.tex=00;32:*.txt=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:"
+MAIL="/var/mail/root"
+MAKEOPTS="-j3"
+MANPAGER="manpager"
+MANPATH="/etc/java-config-2/current-system-vm/man:/usr/share/gcc-data/x86_64-pc-linux-gnu/6.4.0/man:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.28.1/man:/usr/lib/llvm/5/share/man:/etc/java-config-2/current-system-vm/man/:/usr/lib64/php5.6/man/:/usr/lib64/php7.0/man/:/usr/lib64/php7.1/man/:/usr/tqt3/doc/man:/usr/trinity/14/share/man:/usr/local/share/man:/usr/share/man"
+MULTILIB_ABIS="amd64 x86"
+MULTILIB_STRICT_DENY="64-bit.*shared object"
+MULTILIB_STRICT_DIRS="/lib32 /lib /usr/lib32 /usr/lib /usr/kde/*/lib32 /usr/kde/*/lib /usr/qt/*/lib32 /usr/qt/*/lib /usr/X11R6/lib32 /usr/X11R6/lib"
+MULTILIB_STRICT_EXEMPT="(perl5|gcc|gcc-lib|binutils|eclipse-3|debug|portage|udev|systemd|clang|python-exec|llvm)"
+NETBEANS="apisupport cnd groovy gsf harness ide identity j2ee java mobility nb php profiler soa visualweb webcommon websvccommon xml"
+OFED_DRIVERS="cxgb3 cxgb4 ehca ipath mlx4 mlx5 mthca nes ocrdma psm"
+OFFICE_IMPLEMENTATION="libreoffice"
+OPENCL_PROFILE="mesa"
+OPENGL_PROFILE="xorg-x11"
+PAGER="/usr/bin/less"
+PATH="/usr/local/bin/:/usr/sbin/:/sbin/:/usr/x86_64-pc-linux-gnu/gcc-bin/6.4.0:/usr/lib/llvm/5/bin:/usr/tqt3/bin:/usr/trinity/14/sbin:/usr/trinity/14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib64/subversion/bin:/root/.gem/ruby/2.2.0/bin"
+PHP_TARGETS="php5-6 php7-0"
+PKGDIR="/usr/portage/packages"
+PKG_CONFIG_PATH="/usr/trinity/14/lib64/pkgconfig"
+PORTAGE_ARCHLIST="alpha amd64 amd64-fbsd amd64-linux arm arm-linux arm64 arm64-linux hppa ia64 m68k m68k-mint mips nios2 ppc ppc-aix ppc-macos ppc64 ppc64-linux riscv s390 sh sparc sparc-solaris sparc64-solaris x64-cygwin x64-macos x64-solaris x86 x86-cygwin x86-fbsd x86-linux x86-macos x86-solaris x86-winnt"
+PORTAGE_BIN_PATH="/usr/lib/portage/python2.7"
+PORTAGE_COMPRESS_EXCLUDE_SUFFIXES="css gif htm[l]? jp[e]?g js pdf png"
+PORTAGE_CONFIGROOT="/"
+PORTAGE_DEBUG="0"
+PORTAGE_DEPCACHEDIR="/var/cache/edb/dep"
+PORTAGE_ELOG_CLASSES="log warn error"
+PORTAGE_ELOG_MAILFROM="portage@localhost"
+PORTAGE_ELOG_MAILSUBJECT="[portage] ebuild log for ${PACKAGE} on ${HOST}"
+PORTAGE_ELOG_MAILURI="root"
+PORTAGE_ELOG_SYSTEM="save_summary:log,warn,error,qa echo"
+PORTAGE_FETCH_CHECKSUM_TRY_MIRRORS="5"
+PORTAGE_FETCH_RESUME_MIN_SIZE="350K"
+PORTAGE_GID="250"
+PORTAGE_GPG_SIGNING_COMMAND="gpg --sign --digest-algo SHA256 --clearsign --yes --default-key "${PORTAGE_GPG_KEY}" --homedir "${PORTAGE_GPG_DIR}" "${FILE}""
+PORTAGE_INST_GID="0"
+PORTAGE_INST_UID="0"
+PORTAGE_INTERNAL_CALLER="1"
+PORTAGE_OVERRIDE_EPREFIX=""
+PORTAGE_PYM_PATH="/usr/lib64/python2.7/site-packages"
+PORTAGE_PYTHONPATH="/usr/lib64/python2.7/site-packages"
+PORTAGE_RSYNC_OPTS="--recursive --links --safe-links --perms --times --omit-dir-times --compress --force --whole-file --delete --stats --human-readable --timeout=180 --exclude=/distfiles --exclude=/local --exclude=/packages --exclude=/.git"
+PORTAGE_RSYNC_RETRIES="-1"
+PORTAGE_SYNC_STALE="30"
+PORTAGE_TMPDIR="/var/tmp"
+PORTAGE_VERBOSE="1"
+PORTAGE_WORKDIR_MODE="0700"
+PORTAGE_XATTR_EXCLUDE="btrfs.* security.evm security.ima        security.selinux system.nfs4_acl user.apache_handler        user.Beagle.* user.dublincore.* user.mime_encoding user.xdg.*"
+PORT_LOGDIR_CLEAN="find "${PORT_LOGDIR}" -type f ! -name "summary.log*" -mtime +7 -delete"
+POSTGRES_TARGETS="postgres9_5"
+PROFILE_ONLY_VARIABLES="ARCH ELIBC IUSE_IMPLICIT KERNEL USERLAND USE_EXPAND_IMPLICIT USE_EXPAND_UNPREFIXED USE_EXPAND_VALUES_ARCH USE_EXPAND_VALUES_ELIBC USE_EXPAND_VALUES_KERNEL USE_EXPAND_VALUES_USERLAND"
+PS4="+($?) $BASH_SOURCE:$FUNCNAME:$LINENO:"
+PWD="/root"
+PYTHONDOCS="/usr/share/doc/python-docs-2.7.14/html/library"
+PYTHONDOCS_2_7="/usr/share/doc/python-docs-2.7.14/html/library"
+PYTHONDONTWRITEBYTECODE="1"
+PYTHON_SINGLE_TARGET="python3_5"
+PYTHON_TARGETS="python2_7 python3_5 python3_6"
+QEMU_SOFTMMU_TARGETS="aarch64 alpha arm cris i386 lm32 m68k microblaze microblazeel mips mips64 mips64el mipsel moxie or32 ppc ppc64 ppcemb s390x sh4 sh4eb sparc sparc64 tricore unicore32 x86_64 xtensa xtensaeb"
+QEMU_USER_TARGETS="alpha arm armeb cris i386 m68k microblaze microblazeel mips mips64 mips64el mipsel mipsn32 mipsn32el or32 ppc ppc64 ppc64abi32 ppc64le s390x sh4 sh4eb sparc sparc32plus sparc64 tilegx x86_64"
+QT_GRAPHICSSYSTEM="raster"
+QT_PLUGIN_PATH="/usr/lib64/kde4/plugins"
+RESUMECOMMAND="wget -c -t 3 -T 60 --passive-ftp -O "${DISTDIR}/${FILE}" "${URI}""
+RESUMECOMMAND_RSYNC="rsync -avP "${URI}" "${DISTDIR}/${FILE}""
+RESUMECOMMAND_SSH="bash -c "x=\${2#ssh://} ; host=\${x%%/*} ; port=\${host##*:} ; host=\${host%:*} ; [[ \${host} = \${port} ]] && port= ; exec rsync --rsh=\"ssh \${port:+-p\${port}} \${3}\" -avP \"\${host}:/\${x#*/}\" \"\$1\"" rsync "${DISTDIR}/${FILE}" "${URI}" "${PORTAGE_SSH_OPTS}""
+ROOT="/"
+ROOTPATH="/usr/x86_64-pc-linux-gnu/gcc-bin/6.4.0:/usr/lib/llvm/5/bin:/usr/tqt3/bin:/usr/trinity/14/sbin:/usr/trinity/14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib64/subversion/bin"
+RPMDIR="/usr/portage/rpm"
+RUBY_TARGETS="ruby22 ruby23"
+R_HOME="/usr/lib64/R"
+SHELL="/bin/bash"
+SHLVL="1"
+SUDO_COMMAND="/bin/bash"
+SUDO_GID="1000"
+SUDO_UID="1000"
+SUDO_USER="kyan"
+SYMLINK_LIB="yes"
+TERM="xterm-256color"
+TEXINPUTS="/usr/lib64/ocaml/ocamldoc:"
+TWISTED_DISABLE_WRITING_OF_PLUGIN_CACHE="1"
+UNINSTALL_IGNORE="/lib/modules/* /var/run /var/lock"
+USE="R X a52 aac aalib accessibility acl acpi activities afp aim airplay alac alsa amd64 apache2 apm appindicator aprs archive argyllcms attica audiofile autotrace avahi avcodec ayatana bash-completion bazaar bcmath berkdb bibutils bidi bittorrent bluetooth bluray bsf btrfs bullet bwscheduler bzip2 cairo calendar canna capi captcha cdb cdda cdparanoia cdr cec celt chathistory chm chromaprint cjk clamav cli cloudprint collada color-management colord colorio compicc connectivity contacts context crypt css cups curl cvs cxx dahdi dane databasedesigner dbus declarative designer detex devref djvu doc dos downloadorder doxygen dri dts dv dvb dvd dvdr dvi dvi2tty dxr3 ebur128 egl eigen elbeem emacs emboss eme-free en-GB en_GB encode epspdf epub equalizer examples exceptions exchange exif extra extras faad fam fax fbcon feedback ffmpeg fftw fidonet firebird firefox fits flac fluidsynth fontconfig fontforge fortran fortran2003 fpx frei0r fribidi ftp fuse gac gadu gallery games gd gda gdbm gecko geoclue geoip geolocation geonames geos ghostscript gif gimp git glade glamor glew glib glpk gltf glut gme gmp gnome-online-accounts gnomecanvas gnuplot go google googledrive gost gphoto2 gpm gps graph graphics graphite graphviz groupwise grub gsf gsl gsm gsmloc gssapi gstreamer gtalk gtk gtk2 gtkstyle gui guile gusb gzip handbook hardened harfbuzz hddtemp hdf hdf5 hdri hfs hidpi highlight hscolour http2 humanities hwloc ibus iconv icq ics icu idn ieee1394 ilbc imagemagick imap import-filter infinality infiniband infowidget inotify introspection iodbc ios ipod iprint ipv6 jack jack-dbus jackmidi jadetex java javascript jbig jce jingle joystick jpeg jpeg2k json kate kdcraw kde kdenlive kdepim kdesu kerberos kipi kolab kontact kvm kwallet ladish ladspa lame lapack lash latex lcms ldap libass libcaca libcanberra libilbc libinput libmpdclient libnotify libproxy librtmp libsamplerate libsoxr libssh libvisual libwww lirc lm_sensors localstorage location logrotate logviewer lua luatex lv2 lyx lzma lzo mad magnetgenerator marble math matplotlib matroska matrox mbox md5sum mdb meanwhile media mediacenter mediaplayer memlimit mercurial messaging metalink metapost mgetty-fax midi mikmod mime mmap mms mmx mng mobi mod modplug modules mongodb mono mp3 mp4 mpeg mpi mplayer msdoc msn msppt mssql msxls mtp multilib multimedia musepack music musicbrainz mxit mysql mysqli nas ncurses ndof netapi netboot netcdf networkmanager newt nfs nis nls nntp nocd nominatim nptl nsplugin ntfs nvidia objc objc++ objc-gc octave odbc odk offlinehelp ofx ogdi ogg okular omega omxil openal opencl opencv openexr opengl openimageio openmax openmp opennl opus organizer osc oscar osd osmesa osplookup pam pango pcap pci pcmcia pcre pda pdf pdfannotextractor pdfimport perl phonon php physics pie pim pinentry pipelight pjproject plasma playlist plazes plotutils plugins plymouth png policykit posix postgres postscript ppds ppp prison projectm pstricks publishers publishsubscribe pulseaudio python qalculate qhull qml qrupdate qt3support qt5 qtmedia quicktime quota radio radius raptor rar raw rdesktop rdp readline realtime redland redshift reiserfs rfc3779 romio rss rtf rtmp rtsp ruby s3tc samba sasl scanner schroedinger science sctp sddm sdk sdl sdl-sound seccomp semantic-desktop sensors serviceframework session sftp shapefile sharedmem shorten shout sid silc skyhook slp smartcard smp smpeg sndfile sockets sound source sourceview sox spacenav spatialite speech speex spell sql sqlite srtp sse sse2 ssh ssl startup-notification stats subversion svg sybase syslog systemd systeminfo taglib tagsoup tcl tcpd telepathy telnet tex tex4ht texi2html tga theora threads thumbnail tidy tiff timidity tk tools touchscreen tqt tracker truetype tslib tuio twolame udev udisks unicode unicode_collation upnp upnp-av upower usb user-session uucp uvm v4l vaapi vala vba vcd vcdx vdpau versit video vim-syntax virtuoso vlc vnc volpack vorbis vpx vst vtk vulkan wavpack wddx webcam webdav webgl webinterface webkit webp webrtc-aec widgets wifi winbind wmf wordperfect wxwidgets x264 x265 xattr xcb xcomposite xetex xface xim xindy xine xinerama xls xml xmp xmpp xpm xrandr xslt xv xvid xvmc yahoo yahoo-geo zephyr zeroconf zip zlib zvbi" ABI_X86="64" ALSA_CARDS="ali5451 als4000 atiixp atiixp-modem bt87x ca0106 cmipci emu10k1x ens1370 ens1371 es1938 es1968 fm801 hda-intel intel8x0 intel8x0m maestro3 trident usb-audio via82xx via82xx-modem ymfpci" APACHE2_MODULES="authn_core authz_core socache_shmcb unixd actions alias auth_basic authn_alias authn_anon authn_dbm authn_default authn_file authz_dbm authz_default authz_groupfile authz_host authz_owner authz_user autoindex cache cgi cgid dav dav_fs dav_lock deflate dir disk_cache env expires ext_filter file_cache filter headers include info log_config logio mem_cache mime mime_magic negotiation rewrite setenvif speling status unique_id userdir usertrack vhost_alias" CALLIGRA_FEATURES="author braindump flow gemini karbon kexi plan sheets stage words" COLLECTD_PLUGINS="df interface irq load memory rrdtool swap syslog" CPU_FLAGS_X86="mmx mmxext sse sse2" ELIBC="glibc" GPSD_PROTOCOLS="aivdm ashtech earthmate evermore fury fv18 garmin garmintxt geostar gpsclock itrax mtk3301 navcom nmea nmea0183 nmea2000 ntrip oceanserver oncore passthrough rtcm104v2 rtcm104v3 sirf superstar2 tnt tripmate tsip ublox ubx" GRUB_PLATFORMS="efi-64" INPUT_DEVICES="evdev synaptics" KERNEL="linux" L10N="sa eu fa fi fo fr fy ga gd gl gu gug he hi hr hsb hu hy ia id is it ja ka kk km kmr-Latn kn ko kok bs ca ca-valencia chr cs csb cy da de de-1901 dgo doi dz el en en-GB en-ZA eo es es-AR es-CL es-ES es-MX et ks ku la lb lo lt lv mai mk ml mn mni mr ms my nb nds ne nl nn no nr nso oc om or pa pl pt pt-BR pt-PT rm ro ru rw sat sco sd si ach af am an ar as ast az be bg bn bn-BD bn-IN bo br brx es-419 fil ta-LK te tg th tk tl tn tr ts tt ug uk ur-PK uz ve vi sid sk sl son sq sr sr-Latn ss st sv sw sw-TZ syc ta wa xh zh zh-CN zh-TW zu mi hne se sr-ijekavsk sr-Latn-ijekavsk uz-Cyrl zh-HK en-US fr-CA sr-ME ky cak dsb ff gn lij kab" LCD_DEVICES="bayrad cfontz cfontz633 glk hd44780 lb216 lcdm001 mtxorb ncurses text" LIBREOFFICE_EXTENSIONS="presenter-console presenter-minimizer" LLVM_TARGETS="AArch64 AMDGPU ARM BPF Hexagon Lanai MSP430 Mips NVPTX PowerPC RISCV Sparc SystemZ X86 XCore" OFED_DRIVERS="cxgb3 cxgb4 ehca ipath mlx4 mlx5 mthca nes ocrdma psm" OFFICE_IMPLEMENTATION="libreoffice" PHP_TARGETS="php5-6 php7-0" POSTGRES_TARGETS="postgres9_5" PYTHON_SINGLE_TARGET="python3_5" PYTHON_TARGETS="python2_7 python3_5 python3_6" QEMU_SOFTMMU_TARGETS="aarch64 alpha arm cris i386 lm32 m68k microblaze microblazeel mips mips64 mips64el mipsel moxie or32 ppc ppc64 ppcemb s390x sh4 sh4eb sparc sparc64 tricore unicore32 x86_64 xtensa xtensaeb" QEMU_USER_TARGETS="alpha arm armeb cris i386 m68k microblaze microblazeel mips mips64 mips64el mipsel mipsn32 mipsn32el or32 ppc ppc64 ppc64abi32 ppc64le s390x sh4 sh4eb sparc sparc32plus sparc64 tilegx x86_64" RUBY_TARGETS="ruby22 ruby23" USERLAND="GNU" VIDEO_CARDS="intel i915 i965 r100 r200 r300 r600 radeon radeonsi nouveau vmware" XTABLES_ADDONS="quota2 psd pknock lscan length2 ipv4options ipset ipp2p iface geoip fuzzy condition tee tarpit sysrq steal rawnat logmark ipmark dhcpmac delude chaos account"
+USER="root"
+USERLAND="GNU"
+USERNAME="root"
+USE_EXPAND="ABI_MIPS ABI_PPC ABI_S390 ABI_X86 ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_EXPERIMENTAL_FEATURES CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_X86 CURL_SSL ELIBC ENLIGHTENMENT_MODULES FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LIRC_DEVICES LLVM_TARGETS MONKEYD_PLUGINS NETBEANS_MODULES NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFED_DRIVERS OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS ROS_MESSAGES RUBY_TARGETS SANE_BACKENDS USERLAND UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XFCE_PLUGINS XTABLES_ADDONS"
+USE_EXPAND_HIDDEN="ABI_MIPS ABI_PPC ABI_S390 CPU_FLAGS_ARM ELIBC KERNEL USERLAND"
+USE_EXPAND_IMPLICIT="ARCH ELIBC KERNEL USERLAND"
+USE_EXPAND_UNPREFIXED="ARCH"
+USE_EXPAND_VALUES_ARCH="alpha amd64 amd64-fbsd amd64-linux arm arm-linux arm64 hppa ia64 m68k m68k-mint mips nios2 ppc ppc64 ppc64-linux ppc-aix ppc-macos riscv s390 sh sparc sparc64-solaris sparc-solaris x64-cygwin x64-macos x64-solaris x86 x86-cygwin x86-fbsd x86-linux x86-macos x86-solaris x86-winnt"
+USE_EXPAND_VALUES_ELIBC="AIX bionic Cygwin Darwin DragonFly FreeBSD glibc HPUX Interix mingw mintlib musl NetBSD OpenBSD SunOS uclibc Winnt"
+USE_EXPAND_VALUES_KERNEL="AIX Darwin FreeBSD freemint HPUX linux NetBSD OpenBSD SunOS Winnt"
+USE_EXPAND_VALUES_USERLAND="BSD GNU"
+USE_ORDER="env:pkg:conf:defaults:pkginternal:repo:env.d"
+VBOX_APP_HOME="/usr/lib64/virtualbox"
+VIDEO_CARDS="intel i915 i965 r100 r200 r300 r600 radeon radeonsi nouveau vmware"
+XAUTHORITY="/home/kyan/.Xauthority"
+XDG_CONFIG_DIRS="/etc/xdg"
+XDG_DATA_DIRS="/usr/local/share:/usr/trinity/14/share:/usr/share:/usr/share/mesa/xdg"
+XTABLES_ADDONS="quota2 psd pknock lscan length2 ipv4options ipset ipp2p iface geoip fuzzy condition tee tarpit sysrq steal rawnat logmark ipmark dhcpmac delude chaos account"
+emberSharedVersion="1.1.4.225"
+
+=================================================================
+                        Package Settings
+=================================================================
+
+dev-python/matplotlib-2.1.0-r1::gentoo was built with the following:
+USE="cairo examples gtk2 latex qt5 tk wxwidgets (-doc) -excel -gtk3 -pyside -test" ABI_X86="(64)" PYTHON_TARGETS="python2_7 python3_4 -python3_5 -python3_6"
+CFLAGS="-march=core2 -O2 -pipe -fno-strict-aliasing"
+CXXFLAGS="-march=core2 -O2 -pipe -fno-strict-aliasing"
+
+elegiac ~ # 
