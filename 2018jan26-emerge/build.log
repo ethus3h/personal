@@ -1,0 +1,94 @@
+[32;01m * [39;49;00mPackage:    dev-python/matplotlib-2.1.0-r1
+[32;01m * [39;49;00mRepository: gentoo
+[32;01m * [39;49;00mMaintainer: sci@gentoo.org python@gentoo.org
+[32;01m * [39;49;00mUSE:        abi_x86_64 amd64 cairo elibc_glibc examples gtk2 kernel_linux latex python_targets_python2_7 python_targets_python3_5 python_targets_python3_6 qt5 tk userland_GNU wxwidgets
+[32;01m * [39;49;00mFEATURES:   preserve-libs sandbox userpriv usersandbox
+>>> Unpacking source...
+>>> Unpacking matplotlib-2.1.0.tar.bz2 to /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work
+>>> Source unpacked in /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work
+>>> Preparing source in /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0 ...
+ [32;01m*[0m Will copy sources from /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0
+ [32;01m*[0m python2_7: copying to /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0-python2_7
+ [32;01m*[0m python3_5: copying to /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0-python3_5
+ [32;01m*[0m python3_6: copying to /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0-python3_6
+>>> Source prepared.
+>>> Configuring source in /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0 ...
+ [32;01m*[0m python2_7: running distutils-r1_run_phase python_configure
+ [32;01m*[0m python3_5: running distutils-r1_run_phase python_configure
+ [32;01m*[0m python3_6: running distutils-r1_run_phase python_configure
+ [32;01m*[0m python3_6: running distutils-r1_run_phase python_configure_all
+>>> Source configured.
+>>> Compiling source in /var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0 ...
+ [32;01m*[0m python2_7: running distutils-r1_run_phase python_compile
+/usr/bin/python2.7 setup.py build --build-lib=/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0-python2_7/build/lib
+============================================================================
+Edit setup.cfg to change the build options
+
+BUILDING MATPLOTLIB
+            matplotlib: yes [2.1.0-python2_7]
+                python: yes [2.7.14 (default, Jan 17 2018, 17:29:42)  [GCC
+                        6.4.0]]
+              platform: yes [linux2]
+
+REQUIRED DEPENDENCIES AND EXTENSIONS
+                 numpy: yes [version 1.10.4]
+                   six: yes [using six version 1.10.0]
+              dateutil: yes [using dateutil version 2.6.1]
+backports.functools_lru_cache: yes [using backports.functools_lru_cache]
+          subprocess32: yes [using subprocess32]
+                  pytz: yes [using pytz version 2017.2]
+                cycler: yes [using cycler version 0.10.0]
+               tornado: yes [using tornado version 4.4.2]
+             pyparsing: yes [using pyparsing version 2.2.0]
+                libagg: yes [Requires patches that have not been merged
+                        upstream. Using local copy.]
+              freetype: yes [version 2.8.0]
+                   png: yes [version 1.6.29]
+                 qhull: yes [Using system Qhull (version unknown, no pkg-
+                        config info)]
+
+OPTIONAL SUBPACKAGES
+           sample_data: yes [installing]
+              toolkits: yes [installing]
+                 tests: no  [skipping due to configuration]
+        toolkits_tests: no  [skipping due to configuration]
+
+OPTIONAL BACKEND EXTENSIONS
+                macosx: no  [Mac OS-X only]
+/usr/lib64/python2.7/site-packages/gtk-2.0/gtk/__init__.py:57: GtkWarning: could not open display
+  warnings.warn(str(e), _gtk.Warning)
+                qt5agg: yes [installing, Qt: 5.7.1, PyQt: 5.7.1; PySide2 not
+                        found]
+                qt4agg: no  [skipping due to configuration]
+               gtk3agg: no  [skipping due to configuration]
+             gtk3cairo: no  [skipping due to configuration]
+                gtkagg: yes [installing, Gtk: 2.24.31 pygtk: 2.24.0]
+                 tkagg: yes [installing; run-time loading from Python Tcl /
+                        Tk]
+/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/temp/environment: line 1884:  2219 Aborted                 (core dumped) "${@}"
+ [31;01m*[0m ERROR: dev-python/matplotlib-2.1.0-r1::gentoo failed (compile phase):
+ [31;01m*[0m   (no error message)
+ [31;01m*[0m 
+ [31;01m*[0m Call stack:
+ [31;01m*[0m     ebuild.sh, line  124:  Called src_compile
+ [31;01m*[0m   environment, line 4341:  Called distutils-r1_src_compile
+ [31;01m*[0m   environment, line 1245:  Called _distutils-r1_run_foreach_impl 'python_compile'
+ [31;01m*[0m   environment, line  478:  Called python_foreach_impl 'distutils-r1_run_phase' 'python_compile'
+ [31;01m*[0m   environment, line 3797:  Called multibuild_foreach_variant '_python_multibuild_wrapper' 'distutils-r1_run_phase' 'python_compile'
+ [31;01m*[0m   environment, line 2884:  Called _multibuild_run '_python_multibuild_wrapper' 'distutils-r1_run_phase' 'python_compile'
+ [31;01m*[0m   environment, line 2882:  Called _python_multibuild_wrapper 'distutils-r1_run_phase' 'python_compile'
+ [31;01m*[0m   environment, line  816:  Called distutils-r1_run_phase 'python_compile'
+ [31;01m*[0m   environment, line 1238:  Called python_compile
+ [31;01m*[0m   environment, line 3328:  Called wrap_setup 'distutils-r1_python_compile' '--build-lib=/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0-python2_7/build/lib'
+ [31;01m*[0m   environment, line 5175:  Called distutils-r1_python_compile '--build-lib=/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0-python2_7/build/lib'
+ [31;01m*[0m   environment, line 1113:  Called esetup.py 'build' '--build-lib=/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0-python2_7/build/lib'
+ [31;01m*[0m   environment, line 1891:  Called die
+ [31;01m*[0m The specific snippet of code:
+ [31;01m*[0m       "${@}" || die "${die_args[@]}";
+ [31;01m*[0m 
+ [31;01m*[0m If you need support, post the output of `emerge --info '=dev-python/matplotlib-2.1.0-r1::gentoo'`,
+ [31;01m*[0m the complete build log and the output of `emerge -pqv '=dev-python/matplotlib-2.1.0-r1::gentoo'`.
+ [31;01m*[0m The complete build log is located at '/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/temp/build.log'.
+ [31;01m*[0m The ebuild environment file is located at '/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/temp/environment'.
+ [31;01m*[0m Working directory: '/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0-python2_7'
+ [31;01m*[0m S: '/var/tmp/portage/dev-python/matplotlib-2.1.0-r1/work/matplotlib-2.1.0'
