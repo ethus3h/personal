@@ -25,11 +25,11 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 void remember(int value) {
-  step=step + 1;
   if(step >= 10000) {
     step = 0;
   } 
   memory[step]=(value + memory[step]) / 2;
+  step=step + 1;
 }
 
 int getPersonality() {
