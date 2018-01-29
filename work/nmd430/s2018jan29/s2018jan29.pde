@@ -39,7 +39,7 @@ int getPersonality() {
 
 int getMood() {
   int[] mem=Arrays.copyOfRange(memory, Math.min(step - 100, 0), step);
-  int result=(int)Arrays.stream(Arrays.copyOfRange(memory, mem)).average().getAsDouble();
+  int result=(int)Arrays.stream(mem).average().getAsDouble();
   System.out.println("Mood: "+Integer.toString(result));
   return result;
 }
