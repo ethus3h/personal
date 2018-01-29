@@ -18,7 +18,8 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 void remember(int value) {
-  
+  step=step + 1;
+  memory[step]=value;
 }
 
 void draw() {
@@ -30,9 +31,6 @@ void draw() {
   int ellipseHomeY=0;
   int ellipsePosX=0;
   int ellipsePosY=0;
-  int[] memory;
-  step=step + 1;
-  memory[step]=mouseX;
   int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
   if ( mouseDistFromHome < 1000) {
