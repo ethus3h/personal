@@ -28,7 +28,6 @@ void remember(int value) {
     step = 0;
   }
   step=step + 1;
-  memory[step]=(value + memory[step]) / 2;
 }
 
 int getPersonality() {
@@ -38,7 +37,7 @@ int getPersonality() {
 }
 
 int getMood() {
-  int[] mem=Arrays.copyOfRange(memory, Math.min(step - 100, 0), step);
+  int[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), step);
   int result=(int)Arrays.stream(mem).average().getAsDouble();
   System.out.println("Mood: "+Integer.toString(result));
   return result;
@@ -60,11 +59,11 @@ void draw() {
   int ellipseHomeY=0;
   int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
-  if ( mouseDistFromHome < getPersonality()) {
+  if ( mouseDistFromHome < (1000 + getPersonality()) / 2) {
     ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
     ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
-    if ( mouseDistFromHome > (getPersonality() / 2)) {
+    if ( mouseDistFromHome > (1000 + (getPersonality() / 2) / 2)) {
       System.out.println(mouseDistFromHome);
       try {
         ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
@@ -80,7 +79,7 @@ void draw() {
       }
     }
   }
-  speed=0.5 * getMood();
+  speed=0.5 * (getMood() / 100);
   ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
   ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
