@@ -27,6 +27,10 @@ void draw() {
   rect(0, 0, 1800, 1800);
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
+
+  remember(mouseX);
+  remember(mouseY);
+
   int ellipseHomeX=0;
   int ellipseHomeY=0;
   int ellipsePosX=0;
