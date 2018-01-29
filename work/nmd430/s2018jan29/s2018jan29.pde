@@ -28,6 +28,7 @@ void remember(int value) {
     step = 0;
   }
   step=step + 1;
+  memory[step]=(value + memory[step]) / 2;
 }
 
 int getPersonality() {
@@ -79,7 +80,7 @@ void draw() {
       }
     }
   }
-  speed=0.5 * (getMood() / 100);
+  speed=0.5 * (getMood() / 5);
   ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
   ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
