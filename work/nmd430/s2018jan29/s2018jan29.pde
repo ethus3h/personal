@@ -31,7 +31,11 @@ void draw() {
   }
 
   if ( mouseDistFromHome < 500) {
-    ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+    try {
+      ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+     catch {
+     ellipsePosY=0;
+   }
     ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
   }
 
