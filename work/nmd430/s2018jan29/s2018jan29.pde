@@ -29,21 +29,21 @@ void draw() {
     ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
     ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
-  if ( mouseDistFromHome > 500) {
-    System.out.println(mouseDistFromHome);
-    try {
-      ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+    if ( mouseDistFromHome > 500) {
+      System.out.println(mouseDistFromHome);
+      try {
+        ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+      }
+      catch(Exception e) {
+        ellipsePosY=0;
+      }
+      try {
+        ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+      }   
+      catch(Exception e) {
+        ellipsePosX=0;
+      }
     }
-    catch(Exception e) {
-      ellipsePosY=0;
-    }
-    try {
-      ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
-    }   
-    catch(Exception e) {
-      ellipsePosX=0;
-    }
-  }
   }
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
