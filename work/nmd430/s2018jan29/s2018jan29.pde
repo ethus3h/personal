@@ -17,6 +17,10 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
+void remember(int value) {
+  
+}
+
 void draw() {
   fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(0, 0, 1800, 1800);
