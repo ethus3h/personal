@@ -7,6 +7,11 @@ void setup() {
 
 int step = 0;
 int memory[];
+int ellipsePosX=0;
+int ellipsePosY=0;
+int ellipsePrevPosX=0;
+int ellipsePrevPosY=0;
+int speed=0;
 
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
@@ -40,10 +45,11 @@ void draw() {
   remember(mouseX);
   remember(mouseY);
 
+  ellipsePrevPosX=ellipsePosX;
+  ellipsePrevPosY=ellipsePosY;
+
   int ellipseHomeX=0;
   int ellipseHomeY=0;
-  int ellipsePosX=0;
-  int ellipsePosY=0;
   int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
   if ( mouseDistFromHome < 1000) {
@@ -66,5 +72,6 @@ void draw() {
       }
     }
   }
+  ellipsePosX=(ellipsePosX + ellipsePrevPosX) / 2;
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
