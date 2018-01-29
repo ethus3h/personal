@@ -23,6 +23,7 @@ void draw() {
   int ellipseHomeY=0;
   int ellipsePosX=0;
   int ellipsePosY=0;
+  int[] memory;
   int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
   if ( mouseDistFromHome < 1000) {
