@@ -23,8 +23,12 @@ void remember(int value) {
   memory[step]=value;
 }
 
-int recall() {
+int getPersonality() {
   return (int)Arrays.stream(memory).average().getAsDouble();
+}
+
+int getMood() {
+  return (int)Arrays.stream(Arrays.copyOfRange(memory, memory.length - 100, memory.length)).average().getAsDouble();
 }
 
 void draw() {
