@@ -80,7 +80,8 @@ void draw() {
       }
     }
   }
-  speed=0.5 * (getMood() / 5);
+  speed=getMood() / 300;
+  System.out.println("Speed: "+Float.toString(speed));
   ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
   ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
