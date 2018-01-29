@@ -72,7 +72,8 @@ void draw() {
       }
     }
   }
-  speed=0.1;
+  speed=0.01;
   ellipsePosX=(int)(ellipsePosX + (ellipsePrevPosX * speed)) / 2;
+  ellipsePosY=(int)(ellipsePosY + (ellipsePrevPosY * speed)) / 2;
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
