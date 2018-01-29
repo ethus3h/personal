@@ -38,7 +38,7 @@ int getPersonality() {
 }
 
 int getMood() {
-  int[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), step);
+  int[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
   int result=(int)Arrays.stream(mem).average().getAsDouble();
   System.out.println("Mood: "+Integer.toString(result));
   return result;
@@ -48,7 +48,7 @@ void draw() {
   fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(0, 0, 1800, 1800);
 
-  stroke(getMood(), getPersonality(), 0);
+  stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
 
   remember(mouseX);
