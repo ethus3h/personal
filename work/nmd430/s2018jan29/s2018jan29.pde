@@ -4,9 +4,7 @@ void setup() {
   background(255);
 }
 
-# Was going to ask "Hi! I know two points (x1,y1) and (x2,y2) on a line. I also have a distance (single number). I'd like to find the x and y coordinates of the point that is [distance] away from the y-intercept of the line (0,0). I'm writing a computer program in Java that needs to do this. "
-But then i found https://processing.org/discourse/beta/num_1227031390.html :)
-int linePointY(int x1, int y1, int x2, int y2, int dist) {
+nt linePointY(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
   return (int)(y1 + dist * sin(angle));
 }
