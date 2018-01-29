@@ -3,9 +3,15 @@ void setup() {
   size(1800, 1800);
   background(255);
 }
+
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
-  float angle = atan2((to.y - from.y), (to.x - from.x));
-  return 
+  float angle = atan2((y2 - y1), (x2 - x1));
+  return (int)(y1 + dist * sin(angle));
+}
+
+int linePointX(int x1, int y1, int x2, int y2, int dist) {
+  float angle = atan2((y2 - y1), (x2 - x1));
+  return (int)(x1 + dist * cos(angle));
 }
 
 void draw() {
