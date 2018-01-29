@@ -52,11 +52,11 @@ void draw() {
   int ellipseHomeY=0;
   int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
-  if ( mouseDistFromHome < 1000) {
+  if ( mouseDistFromHome < getPersonality()) {
     ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
     ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
-    if ( mouseDistFromHome > 500) {
+    if ( mouseDistFromHome > (getPersonality() / 2)) {
       System.out.println(mouseDistFromHome);
       try {
         ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
@@ -72,7 +72,7 @@ void draw() {
       }
     }
   }
-  speed=0.01;
+  speed=0.5 * getMood();
   ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
   ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
