@@ -24,6 +24,9 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 void remember(int value) {
+  if(step > 10000) {
+    step = 0;
+  }
   step=step + 1;
   memory[step]=(value + memory[step]) / 2;
 }
@@ -35,7 +38,7 @@ int getPersonality() {
 }
 
 int getMood() {
-  int result=(int)Arrays.stream(Arrays.copyOfRange(memory, memory.length - 100, memory.length)).average().getAsDouble();
+  int result=(int)Arrays.stream(Arrays.copyOfRange(memory, step - 100, step)).average().getAsDouble();
   System.out.println("Mood: "+Integer.toString(result));
   return result;
 }
