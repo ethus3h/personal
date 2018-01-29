@@ -1,7 +1,8 @@
 import java.util.Arrays;
 
 void setup() {
-  size(1800, 1800);
+  size(1200, 1200);
+  //fullScreen();
   background(255);
 }
 
@@ -46,7 +47,7 @@ int getMood() {
 
 void draw() {
   fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  rect(0, 0, 1800, 1800);
+  rect(-10, -10, 18000, 18000);
 
   stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
