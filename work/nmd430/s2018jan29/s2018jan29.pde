@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 void setup() {
   size(1800, 1800);
@@ -20,6 +21,10 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 void remember(int value) {
   step=step + 1;
   memory[step]=value;
+}
+
+int recall() {
+  return (int)Arrays.stream(memory).average().getAsDouble();
 }
 
 void draw() {
