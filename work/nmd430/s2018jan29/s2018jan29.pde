@@ -33,15 +33,16 @@ void draw() {
   if ( mouseDistFromHome < 500) {
     try {
       ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
-    }catch {
-        ellipsePosY=0;
-      }
-      try {
-        ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
-        catch {
-          ellipsePosX=0;
-        }
-      }
-
-      ellipse(ellipsePosX, ellipsePosY, 400, 400);
     }
+    catch {
+      ellipsePosY=0;
+    }
+    try {
+      ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+    }   catch {
+        ellipsePosX=0;
+      }
+    
+
+    ellipse(ellipsePosX, ellipsePosY, 400, 400);
+  }
