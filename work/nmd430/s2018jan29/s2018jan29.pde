@@ -57,8 +57,8 @@ void draw() {
   ellipsePrevPosX=ellipsePosX;
   ellipsePrevPosY=ellipsePosY;
 
-  int ellipseHomeX=0;
-  int ellipseHomeY=0;
+  int ellipseHomeX=500;
+  int ellipseHomeY=500;
   int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
   if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
