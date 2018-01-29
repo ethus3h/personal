@@ -29,11 +29,15 @@ void remember(int value) {
 }
 
 int getPersonality() {
-  return (int)Arrays.stream(memory).average().getAsDouble();
+  int result=(int)Arrays.stream(memory).average().getAsDouble();
+  System.out.println("Personality: "+Integer.toString(result));
+  return result;
 }
 
 int getMood() {
-  return (int)Arrays.stream(Arrays.copyOfRange(memory, memory.length - 100, memory.length)).average().getAsDouble();
+  int result=(int)Arrays.stream(Arrays.copyOfRange(memory, memory.length - 100, memory.length)).average().getAsDouble();
+  System.out.println("Mood: "+Integer.toString(result));
+  return result;
 }
 
 void draw() {
