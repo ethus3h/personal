@@ -27,5 +27,7 @@ void draw() {
     ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, distFromMouse);
     ellipsePosX=distFromMouse;
   }
+  System.out.println(ellipsePosX);
+  System.out.println(ellipsePosY);
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
