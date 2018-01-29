@@ -23,11 +23,17 @@ void draw() {
   int ellipseHomeY=0;
   int ellipsePosX=0;
   int ellipsePosY=0;
-  int distFromMouse=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
+  int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
-  if ( distFromMouse < 1000) {
-    ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, distFromMouse);
-    ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, distFromMouse);
+  if ( mouseDistFromHome < 1000) {
+    ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+    ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
   }
+
+  if ( mouseDistFromHome < 500) {
+    ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+    ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+  }
+
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
