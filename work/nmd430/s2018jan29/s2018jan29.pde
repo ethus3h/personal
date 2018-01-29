@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 void setup() {
-  size(1200, 1200);
+  size(2000, 2000);
   //fullScreen();
   background(255);
 }
