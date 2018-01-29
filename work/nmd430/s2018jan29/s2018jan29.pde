@@ -57,8 +57,8 @@ void draw() {
   ellipsePrevPosX=ellipsePosX;
   ellipsePrevPosY=ellipsePosY;
 
-  int ellipseHomeX=100;
-  int ellipseHomeY=100;
+  int ellipseHomeX=0;
+  int ellipseHomeY=0;
   int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
   if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
@@ -71,13 +71,13 @@ void draw() {
         ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
       }
       catch(Exception e) {
-        ellipsePosY=0;
+        ellipsePosY=ellipseHomeY;
       }
       try {
         ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
       }   
       catch(Exception e) {
-        ellipsePosX=0;
+        ellipsePosX=ellipseHomeX;
       }
     }
   }
