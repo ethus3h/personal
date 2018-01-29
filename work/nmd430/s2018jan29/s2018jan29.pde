@@ -6,7 +6,7 @@ void setup() {
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
   try {
     System.out.println(Integer.toString(x1) + ", " + Integer.toString(y1) + ", " + Integer.toString(x2) + ", " + Integer.toString(y2) + ", " + Integer.toString(dist) + ", " + Integer.toString((int)((y2-y1)/(x2-x1))*(dist-x1)));
-    return (int)((y2-y1)/(x2-x1))*(dist-x1);
+    return (int)((((y2-y1)/(x2-x1))*(dist-x1)) + y1);
   }
   catch(Exception e) {
     System.out.println(Integer.toString(x1) + ", " + Integer.toString(y1) + ", " + Integer.toString(x2) + ", " + Integer.toString(y2) + ", " + Integer.toString(dist));
