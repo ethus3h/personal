@@ -32,13 +32,13 @@ void draw() {
     if ( mouseDistFromHome > 500) {
       System.out.println(mouseDistFromHome);
       try {
-        ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+        ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
       }
       catch(Exception e) {
         ellipsePosY=0;
       }
       try {
-        ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
+        ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
       }   
       catch(Exception e) {
         ellipsePosX=0;
