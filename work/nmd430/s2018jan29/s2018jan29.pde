@@ -11,7 +11,7 @@ int ellipsePosX=0;
 int ellipsePosY=0;
 int ellipsePrevPosX=0;
 int ellipsePrevPosY=0;
-int speed=0;
+float speed=0;
 
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
@@ -72,6 +72,7 @@ void draw() {
       }
     }
   }
-  ellipsePosX=(ellipsePosX + ellipsePrevPosX) / 2;
+  speed=0.1;
+  ellipsePosX=(int)(ellipsePosX + (ellipsePrevPosX * speed)) / 2;
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
