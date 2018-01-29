@@ -39,10 +39,10 @@ void draw() {
     }
     try {
       ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, 500 / mouseDistFromHome);
-    }   catch {
-        ellipsePosX=0;
-      }
-    
+    }   
+    catch {
+      ellipsePosX=0;
+    }
 
     ellipse(ellipsePosX, ellipsePosY, 400, 400);
   }
