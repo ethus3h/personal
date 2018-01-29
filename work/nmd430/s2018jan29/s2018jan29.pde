@@ -4,11 +4,12 @@ void setup() {
   background(255);
 }
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
+  System.out.println(Integer.toString(x1) + ", " + Integer.toString(y1) + ", " + Integer.toString(x2) + ", " + Integer.toString(y2) + ", " + Integer.toString(dist));
   try {
     return (int)((y2-y1)/(x2-x1))*(dist-x1);
   }
   catch(Exception e) {
-    return 0;
+    return y2;
   }
 }
 
@@ -27,7 +28,5 @@ void draw() {
     ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, distFromMouse);
     ellipsePosX=distFromMouse;
   }
-  System.out.println(ellipsePosX);
-  System.out.println(ellipsePosY);
   ellipse(ellipsePosX, ellipsePosY, 400, 400);
 }
