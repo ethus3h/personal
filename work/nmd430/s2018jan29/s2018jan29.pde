@@ -48,6 +48,7 @@ void draw() {
   fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(0, 0, 1800, 1800);
 
+  stroke(getMood(), getPersonality(), 0);
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
 
   remember(mouseX);
