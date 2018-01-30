@@ -38,10 +38,6 @@ https://www.youtube.com/watch?v=86g4_w4j3jU
 
 https://www.youtube.com/watch?v=crSBCZd5fCM Die Antwoord: "I Don't Care"
 
-https://www.youtube.com/watch?v=6IXcxQj0KZU William Pearson: "Interstellar Spheres"
-
-https://www.youtube.com/watch?v=5PYbtNP-g4Q Alexandra Stan: "Balans 2k18 (French Version) (Deep Matter & Damon Hess English Remix)"
-
 https://www.youtube.com/watch?v=TKsVvVxQoi4 Purity Ring: "bodyache"
 
 https://www.youtube.com/watch?v=CL1cKfCQWyA Zedd / Foxes: "Clarity"
@@ -161,6 +157,10 @@ https://www.youtube.com/watch?v=VefpeL4tqh0 Nitro Fun: "Cheat Codes"
 https://www.youtube.com/watch?v=YZqFCUH6rTY Darren Styles & Stonebank: "Sky Is Falling" (feat. EMEL)
 
 https://www.youtube.com/watch?v=901jaZJ1mLY Borgore: "Cry Me A River"
+
+https://www.youtube.com/watch?v=6IXcxQj0KZU William Pearson: "Interstellar Spheres"
+
+https://www.youtube.com/watch?v=5PYbtNP-g4Q Alexandra Stan: "Balans 2k18 (French Version) (Deep Matter & Damon Hess English Remix)"
 
 Max Reger: Der 100. Psalm: ( https://www.youtube.com/watch?v=GrbE65KjUmA ? Leon Botstein / American Symphony Orchestra / Concert Chorale of New York: "Psalm 100, Op. 106")
 
