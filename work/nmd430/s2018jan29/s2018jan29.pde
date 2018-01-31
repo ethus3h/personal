@@ -7,12 +7,12 @@ void setup() {
 }
 
 class Wanderer {
+  private final float followTendency;
   public Wanderer(float initFollowTendency) {
-    final float this.followTendency = initFollowTendency;
+    this.followTendency = initFollowTendency;
   }
   int step = 0;
   int memory[] = new int[10000];
-  float followTendency = initFollowTendency;
   int ellipsePosX=0;
   int ellipsePosY=0;
   int ellipseHomeX=0;
