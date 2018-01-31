@@ -9,6 +9,7 @@ void setup() {
 class Wanderer {
   int step = 0;
   int memory[] = new int[10000];
+  int followTendency = 1000;
   int ellipsePosX=0;
   int ellipsePosY=0;
   int ellipsePrevPosX=0;
