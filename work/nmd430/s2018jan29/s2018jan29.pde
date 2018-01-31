@@ -8,57 +8,56 @@ void setup() {
 
 class Wanderer {
   void init() {
-int step = 0;
-int memory[] = new int[10000];
-int ellipsePosX=0;
-int ellipsePosY=0;
-int ellipsePrevPosX=0;
-int ellipsePrevPosY=0;
-float speed=0;
-
+    int step = 0;
+    int memory[] = new int[10000];
+    int ellipsePosX=0;
+    int ellipsePosY=0;
+    int ellipsePrevPosX=0;
+    int ellipsePrevPosY=0;
+    float speed=0;
   }
   void tick() {
-  fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  rect(-10, -10, 18000, 18000);
+    fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
+    rect(-10, -10, 18000, 18000);
 
-  stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
-  fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
+    stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
+    fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
 
-  remember(mouseX);
-  remember(mouseY);
+    remember(mouseX);
+    remember(mouseY);
 
-  ellipsePrevPosX=ellipsePosX;
-  ellipsePrevPosY=ellipsePosY;
+    ellipsePrevPosX=ellipsePosX;
+    ellipsePrevPosY=ellipsePosY;
 
-  int ellipseHomeX=0;
-  int ellipseHomeY=0;
-  int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
+    int ellipseHomeX=0;
+    int ellipseHomeY=0;
+    int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
-  if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
-    ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
-    ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+    if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
+      ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+      ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
-    if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
-      System.out.println(mouseDistFromHome);
-      try {
-        ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
-      }
-      catch(Exception e) {
-        ellipsePosY=ellipseHomeY;
-      }
-      try {
-        ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
-      }   
-      catch(Exception e) {
-        ellipsePosX=ellipseHomeX;
+      if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
+        System.out.println(mouseDistFromHome);
+        try {
+          ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+        }
+        catch(Exception e) {
+          ellipsePosY=ellipseHomeY;
+        }
+        try {
+          ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+        }   
+        catch(Exception e) {
+          ellipsePosX=ellipseHomeX;
+        }
       }
     }
-  }
-  speed=(float)getMood() / 600.0;
-  System.out.println("Speed: "+Float.toString(speed));
-  ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
-  ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
-  ellipse(ellipsePosX, ellipsePosY, 400, 400);
+    speed=(float)getMood() / 600.0;
+    System.out.println("Speed: "+Float.toString(speed));
+    ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
+    ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
+    ellipse(ellipsePosX, ellipsePosY, 400, 400);
   }
 }
 
@@ -73,7 +72,7 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 void remember(int value) {
-  if(step >= 10000) {
+  if (step >= 10000) {
     step = 0;
   } 
   memory[step]=(value + memory[step]) / 2;
