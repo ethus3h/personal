@@ -14,6 +14,8 @@ class Wanderer {
   int ellipsePosY=0;
   int ellipseHomeX=0;
   int ellipseHomeY=0;
+  final int ellipseStartX=0;
+  final int ellipseStartY=0;
   int ellipsePrevPosX=0;
   int ellipsePrevPosY=0;
   float speed=0;
@@ -50,7 +52,7 @@ class Wanderer {
 
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
-    ellipseHomeX=ellipsePrevPosX;
+    ellipseHomeX=(followTendency * ellipsePrevPosX);
     ellipseHomeY=ellipsePrevPosY;
 
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
