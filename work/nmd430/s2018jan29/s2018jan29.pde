@@ -44,7 +44,7 @@ class Wanderer {
   }
 
   void tick() {
-    fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
+    fill(((mouseX/followTendency) % 255), ((mouseY/followTendency) % 255), ((mouseX/3+mouseY/3) % 255), 5);
     rect(-10, -10, 18000, 18000);
 
     stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
