@@ -21,6 +21,8 @@ class Wanderer {
   final float ellipseStartY=0;
   int ellipsePrevPosX=0;
   int ellipsePrevPosY=0;
+  int personalityCached=0;
+  int moodCached=0;
   float speed=0;
   void remember(int value) {
     if (step >= 10000) {
@@ -33,13 +35,14 @@ class Wanderer {
   int getPersonality() {
     int result=(int)Arrays.stream(memory).average().getAsDouble();
     System.out.println(Float.toString(followTendency)+" Personality: "+Integer.toString(result));
+    personalityCached=result;
     return result;
   }
 
   int getMood() {
     int[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
     int result=(int)Arrays.stream(mem).average().getAsDouble();
-    System.out.println(Float.toString(followTendency)+" Mood: "+Integer.toString(result));
+    moodCached=result;
     return result;
   }
 
@@ -78,7 +81,7 @@ class Wanderer {
       }
     }
     speed=(float)getMood() / 600.0;
-    System.out.println(Float.toString(followTendency)+" Speed: "+Float.toString(speed));
+    System.out.println(Float.toString(followTendency)+" Mood: "+Integer.toString(getMood())+" Personality: "+Integer.toString(getPersonality())+" Speed: "+Float.toString(speed));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
     ellipse(ellipsePosX, ellipsePosY, 400, 400);
