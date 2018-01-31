@@ -6,7 +6,10 @@ void setup() {
   background(255);
 }
 
-class Wanderer(float initFollowTendency) {
+class Wanderer {
+  public Wanderer(float initFollowTendency) {
+    final float this.followTendency = initFollowTendency;
+  }
   int step = 0;
   int memory[] = new int[10000];
   float followTendency = initFollowTendency;
