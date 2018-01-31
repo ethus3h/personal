@@ -10,6 +10,7 @@ Known missing tracks:
 * "Sebastian" by Noel Paul Stookey (version in playlist has extra tail)
 * "Revolution 9" by the Beatles?
 * "So Fine" by Yamaha
+* "Rays of Hope" (from Last Exile OST 2) by Hitomi
 
 Fully missing:
 * "Snowglobe" (rap version) by AJR
