@@ -4,6 +4,11 @@ void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
+  int i = 0;
+  while (i < 8) {
+    System.out.println(Integer.toString(i % 3));
+    i = i + 1;
+  }
 }
 
 class Wanderer {
