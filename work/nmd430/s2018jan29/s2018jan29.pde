@@ -49,13 +49,13 @@ class Wanderer {
     stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
     fill(((mouseX/followTendency) % 255), ((mouseY/followTendency) % 255), ((mouseX/4+mouseY/4) % 255));
 
-    remember(mouseX);
-    remember(mouseY);
+    remember((ellipsePosX + mouseX) / 2);
+    remember((ellipsePosY + mouseY) / 2);
 
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
     ellipseHomeX=(int) lerp(ellipseStartX, ellipsePrevPosX, followTendency);
-    ellipseHomeY=ellipsePrevPosY;
+    ellipseHomeY=(int) lerp(ellipseStartY, ellipsePrevPosY, followTendency);
 
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
