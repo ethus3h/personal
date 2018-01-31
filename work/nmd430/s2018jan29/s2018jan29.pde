@@ -52,7 +52,7 @@ class Wanderer {
 
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
-    ellipseHomeX=(followTendency * ellipsePrevPosX);
+    ellipseHomeX=(followTendency * ellipsePrevPosX) + ;
     ellipseHomeY=ellipsePrevPosY;
 
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
@@ -93,6 +93,11 @@ int linePointY(int x1, int y1, int x2, int y2, int dist) {
 int linePointX(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
   return (int)(x1 + dist * cos(angle));
+}
+
+float lerp(float v0, float v1, float t) {
+  /* from Wikipedia https://en.wikipedia.org/wiki/Linear_interpolation?useskin=minerva */
+  return (1 - t) * v0 + t * v1;
 }
 
 Wanderer wanderer1=new Wanderer();
