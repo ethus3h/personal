@@ -48,8 +48,6 @@ class Wanderer {
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
 
-    int ellipsePrevPosX=0;
-    int ellipsePrevPosY=0;
     int mouseDistFromHome=(int)dist(ellipsePrevPosX, ellipsePrevPosY, mouseX, mouseY);
 
     if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
