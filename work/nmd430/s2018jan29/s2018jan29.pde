@@ -52,7 +52,7 @@ class Wanderer {
 
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
-    ellipseHomeX=lerp(ellipseStartX, ellipsePrevPosX, followTendency);
+    ellipseHomeX=(int) lerp(ellipseStartX, ellipsePrevPosX, followTendency);
     ellipseHomeY=ellipsePrevPosY;
 
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
