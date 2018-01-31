@@ -102,5 +102,7 @@ Wanderer wanderer0=new Wanderer(0);
 Wanderer wanderer5=new Wanderer(0.5);
 Wanderer wanderer1=new Wanderer(1);
 void draw() {
+  wanderer0.tick();
+  wanderer5.tick();
   wanderer1.tick();
 }
