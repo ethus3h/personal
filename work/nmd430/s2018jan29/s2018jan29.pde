@@ -34,7 +34,6 @@ class Wanderer {
 
   int getPersonality() {
     int result=(int)Arrays.stream(memory).average().getAsDouble();
-    System.out.println(Float.toString(followTendency)+" Personality: "+Integer.toString(result));
     personalityCached=result;
     return result;
   }
@@ -65,7 +64,6 @@ class Wanderer {
       ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
       if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
-        System.out.println(mouseDistFromHome);
         try {
           ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
         }
@@ -81,7 +79,7 @@ class Wanderer {
       }
     }
     speed=(float)getMood() / 600.0;
-    System.out.println(Float.toString(followTendency)+" Mood: "+Integer.toString(getMood())+" Personality: "+Integer.toString(getPersonality())+" Speed: "+Float.toString(speed));
+    System.out.println(Float.toString(followTendency)+" Mood: "+Integer.toString(getMood())+" Personality: "+Integer.toString(getPersonality())+" Speed: "+Float.toString(speed)+" mouseDistFromHome: "+Integer.toString(mouseDistFromHome));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
     ellipse(ellipsePosX, ellipsePosY, 400, 400);
