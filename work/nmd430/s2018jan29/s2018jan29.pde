@@ -14,6 +14,27 @@ class Wanderer {
   int ellipsePrevPosX=0;
   int ellipsePrevPosY=0;
   float speed=0;
+void remember(int value) {
+  if (step >= 10000) {
+    step = 0;
+  } 
+  memory[step]=(value + memory[step]) / 2;
+  step=step + 1;
+}
+
+int getPersonality() {
+  int result=(int)Arrays.stream(memory).average().getAsDouble();
+  System.out.println("Personality: "+Integer.toString(result));
+  return result;
+}
+
+int getMood() {
+  int[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
+  int result=(int)Arrays.stream(mem).average().getAsDouble();
+  System.out.println("Mood: "+Integer.toString(result));
+  return result;
+}
+
   void tick() {
     fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
     rect(-10, -10, 18000, 18000);
@@ -67,27 +88,6 @@ int linePointY(int x1, int y1, int x2, int y2, int dist) {
 int linePointX(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
   return (int)(x1 + dist * cos(angle));
-}
-
-void remember(int value) {
-  if (step >= 10000) {
-    step = 0;
-  } 
-  memory[step]=(value + memory[step]) / 2;
-  step=step + 1;
-}
-
-int getPersonality() {
-  int result=(int)Arrays.stream(memory).average().getAsDouble();
-  System.out.println("Personality: "+Integer.toString(result));
-  return result;
-}
-
-int getMood() {
-  int[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
-  int result=(int)Arrays.stream(mem).average().getAsDouble();
-  System.out.println("Mood: "+Integer.toString(result));
-  return result;
 }
 
 Wanderer wanderer1=new Wanderer();
