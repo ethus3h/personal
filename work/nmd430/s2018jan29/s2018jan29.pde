@@ -32,14 +32,14 @@ class Wanderer {
 
   int getPersonality() {
     int result=(int)Arrays.stream(memory).average().getAsDouble();
-    System.out.println("Personality: "+Integer.toString(result));
+    System.out.println(Float.toString(followTendency)+" Personality: "+Integer.toString(result));
     return result;
   }
 
   int getMood() {
     int[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
     int result=(int)Arrays.stream(mem).average().getAsDouble();
-    System.out.println("Mood: "+Integer.toString(result));
+    System.out.println(Float.toString(followTendency)+" Mood: "+Integer.toString(result));
     return result;
   }
 
@@ -78,7 +78,7 @@ class Wanderer {
       }
     }
     speed=(float)getMood() / 600.0;
-    System.out.println("Speed: "+Float.toString(speed));
+    System.out.println(Float.toString(followTendency)+" Speed: "+Float.toString(speed));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
     ellipse(ellipsePosX, ellipsePosY, 400, 400);
