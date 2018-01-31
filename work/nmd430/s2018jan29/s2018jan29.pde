@@ -12,6 +12,8 @@ class Wanderer {
   int followTendency = 1000;
   int ellipsePosX=0;
   int ellipsePosY=0;
+  int ellipseHomeX=0;
+  int ellipseHomeY=0;
   int ellipsePrevPosX=0;
   int ellipsePrevPosY=0;
   float speed=0;
@@ -48,9 +50,9 @@ class Wanderer {
 
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
+    ellipseHomeX=ellipsePrevPosX;
+    ellipseHomeY=ellipsePrevPosY;
 
-    int ellipseHomeX=0;
-    int ellipseHomeY=0;
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
     if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
