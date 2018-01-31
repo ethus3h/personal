@@ -45,7 +45,7 @@ class Wanderer {
 
   void tick() {
     stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
-    fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/4+mouseY/4) % 255));
+    fill(((mouseX/followTendency) % 255), ((mouseY/followTendency) % 255), ((mouseX/4+mouseY/4) % 255));
 
     remember(mouseX);
     remember(mouseY);
@@ -99,7 +99,7 @@ Wanderer wanderer0=new Wanderer(0);
 Wanderer wanderer5=new Wanderer(0.5);
 Wanderer wanderer1=new Wanderer(1);
 void draw() {
-    fill(((mouseX/followTendency) % 255), ((mouseY/followTendency) % 255), ((mouseX/3+mouseY/3) % 255), 5);
+    fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
     rect(-10, -10, 18000, 18000);
 
   wanderer0.tick();
