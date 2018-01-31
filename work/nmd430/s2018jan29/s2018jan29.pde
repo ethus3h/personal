@@ -48,25 +48,27 @@ class Wanderer {
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
 
-    int mouseDistFromHome=(int)dist(ellipsePrevPosX, ellipsePrevPosY, mouseX, mouseY);
+    int ellipseHomeX=0;
+    int ellipseHomeY=0;
+    int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
     if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
-      ellipsePosY=linePointY(ellipsePrevPosX, ellipsePrevPosY, mouseX, mouseY, mouseDistFromHome);
-      ellipsePosX=linePointX(ellipsePrevPosX, ellipsePrevPosY, mouseX, mouseY, mouseDistFromHome);
+      ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+      ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
       if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
         System.out.println(mouseDistFromHome);
         try {
-          ellipsePosY=linePointY(ellipsePrevPosX, ellipsePrevPosY, mouseX, mouseY, mouseDistFromHome / 250);
+          ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
         }
         catch(Exception e) {
-          ellipsePosY=ellipsePrevPosY;
+          ellipsePosY=ellipseHomeY;
         }
         try {
-          ellipsePosX=linePointX(ellipsePrevPosX, ellipsePrevPosY, mouseX, mouseY, mouseDistFromHome / 250);
+          ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
         }   
         catch(Exception e) {
-          ellipsePosX=ellipsePrevPosX;
+          ellipsePosX=ellipseHomeX;
         }
       }
     }
