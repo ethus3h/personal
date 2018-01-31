@@ -95,6 +95,8 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
+Wanderer wanderer0=new Wanderer(0);
+Wanderer wanderer05=new Wanderer(0.5);
 Wanderer wanderer1=new Wanderer(1);
 void draw() {
   wanderer1.tick();
