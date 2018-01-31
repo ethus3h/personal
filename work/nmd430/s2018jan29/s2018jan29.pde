@@ -7,7 +7,6 @@ void setup() {
 }
 
 class Wanderer {
-  void init() {
     int step = 0;
     int memory[] = new int[10000];
     int ellipsePosX=0;
@@ -15,7 +14,6 @@ class Wanderer {
     int ellipsePrevPosX=0;
     int ellipsePrevPosY=0;
     float speed=0;
-  }
   void tick() {
     fill((mouseX/3 % 255), (mouseY/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
     rect(-10, -10, 18000, 18000);
