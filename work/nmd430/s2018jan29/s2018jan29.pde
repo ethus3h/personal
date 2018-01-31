@@ -9,13 +9,13 @@ void setup() {
 class Wanderer {
   int step = 0;
   int memory[] = new int[10000];
-  int followTendency = 1000;
+  float followTendency = 1;
   int ellipsePosX=0;
   int ellipsePosY=0;
   int ellipseHomeX=0;
   int ellipseHomeY=0;
-  final int ellipseStartX=0;
-  final int ellipseStartY=0;
+  final float ellipseStartX=0;
+  final float ellipseStartY=0;
   int ellipsePrevPosX=0;
   int ellipsePrevPosY=0;
   float speed=0;
@@ -52,7 +52,7 @@ class Wanderer {
 
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
-    ellipseHomeX=(followTendency * ellipsePrevPosX) + ;
+    ellipseHomeX=lerp(ellipseStartX, ellipsePrevPosX, followTendency);
     ellipseHomeY=ellipsePrevPosY;
 
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
