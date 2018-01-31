@@ -6,10 +6,10 @@ void setup() {
   background(255);
 }
 
-class Wanderer {
+class Wanderer(float initFollowTendency) {
   int step = 0;
   int memory[] = new int[10000];
-  float followTendency = 1;
+  float followTendency = initFollowTendency;
   int ellipsePosX=0;
   int ellipsePosY=0;
   int ellipseHomeX=0;
@@ -95,7 +95,7 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
-Wanderer wanderer1=new Wanderer();
+Wanderer wanderer1=new Wanderer(1);
 void draw() {
   wanderer1.tick();
 }
