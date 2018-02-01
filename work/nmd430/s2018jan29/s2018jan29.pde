@@ -3,7 +3,7 @@ import java.util.concurrent.TimeUnit;
 
 int smoothMod(int num, int limit) {
   int mod=num % ((limit * 2) - ((limit / 2) + 1));
-  if(mod > (limit / 2)) {
+  if(mod > ((limit / 2) + 1)) {
     System.out.println("Stage is even for num="+Integer.toString(num)+"; mod="+Integer.toString(mod));
     return mod + 10;
   }
