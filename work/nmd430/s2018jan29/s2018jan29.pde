@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
+import java.math.BigInteger;
 
 void setup() {
   size(2000, 2000);
@@ -8,7 +9,7 @@ void setup() {
   int i = 0;
   int res = 0;
   while (i < 8) {
-    res = (Math.pow(i,3) + (2 * Math.pow(i,2)) + 2) % 4;
+    res = (BigInteger.pow(i,3) + (2 * BigInteger.pow(i,2)) + 2) % 4;
     System.out.println(Integer.toString(res));
     i = i + 1;
   }
