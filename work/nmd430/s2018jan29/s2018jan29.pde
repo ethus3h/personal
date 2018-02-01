@@ -120,7 +120,7 @@ int smoothMod(int num, int limit) {
   int mod = num % (limit + 1);
   int result = mod;
   if ((2 * mod) > (limit + 1)) {
-    result = ((((limit / 2) + 1) - mod) + (limit / 2));
+    result = ((((limit / 2) + 1) - mod) + (limit / 2)) + 1;
     //System.out.println("mod gtr than hlaf limit"+Integer.toString(mod)+" with result: "+Integer.toString(result));
   }
   //System.out.println("smoothMod of "+Integer.toString(num)+" with limit "+Integer.toString(limit)+" = "+Integer.toString(result));
