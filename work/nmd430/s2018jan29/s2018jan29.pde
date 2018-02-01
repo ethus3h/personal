@@ -47,7 +47,7 @@ class Wanderer {
 
   void tick() {
     stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
-    fill(smoothMod((int)(mouseX/followTendency), 3), smoothMod((int)(mouseY/followTendency), 3), ((mouseX/4+mouseY/4) % 255));
+    fill(smoothMod((int)(mouseX/followTendency), 255), smoothMod((int)(mouseY/followTendency), 255), ((mouseX/4+mouseY/4) % 255));
 
     remember((ellipsePosX + mouseX) / 2);
     remember((ellipsePosY + mouseY) / 2);
@@ -97,6 +97,7 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 int smoothMod(int num, int limit) {
+  limit = limit + 1;
   int mod=num % ((limit * 2) - ((limit / 2) + 1));
   if(mod > ((limit / 2) + 1)) {
     return mod - ((limit / 2) + 1);
