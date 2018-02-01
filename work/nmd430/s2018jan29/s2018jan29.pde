@@ -10,12 +10,11 @@ void setup() {
   int res = 0;
   while (i < 10) {
     while (j < 10) {
-      res = smoothMod(i, 255);
-      System.out.print(Integer.toString(i)+": "+Integer.toString(res));
-      i = i + 1;
+      res = smoothMod(j, 255);
+      System.out.print(Integer.toString(j)+": "+Integer.toString(res));
+      j = j + 1;
     }
-    res = smoothMod(i, 255);
-    System.out.println(Integer.toString(i)+": "+Integer.toString(res));
+    System.out.println();
     i = i + 1;
   }
   try {
