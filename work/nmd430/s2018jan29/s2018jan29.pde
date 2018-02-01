@@ -79,7 +79,7 @@ class Wanderer {
       }
     }
     speed=(float)getMood() / 600.0;
-    System.out.println(Float.toString(followTendency)+" Mood: "+Integer.toString(getMood())+" Personality: "+Integer.toString(getPersonality())+" Speed: "+Float.toString(speed)+" mouseDistFromHome: "+Integer.toString(mouseDistFromHome));
+    //System.out.println(Float.toString(followTendency)+" Mood: "+Integer.toString(getMood())+" Personality: "+Integer.toString(getPersonality())+" Speed: "+Float.toString(speed)+" mouseDistFromHome: "+Integer.toString(mouseDistFromHome));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
     ellipse(ellipsePosX, ellipsePosY, 400, 400);
