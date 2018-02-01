@@ -180,10 +180,10 @@ class bulkWanderer {
   Wanderer wanderer7;
   Wanderer wanderer1;
   bulkWanderer(int x, int y) {
-    this.wanderer0=new Wanderer(0, 0, 0);
-    this.wanderer3=new Wanderer(0.3, 0, 0);
-    this.wanderer7=new Wanderer(0.7, 0, 0);
-    this.wanderer1=new Wanderer(1, 0, 0);
+    this.wanderer0=new Wanderer(0, x, y);
+    this.wanderer3=new Wanderer(0.3, x, y);
+    this.wanderer7=new Wanderer(0.7, x, y);
+    this.wanderer1=new Wanderer(1, x, y);
   }
 }
 
