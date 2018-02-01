@@ -7,7 +7,7 @@ import ddf.minim.analysis.*;
 //AudioPlayer player;
 //AudioInput input;
 //FFT fft;
- 
+
 int mySize = 2000;
 int currentTick = 0;
 void setup() {
@@ -224,7 +224,7 @@ void draw() {
   //  fill(monitor * mouseX * 100, monitorb * mouseY * 100, monitorc * ((mouseX * mouseY) / 2), 100);
   //}
   rect(-10, -10, 18000, 18000);
-  
+
   topLeftBulkWanderer.tick(0);
   topRightBulkWanderer.tick(0);
   lowerLeftBulkWanderer.tick(0);
