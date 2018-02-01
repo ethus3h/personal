@@ -120,7 +120,7 @@ int smoothMod(int num, int limit) {
   int mod = num % (limit + 1);
   int result = mod;
   if ((2 * mod) > (limit + 1)) {
-    result = limit - mod + 2((((limit / 2) + 1) - mod) + (limit / 2)) + 1;
+    result = limit - mod + 2;
   }
   return result;
 }
