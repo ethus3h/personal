@@ -106,13 +106,13 @@ class Wanderer {
 
       if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
         try {
-          ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+          ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromStart / 250);
         }
         catch(Exception e) {
           ellipsePosY=ellipseHomeY;
         }
         try {
-          ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+          ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromStart / 250);
         }   
         catch(Exception e) {
           ellipsePosX=ellipseHomeX;
