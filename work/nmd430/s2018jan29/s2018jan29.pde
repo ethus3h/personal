@@ -80,9 +80,9 @@ class Wanderer {
         TimeUnit.SECONDS.sleep(10);
       }
       catch (Exception e) {
-      }
+      }}
       return result;
-    }
+    
 
     void tick() {
       remember((ellipsePosX + mouseX) / 2);
