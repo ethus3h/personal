@@ -8,10 +8,10 @@ void setup() {
   int i = 0;
   int j = 0;
   int res = 0;
-  while (i < 10) {
+  while (i < 26) {
     while (j < 10) {
       res = smoothMod(j + (10 * i), 255);
-      System.out.print("("+Integer.toString(j)+":"+Integer.toString(res)+")");
+      System.out.print("|"+Integer.toString(j + (10 * i))+":"+Integer.toString(res));
       j = j + 1;
     }
     System.out.println();
