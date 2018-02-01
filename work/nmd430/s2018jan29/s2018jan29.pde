@@ -6,9 +6,15 @@ void setup() {
   //fullScreen();
   background(255);
   int i = 0;
+  int j = 0;
   int res = 0;
-  while (i < 8) {
-    res = smoothMod(i, 3);
+  while (i < 10) {
+  while (j < 10) {
+    res = smoothMod(i, 255);
+    System.out.print(Integer.toString(i)+": "+Integer.toString(res));
+    i = i + 1;
+  }
+    res = smoothMod(i, 255);
     System.out.println(Integer.toString(i)+": "+Integer.toString(res));
     i = i + 1;
   }
