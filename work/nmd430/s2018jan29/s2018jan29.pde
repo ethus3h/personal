@@ -98,13 +98,14 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 
 int smoothMod(int num, int limit) {
   limit = limit + 1;
-  int mod=num % ((limit * 2) - ((limit / 2) + 1));
+  int mod = num % ((limit * 2) - ((limit / 2) + 1));
+  int result = mod;
   if(mod > ((limit / 2) + 1)) {
-    mod = mod - ((limit / 2) + 1);
-    System.out.println("mod gtr than hlaf limit"+Integer.toString(mod));
+    result = mod - ((limit / 2) + 1);
+    System.out.println("mod gtr than hlaf limit"+Integer.toString(mod)+" with result: "+Integer.toString(result));
   }
   System.out.println("smoothMod of "+Integer.toString(num)+" with limit "+Integer.toString(limit)+" = "+Integer.toString(mod));
-  return mod;
+  return result;
 }
 
 Wanderer wanderer0=new Wanderer(0);
