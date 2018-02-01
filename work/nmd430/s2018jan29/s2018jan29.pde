@@ -203,6 +203,12 @@ class BulkWanderer {
     this.wanderer7.tick(monitor);
     this.wanderer1.tick(monitor);
   }
+  void click() {
+    this.wanderer0.click();
+    this.wanderer3.click();
+    this.wanderer7.click();
+    this.wanderer1.click();
+  }
 }
 
 BulkWanderer topLeftBulkWanderer = new BulkWanderer(0, 0);
