@@ -8,7 +8,7 @@ void setup() {
   int i = 0;
   int j = 0;
   int res = 0;
-  while (i < 26) {
+  while (i < 27) {
     while (j < 10) {
       res = smoothMod(j + (10 * i), 255);
       System.out.print("|"+Integer.toString(j + (10 * i))+":"+Integer.toString(res));
@@ -116,6 +116,7 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 int smoothMod(int num, int limit) {
+  limit = limit * 2;
   int mod = num % (limit + 1);
   int result = mod;
   if (mod > ((limit / 2) + 1)) {
