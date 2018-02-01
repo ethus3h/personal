@@ -43,6 +43,10 @@ class Wanderer {
   }
   int step = 0;
   int memory[] = new int[10000];
+  int strokeColor[] = new int[3];
+  int innerColor[] = new int[3];
+  int midColor[] = new int[3];
+  int outerColor[] = new int[3];
   int ellipsePosX=0;
   int ellipsePosY=0;
   int ellipseHomeX=0;
@@ -110,6 +114,7 @@ class Wanderer {
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
     
+    strokeColor[0]=
     stroke(getMood() * 10, smoothMod(getPersonality(), 255), ((getMood() * 10) + getPersonality()) / 2);
 
     fill(smoothMod((int)(mouseX/followTendency), 255), smoothMod((int)(mouseY/followTendency), 255), ((mouseX/4+mouseY/4) % 255));
