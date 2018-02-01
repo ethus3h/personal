@@ -160,7 +160,7 @@ int smoothMod(int num, int limit) {
 }
 
 float weightedAvg(int a, int b) {
-  return (a + b) / 2;
+  return b + (a * 0.1);
 }
 
 Wanderer wanderer0=new Wanderer(0);
