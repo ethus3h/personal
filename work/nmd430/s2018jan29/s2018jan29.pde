@@ -30,8 +30,8 @@ void setup() {
 class Wanderer {
   private final float followTendency;
   private final int id;
-  private final float specifiedX;
-  private final float specifiedY;
+  private final int specifiedX;
+  private final int specifiedY;
   public Wanderer(float initFollowTendency, int x, int y) {
     this.followTendency = initFollowTendency;
     this.specifiedX = x;
@@ -50,14 +50,14 @@ class Wanderer {
   int innerColor[] = new int[3];
   int midColor[] = new int[3];
   int outerColor[] = new int[3];
-  int ellipsePosX=0;
-  int ellipsePosY=0;
-  int ellipseHomeX=0;
-  int ellipseHomeY=0;
-  final float ellipseStartX=0;
-  final float ellipseStartY=0;
-  int ellipsePrevPosX=0;
-  int ellipsePrevPosY=0;
+  int ellipsePosX=specifiedX;
+  int ellipsePosY=specifiedY;
+  int ellipseHomeX=specifiedX;
+  int ellipseHomeY=specifiedY;
+  final float ellipseStartX=specifiedX;
+  final float ellipseStartY=specifiedY;
+  int ellipsePrevPosX=specifiedX;
+  int ellipsePrevPosY=specifiedY;
   int personalityCached=0;
   int moodCached=0;
   float speed=0;
