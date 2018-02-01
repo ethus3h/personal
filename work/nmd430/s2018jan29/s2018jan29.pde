@@ -174,12 +174,12 @@ float weightedAvg(int a, int b) {
   return b + (a * 0.1);
 }
 
-class bulkWanderer {
+class BulkWanderer {
   Wanderer wanderer0;
   Wanderer wanderer3;
   Wanderer wanderer7;
   Wanderer wanderer1;
-  bulkWanderer(int x, int y) {
+  BulkWanderer(int x, int y) {
     this.wanderer0=new Wanderer(0, x, y);
     this.wanderer3=new Wanderer(0.3, x, y);
     this.wanderer7=new Wanderer(0.7, x, y);
@@ -193,6 +193,7 @@ class bulkWanderer {
   }
 }
 
+BulkWanderer topLeftBulkWanderer = new BulkWanderer(0, 0);
 void draw() {
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(-10, -10, 18000, 18000);
