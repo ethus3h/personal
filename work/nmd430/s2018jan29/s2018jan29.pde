@@ -110,11 +110,11 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
-long pow (long a, int b)
+int intPower (int a, int b)
 {
     if ( b == 0)        return 1;
     if ( b == 1)        return a;
-    if (isEven( b ))    return     pow ( a * a, b/2); //even a=(a^2)^b/2
+    if (Math.isEven( b ))    return     pow ( a * a, b/2); //even a=(a^2)^b/2
     else                return a * pow ( a * a, b/2); //odd  a=a*(a^2)^b/2
 
 }
