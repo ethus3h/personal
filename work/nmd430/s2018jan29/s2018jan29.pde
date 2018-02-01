@@ -32,11 +32,14 @@ class Wanderer {
   private final int id;
   private final int specifiedX;
   private final int specifiedY;
+  final int ellipseStartX;
+  final int ellipseStartY;
   public Wanderer(float initFollowTendency, int x, int y) {
     this.followTendency = initFollowTendency;
     this.specifiedX = x;
-    System.out.println("New w with x "+Integer.toString(x));
     this.specifiedY = y;
+    this.ellipseStartX = x;
+    this.ellipseStartY = y;
     if (initFollowTendency == 0) {
       this.id = 0;
     } else if (initFollowTendency == 1) {
@@ -55,8 +58,6 @@ class Wanderer {
   int ellipsePosY=this.specifiedY;
   int ellipseHomeX=this.specifiedX;
   int ellipseHomeY=this.specifiedY;
-  final int ellipseStartX=this.specifiedX;
-  final int ellipseStartY=this.specifiedY;
   int ellipsePrevPosX=this.specifiedX;
   int ellipsePrevPosY=this.specifiedY;
   int personalityCached=0;
