@@ -1,13 +1,6 @@
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-int smoothMod(int num, int limit) {
-  int mod=num % ((limit * 2) - ((limit / 2) + 1));
-  if(mod > ((limit / 2) + 1)) {
-    return mod - ((limit / 2) + 1);
-  }
-  return mod;
-}
 void setup() {
   size(2000, 2000);
   //fullScreen();
@@ -114,6 +107,14 @@ int linePointY(int x1, int y1, int x2, int y2, int dist) {
 int linePointX(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
   return (int)(x1 + dist * cos(angle));
+}
+
+int smoothMod(int num, int limit) {
+  int mod=num % ((limit * 2) - ((limit / 2) + 1));
+  if(mod > ((limit / 2) + 1)) {
+    return mod - ((limit / 2) + 1);
+  }
+  return mod;
 }
 
 Wanderer wanderer0=new Wanderer(0);
