@@ -230,11 +230,11 @@ void draw() {
   lowerLeftBulkWanderer.tick(monitor);
   lowerRightBulkWanderer.tick(monitor);
   centerBulkWanderer.tick(monitor);
-}
+
 mouseClicked() {
   topLeftBulkWanderer.click();
   topRightBulkWanderer.click();
   lowerLeftBulkWanderer.click();
   lowerRightBulkWanderer.click();
   centerBulkWanderer.click();
-}
+}}
