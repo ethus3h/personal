@@ -102,6 +102,10 @@ class Wanderer {
     return result;
   }
 
+  void click() {
+    remember(1000000);
+  }
+
   void tick(float monitor) {
     remember(smoothMod((ellipsePosX + mouseX) / 2, mySize));
     remember(smoothMod((ellipsePosY + mouseY) / 2, mySize));
