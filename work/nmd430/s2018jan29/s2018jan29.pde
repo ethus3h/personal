@@ -139,6 +139,12 @@ class Wanderer {
     strokeColor[2]=(int)weightedAvg(strokeColor[2], ((getMood() * 10) + getPersonality()) / 2);
     stroke(strokeColor[0], strokeColor[1], strokeColor[2]);
 
+    midColor[0]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseX/followTendency), 320));
+    midColor[1]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseY/followTendency), 320));
+    midColor[2]=(int)weightedAvg(smoothMod(getMood(), 255), ((mouseX/4+mouseY/4) % 255));
+    fill(midColor[0], midColor[1], midColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
+
     innerColor[0]=(int)weightedAvg(smoothMod(ellipsePosX, 255), smoothMod((int)(mouseX/followTendency), 255));
     innerColor[1]=(int)weightedAvg(smoothMod(ellipsePosY, 255), smoothMod((int)(mouseY/followTendency), 255));
     innerColor[2]=(int)weightedAvg(smoothMod(((int)weightedAvg(ellipsePosY * 100, ellipsePosX * 100)) / 100, 255), ((mouseX/4+mouseY/4) % 255));
@@ -150,12 +156,6 @@ class Wanderer {
     outerColor[2]=(int)weightedAvg(smoothMod(getPersonality(), 255), ((mouseX/4+mouseY/4) % 255));
     fill(outerColor[0], outerColor[1], outerColor[2]);
     ellipse(ellipsePosX, ellipsePosY, 400, 400);
-
-    midColor[0]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseX/followTendency), 320));
-    midColor[1]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseY/followTendency), 320));
-    midColor[2]=(int)weightedAvg(smoothMod(getMood(), 255), ((mouseX/4+mouseY/4) % 255));
-    fill(midColor[0], midColor[1], midColor[2]);
-    ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
   }
 }
 
