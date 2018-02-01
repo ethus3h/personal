@@ -30,8 +30,12 @@ void setup() {
 class Wanderer {
   private final float followTendency;
   private final int id;
-  public Wanderer(float initFollowTendency) {
+  private final float specifiedX;
+  private final float specifiedY;
+  public Wanderer(float initFollowTendency, int x = 0, int y = 0) {
     this.followTendency = initFollowTendency;
+    this.specifiedX = x;
+    this.specifiedY = y;
     if (initFollowTendency == 0) {
       this.id = 0;
     } else if (initFollowTendency == 1) {
