@@ -14,8 +14,8 @@ void setup() {
       System.out.print(Integer.toString(j)+": "+Integer.toString(res));
       j = j + 1;
     }
-    System.out.println("blah");
     i = i + 1;
+    j = 0;
   }
   try {
     TimeUnit.SECONDS.sleep(10);
