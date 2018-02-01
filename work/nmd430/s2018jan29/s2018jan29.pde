@@ -185,6 +185,12 @@ class bulkWanderer {
     this.wanderer7=new Wanderer(0.7, x, y);
     this.wanderer1=new Wanderer(1, x, y);
   }
+  void tick() {
+    this.wanderer0.tick();
+    this.wanderer3.tick();
+    this.wanderer7.tick();
+    this.wanderer1.tick();
+  }
 }
 
 void draw() {
