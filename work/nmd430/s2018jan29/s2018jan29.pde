@@ -38,7 +38,7 @@ class Wanderer {
       this.id = 1;
     }
     else {
-      this.id = (int)(initFollowTendency*2);
+      this.id = (int)(initFollowTendency*10);
     }
   }
   int step = 0;
