@@ -28,8 +28,18 @@ void setup() {
 
 class Wanderer {
   private final float followTendency;
+  private final int id;
   public Wanderer(float initFollowTendency) {
     this.followTendency = initFollowTendency;
+    if(initFollowTendency == 0) {
+      this.id = 0;
+    }
+    else if(initFollowTendency == 1) {
+      this.id = 1;
+    }
+    else {
+      this.id = (int)(initFollowTendency*2);
+    }
   }
   int step = 0;
   int memory[] = new int[10000];
