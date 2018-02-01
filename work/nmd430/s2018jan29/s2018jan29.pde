@@ -216,7 +216,7 @@ void draw() {
   currentTick = currentTick + 1;
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  if(currentTick % 40 = 0) {
+  if(currentTick % 40 == 0) {
     fill(monitor * mouseX * 100, monitorb * mouseY * 100, monitorc * ((mouseX * mouseY) / 2), 100);
   }
   rect(-10, -10, 18000, 18000);
