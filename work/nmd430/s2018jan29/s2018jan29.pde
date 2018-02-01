@@ -76,9 +76,6 @@ class Wanderer {
   }
 
   void tick() {
-    stroke(getMood() * 10, smoothMod(getPersonality(), 255), ((getMood() * 10) + getPersonality()) / 2);
-    fill(smoothMod((int)(mouseX/followTendency), 255), smoothMod((int)(mouseY/followTendency), 255), ((mouseX/4+mouseY/4) % 255));
-
     remember((ellipsePosX + mouseX) / 2);
     remember((ellipsePosY + mouseY) / 2);
 
@@ -112,9 +109,15 @@ class Wanderer {
     System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
+    
+    stroke(getMood() * 10, smoothMod(getPersonality(), 255), ((getMood() * 10) + getPersonality()) / 2);
+
+    fill(smoothMod((int)(mouseX/followTendency), 255), smoothMod((int)(mouseY/followTendency), 255), ((mouseX/4+mouseY/4) % 255));
     ellipse(ellipsePosX, ellipsePosY, 400 + (200 * followTendency), 400 + (200 * followTendency));
+
     fill(smoothMod((int)(mouseX/followTendency), 320), smoothMod((int)(mouseY/followTendency), 320), ((mouseX/4+mouseY/4) % 255));
     ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
+
     fill(smoothMod((int)(mouseY/followTendency), 300), smoothMod((int)(mouseX/followTendency), 300), ((mouseX/4+mouseY/4) % 255));
     ellipse(ellipsePosX, ellipsePosY, 400, 400);
   }
