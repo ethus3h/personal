@@ -6,7 +6,7 @@ int smoothMod(int num, int limit) {
   int stage=num % limit / 2;
   if((stage + 0) % 2 == 0) {
     System.out.println("Stage is even for num="+Integer.toString(num));
-    return mod - num;
+    return mod - (num % limit);
   }
   return mod;
 }
