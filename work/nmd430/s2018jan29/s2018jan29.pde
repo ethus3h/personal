@@ -101,7 +101,7 @@ class Wanderer {
     return result;
   }
 
-  void tick() {
+  void tick(float monitor) {
     remember(smoothMod((ellipsePosX + mouseX) / 2, mySize));
     remember(smoothMod((ellipsePosY + mouseY) / 2, mySize));
 
@@ -132,7 +132,7 @@ class Wanderer {
         }
       }
     }
-    speed=(float)getMood() / 600.0;
+    speed=((float)getMood() / 600.0) * monitor;
     //System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
@@ -197,11 +197,11 @@ class BulkWanderer {
     this.wanderer7=new Wanderer(0.7, x, y);
     this.wanderer1=new Wanderer(1, x, y);
   }
-  void tick() {
-    this.wanderer0.tick();
-    this.wanderer3.tick();
-    this.wanderer7.tick();
-    this.wanderer1.tick();
+  void tick(float monitor) {
+    this.wanderer0.tick(monitor);
+    this.wanderer3.tick(monitor);
+    this.wanderer7.tick(monitor);
+    this.wanderer1.tick(monitor);
   }
 }
 
@@ -212,11 +212,13 @@ BulkWanderer lowerRightBulkWanderer = new BulkWanderer(mySize, mySize);
 void draw() {
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(-10, -10, 18000, 18000);
+  
+  float monitor = input.left.get(0)*50;
 
-  topLeftBulkWanderer.tick();
-  topRightBulkWanderer.tick();
-  lowerLeftBulkWanderer.tick();
-  lowerRightBulkWanderer.tick();
+  topLeftBulkWanderer.tick(monitor);
+  topRightBulkWanderer.tick(monitor);
+  lowerLeftBulkWanderer.tick(monitor);
+  lowerRightBulkWanderer.tick(monitor);
   
 
   for(int i = 0; i < input.bufferSize() - 1; i++)
