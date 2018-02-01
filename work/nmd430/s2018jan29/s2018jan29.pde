@@ -98,13 +98,13 @@ class Wanderer {
     ellipseHomeX=(int) lerp(ellipseStartX, ellipsePrevPosX, followTendency);
     ellipseHomeY=(int) lerp(ellipseStartY, ellipsePrevPosY, followTendency);
 
-    int mouseDistFromHome=(int)dist(ellipseStartX, ellipseStartY, mouseX, mouseY);
+    int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
-    if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
+    if ( mouseDistFromHome < (getPersonality()) * 3.5) {
       ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
       ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
-      if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
+      if ( mouseDistFromHome > (((getPersonality() / 2)) * 1.5)) {
         try {
           ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
         }
