@@ -110,7 +110,7 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
-int smoothMod3(int x) {
+int smoothMod3(int i) {
 }
 
 Wanderer wanderer0=new Wanderer(0);
