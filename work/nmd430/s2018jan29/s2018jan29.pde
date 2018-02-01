@@ -34,9 +34,7 @@ void setup() {
    */
 
   minim = new Minim(this);
-  player = minim.loadFile("song.mp3");
   input = minim.getLineIn();
-  fft = new FFT(player.bufferSize(), player.sampleRate());
 }
 
 class Wanderer {
@@ -220,16 +218,10 @@ void draw() {
   lowerLeftBulkWanderer.tick();
   lowerRightBulkWanderer.tick();
   
-  fft.forward(player.mix);
 
-  for(int i = 0; i < fft.specSize(); i++)
+  for(int i = 0; i < input.bufferSize() - 1; i++)
   {
-    line(i, height, i, height - fft.getBand(i)*4);
+    line( i, 50 + input.left.get(i)*50, i+1, 50 + input.left.get(i+1)*50 );
+    line( i, 150 + input.right.get(i)*50, i+1, 150 + input.right.get(i+1)*50 );
   }
-  for(int i = 0; i < player.left.size() - 1; i++)
-  {
-    line(i, 50 + player.left.get(i)*50, i+1, 50 + player.left.get(i+1)*50);
-    line(i, 150 + player.right.get(i)*50, i+1, 150 + player.right.get(i+1)*50);
-  }
-
 }
