@@ -79,7 +79,6 @@ class Wanderer {
     int[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
     int result=(int)Arrays.stream(mem).average().getAsDouble();
     moodCached=result;
-    System.out.println(Integer.toString(result));
     if (result > 100000) {
       try {
         TimeUnit.SECONDS.sleep(10);
