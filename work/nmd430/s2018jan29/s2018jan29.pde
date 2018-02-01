@@ -119,10 +119,10 @@ class Wanderer {
     strokeColor[2]=((getMood() * 10) + getPersonality()) / 2;
     stroke(strokeColor[0], strokeColor[1], strokeColor[2]);
 
-    innerColor[0]=;
-    innerColor[1]=;
-    innerColor[2]=;
-    fill(smoothMod((int)(mouseX/followTendency), 255), smoothMod((int)(mouseY/followTendency), 255), ((mouseX/4+mouseY/4) % 255));
+    innerColor[0]=smoothMod((int)(mouseX/followTendency), 255);
+    innerColor[1]=smoothMod((int)(mouseY/followTendency), 255);
+    innerColor[2]=((mouseX/4+mouseY/4) % 255);
+    fill(innerColor[0], innerColor[1], innerColor[2]);
     ellipse(ellipsePosX, ellipsePosY, 400 + (200 * followTendency), 400 + (200 * followTendency));
 
     midColor[0]=smoothMod((int)(mouseX/followTendency), 320);
