@@ -121,7 +121,7 @@ int smoothMod(int num, int limit) {
     result = (((limit / 2) + 1) - mod) + limit;
     //System.out.println("mod gtr than hlaf limit"+Integer.toString(mod)+" with result: "+Integer.toString(result));
   }
-  System.out.println("smoothMod of "+Integer.toString(num)+" with limit "+Integer.toString(limit)+" = "+Integer.toString(result));
+  //System.out.println("smoothMod of "+Integer.toString(num)+" with limit "+Integer.toString(limit)+" = "+Integer.toString(result));
   return result;
 }
 
