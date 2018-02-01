@@ -198,7 +198,7 @@ void draw() {
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(-10, -10, 18000, 18000);
 
-  wanderer0.tick();
-  wanderer5.tick();
-  wanderer1.tick();
+  topLeftBulkWanderer.tick();
+  topLeftBulkWanderer.tick();
+  topLeftBulkWanderer.tick();
 }
