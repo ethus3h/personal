@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 void setup() {
   size(2000, 2000);
@@ -6,8 +7,13 @@ void setup() {
   background(255);
   int i = 0;
   while (i < 8) {
-    System.out.println(Integer.toString(i % 3));
+    System.out.println(Integer.toString((i % 3) + 1));
     i = i + 1;
+  }
+  try {
+    TimeUnit.SECONDS.sleep(10);
+  }
+  catch (Exception e) {
   }
 }
 
