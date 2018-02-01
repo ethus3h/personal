@@ -97,8 +97,7 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 int smoothMod(int num, int limit) {
-  limit = limit + 1;
-  int mod = num % ((limit * 2) - ((limit / 2) + 1));
+  int mod = num % (limit + 1);
   int result = mod;
   if(mod > ((limit / 2) + 1)) {
     result = mod - ((limit / 2) + 1);
