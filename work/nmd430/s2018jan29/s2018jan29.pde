@@ -10,7 +10,7 @@ void setup() {
   int res = 0;
   while (i < 8) {
     res = ((i * i * i) + (2 * i * i) + 2) % 4;
-    System.out.println(Integer.toString(res));
+    System.out.println(Integer.toString(i)+": "+Integer.toString(res));
     i = i + 1;
   }
   try {
