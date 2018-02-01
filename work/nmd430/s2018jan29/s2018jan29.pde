@@ -125,10 +125,10 @@ class Wanderer {
     fill(smoothMod((int)(mouseX/followTendency), 255), smoothMod((int)(mouseY/followTendency), 255), ((mouseX/4+mouseY/4) % 255));
     ellipse(ellipsePosX, ellipsePosY, 400 + (200 * followTendency), 400 + (200 * followTendency));
 
-    midColor[0]=;
-    midColor[1]=;
-    midColor[2]=;
-    fill(smoothMod((int)(mouseX/followTendency), 320), smoothMod((int)(mouseY/followTendency), 320), ((mouseX/4+mouseY/4) % 255));
+    midColor[0]=smoothMod((int)(mouseX/followTendency), 320);
+    midColor[1]=smoothMod((int)(mouseY/followTendency), 320);
+    midColor[2]=((mouseX/4+mouseY/4) % 255);
+    fill(midColor[0], midColor[1], midColor[2]);
     ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
 
     outerColor[0]=;
