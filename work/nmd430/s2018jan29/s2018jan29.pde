@@ -111,6 +111,7 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 int smoothMod3(int i) {
+  return ((i * i * i) + (2 * i * i) + 2) % 4;
 }
 
 Wanderer wanderer0=new Wanderer(0);
