@@ -35,6 +35,7 @@ class Wanderer {
   public Wanderer(float initFollowTendency, int x, int y) {
     this.followTendency = initFollowTendency;
     this.specifiedX = x;
+    System.out.println("New w with x "+Integer.toString(x));
     this.specifiedY = y;
     if (initFollowTendency == 0) {
       this.id = 0;
@@ -180,7 +181,6 @@ class BulkWanderer {
   Wanderer wanderer7;
   Wanderer wanderer1;
   BulkWanderer(int x, int y) {
-    System.out.println("New bulk with x "+Integer.toString(x));
     this.wanderer0=new Wanderer(0, x, y);
     this.wanderer3=new Wanderer(0.3, x, y);
     this.wanderer7=new Wanderer(0.7, x, y);
