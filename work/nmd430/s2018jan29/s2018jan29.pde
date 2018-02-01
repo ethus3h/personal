@@ -1,9 +1,23 @@
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
+import java.math.BigInteger;
 
 void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
+  int i = 0;
+  int res = 0;
+  while (i < 8) {
+    res = ((i * i * i) + (2 * i * i) + 2) % 4;
+    System.out.println(Integer.toString(i)+": "+Integer.toString(res));
+    i = i + 1;
+  }
+  try {
+    TimeUnit.SECONDS.sleep(10);
+  }
+  catch (Exception e) {
+  }
 }
 
 class Wanderer {
@@ -47,7 +61,7 @@ class Wanderer {
 
   void tick() {
     stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
-    fill(smoothMod3((int)(mouseX/followTendency)), smoothMod3((int)(mouseY/followTendency)), ((mouseX/4+mouseY/4) % 255));
+    fill(((mouseX/followTendency) % 127 * 2), ((mouseY/followTendency) % 127 * 2), ((mouseX/4+mouseY/4) % 255));
 
     remember((ellipsePosX + mouseX) / 2);
     remember((ellipsePosY + mouseY) / 2);
@@ -94,10 +108,6 @@ int linePointY(int x1, int y1, int x2, int y2, int dist) {
 int linePointX(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
   return (int)(x1 + dist * cos(angle));
-}
-
-int smoothMod(int i, int j) {
-  return ((i ^ j) + (2 * i * i) + 2) % (j + 1);
 }
 
 Wanderer wanderer0=new Wanderer(0);
