@@ -159,6 +159,10 @@ int smoothMod(int num, int limit) {
   return result;
 }
 
+float avg(int a, int b) {
+  return (a + b) / 2;
+}
+
 Wanderer wanderer0=new Wanderer(0);
 Wanderer wanderer5=new Wanderer(0.5);
 Wanderer wanderer1=new Wanderer(1);
