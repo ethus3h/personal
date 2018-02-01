@@ -11,7 +11,7 @@ void setup() {
   while (i < 10) {
     while (j < 10) {
       res = smoothMod(j, 255);
-      System.out.print(Integer.toString(j)+": "+Integer.toString(res));
+      System.out.print("("+Integer.toString(j)+":"+Integer.toString(res)+")");
       j = j + 1;
     }
     i = i + 1;
