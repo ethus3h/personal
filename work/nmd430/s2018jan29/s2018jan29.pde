@@ -202,6 +202,7 @@ void draw() {
   rect(-10, -10, 18000, 18000);
 
   topLeftBulkWanderer.tick();
-  topLeftBulkWanderer.tick();
-  topLeftBulkWanderer.tick();
+  topRightBulkWanderer.tick();
+  lowerLeftBulkWanderer.tick();
+  lowerRightBulkWanderer.tick();
 }
