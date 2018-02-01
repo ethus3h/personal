@@ -3,7 +3,7 @@ import java.util.concurrent.TimeUnit;
 
 int mySize = 2000;
 void setup() {
-  size(mySize, mySize);
+  size(2000, 2000);
   //fullScreen();
   background(255);
   /* int i = 0;
