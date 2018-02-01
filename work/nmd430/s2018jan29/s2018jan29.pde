@@ -116,10 +116,10 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 int smoothMod(int num, int limit) {
-  limit = (limit * 2) - 1;
+  limit = limit * 2;
   int mod = num % (limit + 1);
   int result = mod;
-  if (mod > ((limit / 2))) {
+  if ((2 * mod) > limit) {
     result = (((limit / 2) + 1) - mod) + (limit / 2);
     //System.out.println("mod gtr than hlaf limit"+Integer.toString(mod)+" with result: "+Integer.toString(result));
   }
