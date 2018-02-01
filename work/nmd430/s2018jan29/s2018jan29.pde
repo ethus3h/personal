@@ -9,11 +9,11 @@ void setup() {
   int j = 0;
   int res = 0;
   while (i < 10) {
-  while (j < 10) {
-    res = smoothMod(i, 255);
-    System.out.print(Integer.toString(i)+": "+Integer.toString(res));
-    i = i + 1;
-  }
+    while (j < 10) {
+      res = smoothMod(i, 255);
+      System.out.print(Integer.toString(i)+": "+Integer.toString(res));
+      i = i + 1;
+    }
     res = smoothMod(i, 255);
     System.out.println(Integer.toString(i)+": "+Integer.toString(res));
     i = i + 1;
@@ -118,7 +118,7 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 int smoothMod(int num, int limit) {
   int mod = num % (limit + 1);
   int result = mod;
-  if(mod > ((limit / 2) + 1)) {
+  if (mod > ((limit / 2) + 1)) {
     result = (((limit / 2) + 1) - mod) + limit;
     //System.out.println("mod gtr than hlaf limit"+Integer.toString(mod)+" with result: "+Integer.toString(result));
   }
@@ -130,8 +130,8 @@ Wanderer wanderer0=new Wanderer(0);
 Wanderer wanderer5=new Wanderer(0.5);
 Wanderer wanderer1=new Wanderer(1);
 void draw() {
-    fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-    rect(-10, -10, 18000, 18000);
+  fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
+  rect(-10, -10, 18000, 18000);
 
   wanderer0.tick();
   wanderer5.tick();
