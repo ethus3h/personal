@@ -9,6 +9,7 @@ AudioInput input;
 FFT fft;
  
 int mySize = 2000;
+int currentTick = 0;
 void setup() {
   size(2000, 2000);
   //fullScreen();
@@ -212,9 +213,12 @@ void draw() {
   float monitor = input.left.get(0)*50;
   float monitorb = input.left.get(1)*50;
   float monitorc = input.left.get(2)*50;
+  currentTick = currentTick + 1;
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  fill(monitor * mouseX * 100, monitorb * mouseY * 100, monitorc * ((mouseX * mouseY) / 2), 5);
+  if(currentTick % 40 = 0) {
+    fill(monitor * mouseX * 100, monitorb * mouseY * 100, monitorc * ((mouseX * mouseY) / 2), 100);
+  }
   rect(-10, -10, 18000, 18000);
   
   topLeftBulkWanderer.tick(monitor);
