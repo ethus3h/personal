@@ -110,6 +110,15 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
+int intPower (int a, int b)
+{
+    if ( b == 0)        return 1;
+    if ( b == 1)        return a;
+    if (Math.isEven( b ))    return     pow ( a * a, b/2); //even a=(a^2)^b/2
+    else                return a * pow ( a * a, b/2); //odd  a=a*(a^2)^b/2
+
+}
+
 Wanderer wanderer0=new Wanderer(0);
 Wanderer wanderer5=new Wanderer(0.5);
 Wanderer wanderer1=new Wanderer(1);
