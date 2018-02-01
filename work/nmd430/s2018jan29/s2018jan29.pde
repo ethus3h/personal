@@ -9,7 +9,7 @@ void setup() {
   int res = 0;
   while (i < 8) {
     res = (i % 3) + 1;
-    System.out.println(Integer.toString((i % 3) + 1));
+    System.out.println(Integer.toString(res));
     i = i + 1;
   }
   try {
