@@ -3,10 +3,10 @@ import java.util.concurrent.TimeUnit;
 import ddf.minim.*;
 import ddf.minim.analysis.*;
 
-Minim minim;
-AudioPlayer player;
-AudioInput input;
-FFT fft;
+//Minim minim;
+//AudioPlayer player;
+//AudioInput input;
+//FFT fft;
  
 int mySize = 2000;
 int currentTick = 0;
@@ -34,8 +34,8 @@ void setup() {
    }
    */
 
-  minim = new Minim(this);
-  input = minim.getLineIn();
+  //minim = new Minim(this);
+  //input = minim.getLineIn();
 }
 
 class Wanderer {
@@ -96,7 +96,7 @@ class Wanderer {
   }
 
   void click() {
-    remember(1000000);
+    remember(100000);
   }
 
   void tick(float monitor) {
@@ -214,22 +214,22 @@ BulkWanderer lowerLeftBulkWanderer = new BulkWanderer(mySize, 0);
 BulkWanderer lowerRightBulkWanderer = new BulkWanderer(mySize, mySize);
 BulkWanderer centerBulkWanderer = new BulkWanderer(mySize / 2, mySize / 2);
 void draw() {
-  float monitor = input.left.get(0)*50;
-  float monitorb = input.left.get(1)*50;
-  float monitorc = input.left.get(2)*50;
+  //float monitor = input.left.get(0)*50;
+  //float monitorb = input.left.get(1)*50;
+  //float monitorc = input.left.get(2)*50;
   currentTick = currentTick + 1;
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  if(currentTick % 40 == 0) {
-    fill(monitor * mouseX * 100, monitorb * mouseY * 100, monitorc * ((mouseX * mouseY) / 2), 100);
-  }
+  //if(currentTick % 40 == 0) {
+  //  fill(monitor * mouseX * 100, monitorb * mouseY * 100, monitorc * ((mouseX * mouseY) / 2), 100);
+  //}
   rect(-10, -10, 18000, 18000);
   
-  topLeftBulkWanderer.tick(monitor);
-  topRightBulkWanderer.tick(monitor);
-  lowerLeftBulkWanderer.tick(monitor);
-  lowerRightBulkWanderer.tick(monitor);
-  centerBulkWanderer.tick(monitor);
+  topLeftBulkWanderer.tick(0);
+  topRightBulkWanderer.tick(0);
+  lowerLeftBulkWanderer.tick(0);
+  lowerRightBulkWanderer.tick(0);
+  centerBulkWanderer.tick(0);
 }
 
 void mouseClicked() {
