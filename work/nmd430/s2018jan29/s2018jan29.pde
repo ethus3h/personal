@@ -131,8 +131,8 @@ class Wanderer {
         }
       }
     }
-    speed=((float)getMood() / 600.0) * monitor;
-    System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mon="+Float.toString(monitor)+"|Mdist="+Integer.toString(mouseDistFromHome));
+    speed=((float)getMood() / 600.0) + monitor;
+    System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
 
