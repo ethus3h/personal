@@ -8,7 +8,7 @@ void setup() {
   int i = 0;
   int res = 0;
   while (i < 8) {
-    res = (((i % 2) * 3) % 3) + 1;
+    res = (x^3 + (2x^2) + 2) mod 4;
     System.out.println(Integer.toString(res));
     i = i + 1;
   }
