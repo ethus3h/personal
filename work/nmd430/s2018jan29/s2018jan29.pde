@@ -100,8 +100,9 @@ int smoothMod(int num, int limit) {
   limit = limit + 1;
   int mod=num % ((limit * 2) - ((limit / 2) + 1));
   if(mod > ((limit / 2) + 1)) {
-    return mod - ((limit / 2) + 1);
+    mod = mod - ((limit / 2) + 1);
   }
+  System.out.println("smoothMod of "+Integer.toString(num)+" with limit "+Integer.toString(limit)+" = "+Integer.toString(mod));
   return mod;
 }
 
