@@ -2,7 +2,6 @@ import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 int smoothMod(int num, int limit) {
-  num = num+1;
   int mod=num % limit;
   int stage=num % (limit * 2);
   if(stage > (limit / 2) + 2) {
