@@ -174,9 +174,12 @@ float weightedAvg(int a, int b) {
   return b + (a * 0.1);
 }
 
-Wanderer wanderer0=new Wanderer(0, 0, 0);
-Wanderer wanderer5=new Wanderer(0.5, 0, 0);
-Wanderer wanderer1=new Wanderer(1, 0, 0);
+class bulkWanderer(int x, int y) {
+  Wanderer wanderer0=new Wanderer(0, 0, 0);
+  Wanderer wanderer5=new Wanderer(0.5, 0, 0);
+  Wanderer wanderer1=new Wanderer(1, 0, 0);
+}
+
 void draw() {
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(-10, -10, 18000, 18000);
