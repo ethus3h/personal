@@ -5,18 +5,6 @@ void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
-  int i = 0;
-  int res = 0;
-  while (i < 8) {
-    res = smoothMod(i, 3);
-    System.out.println(Integer.toString(i)+": "+Integer.toString(res));
-    i = i + 1;
-  }
-  try {
-    TimeUnit.SECONDS.sleep(10);
-  }
-  catch (Exception e) {
-  }
 }
 
 class Wanderer {
