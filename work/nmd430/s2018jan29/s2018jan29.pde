@@ -111,7 +111,6 @@ class Wanderer {
     ellipseHomeY=(int) lerp(ellipseStartY, ellipsePrevPosY, followTendency);
 
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
-    System.out.println(Integer.toString(ellipseStartX)+"|homeX="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome));
 
     if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
       ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
@@ -133,7 +132,7 @@ class Wanderer {
       }
     }
     speed=((float)getMood() / 600.0) * monitor;
-    //System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome));
+    System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mon="+Float.toString(monitor)+"|Mdist="+Integer.toString(mouseDistFromHome));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
 
