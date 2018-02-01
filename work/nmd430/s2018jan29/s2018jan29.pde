@@ -54,8 +54,8 @@ class Wanderer {
   int ellipsePosY=this.specifiedY;
   int ellipseHomeX=this.specifiedX;
   int ellipseHomeY=this.specifiedY;
-  final float ellipseStartX=this.specifiedX;
-  final float ellipseStartY=this.specifiedY;
+  final int ellipseStartX=this.specifiedX;
+  final int ellipseStartY=this.specifiedY;
   int ellipsePrevPosX=this.specifiedX;
   int ellipsePrevPosY=this.specifiedY;
   int personalityCached=0;
