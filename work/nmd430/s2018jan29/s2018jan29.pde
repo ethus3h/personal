@@ -210,9 +210,11 @@ BulkWanderer lowerLeftBulkWanderer = new BulkWanderer(mySize, 0);
 BulkWanderer lowerRightBulkWanderer = new BulkWanderer(mySize, mySize);
 void draw() {
   float monitor = input.left.get(0)*50;
+  float monitorb = input.left.get(1)*50;
+  float monitorc = input.left.get(2)*50;
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  fill(monitor * mouseX * 100, monitor * mouseY * 100, monitor * ((mouseX * mouseY) / 2), 5);
+  fill(monitor * mouseX * 100, monitorb * mouseY * 100, monitorc * ((mouseX * mouseY) / 2), 5);
   rect(-10, -10, 18000, 18000);
   
   topLeftBulkWanderer.tick(monitor);
