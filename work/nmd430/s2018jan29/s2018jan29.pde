@@ -131,7 +131,7 @@ class Wanderer {
         }
       }
     }
-    speed=((float)getMood() / 600.0) + monitor;
+    speed=((float)getMood() / 600.0) + (monitor / 30);
     System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
@@ -218,11 +218,6 @@ void draw() {
   topRightBulkWanderer.tick(monitor);
   lowerLeftBulkWanderer.tick(monitor);
   lowerRightBulkWanderer.tick(monitor);
-  
 
-  for(int i = 0; i < input.bufferSize() - 1; i++)
-  {
-    line( i, 50 + input.left.get(i)*50, i+1, 50 + input.left.get(i+1)*50 );
-    line( i, 150 + input.right.get(i)*50, i+1, 150 + input.right.get(i+1)*50 );
-  }
+
 }
