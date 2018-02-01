@@ -1,8 +1,9 @@
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
+int size = 2000;
 void setup() {
-  size(2000, 2000);
+  size(size, size);
   //fullScreen();
   background(255);
   /* int i = 0;
@@ -86,8 +87,8 @@ class Wanderer {
   }
 
   void tick() {
-    remember((ellipsePosX + mouseX) / 2);
-    remember((ellipsePosY + mouseY) / 2);
+    remember(smoothMod((ellipsePosX + mouseX) / 2, size));
+    remember(smoothMod((ellipsePosY + mouseY) / 2,size));
 
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
