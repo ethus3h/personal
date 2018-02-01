@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import processing.sound.*;
+
 FFT fft;
 AudioIn in;
 int bands = 512;
