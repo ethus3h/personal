@@ -80,102 +80,103 @@ class Wanderer {
         TimeUnit.SECONDS.sleep(10);
       }
       catch (Exception e) {
-      }}
-      return result;
-    
-
-    void tick() {
-      remember((ellipsePosX + mouseX) / 2);
-      remember((ellipsePosY + mouseY) / 2);
-
-      ellipsePrevPosX=ellipsePosX;
-      ellipsePrevPosY=ellipsePosY;
-      ellipseHomeX=(int) lerp(ellipseStartX, ellipsePrevPosX, followTendency);
-      ellipseHomeY=(int) lerp(ellipseStartY, ellipsePrevPosY, followTendency);
-
-      int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
-
-      if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
-        ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
-        ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
-
-        if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
-          try {
-            ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
-          }
-          catch(Exception e) {
-            ellipsePosY=ellipseHomeY;
-          }
-          try {
-            ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
-          }   
-          catch(Exception e) {
-            ellipsePosX=ellipseHomeX;
-          }
-        }
       }
-      speed=(float)getMood() / 600.0;
-      System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome));
-      ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
-      ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
-
-      strokeColor[0]=(int)weightedAvg(strokeColor[0], getMood() * 10);
-      strokeColor[1]=(int)weightedAvg(strokeColor[1], smoothMod(getPersonality(), 255));
-      strokeColor[2]=(int)weightedAvg(strokeColor[2], ((getMood() * 10) + getPersonality()) / 2);
-      stroke(strokeColor[0], strokeColor[1], strokeColor[2]);
-
-      innerColor[0]=(int)weightedAvg(smoothMod(ellipsePosX, 255), smoothMod((int)(mouseX/followTendency), 255));
-      innerColor[1]=(int)weightedAvg(smoothMod(ellipsePosY, 255), smoothMod((int)(mouseY/followTendency), 255));
-      innerColor[2]=(int)weightedAvg(smoothMod(((int)weightedAvg(ellipsePosY * 100, ellipsePosX * 100)) / 100, 255), ((mouseX/4+mouseY/4) % 255));
-      fill(innerColor[0], innerColor[1], innerColor[2]);
-      ellipse(ellipsePosX, ellipsePosY, 400 + (200 * followTendency), 400 + (200 * followTendency));
-
-      midColor[0]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseX/followTendency), 320));
-      midColor[1]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseY/followTendency), 320));
-      midColor[2]=(int)weightedAvg(smoothMod(getMood(), 255), ((mouseX/4+mouseY/4) % 255));
-      fill(midColor[0], midColor[1], midColor[2]);
-      ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
-
-      outerColor[0]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseY/followTendency), 300));
-      outerColor[1]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseX/followTendency), 300));
-      outerColor[2]=(int)weightedAvg(smoothMod(getPersonality(), 255), ((mouseX/4+mouseY/4) % 255));
-      fill(outerColor[0], outerColor[1], outerColor[2]);
-      ellipse(ellipsePosX, ellipsePosY, 400, 400);
-    }
-  }
-
-  int linePointY(int x1, int y1, int x2, int y2, int dist) {
-    float angle = atan2((y2 - y1), (x2 - x1));
-    return (int)(y1 + dist * sin(angle));
-  }
-
-  int linePointX(int x1, int y1, int x2, int y2, int dist) {
-    float angle = atan2((y2 - y1), (x2 - x1));
-    return (int)(x1 + dist * cos(angle));
-  }
-
-  int smoothMod(int num, int limit) {
-    limit = (limit * 2) - 1;
-    int mod = num % (limit + 1);
-    int result = mod;
-    if ((2 * mod) > (limit + 1)) {
-      result = limit - mod + 2;
     }
     return result;
   }
 
-  float weightedAvg(int a, int b) {
-    return b + (a * 0.1);
-  }
+  void tick() {
+    remember((ellipsePosX + mouseX) / 2);
+    remember((ellipsePosY + mouseY) / 2);
 
-  Wanderer wanderer0=new Wanderer(0);
-  Wanderer wanderer5=new Wanderer(0.5);
-  Wanderer wanderer1=new Wanderer(1);
-  void draw() {
-    fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-    rect(-10, -10, 18000, 18000);
+    ellipsePrevPosX=ellipsePosX;
+    ellipsePrevPosY=ellipsePosY;
+    ellipseHomeX=(int) lerp(ellipseStartX, ellipsePrevPosX, followTendency);
+    ellipseHomeY=(int) lerp(ellipseStartY, ellipsePrevPosY, followTendency);
 
-    wanderer0.tick();
-    wanderer5.tick();
-    wanderer1.tick();
+    int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
+
+    if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
+      ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+      ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+
+      if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
+        try {
+          ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+        }
+        catch(Exception e) {
+          ellipsePosY=ellipseHomeY;
+        }
+        try {
+          ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+        }   
+        catch(Exception e) {
+          ellipsePosX=ellipseHomeX;
+        }
+      }
+    }
+    speed=(float)getMood() / 600.0;
+    System.out.println(Integer.toString(id)+"|Mood="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome));
+    ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
+    ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
+
+    strokeColor[0]=(int)weightedAvg(strokeColor[0], getMood() * 10);
+    strokeColor[1]=(int)weightedAvg(strokeColor[1], smoothMod(getPersonality(), 255));
+    strokeColor[2]=(int)weightedAvg(strokeColor[2], ((getMood() * 10) + getPersonality()) / 2);
+    stroke(strokeColor[0], strokeColor[1], strokeColor[2]);
+
+    innerColor[0]=(int)weightedAvg(smoothMod(ellipsePosX, 255), smoothMod((int)(mouseX/followTendency), 255));
+    innerColor[1]=(int)weightedAvg(smoothMod(ellipsePosY, 255), smoothMod((int)(mouseY/followTendency), 255));
+    innerColor[2]=(int)weightedAvg(smoothMod(((int)weightedAvg(ellipsePosY * 100, ellipsePosX * 100)) / 100, 255), ((mouseX/4+mouseY/4) % 255));
+    fill(innerColor[0], innerColor[1], innerColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, 400 + (200 * followTendency), 400 + (200 * followTendency));
+
+    midColor[0]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseX/followTendency), 320));
+    midColor[1]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseY/followTendency), 320));
+    midColor[2]=(int)weightedAvg(smoothMod(getMood(), 255), ((mouseX/4+mouseY/4) % 255));
+    fill(midColor[0], midColor[1], midColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
+
+    outerColor[0]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseY/followTendency), 300));
+    outerColor[1]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseX/followTendency), 300));
+    outerColor[2]=(int)weightedAvg(smoothMod(getPersonality(), 255), ((mouseX/4+mouseY/4) % 255));
+    fill(outerColor[0], outerColor[1], outerColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, 400, 400);
   }
+}
+
+int linePointY(int x1, int y1, int x2, int y2, int dist) {
+  float angle = atan2((y2 - y1), (x2 - x1));
+  return (int)(y1 + dist * sin(angle));
+}
+
+int linePointX(int x1, int y1, int x2, int y2, int dist) {
+  float angle = atan2((y2 - y1), (x2 - x1));
+  return (int)(x1 + dist * cos(angle));
+}
+
+int smoothMod(int num, int limit) {
+  limit = (limit * 2) - 1;
+  int mod = num % (limit + 1);
+  int result = mod;
+  if ((2 * mod) > (limit + 1)) {
+    result = limit - mod + 2;
+  }
+  return result;
+}
+
+float weightedAvg(int a, int b) {
+  return b + (a * 0.1);
+}
+
+Wanderer wanderer0=new Wanderer(0);
+Wanderer wanderer5=new Wanderer(0.5);
+Wanderer wanderer1=new Wanderer(1);
+void draw() {
+  fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
+  rect(-10, -10, 18000, 18000);
+
+  wanderer0.tick();
+  wanderer5.tick();
+  wanderer1.tick();
+}
