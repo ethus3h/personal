@@ -174,10 +174,12 @@ float weightedAvg(int a, int b) {
   return b + (a * 0.1);
 }
 
-class bulkWanderer(int x, int y) {
+class bulkWanderer {
+  bulkWanderer(int x, int y) {
   Wanderer wanderer0=new Wanderer(0, 0, 0);
   Wanderer wanderer5=new Wanderer(0.5, 0, 0);
   Wanderer wanderer1=new Wanderer(1, 0, 0);
+  }
 }
 
 void draw() {
