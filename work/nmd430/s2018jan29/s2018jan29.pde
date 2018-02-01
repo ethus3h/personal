@@ -1,12 +1,13 @@
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
-import processing.sound.*;
+import ddf.minim.*;
+import ddf.minim.analysis.*;
 
+Minim minim;
+AudioPlayer player;
+AudioInput input;
 FFT fft;
-AudioIn in;
-int bands = 512;
-float[] spectrum = new float[bands];
-
+ 
 int mySize = 2000;
 void setup() {
   size(2000, 2000);
@@ -32,15 +33,9 @@ void setup() {
    }
    */
 
-  // Create an Input stream which is routed into the Amplitude analyzer
-  fft = new FFT(this, bands);
-  in = new AudioIn(this, 0);
-
-  // start the Audio Input
-  in.start();
-
-  // patch the AudioIn
-  fft.input(in);
+  minim = new Minim(this);
+  player = minim.loadFile("song.mp3");
+  input = minim.getLineIn();
 }
 
 class Wanderer {
