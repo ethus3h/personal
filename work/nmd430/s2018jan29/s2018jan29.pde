@@ -5,7 +5,7 @@ void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
-  int i = 0;
+  /* int i = 0;
   int j = 0;
   int res = 0;
   while (i < 60) {
@@ -23,6 +23,7 @@ void setup() {
   }
   catch (Exception e) {
   }
+  */
 }
 
 class Wanderer {
