@@ -99,12 +99,13 @@ class Wanderer {
     ellipseHomeY=(int) lerp(ellipseStartY, ellipsePrevPosY, followTendency);
 
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
+    System.out.println(Integer.toString(ellipseHomeX)+"|homeX="+Integer.toString(getMood())+"|Pty="+Integer.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Integer.toString(mouseDistFromHome));
 
-    if ( mouseDistFromHome < (getPersonality()) * 3.5) {
+    if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
       ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
       ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
-      if ( mouseDistFromHome > (((getPersonality() / 2)) * 1.5)) {
+      if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
         try {
           ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
         }
