@@ -76,7 +76,7 @@ class Wanderer {
   }
 
   void tick() {
-    stroke(getMood() * 10, getPersonality(), ((getMood() * 10) + getPersonality()) / 2);
+    stroke(getMood() * 10, smoothMod(getPersonality(), 255), ((getMood() * 10) + getPersonality()) / 2);
     fill(smoothMod((int)(mouseX/followTendency), 255), smoothMod((int)(mouseY/followTendency), 255), ((mouseX/4+mouseY/4) % 255));
 
     remember((ellipsePosX + mouseX) / 2);
