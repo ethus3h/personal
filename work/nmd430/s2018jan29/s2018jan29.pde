@@ -12,7 +12,7 @@ void setup() {
   int i = 0;
   int res = 0;
   while (i < 8) {
-    res = ((i * i * i) + (2 * i * i) + 2) % 4;
+    res = smoothMod(i, 3);
     System.out.println(Integer.toString(i)+": "+Integer.toString(res));
     i = i + 1;
   }
