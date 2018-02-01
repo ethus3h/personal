@@ -6,7 +6,9 @@ void setup() {
   //fullScreen();
   background(255);
   int i = 0;
+  int res = 0;
   while (i < 8) {
+    res = (i % 3) + 1;
     System.out.println(Integer.toString((i % 3) + 1));
     i = i + 1;
   }
