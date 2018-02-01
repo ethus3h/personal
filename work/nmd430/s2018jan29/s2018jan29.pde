@@ -114,7 +114,7 @@ class Wanderer {
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
     ellipse(ellipsePosX, ellipsePosY, 400 - (100 * followTendency), 400 - (100 * followTendency));
     fill(smoothMod((int)(mouseX/followTendency), 320), smoothMod((int)(mouseY/followTendency), 320), ((mouseX/4+mouseY/4) % 255));
-    ellipse(ellipsePosX, ellipsePosY, 400 - (100 * speed), 400 - (100 * followTendency));
+    ellipse(ellipsePosX, ellipsePosY, 400 - (100 * speed), 400 - (100 * speed));
   }
 }
 
