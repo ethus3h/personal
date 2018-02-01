@@ -1,6 +1,9 @@
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
+int smoothMod(int num, int limit) {
+  return 0;
+}
 void setup() {
   size(2000, 2000);
   //fullScreen();
