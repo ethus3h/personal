@@ -119,21 +119,21 @@ class Wanderer {
     strokeColor[2]=(int)avg(strokeColor[2], ((getMood() * 10) + getPersonality()) / 2);
     stroke(strokeColor[0], strokeColor[1], strokeColor[2]);
 
-    innerColor[0]=(int)avg(ellipsePosX / 100, smoothMod((int)(mouseX/followTendency), 255));
-    innerColor[1]=(int)avg(ellipsePosX / 100, smoothMod((int)(mouseY/followTendency), 255));
-    innerColor[2]=(int)avg(ellipsePosY / 100, ((mouseX/4+mouseY/4) % 255));
+    innerColor[0]=(int)avg(smoothMod(ellipsePosX / 100, 255), smoothMod((int)(mouseX/followTendency), 255));
+    innerColor[1]=(int)avg(smoothMod(ellipsePosX / 100, 255), smoothMod((int)(mouseY/followTendency), 255));
+    innerColor[2]=(int)avg(smoothMod(ellipsePosY / 100, 255), ((mouseX/4+mouseY/4) % 255));
     fill(innerColor[0], innerColor[1], innerColor[2]);
     ellipse(ellipsePosX, ellipsePosY, 400 + (200 * followTendency), 400 + (200 * followTendency));
 
-    midColor[0]=(int)avg((getMood() * 10), smoothMod((int)(mouseX/followTendency), 320));
-    midColor[1]=(int)avg((getMood() * 10), smoothMod((int)(mouseY/followTendency), 320));
-    midColor[2]=(int)avg((getMood() * 10), ((mouseX/4+mouseY/4) % 255));
+    midColor[0]=(int)avg(smoothMod((getMood() * 10), 255), smoothMod((int)(mouseX/followTendency), 320));
+    midColor[1]=(int)avg(smoothMod((getMood() * 10), 255), smoothMod((int)(mouseY/followTendency), 320));
+    midColor[2]=(int)avg(smoothMod((getMood() * 10), 255), ((mouseX/4+mouseY/4) % 255));
     fill(midColor[0], midColor[1], midColor[2]);
     ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
 
-    outerColor[0]=(int)avg((getPersonality() * 10), smoothMod((int)(mouseY/followTendency), 300));
-    outerColor[1]=(int)avg((getPersonality() * 10), smoothMod((int)(mouseX/followTendency), 300));
-    outerColor[2]=(int)avg((getPersonality() * 10), ((mouseX/4+mouseY/4) % 255));
+    outerColor[0]=(int)avg(smoothMod((getPersonality() * 10), 255), smoothMod((int)(mouseY/followTendency), 300));
+    outerColor[1]=(int)avg(smoothMod((getPersonality() * 10), 255), smoothMod((int)(mouseX/followTendency), 300));
+    outerColor[2]=(int)avg(smoothMod((getPersonality() * 10), 255), ((mouseX/4+mouseY/4) % 255));
     fill(outerColor[0], outerColor[1], outerColor[2]);
     ellipse(ellipsePosX, ellipsePosY, 400, 400);
   }
