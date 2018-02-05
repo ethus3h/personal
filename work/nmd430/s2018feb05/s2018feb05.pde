@@ -55,7 +55,7 @@ class Sun implements Life {
 class Sky implements Life {
   Sun sun = new Sun();
   void draw() {
-    fill(sun.temperature,0,255);
+    fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20);
     rect(0, 0, mySize, mySize);
   }
   void update() {
