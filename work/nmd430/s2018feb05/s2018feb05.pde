@@ -65,7 +65,7 @@ class Sun extends Life {
   }
   void draw() {
     fill(255,255,255);
-    ellipse(temperature,temperature,100,100);
+    ellipse(temperature,temperature,1000,1000);
   }
   void update() {
 
@@ -74,8 +74,11 @@ class Sun extends Life {
 
 class Sky extends Life {
   Sun sun = new Sun(2);
+  Sky() {
+    world.add(this.sun);
+  }
   void draw() {
-    fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20);
+    fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20,0.5);
     rect(0, 0, mySize, mySize);
   }
   void update() {
@@ -86,8 +89,8 @@ class Sky extends Life {
 class SceneManager {
   List<Life> residents = new ArrayList<Life>();
   Integer time = 0;
-  SceneManager() {
-    residents.add(new Sky());
+  void add(Life newResident) {
+    residents.add(newResident);
   }
   void update() {
     Collections.sort(residents, new LifeComparator());
@@ -103,4 +106,5 @@ SceneManager world = new SceneManager();
 
 void draw() {
   world.update();
+  world.add(new Sky());
 }
