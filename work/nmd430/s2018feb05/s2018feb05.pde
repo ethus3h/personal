@@ -7,25 +7,6 @@ void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
-  /* int i = 0;
-   int j = 0;
-   int res = 0;
-   while (i < 60) {
-   while (j < 10) {
-   res = smoothMod(j + (10 * i), 255);
-   System.out.print("|"+Integer.toString(j + (10 * i))+":"+Integer.toString(res));
-   j = j + 1;
-   }
-   System.out.println();
-   i = i + 1;
-   j = 0;
-   }
-   try {
-   TimeUnit.SECONDS.sleep(10);
-   }
-   catch (Exception e) {
-   }
-   */
 }
 
 class Wanderer {
@@ -173,6 +154,10 @@ float weightedAvg(int a, int b) {
   return b + (a * 0.1);
 }
 
+float weightedAvg(int a, int b, float c) {
+  return b + (a * c);
+}
+
 class BulkWanderer {
   Wanderer wanderer0;
   Wanderer wanderer3;
@@ -214,12 +199,4 @@ void draw() {
   lowerLeftBulkWanderer.tick(0);
   lowerRightBulkWanderer.tick(0);
   centerBulkWanderer.tick(0);
-}
-
-void mouseClicked() {
-  topLeftBulkWanderer.click();
-  topRightBulkWanderer.click();
-  lowerLeftBulkWanderer.click();
-  lowerRightBulkWanderer.click();
-  centerBulkWanderer.click();
 }
