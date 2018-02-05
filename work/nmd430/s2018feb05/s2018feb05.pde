@@ -59,12 +59,13 @@ class Sky implements Life {
     rect(0, 0, mySize, mySize);
   }
   void update() {
-    sun.temperature += 1;
+    sun.temperature = smoothMod(world.time, 255);
   }
 }
 
 class SceneManager {
   List<Life> residents = new ArrayList<Life>();
+  Integer time = 0;
   SceneManager() {
     residents.add(new Sky());
   }
@@ -73,11 +74,12 @@ class SceneManager {
       resident.update();
       resident.draw();
     }
+    time += 1;
   }
 }
 
-SceneManager sceneMgr = new SceneManager();
+SceneManager world = new SceneManager();
 
 void draw() {
-  sceneMgr.update();
+  world.update();
 }
