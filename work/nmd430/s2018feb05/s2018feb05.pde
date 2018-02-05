@@ -66,13 +66,12 @@ class Sky implements Life {
 class SceneManager {
   List<Life> residents = new ArrayList<Life>();
   SceneManager() {
-    residents.add(new Sun());
+    residents.add(new Sky());
   }
   void update() {
     for (Life resident: residents) {
       resident.update();
       resident.draw();
-      System.out.println("oper");
     }
   }
 }
