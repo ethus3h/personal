@@ -3,6 +3,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
+SceneManager world = new SceneManager();
 
 int mySize = 2000;
 int currentTick = 0;
@@ -10,6 +11,7 @@ void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
+  world.add(new Sky());
 }
 
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
@@ -78,7 +80,7 @@ class Sky extends Life {
     world.add(this.sun);
   }
   void draw() {
-    fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20,0.5);
+    fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20);
     rect(0, 0, mySize, mySize);
   }
   void update() {
@@ -102,9 +104,6 @@ class SceneManager {
   }
 }
 
-SceneManager world = new SceneManager();
-
 void draw() {
   world.update();
-  world.add(new Sky());
 }
