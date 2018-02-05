@@ -55,9 +55,8 @@ class Life implements Comparable<Life> {
   void update() {};
   @Override
   public int compareTo(Life l) {
-    int result = l.zIndex.compareTo(zIndex);
-    System.out.println(this.getClass().getName());
-    System.out.println(Integer.toString(result));
+    int result = - l.zIndex.compareTo(zIndex);
+    //System.out.println(this.getClass().getName()+Integer.toString(result));
     return result;
   }
 }
@@ -78,7 +77,7 @@ class Sun extends Life {
 }
 
 class Sky extends Life {
-  Sun sun = world.add(new Sun(2));
+  Sun sun = (Sun)world.add(new Sun(2));
   void draw() {
     fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20);
     rect(0, 0, mySize, mySize);
@@ -98,6 +97,7 @@ class SceneManager {
   void update() {
     Collections.sort(residents, new LifeComparator());
     for (Life resident: residents) {
+      System.out.println(resident.getClass().getName());
       resident.update();
       resident.draw();
     }
