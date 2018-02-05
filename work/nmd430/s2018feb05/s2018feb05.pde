@@ -65,7 +65,7 @@ class Sky implements Life {
 
 class SceneManager {
   List<Life> residents = new ArrayList<Life>();
-  void create() {
+  SceneManager() {
     residents.add(new Sun());
   }
   void update() {
