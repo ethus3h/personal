@@ -50,12 +50,14 @@ interface Life extends Comparable<Life> {
   int zIndex = 0;
   void draw();
   void update();
+  @Override
+  public int compareTo(Life l);
 }
 
 class Sun implements Life {
-  int temperature = 0;
-  int zIndex;
-  Sun(int zIndex){
+  Integer temperature = 0;
+  Integer zIndex;
+  Sun(Integer zIndex){
     this.zIndex = zIndex;
   }
   void draw() {
@@ -64,9 +66,6 @@ class Sun implements Life {
   }
   void update() {
 
-  }
-  compareTo(Object) {
-    
   }
 }
 
@@ -78,6 +77,10 @@ class Sky implements Life {
   }
   void update() {
     sun.temperature = smoothMod(world.time, 255);
+  }
+  @Override
+  public int compareTo(Life l) {
+    return zIndex.compareTo(l.zIndex);
   }
 }
 
