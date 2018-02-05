@@ -46,7 +46,7 @@ public class LifeComparator implements Comparator<Life> {
   }
 }
 
-interface Life extends Comparable {
+interface Life extends Comparable<Life> {
   int zIndex = 0;
   void draw();
   void update();
