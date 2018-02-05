@@ -72,6 +72,7 @@ class SceneManager {
     for (Life resident: residents) {
       resident.update();
       resident.draw();
+      System.out.println("oper");
     }
   }
 }
