@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
+import java.util.List;
 
 int mySize = 2000;
 int currentTick = 0;
@@ -158,45 +159,17 @@ float weightedAvg(int a, int b, float c) {
   return b + (a * c);
 }
 
-class BulkWanderer {
-  Wanderer wanderer0;
-  Wanderer wanderer3;
-  Wanderer wanderer7;
-  Wanderer wanderer1;
-  BulkWanderer(int x, int y) {
-    this.wanderer0=new Wanderer(0, x, y);
-    this.wanderer3=new Wanderer(0.3, x, y);
-    this.wanderer7=new Wanderer(0.7, x, y);
-    this.wanderer1=new Wanderer(1, x, y);
-  }
-  void tick(float monitor) {
-    this.wanderer0.tick(monitor);
-    this.wanderer3.tick(monitor);
-    this.wanderer7.tick(monitor);
-    this.wanderer1.tick(monitor);
-  }
-  void click() {
-    this.wanderer0.click();
-    this.wanderer3.click();
-    this.wanderer7.click();
-    this.wanderer1.click();
+class Life {
+}
+
+class SceneManager {
+  List<Life> residents = new ArrayList<Life>();
+  void update() {
   }
 }
 
-BulkWanderer topLeftBulkWanderer = new BulkWanderer(0, 0);
-BulkWanderer topRightBulkWanderer = new BulkWanderer(0, mySize);
-BulkWanderer lowerLeftBulkWanderer = new BulkWanderer(mySize, 0);
-BulkWanderer lowerRightBulkWanderer = new BulkWanderer(mySize, mySize);
-BulkWanderer centerBulkWanderer = new BulkWanderer(mySize / 2, mySize / 2);
+SceneManager sceneMgr = new SceneManager();
+
 void draw() {
-  currentTick = currentTick + 1;
-
-  fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  rect(-10, -10, 18000, 18000);
-
-  topLeftBulkWanderer.tick(0);
-  topRightBulkWanderer.tick(0);
-  lowerLeftBulkWanderer.tick(0);
-  lowerRightBulkWanderer.tick(0);
-  centerBulkWanderer.tick(0);
+  sceneMgr.update();
 }
