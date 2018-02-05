@@ -38,7 +38,29 @@ float weightedAvg(int a, int b, float c) {
   return b + (a * c);
 }
 
-class Life {
+interface Life {
+  void draw();
+  void update();
+}
+
+class Sun implements Life {
+  int temperature = 0;
+  void draw() {
+  }
+  void update() {
+    
+  }
+}
+
+class Sky implements Life {
+  Sun sun = new Sun();
+  void draw() {
+    fill(sun.temperature,0,255);
+    rect(0, 0, mySize, mySize);
+  }
+  void update() {
+    sun.temperature += 1;
+  }
 }
 
 class SceneManager {
