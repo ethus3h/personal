@@ -81,10 +81,6 @@ class Sky extends Life {
   void update() {
     sun.temperature = smoothMod(world.time, 255);
   }
-  @Override
-  public int compareTo(Life l) {
-    return zIndex.compareTo(l.zIndex);
-  }
 }
 
 class SceneManager {
@@ -94,7 +90,7 @@ class SceneManager {
     residents.add(new Sky());
   }
   void update() {
-    Collections.sort(List<T> residents, Compar);
+    Collections.sort(residents, new LifeComparator());
     for (Life resident: residents) {
       resident.update();
       resident.draw();
