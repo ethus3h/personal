@@ -1,3 +1,3 @@
-What might be one of the next big technological innovations or community/project idea in the world and age of "the sharing economy?"
+Q: What might be one of the next big technological innovations or community/project idea in the world and age of "the sharing economy?"
 
-While I am presumably biased in this, as the development of such a system is my primary goal in life, I believe that an information technology system that allows all types of data to coexist within a single shared format will prove to be extremely valuable in pursuing 
+A: While I am presumably biased in this, as the development of such a system is part of the project that is my primary goal in life, I believe that an information technology system that allows all types of data to coexist within a single shared format will prove to be a superior system to existing information models in IT. Another aspect of the project is to develop this IT system to be able to provide automated management services for communities (such as connecting individuals needing work to jobs that need workers).
