@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import java.util.List;
+import java.util.Collections;
 
 int mySize = 2000;
 int currentTick = 0;
@@ -38,22 +39,29 @@ float weightedAvg(int a, int b, float c) {
   return b + (a * c);
 }
 
-interface Life {
+interface Life extends Comparable {
+  int zIndex = 0;
   void draw();
   void update();
 }
 
 class Sun implements Life {
   int temperature = 0;
+  int zIndex;
+  Sun(int zIndex){
+    this.zIndex = zIndex;
+  }
   void draw() {
+    fill(255,255,255);
+    ellipse(temperature,temperature,100,100);
   }
   void update() {
-    
+
   }
 }
 
 class Sky implements Life {
-  Sun sun = new Sun();
+  Sun sun = new Sun(2);
   void draw() {
     fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20);
     rect(0, 0, mySize, mySize);
@@ -70,6 +78,7 @@ class SceneManager {
     residents.add(new Sky());
   }
   void update() {
+    Collections.sort(List<T> residents, Compar);
     for (Life resident: residents) {
       resident.update();
       resident.draw();
