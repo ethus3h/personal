@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import java.util.List;
 import java.util.Collections;
+import java.util.Comparator;
 
 int mySize = 2000;
 int currentTick = 0;
@@ -41,20 +42,22 @@ float weightedAvg(int a, int b, float c) {
 
 public class LifeComparator implements Comparator<Life> {
   @Override
-  public int compare(Object a, Object b) {
+  public int compare(Life a, Life b) {
     return a.compareTo(b);
   }
 }
 
-interface Life extends Comparable<Life> {
-  int zIndex = 0;
-  void draw();
-  void update();
+class Life implements Comparable<Life> {
+  Integer zIndex = 0;
+  void draw() {};
+  void update() {};
   @Override
-  public int compareTo(Life l);
+  public int compareTo(Life l) {
+    return zIndex.compareTo(l.zIndex);
+  }
 }
 
-class Sun implements Life {
+class Sun extends Life {
   Integer temperature = 0;
   Integer zIndex;
   Sun(Integer zIndex){
@@ -69,7 +72,7 @@ class Sun implements Life {
   }
 }
 
-class Sky implements Life {
+class Sky extends Life {
   Sun sun = new Sun(2);
   void draw() {
     fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20);
