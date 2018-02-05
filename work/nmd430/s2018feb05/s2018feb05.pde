@@ -78,10 +78,7 @@ class Sun extends Life {
 }
 
 class Sky extends Life {
-  Sun sun = new Sun(2);
-  Sky() {
-    world.add(this.sun);
-  }
+  Sun sun = world.add(new Sun(2));
   void draw() {
     fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20);
     rect(0, 0, mySize, mySize);
@@ -94,8 +91,9 @@ class Sky extends Life {
 class SceneManager {
   List<Life> residents = new ArrayList<Life>();
   Integer time = 0;
-  void add(Life newResident) {
+  Life add(Life newResident) {
     residents.add(newResident);
+    return newResident;
   }
   void update() {
     Collections.sort(residents, new LifeComparator());
