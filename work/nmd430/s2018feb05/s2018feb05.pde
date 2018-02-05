@@ -39,6 +39,13 @@ float weightedAvg(int a, int b, float c) {
   return b + (a * c);
 }
 
+public class LifeComparator implements Comparator<Life> {
+  @Override
+  public int compare(Object a, Object b) {
+    return a.compareTo(b);
+  }
+}
+
 interface Life extends Comparable {
   int zIndex = 0;
   void draw();
@@ -57,6 +64,9 @@ class Sun implements Life {
   }
   void update() {
 
+  }
+  compareTo(Object) {
+    
   }
 }
 
