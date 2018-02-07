@@ -62,8 +62,8 @@
             <section id="to-do">
                 To do
                 <ul>
-                    <li class="to-do-item"><p>Phone Kerry</p><p class="priority">[!!!]</p></li>
-                    <li class="to-do-item"><p>Fix typo in p…</p><p class="priority">[!!]</p></li>
+                    <li class="to-do-item"><p>Phone Kerry</p><p class="to-do-priority">[!!!]</p></li>
+                    <li class="to-do-item"><p>Fix typo in p…</p><p class="to-do-priority">[!!]</p></li>
                     <li class="to-do-item">Research boats</li>
                     <li class="to-do-item">Hidden item</li>
                     <li class="to-do-item">Hidden item</li>
@@ -79,10 +79,16 @@
                     <p>Hey, party 6PM here :)</p>
                     <time class="notification-time">[10:00 PM]</time>
                 </li>
-                <li class="notification">Leedsville bridge proposal</li>
-                <li class="notification">Latest IWG minutes</li>
-                <li class="notification">Music compositions <span class="right-align">❭</span></li>
-                <li class="notification">Hidden item</li>
+                <li class="notification notification-urgent">
+                    <p>Bob wrote:</p>
+                    <p>The production server is down!</p>
+                    <p class="notification-priority">[URGENT]</p>
+                    <time class="notification-time">[9:12 PM]</time>
+                </li>
+                <li class="notification notification-emergency">
+                    <p>Flood watch: Orono</p>
+                    <time class="notification-time">[Yesterday]</time>
+                </li>
             </ul>
             <button id="projects-button">Open update log…</button>
         </section>
