@@ -9,10 +9,10 @@ PageStore.prototype.filterLargeMediaElement = function(size) {
     if ( Date.now() < this.allowLargeMediaElementsUntil ) {
         return 0;
     }
-    if ( µb.hnSwitches.evaluateZ('no-large-media', this.tabHostname) !== true ) {
+    if ( mb.hnSwitches.evaluateZ('no-large-media', this.tabHostname) !== true ) {
         return 0;
     }
-    if ( (size >>> 10) < µb.userSettings.largeMediaSize ) {
+    if ( (size >>> 10) < mb.userSettings.largeMediaSize ) {
         return 0;
     }
 
@@ -24,8 +24,8 @@ PageStore.prototype.filterLargeMediaElement = function(size) {
         );
     }
 
-    if ( µb.logger.isEnabled() ) {
-        this.logData = µb.hnSwitches.toLogData();
+    if ( mb.logger.isEnabled() ) {
+        this.logData = mb.hnSwitches.toLogData();
     }
 
     return 1;
