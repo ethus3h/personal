@@ -11,9 +11,19 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
+      "matches": ["<all_urls>"],
       "js": ["borderify.js"]
     }
-  ]
+],
 
+   "permissions":[
+      "contextMenus",
+      "privacy",
+      "storage",
+      "tabs",
+      "webNavigation",
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>"
+   ]
 }
