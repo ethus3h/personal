@@ -15,10 +15,13 @@
 	content: 'orecbucr ';
 	display: block;
 	position: fixed;
+	color: white;
 	left:50vw;
 	width: 50vw;
-	background-color: pink;
+	background-color: rgb(195,83,229);
 	height: 3rem;
+	font-size: 2rem;
+	text-align: center;
 	top: 0;
 }
 #other-projects :nth-last-child(3):not(.other-project-over)::after {
@@ -26,7 +29,10 @@
 	display: block;
 	position: fixed;
 	width: 50vw;
-	background-color: black;
+	color: white;
+	background-color: rgb(195,83,229);
 	height: 3rem;
+	font-size: 2rem;
+	text-align: center;
 	top: 0;
 }
