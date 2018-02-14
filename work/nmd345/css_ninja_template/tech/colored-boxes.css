@@ -23,7 +23,7 @@ body {
 	display: flex;
 	flex-direction: column-reverse;
 }
-#description-container > ::before {
+#description-container > :nth-child(1)::before, #description-container > :nth-child(2)::before {
 	position: fixed;
 	color: white;
 	width: calc(50vw - 0.5rem);
@@ -36,6 +36,23 @@ body {
 	transition: all 0.2s ease-in-out;
 	border-right: 0.5rem solid rgba(65,105,225,0.9);
 }
+#description-container > :nth-child(1)::after {
+	columns: 3;
+	content: 'Non eram nescius, Brute, cum, quae summis ingeniis exquisitaque doctrina philosophi Graeco sermone tractavissent, ea Latinis litteris mandaremus, fore ut hic noster labor in varias reprehensiones incurreret. nam quibusdam, et iis quidem non admodum indoctis, totum hoc displicet philosophari. quidam autem non tam id reprehendunt, si remissius agatur, sed tantum studium tamque multam operam ponendam in eo non arbitrantur. erunt etiam, et ii quidem eruditi Graecis litteris, contemnentes Latinas, qui se dicant in Graecis legendis operam malle consumere. postremo aliquos futuros suspicor, qui me ad alias litteras vocent, genus hoc scribendi, etsi sit elegans, personae tamen et dignitatis esse negent.';
+}
+#description-container > ::after {
+	color: white;
+	text-indent: 1rem;
+	background-color:black;
+	position: fixed;
+	left: 0;
+	top: 25vh;
+	height: 50vh;
+	width: 75vw;
+	padding: 1rem;
+	overflow-y: scroll;
+}
+
 #description-container > :nth-child(1):not(:hover)::before, #description-container > :nth-child(2):not(:hover)::before {
 	background-color: rgba(195,83,229,1);
 }
@@ -44,5 +61,5 @@ body {
 	left:50vw;
 }
 #description-container > :nth-child(2)::before {
-	content: 'Pseudo-elements';
+	content: 'Columns';
 }
