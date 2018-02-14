@@ -34,8 +34,8 @@ body {
 	text-align: center;
 	top: 0;
 	transition: all 0.2s ease-in-out;
-	box-sizing: content-box;
 	border-right: 0.5rem solid rgba(65,105,225,0.9);
+	border-bottom: 1rem solid pink;
 }
 #description-container:hover > :nth-child(1)::after {
 	right: 25vw;
@@ -61,7 +61,7 @@ body {
 
 #description-container > :nth-child(1):not(:hover)::before, #description-container > :nth-child(2):not(:hover)::before {
 	background-color: rgba(195,83,229,1);
-	border-bottom: 20vh solid transparent;
+	border-bottom: 1rem solid blue;
 }
 #description-container > :nth-child(1)::before {
 	content: 'Flexbox';
