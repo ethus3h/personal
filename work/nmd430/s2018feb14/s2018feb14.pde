@@ -69,7 +69,7 @@ class Sun extends Life {
   }
   void draw() {
     fill(255,255,255);
-    ellipse(temperature,temperature,1000,1000);
+    ellipse((mySize * (smoothMod(temperature, 50) / 100.0)),smoothMod((int)(mySize * (temperature / 100.0)), 50),1000,1000);
   }
   void update() {
 
@@ -83,7 +83,7 @@ class Sky extends Life {
     rect(0, 0, mySize, mySize);
   }
   void update() {
-    sun.temperature = smoothMod(world.time, 255);
+    sun.temperature = smoothMod(world.time, 100);
   }
 }
 
