@@ -1,0 +1,10 @@
+#main-container {
+	display: flex;
+	flex-direction: column-reverse;
+}
+.other-project:last-of-type::after {
+	display: block;
+	width: 100%;
+	background-color: black;
+	height:3rem;
+}
