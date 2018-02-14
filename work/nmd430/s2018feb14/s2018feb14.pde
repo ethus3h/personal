@@ -50,7 +50,7 @@ public class LifeComparator implements Comparator<Life> {
 }
 
 class Life implements Comparable<Life> {
-  Integer zIndex = 0;
+  protected Integer zIndex = 0;
   void draw() {};
   void update() {};
   @Override
@@ -65,7 +65,7 @@ class Sun extends Life {
   Integer temperature = 0;
   Integer zIndex;
   Sun(Integer zIndex){
-    this.zIndex = zIndex;
+    super.zIndex = zIndex;
   }
   void draw() {
     fill(255,255,255);
