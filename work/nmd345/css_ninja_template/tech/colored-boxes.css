@@ -34,6 +34,7 @@ body {
 	text-align: center;
 	top: 0;
 	transition: all 0.2s ease-in-out;
+	box-sizing: content-box;
 	border-right: 0.5rem solid rgba(65,105,225,0.9);
 }
 #description-container:hover > :nth-child(1)::after {
