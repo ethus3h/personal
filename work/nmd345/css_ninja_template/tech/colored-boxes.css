@@ -1,12 +1,32 @@
+* {
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
 #main-container {
+	display: flex;
+	flex-direction: column;
+}
+#other-projects {
 	display: flex;
 	flex-direction: column-reverse;
 }
-.other-projects :last-of-type::after {
+#other-projects :nth-last-child(2):not(.other-project-over)::after {
 	content: 'orecbucr ';
 	display: block;
 	position: fixed;
-	width: 100%;
+	left:50vw;
+	width: 50vw;
+	background-color: pink;
+	height: 3rem;
+	top: 0;
+}
+#other-projects :nth-last-child(3):not(.other-project-over)::after {
+	content: 'orecbucr ';
+	display: block;
+	position: fixed;
+	width: 50vw;
 	background-color: black;
 	height: 3rem;
+	top: 0;
 }
