@@ -22,10 +22,17 @@
 	text-align: center;
 	top: 0;
 }
+#other-projects :nth-last-child(2)::after {
+		content: 'Flexbox';
+		left:50vw;
+}
 #other-projects :nth-last-child(2):not(.other-project-over)::after {
 	content: 'Flexbox';
 	left:50vw;
+	opacity:0.9;
 }
 #other-projects :nth-last-child(3):not(.other-project-over)::after {
 	content: 'Pseudo-elements';
+}#other-projects :nth-last-child(3):not(.other-project-over)::after {
+	opacity:0.9;
 }
