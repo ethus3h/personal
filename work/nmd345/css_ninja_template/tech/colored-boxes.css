@@ -41,15 +41,27 @@ body {
 	filter: blur(0);
 	transition: all 0.2s ease-in-out, filter 1s ease-in-out;
 }
+@keyframes filterer {
+	0% {
+			filter: blur(0rem) hue-rotate(0deg);
+	}
+	100% {
+			filter: blur(0rem) hue-rotate(359deg);
+	}
+}
 #description-container > :nth-child(2):hover::after {
 	left: 25vw;
 	filter: blur(0) hue-rotate(90deg);
 	transition: all 0.2s ease-in-out, filter 1s ease-in-out;
-}#description-container > :nth-child(2)::after {
+	animation: filterer 10s infinite;
+	background:linear-gradient(90deg,rgba(199,130,229,1) 0,rgba(199,130,229,1) 1%,rgba(162,130,229,0.9) 15%,rgba(129,145,226,0.78) 23%,rgba(129,134,226,0.66) 34%,rgba(142,129,226,0.44) 47%,rgba(130,152,229,0.34) 59%,rgba(0,150,255,0) 100%);
+}
+#description-container > :nth-child(2)::after {
 	left: 110vw;
 	right:unset;
 	background-color:rgba(255,0,255,0.8);
 	filter: blur(1rem) hue-rotate(0deg);
+	animation: unset;
 }
 #description-container > ::after {
 	columns: 3;
