@@ -54,7 +54,7 @@ body {
 	filter: blur(0) hue-rotate(90deg);
 	transition: all 0.2s ease-in-out, filter 1s ease-in-out;
 	animation: filterer 10s infinite;
-	background:linear-gradient(90deg,rgba(199,130,229,1) 0,rgba(199,130,229,1) 1%,rgba(162,130,229,0.9) 15%,rgba(129,145,226,0.78) 23%,rgba(129,134,226,0.66) 34%,rgba(142,129,226,0.44) 47%,rgba(130,152,229,0.34) 59%,rgba(0,150,255,0) 100%);
+	background-image: linear-gradient(90deg,rgba(199,130,229,1) 0,rgba(199,130,229,1) 1%,rgba(162,130,229,0.9) 15%,rgba(129,145,226,0.78) 23%,rgba(129,134,226,0.66) 34%,rgba(142,129,226,0.44) 47%,rgba(130,152,229,0.34) 59%,rgba(0,150,255,0) 100%);
 }
 #description-container > :nth-child(2)::after {
 	left: 110vw;
