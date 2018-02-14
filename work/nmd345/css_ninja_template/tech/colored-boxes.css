@@ -31,12 +31,12 @@
 	text-align: center;
 	top: 0;
 }
+#description-container > :nth-child(1):not(:hover)::before, #description-container > :nth-child(2):not(:hover)::before {
+	background-color: rgba(195,83,229,1);
+}
 #description-container > :nth-child(1)::before {
 	content: 'Flexbox';
 	left:50vw;
-}
-#description-container > :nth-child(1):not(:hover)::before, #description-container > :nth-child(2):not(:hover)::before {
-	background-color: rgba(195,83,229,1);
 }
 #description-container > :nth-child(2)::before {
 	content: 'Pseudo-elements';
