@@ -56,7 +56,7 @@ class Life implements Comparable<Life> {
   @Override
   public int compareTo(Life l) {
     int result = zIndex.compareTo(l.zIndex);
-    System.out.println(this.getClass().getName()+Integer.toString(this.zIndex)+Integer.toString(result));
+    System.out.println(Integer.toString(this.zIndex)+this.getClass().getName()+Integer.toString(l.zIndex)+l.getClass().getName()+Integer.toString(result));
     return result;
   }
 }
