@@ -9,4 +9,37 @@
 	left:0;
 	width:100vw;
 	height:100vh;
-	background-image: url(
+	background-image: url('https://raw.githubusercontent.com/ethus3h/wreathe-backgrounds/master/Backgrounds/DSCN8100.JPG')
+}
+#main-container {
+	display: flex;
+	flex-direction: column;
+}
+#other-projects {
+	display: flex;
+	flex-direction: column-reverse;
+}
+#description-container > ::before {
+	position: fixed;
+	color: white;
+	width: 50vw;
+	background-color: rgb(195,83,229);
+	height: 3rem;
+	font-size: 3rem;
+	opacity: 1;
+	text-align: center;
+	top: 0;
+}
+#description-container > :nth-child(1)::before {
+	content: 'Flexbox';
+	left:50vw;
+}
+#description-container > :nth-child(1):not(:hover)::before {
+	opacity:0.9;
+}
+#description-container > :nth-child(2)::before {
+	content: 'Pseudo-elements';
+}
+#description-container > :nth-child(2):not(:hover)::before {
+	opacity:0.9;
+}
