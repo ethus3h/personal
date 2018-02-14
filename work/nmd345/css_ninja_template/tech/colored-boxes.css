@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: column-reverse;
 }
-#other-projects ::after {
+#description-container ::after {
 	display: block;
 	position: fixed;
 	color: white;
@@ -19,20 +19,20 @@
 	background-color: rgb(195,83,229);
 	height: 3rem;
 	font-size: 3rem;
+	opacity: 1;
 	text-align: center;
 	top: 0;
 }
-#other-projects :nth-last-child(2)::after {
-		content: 'Flexbox';
-		left:50vw;
-}
-#other-projects :nth-last-child(2):not(.other-project-over)::after {
+#description-container :nth-child(1)::before {
 	content: 'Flexbox';
 	left:50vw;
+}
+#description-container :nth-last-child(1):not(:hover)::after {
 	opacity:0.9;
 }
-#other-projects :nth-last-child(3):not(.other-project-over)::after {
+#description-container :nth-last-child(2)::after {
 	content: 'Pseudo-elements';
-}#other-projects :nth-last-child(3):not(.other-project-over)::after {
+}
+#description-container :nth-last-child(2):not(:hover)::after {
 	opacity:0.9;
 }
