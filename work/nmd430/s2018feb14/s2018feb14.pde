@@ -55,8 +55,8 @@ class Life implements Comparable<Life> {
   void update() {};
   @Override
   public int compareTo(Life l) {
-    int result = - zIndex.compareTo(l.zIndex);
-    System.out.println(this.getClass().getName()+Integer.toString(result));
+    int result = zIndex.compareTo(l.zIndex);
+    System.out.println(this.getClass().getName()+Integer.toString(this.zIndex)+Integer.toString(result));
     return result;
   }
 }
@@ -107,4 +107,5 @@ class SceneManager {
 
 void draw() {
   world.update();
+  System.out.println("Done drawing");
 }
