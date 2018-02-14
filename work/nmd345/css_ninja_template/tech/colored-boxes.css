@@ -35,8 +35,9 @@ body {
 	top: 0;
 	transition: all 0.2s ease-in-out;
 	border-right: 0.5rem solid rgba(65,105,225,0.9);
+	margin-bottom:100vh;
 }
-#description-container > :nth-child(1):hover::after {
+#description-container:hover > :nth-child(1)::after {
 	right: 25vw;
 }
 #description-container > :nth-child(1)::after {
@@ -48,7 +49,7 @@ body {
 	text-indent: 1rem;
 	background-color:black;
 	position: fixed;
-	right: 0;
+	right: 100vw;
 	top: 20vh;
 	transition: all 0.2s ease-in-out;
 	height: 60vh;
