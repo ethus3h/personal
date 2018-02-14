@@ -69,7 +69,7 @@ class Sun extends Life {
   }
   void draw() {
     fill(255,255,255);
-    ellipse((mySize * (smoothMod(temperature, 50) / 100.0)),smoothMod((int)(mySize * (temperature / 100.0)), 50),1000,1000);
+    ellipse((mySize * (temperature / 100.0)),(mySize * (smoothMod(temperature, 50) / 100.0)),1000,1000);
   }
   void update() {
 
