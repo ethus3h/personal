@@ -202,6 +202,19 @@ http://www.imdb.com/title/tt5519340/ "Bright", 2017 (rating: 4? Just finished wa
 
 https://www.youtube.com/watch?v=k5TqNsr6YuQ Troye Sivan: "My My My!" (Music video is pretty good)
 
+Quotations from personal retired repo (I think there were some?)
+
+On packaging Node.js packages for Gentoo:
+
+```
+Only misery lies down this path. Every upstream project is a mess and
+nobody cares, because implicitly, their roadmaps all involve realizing
+that javascript is awful and abandoning the project. To get this stuff
+in the tree, we would need a full-time devoted developer who just loves
+javascript and is sexually aroused by having his time wasted.
+```
+ —Michael Orlitzky at https://archives.gentoo.org/gentoo-dev/message/1c196c0c1757c3ce32cadc11cf0be8e1
+
 ### To archive:
 
 https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
