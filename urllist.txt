@@ -5,7 +5,11 @@ https://hastebin.com/ezowatoqoh.sql
 https://hastebin.com/raw/ezowatoqoh
 https://hastebin.com/wameqozoze.hs
 https://hastebin.com/raw/wameqozoze
-https://bpaste.net/show/b48ee516403d
+https://bpaste.net/show/b48ee516403d/
+https://bpaste.net/raw/b48ee516403d/
+http://bpaste.net/show/b48ee516403d/
+http://bpaste.net/raw/b48ee516403d/
+
 https://paste.pound-python.org/show/XTaSuRgmhGpO68wpytt0/
 https://paste.pound-python.org/raw/XTaSuRgmhGpO68wpytt0/
 https://paste.pound-python.org/?reply_to=XTaSuRgmhGpO68wpytt0
