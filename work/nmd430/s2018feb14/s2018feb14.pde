@@ -13,7 +13,9 @@ void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
+  Sky sky = new Sky();
   world.add(new Sky());
+  world.sky = sky;
   world.add(new Creature());
 }
 
@@ -105,9 +107,9 @@ class Creature extends Life {
       // Being watered by human
       waterSatiation = waterSatiation + 10;
     } else {
-      // General living state: depleting water at slow rate
+      // General living state: depleting water at slow rate. Water depletion increases as sun gets hotter.
       if (waterSatiation > 0) {
-        waterSatiation = waterSatiation - 1;
+        waterSatiation = waterSatiation - world.sky.sun.temperature;
       }
     }
     // Reproduction state
@@ -116,6 +118,10 @@ class Creature extends Life {
       world.add(new Creature());
       waterSatiation = 180;
     }
+    // Wanting space state
+    for (position, 
+    // If it's too close to another creature, it will try to get away.
+    
   }
 }
 
@@ -135,6 +141,7 @@ class SceneManager {
   List<Life> deferredResidents = new ArrayList<Life>();
   Integer time = 0;
   Boolean updating = false;
+  Sky sky = new Sky();
   Life add(Life newResident) {
     if (this.updating) {
       this.addDeferred(newResident);
