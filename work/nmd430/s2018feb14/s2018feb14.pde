@@ -109,7 +109,7 @@ class Creature extends Life {
     } else {
       // General living state: depleting water at slow rate. Water depletion increases as sun gets hotter.
       if (waterSatiation > 0) {
-        waterSatiation = waterSatiation - world.sky.sun.temperature;
+        waterSatiation = waterSatiation - (world.sky.sun.temperature / 30);
       }
     }
     // Reproduction state
