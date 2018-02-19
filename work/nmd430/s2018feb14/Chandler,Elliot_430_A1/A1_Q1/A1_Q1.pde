@@ -19,9 +19,7 @@ void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
-  Sky sky = new Sky();
-  world.add(new Sky());
-  world.sky = sky;
+  world.addSky(new Sky());
   world.add(new Creature());
 }
 
@@ -118,7 +116,11 @@ class Creature extends Life {
     } else {
       // General living state: depleting water at slow rate. Water depletion increases as sun gets hotter.
       if (waterSatiation > 0) {
-        waterSatiation = waterSatiation - (world.sky.sun.temperature / 30);
+        try {
+          waterSatiation = waterSatiation - (world.sky.sun.temperature / 30);
+        }
+        catch (Exception e) {
+        }
       }
     }
     // Reproduction state
@@ -139,8 +141,8 @@ class Creature extends Life {
         float thisY = ((this.y + this.size) / 2);
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = linePointX((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 4);
-          this.y = linePointY((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 4);
+          this.x = linePointX((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 1);
+          this.y = linePointY((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 1);
         }
         // Calculate jealousy
         if (thisNeighborCreature.waterSatiation > 2 * this.waterSatiation) {
@@ -177,7 +179,7 @@ class SceneManager {
   List<Life> deferredResidents = new ArrayList<Life>();
   Integer time = 0;
   Boolean updating = false;
-  Sky sky = new Sky();
+  Sky sky;
   Life add(Life newResident) {
     if (this.updating) {
       this.addDeferred(newResident);
@@ -185,6 +187,9 @@ class SceneManager {
       residents.add(newResident);
     }
     return newResident;
+  }
+  void addSky(Sky sky) {
+    this.add(sky);
   }
   void addDeferred(Life newResident) {
     deferredResidents.add(newResident);
