@@ -125,9 +125,9 @@ class Creature extends Life {
       if (thisNeighbor instanceof Creature) {
         Creature thisNeighborCreature = (Creature)thisNeighbor;
         float neighborX = ((thisNeighborCreature.x + thisNeighborCreature.size) / 2);
-        float neighborY = ((float)thisNeighborCreature.y);
-        float thisX = ((float)this.x);
-        float thisY = ((float)this.y);
+        float neighborY = ((thisNeighborCreature.y + thisNeighborCreature.size) / 2);
+        float thisX = ((this.x + this.size) / 2);
+        float thisY = ((this.y + this.size) / 2);
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           // If it's too close to another creature, it will try to get away.
         }
