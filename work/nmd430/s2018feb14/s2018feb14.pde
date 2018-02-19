@@ -191,6 +191,7 @@ class SceneManager {
   }
   void update() {
     this.updating = true;
+    System.out.println("begun update");
     Collections.sort(residents, new LifeComparator());
     for (Life resident : residents) {
       System.out.println(resident.getClass().getName());
