@@ -131,10 +131,10 @@ class SceneManager {
   List<Life> residents = new ArrayList<Life>();
   Integer time = 0;
   Life add(Life newResident) {
-    residents.addForNextTick(newResident);
+    Iterator<Life> residentIterator = residents.iterator();
+    residents.add(newResident);
     return newResident;
   }
-  
   void update() {
     Collections.sort(residents, new LifeComparator());
     Iterator<Life> residentIterator = residents.iterator();
