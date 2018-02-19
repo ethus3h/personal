@@ -99,6 +99,7 @@ class Creature extends Life {
     ellipse(x, y, 100 + (waterSatiation / 10), 100 + (waterSatiation / 10)); // 100 is its base size, it grows with the more water it has
   }
   void update() {
+    System.out.println(Integer.toString(waterSatiation));
     if(overCircle(x, y, 100 + waterSatiation) && mousePressed) {
       waterSatiation = waterSatiation + 10;
     }
@@ -130,9 +131,10 @@ class SceneManager {
   List<Life> residents = new ArrayList<Life>();
   Integer time = 0;
   Life add(Life newResident) {
-    residents.add(newResident);
+    residents.addForNextTick(newResident);
     return newResident;
   }
+  
   void update() {
     Collections.sort(residents, new LifeComparator());
     Iterator<Life> residentIterator = residents.iterator();
