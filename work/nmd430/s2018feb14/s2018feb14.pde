@@ -136,11 +136,18 @@ class Creature extends Life {
           this.x = linePointX((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 4);
           this.y = linePointY((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 4);
         }
+        // Calculate jealousy
         if (thisNeighborCreature.waterSatiation > 2 * this.waterSatiation) {
           this.jealousy = this.jealousy + 1;
         }
         if (thisNeighborCreature.waterSatiation < (this.waterSatiation / 2)) {
           this.jealousy = this.jealousy - 1;
+        }
+        // If very jealous, steal water from neigbor.
+        if (this.jealousy > 10) {
+          thisNeighborCreature.waterSatiation = thisNeighborCreature.waterSatiation - 2;
+          this.waterSatiation = this.waterSatiation + 2;
+          this.jealousy = this.jealousy / 2; // Got catharsis through robbery
         }
       }
     }
