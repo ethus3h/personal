@@ -162,6 +162,7 @@ class Creature extends Life {
 }
 
 class Sky extends Life {
+  System.out.println("world");
   Sun sun = (Sun)world.add(new Sun(2));
   void draw() {
     fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20);
@@ -191,7 +192,6 @@ class SceneManager {
   }
   void update() {
     this.updating = true;
-    System.out.println("begun update");
     Collections.sort(residents, new LifeComparator());
     for (Life resident : residents) {
       System.out.println(resident.getClass().getName());
