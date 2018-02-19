@@ -19,9 +19,6 @@ void setup() {
   size(2000, 2000);
   //fullScreen();
   background(255);
-  Sky sky = new Sky();
-  world.add(new Sky());
-  world.sky = sky;
   world.add(new Creature());
 }
 
@@ -177,7 +174,10 @@ class SceneManager {
   List<Life> deferredResidents = new ArrayList<Life>();
   Integer time = 0;
   Boolean updating = false;
-  Sky sky = new Sky();
+  Sky sky;
+  SceneManager() {
+    this.sky = new Sky();
+  }
   Life add(Life newResident) {
     if (this.updating) {
       this.addDeferred(newResident);
