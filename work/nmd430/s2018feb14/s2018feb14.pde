@@ -127,10 +127,20 @@ class Sky extends Life {
 
 class SceneManager {
   List<Life> residents = new ArrayList<Life>();
+  List<Life> deferredResidents = new ArrayList<Life>();
   Integer time = 0;
+  Boolean updating = false;
   Life add(Life newResident) {
-    residents.add(newResident);
+    if(this.updating) {
+      this.addDeferred(newResident);
+    }
+    else {
+      residents.add(newResident);
+    }
     return newResident;
+  }
+  void addDeferred(Life newResident) {
+    deferredResidents.add(newResident);
   }
   void update() {
     Collections.sort(residents, new LifeComparator());
