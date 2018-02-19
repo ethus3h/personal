@@ -152,7 +152,7 @@ class SceneManager {
       resident.update();
       resident.draw();
     }
-    for(Iterator<Life> deferredResidentIterator = deferredResidents.iterator() ; deferredResidentIterator.hasNext()) {
+    for(Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext();) {
       residents.add(deferredResidentIterator.next());
       deferredResidentIterator.remove();
     }
