@@ -136,6 +136,12 @@ class Creature extends Life {
           this.x = linePointX((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 4);
           this.y = linePointY((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 4);
         }
+        if (thisNeighborCreature.waterSatiation > 2 * this.waterSatiation) {
+          this.jealousy = this.jealousy + 1;
+        }
+        if (thisNeighborCreature.waterSatiation < (this.waterSatiation / 2)) {
+          this.jealousy = this.jealousy - 1;
+        }
       }
     }
     this.size = 100 + (waterSatiation / 10); // 100 is its base size, it grows with the more water it has
