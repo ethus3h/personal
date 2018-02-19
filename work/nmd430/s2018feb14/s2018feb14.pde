@@ -19,6 +19,8 @@ void setup() {
   world.add(new Creature());
 }
 
+// Most of these utility functions are from the previous assignment
+
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
   return (int)(y1 + dist * sin(angle));
@@ -120,6 +122,7 @@ class Creature extends Life {
       waterSatiation = 180;
     }
     // Wanting space state: iterate through neighbors and find any that are too close
+    // Also get its jealousy
     for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
       Life thisNeighbor = residentIterator.next();
       if (thisNeighbor instanceof Creature) {
