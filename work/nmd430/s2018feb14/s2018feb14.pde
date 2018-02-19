@@ -42,6 +42,17 @@ float weightedAvg(int a, int b, float c) {
   return b + (a * c);
 }
 
+/* from https://processing.org/examples/rollover.html */
+boolean overCircle(int x, int y, int diameter) {
+  float disX = x - mouseX;
+  float disY = y - mouseY;
+  if(sqrt(sq(disX) + sq(disY)) < diameter/2 ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 public class LifeComparator implements Comparator<Life> {
   @Override
   public int compare(Life a, Life b) {
@@ -82,11 +93,18 @@ class Creature extends Life {
   Integer x = 0;
   Integer y = 0;
   void draw() {
-    fill(255 * waterSatiation, 255 * waterSatiation, 255 * waterSatiation);
-    ellipse(x, y, 100 + waterSatiation, 100 + waterSatiation); // 100 is its base size, it grows with the more water it has
+    fill(255 * (waterSatiation / 10), 255 * (waterSatiation / 10), 255 * (waterSatiation / 10));
+    ellipse(x, y, 100 + (waterSatiation / 10), 100 + (waterSatiation / 10)); // 100 is its base size, it grows with the more water it has
   }
   void update() {
-    
+    if(overCircle(x, y, 100 + waterSatiation) && mousePressed) {
+      waterSatiation = waterSatiation + 10;
+    }
+    else {
+      if(waterSatiation > 0) {
+        waterSatiation = waterSatiation - 1;
+      }
+    }
   }
 }
 
