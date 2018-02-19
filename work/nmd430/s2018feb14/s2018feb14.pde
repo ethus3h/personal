@@ -3,6 +3,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
+
 SceneManager world = new SceneManager();
 
 int mySize = 2000;
@@ -143,13 +145,19 @@ class SceneManager {
     deferredResidents.add(newResident);
   }
   void update() {
+    this.updating = true;
     Collections.sort(residents, new LifeComparator());
     for (Life resident: residents) {
       System.out.println(resident.getClass().getName());
       resident.update();
       resident.draw();
     }
+    for(Iterator<Life> deferredResidentIterator = deferredResidents.iterator() ; deferredResidentIterator.hasNext()) {
+      residents.add(deferredResidentIterator.next());
+      deferredResidentIterator.remove();
+    }
     time += 1;
+    this.updating = false;
   }
 }
 
