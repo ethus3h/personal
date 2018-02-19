@@ -136,7 +136,8 @@ class SceneManager {
   void update() {
     Collections.sort(residents, new LifeComparator());
     Iterator<Life> residentIterator = residents.iterator();
-    for (Life resident: residents) {
+    while (residentIterator.hasNext()) {
+      Life resident = residentIterator.next();
       System.out.println(resident.getClass().getName());
       resident.update();
       resident.draw();
