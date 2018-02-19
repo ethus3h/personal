@@ -49,7 +49,7 @@ float weightedAvg(int a, int b, float c) {
 boolean overCircle(int x, int y, int diameter) {
   float disX = x - mouseX;
   float disY = y - mouseY;
-  if(sqrt(sq(disX) + sq(disY)) < diameter/2 ) {
+  if (sqrt(sq(disX) + sq(disY)) < diameter/2 ) {
     return true;
   } else {
     return false;
@@ -58,17 +58,19 @@ boolean overCircle(int x, int y, int diameter) {
 
 public class LifeComparator implements Comparator<Life> {
   @Override
-  public int compare(Life a, Life b) {
+    public int compare(Life a, Life b) {
     return a.compareTo(b);
   }
 }
 
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
-  void draw() {};
-  void update() {};
+  void draw() {
+  };
+  void update() {
+  };
   @Override
-  public int compareTo(Life l) {
+    public int compareTo(Life l) {
     int result = zIndex.compareTo(l.zIndex);
     System.out.println(Integer.toString(this.zIndex)+this.getClass().getName()+Integer.toString(l.zIndex)+l.getClass().getName()+Integer.toString(result));
     return result;
@@ -78,15 +80,14 @@ class Life implements Comparable<Life> {
 class Sun extends Life {
   Integer temperature = 0;
   Integer zIndex;
-  Sun(Integer zIndex){
+  Sun(Integer zIndex) {
     super.zIndex = zIndex;
   }
   void draw() {
-    fill(255,255,255);
-    ellipse((mySize - (mySize * (temperature / 100.0))),(mySize - (mySize * (smoothMod(temperature, 50) / 100.0))),1000,1000);
+    fill(255, 255, 255);
+    ellipse((mySize - (mySize * (temperature / 100.0))), (mySize - (mySize * (smoothMod(temperature, 50) / 100.0))), 1000, 1000);
   }
   void update() {
-
   }
 }
 
@@ -100,13 +101,12 @@ class Creature extends Life {
     ellipse(x, y, 100 + (waterSatiation / 10), 100 + (waterSatiation / 10)); // 100 is its base size, it grows with the more water it has
   }
   void update() {
-    if(overCircle(x, y, 100 + waterSatiation) && mousePressed) {
+    if (overCircle(x, y, 100 + waterSatiation) && mousePressed) {
       // Being watered by human
       waterSatiation = waterSatiation + 10;
-    }
-    else {
+    } else {
       // General living state: depleting water at slow rate
-      if(waterSatiation > 0) {
+      if (waterSatiation > 0) {
         waterSatiation = waterSatiation - 1;
       }
     }
@@ -122,7 +122,7 @@ class Creature extends Life {
 class Sky extends Life {
   Sun sun = (Sun)world.add(new Sun(2));
   void draw() {
-    fill(smoothMod(sun.temperature,120),sun.temperature / 2,(sun.temperature * 2) + 20);
+    fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20);
     rect(0, 0, mySize, mySize);
   }
   void update() {
@@ -136,10 +136,9 @@ class SceneManager {
   Integer time = 0;
   Boolean updating = false;
   Life add(Life newResident) {
-    if(this.updating) {
+    if (this.updating) {
       this.addDeferred(newResident);
-    }
-    else {
+    } else {
       residents.add(newResident);
     }
     return newResident;
@@ -150,12 +149,12 @@ class SceneManager {
   void update() {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
-    for (Life resident: residents) {
+    for (Life resident : residents) {
       System.out.println(resident.getClass().getName());
       resident.update();
       resident.draw();
     }
-    for(Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext();) {
+    for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
       residents.add(deferredResidentIterator.next());
       deferredResidentIterator.remove();
     }
