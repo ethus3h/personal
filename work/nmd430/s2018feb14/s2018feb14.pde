@@ -98,9 +98,10 @@ class Creature extends Life {
   Integer jealousy = 0;
   Integer x = 0;
   Integer y = 0;
+  Integer size = 0;
   void draw() {
     fill(255 * (waterSatiation / 10), 255 * (waterSatiation / 10), 255 * (waterSatiation / 10));
-    ellipse(x, y, 100 + (waterSatiation / 10), 100 + (waterSatiation / 10)); // 100 is its base size, it grows with the more water it has
+    ellipse(x, y, size, size);
   }
   void update() {
     if (overCircle(x, y, 100 + waterSatiation) && mousePressed) {
@@ -118,10 +119,21 @@ class Creature extends Life {
       world.add(new Creature());
       waterSatiation = 180;
     }
-    // Wanting space state
-    for (position, 
-    // If it's too close to another creature, it will try to get away.
-    
+    // Wanting space state: iterate through neighbors and find any that are too close
+    for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
+      Life thisNeighbor = residentIterator.next();
+      if (thisNeighbor instanceof Creature) {
+        Creature thisNeighborCreature = (Creature)thisNeighbor;
+        float neighborX = ((thisNeighborCreature.x + thisNeighborCreature.size) / 2);
+        float neighborY = ((float)thisNeighborCreature.y);
+        float thisX = ((float)this.x);
+        float thisY = ((float)this.y);
+        if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
+          // If it's too close to another creature, it will try to get away.
+        }
+      }
+    }
+    this.size = 100 + (waterSatiation / 10); // 100 is its base size, it grows with the more water it has
   }
 }
 
