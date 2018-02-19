@@ -12,6 +12,7 @@ void setup() {
   //fullScreen();
   background(255);
   world.add(new Sky());
+  world.add(new Creature());
 }
 
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
@@ -104,6 +105,11 @@ class Creature extends Life {
       if(waterSatiation > 0) {
         waterSatiation = waterSatiation - 1;
       }
+    }
+    // Reproduction
+    if (waterSatiation > 200) {
+        world.add(new Creature());
+        waterSatiation = 180;
     }
   }
 }
