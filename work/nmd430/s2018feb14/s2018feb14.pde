@@ -129,7 +129,8 @@ class Creature extends Life {
         float thisX = ((this.x + this.size) / 2);
         float thisY = ((this.y + this.size) / 2);
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
-          // If it's too close to another creature, it will try to get away.
+          // If it's too close to another creature, it will try to get away, by moving a few places.
+          this.x = linePointX((int)neighborX, (int)neighborY, (int)thisX, (int)thisY, 4);
         }
       }
     }
