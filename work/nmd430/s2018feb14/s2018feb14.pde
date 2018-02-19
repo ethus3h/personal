@@ -76,6 +76,20 @@ class Sun extends Life {
   }
 }
 
+class Creature extends Life {
+  Integer waterSatiation = 0;
+  Integer jealousy = 0;
+  Integer x = 0;
+  Integer y = 0;
+  void draw() {
+    fill(255 * waterSatiation, 255 * waterSatiation, 255 * waterSatiation);
+    ellipse(x, y, 100 + waterSatiation, 100 + waterSatiation); // 100 is its base size, it grows with the more water it has
+  }
+  void update() {
+    
+  }
+}
+
 class Sky extends Life {
   Sun sun = (Sun)world.add(new Sun(2));
   void draw() {
