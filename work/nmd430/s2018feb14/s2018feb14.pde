@@ -101,17 +101,20 @@ class Creature extends Life {
   }
   void update() {
     if(overCircle(x, y, 100 + waterSatiation) && mousePressed) {
+      // Being watered by human
       waterSatiation = waterSatiation + 10;
     }
     else {
+      // General living state: depleting water at slow rate
       if(waterSatiation > 0) {
         waterSatiation = waterSatiation - 1;
       }
     }
-    // Reproduction
+    // Reproduction state
     if (waterSatiation > 200) {
-        world.add(new Creature());
-        waterSatiation = 180;
+      // It's fully healthy, doesn't need any more water. So, it has enough energy to safely reproduce.
+      world.add(new Creature());
+      waterSatiation = 180;
     }
   }
 }
