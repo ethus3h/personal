@@ -162,7 +162,6 @@ class Creature extends Life {
 }
 
 class Sky extends Life {
-  System.out.println("world");
   Sun sun = (Sun)world.add(new Sun(2));
   void draw() {
     fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20);
