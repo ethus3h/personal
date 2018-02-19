@@ -3,6 +3,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 SceneManager world = new SceneManager();
 
 int mySize = 2000;
@@ -134,6 +135,7 @@ class SceneManager {
   }
   void update() {
     Collections.sort(residents, new LifeComparator());
+    Iterator<Life> residentIterator = residents.iterator();
     for (Life resident: residents) {
       System.out.println(resident.getClass().getName());
       resident.update();
