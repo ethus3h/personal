@@ -1,9 +1,7 @@
-After you have completed your critique on 2/13, write a 500+ word reflection on Project 2.
-Also, give the person who presented before you and the person who presented after you feedback on their final audio recording. Add you feedback on your assigned class mates to the end of your own reflection. Make sure to title each feedback section with the students name that you are giving feedback on (make sure to take note of their names in class!).
-Critique should include:
-• Project strengths - what's good?!
-• Room for improvement - Where/how could the project be improved?
-• Technical - Do you have any technical advice / resources that might be helpful?
+Reflection on Project 2
+====
+[target: 655 words]
+====
 
 Response / Critique for Jessica Commeau
 ====
@@ -12,6 +10,7 @@ What is the goal of the non-vocal sounds?
 The different sounds didn't seem to be in the same acoustic context/spatiality. I did not really understand this in the context of the recording. Was it intentional? If you want to change this, it could perhaps have reverb applied to the output track instead of just the vocals to blend them together more.
 The ending seemed abrupt. Was that intentional?
 ====
+
 Response / Critique for Megan Carpenter
 ====
 The selection of space was interesting, as is the spatiality of the individual sounds within it (there are some near-sounding sounds, and some distant-sounding sounds, and the contrast is effective).
