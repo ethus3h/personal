@@ -215,6 +215,15 @@ javascript and is sexually aroused by having his time wasted.
 ```
  —Michael Orlitzky at https://archives.gentoo.org/gentoo-dev/message/1c196c0c1757c3ce32cadc11cf0be8e1
 
+Things facebook is good for:
+- Staying in touch with people far away (like, ya know, email and telephones) 
+- Messaging high school classmates thirty years later so you can get together and remember how much high school sucked 
+- Being a stalker 
+- Identity theft 
+- ...?
+
+—me
+
 ### To archive:
 
 https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
