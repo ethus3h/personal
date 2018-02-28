@@ -25,8 +25,8 @@ class Letter extends EvolvableObject {
     float eye_y      = map(dna.genes[4],0,1,0,unit);
     float eye_x      = map(dna.genes[5],0,1,0,2*unit);
     float eye_size   = map(dna.genes[5],0,1,0,2*unit);
-    color eyecolor   = color(dna.genes[4],dna.genes[5],dna.genes[6]);
-    color mouthColor = color(dna.genes[7],dna.genes[8],dna.genes[9]);
+    color colorb     = color(dna.genes[4],dna.genes[5],dna.genes[6]);
+    color colorc     = color(dna.genes[7],dna.genes[8],dna.genes[9]);
     float mouth_y    = map(dna.genes[5],0,1,0,5*unit);
     float mouth_x    = map(dna.genes[5],0,1,-5*unit,5*unit);
     float mouthw     = map(dna.genes[5],0,1,0,10*unit);
