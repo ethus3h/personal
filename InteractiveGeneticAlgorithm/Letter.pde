@@ -42,10 +42,10 @@ class Letter extends EvolvableObject {
     rotate(PI/bara_ang);
     rect(bara_x, bara_y, bara_w, bara_h);
 
-    // Draw the mouth
-    fill(mouthColor);
+    // Draw 2nd bar
     rectMode(CENTER);
-    rect(mouth_x, mouth_y, mouthw, mouthh);
+    rotate(PI/barb_ang);
+    rect(barb_x, barb_y, barb_w, barb_h);
   }
 
 }
