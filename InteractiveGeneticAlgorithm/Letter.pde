@@ -22,12 +22,13 @@ class Letter extends EvolvableObject {
     int unit = size/15; // a unit of measure
     float angle      = map(dna.genes[0],0,1,0,size);
     color c          = color(dna.genes[1],dna.genes[2],dna.genes[3]);
-    float eye_y      = map(dna.genes[4],0,1,0,unit);
-    float eye_x      = map(dna.genes[5],0,1,0,2*unit);
-    float eye_size   = map(dna.genes[5],0,1,0,2*unit);
+    float bar_x      = map(dna.genes[4],0,1,0,unit);
+    float bar_y      = map(dna.genes[5],0,1,-5*unit,5*unit);
+    float bar_w   = map(dna.genes[5],0,1,-5*unit,5*unit);
+    float bar_h   = map(dna.genes[5],0,1,-5*unit,5*unit);
     color colorb     = color(dna.genes[4],dna.genes[5],dna.genes[6]);
     color colorc     = color(dna.genes[7],dna.genes[8],dna.genes[9]);
-    float mouth_y    = map(dna.genes[5],0,1,0,5*unit);
+    float mouth_y    = map(dna.genes[5],0,1,-5*unit,5*unit);
     float mouth_x    = map(dna.genes[5],0,1,-5*unit,5*unit);
     float mouthw     = map(dna.genes[5],0,1,0,10*unit);
     float mouthh     = map(dna.genes[5],0,1,0,2*unit);
