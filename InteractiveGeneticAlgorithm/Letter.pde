@@ -22,17 +22,14 @@ class Letter extends EvolvableObject {
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
     float barb_ang   = map(dna.genes[1],0,1,0,size);
-    color c          = color(dna.genes[1],dna.genes[2],dna.genes[3]);
-    float bara_x     = map(dna.genes[4],0,1,-5*unit,5*unit);
-    float bara_y     = map(dna.genes[5],0,1,-5*unit,5*unit);
-    float bara_w     = map(dna.genes[6],0,1,0,10*unit);
-    float bara_h     = map(dna.genes[7],0,1,0,10*unit);
-    color colorb     = color(dna.genes[4],dna.genes[5],dna.genes[6]);
-    color colorc     = color(dna.genes[7],dna.genes[8],dna.genes[9]);
-    float barb_x     = map(dna.genes[5],0,1,-5*unit,5*unit);
-    float barb_y     = map(dna.genes[5],0,1,-5*unit,5*unit);
-    float barb_w     = map(dna.genes[5],0,1,0,10*unit);
-    float barb_h     = map(dna.genes[5],0,1,0,2*unit);
+    float bara_x     = map(dna.genes[2],0,1,-5*unit,5*unit);
+    float bara_y     = map(dna.genes[3],0,1,-5*unit,5*unit);
+    float bara_w     = map(dna.genes[4],0,1,0,10*unit);
+    float bara_h     = map(dna.genes[5],0,1,0,10*unit);
+    float barb_x     = map(dna.genes[6],0,1,-5*unit,5*unit);
+    float barb_y     = map(dna.genes[7],0,1,-5*unit,5*unit);
+    float barb_w     = map(dna.genes[8],0,1,0,10*unit);
+    float barb_h     = map(dna.genes[9],0,1,0,2*unit);
 
     // Once we calculate all the above properties, we use those variables to draw rects, ellipses, etc.
     noStroke();
