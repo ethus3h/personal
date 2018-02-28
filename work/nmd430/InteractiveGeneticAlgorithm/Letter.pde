@@ -29,7 +29,7 @@ class Letter extends EvolvableObject {
     float barb_x     = map(dna.genes[6],0,1,-5*unit,5*unit);
     float barb_y     = map(dna.genes[7],0,1,-5*unit,5*unit);
     float barb_w     = map(dna.genes[8],0,1,0,10*unit);
-    float barb_h     = map(dna.genes[9],0,1,0,2*unit);
+    float barb_h     = map(dna.genes[9],0,1,0,10*unit);
 
     // Once we calculate all the above properties, we use those variables to draw rects, ellipses, etc.
     noStroke();
