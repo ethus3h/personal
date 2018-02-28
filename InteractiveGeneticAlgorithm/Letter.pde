@@ -53,6 +53,6 @@ class Letter extends EvolvableObject {
 class LetterFactory extends EvolvableObjectFactory {
   
   EvolvableObject create(DNA dna, float x, float y) {
-    return new Face(dna, x, y);
+    return new Letter(dna, x, y);
   }
 }
