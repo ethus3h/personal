@@ -40,7 +40,6 @@ static final int POPULATION_MAX = 10;
 static final float MUTATION_RATE = 0.05;
 
 void setup() {
-  surface.setResizable(true);
   size(800,200);
   colorMode(RGB,1.0);
   

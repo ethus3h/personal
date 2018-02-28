@@ -12,18 +12,15 @@
 
 class Letter extends EvolvableObject {
 
-  // Create a new face
+  // Create a new letter
   Letter(DNA dna_, float x_, float y_) {
     super(dna_, x_, y_);
   }
 
-  // Display the face
+  // Display the letter
   void displayObject() {
-    // We are using the face's DNA to pick properties for this face
-    // such as: head size, color, eye position, etc.
-    // Now, since every gene is a floating point between 0 and 1, we map the values
     int unit = size/15; // a unit of measure
-    float r          = map(dna.genes[0],0,1,0,size);
+    float angle      = map(dna.genes[0],0,1,0,size);
     color c          = color(dna.genes[1],dna.genes[2],dna.genes[3]);
     float eye_y      = map(dna.genes[4],0,1,0,unit);
     float eye_x      = map(dna.genes[5],0,1,0,2*unit);
