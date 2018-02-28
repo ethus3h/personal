@@ -37,16 +37,10 @@ class Letter extends EvolvableObject {
     // Once we calculate all the above properties, we use those variables to draw rects, ellipses, etc.
     noStroke();
 
-    // Draw the head
-    fill(c);
-    ellipseMode(CENTER);
-    ellipse(0, 0, r, r);
-
-    // Draw the eyes
-    fill(eyecolor);
+    // Draw 1st bar
     rectMode(CENTER);
-    rect(-eye_x, -eye_y, eye_size, eye_size);
-    rect( eye_x, -eye_y, eye_size, eye_size);
+    rotate(PI/bara_ang);
+    rect(bara_x, bara_y, bara_w, bara_h);
 
     // Draw the mouth
     fill(mouthColor);
