@@ -10,10 +10,10 @@
 
 // Fitness Function f(t) = t (where t is "time" mouse rolls over face)
 
-class Face extends EvolvableObject {
+class Letter extends EvolvableObject {
 
   // Create a new face
-  Face(DNA dna_, float x_, float y_) {
+  Letter(DNA dna_, float x_, float y_) {
     super(dna_, x_, y_);
   }
 
@@ -57,7 +57,7 @@ class Face extends EvolvableObject {
 
 }
 
-class FaceFactory extends EvolvableObjectFactory {
+class LetterFactory extends EvolvableObjectFactory {
   
   EvolvableObject create(DNA dna, float x, float y) {
     return new Face(dna, x, y);
