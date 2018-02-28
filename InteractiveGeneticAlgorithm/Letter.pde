@@ -6,7 +6,7 @@
 // Interactive Selection
 // http://www.genarts.com/karl/papers/siggraph91.html
 
-// The class for our "face", contains DNA sequence, fitness value, position on screen
+// The class for our "letter", contains DNA sequence, fitness value, position on screen
 
 // Fitness Function f(t) = t (where t is "time" mouse rolls over face)
 
