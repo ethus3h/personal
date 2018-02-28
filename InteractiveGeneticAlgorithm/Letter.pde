@@ -20,10 +20,11 @@ class Letter extends EvolvableObject {
   // Display the letter
   void displayObject() {
     int unit = size/15; // a unit of measure
-    float angle      = map(dna.genes[0],0,1,0,size);
+    float bara_ang   = map(dna.genes[0],0,1,0,size);
+    float barb_ang   = map(dna.genes[0],0,1,0,size);
     color c          = color(dna.genes[1],dna.genes[2],dna.genes[3]);
-    float bara_x     = map(dna.genes[4],0,1,0,unit);
-    float bara_y     = map(dna.genes[5],0,1,0,unit);
+    float bara_x     = map(dna.genes[4],0,1,-5*unit,5*unit);
+    float bara_y     = map(dna.genes[5],0,1,-5*unit,5*unit);
     float bara_w     = map(dna.genes[6],0,1,0,10*unit);
     float bara_h     = map(dna.genes[7],0,1,0,10*unit);
     color colorb     = color(dna.genes[4],dna.genes[5],dna.genes[6]);
