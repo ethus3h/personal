@@ -1,1 +1,8 @@
-
+https://pastebin.com/c5S4hm4b
+https://forum.unity.com/threads/unity-webgl-and-hidpi-screens.430013/
+https://www.html5rocks.com/en/tutorials/speed/script-loading/
+https://web.archive.org/save/https://www.html5rocks.com/en/tutorials/speed/script-loading/
+https://pastebin.mozilla.org/9079543
+https://pastebin.mozilla.org/robots.txt
+https://www.html5rocks.com/en/tutorials/canvas/hidpi/
+https://web.archive.org/save/https://www.html5rocks.com/en/tutorials/canvas/hidpi/

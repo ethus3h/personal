@@ -10,7 +10,7 @@ https?://pastebin\.com/([\w\d\/]+)
 
 with
 
-https://pastebin.com/$1\nhttps://pastebin.com/raw/$1\nhttps://pastebin.com/dl/$1\nhttps://pastebin.com/index/$1\nhttps://pastebin.com/embed/$1\nhttps://pastebin.com/report/$1\nhttps://pastebin.com/print/$1\nhttp://pastebin.com/$1\nhttp://pastebin.com/raw/$1\nhttp://pastebin.com/dl/$1\nhttp://pastebin.com/index/$1\nhttp://pastebin.com/embed/$1\nhttp://pastebin.com/report/$1\nhttp://pastebin.com/print/$1\n
+https://pastebin.com/$1\nhttps://pastebin.com/raw/$1\nhttps://pastebin.com/dl/$1\nhttps://pastebin.com/index/$1\nhttps://pastebin.com/embed/$1\nhttps://pastebin.com/report/$1\nhttps://pastebin.com/print/$1\nhttps://pastebin.com/raw\?i=$1\nhttp://pastebin.com/$1\nhttp://pastebin.com/raw/$1\nhttp://pastebin.com/dl/$1\nhttp://pastebin.com/index/$1\nhttp://pastebin.com/embed/$1\nhttp://pastebin.com/report/$1\nhttp://pastebin.com/print/$1\nhttp://pastebin.com/raw\?i=$1\n
 
 http://dpaste\.com/([\w\d]+)
 
