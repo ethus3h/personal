@@ -34,7 +34,7 @@ https://bpaste.net/show/$2/\nhttps://bpaste.net/raw/$2/\nhttp://bpaste.net/show/
 
 with
 
-https://pastebin.mozilla.org/$1\nhttps://pastebin.mozilla.org/$1\nhttps://pastebin.mozilla.org/?dl=$1\nhttp://pastebin.mozilla.org/?dl=$1\n
+https://pastebin.mozilla.org/$1\nhttp://pastebin.mozilla.org/$1\nhttps://pastebin.mozilla.org/?dl=$1\nhttp://pastebin.mozilla.org/?dl=$1\n
 
 ###########
 Second, replace
