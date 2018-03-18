@@ -17,6 +17,8 @@ NetAddress dest;
 
 class Music extends EvolvableObject {
 
+  int memory[] = new int[10000];
+
   // Create a new letter
   Music(DNA dna_, float x_, float y_) {
     super(dna_, x_, y_);
