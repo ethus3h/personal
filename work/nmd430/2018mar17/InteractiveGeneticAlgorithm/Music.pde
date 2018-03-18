@@ -6,7 +6,7 @@
 // Interactive Selection
 // http://www.genarts.com/karl/papers/siggraph91.html
 
-// The class for our "letter", contains DNA sequence, fitness value, position on screen
+// The class for our beat, contains DNA sequence, fitness value, position on screen
 
 // Fitness Function f(t) = t (where t is "time" mouse rolls over face)
 import processing.sound.*;
@@ -20,13 +20,15 @@ class Letter extends EvolvableObject {
 
   // Display the letter
   void displayObject() {
-      
-  Pulse pulse;
-  // Create and start the sine oscillator.
-  pulse = new Pulse(this);
+  
+    for (int i; i < 10; i++) {
+      Pulse pulse;
+      // Create and start the sine oscillator.
+      pulse = new Pulse(this);
+      //Start the Pulse Oscillator. 
+      pulse.play();
+    }
     
-  //Start the Pulse Oscillator. 
-  pulse.play();
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
     float barb_ang   = map(dna.genes[1],0,1,0,size);
