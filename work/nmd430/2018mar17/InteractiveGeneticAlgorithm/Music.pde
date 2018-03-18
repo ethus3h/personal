@@ -82,19 +82,7 @@ class Music extends EvolvableObject {
   //This is called automatically when OSC message is received
   void oscEvent(OscMessage theOscMessage) {
     if (theOscMessage.checkAddrPattern("/wek/outputs")==true) {
-       if(theOscMessage.checkTypetag("fff")) { //Now looking for 2 parameters
-          float receivedModulation = theOscMessage.get(0).floatValue(); //get this parameter
-
-          float receivedAmount = theOscMessage.get(1).floatValue(); //get 2nd parameter
-
-          float receivedOffset = theOscMessage.get(2).floatValue(); //get third parameters
-          if (receivedOffset < 0) {
-            receivedOffset = 0;
-          }
-
-        //Now use these params
-        updateOscMessageHistory(theOscMessage.get(0).floatValue());
-
+      updateOscMessageHistory(theOscMessage.get(0).floatValue());
         println("Received new params value from Wekinator");  
       } else {
         println("Error: unexpected params type tag received by Processing");
