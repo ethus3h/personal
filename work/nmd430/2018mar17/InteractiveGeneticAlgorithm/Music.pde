@@ -16,6 +16,33 @@ class Music extends EvolvableObject {
   // Create a new letter
   Music(DNA dna_, float x_, float y_) {
     super(dna_, x_, y_);
+     //Initialize OSC communication
+  oscP5 = new OscP5(this,12000); //listen for OSC messages on port 12000 (Wekinator default)
+  dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
+  
+  // initialize the drawing window
+  size( 512, 200, P3D );
+
+  // initialize the minim and out objects
+  minim = new Minim( this );
+  out   = minim.getLineOut();
+  
+  // make the Oscil we will hear.
+  // arguments are frequency, amplitude, and waveform
+  Oscil wave = new Oscil( 200, 0.8, Waves.SINE );
+  // make the Oscil we will use to modulate the frequency of wave.
+  // the frequency of this Oscil will determine how quickly the
+  // frequency of wave changes and the amplitude determines how much.
+  // since we are using the output of fm directly to set the frequency 
+  // of wave, you can think of the amplitude as being expressed in Hz.
+  fm   = new Oscil( 10, 2, Waves.SINE );
+  // set the offset of fm so that it generates values centered around 200 Hz
+  fm.offset.setLastValue( offset * 500 );
+  // patch it to the frequency of wave so it controls it
+  fm.patch( wave.frequency );
+  // and patch wave to the output
+  wave.patch( out );
+  
   }
 
   // Display the letter
