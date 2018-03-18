@@ -21,7 +21,8 @@ class Letter extends EvolvableObject {
   // Display the letter
   void displayObject() {
   
-    for (int i; i < 10; i++) {
+    for (int i = 0; i < 16; i++) {
+      // Play 16 beats of music, so the listener can assess it
       Pulse pulse;
       // Create and start the sine oscillator.
       pulse = new Pulse(this);
