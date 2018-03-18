@@ -27,7 +27,6 @@ class Music extends EvolvableObject {
 
   // Display the letter
   void displayObject() {
-  
 
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
