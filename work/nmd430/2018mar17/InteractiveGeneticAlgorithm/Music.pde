@@ -95,8 +95,8 @@ class Music extends EvolvableObject {
       } else {
         println("Error: unexpected params type tag received by Processing");
       }
- }
-}
+    }
+  }
 }
 
 class MusicFactory extends EvolvableObjectFactory {
