@@ -93,7 +93,7 @@ class Music extends EvolvableObject {
           }
 
         //Now use these params
-        updateFM();
+        updateOscMessageHistory(theOscMessage.get(0).floatValue());
 
         println("Received new params value from Wekinator");  
       } else {
