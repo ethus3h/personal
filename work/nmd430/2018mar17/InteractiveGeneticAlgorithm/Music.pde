@@ -17,7 +17,7 @@ NetAddress dest;
 
 class Music extends EvolvableObject {
 
-  int oscMessageHistory[] = new int[1000];
+  float oscMessageHistory[] = new float[1000];
   int oscMessageTick = 0;
 
   // Create a new letter
@@ -58,6 +58,7 @@ class Music extends EvolvableObject {
   }
   
   void updateOscMessageHistory(float state) {
+    oscMessageHistory[oscMessageTick] = state;
     oscMessageTick = (oscMessageTick + 1) % 1000;
   }
 
