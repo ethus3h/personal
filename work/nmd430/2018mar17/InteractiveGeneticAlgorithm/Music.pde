@@ -5,7 +5,8 @@
 
 // Interactive Selection
 // http://www.genarts.com/karl/papers/siggraph91.html
-
+// This is for evolving a beat for music creation.
+// It looks to see how much you are dancing to it and uses that to assess fitness.
 // The class for our beat, contains DNA sequence, fitness value, position on screen
 
 import processing.sound.*;
