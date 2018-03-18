@@ -21,21 +21,9 @@ class Letter extends EvolvableObject {
   // Display the letter
   void displayObject() {
       
-
-WhiteNoise noise;
-
-void setup() {
-  size(640, 360);
-  background(255);
-  
   // Create the noise generator
   noise = new WhiteNoise(this);
   noise.play();
-}      
-
-void draw() {
-}
-
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
     float barb_ang   = map(dna.genes[1],0,1,0,size);
