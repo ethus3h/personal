@@ -8,7 +8,6 @@
 
 // The class for our beat, contains DNA sequence, fitness value, position on screen
 
-// Fitness Function f(t) = t (where t is "time" mouse rolls over face)
 import processing.sound.*;
 import oscP5.*;
 import netP5.*;
@@ -28,15 +27,7 @@ class Music extends EvolvableObject {
   // Display the letter
   void displayObject() {
   
-    for (int i = 0; i < 16; i++) {
-      // Play 16 beats of music, so the listener can assess it
-      Pulse pulse;
-      // Create and start the sine oscillator.
-      pulse = new Pulse(this);
-      //Start the Pulse Oscillator. 
-      pulse.play();
-    }
-    
+
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
     float barb_ang   = map(dna.genes[1],0,1,0,size);
@@ -64,6 +55,15 @@ class Music extends EvolvableObject {
   }
 
   void rollover(int mx, int my) {
+        for (int i = 0; i < 16; i++) {
+      // Play 16 beats of music, so the listener can assess it
+      Pulse pulse;
+      // Create and start the sine oscillator.
+      pulse = new Pulse(this);
+      //Start the Pulse Oscillator. 
+      pulse.play();
+    }
+    
     if (r.contains(mx, my)) {
       rolloverOn = true;
       fitness += 0.25;
