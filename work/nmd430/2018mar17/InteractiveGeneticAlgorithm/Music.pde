@@ -57,14 +57,15 @@ class Music extends EvolvableObject {
   }
 
 }
-  void rollover(int mx, int my) {
-    if (r.contains(mx, my)) {
-      rolloverOn = true;
-      fitness += 0.25;
-    } else {
-      rolloverOn = false;
-    }
+
+void rollover(int mx, int my) {
+  if (r.contains(mx, my)) {
+    rolloverOn = true;
+    fitness += 0.25;
+  } else {
+    rolloverOn = false;
   }
+}
 
 class MusicFactory extends EvolvableObjectFactory {
   
