@@ -9,7 +9,7 @@
 // It looks to see how much you are dancing to it and uses that to assess fitness.
 // The class for our beat, contains DNA sequence, fitness value, position on screen
 
-import processing.sound.*;
+//import processing.sound.*;
 import oscP5.*;
 import netP5.*;
 OscP5 oscP5;
