@@ -11,10 +11,10 @@
 // Fitness Function f(t) = t (where t is "time" mouse rolls over face)
 import processing.sound.*;
 
-class Letter extends EvolvableObject {
+class Music extends EvolvableObject {
 
   // Create a new letter
-  Letter(DNA dna_, float x_, float y_) {
+  Music(DNA dna_, float x_, float y_) {
     super(dna_, x_, y_);
   }
 
@@ -58,9 +58,9 @@ class Letter extends EvolvableObject {
 
 }
 
-class LetterFactory extends EvolvableObjectFactory {
+class MusicFactory extends EvolvableObjectFactory {
   
   EvolvableObject create(DNA dna, float x, float y) {
-    return new Letter(dna, x, y);
+    return new Music(dna, x, y);
   }
 }
