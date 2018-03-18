@@ -28,7 +28,7 @@ class Music extends EvolvableObject {
     dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
   }
 
-  // Display the letter
+  // Display a picture for the music
   void displayObject() {
 
     int unit = size/15; // a unit of measure
