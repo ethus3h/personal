@@ -20,7 +20,7 @@ class Music extends EvolvableObject {
   float oscMessageHistory[] = new float[1000];
   int oscMessageTick = 0;
 
-  // Create a new letter
+  // Constructor for the Music class that evolves a beat (really a fragment of data interpreted as audio and looped)
   Music(DNA dna_, float x_, float y_) {
     super(dna_, x_, y_);
     //Initialize OSC communication
