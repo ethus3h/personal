@@ -67,11 +67,11 @@ class Music extends EvolvableObject {
       rolloverOn = true;
       for (int i = 0; i < 16; i++) {
         // Play 16 beats of music, so the listener can assess it
-        Pulse pulse;
+        //Pulse pulse;
         // Create and start the sine oscillator.
-        pulse = new Pulse(this);
+        //pulse = new Pulse(this);
         //Start the Pulse Oscillator. 
-        pulse.play();
+        //pulse.play();
       }
       fitness =5;
     } else {
