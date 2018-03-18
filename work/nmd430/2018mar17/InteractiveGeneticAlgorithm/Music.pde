@@ -21,9 +21,12 @@ class Letter extends EvolvableObject {
   // Display the letter
   void displayObject() {
       
-    // Create the noise generator
-    WhiteNoise noise = new WhiteNoise(this);
-    noise.play();
+  Pulse pulse;
+  // Create and start the sine oscillator.
+  pulse = new Pulse(this);
+    
+  //Start the Pulse Oscillator. 
+  pulse.play();
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
     float barb_ang   = map(dna.genes[1],0,1,0,size);
