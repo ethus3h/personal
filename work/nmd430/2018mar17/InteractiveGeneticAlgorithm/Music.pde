@@ -66,7 +66,7 @@ class Music extends EvolvableObject {
         //Start the Pulse Oscillator. 
         pulse.play();
       }
-      fitness =;
+      fitness =5;
     } else {
       rolloverOn = false;
     }
