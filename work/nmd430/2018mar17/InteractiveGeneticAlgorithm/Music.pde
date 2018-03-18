@@ -80,3 +80,29 @@ class MusicFactory extends EvolvableObjectFactory {
     return new Music(dna, x, y);
   }
 }
+
+//This is called automatically when OSC message is received
+void oscEvent(OscMessage theOscMessage) {
+ if (theOscMessage.checkAddrPattern("/wek/outputs")==true) {
+     if(theOscMessage.checkTypetag("fff")) { //Now looking for 2 parameters
+        float receivedModulation = theOscMessage.get(0).floatValue(); //get this parameter
+        modulateFrequency = receivedModulation;
+        
+        float receivedAmount = theOscMessage.get(1).floatValue(); //get 2nd parameter
+        modulateAmount = receivedAmount;
+        
+        float receivedOffset = theOscMessage.get(2).floatValue(); //get third parameters
+        if (receivedOffset < 0) {
+          receivedOffset = 0;
+        }
+        offset = receivedOffset;
+        
+        //Now use these params
+        updateFM();
+        
+        println("Received new params value from Wekinator");  
+      } else {
+        println("Error: unexpected params type tag received by Processing");
+      }
+ }
+}
