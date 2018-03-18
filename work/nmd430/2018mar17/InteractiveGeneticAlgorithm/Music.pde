@@ -17,7 +17,8 @@ NetAddress dest;
 
 class Music extends EvolvableObject {
 
-  int memory[] = new int[10000];
+  int oscMessageHistory[] = new int[1000];
+  int oscMessageTick = 0;
 
   // Create a new letter
   Music(DNA dna_, float x_, float y_) {
@@ -55,6 +56,10 @@ class Music extends EvolvableObject {
     rotate(PI/barb_ang);
     rect(barb_x, barb_y, barb_w, barb_h);
   }
+  
+  void updateOscMessageHistory(float state) {
+    oscMessageTick = (oscMessageTick + 1) % 1000;
+  }
 
   void rollover(int mx, int my) {
     
@@ -79,16 +84,13 @@ class Music extends EvolvableObject {
     if (theOscMessage.checkAddrPattern("/wek/outputs")==true) {
        if(theOscMessage.checkTypetag("fff")) { //Now looking for 2 parameters
           float receivedModulation = theOscMessage.get(0).floatValue(); //get this parameter
-          modulateFrequency = receivedModulation;
 
           float receivedAmount = theOscMessage.get(1).floatValue(); //get 2nd parameter
-          modulateAmount = receivedAmount;
 
           float receivedOffset = theOscMessage.get(2).floatValue(); //get third parameters
           if (receivedOffset < 0) {
             receivedOffset = 0;
           }
-        offset = receivedOffset;
 
         //Now use these params
         updateFM();
