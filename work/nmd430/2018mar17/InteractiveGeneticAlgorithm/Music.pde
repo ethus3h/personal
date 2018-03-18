@@ -27,7 +27,7 @@ class Music extends EvolvableObject {
     oscP5 = new OscP5(this,12000); //listen for OSC messages on port 12000 (Wekinator default)
     dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
   }
- 
+
   // Display a picture for the music, to help make it easier to know which one is hovered
   void displayObject() {
 
