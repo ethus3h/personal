@@ -94,7 +94,6 @@ class Music extends EvolvableObject {
 }
 
 class MusicFactory extends EvolvableObjectFactory {
-  
   EvolvableObject create(DNA dna, float x, float y) {
     return new Music(dna, x, y);
   }
