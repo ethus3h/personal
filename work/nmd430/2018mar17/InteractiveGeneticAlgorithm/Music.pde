@@ -74,7 +74,7 @@ class Music extends EvolvableObject {
 
   //This is called automatically when OSC message is received
   void oscEvent(OscMessage theOscMessage) {
-   if (theOscMessage.checkAddrPattern("/wek/outputs")==true) {
+    if (theOscMessage.checkAddrPattern("/wek/outputs")==true) {
        if(theOscMessage.checkTypetag("fff")) { //Now looking for 2 parameters
           float receivedModulation = theOscMessage.get(0).floatValue(); //get this parameter
           modulateFrequency = receivedModulation;
