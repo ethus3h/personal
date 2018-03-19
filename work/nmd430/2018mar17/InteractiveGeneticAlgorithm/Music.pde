@@ -23,9 +23,6 @@ class Music extends EvolvableObject {
   // Constructor for the Music class that evolves a beat (really a fragment of data interpreted as audio and looped)
   Music(DNA dna_, float x_, float y_) {
     super(dna_, x_, y_);
-    //Initialize OSC communication
-    oscP5 = new OscP5(this,12000); //listen for OSC messages on port 12000 (Wekinator default)
-    dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
   }
 
   // Display a picture for the music, to help make it easier to know which one is hovered
@@ -63,6 +60,9 @@ class Music extends EvolvableObject {
   }
 
   void rollover(int mx, int my) {
+    //Initialize OSC communication
+    oscP5 = new OscP5(this,12000); //listen for OSC messages on port 12000 (Wekinator default)
+    dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
     
     if (r.contains(mx, my)) {
       rolloverOn = true;
