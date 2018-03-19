@@ -12,8 +12,9 @@
 import oscP5.*;
 import netP5.*;
 import ddf.minim.*;
+import ddf.minim.ugens.*;
 import javax.sound.sampled.*;
-AudioSample beat;
+Sampler beat;
 Minim player = new Minim(this);
 OscP5 oscP5;
 NetAddress dest;
@@ -42,7 +43,7 @@ class EvolvedBeat extends EvolvableObject {
       System.out.println("Null player");
       System.exit(0);
     }
-    beat = player.createSample(sound, format, 1024);
+    //beat = player.createSample(sound, format, 1024);
   }
 
   void updateOscMessageHistory(float state) {
