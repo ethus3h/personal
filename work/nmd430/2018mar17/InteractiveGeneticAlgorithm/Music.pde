@@ -41,7 +41,9 @@ class Music extends EvolvableObject {
   }
 
   void updateOscMessageHistory(float state) {
+    // Record the last OSC messages, so they can be used for getting the fitness.
     oscMessageHistory[oscMessageTick] = state;
+    // The history is 1000 spaces long, so only add 1000 of them before restarting
     oscMessageTick = (oscMessageTick + 1) % 1000;
   }
 
