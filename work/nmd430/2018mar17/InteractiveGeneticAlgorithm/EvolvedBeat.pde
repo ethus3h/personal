@@ -29,7 +29,6 @@ class EvolvedBeat extends EvolvableObject {
     super(dna_, x_, y_);
   }
 
-  // Display a picture for the music, to help make it easier to know which one is hovered
   void displayObject() {
 
     // Convert the DNA to the size for audio.
