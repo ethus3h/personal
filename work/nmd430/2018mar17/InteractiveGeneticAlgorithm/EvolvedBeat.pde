@@ -14,7 +14,7 @@ import netP5.*;
 import ddf.minim.*;
 import javax.sound.sampled.*;
 AudioSample beat;
-Minim player = new Minim(new InteractiveGeneticAlgorithm());
+Minim player = new Minim(this);
 OscP5 oscP5;
 NetAddress dest;
 AudioFormat format = new AudioFormat(44100f, 16, 1, true, true);
