@@ -12,6 +12,8 @@
 import oscP5.*;
 import netP5.*;
 import ddf.minim.*;
+import javax.sound.sampled.*;
+AudioSample beat;
 Minim player;
 OscP5 oscP5;
 NetAddress dest;
@@ -29,13 +31,13 @@ class Music extends EvolvableObject {
   // Display a picture for the music, to help make it easier to know which one is hovered
   void displayObject() {
 
-    // Create the music from the data
-    AudioSample beat = createSample();
     // Convert the DNA to the size for audio.
     float sound[] = new float[dna.genes.length];
     for (int i = 0; i < dna.genes.length; i++) {
       sound[i] = map(dna.genes[i],0,1,0,size);
     }
+    // Create the music from the data
+    beat = player.createSample(sound, new AudioFormat(44100f, 16, 1, true, true), 1024);
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
     float barb_ang   = map(dna.genes[1],0,1,0,size);
