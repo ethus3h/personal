@@ -20,6 +20,7 @@ NetAddress dest;
 AudioFormat format = new AudioFormat(44100f, 16, 1, true, true);
 class EvolvedBeat extends EvolvableObject {
 
+  // Initialize the variables that the class needs to have available
   float oscMessageHistory[] = new float[1000];
   int oscMessageTick = 0;
 
