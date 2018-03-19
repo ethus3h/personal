@@ -15,6 +15,9 @@ import ddf.minim.*;
 import javax.sound.sampled.*;
 AudioSample beat;
 Minim player = new Minim(this);
+// OSC messages will be sent from Wekinator showing what the current state of the input is.
+// We can tell how much the person is moving, by seeing how much variation there
+// is this input.
 OscP5 oscP5;
 NetAddress dest;
 AudioFormat format = new AudioFormat(44100f, 16, 1, true, true);
