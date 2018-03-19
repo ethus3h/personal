@@ -35,7 +35,7 @@ class Music extends EvolvableObject {
     float sound[] = new float[dna.genes.length];
     for (int i = 0; i < dna.genes.length; i++) {
       // This scales the input values to the desired value.
-      sound[i] = map(dna.genes[i],0,1,0,size);
+      sound[i] = map(dna.genes[i], 0, 1, 0, size);
     }
     // Create the music from the data
     beat = player.createSample(sound, format, 1024);
@@ -52,9 +52,9 @@ class Music extends EvolvableObject {
     if (r.contains(mx, my)) {
       rolloverOn = true;
       //Initialize OSC communication
-      oscP5 = new OscP5(this,12000); //listen for OSC messages on port 12000 (Wekinator default)
-      dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
-    
+      oscP5 = new OscP5(this, 12000); //listen for OSC messages on port 12000 (Wekinator default)
+      dest = new NetAddress("127.0.0.1", 6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
+
       // Play 16 beats of music, so the listener can assess it
       for (int i = 0; i < 16; i++) {
         // Play the sound.
@@ -65,13 +65,13 @@ class Music extends EvolvableObject {
       rolloverOn = false;
     }
   }
-  
+
   float getRecentDancingEnergy() {
-    
-        double sum = 0.0;
-        for(double a : data)
-            sum += a;
-        return sum/size;
+    floa
+      double sum = 0.0;
+    for (double a : data)
+      sum += a;
+    return sum/size;
     return 0;
   }
 
@@ -79,10 +79,10 @@ class Music extends EvolvableObject {
   void oscEvent(OscMessage theOscMessage) {
     // Code based on example. This looks at the OSC paths for Wekinator and reads them.
     if (theOscMessage.checkAddrPattern("/wek/outputs")==true) {
-      if(theOscMessage.checkTypetag("fff")) { //Now looking for 2 parameters
+      if (theOscMessage.checkTypetag("fff")) { //Now looking for 2 parameters
         // Send the value to the array of this beat
         updateOscMessageHistory(theOscMessage.get(0).floatValue());
-        println("Received new params value from Wekinator");  
+        println("Received new params value from Wekinator");
       } else {
         println("Error: unexpected params type tag received by Processing");
       }
