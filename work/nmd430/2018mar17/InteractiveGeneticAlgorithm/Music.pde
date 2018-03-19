@@ -73,10 +73,11 @@ class Music extends EvolvableObject {
     for(float i: oscMessageHistory) {
       temporaryNumber = temporaryNumber + i;
     }
-    float average = sum / oscMessageHistory.length;
+    float average = temporaryNumber / oscMessageHistory.length;
     // Reset the temporary number for the next step of calculation
     temporaryNumber = 0;
-    // 
+    // Get and return a value for dancing energy based on how much
+    // the data set varies from the average
     for(float i: oscMessageHistory) {
       temporaryNumber = temporaryNumber + ((i - average) * (i - average));
     }
