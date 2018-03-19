@@ -67,7 +67,11 @@ class Music extends EvolvableObject {
   }
 
   float getRecentDancingEnergy() {
-    floa
+    // based on / inspired by https://stackoverflow.com/questions/7988486/how-do-you-calculate-the-variance-median-and-standard-deviation-in-c-or-java
+    float sum = 0;
+    for(float i: oscMessageHistory) {
+      sum = sum + i;
+    }
       double sum = 0.0;
     for (double a : data)
       sum += a;
