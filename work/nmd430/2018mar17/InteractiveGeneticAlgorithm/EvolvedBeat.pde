@@ -38,10 +38,6 @@ class EvolvedBeat extends EvolvableObject {
       sound[i] = map(dna.genes[i], 0, 1, 0, size);
     }
     // Create the music from the data
-    if(format == null) {
-      System.out.println("Null player");
-      System.exit(0);
-    }
     beat = player.createSample(sound, format, 1024);
   }
 
