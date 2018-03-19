@@ -30,7 +30,12 @@ class Music extends EvolvableObject {
   void displayObject() {
 
     // Create the music from the data
-    AudioSample beat = ;
+    AudioSample beat = createSample();
+    // Convert the DNA to the size for audio.
+    float sound[] = new float[dna.genes.length];
+    for (int i = 0; i < dna.genes.length; i++) {
+      sound[i] = map(dna.genes[i],0,1,0,size);
+    }
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
     float barb_ang   = map(dna.genes[1],0,1,0,size);
