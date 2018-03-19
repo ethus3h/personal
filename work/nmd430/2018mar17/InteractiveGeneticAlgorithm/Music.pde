@@ -72,10 +72,7 @@ class Music extends EvolvableObject {
     for(float i: oscMessageHistory) {
       sum = sum + i;
     }
-      double sum = 0.0;
-    for (double a : data)
-      sum += a;
-    return sum/size;
+    float average = sum / oscMessageHistory.length;
     return 0;
   }
 
