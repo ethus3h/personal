@@ -46,7 +46,7 @@ void setup() {
   // Creates the factories.
   currentFactoryIdx = 0;
   factories = new ArrayList<EvolvableObjectFactory>();
-  factories.add(new MusicFactory());
+  factories.add(new EvolvedBeatFactory());
   
   // Initializes the population.
   initPopulation();

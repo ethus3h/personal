@@ -18,13 +18,13 @@ Minim player = new Minim(new InteractiveGeneticAlgorithm());
 OscP5 oscP5;
 NetAddress dest;
 AudioFormat format = new AudioFormat(44100f, 16, 1, true, true);
-class Music extends EvolvableObject {
+class EvolvedBeat extends EvolvableObject {
 
   float oscMessageHistory[] = new float[1000];
   int oscMessageTick = 0;
 
   // Constructor for the Music class that evolves a beat (really a fragment of data interpreted as audio and looped)
-  Music(DNA dna_, float x_, float y_) {
+  EvolvedBeat(DNA dna_, float x_, float y_) {
     super(dna_, x_, y_);
   }
 
@@ -99,8 +99,8 @@ class Music extends EvolvableObject {
   }
 }
 
-class MusicFactory extends EvolvableObjectFactory {
+class EvolvedBeatFactory extends EvolvableObjectFactory {
   EvolvableObject create(DNA dna, float x, float y) {
-    return new Music(dna, x, y);
+    return new EvolvedBeat(dna, x, y);
   }
 }
