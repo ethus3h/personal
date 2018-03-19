@@ -77,10 +77,9 @@ class Music extends EvolvableObject {
       dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
     
       // Play 16 beats of music, so the listener can assess it
-      sampleToPlay = player.loadSample(beat);
       for (int i = 0; i < 16; i++) {
         // Play the sound.
-        sampleToPlay.trigger();
+        beat.trigger();
       }
       fitness =5;
     } else {
