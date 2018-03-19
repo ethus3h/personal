@@ -9,7 +9,7 @@
 // It looks to see how much you are dancing to it and uses that to assess fitness.
 // The class for our beat, contains DNA sequence, fitness value, position on screen
 
-//import processing.sound.*;
+import processing.sound.*;
 import oscP5.*;
 import netP5.*;
 OscP5 oscP5;
@@ -68,11 +68,11 @@ class Music extends EvolvableObject {
       rolloverOn = true;
       for (int i = 0; i < 16; i++) {
         // Play 16 beats of music, so the listener can assess it
-        //Pulse pulse;
+        Pulse pulse;
         // Create and start the sine oscillator.
-        //pulse = new Pulse(this);
+        pulse = new Pulse(new InteractiveGeneticAlgorithm());
         //Start the Pulse Oscillator. 
-        //pulse.play();
+        pulse.play();
       }
       fitness =5;
     } else {
