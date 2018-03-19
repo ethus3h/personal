@@ -68,12 +68,19 @@ class Music extends EvolvableObject {
 
   float getRecentDancingEnergy() {
     // based on / inspired by https://stackoverflow.com/questions/7988486/how-do-you-calculate-the-variance-median-and-standard-deviation-in-c-or-java
-    float sum = 0;
+    // Add up the values of the DNA and divide by the number of them to get the average
+    float temporaryNumber = 0;
     for(float i: oscMessageHistory) {
-      sum = sum + i;
+      temporaryNumber = temporaryNumber + i;
     }
     float average = sum / oscMessageHistory.length;
-    return 0;
+    // Reset the temporary number for the next step of calculation
+    temporaryNumber = 0;
+    // 
+    for(float i: oscMessageHistory) {
+      temporaryNumber = temporaryNumber + ((i - average) * (i - average));
+    }
+    return temporaryNumber / (size - 1);
   }
 
   //This is called automatically when OSC message is received
