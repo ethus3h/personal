@@ -34,6 +34,7 @@ class Music extends EvolvableObject {
     // Convert the DNA to the size for audio.
     float sound[] = new float[dna.genes.length];
     for (int i = 0; i < dna.genes.length; i++) {
+      // This scales the input values to the desired value.
       sound[i] = map(dna.genes[i],0,1,0,size);
     }
     // Create the music from the data
@@ -59,10 +60,19 @@ class Music extends EvolvableObject {
         // Play the sound.
         beat.trigger();
       }
-      fitness =5;
+      fitness = getRecentDancingEnergy();
     } else {
       rolloverOn = false;
     }
+  }
+  
+  float getRecentDancingEnergy() {
+    
+        double sum = 0.0;
+        for(double a : data)
+            sum += a;
+        return sum/size;
+    return 0;
   }
 
   //This is called automatically when OSC message is received
