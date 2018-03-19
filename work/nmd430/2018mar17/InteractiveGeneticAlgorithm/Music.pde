@@ -66,13 +66,13 @@ class Music extends EvolvableObject {
       oscP5 = new OscP5(this,12000); //listen for OSC messages on port 12000 (Wekinator default)
       dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
     
+      // Play 16 beats of music, so the listener can assess it
+      SinOsc sinOsc;
+      // Create and start the sine oscillator.
+      sinOsc = new SinOsc(new InteractiveGeneticAlgorithm());
       for (int i = 0; i < 16; i++) {
-        // Play 16 beats of music, so the listener can assess it
-        Pulse pulse;
-        // Create and start the sine oscillator.
-        pulse = new Pulse(new InteractiveGeneticAlgorithm());
-        //Start the Pulse Oscillator. 
-        pulse.play();
+        // Play a sound.
+        sinOsc.play();
       }
       fitness =5;
     } else {
@@ -82,8 +82,10 @@ class Music extends EvolvableObject {
 
   //This is called automatically when OSC message is received
   void oscEvent(OscMessage theOscMessage) {
+    // Code based on example. This looks at the OSC paths for Wekinator and reads them.
     if (theOscMessage.checkAddrPattern("/wek/outputs")==true) {
       if(theOscMessage.checkTypetag("fff")) { //Now looking for 2 parameters
+        // Send the value to the array of this beat
         updateOscMessageHistory(theOscMessage.get(0).floatValue());
         println("Received new params value from Wekinator");  
       } else {
