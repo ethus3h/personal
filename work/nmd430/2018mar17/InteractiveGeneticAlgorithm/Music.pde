@@ -9,9 +9,10 @@
 // It looks to see how much you are dancing to it and uses that to assess fitness.
 // The class for our beat, contains DNA sequence, fitness value, position on screen
 
-import processing.sound.*;
 import oscP5.*;
 import netP5.*;
+import ddf.minim.*;
+Minim player;
 OscP5 oscP5;
 NetAddress dest;
 
@@ -28,6 +29,8 @@ class Music extends EvolvableObject {
   // Display a picture for the music, to help make it easier to know which one is hovered
   void displayObject() {
 
+    // Create the music from the data
+    AudioSample beat = ;
     int unit = size/15; // a unit of measure
     float bara_ang   = map(dna.genes[0],0,1,0,size);
     float barb_ang   = map(dna.genes[1],0,1,0,size);
@@ -67,7 +70,6 @@ class Music extends EvolvableObject {
       dest = new NetAddress("127.0.0.1",6448); //send messages back to Wekinator on port 6448, localhost (this machine) (default)
     
       // Play 16 beats of music, so the listener can assess it
-      SinOsc sinOsc;
       // Create and start the sine oscillator.
       sinOsc = new SinOsc(new InteractiveGeneticAlgorithm());
       for (int i = 0; i < 16; i++) {
