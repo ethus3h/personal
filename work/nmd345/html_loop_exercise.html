@@ -34,6 +34,13 @@ function muteJamie() {
 		elems[i].innerHTML='Jaaaaamieeeee';
         }
 }
+function hideAll() {
+	let mb=document.getElementById('message-box');
+        let elems=mb.getElementsByTagName('div');
+        for(let i=0; i < elems.length; i++) {
+                elems[i].style.display='none';
+        }
+}
 </script>
 	</head>
 	<body>
