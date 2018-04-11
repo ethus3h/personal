@@ -1,53 +1,22 @@
-<script>
-
-var counter = 0;
-
-
-
-
-
-function setup() {
-
-
-
- 
-
- var timer=document.getElementById('timer');
-
- timer.innerHTML=counter;
-
-
-
- function timeIt(){
-
- 	counter++;
-
- 	timer.innerHTML = counter;
-
-
-
- }
-
-
-
- setInterval(timeIt, 1000);
-
-
-
-}
-
-
-
-</script>
-
-
-
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Timer</title>
+	<script>
+		var counter = 0;
+		function setup() {
+			var timer=document.getElementById('timer');
+			timer.innerHTML=counter;
+			function timeIt(){
+				counter++;
+				timer.innerHTML = counter;
+			}
+			setInterval(timeIt, 1000);
+		}
+	</script>
+</head>
 <body onLoad='setup();'>
-
-
-
 	<p id="timer">5:00</p>
-
-
-
-</body> 
+</body>
+</html>
