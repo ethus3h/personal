@@ -1,0 +1,53 @@
+<script>
+
+var counter = 0;
+
+
+
+
+
+function setup() {
+
+
+
+ 
+
+ var timer=document.getElementById('timer');
+
+ timer.innerHTML=counter;
+
+
+
+ function timeIt(){
+
+ 	counter++;
+
+ 	timer.innerHTML = counter;
+
+
+
+ }
+
+
+
+ setInterval(timeIt, 1000);
+
+
+
+}
+
+
+
+</script>
+
+
+
+<body onLoad='setup();'>
+
+
+
+	<p id="timer">5:00</p>
+
+
+
+</body> 
