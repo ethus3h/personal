@@ -26,12 +26,20 @@
 				background-color: khaki ;
 			}
 		</style>
+<script>
+function muteJamie() {
+	let elems=document.getElementsByClassName('jamie');
+	for(let i=0; i < elems.length; i++) {
+		elems[i].style.color='white';
+        }
+}
+</script>
 	</head>
 	<body>
 		<h2>Welcome to Friendbook!</h2>
 		<div id="controls">
-			<p><a href="#" onclick="// Call first JavaScript function here">Mute Jamie</a></p>
-			<p><a href="#" onclick="// Call second JavaScript function here">Hide all messages</a></p>
+			<p><a href="#" onclick="muteJamie();">Mute Jamie</a></p>
+			<p><a href="#" onclick="hideAll();">Hide all messages</a></p>
 		</div>
 		<div id="message-box">
 			<div class="robin">
