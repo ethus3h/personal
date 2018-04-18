@@ -38,12 +38,12 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 
 float newLinePointY(float x1, float y1, float x2, float y2, float dist) {
   float yspeed=(y2-y1) / (x2-x1);
-  return (y1 + (dist * yspeed));
+  return (y2 + (dist * yspeed));
 }
 
 float newLinePointX(float x1, float y1, float x2, float y2, float dist) {
   float xspeed=(x2-x1) / (y2-y1);
-  return (x1 + (dist * xspeed));
+  return (x2 + (dist * xspeed));
 }
 
 int smoothMod(int num, int limit) {
@@ -153,8 +153,8 @@ class Creature extends Life {
         if (dist(neighborX, neighborY, thisX, thisY) < (2 * this.size)) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = (int)newLinePointX((float)Math.random(), (float)Math.random(), thisX, thisY, 5);
-          this.y = (int)newLinePointY((float)Math.random(), (float)Math.random(), thisX, thisY, 5);
+          this.x = (int)newLinePointX((float)Math.random(), (float)Math.random(), thisX, thisY, 50);
+          this.y = (int)newLinePointY((float)Math.random(), (float)Math.random(), thisX, thisY, 50);
           System.out.println("Moved to"+this.x+", "+this.y);
         } 
         // Calculate jealousy
