@@ -115,8 +115,6 @@ class Sun extends Life {
 class Creature extends Life {
   Integer waterSatiation = 0;
   Integer jealousy = 0;
-  Integer x = 0;
-  Integer y = 0;
   Integer size = 0;
   void draw() {
     fill(255 * (waterSatiation / 10), 255 * (waterSatiation / 10), 255 * (waterSatiation / 10));
