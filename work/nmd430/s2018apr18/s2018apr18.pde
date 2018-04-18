@@ -86,6 +86,7 @@ class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   Integer x = 0;
   Integer y = 0;
+  Integer size = 0;
   void draw() {
   };
   void update() {
@@ -115,7 +116,6 @@ class Sun extends Life {
 class Creature extends Life {
   Integer waterSatiation = 0;
   Integer jealousy = 0;
-  Integer size = 0;
   void draw() {
     fill(255 * (waterSatiation / 10), 255 * (waterSatiation / 10), 255 * (waterSatiation / 10));
     ellipse(x, y, size, size);
@@ -153,8 +153,8 @@ class Creature extends Life {
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = (int)newLinePointX((float)Math.random(), (float)Math.random(), thisX, thisY, -1);
-          this.y = (int)newLinePointY((float)Math.random(), (float)Math.random(), thisX, thisY, -1);
+          this.x = (int)newLinePointX((float)Math.random(), (float)Math.random(), thisX, thisY, 5);
+          this.y = (int)newLinePointY((float)Math.random(), (float)Math.random(), thisX, thisY, 5);
           System.out.println("Moved to"+this.x+", "+this.y);
         } 
         // Calculate jealousy
@@ -225,6 +225,9 @@ class SceneManager {
       if(resident.y > mySize) {
         resident.y = 0;
       }
+      System.out.println(resident.x);
+      System.out.println(resident.y);
+      System.out.println(resident.size);
       resident.draw();
     }
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
