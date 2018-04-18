@@ -35,6 +35,16 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
+float linePointY(float x1, float y1, float x2, float y2, float dist) {
+  float angle = atan2((y2 - y1), (x2 - x1));
+  return (y1 + dist * sin(angle));
+}
+
+float linePointX(float x1, float y1, float x2, float y2, float dist) {
+  float angle = atan2((y2 - y1), (x2 - x1));
+  return (x1 + dist * cos(angle));
+}
+
 int smoothMod(int num, int limit) {
   limit = (limit * 2) - 1;
   int mod = num % (limit + 1);
