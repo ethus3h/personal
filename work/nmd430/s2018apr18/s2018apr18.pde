@@ -84,6 +84,8 @@ public class LifeComparator implements Comparator<Life> {
 
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
+  Integer x = 0;
+  Integer y = 0;
   void draw() {
   };
   void update() {
@@ -213,6 +215,18 @@ class SceneManager {
     for (Life resident : residents) {
       System.out.println(resident.getClass().getName());
       resident.update();
+      if(resident.x < 0) {
+        resident.x = mySize;
+      }
+      if(resident.y < 0) {
+        resident.y = mySize;
+      }
+      if(resident.x > mySize) {
+        resident.x = 0;
+      }
+      if(resident.y > mySize) {
+        resident.y = 0;
+      }
       resident.draw();
     }
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
