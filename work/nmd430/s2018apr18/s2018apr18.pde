@@ -37,12 +37,12 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
 }
 
 float newLinePointY(float x1, float y1, float x2, float y2, float dist) {
-  float yspeed=y2-y1;
+  float yspeed=(y2-y1) / (x2-x1);
   return (y1 + (dist * yspeed));
 }
 
 float newLinePointX(float x1, float y1, float x2, float y2, float dist) {
-  float xspeed=x2-x1;
+  float yspeed=(x2-x1) / (y2-y1);
   return (x1 + (dist * xspeed));
 }
 
