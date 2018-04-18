@@ -137,8 +137,8 @@ class Creature extends Life {
         Creature thisNeighborCreature = (Creature)thisNeighbor;
         float neighborX = ((thisNeighborCreature.x + thisNeighborCreature.size) / 2);
         float neighborY = ((thisNeighborCreature.y + thisNeighborCreature.size) / 2);
-        float thisX = ((this.x + this.size) / 2);
-        float thisY = ((this.y + this.size) / 2);
+        float thisX = (((2*this.x) + this.size) / 2);
+        float thisY = (((2*this.y) + this.size) / 2);
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           System.out.println("tooclose");
           // If it's too close to another creature, it will try to get away, by moving a few places.
