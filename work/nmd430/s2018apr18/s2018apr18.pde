@@ -149,11 +149,12 @@ class Creature extends Life {
         float neighborY = ((thisNeighborCreature.y + thisNeighborCreature.size) / 2);
         float thisX = (((2*this.x) + this.size) / 2);
         float thisY = (((2*this.y) + this.size) / 2);
+        PVector direction=new PVector(neighborX-thisX, neighborY-thisY);
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = (int)linePointX(neighborX, neighborY, thisX, thisY, 300.0);
-          this.y = (int)linePointY(neighborX, neighborY, thisX, thisY, 300.0);
+          this.x = (int)linePointX(neighborX, neighborY, thisX, thisY, -1);
+          this.y = (int)linePointY(neighborX, neighborY, thisX, thisY, -1);
           System.out.println("Moved to"+this.x+", "+this.y);
         } 
         // Calculate jealousy
