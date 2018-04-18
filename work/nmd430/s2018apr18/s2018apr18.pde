@@ -35,14 +35,14 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
-float linePointY(float x1, float y1, float x2, float y2, float dist) {
-  float angle = atan2((y2 - y1), (x2 - x1));
-  return (y1 + dist * sin(angle));
+float newLinePointY(float x1, float y1, float x2, float y2, float dist) {
+  float yspeed=y2-y1;
+  return (y1 + (dist * yspeed));
 }
 
-float linePointX(float x1, float y1, float x2, float y2, float dist) {
-  float angle = atan2((y2 - y1), (x2 - x1));
-  return (x1 + dist * cos(angle));
+float newLinePointX(float x1, float y1, float x2, float y2, float dist) {
+  float xspeed=x2-x1;
+  return (x1 + (dist * xspeed));
 }
 
 int smoothMod(int num, int limit) {
@@ -149,7 +149,6 @@ class Creature extends Life {
         float neighborY = ((thisNeighborCreature.y + thisNeighborCreature.size) / 2);
         float thisX = (((2*this.x) + this.size) / 2);
         float thisY = (((2*this.y) + this.size) / 2);
-        PVector direction=new PVector(neighborX-thisX, neighborY-thisY);
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
