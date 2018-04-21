@@ -136,7 +136,7 @@ class Creature extends Life {
       Life thisNeighbor = residentIterator.next();
       if (thisNeighbor instanceof Creature) {
         Creature thisNeighborCreature = (Creature)thisNeighbor;
-        if (dist(thisNeighborCreature.x, thisNeighborCreature.y, this.x, this.y) < ((this.size + thisNeighborCreature.size) / 2)) {
+        if (dist(thisNeighborCreature.x, thisNeighborCreature.y, this.x, this.y) < ((this.size + thisNeighborCreature.size) / 1)) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
           this.x = (int)((this.x + (Math.random() * mySize)) / 2);
