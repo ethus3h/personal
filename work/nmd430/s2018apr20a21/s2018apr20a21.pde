@@ -36,16 +36,6 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
-float newLinePointY(float x1, float y1, float x2, float y2, float dist) {
-  float yspeed=(y1-y2) / (x1-x2);
-  return (y2 + (dist * yspeed));
-}
-
-float newLinePointX(float x1, float y1, float x2, float y2, float dist) {
-  float xspeed=(x1-x2) / (y1-y2);
-  return (x2 + (dist * xspeed));
-}
-
 int smoothMod(int num, int limit) {
   limit = (limit * 2) - 1;
   int mod = num % (limit + 1);
