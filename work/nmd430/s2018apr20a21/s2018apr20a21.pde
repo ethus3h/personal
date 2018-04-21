@@ -143,8 +143,8 @@ class Creature extends Life {
         if (dist(neighborX, neighborY, thisX, thisY) < (2 * this.size)) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = (int)newLinePointX((float)Math.random(), (float)Math.random(), thisX, thisY, 50);
-          this.y = (int)newLinePointY((float)Math.random(), (float)Math.random(), thisX, thisY, 50);
+          this.x = (int)(Math.random() * mySize);
+          this.y = (int)(Math.random() * mySize);
           System.out.println("Moved to"+this.x+", "+this.y);
         } 
         // Calculate jealousy
@@ -162,7 +162,7 @@ class Creature extends Life {
         }
       }
     }
-    this.size = 100 + (waterSatiation / 10); // 100 is its base size, it grows with the more water it has
+    this.size = 100 + (waterSatiation); // 100 is its base size, it grows with the more water it has
   }
 }
 
