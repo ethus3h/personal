@@ -1,0 +1,1 @@
+EmberLibrary="$(crystallize-getconf EmberLibrary)"; sudo mkdir -p "$EmberLibrary"/Ember; sudo chmod -R 777 "$EmberLibrary"/Ember\ satellite\ projects; cd "$EmberLibrary"/Ember\ satellite\ projects; git clone https://github.com/ethus3h/futuramerlin-web-toolkit; cd ../Ember; ln -s ~/*-site ./
