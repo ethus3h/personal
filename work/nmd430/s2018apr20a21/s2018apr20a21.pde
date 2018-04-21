@@ -84,7 +84,7 @@ class Life implements Comparable<Life> {
   @Override
     public int compareTo(Life l) {
     int result = zIndex.compareTo(l.zIndex);
-    System.out.println(Integer.toString(this.zIndex)+this.getClass().getName()+Integer.toString(l.zIndex)+l.getClass().getName()+Integer.toString(result));
+    //System.out.println(Integer.toString(this.zIndex)+this.getClass().getName()+Integer.toString(l.zIndex)+l.getClass().getName()+Integer.toString(result));
     return result;
   }
 }
@@ -136,15 +136,11 @@ class Creature extends Life {
       Life thisNeighbor = residentIterator.next();
       if (thisNeighbor instanceof Creature) {
         Creature thisNeighborCreature = (Creature)thisNeighbor;
-        float neighborX = ((thisNeighborCreature.x + thisNeighborCreature.size) / 2);
-        float neighborY = ((thisNeighborCreature.y + thisNeighborCreature.size) / 2);
-        float thisX = (((2*this.x) + this.size) / 2);
-        float thisY = (((2*this.y) + this.size) / 2);
-        if (dist(neighborX, neighborY, thisX, thisY) < (2 * this.size)) {
+        if (dist(thisNeighborCreature.x, thisNeighborCreature.y, this.x, this.y) < ((this.size + thisNeighborCreature.size) / 2)) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = (int)(Math.random() * mySize);
-          this.y = (int)(Math.random() * mySize);
+          this.x = (int)((this.x + (Math.random() * mySize)) / 2);
+          this.y = (int)((this.y + (Math.random() * mySize)) / 2);
           System.out.println("Moved to"+this.x+", "+this.y);
         } 
         // Calculate jealousy
@@ -201,7 +197,7 @@ class SceneManager {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
     for (Life resident : residents) {
-      System.out.println(resident.getClass().getName());
+      //System.out.println(resident.getClass().getName());
       resident.update();
       if(resident.x < 0) {
         resident.x = mySize;
@@ -215,9 +211,9 @@ class SceneManager {
       if(resident.y > mySize) {
         resident.y = 0;
       }
-      System.out.println(resident.x);
-      System.out.println(resident.y);
-      System.out.println(resident.size);
+      //System.out.println(resident.x);
+      //System.out.println(resident.y);
+      //System.out.println(resident.size);
       resident.draw();
     }
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
@@ -231,5 +227,5 @@ class SceneManager {
 
 void draw() {
   world.update();
-  System.out.println("Done drawing");
+  //System.out.println("Done drawing");
 }
