@@ -36,6 +36,16 @@ int linePointX(int x1, int y1, int x2, int y2, int dist) {
   return (int)(x1 + dist * cos(angle));
 }
 
+float linePointY(float x1, float y1, float x2, float y2, float dist) {
+  float angle = atan2((y2 - y1), (x2 - x1));
+  return y1 + dist * sin(angle);
+}
+
+float linePointX(float x1, float y1, float x2, float y2, float dist) {
+  float angle = atan2((y2 - y1), (x2 - x1));
+  return x1 + dist * cos(angle);
+}
+
 int smoothMod(int num, int limit) {
   limit = (limit * 2) - 1;
   int mod = num % (limit + 1);
@@ -46,7 +56,21 @@ int smoothMod(int num, int limit) {
   return result;
 }
 
+float smoothMod(float num, float limit) {
+  limit = (limit * 2) - 1;
+  float mod = num % (limit + 1);
+  float result = mod;
+  if ((2 * mod) > (limit + 1)) {
+    result = limit - mod + 2;
+  }
+  return result;
+}
+
 float weightedAvg(int a, int b) {
+  return b + (a * 0.1);
+}
+
+float weightedAvg(float a, float b) {
   return b + (a * 0.1);
 }
 
@@ -121,12 +145,166 @@ boolean overCircle(int x, int y, int diameter) {
   }
 }
 
+
+class Wanderer {
+  private final float followTendency;
+  private final int id;
+  private final float specifiedX;
+  private final float specifiedY;
+  final float ellipseStartX;
+  final float ellipseStartY;
+  public Wanderer(float initFollowTendency, float x, float y) {
+    this.followTendency = initFollowTendency;
+    this.specifiedX = x;
+    this.specifiedY = y;
+    this.ellipseStartX = x;
+    this.ellipseStartY = y;
+    if (initFollowTendency == 0) {
+      this.id = 0;
+    } else if (initFollowTendency == 1) {
+      this.id = 1;
+    } else {
+      this.id = (int)(initFollowTendency*10);
+    }
+  }
+  int step = 0;
+  double memory[] = new double[10000];
+  int strokeColor[] = new int[3];
+  int innerColor[] = new int[3];
+  int midColor[] = new int[3];
+  int outerColor[] = new int[3];
+  float ellipsePosX=this.specifiedX;
+  float ellipsePosY=this.specifiedY;
+  float ellipseHomeX=this.specifiedX;
+  float ellipseHomeY=this.specifiedY;
+  float ellipsePrevPosX=this.specifiedX;
+  float ellipsePrevPosY=this.specifiedY;
+  float personalityCached=0;
+  float moodCached=0;
+  float speed=0;
+  void remember(float value) {
+    if (step >= 10000) {
+      step = 0;
+    } 
+    memory[step]=(value + memory[step]) / 2;
+    step=step + 1;
+  }
+
+  float getPersonality() {
+    float result=(float)Arrays.stream(memory).average().getAsDouble();
+    personalityCached=result;
+    return result;
+  }
+
+  float getMood() {
+    double[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
+    float result=(float)Arrays.stream(mem).average().getAsDouble();
+    moodCached=result;
+    return result;
+  }
+
+  void click() {
+    remember(100000);
+  }
+
+  void tick(float monitor) {
+    remember(smoothMod((ellipsePosX + mouseX) / 2, mySize));
+    remember(smoothMod((ellipsePosY + mouseY) / 2, mySize));
+
+    ellipsePrevPosX=ellipsePosX;
+    ellipsePrevPosY=ellipsePosY;
+    ellipseHomeX=lerp(ellipseStartX, ellipsePrevPosX, followTendency);
+    ellipseHomeY=lerp(ellipseStartY, ellipsePrevPosY, followTendency);
+
+    int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
+
+    if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
+      ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+      ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+
+      if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
+        try {
+          ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+        }
+        catch(Exception e) {
+          ellipsePosY=ellipseHomeY;
+        }
+        try {
+          ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+        }   
+        catch(Exception e) {
+          ellipsePosX=ellipseHomeX;
+        }
+      }
+    }
+    speed=((float)getMood() / 600.0) + (monitor / 30);
+    System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
+    ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
+    ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
+
+    strokeColor[0]=(int)weightedAvg(strokeColor[0], getMood() * 10);
+    strokeColor[1]=(int)weightedAvg(strokeColor[1], smoothMod(getPersonality(), 255));
+    strokeColor[2]=(int)weightedAvg(strokeColor[2], ((getMood() * 10) + getPersonality()) / 2);
+    stroke(strokeColor[0], strokeColor[1], strokeColor[2]);
+
+    innerColor[0]=(int)weightedAvg(smoothMod(ellipsePosX, 255), smoothMod((int)(mouseX/followTendency), 255));
+    innerColor[1]=(int)weightedAvg(smoothMod(ellipsePosY, 255), smoothMod((int)(mouseY/followTendency), 255));
+    innerColor[2]=(int)weightedAvg(smoothMod(((int)weightedAvg(ellipsePosY * 100, ellipsePosX * 100)) / 100, 255), ((mouseX/4+mouseY/4) % 255));
+    fill(innerColor[0], innerColor[1], innerColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, 400 + (230 * followTendency), 400 + (230 * followTendency));
+
+    midColor[0]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseX/followTendency), 320));
+    midColor[1]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseY/followTendency), 320));
+    midColor[2]=(int)weightedAvg(smoothMod(getMood(), 255), ((mouseX/4+mouseY/4) % 255));
+    fill(midColor[0], midColor[1], midColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
+
+    outerColor[0]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseY/followTendency), 300));
+    outerColor[1]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseX/followTendency), 300));
+    outerColor[2]=(int)weightedAvg(smoothMod(getPersonality(), 255), ((mouseX/4+mouseY/4) % 255));
+    fill(outerColor[0], outerColor[1], outerColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, 400, 400);
+  }
+}
+
 public class LifeComparator implements Comparator<Life> {
   @Override
     public int compare(Life a, Life b) {
     return a.compareTo(b);
   }
 }
+
+
+class BulkWanderer {
+  Wanderer wanderer0;
+  Wanderer wanderer3;
+  Wanderer wanderer7;
+  Wanderer wanderer1;
+  BulkWanderer(float x, float y) {
+    this.wanderer0=new Wanderer(0f, x, y);
+    this.wanderer3=new Wanderer(0.3, x, y);
+    this.wanderer7=new Wanderer(0.7, x, y);
+    this.wanderer1=new Wanderer(1f, x, y);
+  }
+  void tick(float monitor) {
+    this.wanderer0.tick(monitor);
+    this.wanderer3.tick(monitor);
+    this.wanderer7.tick(monitor);
+    this.wanderer1.tick(monitor);
+  }
+  void click() {
+    this.wanderer0.click();
+    this.wanderer3.click();
+    this.wanderer7.click();
+    this.wanderer1.click();
+  }
+}
+
+BulkWanderer topLeftBulkWanderer = new BulkWanderer(0, 0);
+BulkWanderer topRightBulkWanderer = new BulkWanderer(0, mySize);
+BulkWanderer lowerLeftBulkWanderer = new BulkWanderer(mySize, 0);
+BulkWanderer lowerRightBulkWanderer = new BulkWanderer(mySize, mySize);
+BulkWanderer centerBulkWanderer = new BulkWanderer(mySize / 2, mySize / 2);
 
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
