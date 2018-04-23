@@ -20,8 +20,8 @@ void setup() {
   //fullScreen();
   background(255);
   world.addSky(new Sky());
-  world.add(new Creature());
-  world.add(new Creature());
+  world.add(new BreedingCreature());
+  world.add(new BreedingCreature());
 }
 
 // Most of these utility functions are from the previous assignment
@@ -221,7 +221,7 @@ class BreedingCreature extends Creature {
     // Reproduction state
     if (waterSatiation > 200) {
       // It's fully healthy, doesn't need any more water. So, it has enough energy to safely reproduce.
-      world.add(new Creature());
+      world.add(new BreedingCreature());
       waterSatiation = 180;
     }
     // Also get its jealousy
