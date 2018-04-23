@@ -131,7 +131,6 @@ class Creature extends Life {
       waterSatiation = 180;
     }
     // Wanting space state: iterate through neighbors and find any that are too close
-    // Also get its jealousy
     for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
       Life thisNeighbor = residentIterator.next();
       if (thisNeighbor instanceof Creature) {
@@ -146,9 +145,16 @@ class Creature extends Life {
           this.x = (int)((this.x + (Math.random() * mySize)) / 2);
           this.y = (int)((this.y + (Math.random() * mySize)) / 2);
           System.out.println("Moved to"+this.x+", "+this.y);
-        } 
-        // Calculate jealousy
-        if (thisNeighborCreature.waterSatiation > 2 * this.waterSatiation) {
+        }
+      }
+    }
+     // Also get its jealousy
+       // Calculate jealousy
+   for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
+      Life thisNeighbor = residentIterator.next();
+      if (thisNeighbor instanceof Creature) {
+             Creature thisNeighborCreature = (Creature)thisNeighbor;
+   if (thisNeighborCreature.waterSatiation > 2 * this.waterSatiation) {
           this.jealousy = this.jealousy + 1;
         }
         if (thisNeighborCreature.waterSatiation < (this.waterSatiation / 2)) {
