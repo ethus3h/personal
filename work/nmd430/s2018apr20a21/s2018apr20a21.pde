@@ -501,7 +501,10 @@ class ShapeChangingCreature extends Creature {
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom() };
+  Integer rotation = 0;
+  Integer rotating = 0;
   void draw() {
+    rotate((rotation/360)*TWO_PI);
     switch (data[0]) {
     case 0:
       triangle(data[1], data[2], data[3], data[4], data[5], data[6]);
@@ -524,6 +527,16 @@ class ShapeChangingCreature extends Creature {
   }
   void update() {
     this.disperse();
+    if(random(0,2) < 1) {
+      this.rotating = 1;
+    }
+    if(this.rotating == 1) {
+      this.rotation += 1;
+      if(this.rotation == 360) {
+        this.rotation = 0;
+        this.rotating = 0;
+      }
+    }
   }
 }
 
