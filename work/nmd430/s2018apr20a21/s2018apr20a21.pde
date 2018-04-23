@@ -196,7 +196,7 @@ class SceneManager {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
       System.out.println("Resdients:"+residents.size());
-    if(residents.size() > 10) {
+    if(residents.size() > 60) {
       residents.get(0).dead=1;
       residents.remove(0);
     }
@@ -318,24 +318,26 @@ class ShapeChangingCreature extends Creature {
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom() };
   void draw() {
-    switch (data[0]) {
-    case 0:
-      triangle(data[1], data[2], data[3], data[4], data[5], data[6]);
-      break;
-    case 1:
-      rect(data[1], data[2], data[3], data[4]);
-      break;
-    case 2:
-      quad(data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]);
-      break;
-    case 3:
-      ellipse(data[1], data[2], data[3], data[4]);
-      break;
-    case 4:
-      arc(data[1], data[2], data[3], data[4], data[5], data[6]);
-      break;
-    default:
-      break;
+    if(dead == 0) {
+      switch (data[0]) {
+      case 0:
+        triangle(data[1], data[2], data[3], data[4], data[5], data[6]);
+        break;
+      case 1:
+        rect(data[1], data[2], data[3], data[4]);
+        break;
+      case 2:
+        quad(data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]);
+        break;
+      case 3:
+        ellipse(data[1], data[2], data[3], data[4]);
+        break;
+      case 4:
+        arc(data[1], data[2], data[3], data[4], data[5], data[6]);
+        break;
+      default:
+        break;
+      }
     }
   }
   void update() {
