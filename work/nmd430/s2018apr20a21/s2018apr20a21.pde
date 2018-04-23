@@ -194,8 +194,8 @@ class SceneManager {
   void update() {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
-    if(residents.size() > 50) {
       System.out.println("Resdients:"+residents.size());
+    if(residents.size() > 50) {
       residents.remove(0);
     }
     for (Life resident : residents) {
