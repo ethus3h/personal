@@ -350,7 +350,7 @@ class ColorCreature extends Creature {
     strokeWeight(data[8]);
     x += (float)random(-5, 5);
     y += (float)random(-5, 5);
-    ellipse(x, y, 50, 50);
+    rect(x, y, scaledRandom(350), scaledRandom(350));
   }
   void update() {
     this.disperse();
