@@ -348,7 +348,7 @@ class Sky extends Life {
     if(dead == 1) {
       System.out.println("Drawn while dead");
     }
-    fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20, 0.1);
+    fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20, 5);
     rect(0, 0, mySize, mySize);
   }
   void update() {
@@ -575,8 +575,8 @@ void draw() {
   //System.out.println("Done drawing");
   currentTick = currentTick + 1;
 
-  //  fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  //  rect(-10, -10, 18000, 18000);
+  fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
+  rect(-10, -10, 18000, 18000);
 }
 void mouseClicked() {
   topLeftBulkWanderer.click();
