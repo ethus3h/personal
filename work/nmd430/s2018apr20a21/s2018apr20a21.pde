@@ -259,7 +259,7 @@ class BreedingCreature extends Creature {
 }
 
 class ShapeChangingCreature extends Creature {
-  Integer[] data = new Integer[] { intScaledRandom(), intScaledRandom(),
+  Integer[] data = new Integer[] { (int)(Math.random() * 4), intScaledRandom(),
     intScaledRandom(), intScaledRandom(), intScaledRandom(),
     intScaledRandom(), intScaledRandom(), intScaledRandom(),
     intScaledRandom() };
