@@ -340,8 +340,8 @@ class ColorCreature extends Creature {
     intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
-  Integer width=scaledRandom(350);
-  Integer height=scaledRandom(350);
+  float width=scaledRandom(350);
+  float height=scaledRandom(350);
   ColorCreature() {
     x = scaledRandom();
     y = scaledRandom();
