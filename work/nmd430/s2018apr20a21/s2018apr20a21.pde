@@ -95,17 +95,17 @@ int intScaledRandom(int scale) {
 Creature randomCreatureType() {
   Creature newCreature = new BreedingCreature();
   switch ((int)(Math.random() * 3)) {
-    case 0:
-      newCreature = new BreedingCreature();
-      break;
-    case 1:
-      newCreature = new ShapeChangingCreature();
-      break;
-    case 2:
-      newCreature = new ColorCreature();
-      break;
-    default:
-      break;
+  case 0:
+    newCreature = new BreedingCreature();
+    break;
+  case 1:
+    newCreature = new ShapeChangingCreature();
+    break;
+  case 2:
+    newCreature = new ColorCreature();
+    break;
+  default:
+    break;
   }
   return newCreature;
 }
@@ -305,29 +305,29 @@ class BreedingCreature extends Creature {
 }
 
 class ShapeChangingCreature extends Creature {
-  Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(),
-    intScaledRandom(), intScaledRandom(), intScaledRandom(),
-    intScaledRandom(), intScaledRandom(), intScaledRandom(),
+  Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(), 
+    intScaledRandom(), intScaledRandom(), intScaledRandom(), 
+    intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom() };
   void draw() {
     switch (data[0]) {
-      case 0:
-        triangle(data[1],data[2],data[3],data[4],data[5],data[6]);
-        break;
-      case 1:
-        rect(data[1],data[2],data[3],data[4]);
-        break;
-      case 2:
-        quad(data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]);
-        break;
-      case 3:
-        ellipse(data[1],data[2],data[3],data[4]);
-        break;
-      case 4:
-        arc(data[1],data[2],data[3],data[4],data[5],data[6]);
-        break;
-      default:
-        break;
+    case 0:
+      triangle(data[1], data[2], data[3], data[4], data[5], data[6]);
+      break;
+    case 1:
+      rect(data[1], data[2], data[3], data[4]);
+      break;
+    case 2:
+      quad(data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]);
+      break;
+    case 3:
+      ellipse(data[1], data[2], data[3], data[4]);
+      break;
+    case 4:
+      arc(data[1], data[2], data[3], data[4], data[5], data[6]);
+      break;
+    default:
+      break;
     }
   }
   void update() {
@@ -336,20 +336,20 @@ class ShapeChangingCreature extends Creature {
 }
 
 class ColorCreature extends Creature {
-  Integer[] data = new Integer[] { intScaledRandom(255), intScaledRandom(255),
-    intScaledRandom(255), intScaledRandom(255),
-    intScaledRandom(255), intScaledRandom(255),
+  Integer[] data = new Integer[] { intScaledRandom(255), intScaledRandom(255), 
+    intScaledRandom(255), intScaledRandom(255), 
+    intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
-    ColorCreature() {
-    
-  x = scaledRandom();
-  y = scaledRandom();}
+  ColorCreature() {
+    x = scaledRandom();
+    y = scaledRandom();
+  }
   void draw() {
-    fill(data[0],data[1],data[2],data[3]);
-    stroke(data[4],data[5],data[6],data[7]);
+    fill(data[0], data[1], data[2], data[3]);
+    stroke(data[4], data[5], data[6], data[7]);
     strokeWeight(data[8]);
-    x += (float)random(-5,5);
-    y += (float)random(-5,5);
+    x += (float)random(-5, 5);
+    y += (float)random(-5, 5);
     ellipse(x, y, 50, 50);
   }
   void update() {
@@ -358,9 +358,9 @@ class ColorCreature extends Creature {
 }
 
 class CreatureTemplate extends Creature {
-  Integer[] data = new Integer[] { (int)(Math.random() * 4), intScaledRandom(),
-    intScaledRandom(), intScaledRandom(), intScaledRandom(),
-    intScaledRandom(), intScaledRandom(), intScaledRandom(),
+  Integer[] data = new Integer[] { (int)(Math.random() * 4), intScaledRandom(), 
+    intScaledRandom(), intScaledRandom(), intScaledRandom(), 
+    intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom() };
   void draw() {
     ellipse(x, y, size, size);
