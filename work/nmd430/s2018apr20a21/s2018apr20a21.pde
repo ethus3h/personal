@@ -175,7 +175,7 @@ class Creature extends Life {
     ellipse(x, y, size, size);
   }
   void disperse() {
-        // Wanting space state: iterate through neighbors and find any that are too close
+    // Wanting space state: iterate through neighbors and find any that are too close
     for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
       Life thisNeighbor = residentIterator.next();
       if (thisNeighbor instanceof Creature) {
