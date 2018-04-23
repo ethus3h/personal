@@ -507,7 +507,7 @@ class ShapeChangingCreature extends Creature {
   Boolean rotating = false;
   void draw() {
     translate(rotationX, rotationY);
-    rotate((rotation/360)*TWO_PI);
+    rotate((((rotation/360)*TWO_PI) * 2) - TWO_PI);
     switch (data[0]) {
     case 0:
       triangle(data[1], data[2], data[3], data[4], data[5], data[6]);
