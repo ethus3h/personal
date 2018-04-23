@@ -238,7 +238,7 @@ class Wanderer {
       }
     }
     speed=((float)getMood() / 600.0) + (monitor / 30);
-    System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
+    //System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
 
@@ -380,7 +380,7 @@ class SceneManager {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
     //System.out.println("Resdients:"+residents.size());
-    if(residents.size() > 10) {
+    if(residents.size() > 50) {
       residents.get(0).dead=1;
       residents.remove(0);
     }
