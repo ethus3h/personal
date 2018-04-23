@@ -101,6 +101,9 @@ Creature randomCreatureType() {
     case 1:
       newCreature = new ShapeChangingCreature();
       break;
+    case 2:
+      newCreature = new ColorCreature();
+      break;
     default:
       break;
   }
@@ -302,7 +305,7 @@ class BreedingCreature extends Creature {
 }
 
 class ShapeChangingCreature extends Creature {
-  Integer[] data = new Integer[] { (int)(Math.random() * 4), intScaledRandom(),
+  Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(),
     intScaledRandom(), intScaledRandom(), intScaledRandom(),
     intScaledRandom(), intScaledRandom(), intScaledRandom(),
     intScaledRandom() };
@@ -333,8 +336,13 @@ class ShapeChangingCreature extends Creature {
 }
 
 class ColorCreature extends Creature {
-  Integer property = 0;
+  Integer[] data = new Integer[] { intScaledRandom(255), intScaledRandom(255),
+    intScaledRandom(255), intScaledRandom(255),
+    intScaledRandom(255), intScaledRandom(50), intScaledRandom(255) };
   void draw() {
+    fill(data[0],data[1],data[2]);
+    stroke(data[3],data[4],data[5]);
+    strokeWeight(data[6]);
     ellipse(x, y, size, size);
   }
   void update() {
