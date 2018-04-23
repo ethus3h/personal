@@ -130,9 +130,9 @@ public class LifeComparator implements Comparator<Life> {
 
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
-  Integer x = 0;
-  Integer y = 0;
-  Integer size = 0;
+  Float x = 0f;
+  Float y = 0f;
+  Float size = 0f;
   void draw() {
   };
   void update() {
@@ -243,8 +243,8 @@ class Creature extends Life {
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = (int)((this.x + scaledRandom()) / 2);
-          this.y = (int)((this.y + scaledRandom()) / 2);
+          this.x = (this.x + scaledRandom()) / 2;
+          this.y = (this.y + scaledRandom()) / 2;
           System.out.println("Moved to"+this.x+", "+this.y);
         }
       }
@@ -343,6 +343,7 @@ class ColorCreature extends Creature {
     fill(data[0],data[1],data[2]);
     stroke(data[3],data[4],data[5]);
     strokeWeight(data[6]);
+    this.x += (float)random(-5,5);
     ellipse(x, y, size, size);
   }
   void update() {
