@@ -1,8 +1,8 @@
 /**
- * Title: ASSIGNMENT 1
+ * Title: Final Assignment
  * Name: Elliot Chandler (Wallace)
- * Date: 2018 Feb. 18
- * Description: A pet that gets jealous of its neighbors if you water them more than it.
+ * Date: 2018 Apr. 23
+ * Description: A virtual interactive ecosystem.
  */
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
