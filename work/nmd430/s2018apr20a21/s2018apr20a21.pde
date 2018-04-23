@@ -252,11 +252,26 @@ class ShapeChangingCreature extends Creature {
   String[] shapes = new String[] { "triangle", "rect", "quad", "ellipse", "arc" };
   Integer[] shapePropertyCounts = new Integer[] { 6, 4, 8, 4, 6 };
   Integer shape = 0;
-  Integer[] 
+  Integer[] data = new Integer[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
   void draw() {
-    switch (shape) {
+    switch (data[0]) {
       case 0:
-        triangle(a,b,c,d,e,f);
+        triangle(data[1],data[2],data[3],data[4],data[5],data[6]);
+        break;
+      case 1:
+        rect(data[1],data[2],data[3],data[4]);
+        break;
+      case 2:
+        quad(data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]);
+        break;
+      case 3:
+        ellipse(data[1],data[2],data[3],data[4]);
+        break;
+      case 4:
+        arc(data[1],data[2],data[3],data[4],data[5],data[6]);
+        break;
+      default:
+        break;
     }
     ellipse(x, y, size, size);
   }
