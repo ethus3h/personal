@@ -13,7 +13,7 @@ import java.util.Iterator;
 
 SceneManager world = new SceneManager();
 
-int mySize = 2000;
+float mySize = 2000f;
 int currentTick = 0;
 void setup() {
   size(2000, 2000);
@@ -130,9 +130,9 @@ public class LifeComparator implements Comparator<Life> {
 
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
-  Float x = 0f;
-  Float y = 0f;
-  Float size = 0f;
+  float x = 0f;
+  float y = 0f;
+  float size = 0f;
   void draw() {
   };
   void update() {
@@ -204,10 +204,10 @@ class SceneManager {
         resident.y = mySize;
       }
       if (resident.x > mySize) {
-        resident.x = 0;
+        resident.x = 0f;
       }
       if (resident.y > mySize) {
-        resident.y = 0;
+        resident.y = 0f;
       }
       //System.out.println(resident.x);
       //System.out.println(resident.y);
@@ -261,7 +261,7 @@ class BreedingCreature extends Creature {
   }
   void update() {
     this.disperse();
-    if (overCircle(x, y, 100 + waterSatiation) && mousePressed) {
+    if (overCircle((int)x, (int)y, 100 + waterSatiation) && mousePressed) {
       // Being watered by human
       waterSatiation = waterSatiation + 10;
     } else {
