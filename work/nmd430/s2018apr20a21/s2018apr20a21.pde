@@ -64,6 +64,21 @@ int intScaledRandom() {
   return (int)dblScaledRandom();
 }
 
+Creature randomCreatureType() {
+  Creature newCreature = new BreedingCreature();
+  switch ((int)(Math.random() * 3)) {
+    case 0:
+      newCreature = new BreedingCreature();
+      break;
+    case 1:
+      newCreature = new ShapeChangingCreature();
+      break;
+    default:
+      break;
+  }
+  return newCreature;
+}
+
 /* from https://processing.org/examples/rollover.html */
 boolean overCircle(int x, int y, int diameter) {
   float disX = x - mouseX;
