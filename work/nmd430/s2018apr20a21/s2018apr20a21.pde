@@ -340,8 +340,10 @@ class ColorCreature extends Creature {
     intScaledRandom(255), intScaledRandom(255),
     intScaledRandom(255), intScaledRandom(255),
     intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
-  super.x = floatScaledRandom();
-  super.y = floatScaledRandom();
+    ColorCreature() {
+    
+  x = scaledRandom();
+  y = scaledRandom();}
   void draw() {
     fill(data[0],data[1],data[2],data[3]);
     stroke(data[4],data[5],data[6],data[7]);
