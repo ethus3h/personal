@@ -340,13 +340,15 @@ class ColorCreature extends Creature {
     intScaledRandom(255), intScaledRandom(255),
     intScaledRandom(255), intScaledRandom(255),
     intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
+  super.x = floatScaledRandom();
+  super.y = floatScaledRandom();
   void draw() {
     fill(data[0],data[1],data[2],data[3]);
     stroke(data[4],data[5],data[6],data[7]);
     strokeWeight(data[8]);
-    this.x += (float)random(-5,5);
-    this.y += (float)random(-5,5);
-    ellipse(x, y, size, size);
+    x += (float)random(-5,5);
+    y += (float)random(-5,5);
+    ellipse(x, y, 50, 50);
   }
   void update() {
     this.disperse();
