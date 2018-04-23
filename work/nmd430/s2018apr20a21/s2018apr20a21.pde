@@ -343,7 +343,7 @@ class Sun extends Life {
 
 
 class Sky extends Life {
-  Sun sun = (Sun)world.add(new Sun(2));
+  Sun sun = (Sun)world.add(new Sun(0));
   void draw() {
     if(dead == 1) {
       System.out.println("Drawn while dead");
