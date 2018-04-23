@@ -197,8 +197,8 @@ class Creature extends Life {
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           System.out.println("tooclose. Old "+this.x+", "+this.y);
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = (int)((this.x + (Math.random() * mySize)) / 2);
-          this.y = (int)((this.y + (Math.random() * mySize)) / 2);
+          this.x = (int)((this.x + scaledRandom()) / 2);
+          this.y = (int)((this.y + scaledRandom()) / 2);
           System.out.println("Moved to"+this.x+", "+this.y);
         }
       }
@@ -259,7 +259,10 @@ class BreedingCreature extends Creature {
 }
 
 class ShapeChangingCreature extends Creature {
-  Integer[] data = new Integer[] { (int)(Math.random() * mySize), 0, 0, 0, 0, 0, 0, 0, 0 };
+  Integer[] data = new Integer[] { intScaledRandom(), intScaledRandom(),
+    intScaledRandom(), intScaledRandom(), intScaledRandom(),
+    intScaledRandom(), intScaledRandom(), intScaledRandom(),
+    intScaledRandom() };
   void draw() {
     switch (data[0]) {
       case 0:
