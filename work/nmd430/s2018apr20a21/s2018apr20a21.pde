@@ -148,13 +148,13 @@ class Creature extends Life {
         }
       }
     }
-     // Also get its jealousy
-       // Calculate jealousy
-   for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
+    // Also get its jealousy
+    // Calculate jealousy
+    for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
       Life thisNeighbor = residentIterator.next();
       if (thisNeighbor instanceof Creature) {
-             Creature thisNeighborCreature = (Creature)thisNeighbor;
-   if (thisNeighborCreature.waterSatiation > 2 * this.waterSatiation) {
+        Creature thisNeighborCreature = (Creature)thisNeighbor;
+        if (thisNeighborCreature.waterSatiation > 2 * this.waterSatiation) {
           this.jealousy = this.jealousy + 1;
         }
         if (thisNeighborCreature.waterSatiation < (this.waterSatiation / 2)) {
@@ -209,16 +209,16 @@ class SceneManager {
     for (Life resident : residents) {
       //System.out.println(resident.getClass().getName());
       resident.update();
-      if(resident.x < 0) {
+      if (resident.x < 0) {
         resident.x = mySize;
       }
-      if(resident.y < 0) {
+      if (resident.y < 0) {
         resident.y = mySize;
       }
-      if(resident.x > mySize) {
+      if (resident.x > mySize) {
         resident.x = 0;
       }
-      if(resident.y > mySize) {
+      if (resident.y > mySize) {
         resident.y = 0;
       }
       //System.out.println(resident.x);
