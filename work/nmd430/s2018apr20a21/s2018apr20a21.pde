@@ -103,6 +103,70 @@ class Sun extends Life {
   }
 }
 
+
+class Sky extends Life {
+  Sun sun = (Sun)world.add(new Sun(2));
+  void draw() {
+    fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20);
+    rect(0, 0, mySize, mySize);
+  }
+  void update() {
+    sun.temperature = smoothMod(world.time, 100);
+  }
+}
+
+class SceneManager {
+  List<Life> residents = new ArrayList<Life>();
+  List<Life> deferredResidents = new ArrayList<Life>();
+  Integer time = 0;
+  Boolean updating = false;
+  Sky sky;
+  Life add(Life newResident) {
+    if (this.updating) {
+      this.addDeferred(newResident);
+    } else {
+      residents.add(newResident);
+    }
+    return newResident;
+  }
+  void addSky(Sky sky) {
+    this.add(sky);
+  }
+  void addDeferred(Life newResident) {
+    deferredResidents.add(newResident);
+  }
+  void update() {
+    this.updating = true;
+    Collections.sort(residents, new LifeComparator());
+    for (Life resident : residents) {
+      //System.out.println(resident.getClass().getName());
+      resident.update();
+      if (resident.x < 0) {
+        resident.x = mySize;
+      }
+      if (resident.y < 0) {
+        resident.y = mySize;
+      }
+      if (resident.x > mySize) {
+        resident.x = 0;
+      }
+      if (resident.y > mySize) {
+        resident.y = 0;
+      }
+      //System.out.println(resident.x);
+      //System.out.println(resident.y);
+      //System.out.println(resident.size);
+      resident.draw();
+    }
+    for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
+      residents.add(deferredResidentIterator.next());
+      deferredResidentIterator.remove();
+    }
+    time += 1;
+    this.updating = false;
+  }
+}
+
 class Creature extends Life {
   Integer waterSatiation = 0;
   Integer jealousy = 0;
@@ -169,69 +233,6 @@ class Creature extends Life {
       }
     }
     this.size = 100 + (waterSatiation); // 100 is its base size, it grows with the more water it has
-  }
-}
-
-class Sky extends Life {
-  Sun sun = (Sun)world.add(new Sun(2));
-  void draw() {
-    fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20);
-    rect(0, 0, mySize, mySize);
-  }
-  void update() {
-    sun.temperature = smoothMod(world.time, 100);
-  }
-}
-
-class SceneManager {
-  List<Life> residents = new ArrayList<Life>();
-  List<Life> deferredResidents = new ArrayList<Life>();
-  Integer time = 0;
-  Boolean updating = false;
-  Sky sky;
-  Life add(Life newResident) {
-    if (this.updating) {
-      this.addDeferred(newResident);
-    } else {
-      residents.add(newResident);
-    }
-    return newResident;
-  }
-  void addSky(Sky sky) {
-    this.add(sky);
-  }
-  void addDeferred(Life newResident) {
-    deferredResidents.add(newResident);
-  }
-  void update() {
-    this.updating = true;
-    Collections.sort(residents, new LifeComparator());
-    for (Life resident : residents) {
-      //System.out.println(resident.getClass().getName());
-      resident.update();
-      if (resident.x < 0) {
-        resident.x = mySize;
-      }
-      if (resident.y < 0) {
-        resident.y = mySize;
-      }
-      if (resident.x > mySize) {
-        resident.x = 0;
-      }
-      if (resident.y > mySize) {
-        resident.y = 0;
-      }
-      //System.out.println(resident.x);
-      //System.out.println(resident.y);
-      //System.out.println(resident.size);
-      resident.draw();
-    }
-    for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
-      residents.add(deferredResidentIterator.next());
-      deferredResidentIterator.remove();
-    }
-    time += 1;
-    this.updating = false;
   }
 }
 
