@@ -164,7 +164,7 @@ class Sun extends Life {
 class Sky extends Life {
   Sun sun = (Sun)world.add(new Sun(2));
   void draw() {
-    if(dead) {
+    if(dead == 1) {
       System.out.println("Drawn while dead");
     }
     fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20);
@@ -198,7 +198,7 @@ class SceneManager {
   void update() {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
-      System.out.println("Resdients:"+residents.size());
+    //System.out.println("Resdients:"+residents.size());
     if(residents.size() > 10) {
       residents.get(0).dead=1;
       residents.remove(0);
