@@ -532,12 +532,10 @@ class ShapeChangingCreature extends Creature {
     this.disperse();
     if(random(0,2) < 1) {
       this.rotating = true;
-      System.out.println("Started rotating");
       this.rotationX = intScaledRandom();
       this.rotationY = intScaledRandom();
     }
     if(this.rotating) {
-      System.out.println("Rotating is true");
       this.rotation += 0.1;
       if(this.rotation == 360) {
         this.rotation = 0;
