@@ -298,7 +298,6 @@ class ShapeChangingCreature extends Creature {
       default:
         break;
     }
-    ellipse(x, y, size, size);
   }
   void update() {
     this.disperse();
