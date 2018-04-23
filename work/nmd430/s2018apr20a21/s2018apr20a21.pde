@@ -130,6 +130,7 @@ public class LifeComparator implements Comparator<Life> {
 
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
+  int dead=0;
   float x = 0f;
   float y = 0f;
   float size = 0f;
@@ -195,28 +196,31 @@ class SceneManager {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
       System.out.println("Resdients:"+residents.size());
-    if(residents.size() > 50) {
+    if(residents.size() > 10) {
+      residents.get(0).dead=1;
       residents.remove(0);
     }
     for (Life resident : residents) {
-      //System.out.println(resident.getClass().getName());
-      resident.update();
-      if (resident.x < 0) {
-        resident.x = mySize;
+      if(resident.dead == 0) {
+        //System.out.println(resident.getClass().getName());
+        resident.update();
+        if (resident.x < 0) {
+          resident.x = mySize;
+        }
+        if (resident.y < 0) {
+          resident.y = mySize;
+        }
+        if (resident.x > mySize) {
+          resident.x = 0f;
+        }
+        if (resident.y > mySize) {
+          resident.y = 0f;
+        }
+        //System.out.println(resident.x);
+        //System.out.println(resident.y);
+        //System.out.println(resident.size);
+        resident.draw();
       }
-      if (resident.y < 0) {
-        resident.y = mySize;
-      }
-      if (resident.x > mySize) {
-        resident.x = 0f;
-      }
-      if (resident.y > mySize) {
-        resident.y = 0f;
-      }
-      //System.out.println(resident.x);
-      //System.out.println(resident.y);
-      //System.out.println(resident.size);
-      resident.draw();
     }
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
       residents.add(deferredResidentIterator.next());
