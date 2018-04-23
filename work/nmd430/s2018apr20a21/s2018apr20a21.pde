@@ -246,7 +246,7 @@ class BreedingCreature extends Creature {
     // Reproduction state
     if (waterSatiation > 200) {
       // It's fully healthy, doesn't need any more water. So, it has enough energy to safely reproduce.
-      world.add(new BreedingCreature());
+      world.add(randomCreatureType());
       waterSatiation = 180;
     }
     // Also get its jealousy
