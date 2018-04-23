@@ -340,6 +340,8 @@ class ColorCreature extends Creature {
     intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
+  Integer width=scaledRandom(350);
+  Integer height=scaledRandom(350);
   ColorCreature() {
     x = scaledRandom();
     y = scaledRandom();
@@ -350,7 +352,7 @@ class ColorCreature extends Creature {
     strokeWeight(data[8]);
     x += (float)random(-5, 5);
     y += (float)random(-5, 5);
-    rect(x, y, scaledRandom(350), scaledRandom(350));
+    rect(x, y, width, height);
   }
   void update() {
     this.disperse();
