@@ -565,18 +565,18 @@ class CreatureTemplate extends Creature {
 }
 
 void draw() {
-
   topLeftBulkWanderer.tick(0);
   topRightBulkWanderer.tick(0);
   lowerLeftBulkWanderer.tick(0);
   lowerRightBulkWanderer.tick(0);
   centerBulkWanderer.tick(0);
+
   world.update();
   //System.out.println("Done drawing");
   currentTick = currentTick + 1;
 
-//  fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-//  rect(-10, -10, 18000, 18000);
+  //  fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
+  //  rect(-10, -10, 18000, 18000);
 }
 void mouseClicked() {
   topLeftBulkWanderer.click();
