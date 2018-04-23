@@ -248,6 +248,23 @@ class BreedingCreature extends Creature {
   }
 }
 
+class ShapeChangingCreature extends Creature {
+  String[] shapes = new String[] { "triangle", "rect", "quad", "ellipse", "arc" };
+  Integer[] shapePropertyCounts = new Integer[] { 6, 4, 8, 4, 6 };
+  Integer shape = 0;
+  Integer[] 
+  void draw() {
+    switch (shape) {
+      case 0:
+        triangle(a,b,c,d,e,f);
+    }
+    ellipse(x, y, size, size);
+  }
+  void update() {
+    this.disperse();
+  }
+}
+
 class CreatureTemplate extends Creature {
   Integer property = 0;
   void draw() {
