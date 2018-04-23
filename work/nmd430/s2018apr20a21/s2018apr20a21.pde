@@ -338,12 +338,14 @@ class ShapeChangingCreature extends Creature {
 class ColorCreature extends Creature {
   Integer[] data = new Integer[] { intScaledRandom(255), intScaledRandom(255),
     intScaledRandom(255), intScaledRandom(255),
-    intScaledRandom(255), intScaledRandom(50), intScaledRandom(255) };
+    intScaledRandom(255), intScaledRandom(255),
+    intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
   void draw() {
-    fill(data[0],data[1],data[2]);
-    stroke(data[3],data[4],data[5]);
-    strokeWeight(data[6]);
+    fill(data[0],data[1],data[2],data[3]);
+    stroke(data[4],data[5],data[6],data[7]);
+    strokeWeight(data[8]);
     this.x += (float)random(-5,5);
+    this.y += (float)random(-5,5);
     ellipse(x, y, size, size);
   }
   void update() {
