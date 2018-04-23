@@ -174,7 +174,37 @@ class Creature extends Life {
     fill(255 * (waterSatiation / 10), 255 * (waterSatiation / 10), 255 * (waterSatiation / 10));
     ellipse(x, y, size, size);
   }
+  void disperse() {
+        // Wanting space state: iterate through neighbors and find any that are too close
+    for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
+      Life thisNeighbor = residentIterator.next();
+      if (thisNeighbor instanceof Creature) {
+        Creature thisNeighborCreature = (Creature)thisNeighbor;
+        float neighborX = ((thisNeighborCreature.x + thisNeighborCreature.size) / 2);
+        float neighborY = ((thisNeighborCreature.y + thisNeighborCreature.size) / 2);
+        float thisX = (((2*this.x) + this.size) / 2);
+        float thisY = (((2*this.y) + this.size) / 2);
+        if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
+          System.out.println("tooclose. Old "+this.x+", "+this.y);
+          // If it's too close to another creature, it will try to get away, by moving a few places.
+          this.x = (int)((this.x + (Math.random() * mySize)) / 2);
+          this.y = (int)((this.y + (Math.random() * mySize)) / 2);
+          System.out.println("Moved to"+this.x+", "+this.y);
+        }
+      }
+    }
+  }
+}
+
+class BreedingCreature extends Creature {
+  Integer waterSatiation = 0;
+  Integer jealousy = 0;
+  void draw() {
+    fill(255 * (waterSatiation / 10), 255 * (waterSatiation / 10), 255 * (waterSatiation / 10));
+    ellipse(x, y, size, size);
+  }
   void update() {
+    this.disperse();
     if (overCircle(x, y, 100 + waterSatiation) && mousePressed) {
       // Being watered by human
       waterSatiation = waterSatiation + 10;
@@ -193,24 +223,6 @@ class Creature extends Life {
       // It's fully healthy, doesn't need any more water. So, it has enough energy to safely reproduce.
       world.add(new Creature());
       waterSatiation = 180;
-    }
-    // Wanting space state: iterate through neighbors and find any that are too close
-    for (Iterator<Life> residentIterator = world.residents.iterator(); residentIterator.hasNext(); ) {
-      Life thisNeighbor = residentIterator.next();
-      if (thisNeighbor instanceof Creature) {
-        Creature thisNeighborCreature = (Creature)thisNeighbor;
-        float neighborX = ((thisNeighborCreature.x + thisNeighborCreature.size) / 2);
-        float neighborY = ((thisNeighborCreature.y + thisNeighborCreature.size) / 2);
-        float thisX = (((2*this.x) + this.size) / 2);
-        float thisY = (((2*this.y) + this.size) / 2);
-        if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
-          System.out.println("tooclose. Old "+this.x+", "+this.y);
-          // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = (int)((this.x + (Math.random() * mySize)) / 2);
-          this.y = (int)((this.y + (Math.random() * mySize)) / 2);
-          System.out.println("Moved to"+this.x+", "+this.y);
-        }
-      }
     }
     // Also get its jealousy
     // Calculate jealousy
