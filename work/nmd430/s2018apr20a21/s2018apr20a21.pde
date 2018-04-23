@@ -502,11 +502,11 @@ class ShapeChangingCreature extends Creature {
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom() };
   float rotation = 0;
-  int rotationX = 0;
-  int rotationY = 0;
+  int rotationX = intScaledRandom();
+  int rotationY = intScaledRandom();
   Boolean rotating = false;
   void draw() {
-    translate(, intScaledRandom());
+    translate(rotationX, rotationY);
     rotate((rotation/360)*TWO_PI);
     switch (data[0]) {
     case 0:
@@ -532,8 +532,6 @@ class ShapeChangingCreature extends Creature {
     this.disperse();
     if(random(0,2) < 1) {
       this.rotating = true;
-      this.rotationX = intScaledRandom();
-      this.rotationY = intScaledRandom();
     }
     if(this.rotating) {
       this.rotation += 0.1;
