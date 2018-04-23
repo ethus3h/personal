@@ -54,6 +54,16 @@ float weightedAvg(int a, int b, float c) {
   return b + (a * c);
 }
 
+double dblScaledRandom() {
+  return Math.random() * mySize;
+}
+float scaledRandom() {
+  return (float)dblScaledRandom();
+}
+int intScaledRandom() {
+  return (int)dblScaledRandom();
+}
+
 /* from https://processing.org/examples/rollover.html */
 boolean overCircle(int x, int y, int diameter) {
   float disX = x - mouseX;
@@ -249,10 +259,7 @@ class BreedingCreature extends Creature {
 }
 
 class ShapeChangingCreature extends Creature {
-  String[] shapes = new String[] { "triangle", "rect", "quad", "ellipse", "arc" };
-  Integer[] shapePropertyCounts = new Integer[] { 6, 4, 8, 4, 6 };
-  Integer shape = 0;
-  Integer[] data = new Integer[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+  Integer[] data = new Integer[] { (int)(Math.random() * mySize), 0, 0, 0, 0, 0, 0, 0, 0 };
   void draw() {
     switch (data[0]) {
       case 0:
