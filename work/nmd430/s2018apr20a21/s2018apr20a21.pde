@@ -63,6 +63,34 @@ float scaledRandom() {
 int intScaledRandom() {
   return (int)dblScaledRandom();
 }
+double dblScaledRandom(double scale) {
+  return Math.random() * scale;
+}
+double dblScaledRandom(int scale) {
+  return Math.random() * scale;
+}
+double dblScaledRandom(float scale) {
+  return Math.random() * scale;
+}
+float scaledRandom(float scale) {
+  return (float)dblScaledRandom(scale);
+}
+float scaledRandom(int scale) {
+  return (float)dblScaledRandom(scale);
+}
+float scaledRandom(double scale) {
+  return (float)dblScaledRandom(scale);
+}
+int intScaledRandom(double scale) {
+  return (int)dblScaledRandom(scale);
+}
+int intScaledRandom(float scale) {
+  return (int)dblScaledRandom(scale);
+}
+int intScaledRandom(int scale) {
+  return (int)dblScaledRandom(scale);
+}
+
 
 Creature randomCreatureType() {
   Creature newCreature = new BreedingCreature();
