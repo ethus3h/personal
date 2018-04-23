@@ -304,8 +304,21 @@ class ShapeChangingCreature extends Creature {
   }
 }
 
-class CreatureTemplate extends Creature {
+class ColorCreature extends Creature {
   Integer property = 0;
+  void draw() {
+    ellipse(x, y, size, size);
+  }
+  void update() {
+    this.disperse();
+  }
+}
+
+class CreatureTemplate extends Creature {
+  Integer[] data = new Integer[] { (int)(Math.random() * 4), intScaledRandom(),
+    intScaledRandom(), intScaledRandom(), intScaledRandom(),
+    intScaledRandom(), intScaledRandom(), intScaledRandom(),
+    intScaledRandom() };
   void draw() {
     ellipse(x, y, size, size);
   }
