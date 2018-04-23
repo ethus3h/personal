@@ -331,6 +331,9 @@ class Sun extends Life {
     super.zIndex = zIndex;
   }
   void draw() {
+    if(dead == 1) {
+      System.out.println("Drawn while dead");
+    }
     fill(255, 255, 255);
     ellipse((mySize - (mySize * (temperature / 100.0))), (mySize - (mySize * (smoothMod(temperature, 50) / 100.0))), 1000, 1000);
   }
@@ -345,7 +348,7 @@ class Sky extends Life {
     if(dead == 1) {
       System.out.println("Drawn while dead");
     }
-    fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20);
+    fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20, 0.1);
     rect(0, 0, mySize, mySize);
   }
   void update() {
