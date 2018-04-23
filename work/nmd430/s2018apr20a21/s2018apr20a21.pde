@@ -248,6 +248,16 @@ class BreedingCreature extends Creature {
   }
 }
 
+class CreatureTemplate extends Creature {
+  Integer property = 0;
+  void draw() {
+    ellipse(x, y, size, size);
+  }
+  void update() {
+    this.disperse();
+  }
+}
+
 void draw() {
   world.update();
   //System.out.println("Done drawing");
