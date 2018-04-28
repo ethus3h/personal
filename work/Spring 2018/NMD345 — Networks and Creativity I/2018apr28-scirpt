@@ -1,0 +1,5 @@
+In this tutorial I will show how to connect HTML controls to a media element. This assumes you already know HTML and JavaScript, and have a HTML page with controls and a media element you would like them to control.
+First, here is a demo. Without JavaScript, only the browser default media player is present for each row of the table. With JavaScript, the media players are replaced by buttons linked to the main controller at the bottom of the page.
+The audio elements are still in the table cells, but hidden by setting their display style property to "none".
+This script connects the player at the bottom of the page to those individual hidden audio elements.
+This is done using event listeners. The way that works,is the scrpt defines funcitons that should run when specifefied events  happen. These functions are then attached to the conditions when they should be run by using addEventListener. Then, the properties of the audio element and controls (form elements and such) can be accessed and altered as appropriate based on the event that happened.
