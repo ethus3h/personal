@@ -294,11 +294,18 @@ class Life implements Comparable<Life> {
     textSize(96);
     text(message, 150, 150);
   }
+  void die() {
+    this.dead = 1;
+    this.message("A "+this.getClass().getName()+" has died.");
+  }
+  void die(String cause) {
+    this.dead = 1;
+    this.message("A "+this.getClass().getName()+" has died from "+cause+".");
+  }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
     if(this.aliveTime > 10000) {
-      this.dead = 1;
-      this.message("A "+this.getClass().getName()+" has died.");
+      this.die("old age");
     }
   }
   void draw() {
