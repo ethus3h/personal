@@ -129,7 +129,7 @@ Creature randomCreatureType() {
     newCreature = new ColorCreature();
     break;
   case 3:
-    newCreature = new Wanderer(scaledRandom(), scaledRandom(), scaledRandom());
+    newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
     break;
   default:
     break;
@@ -211,7 +211,8 @@ class Wanderer extends Creature {
     remember(100000);
   }
 
-  void tick(float monitor) {
+  void update(float monitor) {
+    this.updateLifespan();
     remember(smoothMod((ellipsePosX + mouseX) / 2, mySize));
     remember(smoothMod((ellipsePosY + mouseY) / 2, mySize));
 
