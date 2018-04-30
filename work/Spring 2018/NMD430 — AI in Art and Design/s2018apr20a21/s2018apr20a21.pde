@@ -24,13 +24,17 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "dream", "er", "bobella", "padu", "andra", "pradesh", "unive", "rsity", "cutie",
 "shroom", "s", "meredith", "nancy", "springer", "rowan", "hood", "fish",
 "fauna", "job", "merry", "lobster", "salmon", "drippins", "sammitch",
-"jerky", "flora", "chas", "ling", "ting", "earth", "land", "kde", "tux",
+"jerky", "flora", "chas", "ling", "ting", "earth", "sacredland", "kde", "tux",
 "elliot", "chandler", "sofian", "audry", "keegan", "ennis", "lucas", "adair",
-"jay", "vanadine", "cramer", "cam", "aaron", "krevans", "matthew", "loewen", "amman",
+"jay", "vanadine", "cramer", "cameron", "aaron", "krevans", "matthew", "loewen", "amman",
 "iar", "let", "ly", "elli", "nara", "na", "aureate", "luxa", "breath", "aeol",
 "us", "ia", "oak", "en", "chan", "nyaa", "blossom", "ghost", "shadow", "corpse",
 "asriel", "aswell", "silver", "shimmer", "grass", "moor", "hawk", "kitty",
-"pretty", "golden", "light", "moon", "archive") ;
+"pretty", "golden", "light", "moon", "archive", "gnu", "linux", "libre",
+"flight", "faery", "lira", "lyra", "lyubov", "tfanil", "tveren", "anoé",
+"loki", "sayyed", "magical", "magic", "spider", "crab", "bleak", "raven", "death",
+"bringer", "bright", "happy", "sacred", "dancing", "heart", "wolf", "pixie",
+"ember", "party", "flight", "gold") ;
 
 float mySize = 2000f;
 int currentTick = 0;
