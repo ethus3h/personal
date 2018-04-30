@@ -131,6 +131,7 @@ Creature randomCreatureType() {
   default:
     break;
   }
+  newCreature.greet();
   return newCreature;
 }
 
@@ -292,7 +293,7 @@ class Life implements Comparable<Life> {
   void message(String message) {
     System.out.println(message);
     textSize(96);
-    text(message, 150, 150);
+    text(message, 0, 150);
   }
   void greet() {
     this.message("Hi! I'm a new "+this.getClass().getName()+".");
@@ -335,7 +336,7 @@ class Sun extends Life {
       System.out.println("Drawn while dead");
     }
     fill(255, 255, 255);
-    ellipse((mySize - (mySize * (temperature / 100.0))), (mySize - (mySize * (smoothMod(temperature, 50) / 100.0))), 1000, 1000);
+    ellipse((mySize - (mySize * (temperature / 100.0))), (mySize - (mySize * (smoothMod(temperature, 50) / 100.0))), 100, 100);
   }
   void update() {
     this.updateLifespan();
@@ -473,7 +474,7 @@ class BreedingCreature extends Creature {
     if (waterSatiation > 200) {
       // It's fully healthy, doesn't need any more water. So, it has enough energy to safely reproduce.
       world.add(randomCreatureType());
-      waterSatiation = 180;
+      waterSatiation = 50;
     }
     // Also get its jealousy
     // Calculate jealousy
