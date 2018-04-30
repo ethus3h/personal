@@ -291,7 +291,8 @@ class Life implements Comparable<Life> {
   float size = 0f;
   void message(String message) {
     System.out.println(message);
-    
+    textSize(96);
+    text(message, 150, 150);
   }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
