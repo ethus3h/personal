@@ -285,12 +285,17 @@ public class LifeComparator implements Comparator<Life> {
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
+  int aliveTime=0;
   float x = 0f;
   float y = 0f;
   float size = 0f;
+  void updateLifespan() {
+    this.aliveTime = this.aliveTime + 1;
+  }
   void draw() {
   };
   void update() {
+    this.updateLifespan();
   };
   @Override
     public int compareTo(Life l) {
@@ -314,6 +319,7 @@ class Sun extends Life {
     ellipse((mySize - (mySize * (temperature / 100.0))), (mySize - (mySize * (smoothMod(temperature, 50) / 100.0))), 1000, 1000);
   }
   void update() {
+    this.updateLifespan();
   }
 }
 
@@ -329,6 +335,7 @@ class Sky extends Life {
   }
   void update() {
     sun.temperature = smoothMod(world.time, 100);
+    this.updateLifespan();
   }
 }
 
@@ -428,6 +435,7 @@ class BreedingCreature extends Creature {
     ellipse(x, y, size, size);
   }
   void update() {
+    this.updateLifespan();
     this.disperse();
     if (overCircle((int)x, (int)y, 100 + waterSatiation) && mousePressed) {
       // Being watered by human
@@ -505,6 +513,7 @@ class ShapeChangingCreature extends Creature {
     }
   }
   void update() {
+    this.updateLifespan();
     this.disperse();
     if(random(0,2) < 1) {
       this.rotating = true;
@@ -539,6 +548,7 @@ class ColorCreature extends Creature {
     rect(x, y, width, height);
   }
   void update() {
+    this.updateLifespan();
     this.disperse();
   }
 }
@@ -552,6 +562,7 @@ class CreatureTemplate extends Creature {
     ellipse(x, y, size, size);
   }
   void update() {
+    this.updateLifespan();
     this.disperse();
   }
 }
