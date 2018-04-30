@@ -329,13 +329,16 @@ class Life implements Comparable<Life> {
   int messageSet=0;
   int messageAge=0;
   void drawMessage() {
-    //if(this.messageSet
-    //if(messageAge < 50) {
-    //  textSize(50);
-    //  fill(255,255,255);
-    //  rect(0,0,mySize,150);
-    //  fill(0,0,0);
-    //  text(message, 0, 150);
+    if(this.messageSet == 1) {
+      if(this.messageAge < 50) {
+        textSize(50);
+        fill(255,255,255);
+        rect(0,0,mySize,150);
+        fill(0,0,0);
+        text(this.message, 0, 150);
+        this.messageAge = this.messageAge+1;
+      }
+    }
   }
   void message(String message) {
     System.out.println(message);
