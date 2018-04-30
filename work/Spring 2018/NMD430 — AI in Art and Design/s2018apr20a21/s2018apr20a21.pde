@@ -505,7 +505,7 @@ class BreedingCreature extends Creature {
   }
 }
 
-class getRandom() {
+class getRandom {
   Boolean getRandomBoolean() {
     return Random.nextBoolean();
   }
