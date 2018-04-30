@@ -318,7 +318,7 @@ String randomName() {
   return uppercaseFirstLetter(names.get(intScaledRandom(names.size())));
 }
 
-double constrainedRect(double left,double top,double width,double height) {
+void constrainedRect(float left,float top,float width,float height) {
   if((left + width) > mySize) {
     left = 0;
   }
