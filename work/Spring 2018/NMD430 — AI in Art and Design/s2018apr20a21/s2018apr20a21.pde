@@ -395,9 +395,7 @@ class SceneManager {
       residents.remove(0);
     }
     if(residents.size() < 5) {
-      Creature newCreature = new BreedingCreature();
-      world.add(newCreature);
-      newCreature.greet("underpopulation");
+      world.add(randomCreatureType("underpopulation"));
     }
     for (Life resident : residents) {
       if(resident.dead == 0) {
