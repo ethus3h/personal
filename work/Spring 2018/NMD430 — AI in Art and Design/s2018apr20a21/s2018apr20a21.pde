@@ -451,8 +451,8 @@ class Creature extends Life {
         if (dist(neighborX, neighborY, thisX, thisY) < (this.size * 2)) {
           System.out.println("tooclose. Old "+this.x+", "+this.y+", dist"+dist(neighborX, neighborY, thisX, thisY));
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = ((this.x * 30) + scaledRandom()) / 31;
-          this.y = ((this.y * 30) + scaledRandom()) / 31;
+          this.x = ((this.x * 30) + (randomNegativeFactor() * scaledRandom())) / 31;
+          this.y = ((this.y * 30) + (randomNegativeFactor() * scaledRandom())) / 31;
           //System.out.println("Moved to"+this.x+", "+this.y);
         }
       }
@@ -527,15 +527,9 @@ class ShapeChangingCreature extends Creature {
   Boolean rotatingRandom = random.nextBoolean();
   void draw() {
     translate(rotationX, rotationY);
-    float rotationTempStatus = (((rotation/360)*TWO_PI) * 2) - TWO_PI;
-    if(this.rotatingRandom) {
-      rotate(rotationTempStatus);
-      //System.out.println("Rotated by "+rotationTempStatus);
-    }
-    else {
-      rotate(-1 * rotationTempStatus);
-      //System.out.println("Rotated by -1 * "+rotationTempStatus);
-    }
+    float rotationTempStatus = randomNegativeFactor() * ((((rotation/360)*TWO_PI) * 2) - TWO_PI);
+    rotate(rotationTempStatus);
+    //System.out.println("Rotated by "+rotationTempStatus);
     switch (data[0]) {
     case 0:
       triangle(data[1], data[2], data[3], data[4], data[5], data[6]);
