@@ -136,7 +136,7 @@ Creature randomCreatureType(String cause) {
     newCreature = new ColorCreature();
     break;
   case 3:
-   // newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
+    newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
     break;
   default:
     break;
