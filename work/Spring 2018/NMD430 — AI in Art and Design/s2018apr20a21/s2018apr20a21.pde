@@ -303,6 +303,7 @@ class Life implements Comparable<Life> {
   float y = 0f;
   float size = 0f;
   String name="Unset";
+  int nameSet=0;
   void message(String message) {
     System.out.println(message);
     textSize(50);
@@ -318,23 +319,24 @@ class Life implements Comparable<Life> {
     return "Creature";
   }
   String getCreatureName() {
-    String newName = "Unset";
-    switch ((int)(Math.random() * 4)) {
-      case 0:
-        return randomName();
-        break;
-      case 1:
-        return randomName();
-        break;
-      case 2:
-        newCreature = new ColorCreature();
-        break;
-      case 3:
-        newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
-        break;
-      default:
-        break;
-    }
+    if(this.nameSet == 0) {
+      String newName = "Unset";
+      switch ((int)(Math.random() * 4)) {
+        case 0:
+          newName = randomName();
+          break;
+        case 1:
+          newName = randomName();
+          break;
+        case 2:
+          newCreature = new ColorCreature();
+          break;
+        case 3:
+          newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
+          break;
+        default:
+          break;
+      }
  
     this.name=names.get(intScaledRandom(names.size()));
     return this.name;
