@@ -305,6 +305,8 @@ class Life implements Comparable<Life> {
   void greet(String cause) {
     this.message("Hi! I'm a new "+this.getClass().getName()+", born from "+cause+".");
   }
+  void click() {
+  }
   void die() {
     this.dead = 1;
     this.message("A "+this.getClass().getName()+" has died.");
@@ -385,6 +387,11 @@ class SceneManager {
   }
   void addDeferred(Life newResident) {
     deferredResidents.add(newResident);
+  }
+  void click() {
+    for (Life resident : residents) {
+      resident.click();
+    }
   }
   void update() {
     this.updating = true;
@@ -533,7 +540,7 @@ class ShapeChangingCreature extends Creature {
   void draw() {
     pushMatrix();
     translate(rotationX, rotationY);
-    float rotationTempStatus = randomNegativeFactor() * ((((rotation/360)*TWO_PI) * 2) - TWO_PI);
+    float rotationTempStatus = rotationRandomNegative * ((((rotation/360)*TWO_PI) * 2) - TWO_PI);
     rotate(rotationTempStatus);
     //System.out.println("Rotated by "+rotationTempStatus);
     switch (data[0]) {
@@ -623,5 +630,5 @@ void draw() {
   text(world.residents.size(), 100, 350);
 }
 void mouseClicked() {
-  /* */
+  world.click();
 }
