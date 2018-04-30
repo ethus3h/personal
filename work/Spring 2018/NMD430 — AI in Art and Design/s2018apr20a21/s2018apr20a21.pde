@@ -13,7 +13,12 @@ import java.util.Iterator;
 
 SceneManager world = new SceneManager();
 
-List<String> names = Arrays.asList("blah", "bar") ;
+List<String> names = Arrays.asList("blah", "bar", "mary",
+"jane", "alev", "iler", "echo", "bright", "storm", "last", "dance", "uns", "et",
+"un", "def", "ined", "ke", "sha", "256", "ruki", "vverh", "canna", "bis", "pix",
+"ie", "fae", "ry", "fairy", "weed", "alembic", "professor", "corvus", "corax",
+"rae", "wist", "y", "machynlleth", "głupie", "chomiki", "charanjit", "singh", "foo",
+"baz", "qux", "lirin") ;
 
 float mySize = 2000f;
 int currentTick = 0;
@@ -327,7 +332,7 @@ class Life implements Comparable<Life> {
   String getCreatureName() {
     if(this.nameSet == 0) {
       String newName = "Unset";
-      switch ((int)(Math.random() * 4)) {
+      switch ((int)(Math.random() * 5)) {
         case 0:
           newName = randomName();
           break;
@@ -339,6 +344,9 @@ class Life implements Comparable<Life> {
           break;
         case 3:
           newName = randomName()+(randomName().toLowerCase());
+          break;
+        case 4:
+          newName = randomName()+(randomName().toLowerCase())+(randomName().toLowerCase());
           break;
         default:
           break;
