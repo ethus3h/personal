@@ -13,6 +13,8 @@ import java.util.Iterator;
 
 SceneManager world = new SceneManager();
 
+List<String> names = Arrays.asList("blah", "bar") ;
+
 float mySize = 2000f;
 int currentTick = 0;
 void setup() {
