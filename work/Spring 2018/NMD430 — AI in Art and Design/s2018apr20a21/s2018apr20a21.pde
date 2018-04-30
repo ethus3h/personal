@@ -298,7 +298,7 @@ String uppercaseFirstLetter(String input) {
 }
 
 String randomName() {
-  return names.get(intScaledRandom(names.size())).toSentenceCase;
+  return uppercaseFirstLetter(names.get(intScaledRandom(names.size())));
 }
 
 class Life implements Comparable<Life> {
