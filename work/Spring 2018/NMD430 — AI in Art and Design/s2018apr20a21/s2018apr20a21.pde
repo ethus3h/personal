@@ -274,37 +274,13 @@ public class LifeComparator implements Comparator<Life> {
   }
 }
 
-
-class BulkWanderer {
-  Wanderer wanderer0;
-  Wanderer wanderer3;
-  Wanderer wanderer7;
-  Wanderer wanderer1;
-  BulkWanderer(float x, float y) {
+/*  BulkWanderer(float x, float y) {
     this.wanderer0=new Wanderer(0f, x, y);
     this.wanderer3=new Wanderer(0.3, x, y);
     this.wanderer7=new Wanderer(0.7, x, y);
     this.wanderer1=new Wanderer(1f, x, y);
   }
-  void tick(float monitor) {
-    this.wanderer0.tick(monitor);
-    this.wanderer3.tick(monitor);
-    this.wanderer7.tick(monitor);
-    this.wanderer1.tick(monitor);
-  }
-  void click() {
-    this.wanderer0.click();
-    this.wanderer3.click();
-    this.wanderer7.click();
-    this.wanderer1.click();
-  }
-}
-
-BulkWanderer topLeftBulkWanderer = new BulkWanderer(0, 0);
-BulkWanderer topRightBulkWanderer = new BulkWanderer(0, mySize);
-BulkWanderer lowerLeftBulkWanderer = new BulkWanderer(mySize, 0);
-BulkWanderer lowerRightBulkWanderer = new BulkWanderer(mySize, mySize);
-BulkWanderer centerBulkWanderer = new BulkWanderer(mySize / 2, mySize / 2);
+  */
 
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
