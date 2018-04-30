@@ -329,16 +329,17 @@ class Life implements Comparable<Life> {
           newName = randomName();
           break;
         case 2:
-          newCreature = new ColorCreature();
+          newName = randomName();
           break;
         case 3:
-          newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
+          newName = randomName();
           break;
         default:
           break;
       }
- 
-    this.name=names.get(intScaledRandom(names.size()));
+      this.name=newName;
+      this.nameSet=1;
+    }
     return this.name;
   }
   void click() {
