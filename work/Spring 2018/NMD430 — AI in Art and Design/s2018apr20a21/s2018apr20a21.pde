@@ -34,7 +34,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "flight", "faery", "lira", "lyra", "lyubov", "tfanil", "tveren", "anoé",
 "loki", "sayyed", "magical", "magic", "spider", "crab", "bleak", "raven", "death",
 "bringer", "bright", "happy", "sacred", "dancing", "heart", "wolf", "pixie",
-"ember", "party", "flight", "gold") ;
+"ember", "party", "flight", "gold", "creeping-death", "ebenezer", "margaret",
+"maude", "harold", "chastity", "temperance", "prudence", "nancy", "crystal") ;
 
 float mySize = 2000f;
 int currentTick = 0;
