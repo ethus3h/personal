@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
-import java.util.Random;
 
 SceneManager world = new SceneManager();
 
@@ -117,7 +116,7 @@ int intScaledRandom(int scale) {
 }
 
 int randomNegativeFactor() {
-  if(random.nextBoolean()) {
+  if(Math.random() < 0.5) {
     return -1;
   }
   else {
@@ -138,7 +137,7 @@ Creature randomCreatureType(String cause) {
     newCreature = new ColorCreature();
     break;
   case 3:
-    newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
+   // newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
     break;
   default:
     break;
@@ -195,6 +194,7 @@ class Wanderer extends Creature {
   float personalityCached=0;
   float moodCached=0;
   float speed=0;
+  float monitor = 1;
   void remember(float value) {
     if (step >= 10000) {
       step = 0;
@@ -220,7 +220,7 @@ class Wanderer extends Creature {
     remember(100000);
   }
 
-  void update(float monitor) {
+  void draw() {
     this.updateLifespan();
     remember(smoothMod((ellipsePosX + mouseX) / 2, mySize));
     remember(smoothMod((ellipsePosY + mouseY) / 2, mySize));
@@ -252,7 +252,7 @@ class Wanderer extends Creature {
       }
     }
     speed=((float)getMood() / 600.0) + (monitor / 30);
-    System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
+    //System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
 
@@ -518,8 +518,6 @@ class BreedingCreature extends Creature {
   }
 }
 
-Random random = new Random();
-
 class ShapeChangingCreature extends Creature {
   Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(), 
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
@@ -529,7 +527,6 @@ class ShapeChangingCreature extends Creature {
   int rotationX = intScaledRandom();
   int rotationY = intScaledRandom();
   Boolean rotating = false;
-  final Boolean rotatingRandom = random.nextBoolean();
   void draw() {
     translate(rotationX, rotationY);
     float rotationTempStatus = randomNegativeFactor() * ((((rotation/360)*TWO_PI) * 2) - TWO_PI);
