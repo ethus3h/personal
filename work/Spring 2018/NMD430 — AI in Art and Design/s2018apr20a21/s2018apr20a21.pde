@@ -118,7 +118,7 @@ int intScaledRandom(int scale) {
 
 Creature randomCreatureType() {
   Creature newCreature = new BreedingCreature();
-  switch ((int)(Math.random() * 3)) {
+  switch ((int)(Math.random() * 4)) {
   case 0:
     newCreature = new BreedingCreature();
     break;
@@ -127,6 +127,9 @@ Creature randomCreatureType() {
     break;
   case 2:
     newCreature = new ColorCreature();
+    break;
+  case 3:
+    newCreature = new Wanderer(scaledRandom(), scaledRandom(), scaledRandom());
     break;
   default:
     break;
@@ -147,7 +150,7 @@ boolean overCircle(int x, int y, int diameter) {
 }
 
 
-class Wanderer {
+class Wanderer extends Creature {
   private final float followTendency;
   private final int id;
   private final float specifiedX;
