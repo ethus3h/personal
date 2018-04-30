@@ -315,7 +315,8 @@ class Life implements Comparable<Life> {
     return "Creature";
   }
   String getCreatureName() {
-    return "Unimplemented";
+    this.name=names.get(intScaledRandom(names.size()));
+    return this.name;
   }
   void click() {
   }
