@@ -390,11 +390,11 @@ class SceneManager {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
     //System.out.println("Residents:"+residents.size());
-    if(residents.size() > 10) {
+    if(residents.size() > 6) {
       residents.get(0).die("overpopulation");
       residents.remove(0);
     }
-    if(residents.size() < 5) {
+    if(residents.size() < 3) {
       world.add(randomCreatureType("underpopulation"));
     }
     for (Life resident : residents) {
