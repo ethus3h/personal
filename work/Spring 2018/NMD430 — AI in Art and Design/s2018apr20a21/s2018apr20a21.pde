@@ -306,6 +306,9 @@ class Life implements Comparable<Life> {
   void message(String message) {
     System.out.println(message);
     textSize(50);
+    fill(255,255,255);
+    rect(0,0,mySize,150);
+    fill(0,0,0);
     text(message, 0, 150);
   }
   void greet(String cause) {
@@ -321,7 +324,7 @@ class Life implements Comparable<Life> {
   }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
-    if(this.aliveTime > 1000) {
+    if(this.aliveTime > 400) {
       this.die("old age");
     }
   }
@@ -395,7 +398,7 @@ class SceneManager {
   void update() {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
-    System.out.println("Resdients:"+residents.size());
+    //System.out.println("Residents:"+residents.size());
     if(residents.size() > 10) {
       residents.get(0).die("overpopulation");
       residents.remove(0);
@@ -430,6 +433,7 @@ class SceneManager {
         deferredResidents.add(resident);
       }
     }
+    /* Process asynchronously modified residents */
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
       Life resident=deferredResidentIterator.next();
       if(resident.dead != 0) {
