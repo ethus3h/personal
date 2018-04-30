@@ -27,7 +27,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "jerky", "flora", "chas", "ling", "ting", "earth", "land", "kde", "tux",
 "elliot", "chandler", "sofian", "audry", "keegan", "ennis", "lucas", "adair",
 "jay", "vanadine", "cramer", "cam", "aaron", "krevans", "matthew", "loewen", "amman",
-"iar", "let") ;
+"iar", "let", "ly") ;
 
 float mySize = 2000f;
 int currentTick = 0;
