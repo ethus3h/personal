@@ -116,6 +116,14 @@ int intScaledRandom(int scale) {
   return (int)dblScaledRandom(scale);
 }
 
+int randomNegativeFactor() {
+  if(random.nextBoolean()) {
+    return -1;
+  }
+  else {
+    return 1;
+  }
+}
 
 Creature randomCreatureType() {
   Creature newCreature = new BreedingCreature();
