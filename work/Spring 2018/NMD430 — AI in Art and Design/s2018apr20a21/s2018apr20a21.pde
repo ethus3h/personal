@@ -321,7 +321,7 @@ class Life implements Comparable<Life> {
   }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
-    if(this.aliveTime > 10000) {
+    if(this.aliveTime > 1000) {
       this.die("old age");
     }
   }
@@ -395,7 +395,7 @@ class SceneManager {
   void update() {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
-    //System.out.println("Resdients:"+residents.size());
+    System.out.println("Resdients:"+residents.size());
     if(residents.size() > 10) {
       residents.get(0).die("overpopulation");
       residents.remove(0);
@@ -527,7 +527,9 @@ class ShapeChangingCreature extends Creature {
   int rotationX = intScaledRandom();
   int rotationY = intScaledRandom();
   Boolean rotating = false;
+  final int rotationRandomNegative = randomNegativeFactor();
   void draw() {
+    pushMatrix();
     translate(rotationX, rotationY);
     float rotationTempStatus = randomNegativeFactor() * ((((rotation/360)*TWO_PI) * 2) - TWO_PI);
     rotate(rotationTempStatus);
@@ -551,8 +553,7 @@ class ShapeChangingCreature extends Creature {
     default:
       break;
     }
-    translate(0,0);
-    rotate(0);
+    popMatrix();
   }
   void update() {
     this.updateLifespan();
@@ -610,12 +611,14 @@ class CreatureTemplate extends Creature {
 }
 
 void draw() {
-  world.update();
   //System.out.println("Done drawing");
   currentTick = currentTick + 1;
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(-10, -10, 18000, 18000);
+  world.update();
+  textSize(80);
+  text(world.residents.size(), 100, 350);
 }
 void mouseClicked() {
   /* */
