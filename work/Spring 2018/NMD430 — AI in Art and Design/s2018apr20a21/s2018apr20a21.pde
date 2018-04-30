@@ -358,6 +358,7 @@ class Life implements Comparable<Life> {
         textSize(50);
         fill(255,255,255);
         constrainedRect(this.x + 300,this.y + 300,500,500);
+        //triangle(this.x, this.y, this.x + 300, this.y + 300, this.x + 200, this.y + 200);
         fill(0,0,0);
         constrainedText(this.message, this.x + 300, this.y + 300,500,500);
         this.messageAge=this.messageAge+1;
@@ -411,7 +412,7 @@ class Life implements Comparable<Life> {
   }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
-    if(this.aliveTime > 400) {
+    if(this.aliveTime > 1000) {
       this.die("old age");
     }
   }
