@@ -18,7 +18,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "un", "def", "ined", "ke", "sha", "256", "ruki", "vverh", "canna", "bis", "pix",
 "ie", "fae", "ry", "fairy", "weed", "alembic", "professor", "corvus", "corax",
 "rae", "wist", "y", "machynlleth", "głupie", "chomiki", "charanjit", "singh", "foo",
-"baz", "qux", "lirin") ;
+"baz", "qux", "lirin", "elen", "esar", "futuramerlin", "futura", "merlin", "red",
+"rum", "sergey", "lazarev", "zhukov") ;
 
 float mySize = 2000f;
 int currentTick = 0;
