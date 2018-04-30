@@ -292,9 +292,15 @@ public class LifeComparator implements Comparator<Life> {
   }
 }
 
-String randomName() {
-  return names.get(intScaledRandom(names.size()));
+String uppercaseFirstLetter(String input) {
+  /* based on https://stackoverflow.com/questions/3904579/how-to-capitalize-the-first-letter-of-a-string-in-java */
+  return input.substring(0, 1).toUpperCase() + input.substring(1);
 }
+
+String randomName() {
+  return names.get(intScaledRandom(names.size())).toSentenceCase;
+}
+
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
