@@ -291,6 +291,9 @@ class Life implements Comparable<Life> {
   float size = 0f;
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
+    if(this.aliveTime > 10000) {
+      this.dead = 1;
+    }
   }
   void draw() {
   };
