@@ -27,7 +27,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "jerky", "flora", "chas", "ling", "ting", "earth", "land", "kde", "tux",
 "elliot", "chandler", "sofian", "audry", "keegan", "ennis", "lucas", "adair",
 "jay", "vanadine", "cramer", "cam", "aaron", "krevans", "matthew", "loewen", "amman",
-"iar", "let", "ly") ;
+"iar", "let", "ly", "elli", "nara", "na", "aureate", "luxa", "breath", "aeol",
+"us", "ia", "oak", "en", "chan", "nyaa", "blossom", "ghost", "shadow", "corpse") ;
 
 float mySize = 2000f;
 int currentTick = 0;
@@ -324,13 +325,19 @@ class Life implements Comparable<Life> {
   float size = 0f;
   String name="Unset";
   int nameSet=0;
-  void message(String message) {
-    System.out.println(message);
+  String message="";
+  int messageAge;
+  void drawMessage() {
     textSize(50);
     fill(255,255,255);
     rect(0,0,mySize,150);
     fill(0,0,0);
     text(message, 0, 150);
+  }
+  void message(String message) {
+    System.out.println(message);
+    this.messageAge=0;
+    this.message=message;
   }
   void greet(String cause) {
     this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
