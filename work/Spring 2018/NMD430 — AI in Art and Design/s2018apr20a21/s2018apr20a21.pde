@@ -326,18 +326,22 @@ class Life implements Comparable<Life> {
   String name="Unset";
   int nameSet=0;
   String message="";
-  int messageAge;
+  int messageSet=0;
+  int messageAge=0;
   void drawMessage() {
-    textSize(50);
-    fill(255,255,255);
-    rect(0,0,mySize,150);
-    fill(0,0,0);
-    text(message, 0, 150);
+    //if(this.messageSet
+    //if(messageAge < 50) {
+    //  textSize(50);
+    //  fill(255,255,255);
+    //  rect(0,0,mySize,150);
+    //  fill(0,0,0);
+    //  text(message, 0, 150);
   }
   void message(String message) {
     System.out.println(message);
     this.messageAge=0;
     this.message=message;
+    this.messageSet=1;
   }
   void greet(String cause) {
     this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
@@ -491,6 +495,7 @@ class SceneManager {
       else {
         deferredResidents.add(resident);
       }
+      resident.drawMessage();
     }
     /* Process asynchronously modified residents */
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
