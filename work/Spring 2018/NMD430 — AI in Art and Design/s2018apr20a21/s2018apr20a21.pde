@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.Random;
 
 SceneManager world = new SceneManager();
 
@@ -513,6 +514,7 @@ class ShapeChangingCreature extends Creature {
   int rotationX = intScaledRandom();
   int rotationY = intScaledRandom();
   Boolean rotating = false;
+  Boolean rotatingRandom = Random.nextBoolean();
   void draw() {
     translate(rotationX, rotationY);
     rotate((((rotation/360)*TWO_PI) * 2) - TWO_PI);
