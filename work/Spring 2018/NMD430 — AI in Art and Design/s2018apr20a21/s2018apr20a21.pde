@@ -318,6 +318,16 @@ String randomName() {
   return uppercaseFirstLetter(names.get(intScaledRandom(names.size())));
 }
 
+double constrainedRect(double left,double top,double width,double height) {
+  if((left + width) > mySize) {
+    left = 0;
+  }
+  if((top + height) > mySize) {
+    top = 0;
+  }
+  rect(left,top,width,height);
+}
+
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
@@ -337,7 +347,7 @@ class Life implements Comparable<Life> {
         fill(255,255,255);
         rect(this.x,this.y,mySize,150);
         fill(0,0,0);
-        text(this.message, 0, 150);
+        text(this.message, this.x, this.y);
         this.messageAge=this.messageAge+1;
       }
     }
