@@ -427,7 +427,7 @@ class SceneManager {
         resident.draw();
       }
       else {
-        deferredResidentIterator.add(resident);
+        deferredResidents.add(resident);
       }
     }
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
