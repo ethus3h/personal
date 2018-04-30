@@ -293,6 +293,7 @@ class Life implements Comparable<Life> {
     this.aliveTime = this.aliveTime + 1;
     if(this.aliveTime > 10000) {
       this.dead = 1;
+      System.out.println("A "+this.getClass().getName()+" has died.");
     }
   }
   void draw() {
