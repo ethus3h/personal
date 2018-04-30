@@ -202,6 +202,9 @@ class Wanderer extends Creature {
     step=step + 1;
   }
 
+  String getCreatureType() {
+    return "Wanderer";
+  }
   float getPersonality() {
     float result=(float)Arrays.stream(memory).average().getAsDouble();
     personalityCached=result;
@@ -294,6 +297,7 @@ class Life implements Comparable<Life> {
   float x = 0f;
   float y = 0f;
   float size = 0f;
+  String name="Unset";
   void message(String message) {
     System.out.println(message);
     textSize(50);
@@ -303,17 +307,19 @@ class Life implements Comparable<Life> {
     text(message, 0, 150);
   }
   void greet(String cause) {
-    this.message("Hi! I'm a new "+this.getClass().getName()+", born from "+cause+".");
+    this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
+  }
+  String getCreatureType() {
+    return "Creature";
+  }
+  String getCreatureName() {
+    return "Unimplemented";
   }
   void click() {
   }
-  void die() {
-    this.dead = 1;
-    this.message("A "+this.getClass().getName()+" has died.");
-  }
   void die(String cause) {
     this.dead = 1;
-    this.message("A "+this.getClass().getName()+" has died from "+cause+".");
+    this.message(this.getCreatureName()+", a "+this.getCreatureType()+", has died from "+cause+".");
   }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
@@ -477,6 +483,9 @@ class Creature extends Life {
 class BreedingCreature extends Creature {
   Integer waterSatiation = 0;
   Integer jealousy = 0;
+  String getCreatureType() {
+    return "Breeding Creature";
+  }
   void draw() {
     fill(255 * (waterSatiation / 10), 255 * (waterSatiation / 10), 255 * (waterSatiation / 10));
     ellipse(x, y, size, size);
@@ -537,6 +546,9 @@ class ShapeChangingCreature extends Creature {
   int rotationY = intScaledRandom();
   Boolean rotating = false;
   final int rotationRandomNegative = randomNegativeFactor();
+  String getCreatureType() {
+    return "Shape-Changing Creature";
+  }
   void draw() {
     pushMatrix();
     translate(rotationX, rotationY);
@@ -587,6 +599,9 @@ class ColorCreature extends Creature {
     intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
   float width=scaledRandom(350);
   float height=scaledRandom(350);
+  String getCreatureType() {
+    return "Color Creature";
+  }
   ColorCreature() {
     x = scaledRandom();
     y = scaledRandom();
@@ -610,6 +625,9 @@ class CreatureTemplate extends Creature {
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom() };
+  String getCreatureType() {
+    return "Creature Template";
+  }
   void draw() {
     ellipse(x, y, size, size);
   }
