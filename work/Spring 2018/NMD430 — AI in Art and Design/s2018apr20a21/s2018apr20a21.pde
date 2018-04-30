@@ -22,7 +22,7 @@ void setup() {
   background(255);
   world.addSky(new Sky());
   world.add(new BreedingCreature());
-  world.add(new BreedingCreature());
+  //world.add(new BreedingCreature());
 }
 
 // Most of these utility functions are from the previous assignment
@@ -125,7 +125,7 @@ int randomNegativeFactor() {
   }
 }
 
-Creature randomCreatureType() {
+Creature randomCreatureType(String cause) {
   Creature newCreature = new BreedingCreature();
   switch ((int)(Math.random() * 4)) {
   case 0:
@@ -143,7 +143,7 @@ Creature randomCreatureType() {
   default:
     break;
   }
-  newCreature.greet();
+  newCreature.greet(cause);
   return newCreature;
 }
 
@@ -308,8 +308,8 @@ class Life implements Comparable<Life> {
     textSize(96);
     text(message, 0, 150);
   }
-  void greet() {
-    this.message("Hi! I'm a new "+this.getClass().getName()+".");
+  void greet(String cause) {
+    this.message("Hi! I'm a new "+this.getClass().getName()+", born from "+cause+".");
   }
   void die() {
     this.dead = 1;
@@ -396,9 +396,14 @@ class SceneManager {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
     //System.out.println("Resdients:"+residents.size());
-    if(residents.size() > 50) {
+    if(residents.size() > 10) {
       residents.get(0).die("overpopulation");
       residents.remove(0);
+    }
+    if(residents.size() < 5) {
+      Creature newCreature = new BreedingCreature();
+      world.add(newCreature);
+      newCreature.greet("underpopulation");
     }
     for (Life resident : residents) {
       if(resident.dead == 0) {
@@ -448,7 +453,7 @@ class Creature extends Life {
         float neighborY = ((thisNeighborCreature.y + thisNeighborCreature.size) / 2);
         float thisX = (((2*this.x) + this.size) / 2);
         float thisY = (((2*this.y) + this.size) / 2);
-        if (dist(neighborX, neighborY, thisX, thisY) < (this.size * 2)) {
+        if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           System.out.println("tooclose. Old "+this.x+", "+this.y+", dist"+dist(neighborX, neighborY, thisX, thisY));
           // If it's too close to another creature, it will try to get away, by moving a few places.
           this.x = ((this.x * 30) + (randomNegativeFactor() * scaledRandom())) / 31;
@@ -486,7 +491,7 @@ class BreedingCreature extends Creature {
     // Reproduction state
     if (waterSatiation > 200) {
       // It's fully healthy, doesn't need any more water. So, it has enough energy to safely reproduce.
-      world.add(randomCreatureType());
+      world.add(randomCreatureType("bred"));
       waterSatiation = 50;
     }
     // Also get its jealousy
@@ -552,7 +557,7 @@ class ShapeChangingCreature extends Creature {
   }
   void update() {
     this.updateLifespan();
-    this.disperse();
+    //this.disperse();
     if(random(0,2) < 1) {
       this.rotating = true;
     }
@@ -587,7 +592,7 @@ class ColorCreature extends Creature {
   }
   void update() {
     this.updateLifespan();
-    this.disperse();
+    //this.disperse();
   }
 }
 
@@ -601,7 +606,7 @@ class CreatureTemplate extends Creature {
   }
   void update() {
     this.updateLifespan();
-    this.disperse();
+    //this.disperse();
   }
 }
 
