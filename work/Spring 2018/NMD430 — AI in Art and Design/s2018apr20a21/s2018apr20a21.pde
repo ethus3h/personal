@@ -522,9 +522,11 @@ class ShapeChangingCreature extends Creature {
     float rotationTempStatus = (((rotation/360)*TWO_PI) * 2) - TWO_PI;
     if(this.rotatingRandom) {
       rotate(rotationTempStatus);
+      System.out.println("Rotated by "+rotationTempStatus);
     }
     else {
       rotate(-1 * rotationTempStatus);
+      System.out.println("Rotated by -1 * "+rotationTempStatus);
     }
     switch (data[0]) {
     case 0:
