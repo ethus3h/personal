@@ -294,6 +294,9 @@ class Life implements Comparable<Life> {
     textSize(96);
     text(message, 150, 150);
   }
+  void greet() {
+    this.message("Hi! I'm a new "+this.getClass().getName()+".");
+  }
   void die() {
     this.dead = 1;
     this.message("A "+this.getClass().getName()+" has died.");
