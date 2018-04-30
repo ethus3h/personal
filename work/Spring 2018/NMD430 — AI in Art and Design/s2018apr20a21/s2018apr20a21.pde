@@ -326,13 +326,13 @@ class Life implements Comparable<Life> {
           newName = randomName();
           break;
         case 1:
-          newName = randomName();
+          newName = randomName()+"-"+randomName();
           break;
         case 2:
-          newName = randomName();
+          newName = randomName()+" "+randomName();
           break;
         case 3:
-          newName = randomName();
+          newName = randomName()+(randomName().toLowerCase());
           break;
         default:
           break;
