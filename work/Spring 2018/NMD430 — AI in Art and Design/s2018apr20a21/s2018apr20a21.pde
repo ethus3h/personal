@@ -28,7 +28,9 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "elliot", "chandler", "sofian", "audry", "keegan", "ennis", "lucas", "adair",
 "jay", "vanadine", "cramer", "cam", "aaron", "krevans", "matthew", "loewen", "amman",
 "iar", "let", "ly", "elli", "nara", "na", "aureate", "luxa", "breath", "aeol",
-"us", "ia", "oak", "en", "chan", "nyaa", "blossom", "ghost", "shadow", "corpse") ;
+"us", "ia", "oak", "en", "chan", "nyaa", "blossom", "ghost", "shadow", "corpse",
+"asriel", "aswell", "silver", "shimmer", "grass", "moor", "hawk", "kitty",
+"pretty", "golden", "light", "moon", "archive") ;
 
 float mySize = 2000f;
 int currentTick = 0;
@@ -333,10 +335,10 @@ class Life implements Comparable<Life> {
       if(this.messageAge < 50) {
         textSize(50);
         fill(255,255,255);
-        rect(0,0,mySize,150);
+        rect(this.x,this.y,mySize,150);
         fill(0,0,0);
         text(this.message, 0, 150);
-        this.messageAge = this.messageAge+1;
+        this.messageAge=this.messageAge+1;
       }
     }
   }
