@@ -292,6 +292,9 @@ public class LifeComparator implements Comparator<Life> {
   }
 }
 
+String randomName() {
+  return names.get(intScaledRandom(names.size()));
+}
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
@@ -315,6 +318,24 @@ class Life implements Comparable<Life> {
     return "Creature";
   }
   String getCreatureName() {
+    String newName = "Unset";
+    switch ((int)(Math.random() * 4)) {
+      case 0:
+        return randomName();
+        break;
+      case 1:
+        return randomName();
+        break;
+      case 2:
+        newCreature = new ColorCreature();
+        break;
+      case 3:
+        newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
+        break;
+      default:
+        break;
+    }
+ 
     this.name=names.get(intScaledRandom(names.size()));
     return this.name;
   }
