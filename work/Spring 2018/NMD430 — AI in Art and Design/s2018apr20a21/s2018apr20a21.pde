@@ -252,7 +252,7 @@ class Wanderer extends Creature {
       }
     }
     speed=((float)getMood() / 600.0) + (monitor / 30);
-    //System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
+    System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
 
@@ -305,7 +305,7 @@ class Life implements Comparable<Life> {
   float size = 0f;
   void message(String message) {
     System.out.println(message);
-    textSize(96);
+    textSize(50);
     text(message, 0, 150);
   }
   void greet(String cause) {
@@ -454,7 +454,7 @@ class Creature extends Life {
         float thisX = (((2*this.x) + this.size) / 2);
         float thisY = (((2*this.y) + this.size) / 2);
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
-          System.out.println("tooclose. Old "+this.x+", "+this.y+", dist"+dist(neighborX, neighborY, thisX, thisY));
+          //System.out.println("tooclose. Old "+this.x+", "+this.y+", dist"+dist(neighborX, neighborY, thisX, thisY));
           // If it's too close to another creature, it will try to get away, by moving a few places.
           this.x = ((this.x * 30) + (randomNegativeFactor() * scaledRandom())) / 31;
           this.y = ((this.y * 30) + (randomNegativeFactor() * scaledRandom())) / 31;
@@ -491,7 +491,7 @@ class BreedingCreature extends Creature {
     // Reproduction state
     if (waterSatiation > 200) {
       // It's fully healthy, doesn't need any more water. So, it has enough energy to safely reproduce.
-      world.add(randomCreatureType("bred"));
+      world.add(randomCreatureType("a breeding creature"));
       waterSatiation = 50;
     }
     // Also get its jealousy
@@ -529,7 +529,7 @@ class ShapeChangingCreature extends Creature {
   int rotationX = intScaledRandom();
   int rotationY = intScaledRandom();
   Boolean rotating = false;
-  Boolean rotatingRandom = random.nextBoolean();
+  final Boolean rotatingRandom = random.nextBoolean();
   void draw() {
     translate(rotationX, rotationY);
     float rotationTempStatus = randomNegativeFactor() * ((((rotation/360)*TWO_PI) * 2) - TWO_PI);
@@ -554,6 +554,8 @@ class ShapeChangingCreature extends Creature {
     default:
       break;
     }
+    translate(0,0);
+    rotate(0);
   }
   void update() {
     this.updateLifespan();
