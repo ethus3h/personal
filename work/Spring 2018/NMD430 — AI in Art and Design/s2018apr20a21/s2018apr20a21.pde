@@ -328,6 +328,16 @@ void constrainedRect(float left,float top,float width,float height) {
   rect(left,top,width,height);
 }
 
+void constrainedText(String text, float left,float top,float width,float height) {
+  if((left + width) > mySize) {
+    left = 0;
+  }
+  if((top + height) > mySize) {
+    top = 0;
+  }
+  text(text, left,top,width,height);
+}
+
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
@@ -345,9 +355,9 @@ class Life implements Comparable<Life> {
       if(this.messageAge < 50) {
         textSize(50);
         fill(255,255,255);
-        rect(this.x,this.y,mySize,150);
+        constrainedRect(this.x,this.y,250,mySize);
         fill(0,0,0);
-        text(this.message, this.x, this.y);
+        constrainedText(this.message, this.x, this.y,250,mySize);
         this.messageAge=this.messageAge+1;
       }
     }
