@@ -357,9 +357,9 @@ class Life implements Comparable<Life> {
       if(this.messageAge < 50) {
         textSize(50);
         fill(255,255,255);
-        constrainedRect(this.x,this.y,500,500);
+        constrainedRect(this.x + 300,this.y + 300,500,500);
         fill(0,0,0);
-        constrainedText(this.message, this.x, this.y,500,500);
+        constrainedText(this.message, this.x + 300, this.y + 300,500,500);
         this.messageAge=this.messageAge+1;
       }
     }
@@ -641,6 +641,8 @@ class ShapeChangingCreature extends Creature {
   void draw() {
     pushMatrix();
     translate(rotationX, rotationY);
+    this.x=rotationX;
+    this.y=rotationY;
     float rotationTempStatus = rotationRandomNegative * ((((rotation/360)*TWO_PI) * 2) - TWO_PI);
     rotate(rotationTempStatus);
     //System.out.println("Rotated by "+rotationTempStatus);
