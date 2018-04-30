@@ -505,6 +505,12 @@ class BreedingCreature extends Creature {
   }
 }
 
+class getRandom() {
+  Boolean getRandomBoolean() {
+    return Random.nextBoolean();
+  }
+}
+
 class ShapeChangingCreature extends Creature {
   Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(), 
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
@@ -514,7 +520,7 @@ class ShapeChangingCreature extends Creature {
   int rotationX = intScaledRandom();
   int rotationY = intScaledRandom();
   Boolean rotating = false;
-  Boolean rotatingRandom = Random.nextBoolean();
+  Boolean rotatingRandom = new getRandom().getRandomBoolean();
   void draw() {
     translate(rotationX, rotationY);
     rotate((((rotation/360)*TWO_PI) * 2) - TWO_PI);
