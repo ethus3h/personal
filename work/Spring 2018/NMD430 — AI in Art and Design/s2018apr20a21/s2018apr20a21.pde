@@ -426,9 +426,18 @@ class SceneManager {
         //System.out.println(resident.size);
         resident.draw();
       }
+      else {
+        deferredResidentIterator.add(resident);
+      }
     }
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
-      residents.add(deferredResidentIterator.next());
+      Life resident=deferredResidentIterator.next();
+      if(resident.dead != 0) {
+        residents.remove(resident);
+      }
+      else {
+        residents.add(resident);
+      }
       deferredResidentIterator.remove();
     }
     time += 1;
