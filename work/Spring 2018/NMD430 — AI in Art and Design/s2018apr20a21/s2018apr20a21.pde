@@ -352,6 +352,7 @@ class Life implements Comparable<Life> {
   int messageAge=0;
   void drawMessage() {
     System.out.println(this.x);
+    System.out.println(this.y);
     if(this.messageSet == 1) {
       if(this.messageAge < 50) {
         textSize(50);
