@@ -351,8 +351,8 @@ class Life implements Comparable<Life> {
   int messageSet=0;
   int messageAge=0;
   void drawMessage() {
-    System.out.println(this.x);
-    System.out.println(this.y);
+    //System.out.println(this.x);
+    //System.out.println(this.y);
     if(this.messageSet == 1) {
       if(this.messageAge < 50) {
         textSize(50);
@@ -442,6 +442,9 @@ class Sun extends Life {
     fill(255, 255, 255);
     ellipse((mySize - (mySize * (temperature / 100.0))), (mySize - (mySize * (smoothMod(temperature, 50) / 100.0))), 100, 100);
   }
+  String getCreatureType() {
+    return "Sun";
+  }
   void update() {
     this.updateLifespan();
   }
@@ -456,6 +459,9 @@ class Sky extends Life {
     }
     fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20, 5);
     rect(0, 0, mySize, mySize);
+  }
+  String getCreatureType() {
+    return "Sky";
   }
   void update() {
     sun.temperature = smoothMod(world.time, 100);
