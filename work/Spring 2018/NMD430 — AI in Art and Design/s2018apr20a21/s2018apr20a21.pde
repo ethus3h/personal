@@ -289,11 +289,15 @@ class Life implements Comparable<Life> {
   float x = 0f;
   float y = 0f;
   float size = 0f;
+  void message(String message) {
+    System.out.println(message);
+    
+  }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
     if(this.aliveTime > 10000) {
       this.dead = 1;
-      System.out.println("A "+this.getClass().getName()+" has died.");
+      this.message("A "+this.getClass().getName()+" has died.");
     }
   }
   void draw() {
