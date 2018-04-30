@@ -21,10 +21,9 @@ void setup() {
   background(255);
   world.addSky(new Sky());
   world.add(new BreedingCreature());
-  //world.add(new BreedingCreature());
 }
 
-// Most of these utility functions are from the previous assignment
+// These are functions to help out by doing various calculations.
 
 int linePointY(int x1, int y1, int x2, int y2, int dist) {
   float angle = atan2((y2 - y1), (x2 - x1));
@@ -287,14 +286,6 @@ public class LifeComparator implements Comparator<Life> {
     return a.compareTo(b);
   }
 }
-
-/*  BulkWanderer(float x, float y) {
-    this.wanderer0=new Wanderer(0f, x, y);
-    this.wanderer3=new Wanderer(0.3, x, y);
-    this.wanderer7=new Wanderer(0.7, x, y);
-    this.wanderer1=new Wanderer(1f, x, y);
-  }
-  */
 
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
