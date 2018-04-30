@@ -380,7 +380,7 @@ class SceneManager {
     Collections.sort(residents, new LifeComparator());
     //System.out.println("Resdients:"+residents.size());
     if(residents.size() > 50) {
-      residents.get(0).dead=1;
+      residents.get(0).die("overpopulation");
       residents.remove(0);
     }
     for (Life resident : residents) {
