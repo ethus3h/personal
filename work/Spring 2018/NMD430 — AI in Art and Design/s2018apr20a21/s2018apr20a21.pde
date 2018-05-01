@@ -35,7 +35,9 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "loki", "sayyed", "magical", "magic", "spider", "crab", "bleak", "raven", "death",
 "bringer", "bright", "happy", "sacred", "dancing", "heart", "wolf", "pixie",
 "ember", "party", "flight", "gold", "creeping-death", "ebenezer", "margaret",
-"maude", "harold", "chastity", "temperance", "prudence", "nancy", "crystal") ;
+"maude", "harold", "chastity", "temperance", "prudence", "nancy", "crystal",
+"autumn", "winter", "fall", "spring", "summer", "crocus", "lily", "lilac",
+"clover", "buttercup", "rose", "tradukuh", "clover", "dandelion") ;
 
 float mySize = 2000f;
 int currentTick = 0;
