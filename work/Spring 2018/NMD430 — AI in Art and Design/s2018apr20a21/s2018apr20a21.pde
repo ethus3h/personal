@@ -37,7 +37,9 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "ember", "party", "flight", "gold", "creeping-death", "ebenezer", "margaret",
 "maude", "harold", "chastity", "temperance", "prudence", "nancy", "crystal",
 "autumn", "winter", "fall", "spring", "summer", "crocus", "lily", "lilac",
-"clover", "buttercup", "rose", "tradukuh", "clover", "dandelion") ;
+"clover", "buttercup", "rose", "tradukuh", "clover", "dandelion", "kitten",
+"wind", "angel", "flutter", "glimmer", "flitter", "shine", "shining", "shiny",
+"^.^", "^_^", ":3", "<3", "^~^") ;
 
 float mySize = 2000f;
 int currentTick = 0;
@@ -387,7 +389,7 @@ class Life implements Comparable<Life> {
   String getCreatureName() {
     if(this.nameSet == 0) {
       String newName = "Unset";
-      switch ((int)(Math.random() * 5)) {
+      switch ((int)(Math.random() * 6)) {
         case 0:
           newName = randomName();
           break;
@@ -402,6 +404,9 @@ class Life implements Comparable<Life> {
           break;
         case 4:
           newName = randomName()+(randomName().toLowerCase())+(randomName().toLowerCase());
+          break;
+        case 5:
+          newName = randomName()+" "+randomName().toLowerCase()+(randomName().toLowerCase());
           break;
         default:
           break;
