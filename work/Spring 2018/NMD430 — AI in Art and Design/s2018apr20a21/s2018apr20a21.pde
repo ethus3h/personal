@@ -39,7 +39,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "autumn", "winter", "fall", "spring", "summer", "crocus", "lily", "lilac",
 "clover", "buttercup", "rose", "tradukuh", "clover", "dandelion", "kitten",
 "wind", "angel", "flutter", "glimmer", "flitter", "shine", "shining", "shiny",
-"^.^", "^_^", ":3", "<3", "^~^") ;
+"^.^", "^_^", ":3", "<3", "^~^", "yume", "nexus", "no", "miko", "hatsune",
+"miku") ;
 
 float mySize = 2000f;
 int currentTick = 0;
