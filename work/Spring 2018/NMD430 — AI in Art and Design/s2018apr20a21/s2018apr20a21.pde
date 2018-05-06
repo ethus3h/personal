@@ -428,7 +428,16 @@ class Life implements Comparable<Life> {
     }
   }
   void greet(String cause) {
-    this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
+    if (uppercaseFirstLetter(this.getCreatureType()).equals("A")) ||
+       (uppercaseFirstLetter(this.getCreatureType()).equals("E")) || 
+       (uppercaseFirstLetter(this.getCreatureType()).equals("I")) || 
+       (uppercaseFirstLetter(this.getCreatureType()).equals("O")) || 
+       (uppercaseFirstLetter(this.getCreatureType()).equals("U")) {
+      this.message("Hi! I'm "+this.getCreatureName()+", an "+this.getCreatureType()+", born from "+cause+".");
+    }
+    else {
+      this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
+    }
   }
   String getCreatureType() {
     return "Creature";
