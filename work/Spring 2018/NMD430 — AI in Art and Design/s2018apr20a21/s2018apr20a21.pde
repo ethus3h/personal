@@ -435,9 +435,11 @@ class Life implements Comparable<Life> {
       (uppercaseFirstLetter(this.getCreatureType()).equals("O")) || 
       (uppercaseFirstLetter(this.getCreatureType()).equals("U"))
     ) {
+      /* It is a vowel so say with "an" */
       this.message("Hi! I'm "+this.getCreatureName()+", an "+this.getCreatureType()+", born from "+cause+".");
     }
     else {
+      /* It is not, so say with "a" */
       this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
     }
   }
