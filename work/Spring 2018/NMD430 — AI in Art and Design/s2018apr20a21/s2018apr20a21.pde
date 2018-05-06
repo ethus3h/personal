@@ -344,10 +344,10 @@ void constrainedRect(float left,float top,float width,float height) {
 }
 
 void constrainedText(String text, float left,float top,float width,float height) {
-  if((left + width) > mySize) {
+  if((left + width) > myXSize) {
     left = 0;
   }
-  if((top + height) > mySize) {
+  if((top + height) > myYSize) {
     top = 0;
   }
   text(text, left,top,width,height);
@@ -461,7 +461,7 @@ class Sun extends Life {
       System.out.println("Drawn while dead");
     }
     fill(255, 255, 255);
-    ellipse((mySize - (mySize * (temperature / 100.0))), (mySize - (mySize * (smoothMod(temperature, 50) / 100.0))), 100, 100);
+    ellipse((myXSize - (myXSize * (temperature / 100.0))), (myYSize - (myYSize * (smoothMod(temperature, 50) / 100.0))), 100, 100);
   }
   String getCreatureType() {
     return "Sun";
@@ -479,7 +479,7 @@ class Sky extends Life {
       System.out.println("Drawn while dead");
     }
     fill(smoothMod(sun.temperature, 120), sun.temperature / 2, (sun.temperature * 2) + 20, 5);
-    rect(0, 0, mySize, mySize);
+    rect(0, 0, myXSize, myYSize);
   }
   String getCreatureType() {
     return "Sky";
@@ -531,15 +531,15 @@ class SceneManager {
         //System.out.println(resident.getClass().getName());
         resident.update();
         if (resident.x < 0) {
-          resident.x = mySize;
+          resident.x = myXSize;
         }
         if (resident.y < 0) {
-          resident.y = mySize;
+          resident.y = myYSize;
         }
-        if (resident.x > mySize) {
+        if (resident.x > myXSize) {
           resident.x = 0f;
         }
-        if (resident.y > mySize) {
+        if (resident.y > myYSize) {
           resident.y = 0f;
         }
         //System.out.println(resident.x);
@@ -588,8 +588,8 @@ class Creature extends Life {
         if (dist(neighborX, neighborY, thisX, thisY) < this.size) {
           //System.out.println("tooclose. Old "+this.x+", "+this.y+", dist"+dist(neighborX, neighborY, thisX, thisY));
           // If it's too close to another creature, it will try to get away, by moving a few places.
-          this.x = ((this.x * 30) + (randomNegativeFactor() * scaledRandom())) / 31;
-          this.y = ((this.y * 30) + (randomNegativeFactor() * scaledRandom())) / 31;
+          this.x = ((this.x * 30) + (randomNegativeFactor() * scaledRandom(true))) / 31;
+          this.y = ((this.y * 30) + (randomNegativeFactor() * scaledRandom(false))) / 31;
           //System.out.println("Moved to"+this.x+", "+this.y);
         }
       }
