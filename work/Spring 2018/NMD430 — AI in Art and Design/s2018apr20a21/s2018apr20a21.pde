@@ -562,6 +562,7 @@ class SceneManager {
       world.add(randomCreatureType("underpopulation"));
     }
     for (Life resident : residents) {
+      resident.drawMessage();
       if(resident.dead == 0) {
         //System.out.println(resident.getClass().getName());
         resident.update();
@@ -585,7 +586,6 @@ class SceneManager {
       else {
         deferredResidents.add(resident);
       }
-      resident.drawMessage();
     }
     /* Process asynchronously modified residents */
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
