@@ -530,7 +530,6 @@ class SceneManager {
     //System.out.println("Residents:"+residents.size());
     if(residents.size() > 6) {
       residents.get(0).die("overpopulation");
-      residents.remove(0);
     }
     if(residents.size() < 3) {
       world.add(randomCreatureType("underpopulation"));
@@ -564,7 +563,7 @@ class SceneManager {
     /* Process asynchronously modified residents */
     for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
       Life resident=deferredResidentIterator.next();
-      if(resident.dead != 0) {
+      if(resident.dead == 2) {
         residents.remove(resident);
       }
       else {
