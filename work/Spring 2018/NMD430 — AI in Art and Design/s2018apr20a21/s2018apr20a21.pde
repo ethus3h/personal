@@ -8,7 +8,7 @@
 /* Configuration */
 float myXSize = 3000f;
 float myYSize = 1500f;
-float displayScalingFactor = 2;
+float displayScalingFactor = 1;
 int minimumCreatures = 1;
 int maximumCreatures = 6;
 int lifespanCap = 2000;
