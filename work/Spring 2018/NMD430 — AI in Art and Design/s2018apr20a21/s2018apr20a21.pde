@@ -17,7 +17,8 @@ void setup() {
   background(255);
   world.addSky(new Sky());
   world.add(new BreedingCreature());
-  cursor = loadImage("cursor.png");
+  cursor = loadShape("cursor.svg");
+  cursorClicked = loadShape("cursorClicked.svg");
 }
 
 import java.util.Arrays;
@@ -29,8 +30,8 @@ import java.util.Iterator;
 
 int currentTick = 0;
 SceneManager world = new SceneManager();
-PImage cursor;
-PImage cursorClicked;
+PShape cursor;
+PShape cursorClicked;
 
 List<String> names = Arrays.asList("blah", "bar", "mary",
 "jane", "alev", "iler", "echo", "bright", "storm", "last", "dance", "uns", "et",
