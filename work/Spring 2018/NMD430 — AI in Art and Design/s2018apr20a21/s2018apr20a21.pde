@@ -344,19 +344,19 @@ String randomName() {
 
 void constrainedRect(float left,float top,float width,float height) {
   if((left + width) > myXSize) {
-    left = left - width;
+    left = myXSize - width;
     System.out.println("Constrained rect left -");
   }
   if((left + width) < 0) {
-    left = left + width;
+    left = width;
     System.out.println("Constrained rect left +");
   }
   if((top + height) > myYSize) {
-    top = top - height;
+    top = myYSize - height;
     System.out.println("Constrained rect top -");
   }
   if((top + height) < 0) {
-    top = top + height;
+    top = height;
     System.out.println("Constrained rect top +");
   }
   rect(left,top,width,height);
@@ -364,19 +364,19 @@ void constrainedRect(float left,float top,float width,float height) {
 
 void constrainedText(String text, float left,float top,float width,float height) {
   if((left + width) > myXSize) {
-    left = left - width;
+    left = myXSize - width;
     System.out.println("Constrained text left -");
   }
   if((left + width) < 0) {
-    left = left + width;
+    left = width;
     System.out.println("Constrained text left +");
   }
   if((top + height) > myYSize) {
-    top = top - height;
+    top = myYSize - height;
     System.out.println("Constrained text top -");
   }
   if((top + height) < 0) {
-    top = top + height;
+    top = height;
     System.out.println("Constrained text top +");
   }
   text(text, left,top,width,height);
