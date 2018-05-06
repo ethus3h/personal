@@ -36,7 +36,7 @@ SceneManager world = new SceneManager();
 PShape cursor;
 PShape cursorClicked;
 
-/* based on https://www.openprocessing.org/sketch/28053# */
+/* based on https://www.openprocessing.org/sketch/28053 */
 ArrayList particleList = new ArrayList();
 int maximumParticleCount = 50;
 
