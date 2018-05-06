@@ -925,8 +925,7 @@ void draw() {
     shape(cursor, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
   /* based on https://www.openprocessing.org/sketch/28053 */
-  if(mousePressed && mouseButton == RIGHT) {
-    background(50);
+  if(mousePressed) {
     while(particleList.size() > 0) {
       for(int i = 0; i < particleList.size(); i++) {
         particleList.remove(i);
