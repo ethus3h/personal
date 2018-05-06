@@ -384,6 +384,7 @@ void constrainedText(String text, float left,float top,float width,float height)
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
+  int lifespan=(int)(2000 * Math.random());
   int aliveTime=0;
   float x = 0f;
   float y = 0f;
@@ -466,8 +467,8 @@ class Life implements Comparable<Life> {
   }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
-    if(this.aliveTime > 1000) {
-      this.die("old age");
+    if(this.aliveTime > this.lifespan) {
+      this.die("old age of "+aliveTime+" frames");
     }
   }
   void draw() {
@@ -555,7 +556,7 @@ class SceneManager {
     if(residents.size() > 6) {
       residents.get(0).die("overpopulation");
     }
-    if(residents.size() < 3) {
+    if(residents.size() < 0) {
       world.add(randomCreatureType("underpopulation"));
     }
     for (Life resident : residents) {
