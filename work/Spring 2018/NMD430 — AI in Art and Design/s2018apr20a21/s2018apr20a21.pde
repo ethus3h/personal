@@ -79,7 +79,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "changeling", "greaser", "drift", "spindrift", "drifter", "transmission",
 "differential", "driveshaft", "carburetor", "headgasket", "007", "Nara Nara Na",
 "driftwood", "faery", "aelfe", "elf", "elfin", "elven", "mushroom", "shyren",
-"shy", "rubble", "pwnage", "awesome", "420", "666", "coven");
+"shy", "rubble", "pwnage", "awesome", "420", "666", "coven", "rein", "pharaoh");
 
 // These are functions to help out by doing various calculations.
 
