@@ -75,7 +75,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "shots", "beerpong", "kangaroo", "cluck", "lapchicken", "lap", "sweet",
 "dope", "shiver", "mysterious", "misty", "yellowriver", "chaika", "shalltear",
 "lina", "inverse", "zelgadis", "recettear", "eryi", "surgery", "psycho",
-"genki", "maybasket", "may", "soil");
+"genki", "maybasket", "may", "soil", "bazaar", "fez", "wiggle", "wiggly");
 
 // These are functions to help out by doing various calculations.
 
@@ -137,12 +137,21 @@ float getSize(Boolean getXValue) {
   return myYSize;
 }
 float scaleToX(float value) {
-  return (value * 2000) / (myYSize * (1 / displayScalingFactor));
+  return (float)scaleToX((double)value);
 }
 float scaleToY(float value) {
-  return (value * 2000) / (myXSize * (1 / displayScalingFactor));
+  return (float)scaleToY((double)value);
 }
 float scaleToXY(float value) {
+  return (float)scaleToXY((double)value);
+}
+double scaleToX(double value) {
+  return (value * 2000) / (myYSize * (1 / displayScalingFactor));
+}
+double scaleToY(double value) {
+  return (value * 2000) / (myXSize * (1 / displayScalingFactor));
+}
+double scaleToXY(double value) {
   return (value * 2000) / (((myXSize + myYSize) / 2) * (1 / displayScalingFactor));
 }
 double dblScaledRandom(Boolean getXValue) {
@@ -845,6 +854,8 @@ class EllipseCreature extends Creature {
     intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
   float width=scaledRandom(scaleToXY(350f));
   float height=scaledRandom(scaleToXY(350f));
+  double wiggleAmplitudeX = dblScaledRandom(30);
+  double wiggleAmplitudeY = dblScaledRandom(30);
   String getCreatureType() {
     return "Ellipse Creature";
   }
@@ -856,8 +867,8 @@ class EllipseCreature extends Creature {
     fill(data[0], data[1], data[2], data[3]);
     stroke(data[4], data[5], data[6], data[7]);
     strokeWeight(data[8]);
-    x += (float)random(scaleToX(-15f), scaleToX(15f));
-    y += (float)random(scaleToY(-5f), scaleToY(5f));
+    x += (float)random(scaleToX(-wiggleAmplitudeX), scaleToX(wiggleAmplitudeX));
+    y += (float)random(scaleToY(-wiggleAmplitudeY), scaleToY(wiggleAmplitudeY));
     ellipse(x, y, width, height);
   }
   void update() {
