@@ -17,6 +17,7 @@ void setup() {
   background(255);
   world.addSky(new Sky());
   world.add(new BreedingCreature());
+  /* SVG images are in the public domain. */
   cursor = loadShape("cursor.svg");
   cursorClicked = loadShape("cursorClicked.svg");
 }
