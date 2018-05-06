@@ -6,15 +6,15 @@
  */
 
 /* Configuration */
-float myXSize = 3000f;
-float myYSize = 1500f;
-float displayScalingFactor = 1;
-int minimumCreatures = 1;
-int maximumCreatures = 6;
+float myXSize = 1920f;
+float myYSize = 1030f;
+float displayScalingFactor = .25;
+int minimumCreatures = 6;
+int maximumCreatures = 16;
 int messageDisplayTime = 100;
-int lifespanCap = 2000;
+int lifespanCap = 1000;
 void setup() {
-  size(3000, 1500);
+  size(1920, 1030);
   //fullScreen();
   background(255);
   world.addSky(new Sky());
@@ -71,7 +71,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "arien", "ariel", "ilendrith", "eärendil", "luthien", "tinuviel", "lituaat",
 "ataniliez", "iridessa", "ivy", "blade", "sword", "knife", "dagger", "berry",
 "mud", "lifted", "mudding", "dirt", "nose", "git", "gloopy", "glitter",
-"dismember");
+"dismember", "fuzzy", "fuzzle", "nuzzle");
 
 // These are functions to help out by doing various calculations.
 
@@ -189,7 +189,7 @@ int randomNegativeFactor() {
 
 Creature randomCreatureType(String cause) {
   Creature newCreature = new BreedingCreature();
-  switch ((int)(Math.random() * 5)) {
+  switch ((int)(Math.random() * 7)) {
   case 0:
     newCreature = new BreedingCreature();
     break;
@@ -206,7 +206,7 @@ Creature randomCreatureType(String cause) {
     newCreature = new Wanderer((float)Math.random(), scaledRandom(true), scaledRandom(false));
     break;
   default:
-    break;
+    newCreature = new ShapeChangingCreature();
   }
   newCreature.greet(cause);
   return newCreature;
