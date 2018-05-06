@@ -45,7 +45,7 @@ float myXSize = 2000f;
 float myYSize = 2500f;
 int currentTick = 0;
 void setup() {
-  size(2000, 2500);
+  size(500, 2000);
   //fullScreen();
   background(255);
   world.addSky(new Sky());
