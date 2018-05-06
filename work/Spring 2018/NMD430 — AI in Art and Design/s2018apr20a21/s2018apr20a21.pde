@@ -254,7 +254,6 @@ void constrainedRect(float left,float top,float width,float height) {
 }
 
 void constrainedText(String text, float left,float top,float width,float height) {
-//System.out.println(getWordWithIndefiniteArticle(uppercaseFirstLetter("Ellipse creature")));
   if((left + width) > myXSize) {
     left = myXSize - width;
   }
