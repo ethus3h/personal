@@ -112,7 +112,7 @@ float getSize(Boolean getXValue) {
   return myYSize;
 }
 float scaleToX(float value) {
-  return (value * 2000) / myXSize;
+  return (value * 2000) / myYSize;
 }
 float scaleToY(float value) {
   return (value * 2000) / myXSize;
@@ -379,7 +379,7 @@ class Life implements Comparable<Life> {
     //System.out.println(this.y);
     if(this.messageSet == 1) {
       if(this.messageAge < 50) {
-        textSize(50);
+        textSize(scaleToXY(50f));
         fill(255,255,255);
         constrainedRect(this.x + scaleToX(300f),this.y + scaleToY(300f),scaleToX(500f),scaleToY(500f));
         //triangle(this.x, this.y, this.x + 300, this.y + 300, this.x + 200, this.y + 200);
