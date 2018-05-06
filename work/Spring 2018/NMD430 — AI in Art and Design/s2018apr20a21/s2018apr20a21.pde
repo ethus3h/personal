@@ -654,13 +654,13 @@ class BreedingCreature extends Creature {
 }
 
 class ShapeChangingCreature extends Creature {
-  Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(), 
-    intScaledRandom(), intScaledRandom(), intScaledRandom(), 
+  Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(true), 
+    intScaledRandom(false), intScaledRandom(), intScaledRandom(), 
     intScaledRandom(), intScaledRandom(), intScaledRandom(), 
     intScaledRandom() };
   float rotation = 0;
-  int rotationX = intScaledRandom();
-  int rotationY = intScaledRandom();
+  int rotationX = intScaledRandom(true);
+  int rotationY = intScaledRandom(false);
   Boolean rotating = false;
   final int rotationRandomNegative = randomNegativeFactor();
   String getCreatureType() {
