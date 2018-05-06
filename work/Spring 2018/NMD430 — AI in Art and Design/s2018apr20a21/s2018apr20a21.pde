@@ -334,10 +334,10 @@ String randomName() {
 }
 
 void constrainedRect(float left,float top,float width,float height) {
-  if((left + width) > mySize) {
+  if((left + width) > myXSize) {
     left = 0;
   }
-  if((top + height) > mySize) {
+  if((top + height) > myYSize) {
     top = 0;
   }
   rect(left,top,width,height);
