@@ -74,7 +74,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "dismember", "fuzzy", "fuzzle", "nuzzle", "seth", "sebas", "abel", "jeanette",
 "shots", "beerpong", "kangaroo", "cluck", "lapchicken", "lap", "sweet",
 "dope", "shiver", "mysterious", "misty", "yellowriver", "chaika", "shalltear",
-"lina", "inverse", "zelgadis", "recettear", "eryi");
+"lina", "inverse", "zelgadis", "recettear", "eryi", "surgery", "psycho",
+"genki");
 
 // These are functions to help out by doing various calculations.
 
