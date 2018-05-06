@@ -73,7 +73,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "mud", "lifted", "mudding", "dirt", "nose", "git", "gloopy", "glitter",
 "dismember", "fuzzy", "fuzzle", "nuzzle", "seth", "sebas", "abel", "jeanette",
 "shots", "beerpong", "kangaroo", "cluck", "lapchicken", "lap", "sweet",
-"dope", "shiver");
+"dope", "shiver"  );
 
 // These are functions to help out by doing various calculations.
 
@@ -747,6 +747,7 @@ class ShapeChangingCreature extends Creature {
     intScaledRandom(false), intScaledRandom(true), intScaledRandom(false), 
     intScaledRandom(true), intScaledRandom(false), intScaledRandom(true), 
     intScaledRandom(false) };
+  double rotationRate = dblScaledRandom(4);
   float rotation = 0;
   int rotationX = intScaledRandom(true);
   int rotationY = intScaledRandom(false);
@@ -794,7 +795,7 @@ class ShapeChangingCreature extends Creature {
       this.rotating = true;
     }
     if(this.rotating) {
-      this.rotation += 0.1;
+      this.rotation += this.rotationRate;
       if(this.rotation == 360) {
         this.rotation = 0;
         this.rotating = false;
