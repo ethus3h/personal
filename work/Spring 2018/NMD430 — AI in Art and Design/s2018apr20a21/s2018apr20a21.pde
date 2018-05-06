@@ -382,19 +382,20 @@ void constrainedText(String text, float left,float top,float width,float height)
 }
 
 String getWordWithIndefiniteArticle(String input) {
-      if (
-      (uppercaseFirstLetter(this.getCreatureType()).equals("A")) ||
-      (uppercaseFirstLetter(this.getCreatureType()).equals("E")) || 
-      (uppercaseFirstLetter(this.getCreatureType()).equals("I")) || 
-      (uppercaseFirstLetter(this.getCreatureType()).equals("O")) || 
-      (uppercaseFirstLetter(this.getCreatureType()).equals("U"))
-    ) {
-      /* It is a vowel so say with "an" */
-    }
-    else {
-      /* It is not, so say with "a" */
-    }
-
+  if (
+    (uppercaseFirstLetter(input).equals("A")) ||
+    (uppercaseFirstLetter(input).equals("E")) || 
+    (uppercaseFirstLetter(input).equals("I")) || 
+    (uppercaseFirstLetter(input).equals("O")) || 
+    (uppercaseFirstLetter(input).equals("U"))
+  ) {
+    /* It is a vowel so say with "an" */
+    return "an " + input;
+  }
+  else {
+    /* It is not, so say with "a" */
+    return "a " + input;
+  }
 }
 
 class Life implements Comparable<Life> {
