@@ -348,19 +348,19 @@ String randomName() {
 void constrainedRect(float left,float top,float width,float height) {
   if((left + width) > myXSize) {
     left = myXSize - width;
-    System.out.println("Constrained rect left -");
+    //System.out.println("Constrained rect left -");
   }
   if((left + width) < 0) {
     left = width;
-    System.out.println("Constrained rect left +");
+    //System.out.println("Constrained rect left +");
   }
   if((top + height) > myYSize) {
     top = myYSize - height;
-    System.out.println("Constrained rect top -");
+    //System.out.println("Constrained rect top -");
   }
   if((top + height) < 0) {
     top = height;
-    System.out.println("Constrained rect top +");
+    //System.out.println("Constrained rect top +");
   }
   rect(left,top,width,height);
 }
@@ -413,9 +413,14 @@ class Life implements Comparable<Life> {
         }
       }
     }
+    else {
+      if(this.dead == 1) {
+        this.dead=2;
+      }
+    }
   }
   void message(String message) {
-    if(this.message != message) {
+    if(this.message.equals(message)) {
       System.out.println(message);
       this.messageAge=0;
       this.message=message;
@@ -604,6 +609,7 @@ class SceneManager {
 }
 
 class Creature extends Life {
+  /* This is the base class of creatures that other creatures inherit from. */
   Integer waterSatiation = 0;
   Integer jealousy = 0;
   void draw() {
@@ -689,6 +695,7 @@ class BreedingCreature extends Creature {
 }
 
 class ShapeChangingCreature extends Creature {
+  /* This kind of creature has a random shape. */
   Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(true), 
     intScaledRandom(false), intScaledRandom(true), intScaledRandom(false), 
     intScaledRandom(true), intScaledRandom(false), intScaledRandom(true), 
@@ -702,6 +709,7 @@ class ShapeChangingCreature extends Creature {
     return "Shape-Changing Creature";
   }
   void draw() {
+    /* pushMatrix to allow restoring position after drawing */
     pushMatrix();
     translate(rotationX, rotationY);
     this.x=rotationX;
@@ -709,6 +717,7 @@ class ShapeChangingCreature extends Creature {
     float rotationTempStatus = rotationRandomNegative * ((((rotation/360)*TWO_PI) * 2) - TWO_PI);
     rotate(rotationTempStatus);
     //System.out.println("Rotated by "+rotationTempStatus);
+    /* Choose what shape to be */
     switch (data[0]) {
     case 0:
       triangle(data[1], data[2], data[3], data[4], data[5], data[6]);
@@ -728,6 +737,7 @@ class ShapeChangingCreature extends Creature {
     default:
       break;
     }
+    /* popMatrix restores position after drawing */
     popMatrix();
   }
   void update() {
@@ -747,6 +757,7 @@ class ShapeChangingCreature extends Creature {
 }
 
 class ColorCreature extends Creature {
+  /* This type of creature changes the way other creatures are drawn, and is a wiggly rectangle. */
   Integer[] data = new Integer[] { intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), 
@@ -761,6 +772,8 @@ class ColorCreature extends Creature {
     y = scaledRandom(false);
   }
   void draw() {
+    /* By setting fill, stroke, and strokeWeight, but not restoring them,
+       it will influence these until they are next set. */
     fill(data[0], data[1], data[2], data[3]);
     stroke(data[4], data[5], data[6], data[7]);
     strokeWeight(data[8]);
@@ -775,6 +788,7 @@ class ColorCreature extends Creature {
 }
 
 class EllipseCreature extends Creature {
+  /* This is a wiggly ellipse. */
   Integer[] data = new Integer[] { intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), 
@@ -802,6 +816,7 @@ class EllipseCreature extends Creature {
 }
 
 class CreatureTemplate extends Creature {
+  /* This is an example of a creature. */
   Integer[] data = new Integer[] { (int)(Math.random() * 4), intScaledRandom(true), 
     intScaledRandom(false), intScaledRandom(true), intScaledRandom(false), 
     intScaledRandom(true), intScaledRandom(false), intScaledRandom(true), 
@@ -824,10 +839,12 @@ void draw() {
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(0, 0, myXSize, myYSize);
+  /* world.update will update and draw all the creatures. */
   world.update();
   textSize(scaleToXY(80f));
   text(world.residents.size(), scaleToX(100f), scaleToY(350f));
 }
 void mouseClicked() {
+  /* This will pass the click event to any creatures that care about it. */
   world.click();
 }
