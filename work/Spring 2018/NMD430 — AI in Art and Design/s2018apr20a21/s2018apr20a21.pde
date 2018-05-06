@@ -886,10 +886,10 @@ void draw() {
   textSize(scaleToXY(80f));
   text(world.residents.size(), scaleToX(100f), scaleToY(350f));
   if(mousePressed) {
-    shape(cursorClicked, (mouseX - (scaleToXY(300f) / 2)), (mouseY - (scaleToXY(300f) / 2)), scaleToXY(300f), scaleToXY(300f));
+    shape(cursorClicked, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
   else {
-    shape(cursor, (mouseX - (scaleToXY(300f) / 2)), (mouseY - (scaleToXY(300f) / 2)), scaleToXY(300f), scaleToXY(300f));
+    shape(cursor, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
 }
 void mouseClicked() {
