@@ -36,10 +36,6 @@ SceneManager world = new SceneManager();
 PShape cursor;
 PShape cursorClicked;
 
-/* based on https://www.openprocessing.org/sketch/28053 */
-ArrayList particleList = new ArrayList();
-int maximumParticleCount = 50;
-
 List<String> names = Arrays.asList("blah", "bar", "mary",
 "jane", "alev", "iler", "echo", "bright", "storm", "last", "dance", "uns", "et",
 "un", "def", "ined", "ke", "sha", "256", "ruki", "vverh", "canna", "bis", "pix",
@@ -923,28 +919,6 @@ void draw() {
   }
   else {
     shape(cursor, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
-  }
-  /* based on https://www.openprocessing.org/sketch/28053 */
-  if(mousePressed) {
-    while(particleList.size() > 0) {
-      for(int i = 0; i < particleList.size(); i++) {
-        particleList.remove(i);
-      }
-    }
-    for (int i = 0; i < maximumParticleCount; i ++) {
-      particleList.add(new Particle(mouseX,mouseY)); // fill ArrayList with particles
-  
-      if(particleList.size() > 5*maximumParticleCount) {
-        particleList.remove(0);
-      }
-    } 
-  }
-  for(int i = 0; i < particleList.size(); i++) {
-    Particle p = (Particle) particleList.get(i); 
-    //makes p a particle equivalent to ith particle in ArrayList
-    p.run();
-    p.update();
-    p.gravity();
   }
 }
 void mouseClicked() {
