@@ -22,8 +22,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "rum", "sergey", "lazarev", "zhukov", "tree", "spirit", "dragon", "flame",
 "lilith", "inanna", "lucifer", "krillin", "cute", "blood", "artemis", "fey",
 "dream", "er", "bobella", "padu", "andra", "pradesh", "unive", "rsity", "cutie",
-"shroom", "s", "meredith", "nancy", "springer", "rowan", "hood", "fish",
-"fauna", "job", "merry", "lobster", "salmon", "drippins", "sammitch",
+"shroom", "s", "meredith", "nancy", "springer", "rowan", "hood", "fish", "hungry",
+"fauna", "job", "merry", "lobster", "salmon", "drippins", "sammitch", "tongue",
 "jerky", "flora", "chas", "ling", "ting", "earth", "sacredland", "kde", "tux",
 "elliot", "chandler", "amman", "leaf", "gold", "copper", "coppiced", "beech",
 "iar", "let", "ly", "elli", "nara", "na", "aureate", "luxa", "breath", "aeol",
@@ -39,7 +39,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "clover", "buttercup", "rose", "tradukuh", "clover", "dandelion", "kitten",
 "wind", "angel", "flutter", "glimmer", "flitter", "shine", "shining", "shiny",
 "^.^", "^_^", ":3", "<3", "^~^", "yume", "nexus", "no", "miko", "hatsune",
-"miku", "ripred", "bloodlet", "shatter", "fractured", "ember") ;
+"miku", "ripred", "bloodlet", "shatter", "fractured", "ember", "mind") ;
 
 float myXSize = 3000f;
 float myYSize = 1500f;
