@@ -872,6 +872,7 @@ void draw() {
   world.update();
   textSize(scaleToXY(80f));
   text(world.residents.size(), scaleToX(100f), scaleToY(350f));
+  shape(cursor, mouseX, mouseY, scaleToXY(300f), scaleToXY(300f));
 }
 void mouseClicked() {
   /* This will pass the click event to any creatures that care about it. */
