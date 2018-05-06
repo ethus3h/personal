@@ -406,7 +406,7 @@ class Life implements Comparable<Life> {
           newName = randomName()+(randomName().toLowerCase())+(randomName().toLowerCase());
           break;
         case 5:
-          newName = randomName()+" "+randomName().toLowerCase()+(randomName().toLowerCase());
+          newName = randomName()+" "+randomName()+(randomName().toLowerCase());
           break;
         default:
           break;
