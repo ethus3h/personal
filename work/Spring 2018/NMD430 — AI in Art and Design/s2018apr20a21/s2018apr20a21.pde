@@ -11,6 +11,7 @@ float myYSize = 1500f;
 float displayScalingFactor = 1;
 int minimumCreatures = 1;
 int maximumCreatures = 6;
+int messageDisplayTime = 100;
 int lifespanCap = 2000;
 void setup() {
   size(3000, 1500);
@@ -69,7 +70,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "ancient", "pale", "amber", "goku", "betrayal", "xan", "ilien", "alien",
 "arien", "ariel", "ilendrith", "eärendil", "luthien", "tinuviel", "lituaat",
 "ataniliez", "iridessa", "ivy", "blade", "sword", "knife", "dagger", "berry",
-"mud", "lifted", "mudding", "dirt", "nose");
+"mud", "lifted", "mudding", "dirt", "nose", "git", "gloopy", "glitter",
+"dismember");
 
 // These are functions to help out by doing various calculations.
 
@@ -384,7 +386,7 @@ class Life implements Comparable<Life> {
     //System.out.println(this.x);
     //System.out.println(this.y);
     if(this.messageSet == 1) {
-      if(this.messageAge < 80) {
+      if(this.messageAge < messageDisplayTime) {
         textSize(scaleToXY(50f));
         fill(255,255,255);
         constrainedRect(this.x + scaleToX(300f),this.y + scaleToY(300f),scaleToX(500f),scaleToY(500f));
