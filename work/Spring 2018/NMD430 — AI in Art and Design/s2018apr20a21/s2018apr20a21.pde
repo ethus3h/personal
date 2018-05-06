@@ -1,7 +1,7 @@
 /**
  * Title: Final Assignment
  * Name: Elliot Chandler (Wallace)
- * Date: 2018 May 1
+ * Date: 2018 May 6
  * Description: A virtual interactive ecosystem.
  */
 import java.util.Arrays;
@@ -407,6 +407,9 @@ class Life implements Comparable<Life> {
           break;
         case 5:
           newName = randomName()+" "+randomName()+(randomName().toLowerCase());
+          break;
+        case 6:
+          newName = randomName()+" "+randomName()+" "+randomName();
           break;
         default:
           break;
