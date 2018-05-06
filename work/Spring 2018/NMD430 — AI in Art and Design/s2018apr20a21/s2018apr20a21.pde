@@ -168,7 +168,7 @@ int randomNegativeFactor() {
 
 Creature randomCreatureType(String cause) {
   Creature newCreature = new BreedingCreature();
-  switch ((int)(Math.random() * 4)) {
+  switch ((int)(Math.random() * 5)) {
   case 0:
     newCreature = new BreedingCreature();
     break;
@@ -179,6 +179,9 @@ Creature randomCreatureType(String cause) {
     newCreature = new ColorCreature();
     break;
   case 3:
+    newCreature = new EllipseCreature();
+    break;
+  case 4:
     newCreature = new Wanderer((float)Math.random(), scaledRandom(true), scaledRandom(false));
     break;
   default:
