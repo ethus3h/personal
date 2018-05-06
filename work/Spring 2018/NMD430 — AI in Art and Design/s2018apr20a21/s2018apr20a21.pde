@@ -902,6 +902,8 @@ void draw() {
 void mouseClicked() {
   /* This will pass the click event to any creatures that care about it. */
   world.click();
+  cursor.disableStyle();
+  cursorClicked.disableStyle();
   cursor.setFill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   cursor.setStroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   cursorClicked.setFill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
