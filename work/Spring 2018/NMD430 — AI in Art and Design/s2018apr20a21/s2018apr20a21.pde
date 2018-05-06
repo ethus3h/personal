@@ -57,7 +57,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "ember", "party", "flight", "gold", "creeping-death", "ebenezer", "margaret",
 "maude", "harold", "temperance", "prudence", "nancy", "crystal", "fire",
 "autumn", "winter", "fall", "spring", "summer", "crocus", "lily", "lilac",
-"clover", "buttercup", "rose", "tradukuh", "nat", "dandelion", "kitten",
+"clover", "buttercup", "rose", "tradukuh", "nat", "dandelion", "violet",
 "wind", "angel", "flutter", "glimmer", "flitter", "shine", "shining", "shiny",
 "^.^", "^_^", ":3", "<3", "^~^", "yume", "nexus", "no", "miko", "hatsune",
 "miku", "ripred", "bloodlet", "shatter", "fractured", "ember", "mind", "iridescent",
@@ -67,7 +67,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "frost", "young", "old", "sleeping", "dusk", "dawn", "beyond", "anna", "anaral",
 "ancient", "pale", "amber", "goku", "betrayal", "xan", "ilien", "alien",
 "arien", "ariel", "ilendrith", "eärendil", "luthien", "tinuviel", "lituaat",
-"ataniliez", "iridessa");
+"ataniliez", "iridessa", "ivy", "blade", "sword", "knife", "dagger");
 
 // These are functions to help out by doing various calculations.
 
