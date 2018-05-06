@@ -426,6 +426,9 @@ class Life implements Comparable<Life> {
       this.message=message;
       this.messageSet=1;
     }
+    else {
+      System.out.println(this.message + " not equals " + message);
+    }
   }
   void greet(String cause) {
     this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
