@@ -344,10 +344,12 @@ String randomName() {
 
 void constrainedRect(float left,float top,float width,float height) {
   if((left + width) > myXSize) {
-    left = 0;
+    left = left - width;
+    System.out.println("Constrained rect left");
   }
   if((top + height) > myYSize) {
-    top = 0;
+    top = top - width;
+    System.out.println("Constrained rect top");
   }
   rect(left,top,width,height);
 }
