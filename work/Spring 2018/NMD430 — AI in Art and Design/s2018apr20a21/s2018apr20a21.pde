@@ -772,8 +772,8 @@ void draw() {
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
   rect(0, 0, myXSize, myYSize);
   world.update();
-  textSize(80);
-  text(world.residents.size(), 100, 350);
+  textSize(scaleToXY(80f));
+  text(world.residents.size(), scaleToX(100f), scaleToY(350f));
 }
 void mouseClicked() {
   world.click();
