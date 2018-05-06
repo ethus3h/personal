@@ -450,8 +450,10 @@ class Life implements Comparable<Life> {
   void click() {
   }
   void die(String cause) {
-    this.dead = 1;
-    this.message(this.getCreatureName()+", "+getWordWithIndefiniteArticle(this.getCreatureType())+", has died from "+cause+".");
+    if(this.dead == 0) {
+      this.dead = 1;
+      this.message(this.getCreatureName()+", "+getWordWithIndefiniteArticle(this.getCreatureType())+", has died from "+cause+".");
+    }
   }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
