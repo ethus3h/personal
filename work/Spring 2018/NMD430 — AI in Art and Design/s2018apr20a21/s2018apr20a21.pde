@@ -365,19 +365,15 @@ void constrainedRect(float left,float top,float width,float height) {
 void constrainedText(String text, float left,float top,float width,float height) {
   if((left + width) > myXSize) {
     left = myXSize - width;
-    System.out.println("Constrained text left -");
   }
   if((left + width) < 0) {
     left = width;
-    System.out.println("Constrained text left +");
   }
   if((top + height) > myYSize) {
     top = myYSize - height;
-    System.out.println("Constrained text top -");
   }
   if((top + height) < 0) {
     top = height;
-    System.out.println("Constrained text top +");
   }
   text(text, left,top,width,height);
 }
