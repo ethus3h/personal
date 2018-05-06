@@ -73,7 +73,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "mud", "lifted", "mudding", "dirt", "nose", "git", "gloopy", "glitter",
 "dismember", "fuzzy", "fuzzle", "nuzzle", "seth", "sebas", "abel", "jeanette",
 "shots", "beerpong", "kangaroo", "cluck", "lapchicken", "lap", "sweet",
-"dope", "shiver", "mysterious", "misty", "yellowriver" );
+"dope", "shiver", "mysterious", "misty", "yellowriver", "chaika", "shalltear",
+"lina", "inverse", "zelgadis", "recettear", "eryi");
 
 // These are functions to help out by doing various calculations.
 
@@ -901,4 +902,8 @@ void draw() {
 void mouseClicked() {
   /* This will pass the click event to any creatures that care about it. */
   world.click();
+  cursor.setFill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
+  cursor.setStroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
+  cursorClicked.setFill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
+  cursorClicked.setStroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
 }
