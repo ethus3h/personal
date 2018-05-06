@@ -8,7 +8,7 @@
 /* Configuration */
 float myXSize = 3000f;
 float myYSize = 1500f;
-int minimumCreatures = 0;
+int minimumCreatures = 1;
 int maximumCreatures = 6;
 int lifespanCap = 2000;
 void setup() {
@@ -63,7 +63,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "miku", "ripred", "bloodlet", "shatter", "fractured", "ember", "mind",
 "olive", "alexander", "ppe btw lelxd", "oliver", "luka", "alina", "green",
 "white", "black", "lavender", "mauve", "verdant", "sylvan", "fantasy",
-"kokiri", "horror") ;
+"kokiri", "horror", "rye", "bran", "gwen", "​no", "​uwu", "rain", "snow", "mist",
+"frost");
 
 // These are functions to help out by doing various calculations.
 
