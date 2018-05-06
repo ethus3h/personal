@@ -41,7 +41,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "^.^", "^_^", ":3", "<3", "^~^", "yume", "nexus", "no", "miko", "hatsune",
 "miku", "ripred", "bloodlet", "shatter", "fractured", "ember", "mind",
 "olive", "alexander", "ppe btw lelxd", "oliver", "luka", "alina", "green",
-"white", "black", "lavender", "mauve", ) ;
+"white", "black", "lavender", "mauve", "verdant", "sylvan", "fantasy",
+"kokiri", "horror") ;
 
 float myXSize = 3000f;
 float myYSize = 1500f;
