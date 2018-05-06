@@ -633,10 +633,10 @@ class BreedingCreature extends Creature {
       }
     }
     // Reproduction state
-    if (waterSatiation > 200) {
+    if (waterSatiation > scaleToXY(200f)) {
       // It's fully healthy, doesn't need any more water. So, it has enough energy to safely reproduce.
       world.add(randomCreatureType("a breeding creature"));
-      waterSatiation = 50;
+      waterSatiation = (int)scaleToXY(50f);
     }
     // Also get its jealousy
     // Calculate jealousy
@@ -658,7 +658,7 @@ class BreedingCreature extends Creature {
         }
       }
     }
-    this.size = 100 + (waterSatiation); // 100 is its base size, it grows with the more water it has
+    this.size = scaleToXY(100f) + (waterSatiation); // 100 is its base size, it grows with the more water it has
   }
 }
 
@@ -725,8 +725,8 @@ class ColorCreature extends Creature {
     intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), 
     intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
-  float width=scaledRandom(350);
-  float height=scaledRandom(350);
+  float width=scaledRandom(scaleToXY(350f));
+  float height=scaledRandom(scaleToXY(350f));
   String getCreatureType() {
     return "Color Creature";
   }
@@ -738,8 +738,8 @@ class ColorCreature extends Creature {
     fill(data[0], data[1], data[2], data[3]);
     stroke(data[4], data[5], data[6], data[7]);
     strokeWeight(data[8]);
-    x += (float)random(-5, 5);
-    y += (float)random(-5, 5);
+    x += (float)random(scaleToX(-5f), scaleToX(5f));
+    y += (float)random(scaleToY(-5f), scaleToY(5f));
     rect(x, y, width, height);
   }
   void update() {
@@ -770,7 +770,7 @@ void draw() {
   currentTick = currentTick + 1;
 
   fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
-  rect(-10, -10, 18000, 18000);
+  rect(0, 0, myXSize, myYSize);
   world.update();
   textSize(80);
   text(world.residents.size(), 100, 350);
