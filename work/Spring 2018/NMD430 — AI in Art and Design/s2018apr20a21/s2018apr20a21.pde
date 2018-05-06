@@ -387,6 +387,11 @@ class Life implements Comparable<Life> {
         constrainedText(this.message, this.x + scaleToX(300f), this.y + scaleToY(300f),scaleToX(500f),scaleToY(500f));
         this.messageAge=this.messageAge+1;
       }
+      else {
+        if(this.dead == 1) {
+          this.dead=2;
+        }
+      }
     }
   }
   void message(String message) {
