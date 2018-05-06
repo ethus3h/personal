@@ -9,8 +9,8 @@
 float myXSize = 3000f; /* 1920 */
 float myYSize = 1920f; /* 1030 */
 float displayScalingFactor = 1; /* .25 */
-int minimumCreatures = 6;
-int maximumCreatures = 16;
+int minimumCreatures = 10;
+int maximumCreatures = 30;
 int messageDisplayTime = 100;
 int lifespanCap = 1000;
 void setup() {
