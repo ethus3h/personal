@@ -4,6 +4,21 @@
  * Date: 2018 May 6
  * Description: A virtual interactive ecosystem.
  */
+
+/* Configuration */
+float myXSize = 3000f;
+float myYSize = 1500f;
+int minimumCreatures = 0;
+int maximumCreatures = 6;
+int lifespanCap = 2000;
+void setup() {
+  size(3000, 1500);
+  //fullScreen();
+  background(255);
+  world.addSky(new Sky());
+  world.add(new BreedingCreature());
+}
+
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import java.util.List;
@@ -11,6 +26,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 
+int currentTick = 0;
 SceneManager world = new SceneManager();
 
 List<String> names = Arrays.asList("blah", "bar", "mary",
@@ -43,17 +59,6 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "olive", "alexander", "ppe btw lelxd", "oliver", "luka", "alina", "green",
 "white", "black", "lavender", "mauve", "verdant", "sylvan", "fantasy",
 "kokiri", "horror") ;
-
-float myXSize = 3000f;
-float myYSize = 1500f;
-int currentTick = 0;
-void setup() {
-  size(3000, 1500);
-  //fullScreen();
-  background(255);
-  world.addSky(new Sky());
-  world.add(new BreedingCreature());
-}
 
 // These are functions to help out by doing various calculations.
 
