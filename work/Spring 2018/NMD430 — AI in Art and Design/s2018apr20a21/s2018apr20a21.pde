@@ -924,6 +924,15 @@ void draw() {
   else {
     shape(cursor, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
+  /* based on https://www.openprocessing.org/sketch/28053 */
+  if(mousePressed && mouseButton == RIGHT) {
+    background(50);
+    while(particleList.size() > 0) {
+      for(int i = 0; i < particleList.size(); i++) {
+        particleList.remove(i);
+      }
+    }
+  }
   for(int i = 0; i < particleList.size(); i++) {
     Particle p = (Particle) particleList.get(i); 
     //makes p a particle equivalent to ith particle in ArrayList
@@ -939,11 +948,6 @@ void mouseClicked() {
   fill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   stroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   world.click();
-  while(particleList.size() > 0) {
-    for(int i = 0; i < particleList.size(); i++) {
-      particleList.remove(i);
-    }
-  }
   /* based on https://www.openprocessing.org/sketch/28053 */
   for (int i = 0; i < maximumParticleCount; i ++) {
     particleList.add(new Particle(mouseX,mouseY)); // fill ArrayList with particles

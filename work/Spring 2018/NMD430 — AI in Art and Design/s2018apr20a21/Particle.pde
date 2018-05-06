@@ -1,5 +1,9 @@
+//Copyright Jonathan Fraser 2011
+//Free to use for non-commercial purposes
+//Enjoy :)
+/* Particle class from https://www.openprocessing.org/sketch/28053 */
+
 class Particle {
-  /* Particle class from https://www.openprocessing.org/sketch/28053 */
   float r = 2;
   PVector pos,speed,grav; 
   ArrayList tail;
