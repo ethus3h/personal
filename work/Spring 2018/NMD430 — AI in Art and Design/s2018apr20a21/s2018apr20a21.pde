@@ -924,6 +924,13 @@ void draw() {
   else {
     shape(cursor, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
+  for(int i = 0; i < plist.size(); i++) {
+    Particle p = (Particle) plist.get(i); 
+    //makes p a particle equivalent to ith particle in ArrayList
+    p.run();
+    p.update();
+    p.gravity();
+  }
 }
 void mouseClicked() {
   /* This will pass the click event to any creatures that care about it. */
@@ -932,4 +939,16 @@ void mouseClicked() {
   fill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   stroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   world.click();
+  while(particleList.size() > 0) {
+    for(int i = 0; i < particleList.size(); i++) {
+      particleList.remove(i);
+    }
+  }
+  for (int i = 0; i < maximumParticleCount; i ++) {
+    particleList.add(new Particle(mouseX,mouseY)); // fill ArrayList with particles
+
+    if(particleList.size() > 5*maximumParticleCount) {
+      particleList.remove(0);
+    }
+  } 
 }
