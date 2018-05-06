@@ -202,133 +202,6 @@ boolean overCircle(int x, int y, int diameter) {
   }
 }
 
-
-class Wanderer extends Creature {
-  private final float followTendency;
-  private final int id;
-  private final float specifiedX;
-  private final float specifiedY;
-  final float ellipseStartX;
-  final float ellipseStartY;
-  public Wanderer(float initFollowTendency, float x, float y) {
-    this.followTendency = initFollowTendency;
-    this.specifiedX = x;
-    this.specifiedY = y;
-    this.ellipseStartX = x;
-    this.ellipseStartY = y;
-    if (initFollowTendency == 0) {
-      this.id = 0;
-    } else if (initFollowTendency == 1) {
-      this.id = 1;
-    } else {
-      this.id = (int)(initFollowTendency*10);
-    }
-  }
-  int step = 0;
-  double memory[] = new double[10000];
-  int strokeColor[] = new int[3];
-  int innerColor[] = new int[3];
-  int midColor[] = new int[3];
-  int outerColor[] = new int[3];
-  float ellipsePosX=this.specifiedX;
-  float ellipsePosY=this.specifiedY;
-  float ellipseHomeX=this.specifiedX;
-  float ellipseHomeY=this.specifiedY;
-  float ellipsePrevPosX=this.specifiedX;
-  float ellipsePrevPosY=this.specifiedY;
-  float personalityCached=0;
-  float moodCached=0;
-  float speed=0;
-  float monitor = 1;
-  void remember(float value) {
-    if (step >= 10000) {
-      step = 0;
-    } 
-    memory[step]=(value + memory[step]) / 2;
-    step=step + 1;
-  }
-
-  String getCreatureType() {
-    return "Wanderer";
-  }
-  float getPersonality() {
-    float result=(float)Arrays.stream(memory).average().getAsDouble();
-    personalityCached=result;
-    return result;
-  }
-
-  float getMood() {
-    double[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
-    float result=(float)Arrays.stream(mem).average().getAsDouble();
-    moodCached=result;
-    return result;
-  }
-
-  void click() {
-    remember(100000);
-  }
-
-  void draw() {
-    this.updateLifespan();
-    remember(smoothMod((ellipsePosX + mouseX) / 2, myXSize));
-    remember(smoothMod((ellipsePosY + mouseY) / 2, myYSize));
-
-    ellipsePrevPosX=ellipsePosX;
-    ellipsePrevPosY=ellipsePosY;
-    ellipseHomeX=lerp(ellipseStartX, ellipsePrevPosX, followTendency);
-    ellipseHomeY=lerp(ellipseStartY, ellipsePrevPosY, followTendency);
-
-    int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
-
-    if ( mouseDistFromHome < (scaleToXY(500f) + getPersonality()) * scaleToXY(3.5f)) {
-      ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
-      ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
-
-      if ( mouseDistFromHome > ((scaleToXY(500f) + (getPersonality() / 2)) * scaleToXY(1.5f))) {
-        try {
-          ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
-        }
-        catch(Exception e) {
-          ellipsePosY=ellipseHomeY;
-        }
-        try {
-          ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
-        }   
-        catch(Exception e) {
-          ellipsePosX=ellipseHomeX;
-        }
-      }
-    }
-    speed=((float)getMood() / scaleToXY(600f)) + (monitor / scaleToXY(30f));
-    //System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
-    ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
-    ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
-
-    strokeColor[0]=(int)weightedAvg(strokeColor[0], getMood() * 10);
-    strokeColor[1]=(int)weightedAvg(strokeColor[1], smoothMod(getPersonality(), 255));
-    strokeColor[2]=(int)weightedAvg(strokeColor[2], ((getMood() * 10) + getPersonality()) / 2);
-    stroke(strokeColor[0], strokeColor[1], strokeColor[2]);
-
-    innerColor[0]=(int)weightedAvg(smoothMod(ellipsePosX, 255), smoothMod((int)(mouseX/followTendency), 255));
-    innerColor[1]=(int)weightedAvg(smoothMod(ellipsePosY, 255), smoothMod((int)(mouseY/followTendency), 255));
-    innerColor[2]=(int)weightedAvg(smoothMod(((int)weightedAvg(ellipsePosY * 100, ellipsePosX * 100)) / 100, 255), ((mouseX/4+mouseY/4) % 255));
-    fill(innerColor[0], innerColor[1], innerColor[2]);
-    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f) + (scaleToX(230f) * followTendency), scaleToY(400f) + (scaleToY(230f) * followTendency));
-
-    midColor[0]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseX/followTendency), 320));
-    midColor[1]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseY/followTendency), 320));
-    midColor[2]=(int)weightedAvg(smoothMod(getMood(), 255), ((mouseX/4+mouseY/4) % 255));
-    fill(midColor[0], midColor[1], midColor[2]);
-    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f) + (scaleToX(200f) * speed), scaleToY(400f) + (scaleToY(200f) * speed));
-
-    outerColor[0]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseY/followTendency), 300));
-    outerColor[1]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseX/followTendency), 300));
-    outerColor[2]=(int)weightedAvg(smoothMod(getPersonality(), 255), ((mouseX/4+mouseY/4) % 255));
-    fill(outerColor[0], outerColor[1], outerColor[2]);
-    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f), scaleToY(400f));
-  }
-}
-
 public class LifeComparator implements Comparator<Life> {
   @Override
     public int compare(Life a, Life b) {
@@ -487,7 +360,7 @@ class Life implements Comparable<Life> {
   }
   void die(String cause) {
     this.dead = 1;
-    this.message(this.getCreatureName()+", a "+this.getCreatureType()+", has died from "+cause+".");
+    this.message(this.getCreatureName()+", "+getWordWithIndefiniteArticle(this.getCreatureType())+", has died from "+cause+".");
   }
   void updateLifespan() {
     this.aliveTime = this.aliveTime + 1;
@@ -652,6 +525,132 @@ class Creature extends Life {
         }
       }
     }
+  }
+}
+
+class Wanderer extends Creature {
+  private final float followTendency;
+  private final int id;
+  private final float specifiedX;
+  private final float specifiedY;
+  final float ellipseStartX;
+  final float ellipseStartY;
+  public Wanderer(float initFollowTendency, float x, float y) {
+    this.followTendency = initFollowTendency;
+    this.specifiedX = x;
+    this.specifiedY = y;
+    this.ellipseStartX = x;
+    this.ellipseStartY = y;
+    if (initFollowTendency == 0) {
+      this.id = 0;
+    } else if (initFollowTendency == 1) {
+      this.id = 1;
+    } else {
+      this.id = (int)(initFollowTendency*10);
+    }
+  }
+  int step = 0;
+  double memory[] = new double[10000];
+  int strokeColor[] = new int[3];
+  int innerColor[] = new int[3];
+  int midColor[] = new int[3];
+  int outerColor[] = new int[3];
+  float ellipsePosX=this.specifiedX;
+  float ellipsePosY=this.specifiedY;
+  float ellipseHomeX=this.specifiedX;
+  float ellipseHomeY=this.specifiedY;
+  float ellipsePrevPosX=this.specifiedX;
+  float ellipsePrevPosY=this.specifiedY;
+  float personalityCached=0;
+  float moodCached=0;
+  float speed=0;
+  float monitor = 1;
+  void remember(float value) {
+    if (step >= 10000) {
+      step = 0;
+    } 
+    memory[step]=(value + memory[step]) / 2;
+    step=step + 1;
+  }
+
+  String getCreatureType() {
+    return "Wanderer";
+  }
+  float getPersonality() {
+    float result=(float)Arrays.stream(memory).average().getAsDouble();
+    personalityCached=result;
+    return result;
+  }
+
+  float getMood() {
+    double[] mem=Arrays.copyOfRange(memory, Math.max(step - 100, 0), Math.max(step, 1));
+    float result=(float)Arrays.stream(mem).average().getAsDouble();
+    moodCached=result;
+    return result;
+  }
+
+  void click() {
+    remember(100000);
+  }
+
+  void draw() {
+    this.updateLifespan();
+    remember(smoothMod((ellipsePosX + mouseX) / 2, myXSize));
+    remember(smoothMod((ellipsePosY + mouseY) / 2, myYSize));
+
+    ellipsePrevPosX=ellipsePosX;
+    ellipsePrevPosY=ellipsePosY;
+    ellipseHomeX=lerp(ellipseStartX, ellipsePrevPosX, followTendency);
+    ellipseHomeY=lerp(ellipseStartY, ellipsePrevPosY, followTendency);
+
+    int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
+
+    if ( mouseDistFromHome < (scaleToXY(500f) + getPersonality()) * scaleToXY(3.5f)) {
+      ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+      ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
+
+      if ( mouseDistFromHome > ((scaleToXY(500f) + (getPersonality() / 2)) * scaleToXY(1.5f))) {
+        try {
+          ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+        }
+        catch(Exception e) {
+          ellipsePosY=ellipseHomeY;
+        }
+        try {
+          ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
+        }   
+        catch(Exception e) {
+          ellipsePosX=ellipseHomeX;
+        }
+      }
+    }
+    speed=((float)getMood() / scaleToXY(600f)) + (monitor / scaleToXY(30f));
+    //System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
+    ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
+    ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
+
+    strokeColor[0]=(int)weightedAvg(strokeColor[0], getMood() * 10);
+    strokeColor[1]=(int)weightedAvg(strokeColor[1], smoothMod(getPersonality(), 255));
+    strokeColor[2]=(int)weightedAvg(strokeColor[2], ((getMood() * 10) + getPersonality()) / 2);
+    stroke(strokeColor[0], strokeColor[1], strokeColor[2]);
+
+    innerColor[0]=(int)weightedAvg(smoothMod(ellipsePosX, 255), smoothMod((int)(mouseX/followTendency), 255));
+    innerColor[1]=(int)weightedAvg(smoothMod(ellipsePosY, 255), smoothMod((int)(mouseY/followTendency), 255));
+    innerColor[2]=(int)weightedAvg(smoothMod(((int)weightedAvg(ellipsePosY * 100, ellipsePosX * 100)) / 100, 255), ((mouseX/4+mouseY/4) % 255));
+    fill(innerColor[0], innerColor[1], innerColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f) + (scaleToX(230f) * followTendency), scaleToY(400f) + (scaleToY(230f) * followTendency));
+
+    midColor[0]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseX/followTendency), 320));
+    midColor[1]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseY/followTendency), 320));
+    midColor[2]=(int)weightedAvg(smoothMod(getMood(), 255), ((mouseX/4+mouseY/4) % 255));
+    fill(midColor[0], midColor[1], midColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f) + (scaleToX(200f) * speed), scaleToY(400f) + (scaleToY(200f) * speed));
+
+    outerColor[0]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseY/followTendency), 300));
+    outerColor[1]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseX/followTendency), 300));
+    outerColor[2]=(int)weightedAvg(smoothMod(getPersonality(), 255), ((mouseX/4+mouseY/4) % 255));
+    fill(outerColor[0], outerColor[1], outerColor[2]);
+    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f), scaleToY(400f));
   }
 }
 
