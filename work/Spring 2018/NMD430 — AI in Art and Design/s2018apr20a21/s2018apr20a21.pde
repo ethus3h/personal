@@ -70,13 +70,14 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "ancient", "pale", "amber", "goku", "betrayal", "xan", "ilien", "alien",
 "arien", "ariel", "ilendrith", "eärendil", "luthien", "tinuviel", "lituaat",
 "ataniliez", "iridessa", "ivy", "blade", "sword", "knife", "dagger", "berry",
-"mud", "lifted", "mudding", "dirt", "nose", "git", "gloopy", "glitter",
+"mud", "lifted", "mudding", "dirt", "rims", "nose", "git", "gloopy", "glitter",
 "dismember", "fuzzy", "fuzzle", "nuzzle", "seth", "sebas", "abel", "jeanette",
 "shots", "beerpong", "kangaroo", "cluck", "lapchicken", "lap", "sweet",
 "dope", "shiver", "mysterious", "misty", "yellowriver", "chaika", "shalltear",
 "lina", "inverse", "zelgadis", "recettear", "eryi", "surgery", "psycho",
 "genki", "maybasket", "may", "soil", "bazaar", "fez", "wiggle", "wiggly",
-"changeling");
+"changeling", "greaser", "drift", "spindrift", "drifter", "transmission",
+"differential", "driveshaft", "carburetor");
 
 // These are functions to help out by doing various calculations.
 
