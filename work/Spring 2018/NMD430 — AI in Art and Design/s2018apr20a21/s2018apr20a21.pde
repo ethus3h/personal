@@ -36,6 +36,10 @@ SceneManager world = new SceneManager();
 PShape cursor;
 PShape cursorClicked;
 
+/* based on https://www.openprocessing.org/sketch/28053# */
+ArrayList particleList = new ArrayList();
+int maximumParticleCount = 50;
+
 List<String> names = Arrays.asList("blah", "bar", "mary",
 "jane", "alev", "iler", "echo", "bright", "storm", "last", "dance", "uns", "et",
 "un", "def", "ined", "ke", "sha", "256", "ruki", "vverh", "canna", "bis", "pix",
