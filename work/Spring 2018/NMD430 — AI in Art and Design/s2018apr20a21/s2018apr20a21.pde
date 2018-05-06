@@ -117,6 +117,9 @@ float scaleToX(float value) {
 float scaleToY(float value) {
   return (value * 2000) / myXSize;
 }
+float scaleToXY(float value) {
+  return (value * 2000) / ((myXSize + myYSize) / 2);
+}
 double dblScaledRandom(Boolean getXValue) {
   return Math.random() * getSize(getXValue);
 }
@@ -274,11 +277,11 @@ class Wanderer extends Creature {
 
     int mouseDistFromHome=(int)dist(ellipseHomeX, ellipseHomeY, mouseX, mouseY);
 
-    if ( mouseDistFromHome < (500 + getPersonality()) * 3.5) {
+    if ( mouseDistFromHome < (scaleToXY(500f) + getPersonality()) * scaleToXY(3.5f)) {
       ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
       ellipsePosX=linePointX(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome);
 
-      if ( mouseDistFromHome > ((500 + (getPersonality() / 2)) * 1.5)) {
+      if ( mouseDistFromHome > ((scaleToXY(500f) + (getPersonality() / 2)) * scaleToXY(1.5f))) {
         try {
           ellipsePosY=linePointY(ellipseHomeX, ellipseHomeY, mouseX, mouseY, mouseDistFromHome / 250);
         }
@@ -293,7 +296,7 @@ class Wanderer extends Creature {
         }
       }
     }
-    speed=((float)getMood() / 600.0) + (monitor / 30);
+    speed=((float)getMood() / scaleToXY(600f)) + (monitor / scaleToXY(30f));
     //System.out.println(Integer.toString(id)+"|Mood="+Float.toString(getMood())+"|Pty="+Float.toString(getPersonality())+"|Spd="+Integer.toString((int)(speed*100))+"|Mdist="+Float.toString(mouseDistFromHome)+"|Mon="+Float.toString(monitor));
     ellipsePosX=(int)((ellipsePosX * speed) + ellipsePrevPosX) / 2;
     ellipsePosY=(int)((ellipsePosY * speed) + ellipsePrevPosY) / 2;
@@ -307,19 +310,19 @@ class Wanderer extends Creature {
     innerColor[1]=(int)weightedAvg(smoothMod(ellipsePosY, 255), smoothMod((int)(mouseY/followTendency), 255));
     innerColor[2]=(int)weightedAvg(smoothMod(((int)weightedAvg(ellipsePosY * 100, ellipsePosX * 100)) / 100, 255), ((mouseX/4+mouseY/4) % 255));
     fill(innerColor[0], innerColor[1], innerColor[2]);
-    ellipse(ellipsePosX, ellipsePosY, 400 + (230 * followTendency), 400 + (230 * followTendency));
+    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f) + (scaleToX(230f) * followTendency), scaleToY(400f) + (scaleToY(230f) * followTendency));
 
     midColor[0]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseX/followTendency), 320));
     midColor[1]=(int)weightedAvg(smoothMod(getMood(), 255), smoothMod((int)(mouseY/followTendency), 320));
     midColor[2]=(int)weightedAvg(smoothMod(getMood(), 255), ((mouseX/4+mouseY/4) % 255));
     fill(midColor[0], midColor[1], midColor[2]);
-    ellipse(ellipsePosX, ellipsePosY, 400 + (200 * speed), 400 + (200 * speed));
+    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f) + (scaleToX(200f) * speed), scaleToY(400f) + (scaleToY(200f) * speed));
 
     outerColor[0]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseY/followTendency), 300));
     outerColor[1]=(int)weightedAvg(smoothMod(getPersonality(), 255), smoothMod((int)(mouseX/followTendency), 300));
     outerColor[2]=(int)weightedAvg(smoothMod(getPersonality(), 255), ((mouseX/4+mouseY/4) % 255));
     fill(outerColor[0], outerColor[1], outerColor[2]);
-    ellipse(ellipsePosX, ellipsePosY, 400, 400);
+    ellipse(ellipsePosX, ellipsePosY, scaleToX(400f), scaleToY(400f));
   }
 }
 
@@ -378,10 +381,10 @@ class Life implements Comparable<Life> {
       if(this.messageAge < 50) {
         textSize(50);
         fill(255,255,255);
-        constrainedRect(this.x + 300,this.y + 300,500,500);
+        constrainedRect(this.x + scaleToX(300f),this.y + scaleToY(300f),scaleToX(500f),scaleToY(500f));
         //triangle(this.x, this.y, this.x + 300, this.y + 300, this.x + 200, this.y + 200);
         fill(0,0,0);
-        constrainedText(this.message, this.x + 300, this.y + 300,500,500);
+        constrainedText(this.message, this.x + scaleToX(300f), this.y + scaleToY(300f),scaleToX(500f),scaleToY(500f));
         this.messageAge=this.messageAge+1;
       }
     }
