@@ -381,6 +381,10 @@ void constrainedText(String text, float left,float top,float width,float height)
   text(text, left,top,width,height);
 }
 
+String getWordWithIndefiniteArticle(String input) {
+  
+}
+
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
