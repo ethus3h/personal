@@ -655,9 +655,9 @@ class BreedingCreature extends Creature {
 
 class ShapeChangingCreature extends Creature {
   Integer[] data = new Integer[] { intScaledRandom(4), intScaledRandom(true), 
-    intScaledRandom(false), intScaledRandom(), intScaledRandom(), 
-    intScaledRandom(), intScaledRandom(), intScaledRandom(), 
-    intScaledRandom() };
+    intScaledRandom(false), intScaledRandom(true), intScaledRandom(false), 
+    intScaledRandom(true), intScaledRandom(false), intScaledRandom(true), 
+    intScaledRandom(false) };
   float rotation = 0;
   int rotationX = intScaledRandom(true);
   int rotationY = intScaledRandom(false);
@@ -722,8 +722,8 @@ class ColorCreature extends Creature {
     return "Color Creature";
   }
   ColorCreature() {
-    x = scaledRandom();
-    y = scaledRandom();
+    x = scaledRandom(true);
+    y = scaledRandom(false);
   }
   void draw() {
     fill(data[0], data[1], data[2], data[3]);
@@ -740,10 +740,10 @@ class ColorCreature extends Creature {
 }
 
 class CreatureTemplate extends Creature {
-  Integer[] data = new Integer[] { (int)(Math.random() * 4), intScaledRandom(), 
-    intScaledRandom(), intScaledRandom(), intScaledRandom(), 
-    intScaledRandom(), intScaledRandom(), intScaledRandom(), 
-    intScaledRandom() };
+  Integer[] data = new Integer[] { (int)(Math.random() * 4), intScaledRandom(true), 
+    intScaledRandom(false), intScaledRandom(true), intScaledRandom(false), 
+    intScaledRandom(true), intScaledRandom(false), intScaledRandom(true), 
+    intScaledRandom(false) };
   String getCreatureType() {
     return "Creature Template";
   }
