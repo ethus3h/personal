@@ -65,7 +65,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "white", "black", "lavender", "mauve", "verdant", "sylvan", "fantasy",
 "kokiri", "horror", "rye", "bran", "gwen", "​no", "rain", "snow", "mist",
 "frost", "young", "old", "sleeping", "dusk", "dawn", "beyond", "anna", "anaral",
-"ancient", "pale", "amber");
+"ancient", "pale", "amber", "goku", "betrayal", "xan");
 
 // These are functions to help out by doing various calculations.
 
@@ -254,6 +254,7 @@ void constrainedRect(float left,float top,float width,float height) {
 }
 
 void constrainedText(String text, float left,float top,float width,float height) {
+//System.out.println(getWordWithIndefiniteArticle(uppercaseFirstLetter("Ellipse creature")));
   if((left + width) > myXSize) {
     left = myXSize - width;
   }
@@ -271,11 +272,11 @@ void constrainedText(String text, float left,float top,float width,float height)
 
 String getWordWithIndefiniteArticle(String input) {
   if (
-    (uppercaseFirstLetter(input).equals("A")) ||
-    (uppercaseFirstLetter(input).equals("E")) || 
-    (uppercaseFirstLetter(input).equals("I")) || 
-    (uppercaseFirstLetter(input).equals("O")) || 
-    (uppercaseFirstLetter(input).equals("U"))
+    (uppercaseFirstLetter(input).substring(0, 1).equals("A")) ||
+    (uppercaseFirstLetter(input).substring(0, 1).equals("E")) || 
+    (uppercaseFirstLetter(input).substring(0, 1).equals("I")) || 
+    (uppercaseFirstLetter(input).substring(0, 1).equals("O")) || 
+    (uppercaseFirstLetter(input).substring(0, 1).equals("U"))
   ) {
     /* It is a vowel so say with "an" */
     return "an " + input;
