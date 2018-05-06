@@ -41,10 +41,11 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "^.^", "^_^", ":3", "<3", "^~^", "yume", "nexus", "no", "miko", "hatsune",
 "miku") ;
 
-float mySize = 2000f;
+float myXSize = 2000f;
+float myYSize = 2500f;
 int currentTick = 0;
 void setup() {
-  size(2000, 2000);
+  size(2000, 2500);
   //fullScreen();
   background(255);
   world.addSky(new Sky());
@@ -104,15 +105,20 @@ float weightedAvg(float a, float b) {
 float weightedAvg(int a, int b, float c) {
   return b + (a * c);
 }
-
-double dblScaledRandom() {
-  return Math.random() * mySize;
+float getSize(Boolean getXValue) {
+  if(getXValue) {
+    return myXSize;
+  }
+  return myYSize;
 }
-float scaledRandom() {
-  return (float)dblScaledRandom();
+double dblScaledRandom(Boolean getXValue) {
+  return Math.random() * getSize(getXValue);
 }
-int intScaledRandom() {
-  return (int)dblScaledRandom();
+float scaledRandom(Boolean getXValue) {
+  return (float)dblScaledRandom(getXValue);
+}
+int intScaledRandom(Boolean getXValue) {
+  return (int)dblScaledRandom(getXValue);
 }
 double dblScaledRandom(double scale) {
   return Math.random() * scale;
@@ -164,7 +170,7 @@ Creature randomCreatureType(String cause) {
     newCreature = new ColorCreature();
     break;
   case 3:
-    newCreature = new Wanderer((float)Math.random(), scaledRandom(), scaledRandom());
+    newCreature = new Wanderer((float)Math.random(), scaledRandom(true), scaledRandom(false));
     break;
   default:
     break;
@@ -252,8 +258,8 @@ class Wanderer extends Creature {
 
   void draw() {
     this.updateLifespan();
-    remember(smoothMod((ellipsePosX + mouseX) / 2, mySize));
-    remember(smoothMod((ellipsePosY + mouseY) / 2, mySize));
+    remember(smoothMod((ellipsePosX + mouseX) / 2, myXSize));
+    remember(smoothMod((ellipsePosY + mouseY) / 2, myYSize));
 
     ellipsePrevPosX=ellipsePosX;
     ellipsePrevPosY=ellipsePosY;
