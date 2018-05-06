@@ -271,6 +271,83 @@ String getWordWithIndefiniteArticle(String input) {
   }
 }
 
+class SceneManager {
+  List<Life> residents = new ArrayList<Life>();
+  List<Life> deferredResidents = new ArrayList<Life>();
+  Integer time = 0;
+  Boolean updating = false;
+  Sky sky;
+  Life add(Life newResident) {
+    if (this.updating) {
+      this.addDeferred(newResident);
+    } else {
+      residents.add(newResident);
+    }
+    return newResident;
+  }
+  void addSky(Sky sky) {
+    this.add(sky);
+  }
+  void addDeferred(Life newResident) {
+    deferredResidents.add(newResident);
+  }
+  void click() {
+    for (Life resident : residents) {
+      resident.click();
+    }
+  }
+  void update() {
+    this.updating = true;
+    Collections.sort(residents, new LifeComparator());
+    //System.out.println("Residents:"+residents.size());
+    if(residents.size() > 6) {
+      residents.get(0).die("overpopulation");
+    }
+    if(residents.size() < 0) {
+      world.add(randomCreatureType("underpopulation"));
+    }
+    for (Life resident : residents) {
+      resident.drawMessage();
+      if(resident.dead == 0) {
+        //System.out.println(resident.getClass().getName());
+        resident.update();
+        if (resident.x < 0) {
+          resident.x = myXSize;
+        }
+        if (resident.y < 0) {
+          resident.y = myYSize;
+        }
+        if (resident.x > myXSize) {
+          resident.x = 0f;
+        }
+        if (resident.y > myYSize) {
+          resident.y = 0f;
+        }
+        //System.out.println(resident.x);
+        //System.out.println(resident.y);
+        //System.out.println(resident.size);
+        resident.draw();
+      }
+      else {
+        deferredResidents.add(resident);
+      }
+    }
+    /* Process asynchronously modified residents */
+    for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
+      Life resident=deferredResidentIterator.next();
+      if(resident.dead == 2) {
+        residents.remove(resident);
+      }
+      else {
+        residents.add(resident);
+      }
+      deferredResidentIterator.remove();
+    }
+    time += 1;
+    this.updating = false;
+  }
+}
+
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
@@ -418,83 +495,6 @@ class Sky extends Life {
   void update() {
     sun.temperature = smoothMod(world.time, 100);
     this.updateLifespan();
-  }
-}
-
-class SceneManager {
-  List<Life> residents = new ArrayList<Life>();
-  List<Life> deferredResidents = new ArrayList<Life>();
-  Integer time = 0;
-  Boolean updating = false;
-  Sky sky;
-  Life add(Life newResident) {
-    if (this.updating) {
-      this.addDeferred(newResident);
-    } else {
-      residents.add(newResident);
-    }
-    return newResident;
-  }
-  void addSky(Sky sky) {
-    this.add(sky);
-  }
-  void addDeferred(Life newResident) {
-    deferredResidents.add(newResident);
-  }
-  void click() {
-    for (Life resident : residents) {
-      resident.click();
-    }
-  }
-  void update() {
-    this.updating = true;
-    Collections.sort(residents, new LifeComparator());
-    //System.out.println("Residents:"+residents.size());
-    if(residents.size() > 6) {
-      residents.get(0).die("overpopulation");
-    }
-    if(residents.size() < 0) {
-      world.add(randomCreatureType("underpopulation"));
-    }
-    for (Life resident : residents) {
-      resident.drawMessage();
-      if(resident.dead == 0) {
-        //System.out.println(resident.getClass().getName());
-        resident.update();
-        if (resident.x < 0) {
-          resident.x = myXSize;
-        }
-        if (resident.y < 0) {
-          resident.y = myYSize;
-        }
-        if (resident.x > myXSize) {
-          resident.x = 0f;
-        }
-        if (resident.y > myYSize) {
-          resident.y = 0f;
-        }
-        //System.out.println(resident.x);
-        //System.out.println(resident.y);
-        //System.out.println(resident.size);
-        resident.draw();
-      }
-      else {
-        deferredResidents.add(resident);
-      }
-    }
-    /* Process asynchronously modified residents */
-    for (Iterator<Life> deferredResidentIterator = deferredResidents.iterator(); deferredResidentIterator.hasNext(); ) {
-      Life resident=deferredResidentIterator.next();
-      if(resident.dead == 2) {
-        residents.remove(resident);
-      }
-      else {
-        residents.add(resident);
-      }
-      deferredResidentIterator.remove();
-    }
-    time += 1;
-    this.updating = false;
   }
 }
 
