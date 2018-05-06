@@ -41,11 +41,11 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "^.^", "^_^", ":3", "<3", "^~^", "yume", "nexus", "no", "miko", "hatsune",
 "miku") ;
 
-float myXSize = 2000f;
-float myYSize = 2500f;
+float myXSize = 3000f;
+float myYSize = 1500f;
 int currentTick = 0;
 void setup() {
-  size(500, 2000);
+  size(3000, 1500);
   //fullScreen();
   background(255);
   world.addSky(new Sky());
