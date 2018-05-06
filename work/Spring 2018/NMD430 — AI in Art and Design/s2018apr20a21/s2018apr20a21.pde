@@ -77,7 +77,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "lina", "inverse", "zelgadis", "recettear", "eryi", "surgery", "psycho",
 "genki", "maybasket", "may", "soil", "bazaar", "fez", "wiggle", "wiggly",
 "changeling", "greaser", "drift", "spindrift", "drifter", "transmission",
-"differential", "driveshaft", "carburetor", "headgasket", "007");
+"differential", "driveshaft", "carburetor", "headgasket", "007", "Nara Nara Na");
 
 // These are functions to help out by doing various calculations.
 
