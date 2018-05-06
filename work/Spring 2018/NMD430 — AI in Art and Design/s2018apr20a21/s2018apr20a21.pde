@@ -11,8 +11,8 @@ float myYSize = 1920f; /* 1030 */
 float displayScalingFactor = 1; /* .25 */
 int minimumCreatures = 10;
 int maximumCreatures = 30;
-int messageDisplayTime = 100;
-int lifespanCap = 1000;
+int messageDisplayTime = 200;
+int lifespanCap = 2000;
 void setup() {
   size(3000, 1920);
   //fullScreen();
@@ -72,7 +72,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "ataniliez", "iridessa", "ivy", "blade", "sword", "knife", "dagger", "berry",
 "mud", "lifted", "mudding", "dirt", "nose", "git", "gloopy", "glitter",
 "dismember", "fuzzy", "fuzzle", "nuzzle", "seth", "sebas", "abel", "jeanette",
-"shots", "beerpong");
+"shots", "beerpong", "kangaroo", "cluck");
 
 // These are functions to help out by doing various calculations.
 
