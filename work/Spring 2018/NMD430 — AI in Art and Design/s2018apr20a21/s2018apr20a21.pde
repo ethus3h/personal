@@ -8,6 +8,7 @@
 /* Configuration */
 float myXSize = 3000f;
 float myYSize = 1500f;
+float displayScalingFactor = 2;
 int minimumCreatures = 1;
 int maximumCreatures = 6;
 int lifespanCap = 2000;
@@ -68,7 +69,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "ancient", "pale", "amber", "goku", "betrayal", "xan", "ilien", "alien",
 "arien", "ariel", "ilendrith", "eärendil", "luthien", "tinuviel", "lituaat",
 "ataniliez", "iridessa", "ivy", "blade", "sword", "knife", "dagger", "berry",
-"mud", "lifted", "mudding", "dirt");
+"mud", "lifted", "mudding", "dirt", "nose");
 
 // These are functions to help out by doing various calculations.
 
@@ -130,13 +131,13 @@ float getSize(Boolean getXValue) {
   return myYSize;
 }
 float scaleToX(float value) {
-  return (value * 2000) / myYSize;
+  return (value * 2000) / (myYSize * (1 / displayScalingFactor));
 }
 float scaleToY(float value) {
-  return (value * 2000) / myXSize;
+  return (value * 2000) / (myXSize * (1 / displayScalingFactor));
 }
 float scaleToXY(float value) {
-  return (value * 2000) / ((myXSize + myYSize) / 2);
+  return (value * 2000) / (((myXSize + myYSize) / 2) * (1 / displayScalingFactor));
 }
 double dblScaledRandom(Boolean getXValue) {
   return Math.random() * getSize(getXValue);
