@@ -1,4 +1,5 @@
 class Particle {
+  /* Particle class from https://www.openprocessing.org/sketch/28053 */
   float r = 2;
   PVector pos,speed,grav; 
   ArrayList tail;
