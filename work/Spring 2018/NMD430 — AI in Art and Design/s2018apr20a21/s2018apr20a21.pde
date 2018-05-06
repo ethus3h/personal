@@ -65,7 +65,9 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "white", "black", "lavender", "mauve", "verdant", "sylvan", "fantasy",
 "kokiri", "horror", "rye", "bran", "gwen", "​no", "rain", "snow", "mist",
 "frost", "young", "old", "sleeping", "dusk", "dawn", "beyond", "anna", "anaral",
-"ancient", "pale", "amber", "goku", "betrayal", "xan");
+"ancient", "pale", "amber", "goku", "betrayal", "xan", "ilien", "alien",
+"arien", "ariel", "ilendrith", "eärendil", "luthien", "tinuviel", "lituaat",
+"ataniliez");
 
 // These are functions to help out by doing various calculations.
 
