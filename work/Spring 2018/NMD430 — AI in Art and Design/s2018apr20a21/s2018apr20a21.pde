@@ -415,10 +415,12 @@ class Life implements Comparable<Life> {
     }
   }
   void message(String message) {
-    System.out.println(message);
-    this.messageAge=0;
-    this.message=message;
-    this.messageSet=1;
+    if(this.message != message) {
+      System.out.println(message);
+      this.messageAge=0;
+      this.message=message;
+      this.messageSet=1;
+    }
   }
   void greet(String cause) {
     this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
