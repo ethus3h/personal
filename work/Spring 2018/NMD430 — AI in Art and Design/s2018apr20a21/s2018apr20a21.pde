@@ -382,7 +382,19 @@ void constrainedText(String text, float left,float top,float width,float height)
 }
 
 String getWordWithIndefiniteArticle(String input) {
-  
+      if (
+      (uppercaseFirstLetter(this.getCreatureType()).equals("A")) ||
+      (uppercaseFirstLetter(this.getCreatureType()).equals("E")) || 
+      (uppercaseFirstLetter(this.getCreatureType()).equals("I")) || 
+      (uppercaseFirstLetter(this.getCreatureType()).equals("O")) || 
+      (uppercaseFirstLetter(this.getCreatureType()).equals("U"))
+    ) {
+      /* It is a vowel so say with "an" */
+    }
+    else {
+      /* It is not, so say with "a" */
+    }
+
 }
 
 class Life implements Comparable<Life> {
@@ -432,20 +444,8 @@ class Life implements Comparable<Life> {
     }
   }
   void greet(String cause) {
-    if (
-      (uppercaseFirstLetter(this.getCreatureType()).equals("A")) ||
-      (uppercaseFirstLetter(this.getCreatureType()).equals("E")) || 
-      (uppercaseFirstLetter(this.getCreatureType()).equals("I")) || 
-      (uppercaseFirstLetter(this.getCreatureType()).equals("O")) || 
-      (uppercaseFirstLetter(this.getCreatureType()).equals("U"))
-    ) {
-      /* It is a vowel so say with "an" */
       this.message("Hi! I'm "+this.getCreatureName()+", an "+this.getCreatureType()+", born from "+cause+".");
-    }
-    else {
-      /* It is not, so say with "a" */
       this.message("Hi! I'm "+this.getCreatureName()+", a "+this.getCreatureType()+", born from "+cause+".");
-    }
   }
   String getCreatureType() {
     return "Creature";
