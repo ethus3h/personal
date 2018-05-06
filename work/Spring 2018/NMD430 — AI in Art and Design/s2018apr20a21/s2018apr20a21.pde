@@ -111,6 +111,12 @@ float getSize(Boolean getXValue) {
   }
   return myYSize;
 }
+float scaleToX(float value) {
+  return (value * 2000) / myXSize;
+}
+float scaleToY(float value) {
+  return (value * 2000) / myXSize;
+}
 double dblScaledRandom(Boolean getXValue) {
   return Math.random() * getSize(getXValue);
 }
