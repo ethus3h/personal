@@ -39,7 +39,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "clover", "buttercup", "rose", "tradukuh", "clover", "dandelion", "kitten",
 "wind", "angel", "flutter", "glimmer", "flitter", "shine", "shining", "shiny",
 "^.^", "^_^", ":3", "<3", "^~^", "yume", "nexus", "no", "miko", "hatsune",
-"miku") ;
+"miku", "ripred", "bloodlet", "shatter", "fractured") ;
 
 float myXSize = 3000f;
 float myYSize = 1500f;
@@ -378,7 +378,7 @@ class Life implements Comparable<Life> {
     //System.out.println(this.x);
     //System.out.println(this.y);
     if(this.messageSet == 1) {
-      if(this.messageAge < 50) {
+      if(this.messageAge < 80) {
         textSize(scaleToXY(50f));
         fill(255,255,255);
         constrainedRect(this.x + scaleToX(300f),this.y + scaleToY(300f),scaleToX(500f),scaleToY(500f));
