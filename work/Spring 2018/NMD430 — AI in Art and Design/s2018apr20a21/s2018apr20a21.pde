@@ -931,6 +931,13 @@ void draw() {
         particleList.remove(i);
       }
     }
+    for (int i = 0; i < maximumParticleCount; i ++) {
+      particleList.add(new Particle(mouseX,mouseY)); // fill ArrayList with particles
+  
+      if(particleList.size() > 5*maximumParticleCount) {
+        particleList.remove(0);
+      }
+    } 
   }
   for(int i = 0; i < particleList.size(); i++) {
     Particle p = (Particle) particleList.get(i); 
@@ -947,12 +954,4 @@ void mouseClicked() {
   fill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   stroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   world.click();
-  /* based on https://www.openprocessing.org/sketch/28053 */
-  for (int i = 0; i < maximumParticleCount; i ++) {
-    particleList.add(new Particle(mouseX,mouseY)); // fill ArrayList with particles
-
-    if(particleList.size() > 5*maximumParticleCount) {
-      particleList.remove(0);
-    }
-  } 
 }
