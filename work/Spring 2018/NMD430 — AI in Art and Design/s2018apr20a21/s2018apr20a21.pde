@@ -8,7 +8,7 @@
 /* Configuration */
 float myXSize = 3000f; /* 1920 */
 float myYSize = 1920f; /* 1030 */
-float displayScalingFactor = 2; /* .25 */
+float displayScalingFactor = 1; /* .25 */
 int minimumCreatures = 6;
 int maximumCreatures = 16;
 int messageDisplayTime = 100;
@@ -71,7 +71,8 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "arien", "ariel", "ilendrith", "eärendil", "luthien", "tinuviel", "lituaat",
 "ataniliez", "iridessa", "ivy", "blade", "sword", "knife", "dagger", "berry",
 "mud", "lifted", "mudding", "dirt", "nose", "git", "gloopy", "glitter",
-"dismember", "fuzzy", "fuzzle", "nuzzle");
+"dismember", "fuzzy", "fuzzle", "nuzzle", "seth", "sebas", "abel", "jeanette",
+"shots", "beerpong");
 
 // These are functions to help out by doing various calculations.
 
