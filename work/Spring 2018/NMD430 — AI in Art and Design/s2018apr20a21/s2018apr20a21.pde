@@ -345,11 +345,19 @@ String randomName() {
 void constrainedRect(float left,float top,float width,float height) {
   if((left + width) > myXSize) {
     left = left - width;
-    System.out.println("Constrained rect left");
+    System.out.println("Constrained rect left -");
+  }
+  if((left + width) < 0) {
+    left = left + width;
+    System.out.println("Constrained rect left +");
   }
   if((top + height) > myYSize) {
-    top = top - width;
-    System.out.println("Constrained rect top");
+    top = top - height;
+    System.out.println("Constrained rect top -");
+  }
+  if((top + height) < 0) {
+    top = top + height;
+    System.out.println("Constrained rect top +");
   }
   rect(left,top,width,height);
 }
