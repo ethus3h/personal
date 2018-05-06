@@ -867,8 +867,8 @@ class EllipseCreature extends Creature {
     fill(data[0], data[1], data[2], data[3]);
     stroke(data[4], data[5], data[6], data[7]);
     strokeWeight(data[8]);
-    x += (float)random(scaleToX(-wiggleAmplitudeX), scaleToX(wiggleAmplitudeX));
-    y += (float)random(scaleToY(-wiggleAmplitudeY), scaleToY(wiggleAmplitudeY));
+    x += (float)random((float)scaleToX(-wiggleAmplitudeX), (float)scaleToX(wiggleAmplitudeX));
+    y += (float)random((float)scaleToY(-wiggleAmplitudeY), (float)scaleToY(wiggleAmplitudeY));
     ellipse(x, y, width, height);
   }
   void update() {
