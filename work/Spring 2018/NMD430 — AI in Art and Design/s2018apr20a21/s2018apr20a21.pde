@@ -908,4 +908,6 @@ void mouseClicked() {
   cursor.setStroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   cursorClicked.setFill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
   cursorClicked.setStroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
+  fill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
+  stroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
 }
