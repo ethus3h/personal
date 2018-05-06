@@ -39,7 +39,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "clover", "buttercup", "rose", "tradukuh", "clover", "dandelion", "kitten",
 "wind", "angel", "flutter", "glimmer", "flitter", "shine", "shining", "shiny",
 "^.^", "^_^", ":3", "<3", "^~^", "yume", "nexus", "no", "miko", "hatsune",
-"miku", "ripred", "bloodlet", "shatter", "fractured") ;
+"miku", "ripred", "bloodlet", "shatter", "fractured", "ember") ;
 
 float myXSize = 3000f;
 float myYSize = 1500f;
@@ -749,6 +749,33 @@ class ColorCreature extends Creature {
   void update() {
     this.updateLifespan();
     //this.disperse();
+  }
+}
+
+class EllipseCreature extends Creature {
+  Integer[] data = new Integer[] { intScaledRandom(255), intScaledRandom(255), 
+    intScaledRandom(255), intScaledRandom(255), 
+    intScaledRandom(255), intScaledRandom(255), 
+    intScaledRandom(255), intScaledRandom(255), intScaledRandom(50) };
+  float width=scaledRandom(scaleToXY(350f));
+  float height=scaledRandom(scaleToXY(350f));
+  String getCreatureType() {
+    return "Ellipse Creature";
+  }
+  EllipseCreature() {
+    x = scaledRandom(true);
+    y = scaledRandom(false);
+  }
+  void draw() {
+    fill(data[0], data[1], data[2], data[3]);
+    stroke(data[4], data[5], data[6], data[7]);
+    strokeWeight(data[8]);
+    x += (float)random(scaleToX(-15f), scaleToX(15f));
+    y += (float)random(scaleToY(-5f), scaleToY(5f));
+    ellipse(x, y, width, height);
+  }
+  void update() {
+    this.updateLifespan();
   }
 }
 
