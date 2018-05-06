@@ -308,10 +308,10 @@ class SceneManager {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
     //System.out.println("Residents:"+residents.size());
-    if(residents.size() > 6) {
+    if(residents.size() > maximumCreatures) {
       residents.get(0).die("overpopulation");
     }
-    if(residents.size() < 0) {
+    if(residents.size() < minimumCreatures) {
       world.add(randomCreatureType("underpopulation"));
     }
     for (Life resident : residents) {
@@ -359,7 +359,7 @@ class SceneManager {
 class Life implements Comparable<Life> {
   protected Integer zIndex = 0;
   int dead=0;
-  int lifespan=(int)(2000 * Math.random());
+  int lifespan=(int)(lifespanCap * Math.random());
   int aliveTime=0;
   float x = 0f;
   float y = 0f;
