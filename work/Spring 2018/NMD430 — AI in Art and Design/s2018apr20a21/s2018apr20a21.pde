@@ -418,7 +418,7 @@ class Life implements Comparable<Life> {
   String getCreatureName() {
     if(this.nameSet == 0) {
       String newName = "Unset";
-      switch ((int)(Math.random() * 6)) {
+      switch ((int)(Math.random() * 9)) {
         case 0:
           newName = randomName();
           break;
@@ -439,6 +439,12 @@ class Life implements Comparable<Life> {
           break;
         case 6:
           newName = randomName()+" "+randomName()+" "+randomName();
+          break;
+        case 7:
+          newName = randomName()+(randomName().toLowerCase())+" "+randomName();
+          break;
+        case 8:
+          newName = randomName()+(randomName().toLowerCase())+" "+randomName()+(randomName().toLowerCase());
           break;
         default:
           break;
