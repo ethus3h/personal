@@ -420,14 +420,14 @@ class Life implements Comparable<Life> {
     }
   }
   void message(String message) {
-    if(this.message.equals(message)) {
+    if(! this.message.equals(message)) {
       System.out.println(message);
       this.messageAge=0;
       this.message=message;
       this.messageSet=1;
     }
     else {
-      System.out.println(this.message + " not equals " + message);
+      System.out.println(this.message + " equals " + message);
     }
   }
   void greet(String cause) {
