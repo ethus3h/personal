@@ -6,15 +6,15 @@
  */
 
 /* Configuration */
-float myXSize = 1920f;
-float myYSize = 1030f;
+float myXSize = 3000f; /* 1920 */
+float myYSize = 1920f; /* 1030 */
 float displayScalingFactor = .25;
 int minimumCreatures = 6;
 int maximumCreatures = 16;
 int messageDisplayTime = 100;
 int lifespanCap = 1000;
 void setup() {
-  size(1920, 1030);
+  size(3000, 1920);
   //fullScreen();
   background(255);
   world.addSky(new Sky());
