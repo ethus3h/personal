@@ -747,7 +747,7 @@ class ShapeChangingCreature extends Creature {
     intScaledRandom(false), intScaledRandom(true), intScaledRandom(false), 
     intScaledRandom(true), intScaledRandom(false), intScaledRandom(true), 
     intScaledRandom(false) };
-  double rotationRate = dblScaledRandom(4);
+  double rotationRate = dblScaledRandom(2);
   float rotation = 0;
   int rotationX = intScaledRandom(true);
   int rotationY = intScaledRandom(false);
