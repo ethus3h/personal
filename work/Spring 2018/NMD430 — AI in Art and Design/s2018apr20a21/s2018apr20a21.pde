@@ -6,9 +6,9 @@
  */
 
 /* Configuration */
-float myXSize = 1920f; /* 1920; 3700 */
-float myYSize = 1030f; /* 1030; 1940 */
-float displayScalingFactor = .25; /* .25; 1 */
+float myXSize = 3700f; /* 1920; 3700 */
+float myYSize = 1940f; /* 1030; 1940 */
+float displayScalingFactor = 1; /* .25; 1 */
 int minimumCreatures = 10;
 int maximumCreatures = 30;
 int messageDisplayTime = 200;
