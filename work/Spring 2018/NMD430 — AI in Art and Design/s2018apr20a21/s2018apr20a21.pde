@@ -385,7 +385,9 @@ class SceneManager {
         resident.draw();
       }
       else {
-        deferredResidents.add(resident);
+        if(this.getPopulation() <= maximumCreatures) {
+          deferredResidents.add(resident);
+        }
       }
     }
     /* Process asynchronously modified residents */
@@ -395,7 +397,11 @@ class SceneManager {
         residents.remove(resident);
       }
       else {
-        residents.add(resident);
+        if(resident.dead == 0) {
+          if(this.getPopulation() <= maximumCreatures) {
+            residents.add(resident);
+          }
+        }
       }
       deferredResidentIterator.remove();
     }
