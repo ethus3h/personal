@@ -325,7 +325,9 @@ class SceneManager {
   Boolean updating = false;
   Sky sky;
   Life add(Life newResident) {
+    System.out.println("Population "+this.getPopulation()+"; maximum "+maximumCreatures);
     if(this.getPopulation() <= maximumCreatures) {
+      System.out.println("OK,added.");
       if (this.updating) {
         this.addDeferred(newResident);
       } else {
