@@ -958,7 +958,7 @@ void mouseClicked() {
     fill(255, 255, 255, 50);
     rect(0, 0, myXSize, myYSize);
     for (Life resident : world.residents) {
-      resident.die("anthropogenic extinction event");
+      resident.die("an anthropogenic extinction event");
     }
     fill(255, 255, 255, 50);
     rect(0, 0, myXSize, myYSize);
