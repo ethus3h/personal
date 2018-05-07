@@ -90,7 +90,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "lotus", "kae", "active", "psychoactive", "nova", "super", "galaxy", "nebula",
 "dust", "star", "stardust", "club", "wub", "dubstep", "drop", "bass", "basshead",
 "sleepy", "oryx", "sintel", "stoned", "hairy", "lalafell", "enola", "aerith",
-"claw");
+"claw", "xian", "ningxia");
 
 // These are functions to help out by doing various calculations.
 
