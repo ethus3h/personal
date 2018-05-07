@@ -5,7 +5,7 @@
  * Description: A virtual interactive ecosystem.
  */
 
-/* Configuration */ /* The values on the left are recommended for non-high-DPI monitors. */
+/* Configuration */ /* The values on the left are recommended for full HD monitors; the values on the right are recommended for ultra HD monitors. */
 float myXSize = 3700f; /* 1920; 3700 */
 float myYSize = 1940f; /* 1030; 1940 */
 float displayScalingFactor = 1; /* .25; 1 */
