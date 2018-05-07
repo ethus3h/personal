@@ -319,8 +319,8 @@ String getWordWithIndefiniteArticle(String input) {
 }
 
 class SceneManager {
-  List<Life> residents = new ArrayList<Life>();
-  List<Life> deferredResidents = new ArrayList<Life>();
+  private List<Life> residents = new ArrayList<Life>();
+  private List<Life> deferredResidents = new ArrayList<Life>();
   Integer time = 0;
   Boolean updating = false;
   Sky sky;
@@ -350,7 +350,11 @@ class SceneManager {
     }
   }
   Integer getPopulation() {
-    return this.residents.size();
+    Integer population = 0;
+    for (Life resident : residents) {
+      population++;
+    }
+    return population;
   }
   void update() {
     this.updating = true;
