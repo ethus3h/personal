@@ -936,7 +936,7 @@ void draw() {
     rect(0, 0, myXSize, myYSize);
   }
   for(Integer i=0; i<maximumCreatures; i++) {
-    
+    world.add(randomCreatureType("repopulation after extinction"));
   }
 }
 void mouseClicked() {
