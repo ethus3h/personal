@@ -924,9 +924,15 @@ void draw() {
   }
   /* Mouse condition based on https://www.openprocessing.org/sketch/28053 */
   if(mousePressed && mouseButton == RIGHT  && mouseButton == RIGHT) {
+    fill(255, 255, 255, 50);
+    rect(0, 0, myXSize, myYSize);
     for (Life resident : world.residents) {
       resident.die("anthropogenic extinction event");
     }
+    fill(255, 255, 255, 50);
+    rect(0, 0, myXSize, myYSize);
+    fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
+    rect(0, 0, myXSize, myYSize);
   }
 }
 void mouseClicked() {
