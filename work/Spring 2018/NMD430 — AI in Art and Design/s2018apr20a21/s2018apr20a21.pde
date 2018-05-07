@@ -922,6 +922,12 @@ void draw() {
   else {
     shape(cursor, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
+  /* Mouse condition based on https://www.openprocessing.org/sketch/28053 */
+  if(mousePressed && mouseButton == RIGHT  && mouseButton == RIGHT) {
+    for (Life resident : world.residents) {
+      resident.die("anthropogenic extinction event");
+    }
+  }
 }
 void mouseClicked() {
   /* This will pass the click event to any creatures that care about it. */
