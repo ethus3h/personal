@@ -340,7 +340,9 @@ class SceneManager {
     this.add(sky);
   }
   void addDeferred(Life newResident) {
-    deferredResidents.add(newResident);
+    if(this.getPopulation() <= maximumCreatures) {
+      deferredResidents.add(newResident);
+    }
   }
   void click() {
     for (Life resident : residents) {
