@@ -214,7 +214,7 @@ int randomNegativeFactor() {
 }
 
 Creature randomCreatureType(String cause) {
-  Creature newCreature = new BreedingCreature();
+  Creature newCreature = new ShapeChangingCreature();
   switch ((int)(Math.random() * 7)) {
   case 0:
     newCreature = new BreedingCreature();
@@ -232,7 +232,7 @@ Creature randomCreatureType(String cause) {
     newCreature = new Wanderer((float)Math.random(), scaledRandom(true), scaledRandom(false));
     break;
   default:
-    newCreature = new ShapeChangingCreature();
+    break;
   }
   newCreature.greet(cause);
   return newCreature;
@@ -934,6 +934,9 @@ void draw() {
     rect(0, 0, myXSize, myYSize);
     fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
     rect(0, 0, myXSize, myYSize);
+  }
+  for(Integer i=0; i<maximumCreatures; i++) {
+    
   }
 }
 void mouseClicked() {
