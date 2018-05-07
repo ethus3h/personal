@@ -325,10 +325,12 @@ class SceneManager {
   Boolean updating = false;
   Sky sky;
   Life add(Life newResident) {
-    if (this.updating) {
-      this.addDeferred(newResident);
-    } else {
-      residents.add(newResident);
+    if(this.getPopulation() <= maximumCreatures) {
+      if (this.updating) {
+        this.addDeferred(newResident);
+      } else {
+        residents.add(newResident);
+      }
     }
     return newResident;
   }
@@ -343,11 +345,14 @@ class SceneManager {
       resident.click();
     }
   }
+  Integer getPopulation() {
+    return this.residents.size();
+  }
   void update() {
     this.updating = true;
     Collections.sort(residents, new LifeComparator());
-    //System.out.println("Residents:"+residents.size());
-    if(residents.size() > maximumCreatures) {
+    //System.out.println("Residents:"+this.getPopulation());
+    if(this.getPopulation() > maximumCreatures) {
       residents.get(0).die("overpopulation");
     }
     if(residents.size() < minimumCreatures) {
@@ -916,7 +921,7 @@ void draw() {
   /* world.update will update and draw all the creatures. */
   world.update();
   textSize(scaleToXY(80f));
-  text(world.residents.size(), scaleToX(100f), scaleToY(350f));
+  text(world.getPopulation(), scaleToX(100f), scaleToY(350f));
   if(mousePressed) {
     shape(cursorClicked, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
