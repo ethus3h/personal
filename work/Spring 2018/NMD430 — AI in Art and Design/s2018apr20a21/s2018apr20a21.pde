@@ -5,7 +5,7 @@
  * Description: A virtual interactive ecosystem.
  */
 
-/* Configuration */
+/* Configuration */ /* The values on the left are recommended for non-high-DPI monitors. */
 float myXSize = 3700f; /* 1920; 3700 */
 float myYSize = 1940f; /* 1030; 1940 */
 float displayScalingFactor = 1; /* .25; 1 */
@@ -14,7 +14,7 @@ int maximumCreatures = 30;
 int messageDisplayTime = 200;
 int lifespanCap = 2000;
 void setup() {
-  size(3600, 1920);
+  size(3700, 1940);
   //fullScreen();
   background(255);
   world.addSky(new Sky());
