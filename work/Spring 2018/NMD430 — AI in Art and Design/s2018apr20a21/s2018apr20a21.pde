@@ -352,7 +352,9 @@ class SceneManager {
   Integer getPopulation() {
     Integer population = 0;
     for (Life resident : residents) {
-      population++;
+      if(resident.dead == 0) {
+        population++;
+      }
     }
     return population;
   }
