@@ -923,6 +923,14 @@ void draw() {
   else {
     shape(cursor, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
+}
+void mouseClicked() {
+  /* This will pass the click event to any creatures that care about it. */
+  cursor.disableStyle();
+  cursorClicked.disableStyle();
+  fill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
+  stroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
+
   /* Mouse condition based on https://www.openprocessing.org/sketch/28053 */
   if(mousePressed && mouseButton == RIGHT  && mouseButton == RIGHT) {
     fill(255, 255, 255, 50);
@@ -938,12 +946,6 @@ void draw() {
       world.add(randomCreatureType("repopulation after extinction"));
     }
   }
-}
-void mouseClicked() {
-  /* This will pass the click event to any creatures that care about it. */
-  cursor.disableStyle();
-  cursorClicked.disableStyle();
-  fill(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
-  stroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
+
   world.click();
 }
