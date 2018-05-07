@@ -934,9 +934,9 @@ void draw() {
     rect(0, 0, myXSize, myYSize);
     fill((mouseY/3 % 255), (mouseX/3 % 255), ((mouseX/3+mouseY/3) % 255), 5);
     rect(0, 0, myXSize, myYSize);
-  }
-  for(Integer i=0; i<maximumCreatures; i++) {
-    world.add(randomCreatureType("repopulation after extinction"));
+    for(Integer i=0; i<maximumCreatures; i++) {
+      world.add(randomCreatureType("repopulation after extinction"));
+    }
   }
 }
 void mouseClicked() {
