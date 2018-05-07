@@ -1,7 +1,7 @@
 /**
  * Title: Final Assignment
  * Name: Elliot Chandler (Wallace)
- * Date: 2018 May 6
+ * Date: 2018 May 6a7
  * Description: A virtual interactive ecosystem.
  */
 
@@ -90,7 +90,7 @@ List<String> names = Arrays.asList("blah", "bar", "mary",
 "lotus", "kae", "active", "psychoactive", "nova", "super", "galaxy", "nebula",
 "dust", "star", "stardust", "club", "wub", "dubstep", "drop", "bass", "basshead",
 "sleepy", "oryx", "sintel", "stoned", "hairy", "lalafell", "enola", "aerith",
-"claw", "xian", "ningxia");
+"claw", "xian", "ningxia", "friend", "faded");
 
 // These are functions to help out by doing various calculations.
 
