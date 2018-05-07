@@ -6,15 +6,15 @@
  */
 
 /* Configuration */ /* The values on the left are recommended for full HD monitors; the values on the right are recommended for ultra HD monitors. */
-float myXSize = 3700f; /* 1920; 3700 */
-float myYSize = 1940f; /* 1030; 1940 */
-float displayScalingFactor = 1; /* .25; 1 */
+float myXSize = 1920f; /* 1920; 3700 */
+float myYSize = 1030f; /* 1030; 1940 */
+float displayScalingFactor = .25; /* .25; 1 */
 int minimumCreatures = 10;
 int maximumCreatures = 30;
 int messageDisplayTime = 200;
 int lifespanCap = 2000;
 void setup() {
-  size(3700, 1940);
+  size(1920, 1030);
   //fullScreen();
   background(255);
   world.addSky(new Sky());
@@ -794,7 +794,7 @@ class ShapeChangingCreature extends Creature {
     intScaledRandom(false), intScaledRandom(true), intScaledRandom(false), 
     intScaledRandom(true), intScaledRandom(false), intScaledRandom(true), 
     intScaledRandom(false) };
-  double rotationRate = dblScaledRandom(2);
+  double rotationRate = scaleToXY(dblScaledRandom(2));
   float rotation = 0;
   int rotationX = intScaledRandom(true);
   int rotationY = intScaledRandom(false);
