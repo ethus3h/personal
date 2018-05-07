@@ -932,7 +932,7 @@ void mouseClicked() {
   stroke(color(intScaledRandom(255), intScaledRandom(255), intScaledRandom(255), intScaledRandom(255)));  
 
   /* Mouse condition based on https://www.openprocessing.org/sketch/28053 */
-  if(mousePressed && mouseButton == RIGHT  && mouseButton == RIGHT) {
+  if(mouseButton == RIGHT) {
     fill(255, 255, 255, 50);
     rect(0, 0, myXSize, myYSize);
     for (Life resident : world.residents) {
