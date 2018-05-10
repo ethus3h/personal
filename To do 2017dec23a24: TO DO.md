@@ -229,7 +229,7 @@ Things facebook is good for:
 https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
 
 ### 2018may09 remaining schoolwork
-- Selfies of events for 345
+- -Selfies of events for 345-
 - Final demo Movie, and porject zip File for 345
 - 3x essays events for 200
 - Work revisions for 200
