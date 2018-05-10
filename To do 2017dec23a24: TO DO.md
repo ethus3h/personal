@@ -38,6 +38,130 @@ Jon Hendricks: "Fluxus Codex"
 
 https://www.youtube.com/watch?v=86g4_w4j3jU
 
+https://www.youtube.com/watch?v=crSBCZd5fCM Die Antwoord: "I Don't Care"
+
+https://www.youtube.com/watch?v=TKsVvVxQoi4 Purity Ring: "bodyache"
+
+https://www.youtube.com/watch?v=CL1cKfCQWyA Zedd / Foxes: "Clarity"
+
+https://www.youtube.com/watch?v=vjI1QTjfyYE WRLD: "Oceans" feat. Laura Brehm
+
+https://www.youtube.com/watch?v=heeqMP_wwFw Vanic: "Too Soon" feat. Maty Noyes
+
+https://www.youtube.com/watch?v=NhLXSsUsf5o Iggy Azalea / Jennifer Lopez: "Booty"
+
+https://www.youtube.com/watch?v=zxoz06049YM Willow: "21st Century Girl"
+
+https://www.youtube.com/watch?v=3WGwKkiv35E Viktoria Modesta: "Prototype"
+
+https://www.youtube.com/watch?v=SwOBl7VoQYQ Lights: "Skydiving"
+
+https://www.youtube.com/watch?v=d1FbCcsmzQk Pale Waves: "Television Romance"
+
+https://www.youtube.com/watch?v=0XZJ5mD6nSU in love with a ghost: "we've never met but, can we have a coffee or something?"
+
+https://www.youtube.com/watch?v=rMV_J2898LI Era Istrefi: "Bonbon"
+
+https://www.youtube.com/watch?v=LbkXQ_DeyQI Kevin Gates: "Satellites"
+
+https://www.youtube.com/watch?v=YH8pinr_xsU Sigrid: "Strangers"
+
+https://www.youtube.com/watch?v=QkTyxpcfTok Ginette Reno: "Je ne suis qu'une chanson"
+
+https://www.youtube.com/watch?v=SiCB2YbKftc Jon Bellion: "All Time Low" (Shew Remix)
+
+https://www.youtube.com/watch?v=KLtn2qA7WxE Light Years Away: "Melrose at Midnight"
+
+https://www.youtube.com/watch?v=mDulNkJC1CE Chime & Adam Tell: "Whole"
+
+https://www.youtube.com/watch?v=MqCL5w0EmZ0 Transviolet: "Pretty Head"
+
+https://www.youtube.com/watch?v=CU89vXiF5CA Transviolet: "Kaleidoscopes" feat. Reo Cragun
+
+https://www.youtube.com/watch?v=0gqvYbTY0gI Marshmello: "TaKe IT BaCk"
+
+https://www.youtube.com/watch?v=ELXfTtJAIWE Marshmello: "Want U 2" (Slushii VIP)
+
+https://www.youtube.com/watch?v=bnsUkE8i0tU Infected Mushroom: "Spitfire"
+
+https://www.youtube.com/watch?v=Hfsm9DplcJc Zedd: "Get Low" feat. Liam Payne
+
+https://www.youtube.com/watch?v=OWE7Pe6lEis Calvin Harris: "Pray to God" feat. HAIM
+
+https://www.youtube.com/watch?v=UGT6v4No9U8 Calvin Harris: "Under Control" feat. Alesso & Hurts
+
+https://www.youtube.com/watch?v=0lpkh_tGzWM Emblem3: "Chloe"
+
+https://www.youtube.com/watch?v=PdnAOfSGkww The Click Five: "Just The Girl" (nightcore)
+
+https://www.youtube.com/watch?v=7EosYvUJZKg Calvin Harris: "Skrt On Me" feat. Nicki Minaj
+
+https://www.youtube.com/watch?v=xygkT0-alQc Nina Nesbitt: "Chewing Gum"
+
+https://www.youtube.com/watch?v=UGMO6Ct_bf4 Britney Spears: "Perfume (Feat. Sia) (Version 2)"
+
+https://www.youtube.com/watch?v=4uTVqj2voJc Loote: "High Without Your Love"
+
+https://www.youtube.com/watch?v=daqlqFiF3s8 Loote: "Out Of My Head"
+
+https://www.youtube.com/watch?v=MnaA85nYEeE Camila Cabello: "I Have Questions"
+
+https://www.youtube.com/watch?v=n984dxtzStw Florrie: "Real Love"
+
+https://www.youtube.com/watch?v=JnRTpysSbwE Maty Noyes: "Say It To My Face"
+
+https://www.youtube.com/watch?v=7qzjHwMmIXE Enkidu: "Falling" (Embody Remix)
+
+https://www.youtube.com/watch?v=TY6NtF0wXHk Halsey: "Strangers" feat. Lauren Jauregui
+
+https://www.youtube.com/watch?v=4mAefuRTI1M Borgore: "My Favorite Tingz"
+
+https://www.youtube.com/watch?v=1iDcSrk_e00 David Guetta: "Light My Body Up" feat. Nicki Minaj & Lil Wayne
+
+https://www.youtube.com/watch?v=TIbO4EIEtYc Fall Out Boy: "Young and Menace" [or a remix]
+
+https://www.youtube.com/watch?v=oys0YSZ8dt4 DJ Chuckie & Silvio Ecomo: "Moombah" (Afrojack Rmx - Munchi's Shoutout To Naffie VIP)
+
+https://www.youtube.com/watch?v=c7xGPu27Jyk The Ready Set: "Give Me Your Hand (Best Song Ever)"
+
+https://www.youtube.com/watch?v=PgPwpzjRGe4 Florida Georgia Line: "Sippin' On Fire"
+
+https://www.youtube.com/watch?v=57Q7ou-IZtA Keys N Krates: "NOWIMGUNNACHANGE"
+
+https://www.youtube.com/watch?v=8BbXUg4GWP8 cupcakKe: "Biggie Smalls"
+
+https://www.youtube.com/watch?v=yN9EovNK5hY ETC!ETC! x Brillz: "Callisto"
+
+https://www.youtube.com/watch?v=izV9QIBRFq8 Zedd: "Follow You Down" feat. Bright Lights (Keys N Krates Remix)
+
+https://www.youtube.com/watch?v=u-jrWqdH344 Carnage: "Toca" feat. Timmy Trumpet & KSHMR
+
+https://www.youtube.com/watch?v=HDFWnUZZMvQ Marshmello: "ShOw YoU"
+
+https://www.youtube.com/watch?v=PGW0TZidXiQ Taylor Swift: "Style"
+
+https://www.youtube.com/watch?v=k5TqNsr6YuQ Troye Sivan: "My My My!"
+
+https://www.youtube.com/watch?v=h2reCIR2APk Michael W. Smith: "Place In This World"
+
+https://www.youtube.com/watch?v=WRtfCeGM9i0 San Holo: "We Rise" (Acoustic)
+
+https://www.youtube.com/watch?v=v8B5AOljhsY San Holo: "We Rise"
+
+https://www.youtube.com/watch?v=ukS7WyUW25I PRISMO: "Pretty Stranger"
+
+https://www.youtube.com/watch?v=avlEK3PTvw8 Marshmello feat. Khalid: "Silence" (Illenium Remix)
+
+https://www.youtube.com/watch?v=si81bIoZRJQ Porter Robinson: "Divinity"
+
+https://www.youtube.com/watch?v=VefpeL4tqh0 Nitro Fun: "Cheat Codes"
+
+https://www.youtube.com/watch?v=YZqFCUH6rTY Darren Styles & Stonebank: "Sky Is Falling" (feat. EMEL)
+
+https://www.youtube.com/watch?v=901jaZJ1mLY Borgore: "Cry Me A River"
+
+https://www.youtube.com/watch?v=6IXcxQj0KZU William Pearson: "Interstellar Spheres"
+
 https://www.youtube.com/watch?v=5PYbtNP-g4Q Alexandra Stan: "Balans 2k18 (French Version) (Deep Matter & Damon Hess English Remix)"
 
 Max Reger: Der 100. Psalm: ( https://www.youtube.com/watch?v=GrbE65KjUmA ? Leon Botstein / American Symphony Orchestra / Concert Chorale of New York: "Psalm 100, Op. 106")
