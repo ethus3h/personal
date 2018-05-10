@@ -229,14 +229,19 @@ Things facebook is good for:
 https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
 
 ### 2018may09 remaining schoolwork
-- -Selfies of events for 345-
-- Final demo Movie, and porject zip File for 345
-- 3x essays events for 200
-- Work revisions for 200
+- Porject zip File for 345
+- 3x essays about events for 200
+- Final project refection for 200
+- Final demo Movie For 345
 - Artists and Film makers stories of People 200
+- Any thing for 430?Final Zip file maybe
+- For 206?
+
+#### Reviesions
+
 - Project 4 Refliction 200
 - Project 3 Refliction 200
 - Field recording Esay 200
-- Final project refection for 200
-- Any thing for 430?Final Zip file maybe
-- For 206?
+
+#### Done
+- ~~Selfies of events for 345~~
