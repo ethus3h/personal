@@ -227,3 +227,11 @@ Things facebook is good for:
 ### To archive:
 
 https://drive.google.com/uc?id=0B9pmoNsaxaKxQlh6MloycXZKazQ&export=download
+
+### 2018may09 remaining schoolwork
+- Selfies of events for 345
+- 3x essays events for 200
+- Work revisions for 200
+- Final project refection for 200
+- Any thing for 430?
+- For 206?
