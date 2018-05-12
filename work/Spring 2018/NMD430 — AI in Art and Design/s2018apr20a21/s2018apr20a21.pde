@@ -946,6 +946,7 @@ void draw() {
   else {
     shape(cursor, (mouseX - (scaleToXY(300f / 2))), (mouseY - (scaleToXY(300f / 2))), scaleToXY(300f), scaleToXY(300f));
   }
+  saveFrame("/nvme0n1p5/2018may11/####.tiff");
 }
 
 void mouseClicked() {
