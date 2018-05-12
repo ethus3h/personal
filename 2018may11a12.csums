@@ -1,0 +1,11 @@
+%%%% HASHDEEP-1.0
+%%%% size,md5,sha256,filename
+## Invoked from: /nvme0n1p5
+## $ hashdeep -r SectionInfoCaches
+## 
+296,bdfd37d3b58aba5b473844329f317364,06f0510497b4d8f9e335720cbbb7c2dabc7e90d351f8973a73291307d28aeba5,/nvme0n1p5/SectionInfoCaches/FRCCache{
+    NoteCollectionPrimaryIdentifier = "BB1037FC-049E-40C7-9D15-2731C90F95B2";
+    NoteCollectionSecondaryIdentifier = "imap:/e.wallace.fm@p30-imap.mail.me.com/Notes";
+    NoteCollectionType = Store;
+}/sectionInfo
+940,6ac7a8524d99b6c1c365207ddcccb69e,4e76790640c0a0cc0298603fc0aa0c3b452e9d9af99ce5900142e5b5560f4296,/nvme0n1p5/SectionInfoCaches/FRCCacheAll/sectionInfo
