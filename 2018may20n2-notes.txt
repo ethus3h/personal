@@ -1,0 +1,19 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ ship-source option in fmwtk (and add to buildsystem template), add .md files to buildsystem template (inc. various licenses), add option to disable working on scripts / docs folders (so if there are folders with those names but not using scripts/docs, the installer can be told that), add buildsystem to ember-web-site
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $ [[ "$futuramerlinWebToolkitShipSource" == "true" ]] && cp -r ./source "./.fmwtk.source"
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+
+
+
+
+
+
+
+
+
+
+
+
