@@ -1,15 +1,24 @@
 Wood (in inches):
-    (2) ¼ by 2 by ¾
-    (2) ¼ by 1½ by ¾
+    (2) ¼ by ½ by ½
+    (1) ¼ by ½ by ¾
+    (2) ¼ by ½ by 1¼
+    (2) ¼ by ¾ by 2
+    (2) ¼ by ¾ by 1½
     (2) ¼ by 1½ by 1½
+    (1) ½ by 1 by 12
 
 Foam (in inches):
     (1) ¼ by 1½ by 1½
 
 Glue OR Screws:
-    (16) ½" screws
+    (16) ½" screws (for tooth)
+    (6) ½" screws (for toothbrush)
+    (4) ¾" screws (for toothbrush)
 
 Other:
     Conductive tape
     Magnet (max. ~⅛" to ~3/16" on one dimension)
+    Magnet (max. ¼" by ½" by ¾")
     Solder
+    Red LED (~2V)
+    350Ω resistor
