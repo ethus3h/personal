@@ -27,6 +27,8 @@ const int buttonPin = 2;     // the number of the pushbutton pin
 const int ledPin =  13;      // the number of the LED pin
   int inputVoltage = 0;
 int buttonState = 0; 
+int updateButtonState=0;
+int updateLedState=0;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -38,27 +40,32 @@ void setup() {
 
 }
 void updateButton() {
-     // read the state of the pushbutton value:
+    if(updateButtonState>=100) {
+   // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
   // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
   if (buttonState == HIGH) {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
   }
- 
+    }
+    updateButtonState=updateButtonState+1;
 }
 void updateLed(){
+  if(updateLedState>=2000) {
    inputVoltage = analogRead(sensorPin);
   Serial.print("Input voltage = ");
   Serial.println(inputVoltage);
   if(inputVoltage > 660 && inputVoltage < 672) {
       digitalWrite(LED_BUILTIN, LOW);   // turn the LED off (LOW is the voltage level)
   }
-
+    updateLedState=updateLedState+1;
 }
 
 // the loop function runs over and over again forever
 void loop() {
-   delay(2000);
+    
+   updateButton();
+   updateLed();
 }
 
