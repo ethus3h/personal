@@ -38,7 +38,7 @@ void loop() {
   inputVoltage = analogRead(sensorPin);
   Serial.print("Input voltage = ");
   Serial.println(inputVoltage);
-  if(inputVoltage > 660 && inputVoltage < 664) {
+  if(inputVoltage > 660 && inputVoltage < 672) {
       digitalWrite(LED_BUILTIN, LOW);   // turn the LED off (LOW is the voltage level)
   }
   delay(2000);
