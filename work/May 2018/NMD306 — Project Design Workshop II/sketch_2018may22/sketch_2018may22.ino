@@ -22,11 +22,13 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-const int sensorPin = A0;    // select the input pin for the potentiometer
 const int buttonPin = 2;     // the number of the pushbutton pin
+const int sensorPin = A0;    // select the input pin for the potentiometer
+const int sensorPinB = A1;    // select the input pin for the potentiometer
 const int ledPin =  13;      // the number of the LED pin
 const int ledPinB =  12;      // the number of the LED pin
 int inputVoltage = 0;
+int inputVoltageB = 0;
 int buttonState = 0;
 int updateButtonState = 0;
 int updateLedState = 0;
@@ -35,9 +37,11 @@ int updateLedState = 0;
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(ledPin, OUTPUT);
+  pinMode(ledPinB, OUTPUT);
   pinMode(buttonPin, INPUT);
   Serial.begin(9600);
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(ledPinB, HIGH);   // turn the LED on (HIGH is the voltage level)
 
 }
 void updateButton() {
@@ -48,6 +52,7 @@ void updateButton() {
     if (buttonState == HIGH) {
       // turn LED on:
       digitalWrite(ledPin, HIGH);
+      digitalWrite(ledPinB, HIGH);
     }
   }
   updateButtonState = updateButtonState + 1;
@@ -55,12 +60,18 @@ void updateButton() {
 void updateLed() {
   if (updateLedState >= 100) {
     inputVoltage = analogRead(sensorPin);
+    inputVoltageB = analogRead(sensorPinB);
     Serial.print("Input voltage = ");
     Serial.println(inputVoltage);
+    Serial.println(inputVoltageB);
     if (inputVoltage > 660 && inputVoltage < 672) {
-      digitalWrite(LED_BUILTIN, LOW);   // turn the LED off (LOW is the voltage level)
+      digitalWrite(ledPin, LOW);   // turn the LED off (LOW is the voltage level)
     }
-  }    updateLedState = updateLedState + 1;
+    if (inputVoltageB > 660 && inputVoltageB < 672) {
+      digitalWrite(ledPinB, LOW);   // turn the LED off (LOW is the voltage level)
+    }
+  }
+  updateLedState = updateLedState + 1;
 }
 
 // the loop function runs over and over again forever
