@@ -37,22 +37,28 @@ void setup() {
       digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
 
 }
-
-// the loop function runs over and over again forever
-void loop() {
-    // read the state of the pushbutton value:
+void updateButton() {
+     // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
   // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
   if (buttonState == HIGH) {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
   }
-  inputVoltage = analogRead(sensorPin);
+ 
+}
+void updateLed(){
+   inputVoltage = analogRead(sensorPin);
   Serial.print("Input voltage = ");
   Serial.println(inputVoltage);
   if(inputVoltage > 660 && inputVoltage < 672) {
       digitalWrite(LED_BUILTIN, LOW);   // turn the LED off (LOW is the voltage level)
   }
-  delay(2000);
+
+}
+
+// the loop function runs over and over again forever
+void loop() {
+   delay(2000);
 }
 
