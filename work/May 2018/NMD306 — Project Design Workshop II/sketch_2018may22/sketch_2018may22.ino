@@ -60,7 +60,7 @@ void updateLed(){
       digitalWrite(LED_BUILTIN, LOW);   // turn the LED off (LOW is the voltage level)
   }
     updateLedState=updateLedState+1;
-}
+}}
 
 // the loop function runs over and over again forever
 void loop() {
