@@ -21,7 +21,6 @@
 
   http://www.arduino.cc/en/Tutorial/Blink
 */
-#include <dht.h>
 
   int sensorPin = A0;    // select the input pin for the potentiometer
   int inputVoltage = 0;
