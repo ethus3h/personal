@@ -25,6 +25,7 @@
  const int sensorPin = A0;    // select the input pin for the potentiometer
 const int buttonPin = 2;     // the number of the pushbutton pin
 const int ledPin =  13;      // the number of the LED pin
+const int ledPinB =  12;      // the number of the LED pin
   int inputVoltage = 0;
 int buttonState = 0; 
 int updateButtonState=0;
@@ -33,7 +34,7 @@ int updateLedState=0;
 // the setup function runs once when you press reset or power the board
 void setup() {
  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(ledPin, OUTPUT);
    pinMode(buttonPin, INPUT);
    Serial.begin(9600);
       digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
