@@ -22,19 +22,31 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-  int sensorPin = A0;    // select the input pin for the potentiometer
+ const int sensorPin = A0;    // select the input pin for the potentiometer
+const int buttonPin = 2;     // the number of the pushbutton pin
+const int ledPin =  13;      // the number of the LED pin
   int inputVoltage = 0;
+int buttonState = 0; 
+
 // the setup function runs once when you press reset or power the board
 void setup() {
  // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
-    Serial.begin(9600);
+   pinMode(buttonPin, INPUT);
+   Serial.begin(9600);
       digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
 
 }
 
 // the loop function runs over and over again forever
 void loop() {
+    // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  }
   inputVoltage = analogRead(sensorPin);
   Serial.print("Input voltage = ");
   Serial.println(inputVoltage);
