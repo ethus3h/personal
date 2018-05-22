@@ -40,7 +40,7 @@ void setup() {
 
 }
 void updateButton() {
-    if(updateButtonState>=100) {
+    if(updateButtonState>=10) {
    // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
   // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
@@ -52,15 +52,15 @@ void updateButton() {
     updateButtonState=updateButtonState+1;
 }
 void updateLed(){
-  if(updateLedState>=2000) {
+  if(updateLedState>=100) {
    inputVoltage = analogRead(sensorPin);
   Serial.print("Input voltage = ");
   Serial.println(inputVoltage);
   if(inputVoltage > 660 && inputVoltage < 672) {
       digitalWrite(LED_BUILTIN, LOW);   // turn the LED off (LOW is the voltage level)
   }
-    updateLedState=updateLedState+1;
-}}
+}    updateLedState=updateLedState+1;
+}
 
 // the loop function runs over and over again forever
 void loop() {
