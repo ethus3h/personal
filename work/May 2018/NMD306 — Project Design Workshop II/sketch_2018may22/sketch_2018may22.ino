@@ -98,6 +98,6 @@ void updateLed() {
 void loop() {
   updateButton();
   updateLed();
-  delay(1);
+  delay(0.5);
 }
 
