@@ -61,12 +61,13 @@ void updateButton() {
       digitalWrite(ledPinB, HIGH);
       digitalWrite(ledPinC, HIGH);
     }
+    updateButtonState = 0;
   }
   updateButtonState = updateButtonState + 1;
 }
 
 void updateLed() {
-  if (updateLedState >= 100) {
+  if (updateLedState >= 300) {
     inputVoltage = analogRead(sensorPin);
     inputVoltageB = analogRead(sensorPinB);
     inputVoltageC = analogRead(sensorPinC);
@@ -83,6 +84,7 @@ void updateLed() {
     if (inputVoltageC > 660 && inputVoltageC < 672) {
       digitalWrite(ledPinC, LOW);   // turn the LED off (LOW is the voltage level)
     }
+    updateLedState = 0;
   }
   updateLedState = updateLedState + 1;
 }
