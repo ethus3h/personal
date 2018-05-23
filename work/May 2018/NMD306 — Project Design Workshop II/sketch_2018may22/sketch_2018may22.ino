@@ -77,13 +77,13 @@ void updateLed() {
     Serial.println(inputVoltage);
     Serial.println(inputVoltageB);
     Serial.println(inputVoltageC);
-    if (inputVoltage > 660 && inputVoltage < 672) {
+    if (inputVoltage > 0) {
       digitalWrite(ledPin, LOW);   // turn the LED off (LOW is the voltage level)
     }
-    if (inputVoltageB > 660 && inputVoltageB < 672) {
+    if (inputVoltageB > 0) {
       digitalWrite(ledPinB, LOW);   // turn the LED off (LOW is the voltage level)
     }
-    if (inputVoltageC > 660 && inputVoltageC < 672) {
+    if (inputVoltageC > 0) {
       digitalWrite(ledPinC, LOW);   // turn the LED off (LOW is the voltage level)
     }
     updateLedState = 0;
