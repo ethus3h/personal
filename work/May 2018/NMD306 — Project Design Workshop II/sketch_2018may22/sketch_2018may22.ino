@@ -27,8 +27,10 @@ const int buttonPinb = 3;     // the number of the pushbutton pin
 const int buttonPinc = 4;     // the number of the pushbutton pin
 const int sensorPin = A0;    // select the input pin for the potentiometer
 const int sensorPinB = A1;    // select the input pin for the potentiometer
+const int sensorPinB = A2;    // select the input pin for the potentiometer
 const int ledPin =  13;      // the number of the LED pin
 const int ledPinB =  12;      // the number of the LED pin
+const int ledPinC =  11;      // the number of the LED pin
 int inputVoltage = 0;
 int inputVoltageB = 0;
 int buttonState = 0;
@@ -46,6 +48,7 @@ void setup() {
   Serial.begin(9600);
   digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
   digitalWrite(ledPinB, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(ledPinC, HIGH);   // turn the LED on (HIGH is the voltage level)
 
 }
 void updateButton() {
