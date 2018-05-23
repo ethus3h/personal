@@ -50,7 +50,7 @@ void setup() {
 }
 
 void updateButton() {
-  if (updateButtonState >= 10) {
+  if (updateButtonState >= 1000) {
     // read the state of the pushbutton value:
     buttonState = digitalRead(buttonPin);    // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
     if (buttonState == HIGH) {
@@ -67,9 +67,11 @@ void updateButton() {
 }
 
 void updateLed() {
-  if (updateLedState >= 300) {
+  if (updateLedState >= 3000) {
     inputVoltage = analogRead(sensorPin);
+    delay(10); // Wait for ADC to stabilize https://stackoverflow.com/questions/20623648/simultanously-reading-two-analog-inputs-with-arduino
     inputVoltageB = analogRead(sensorPinB);
+    delay(10);
     inputVoltageC = analogRead(sensorPinC);
     Serial.print("Input voltage = ");
     Serial.println(inputVoltage);
@@ -93,5 +95,6 @@ void updateLed() {
 void loop() {
   updateButton();
   updateLed();
+  delay(1);
 }
 
