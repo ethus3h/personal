@@ -78,12 +78,15 @@ void updateLed() {
     Serial.println(inputVoltageB);
     Serial.println(inputVoltageC);
     if (inputVoltage > 0) {
+      Serial.print("Disabling LED A");
       digitalWrite(ledPin, LOW);   // turn the LED off (LOW is the voltage level)
     }
     if (inputVoltageB > 0) {
+      Serial.print("Disabling LED B");
       digitalWrite(ledPinB, LOW);   // turn the LED off (LOW is the voltage level)
     }
     if (inputVoltageC > 0) {
+      Serial.print("Disabling LED C");
       digitalWrite(ledPinC, LOW);   // turn the LED off (LOW is the voltage level)
     }
     updateLedState = 0;
