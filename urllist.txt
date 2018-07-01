@@ -9,3 +9,4 @@ https://bugs.gentoo.org/bots.html
 https://pastebin.com/A6EZuSYT
 https://www.htbridge.com/vulnerability/null-pointer-dereference.html
 https://www.htbridge.com/robots.txt
+https://pastebin.com/TygNSTSu
