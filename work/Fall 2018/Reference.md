@@ -2,6 +2,7 @@ NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
 - word press: http://umainenewmedia.net/register/
 - Assgnment 1: http://tutorials.nmdprojects.net/class_netiquette/ / http://umainenewmedia.net/register/ /Post “How is your capstone new media?”Pick at least one of the readings and post a response to questions a, b, and c to your own Slack channel/ (challenge the project using that) / http://nmdprojects.net/teaching_resources/new_media_definitions.html
+- Is this part of assignment 1? http://jonippolito.net/teaching/capstone/text_proposal_template.html
 
 
 COS312: 
