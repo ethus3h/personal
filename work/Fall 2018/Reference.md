@@ -6,28 +6,15 @@ NMD498:
   - Pick at least one of the readings and post a response to questions a, b, and c to your own Slack channe.Chchallenge my project using that) / http://nmdprojects.net/teaching_resources/new_media_definitions.html
   - Redings:
     - Vin Crosbie, "What Is New Media?"http://nmdprojects.net/teaching_resources/crosbie_what_is_new_media.pdf
-    defi Crosbie: That individualized messages can simultaneously be
-delivered to an infinite number of people.
-And that each of the people involved shares reciprocal
-control over that content.
+      - defi Crosbie: That individualized messages can simultaneously be delivered to an infinite number of people.
+And that each of the people involved shares reciprocal control over that content.
     - Lev Manovich, "What Is New Media?"http://nmdprojects.net/teaching_resources/manovich_what_is_new_media.pdf
       - good to read all of it, but the key section begins at "Principles of New Media".
-      - Defi Manovich:All new media objects, whether they are created from scratch on computers or converted
-from analog media sources, are composed of digital code; they are numerical
-representations. This has two key consequences:
-2. Modularity
-This principle can be called "fractal structure of new media.” Just as a fractal has the
-same structure on different scales, a new media object has the same modular structure
-throughout. Media elements, be it images, sounds, shapes, or behaviors, are represented
-as collections of discrete samples (pixels, polygons, voxels, characters, scripts). These
-
+      - Defi Manovich:All new media objects, whether they are created from scratch on computers or converted from analog media sources, are composed of digital code; they are numerical representations.2. Modularity This principle can be called "fractal structure of new media.” Just as a fractal has the same structure on different scales, a new media object has the same modular structurethroughout. Media elements, be it images, sounds, shapes, or behaviors, are represented as collections of discrete samples (pixels, polygons, voxels, characters, scripts). These
     - Henry Jenkins, "Eight Traits of the New Media Landscape"http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf
-      - defi Jenkisi:1. Innovative. Wmedia are crea2. Convergent. Eve3. Everyday. The technol20th century. Our family in response to urgen4. Appropriative. NWe can now quote a5. Networked --another and from6. Global -communiclandscape seemingly insat7. Generational8. Unequal --suggesting th
- 
+      - defi Jenkisi:1. Innovative2. Convergent. 3. Everyday. The n4. Appropriative. Ne a5. Networked --an6. Global -. Generational8. Unequal --s
     - Wikipedia entry on "New Media"https://en.wikipedia.org/wiki/New_media
-      - Defi wiki.peadi:
-
-New media are forms of media that are native to computers, computational and relying on computers for re-distribution. 
+      - Defi wiki.peadi:New media are forms of media that are native to computers, computational and relying on computers for re-distribution. 
   - Questions:
     - a How does your capstone measure up according to the definition proposed by the author/s? evaluate your project objectively 
     - b. How might you alter your project to fit that definition better?
