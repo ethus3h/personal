@@ -14,7 +14,8 @@ NMD498:
 For any of the readings that inspire (or infuriate) you, post a blog entry answering these questions:
 a. How does your capstone measure up according to the definition proposed by the author/s?
 b. How might you alter your project to fit that definition better?
-c. Do you agree or disagree with that definition, and why?
+c. Do you agree or disagree with that definition, and why?Remember
+For the "a" part of each question, you should evaluate your project objectively according to the definition, whether you agree with it or not.
 
   - Post draft, 
   - can display your next Milestone Review on a screen via AirPlay.
