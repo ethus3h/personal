@@ -11,11 +11,9 @@ NMD498:
     - Henry Jenkins, "Eight Traits of the New Media Landscape"http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf
     - Wikipedia entry on "New Media"https://en.wikipedia.org/wiki/New_media
   - Questions:
-    - How does your capstone measure up according to the definition proposed by the author/s?
-    -b. How might you alter your project to fit that definition better?
-    -c. Do you agree or disagree with that definition, and why?Remember
-For the "a" part of each question, you should evaluate your project objectively according to the definition, whether you agree with it or not.
-
+    - a How does your capstone measure up according to the definition proposed by the author/s? evaluate your project objectively 
+    - b. How might you alter your project to fit that definition better?
+    - c. Do you agree or disagree with that definition, and why?Remember
   - Post draft, 
   - can display your next Milestone Review on a screen via AirPlay.
   - <small>Prepare full-class presentationCome to class prepared with a 5-minute presentation of your capstone, and to present an additional 2 minutes on alternative idea/s. Make sure to include media or text-based documentation.I guess this was the presittation that we already did? Idk.Ill do the other things f'rst airparet and How is &reading.</small>
