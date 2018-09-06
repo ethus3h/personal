@@ -10,19 +10,17 @@ NMD498:
 And that each of the people involved shares reciprocal control over that content.
     - Lev Manovich, "What Is New Media?"http://nmdprojects.net/teaching_resources/manovich_what_is_new_media.pdf
       - good to read all of it, but the key section begins at "Principles of New Media".
-      - Defi Manovich:All new media objects, whether they are created from scratch on computers or converted from analog media sources, are composed of digital code; they are numerical representations.as a fractal has the same structure on different scales, a new media object has the same modular structurethroughout. Media elements, 
-      represented as collections of discrete samples 
-    - Henry Jenkins, "Eight Traits of the New Medi be it images, sounds, shapes, or behaviors, are represented as collections of discrete samples 
+      - Defi Manovich:All new media objects, whether they are created from scratch on computers or converted from analog media sources, are composed of digital code; they are numerical representations.as a fractal has the same structure on different scales, a new media object has the same modular structurethroughout. Media elements represented as collections of discrete samples 
     - Henry Jenkins, "Eight Traits of the New Media Landscape"http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf
       - defi Jenkisi:
-        - 1. Innovative
-        - 2. Convergent. 
-        - 3. Everyday. 
-        - 4. Appropriative. 
-        - 5. Networked 
-        - 6. Global 
-        - Generational
-        - 8. Unequal -
+        - 1 Innovative
+        - 2 Convergent. 
+        - 3 Everyday. 
+        - 4 Appropriative. 
+        - 5 Networked 
+        - 6 Global 
+        - 7 Generatinol             
+        - 8 Unequal -
     - Wikipedia entry on "New Media"https://en.wikipedia.org/wiki/New_media
       - Defi wiki.peadi:New media are forms of media that are native to computers, computational and relying on computers for re-distribution. 
   - Questions:
