@@ -14,20 +14,16 @@ And that each of the people involved shares reciprocal control over that content
     - Henry Jenkins, "Eight Traits of the New Media Landscape"http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf
       - defi Jenkisi:
         - 1 Innovative
-        - 2 Convergent2. Convergent. Every major idea, image, sound, story, brand, and relationship will play itself out
-across the broadest possible range of media channels. As Henry Jenkins (2006) argues in
-. 
-        - 3 Everyday. . Our family rooms have become home entertainment centic. Media technologies are fully integrateial interactions. In some
-d into our everydaechnologies have been a wedge between family members; ythemselves off from the people around them. Yet, at the sa
+        - 2 Convergent2. Every major idea, image, sound, story, brand, and relationship will play itself out
+across the broadest possible range of media channels. 
+        - 3 Everyday. . Our family rooms have become home entertainment centic. Media technologies are fully integrateial interactions. In somed into our everydaechnologies have been a wedge between family members; ythemselves off from the people around them
         - 4 Appropriative. 
         - 5 Networked a technologies are interconnected so that messages flow o sample and repurpose media images.
-
         - 6 Global  -- Media content flows fluidly across national borders;
         - 7 Generatinol             erated, young people adopted cultural styles and values radically different a
         - 8 Unequal -represents a new site of privilege and inequality. Participating may be elective for those who have the
 resources needed to belong in the first place but no such option can be exercised by those who are
 being left behind. Expanding access to cyberspace has the potential of empowering new segments of
-
     - Wikipedia entry on "New Media"https://en.wikipedia.org/wiki/New_media
       - Defi wiki.peadi:New media are forms of media that are native to computers, computational and relying on computers for re-distribution. 
   - Questions:
