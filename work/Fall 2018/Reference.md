@@ -1,7 +1,11 @@
 NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
-- word press: http://umainenewmedia.net/register/
-- Assgnment 1: http://tutorials.nmdprojects.net/class_netiquette/ / http://umainenewmedia.net/register/ /Post “How is your capstone new media?”Pick at least one of the readings and post a response to questions a, b, and c to your own Slack channel/ (challenge the project using that) / http://nmdprojects.net/teaching_resources/new_media_definitions.html
+- word press: http://umainenewmedia.net/course/nmd-498-copy/
+- Assgnment 1: /Post “How is your capstone new media?”Pick at least one of the readings and post a response to questions a, b, and c to your own Slack channel/ (challenge the project using that) / http://nmdprojects.net/teaching_resources/new_media_definitions.html
+Prepare full-class presentation
+
+Come to class prepared with a 5-minute presentation of your capstone, and to present an additional 2 minutes on alternative idea/s. Make sure to include media or text-based documentation.
+ can display your next Milestone Review on a screen via AirPlay.
 - Is this part of assignment 1? http://jonippolito.net/teaching/capstone/text_proposal_template.html
 
 
