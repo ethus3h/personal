@@ -4,6 +4,7 @@ NMD498:
 - Assgnment 1 http://nmdprojects.net/teaching_resources/new_media_definitions.html
   - : /Post “How is your capstone new media?”
   - Pick at least one of the readings and post a response to questions a, b, and c to your own Slack channel/ (challenge the project using that) / http://nmdprojects.net/teaching_resources/new_media_definitions.html
+  - Post draft, 
   - can display your next Milestone Review on a screen via AirPlay.
   - <small>Prepare full-class presentationCome to class prepared with a 5-minute presentation of your capstone, and to present an additional 2 minutes on alternative idea/s. Make sure to include media or text-based documentation.I guess this was the presittation that we already did? Idk.Ill do the other things f'rst airparet and How is &reading.</small>
  - Is this part of assignment 1? http://jonippolito.net/teaching/capstone/text_proposal_template.html
