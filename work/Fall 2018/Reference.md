@@ -5,12 +5,12 @@ NMD498:
   - : /Post “How is your capstone new media?”
   - Pick at least one of the readings and post a response to questions a, b, and c to your own Slack channel/ (challenge the project using that) / http://nmdprojects.net/teaching_resources/new_media_definitions.html
 
-    Vin Crosbie, "What Is New Media?"
-    Lev Manovich, "What Is New Media?"
+    Vin Crosbie, "What Is New Media?"http://nmdprojects.net/teaching_resources/crosbie_what_is_new_media.pdf
+    Lev Manovich, "What Is New Media?"http://nmdprojects.net/teaching_resources/manovich_what_is_new_media.pdf
     This is Chapter 1 of The Language of New Media. It's good to read all of it, but the key section begins at "Principles of New Media".
-    Henry Jenkins, "Eight Traits of the New Media Landscape"
+    Henry Jenkins, "Eight Traits of the New Media Landscape"http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf
     Also at http://www.henryjenkins.org/2006/11/eight_traits_of_the_new_media.html
-    Wikipedia entry on "New Media"
+    Wikipedia entry on "New Media"https://en.wikipedia.org/wiki/New_media
     Note that this changes periodically due to edits by new contributors. 
   - Post draft, 
   - can display your next Milestone Review on a screen via AirPlay.
