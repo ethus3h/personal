@@ -28,7 +28,7 @@ across the broadest possible range of media channels.
     - a How does your capstone measure up according to the definition proposed by the author/s? evaluate your project objectively 
     - b. How might you alter your project to fit that definition better?
     - c. Do you agree or disagree with that definition, and why?Remember
-  - Post draft, 
+  - Post draft, Jenkins' s definition comprises eight traits that outline their definition of new midea. I will here evaluate each element, and my project's conformance to it. The first of Jenkins's defining traits is _innovation_. I agree that the technologies that make up new media are indeed innovative. Whether individual new media works are themselves technologically innovative varies depending on the work, I think. As a communication medium, the information technology environment aspect of my project proposal is arguably merely an extension and refinement of existing communication media. However, because those existing media are themselves innovative, even so my project is a work within new media, even if it is not itself a new medium.
   - can display your next Milestone Review on a screen via AirPlay.
   - <small>Prepare full-class presentationCome to class prepared with a 5-minute presentation of your capstone, and to present an additional 2 minutes on alternative idea/s. Make sure to include media or text-based documentation.I guess this was the presittation that we already did? Idk.Ill do the other things f'rst airparet and How is &reading.</small>
  - Is this part of assignment 1? http://jonippolito.net/teaching/capstone/text_proposal_template.html
