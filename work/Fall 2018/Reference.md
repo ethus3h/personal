@@ -3,18 +3,17 @@ NMD498:
 - word press: http://umainenewmedia.net/course/nmd-498-copy/
 - Assgnment 1 http://nmdprojects.net/teaching_resources/new_media_definitions.html
   - : /Post “How is your capstone new media?”
-  - Pick at least one of the readings and post a response to questions a, b, and c to your own Slack channel/ (challenge the project using that) / http://nmdprojects.net/teaching_resources/new_media_definitions.html
+  - Pick at least one of the readings and post a response to questions a, b, and c to your own Slack channe.Chchallenge my project using that) / http://nmdprojects.net/teaching_resources/new_media_definitions.html
   - Redings:
     - Vin Crosbie, "What Is New Media?"http://nmdprojects.net/teaching_resources/crosbie_what_is_new_media.pdf
     - Lev Manovich, "What Is New Media?"http://nmdprojects.net/teaching_resources/manovich_what_is_new_media.pdf
       - good to read all of it, but the key section begins at "Principles of New Media".
     - Henry Jenkins, "Eight Traits of the New Media Landscape"http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf
     - Wikipedia entry on "New Media"https://en.wikipedia.org/wiki/New_media
-    - Questions:
-For any of the readings that inspire (or infuriate) you, post a blog entry answering these questions:
-a. How does your capstone measure up according to the definition proposed by the author/s?
-b. How might you alter your project to fit that definition better?
-c. Do you agree or disagree with that definition, and why?Remember
+  - Questions:
+    - How does your capstone measure up according to the definition proposed by the author/s?
+    -b. How might you alter your project to fit that definition better?
+    -c. Do you agree or disagree with that definition, and why?Remember
 For the "a" part of each question, you should evaluate your project objectively according to the definition, whether you agree with it or not.
 
   - Post draft, 
