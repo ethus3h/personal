@@ -9,23 +9,22 @@ The primary components comprising the project are currently unfinished, but a va
 
 # The problem(Cite at least three sources to support that it is a problem)
 
-# Three existing projects that come closest to solving 
+# Three existing projects that come closest to solving
 - MusicBrainz
 - Wikipedia
 - United States of America
 - GNU
 - 
 
-# Your general approach. Assess its alignmnet to What is new media per my and others' definitions of. 
+# General approach, and its alignment to my and others' definitions of new media.
 
+## Alignment of the approach to my and others' definitions of new media.
 
-# detail the features of your solution. 
+# Features of my proposed solution, in detail 
 
+# Expected outcomes
 
-
-# expected outcomse
-
-# Tasks list min.20 specific items.Subcatergoize if wanted
+# Tasks list (at least twenty specific items)
 
 ## Planning and strategy
 - The most important tasks are also the most difficult. Developing assets (specifications, software, etc.) is trivial compared to developing communication skills and building allies. There's a reason there are several usable computer programs developed for this project, but no other people working on it.
@@ -40,7 +39,7 @@ The primary components comprising the project are currently unfinished, but a va
 - Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration is good through the end of 2022, at which point it will need renewal, which is about US$10/year.)
 - While the project still has a bus factor of 1, my personal stability is critical for the project. I should be able to continue working on it through graduation thanks to the university and government's student financial aid.
 
-## Dependent on interpersonal connections
+## Steps dependent on interpersonal connections
 - Establish the physical community. This will require *at least* tens of thousands of US dollars.
 - Create a non-profit organization to manage and be responsible for the project
 - Ensure that organization's financial stability (through sources such as an endowment and grants)
