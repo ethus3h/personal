@@ -46,4 +46,7 @@ The primary components comprising the project are currently unfinished, but a va
 - Transfer control of the project's assets (Web presence, etc.) to that organization 
 
 
-# Resources needed list
+# Resources needed
+- Time
+- Stability (financial, personal, and organizational)
+- Money
