@@ -27,8 +27,12 @@ The primary components comprising the project are currently unfinished, but a va
 - Completed, stable software environment used for developing the project
 - Project objectives completed
   - Support and ongoing development of the project's intellectual deliverables
-    - Computing environment
-    - 
+    - Specifications
+      - Philosophy and rationale
+      - Community
+      - Technology and engineering
+    - Information technology environment software implementation
+    - Library of knowledge and great cultural works
   - Active development and ongoing support of a computing environment embodying the principles of the project
 
 # Tasks list (at least twenty specific items)
