@@ -22,9 +22,9 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 - GNU
 - 
 
-# General approach, and its alignment to my and others' definitions of new media.
+# General approach
 
-## Alignment of the approach to my and others' definitions of new media.
+## Alignment of the approach to my and others' definitions of new media
 
 # Features of my proposed solution, in detail
 
@@ -48,7 +48,7 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 # Tasks list (at least twenty specific items)
 
 ## Planning and strategy
-- The most important tasks are also the most difficult. Developing assets (specifications, software, etc.) is trivial compared to developing communication skills and building allies. There's a reason there are several usable computer programs developed for this project, but no other people working on it.
+- The most important tasks are also the most difficult. Developing assets (specifications, software, etc.) is trivial compared to developing communication skills and establishing allies. There's a reason there are several usable computer programs developed for this project, but no other people working on it.
 
 ## People and communication
 - Establish connections with people. Human connections will be critical for the success of this project.
