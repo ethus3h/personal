@@ -48,5 +48,8 @@ The primary components comprising the project are currently unfinished, but a va
 
 # Resources needed
 - Time
-- Stability (financial, personal, and organizational)
 - Money
+- Stability
+  - Financial
+  - Personal (finances; energy and focus; time availability)
+  - Organizational
