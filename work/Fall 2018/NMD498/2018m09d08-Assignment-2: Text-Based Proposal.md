@@ -61,7 +61,7 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 - While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
 
 ## Steps dependent on interpersonal connections
-- Establish the physical community. This will require *at least* tens of thousands of US dollars.
+- Establish the physical community. This will require initial capital of *at least* tens of thousands of US dollars, as well as support for ongoing expenses.
 - Create a non-profit organization to manage and be responsible for the project
 - Ensure that organization's financial stability (through sources such as an endowment and grants)
 - Transfer control of the project's assets (Web presence, etc.) to that organization 
