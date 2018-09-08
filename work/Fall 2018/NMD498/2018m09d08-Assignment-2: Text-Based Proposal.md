@@ -20,9 +20,16 @@ The primary components comprising the project are currently unfinished, but a va
 
 ## Alignment of the approach to my and others' definitions of new media.
 
-# Features of my proposed solution, in detail 
+# Features of my proposed solution, in detail
 
 # Expected outcomes
+
+- Completed, stable software environment used for developing the project
+- Project objectives completed
+  - Support and ongoing development of the project's intellectual deliverables
+    - Computing environment
+    - 
+  - Active development and ongoing support of a computing environment embodying the principles of the project
 
 # Tasks list (at least twenty specific items)
 
@@ -36,8 +43,8 @@ The primary components comprising the project are currently unfinished, but a va
   - This includes both in writing and in person. My in-person speaking on it is particularly disastrously bad.
 
 ## Finances, budget, and stability
-- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration is good through the end of 2022, at which point it will need renewal, which is about US$10/year.)
-- While the project still has a bus factor of 1, my personal stability is critical for the project. I should be able to continue working on it through graduation thanks to the university and government's student financial aid.
+- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment, a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration is good through the end of 2022, at which point it will need renewal, which is about US$10/year.)
+- While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
 
 ## Steps dependent on interpersonal connections
 - Establish the physical community. This will require *at least* tens of thousands of US dollars.
