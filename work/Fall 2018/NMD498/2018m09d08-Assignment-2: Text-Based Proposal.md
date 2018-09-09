@@ -148,7 +148,7 @@ The seventh trait is _generational_. Whether an age gap will affect this project
 
 The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
 
-# Can I use any of the rest of this?
+# Needs work
 
 I have generally advocated for the use of an information technology system to manage and facilitate work by individuals, by tracking what needs to be done and what skills people have, and offering jobs to people with the relevant skills. This would allow the individuals to bypass the difficult job search and application process, which uses a lot of individuals’ time and energy without producing any real value from that expenditure. Then, when a job is completed, the person who did the work would be granted credits corresponding to the work they did, which could then be exchanged for goods or services. This type of system could be implemented as a single, centralized system. However, it could also be implemented as a decentralized system.
 
