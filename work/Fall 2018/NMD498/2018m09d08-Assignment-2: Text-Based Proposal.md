@@ -589,6 +589,22 @@ A structure is the definition of what the structure is that an entity can have, 
 Statement
 
 A statement is a logical line of a document. It can be an invocation of a routine, or a declaration of an entity's structure or value.
+## Overview
+
+A simple programming language should be provided for easily writing portable algorithms to be transpiled to and used by programs in other languages. The name "StageL" comes from calling it a "staging language" (which refers to its being a tool for developing the main EITE software, which should provide a more complete language). This project was inspired by the ugly code that resulted when I tried to write using these principles directly in JavaScript, needing a lot of easy-to-mess-up boilerplate code and awkward notation (largely because it is not strongly typed).
+
+## Design goals
+
+*   Imperative language. Trivial to implement, learn, and read; extremely portable.
+*   Provide function calls, arrays, strings, numbers, booleans, and operators for these types with strict typing. Objects and first-class functions are out of scope for this language.
+*   Implemented as a transpiler that accepts a file as input and produces a file in the target language as output.
+*   Have an implementation of itself using itself, to provide testing and portability of the language.
+*   Have an implementation in Bash.
+*   Should transpile to (at least) JavaScript, C, Java, Bash, PHP, Microsoft CIL, Lisp, x86 assembly, and Python, in roughly that order of priority. (JavaScript is desired as soon as possible for work on the main EITE software; C and Java should follow soon thereafter for their portability; the other languages are nice to have to cover a diverse range of development environments, and additionally, in the case of CIL/x86 assembly/Lisp, of providing interesting challenges in ensuring that the language really is easily portable due to their difference from the others.)
+*   Focus on simplicity and portability: it should purely be an algorithm representation format, without input/output capabilities. It is for implementing the algorithms of a program once, and having it be available in various languages. Things such as input/output and native calls should be provided as an API specification for the StageL source file: at the top of the file, it should declare all the implementation-dependent functions that it requires; these would then be provided separately by the programmer and/or by a set of functions provided with StageL for each target language.
+*   All input/output to/from the language is as functions. All code must be in a function, with declared parameters, parameter types, variables needed, and return type. (The expense of the simple type system is that changing return values would break functions' API, since "out" parameters and/or pointers would not be available, but this should allow the code to be simple and readable, which is a priority for this language.)
+*   Output files should retain the structure and comments of the input files, thereby retaining readability as far as the target language permits.
+*   All behavior should be specified. Ambiguous programs should be impossible to write knowing the specification, and (as far as possible) the meaning of a program should be obvious and unambiguous _without_ the language specification. Programs that do not match the specification exactly should be entirely rejected, rather than produce warnings or have a best guess of its meaning made.
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
