@@ -1702,6 +1702,148 @@ This section of the library will require research and writing. It should consist
 ## Library Section 3: The data held by the Ember cloud infrastructure
 
 This section of the library will presumably be too much information to be included in the Ember specification, although future information storage technology advances may render that less of an issue.
+**Ember** is the successor to [[:Weave]], [[:Wreathe]], [[:FMOS]], etc..
+
+====== Project objectives / mission statement ======
+
+Create a system to enable efficacy, efficiency, and justice of society.
+
+The Ember Project would create a global power structure that would work to create an efficient opt-in society.
+
+====== Project structure and implementation information ======
+
+Ember will achieve these goals through creating individual components that each provide an integral part of the whole societal system. Implementation will probably need to be undertaken in stages, given the nature of 
+
+====== More details ======
+
+
+It is a database designed to use relationships to organise information.
+
+It is an organisational structure based on three classes of information using which all knowledge can be organised. Its structural philosophy uses [[:nodes]], [[:relationships]], and [[:metadata]] to organise information. A [[:node]] represents an individual item or concept. A [[:relationship]] is a description of the connection between two [[:nodes]]. A [[:metadatum]] is an objective truth about a [[:node]], such as the number of words in a book or the dimensions of a sculpture. (Illustrations of this are available at [[:use cases]].)
+
+The homepage of Weave in English can be found at [[http://futuramerlin.com/r.php?c=w&a=1&locale=|http://futuramerlin.com/r.php?c=w&a=1&locale=]]. Ember does not yet have a working implementation.
+
+Ember (and Weave) use the [[:DCE]] format for the storage of its data. It uses a MySQL database for storage. It is written in PHP.
+
+I found a quotation (14 March 2014, when I'm writing this) that seems to explain to some extent what I'm trying to do with this/these project(s): "Machines don't have a universal noun - that's why they suck." (http://www.looah.com/source/view/2284). This is one of the problems I hope Ember+DCE will solve.
+
+[[:Structuring EMBER DMS]]
+
+[[:Ember UI]]
+
+//[[:n-space-native computer graphics system|n]]//[[:n-space-native computer graphics system|-space-native computer graphics system]]
+
+[[:Coal]] (data storage system)
+
+====== Brainstorming ideas: ======
+
+===== Node examples — use cases: =====
+
+Node — a new document someone created… — type: Digital data Has title (file name); has relationships: ☆→created by (ember account), ☆has revisions (each time saved or autosaved). Node: — a piece of music someone had in their computer upon backing up w/ Ember… — type: Digital data. Has title (file name); Relationships: has revision: only the current revision, since it’s never been resaved; has creator (ember account).; has date created (date created from filesystem — with source annotation) Note that the content & format metadata are stored with the Revision nodes, not with the main nodes. Each revision node has autodetected music metadata (e.g. by Musicbrainz PUID lookup) or other autodetected metadata, such as plagiarism detection information. Music metadata & such can be added manually to main &/or revision nodes. DCE (and Wreathe and Ember) should use Google Wave’s letter-by-letter edit tracking technology… then DCE data backed up wouldn’t need independent revision nodes like that — but instead justindependent revision nodes for actual conceptual revisions of the document. Maybe, to prevent confusion, autosaved revisions could be called by a different name (i.e. a word other than “revision”.)?…. Wreathe and Ember should hide their DCE underpinnings, for the most part, but at the same time, lower-level DCE editing should be easy.
+====== Implementation ======
+
+A full DCE editor à la Wreathe isn’t necessarily necessary for Ember’s web-based administration — just use the all-in-one DCE editor / Ember browser / etc. in Wreathe if one wants desktop-power-level DCE editing in Wreathe [possibly meant to write Ember there?]. Plus, DCE editing can be easily implemented in a web environment without worrying about rendering or display so much — just work with the raw Dcs if that kind of “advanced” functionality is desired, if necessary…?
+===== Database schema ideas =====
+
+[[:Ember data modeling]]
+
+
+Article: Cecelia Kang. "Court strikes down FCC ‘net neutrality’ rule". 14 January 2014. //Washington Post//. (http://www.washingtonpost.com/business/technology/court-creates-new-game-for-web-access-in-america/2014/01/14/539c9a2a-7d3e-11e3-95c6-0a7aa80874bc_story.html)
+
+
+This article discusses a range of concerns regarding the use of corporate funds to finance increased Internet service speeds for individual Internet content provider companies. In January 2014, a federal court invalidated previous government attempts to encourage competition in the World Wide Web. The disadvantage of such a change, as with any monopolization of an industry is the reduction of choice between content providers for consumers. Another concern is the possible restrictions this could place on political speech, for example if politically biased news sources are sponsored, and thus become more accessible via the World Wide Web. The article mentions several responses to the change from a variety of influential individuals in the Web industry, mostly expressing dismay at the implications of the changes. The ruling concluded that because the Internet is considered as a service rather than a utility, the Federal Communications Commission is not in a position to regulate it. The article describes this as a "technicality". The article also mentions concerns on the part of consumer rights groups that the FCC's position will not be upheld by its new chairman, Tom Wheeler. Some Internet access providers have created arrangements by which companies can sponsor access to specific Web sites for free, while charging for access to others. The ruling, according to the article, is mostly disliked by the political left, but supported by the right.
+
+===== Analysis =====
+
+This article accurately addresses a number of the concerns involved in the thorny issue of network neutrality. Nevertheless, it fails to address a few key economic points. I also read another article from //Forbes// (Mark Rogowsky, "Netflix Decides The Free Market Isn't So Good After All, Wants Government To Step In". //Forbes//, 21 March 2014. (http://www.forbes.com/sites/markrogowsky/2014/03/21/netflix-decides-the-free-market-isnt-so-good-after-all-wants-government-to-step-in/print/)). These two articles together might present a more complete and accurate picture of the issue than either individually does. The //Forbes// article presents compellingly some of the various arguments in opposition to network neutrality, many of them not addressed thoroughly in the //Washington Post// article. For example, one of its major points is that proposals for network neutrality would place undue financial burdens on Internet service providers, by compelling them to finance the rapidly increasing amounts of bandwidth demanded by Internet content providers. However, I think there is a fundamental flaw in the //Forbes// article in that it doesn't particularly consider the role of the customer in the question. When it brings up the concern that increased bandwidth usage on the part of Internet content providers will present a burden to the Internet service providers, it only considers that the cost could be borne by the service provider or the content provider, when (as is the traditional model) it would make the most sense for the cost to be borne by the individual customers based on the connection speed and bandwidth usage they want. The article also suggests that Internet content providers without significant financial resources could work with content delivery networks to achieve connectivity speeds matching those of more wealthy companies. This argument especially seems like a point that the //Washington Post// article neglects to address.
+====== Article summary/analysis #4: Minimum wage ======
+17 March 2014.
+Article: "Compromise on minimum wage hike discussed". Mark Walker. 16 March 2014. //U-T San Diego//.
+(http://www.utsandiego.com/news/2014/mar/16/will-there-be-a-deal-on-minimum-wage/)
+===== Summary =====
+This article discusses a recent proposed increase to the minimum wage in San Diego. Lawmakers have proposed this change, but it has been opposed by local businesses and the Chamber of Commerce. The argument in favor of this increase is backed up by the statistics of three hundred thousand households in the county being financially unable to meet basic needs, but only 180,000 workers are making within a dollar an hour of the minimum wage. The article mentions that businesses are not entirely opposed to an increase in the minimum wage, but there is dissent regarding the amount and the rapidity of implementation of such a change.
+
+===== Analysis =====
+While the article discusses some of the issues involved and presents an effective argument for the raising of the minimum wage, it neglects to address some of the important issues such a change would present. For example, while suggesting that the minimum wage increase could be tied to a cost-of-living estimate, it hardly mentions the effects a minimum wage increase could have on the cost of living. If the economic equilibrium is disturbed too rapidly, it would be very conceivable for the cost of living to increase correspondingly to the changes in the minimum wage, which would in turn increase yet again to compensate for the increased cost of living. This sort of "vicious cycle" effect is not really discussed as a possible outcome by the article. While such a serious effect would be unlikely, a similar effect on a lesser scale could seriously disrupt the local economy. In neglecting to address these issues, I must conclude that the article shows a clear bias in its selection of subjects in the debate to discuss, and thus its conclusions — though not necessarily its data — should be taken with a grain of salt.
+====== HON170 article summary and analysis: # 3: Income inequality ======
+
+Article: "The American right focuses on poverty, not inequality, to avoid blame". Robert B Reich. //The Observer//. 22 February 2014. http://www.theguardian.com/world/2014/feb/23/american-right-inequality-robert-reich-obama
+
+
+===== Summary =====
+
+In this article, former labor secretary of the United States Robert Reich argues that American conservatives focus economic discussion on reducing poverty, rather than economic inequality, so it will not be considered that their ways must be changed to implement a more egalitarian economic reality. He argues that the rapidly shrinking middle class reduces opportunities for upward economic mobility, and that the current economic imbalance leaves the lower classes financially trapped, less able to get the jobs they would need at the wages they would need to become part of the middle and upper classes.
+
+===== Analysis =====
+
+While Reich makes some good points in his article, he neglects to take into account the effects of high tax rates on the poor. Massive government spending on military expansion and welfare services points to inefficiency in the financial management of taxpayer dollars. This arguably has as much an effect on the lower classes as excessive wealth in the hands of the wealthy. I think that an effective solution would need to strike simultaneously at these weaknesses, reducing government spending to only the most critical and fiscally efficient services, both at a federal and state level, and pruning inefficient spending in the services that remain. For example, the public K-12 education system in Maine is massively inefficient, spending money on computers for students. While proponents of the program say this will increase technological literacy for students, what worth does such knowledge have when a student is unable to research effectively using books? Rather, it serves to distract students in the classroom, with the computers being used to read the //Face Book// Web site instead of study academics, and to create massive support costs for schools that must hire workers to constantly monitor students' use of these computers — costs that are directly passed on to the lower classes in tax dollars.
+====== # 6. Food safety. ======
+
+Article: Jonsson, Patrik. "'Pink slime' lawsuit moves forward: Could ABC News be held liable?". 28 March 2014. //The Christian Science Monitor.//
+
+Summary and Analysis: 30 March 2014. Elliot Wallace.
+
+===== Summary =====
+
+This article discusses the collision of journalistic freedom of speech and corporate economic interest that has arisen from ABC News's 2012 report on the use of lean finely textured beef (LFTB) as filler in other beef products.  Because the report only targeted beef producer Beef Products Inc., the company claims that the news report was written with the intention of damaging their company's image and reputation, while ABC News claim that their report was not produced with this objective in mind. The report claimed LFTB to not be meat. This point is disputed. According to the chemist See Arr Oh, the Code of Federal Regulations includes LFTB within its definition of meat. Judge Cheryle Gering, in her ruling on the case, considers a brief acknowledgement of contrasting views to not be sufficient to alleviate liability in the event that news reporting is defamatory. The news report questioned the safety of LFTB. Its safety was previously asserted by the Food and Drug Administration. According to the article, "legal experts" are concerned with the effects lawsuits of this type could have on journalism, possibly preventing journalists from producing reports of this nature due to the cost of defending against such a lawsuit.
+
+===== Analysis =====
+
+This article was quite well written. It does a good job of presenting the various concerns involved in the dispute, presenting both sides of the argument quite fairly and equitably. I would consider the article's mention of "legal experts" to be rather dubious, however. It provides two examples of this opinion, from Michael Dorf and from Lin Wood, but it fails to present opposing arguments regarding this matter. The article does not present arguments from third parties explaining and expressing clearly the corporate and economic interest in such lawsuits. While it provides this information in other ways, such examples of information from third parties I think is necessary to provide a clearer insight into the details of the situation.
+
+One of the issues involved in this dispute is that of the public perception of LFTB. Since LFTB is produced from cattle, I think that it should be considered meat, and should be allowed in other meat products. However, I think that using it to add volume to those meat products while advertising and presenting them as being specific cuts or types of meat could be misleading; it is in consumers' interest to ensure that misleading advertising, if it is occurring in this situation, does not continue.
+====== # 7. Food safety. ======
+
+Article: McMaken, Ryan. "Why we're paying more for corn". 24 February 2012. //The Christian Science Monitor//.
+
+Summary and Analysis: 30 March 2014. Elliot Wallace.
+
+===== Summary =====
+
+This article addresses the rising costs of corn as a consequence of increases in the price of land suitable for growing corn. The article asserts that this increase in prices will be felt by consumers, and also mentions the consequence of government subsidies as the consumers' paying more for the crops than the apparent face value of food products containing corn.
+
+The article claims that corn may be profitable, however, as a consequence of increases in the use of genetically enhanced crops, and the use of the land for subsidized soy crops. The article criticizes the use of patents on these genetically enhanced crops, claiming the way these patents are used reduces agricultural innovation and consumer choice by allowing legal claims to be made against the developers of crops that inadvertently have been wind pollinated and thus contain the patented genes. This is a threat to breeders of both corn and soy crops, that the article's author claims is the combining of monopolization and government policy resulting in increased food cost and reduced variety in food products for consumers. While the article acknowledges that genetically modified crops in developing countries have been successful, it expresses concern about the stifling effect of government-supported monopolies on the free market economy.
+
+The article addresses the similar but opposite situation in the European Union, where government bans on genetically enhanced crops are a similar barrier to innovation and a free market in enhanced crops, but form this barrier by banning the technology rather than subsidizing it. The article concludes with a summary of the inflation of food prices resulting from the government-granted monopolies it criticizes.
+
+===== Analysis =====
+
+This article effectively presents the concerns involved in this issue. It strikes me as rather unusual in that it does not take an oversimplified, black-and-white view of the issue and simply argue a predefined party line viewpoint, but takes a more sophisticated look at the issue and suggests that there may be more ways to see the problem than as a simple dichotomy. I found this level of intellectual engagement on the part of the author in this article to be quite a refreshing change from most news reporting I have read recently. It clearly argues for the significance of food price inflation in the discussion of genetically modified crops, and I think that the article's arguments indicate this matter to be of significant importance to take a position in the forefront of the national debate on food supply and agriculture. The great potential for negative effects on the national interest of the free market economy these governmental policies have also is presented as a significant issue to discuss, which likewise should be at the core of economic and policy debate regarding intellectual property and agricultural subsidization.
+
+The author also provides an excellent summary of the contrast between United States and European Union policies, explaining the flaws of each, and providing an argument that illustrates the potential for other solutions beyond the extremes of the spectrum of this debate exemplified by those two regions.
+[[locke response To do]]
+====== A little argument for the devising and establishment of an informatics economy and libertarian welfare NGO ======
+
+
+===== Part 1: The Institution =====
+
+==== Rationale ====
+
+In my view, human society is sometimes unpredictable in the rights and safeties it affords those partaking of its benefits, I believe there is a need for a unified institution to be established outside of the realms of traditional governmental structures to provide some semblance of a filling of this void. While humans, as any other life, have the liberty of doing as they choose, and, in one way of looking at things, have no obligation to any particular social contract or structure, — (in other words — technically, everyone has the choice to do what they want, inasmuch as they can send the electrical signals to their nerves they choose to when they choose to, assuming they have such physical capacity) — while such "liberty" is indeed held by humans, they have come to expect and rely upon such social constructs for their safety and mutual benefit. For such reasons I feel it ideal to pursue the measure of establishing a single institution as I mentioned above. Those who choose not to partake of the protections I propose that such an organization would provide would, of course, open themselves up to forceful control by any who see fit: they would end up finding themselves in Hobbes' "state of nature", "all at war with all", albeit a state of nature that could perhaps be considered adulterated by the existence of power structures outside of their control. Locke writes that "The natural liberty of man is to be free from any superior power on earth" ... "to have only the law of nature for his rule" (Locke 15). There presently exist many types of authority in the world, for example: the law of war, the principles established by the United Nations and similar organizations, the laws established by states' governments and their constituents (in the United States this would encompass the powers vested in the national, state, county, and township authorities, for example), and the bounds enforced within a family. What I propose in this essay does not neatly fall into any of those categories. It would not attempt to interfere with those authorities, allowing it to coexist with them — thus its purpose being mainly the protection of and provision for those people who choose to become, so to speak, the shareholders and benefactors of its contract. It would ideally provide some recourse for those who would desire asylum from those other power structures, by holding land, under its exclusive control, that it could share in various ways such as:
+  * through issuance of private parcels within which the owners could dictate their terms, and
+  * the construction of tenements made available without charge to those participating in the organization I propose,
+
+within all of which, parcels and tenements, the sole binding policy (in other words, the protections and/or restraints imposed through the organization's policy, doctrine, and practice) would be those of the organization (beyond any that may be held by private landholders). (There could also be, and in all probability would be, unallocated land over which no control is held or claimed.) Through allocation of such private parcels, large governments could theoretically be provided land technically held by this organization I propose, them being given authority over the land to dispense of as they choose — although such an arrangement would perhaps be unnecessary, as land with existing power structures would presumably be already managed in fair order. Locke writes that a king's privilege "may be questioned, opposed, and resisted" if he uses "unjust force" (Locke 116). In all, the basic premise of what I propose is yet another layer of order provided on an opt-in basis within the context of a world which is, fundamentally, in what I would consider a state of nature with power structures founded within it. (This brings to mind one of my arguments against some philosophical ideals of "anarchy": the true absence of any social order imposed on the world would by definition allow the imposition of order by those within it, thus creating something of a paradox.) And yet, Locke writes that if "the electors or ways of election are altered  without the consent and contrary to the common interest of the people" then "those chosen are not the legislative appointed by the people" (Locke 121). This is used as a justification for revolution, for example in Thomas Jefferson's Declaration of Independence, as mentioned in Professor Glover's lecture of Tuesday.
+
+==== Objectives and basic principles ====
+
+
+==== What such a structure would provide ====
+
+
+==== Implementation methodology ====
+
+
+===== Part 2: The Spirit =====
+
+There is a somewhat poorly defined (in that it is commonly understood without reference to quantifiable metrics) concept I find worthy of consideration here: that of "evil". It is a label commonly applied to things that fall outside of the bounds of the dominant moral dicta of the group or authority applying the label. Nevertheless, evil can be accurately assessed and described through its relation to specific fundamental premises relevant to the maintenance of an ordered society. Using such a basis for its description, evil is any action which disrupts the significant objectives and wellbeing of the society, culture, or individual affected by the actions beyond what is reasonable, and is justifiable by practicalities, such as survival and convenience. This concept is connected to the traditional Christian philosophy of everyone being a sinner (for my purposes, "sinner" referring to a person who has committed evil actions), but, given such a definition of "sinner", I think that such a generalization would necessarily not include the "reasonable and justifiable" limitation, since human life almost invariably disrupts in some way the life around it (for example, in all probability most commonly in the northeastern United States by stepping on insect life and vegetation, which is difficult to avoid as a consequence of their ubiquity; or by eating food, a process which frequently involves the killing of edible plants and/or animals or the denial of a seed's and/or egg's germination), thus rendering nearly every human a sinner, and also a committer of evil acts assuming the conditional above is not taken into account. For this reason I think that a sinner should be considered as anyone who acts in a manner to disrupt the significant objectives and wellbeing of a society, culture, or individual, regardless of whether such disruption is potentially justifiable. (It also would presumably be evil to harbor fantasies of evil acts, since such fantasy would likely lead to some level of mental justification of them, subconsciously increasing the likelihood of the fantasizer committing such acts; although since it is presumably unreasonable to expect perfection in the area of avoiding such fantasy it is likely to fall under the conditional I mentioned above, except perhaps in extreme cases. This concept is quite contentious, however, given the widespread culture of respect (in Western society, at any rate) towards the absolute freedom of the mind. Personally, I have reservations about restrictions on thought, especially in terms of the possibility of legislating them; however I do think that speech and other expression should be restricted in some cases.)
+===== Sources =====
+  * Glover, Robert. Lecture of 2 October 2014.
+  * Locke, John. //The Second Treatise of Government//. 1997.
+  * Discussion in HON211 class of 2 October 2014 — Hobbes' "state of nature", "all at war with all" was mentioned
+
+"A system for punishment for violating the standards of this organization could be created by the removal of benefits and protections provided by it."
+
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
