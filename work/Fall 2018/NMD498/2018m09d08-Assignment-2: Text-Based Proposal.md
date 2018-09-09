@@ -104,8 +104,11 @@ These tasks are much less important than the above, but are much easier and comp
 - Figure out how to connect the community's network to the Internet, somehow (it shouldn't be dependent on external parties: it should follow the Internet Archive's model of being an AS with peering agreements) to allow accessing and preserving the knowledge there
 
 # Resources needed
+- Communication skills
+- Strategic planning
+- Team-building skills
+- Financial support
 - Time
-- Money
 - Stability
   - Financial
   - Personal (finances; energy and focus; time availability)
