@@ -126,6 +126,9 @@ These tasks are much less important than the above, but are much easier and comp
 - https://mydata2017.org/presentations/
 - https://medium.com/mydata
 - https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire
+- https://web.archive.org/web/20171004135730/https://www.nytimes.com/2017/08/22/world/middleeast/syria-youtube-videos-isis.html
+- https://www.archiveteam.org/index.php?title=A_Million_Ways_to_Die_on_the_Web
+- 
 
 # Features of the proposed solution, in detail
 
