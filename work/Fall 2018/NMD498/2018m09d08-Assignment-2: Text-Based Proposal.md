@@ -7,13 +7,22 @@ Link http://jonippolito.net/teaching/capstone/text_proposal_template.html
 
 The primary components comprising the project are currently unfinished, but a variety of software maintained to facilitate the development of the project is available.
 
-# The problem (Cite at least three sources to support that it is a problem)
+# The problem
 
 There is no project to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. This results in wasted effort on developing redundant proprietary technologies, regressions in standards of living caused by the unavailability of proprietary systems, and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain).
 
 There is also no project to ensure the availability of communities managed in the long-term interest their constituents, humanity, and the environment. This results in human suffering and inequality, catastrophic cultural and historical loss, and prolonged global ecological crises caused by government and corporate apathy and abuse.
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
+
+## Sources as evidence that this is problem
+
+- https://www.archiveteam.org/
+- https://archive.org/download/DigitalAmnesiaDocumentary/DigitalAmnesiaDocumentary.HD.mp4
+- https://medium.com/mydata/gdpr-data-portability-is-a-false-promise-af460d35a629
+- https://mydata2017.org/presentations/
+- https://medium.com/mydata
+- https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire
 
 # Three existing projects that come closest to solving
 - MusicBrainz
