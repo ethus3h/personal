@@ -96,7 +96,7 @@ These tasks are much less important than the above, but are much easier and comp
 
 - Develop, write, test, and document specifications
   - Community governance specifications
-  - Technology information and specifications (engineering, construction, information technology, etc.), without dependencies (enough information should be included to enable full construction of all technologies starting from nature, without any existing knowledge or technology/machinery)
+  - Technology information and specifications (engineering, construction, information technology, etc.), without dependencies (enough information should be included to enable full construction of all technologies starting from nature, without any existing knowledge or technology/machinery; this should be _tested_)
 - Continue development of support software
 - Develop software for information technology environment (EITE)
   - Finish specifying and implement portable, trivial staging language (StageL)
