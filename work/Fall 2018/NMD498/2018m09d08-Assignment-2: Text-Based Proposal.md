@@ -14,11 +14,7 @@ There is also no project to ensure the availability of communities managed in th
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
 
-## Evidence of the problem
-
-Due to its length, see the section of the same name at the end of the proposal.
-
-# Three existing projects that come closest to solving
+# Existing work towards solving this problem
 - MusicBrainz
 - Wikimedia
 - United States of America
