@@ -3,9 +3,7 @@ Link http://jonippolito.net/teaching/capstone/text_proposal_template.html
 # Abstract
 
 
-"Ember" is the current working name for a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
-
-The primary components comprising the project are currently unfinished, but a variety of software maintained to facilitate the development of the project is available.
+This proposal suggests a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
 
 # The problem
 
@@ -33,9 +31,18 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 
 # General approach
 
+This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment.
+
+To organize the broad scope of this project, it is currently divided into four primary areas of work: 
+- A specification of principles and methods on which the project is based: begun A community and a non-profit organization to manage and implement the project: not started An information technology environment: begun A library of knowledge and great cultural works: partly c
+
 ## Current project status
 
-The primary output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archiving, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty git repositories used now for the project, as well as the structured archiving of more than eighteen million additional documents outside of the project.
+"Ember" is the current name of this project.
+
+The primary components comprising the project are currently unfinished, but a variety of software maintained to facilitate the development of the project is available.
+
+The main output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archiving, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty git repositories used now for the project, as well as the structured archiving of more than eighteen million additional documents outside of the project.
 
 ## Alignment of the approach to my and others' definitions of new media
 
