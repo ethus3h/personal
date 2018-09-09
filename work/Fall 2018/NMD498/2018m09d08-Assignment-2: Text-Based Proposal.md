@@ -1599,8 +1599,6 @@ While Reich makes some good points in his article, he neglects to take into acco
 
 Article: Jonsson, Patrik. "'Pink slime' lawsuit moves forward: Could ABC News be held liable?". 28 March 2014. //The Christian Science Monitor.//
 
-Summary and Analysis: 30 March 2014. Elliot Wallace.
-
 ===== Summary =====
 
 This article discusses the collision of journalistic freedom of speech and corporate economic interest that has arisen from ABC News's 2012 report on the use of lean finely textured beef (LFTB) as filler in other beef products.  Because the report only targeted beef producer Beef Products Inc., the company claims that the news report was written with the intention of damaging their company's image and reputation, while ABC News claim that their report was not produced with this objective in mind. The report claimed LFTB to not be meat. This point is disputed. According to the chemist See Arr Oh, the Code of Federal Regulations includes LFTB within its definition of meat. Judge Cheryle Gering, in her ruling on the case, considers a brief acknowledgement of contrasting views to not be sufficient to alleviate liability in the event that news reporting is defamatory. The news report questioned the safety of LFTB. Its safety was previously asserted by the Food and Drug Administration. According to the article, "legal experts" are concerned with the effects lawsuits of this type could have on journalism, possibly preventing journalists from producing reports of this nature due to the cost of defending against such a lawsuit.
@@ -1613,8 +1611,6 @@ One of the issues involved in this dispute is that of the public perception of L
 ====== # 7. Food safety. ======
 
 Article: McMaken, Ryan. "Why we're paying more for corn". 24 February 2012. //The Christian Science Monitor//.
-
-Summary and Analysis: 30 March 2014. Elliot Wallace.
 
 ===== Summary =====
 
@@ -1629,11 +1625,8 @@ The article addresses the similar but opposite situation in the European Union, 
 This article effectively presents the concerns involved in this issue. It strikes me as rather unusual in that it does not take an oversimplified, black-and-white view of the issue and simply argue a predefined party line viewpoint, but takes a more sophisticated look at the issue and suggests that there may be more ways to see the problem than as a simple dichotomy. I found this level of intellectual engagement on the part of the author in this article to be quite a refreshing change from most news reporting I have read recently. It clearly argues for the significance of food price inflation in the discussion of genetically modified crops, and I think that the article's arguments indicate this matter to be of significant importance to take a position in the forefront of the national debate on food supply and agriculture. The great potential for negative effects on the national interest of the free market economy these governmental policies have also is presented as a significant issue to discuss, which likewise should be at the core of economic and policy debate regarding intellectual property and agricultural subsidization.
 
 The author also provides an excellent summary of the contrast between United States and European Union policies, explaining the flaws of each, and providing an argument that illustrates the potential for other solutions beyond the extremes of the spectrum of this debate exemplified by those two regions.
-[[locke response To do]]
+
 ====== A little argument for the devising and establishment of an informatics economy and libertarian welfare NGO ======
-
-
-===== Part 1: The Institution =====
 
 ==== Rationale ====
 
@@ -1643,18 +1636,6 @@ In my view, human society is sometimes unpredictable in the rights and safeties 
 
 within all of which, parcels and tenements, the sole binding policy (in other words, the protections and/or restraints imposed through the organization's policy, doctrine, and practice) would be those of the organization (beyond any that may be held by private landholders). (There could also be, and in all probability would be, unallocated land over which no control is held or claimed.) Through allocation of such private parcels, large governments could theoretically be provided land technically held by this organization I propose, them being given authority over the land to dispense of as they choose — although such an arrangement would perhaps be unnecessary, as land with existing power structures would presumably be already managed in fair order. Locke writes that a king's privilege "may be questioned, opposed, and resisted" if he uses "unjust force" (Locke 116). In all, the basic premise of what I propose is yet another layer of order provided on an opt-in basis within the context of a world which is, fundamentally, in what I would consider a state of nature with power structures founded within it. (This brings to mind one of my arguments against some philosophical ideals of "anarchy": the true absence of any social order imposed on the world would by definition allow the imposition of order by those within it, thus creating something of a paradox.) And yet, Locke writes that if "the electors or ways of election are altered  without the consent and contrary to the common interest of the people" then "those chosen are not the legislative appointed by the people" (Locke 121). This is used as a justification for revolution, for example in Thomas Jefferson's Declaration of Independence, as mentioned in Professor Glover's lecture of Tuesday.
 
-==== Objectives and basic principles ====
-
-
-==== What such a structure would provide ====
-
-
-==== Implementation methodology ====
-
-
-===== Part 2: The Spirit =====
-
-There is a somewhat poorly defined (in that it is commonly understood without reference to quantifiable metrics) concept I find worthy of consideration here: that of "evil". It is a label commonly applied to things that fall outside of the bounds of the dominant moral dicta of the group or authority applying the label. Nevertheless, evil can be accurately assessed and described through its relation to specific fundamental premises relevant to the maintenance of an ordered society. Using such a basis for its description, evil is any action which disrupts the significant objectives and wellbeing of the society, culture, or individual affected by the actions beyond what is reasonable, and is justifiable by practicalities, such as survival and convenience. This concept is connected to the traditional Christian philosophy of everyone being a sinner (for my purposes, "sinner" referring to a person who has committed evil actions), but, given such a definition of "sinner", I think that such a generalization would necessarily not include the "reasonable and justifiable" limitation, since human life almost invariably disrupts in some way the life around it (for example, in all probability most commonly in the northeastern United States by stepping on insect life and vegetation, which is difficult to avoid as a consequence of their ubiquity; or by eating food, a process which frequently involves the killing of edible plants and/or animals or the denial of a seed's and/or egg's germination), thus rendering nearly every human a sinner, and also a committer of evil acts assuming the conditional above is not taken into account. For this reason I think that a sinner should be considered as anyone who acts in a manner to disrupt the significant objectives and wellbeing of a society, culture, or individual, regardless of whether such disruption is potentially justifiable. (It also would presumably be evil to harbor fantasies of evil acts, since such fantasy would likely lead to some level of mental justification of them, subconsciously increasing the likelihood of the fantasizer committing such acts; although since it is presumably unreasonable to expect perfection in the area of avoiding such fantasy it is likely to fall under the conditional I mentioned above, except perhaps in extreme cases. This concept is quite contentious, however, given the widespread culture of respect (in Western society, at any rate) towards the absolute freedom of the mind. Personally, I have reservations about restrictions on thought, especially in terms of the possibility of legislating them; however I do think that speech and other expression should be restricted in some cases.)
 ===== Sources =====
   * Glover, Robert. Lecture of 2 October 2014.
   * Locke, John. //The Second Treatise of Government//. 1997.
