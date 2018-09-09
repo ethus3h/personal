@@ -52,7 +52,7 @@ The primary output of the project so far has been the successful development of 
       - Technology and engineering
     - Information technology environment software implementation
     - Library of knowledge and great cultural works
-  - A self-sustaining financially, technologically, and resource-independent community and a non-profit organization to manage and implement the project
+  - A self-sustaining financially, technologically, and resource-independent community and a non-profit organization to manage and implement the project, and to serve as a model for other communities using this strategy
     - Managed, geographically-redundant computing infrastructure and data archival
   - Distribution of the knowledge assets, allowing a decentralized network of communities using these specifications
     - Ideally, the entirety of the knowledge assets (perhaps excluding section 3 of the library) would be available in a wristband storage format, or something similar, ensuring that every person carries the entirety of the project with them. Printed books should also be available and distributed to libraries.
