@@ -112,7 +112,7 @@ These tasks are much less important than the above, but are much easier and comp
     - Specifications (from above)
     - Subject area information (history, mathematics, linguistics, engineering, etc.)
   - Continue compiling part 2 of the library
-- Dependent on additional finances, land, and people, provide physical cloud computing infrastructure.
+- (Dependent on additional finances, land, and people) Provide physical cloud computing infrastructure
 - Figure out how to connect the community's network to the Internet, somehow (it shouldn't be dependent on external parties: it should follow the Internet Archive's model of being an AS with peering agreements) to allow accessing and preserving the knowledge there
 
 # Resources needed
