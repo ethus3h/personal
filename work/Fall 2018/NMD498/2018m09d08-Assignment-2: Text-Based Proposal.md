@@ -13,7 +13,7 @@ There is no project to systematically support the libre development and distribu
 
 There is also no project to ensure the availability of communities managed in the long-term interest their constituents, humanity, and the environment. This results in human suffering and inequality, catastrophic cultural and historical loss, and prolonged global ecological crises caused by government and corporate apathy and abuse.
 
-These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
+These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.hde
 
 ## Sources as evidence that this is problem
 
@@ -32,6 +32,10 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 - 
 
 # General approach
+
+## Current project status
+
+The primary output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, storage and distribution, and archival, which is currently in use for storing and managing the more than eleven million files and forty git repositories used now for the project.
 
 ## Alignment of the approach to my and others' definitions of new media
 
