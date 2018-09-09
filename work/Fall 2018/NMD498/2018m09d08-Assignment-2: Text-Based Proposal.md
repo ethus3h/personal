@@ -34,7 +34,10 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment.
 
 To organize the broad scope of this project, it is currently divided into four primary areas of work: 
-- A specification of principles and methods on which the project is based: begun A community and a non-profit organization to manage and implement the project: not started An information technology environment: begun A library of knowledge and great cultural works: partly c
+- A specification of principles and methods on which the project is based
+- A community and a non-profit organization to manage and implement the project
+- An information technology environment
+- A library of knowledge and great cultural works
 
 ## Current project status
 
@@ -91,6 +94,7 @@ The main output of the project so far has been the successful development of two
 
 These tasks are much less important than the above, but are much easier and comprehensible for me. Consequently, this is where most of my work so far has been.
 
+- Develop, write, test, and document specifications
 - Continue development of support software
 - Develop software for information technology environment (EITE)
   - Finish specifying and implement portable, trivial staging language (StageL)
@@ -104,6 +108,7 @@ These tasks are much less important than the above, but are much easier and comp
 - Write/compile the library
   - Write, compile, and organize content for part 1 of the library
     - Community governance specifications
+    - Technology information and specifications (engineering, construction, information technology, etc.), without dependencies: all information should be included in 
     - Subject area information (history, mathematics, engineering, etc.)
   - Continue compiling part 2 of the library
 - Dependent on additional finances, land, and people, provide physical cloud computing infrastructure.
