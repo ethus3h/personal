@@ -2,8 +2,6 @@ The structure of this document is based on "Text-based project proposal: Templat
 
 Note that some sections have been re-ordered, to ensure that the most relevant and accessible information is presented first, with lengthier and more abstruse sections placed later. This proposal incorporates some earlier writings on the project.
 
-This *is* the scaled-down version of the project. It's much less ambitious now, no longer including a unified philosophy of existence and spirituality, two separate religions, a feature film trilogy, and a pop band.... -_-;
-
 At the bottom is a bunch of text related to the project. Most of it is probably pretty bad....
 
 # Abstract
@@ -91,7 +89,7 @@ These tasks are much less important than the above, but are much easier and comp
   - Technology information and specifications (engineering, construction, information technology, etc.), without dependencies (enough information should be included to enable full construction of all technologies starting from nature, without any existing knowledge or technology/machinery; this should be _tested_)
 - Continue development of support software
 - Develop software for information technology environment (EITE)
-  - Finish specifying and implement portable, trivial staging language (StageL)
+  - Finish specifying and build JavaScript implementation of portable, trivial staging language (StageL)
   - Port existing EITE implementation to StageL
   - Provide and implement StageL inside EITE
   - Get text rendering implemented in EITE
@@ -99,6 +97,8 @@ These tasks are much less important than the above, but are much easier and comp
   - Implement simple document editor in EITE
   - Complex text rendering support
   - Other EITE development tasks: networking, data storage and distribution, etc.
+  - Write C implementation of StageL
+  - Benchmark JavaScript implementation versus C→WebAssembly, out of curiosity. WASM would require clang in the toolchain, which wouldn't be ideal until clang can be run on non-WASM EITE, but anyway...
 - Write/compile the library
   - Write, compile, and organize content for part 1 of the library
     - Specifications (from above)
@@ -1620,20 +1620,6 @@ In this article, former labor secretary of the United States Robert Reich argues
 ===== Analysis =====
 
 While Reich makes some good points in his article, he neglects to take into account the effects of high tax rates on the poor. Massive government spending on military expansion and welfare services points to inefficiency in the financial management of taxpayer dollars. This arguably has as much an effect on the lower classes as excessive wealth in the hands of the wealthy. I think that an effective solution would need to strike simultaneously at these weaknesses, reducing government spending to only the most critical and fiscally efficient services, both at a federal and state level, and pruning inefficient spending in the services that remain. For example, the public K-12 education system in Maine is massively inefficient, spending money on computers for students. While proponents of the program say this will increase technological literacy for students, what worth does such knowledge have when a student is unable to research effectively using books? Rather, it serves to distract students in the classroom, with the computers being used to read the //Face Book// Web site instead of study academics, and to create massive support costs for schools that must hire workers to constantly monitor students' use of these computers — costs that are directly passed on to the lower classes in tax dollars.
-====== # 6. Food safety. ======
-
-Article: Jonsson, Patrik. "'Pink slime' lawsuit moves forward: Could ABC News be held liable?". 28 March 2014. //The Christian Science Monitor.//
-
-===== Summary =====
-
-This article discusses the collision of journalistic freedom of speech and corporate economic interest that has arisen from ABC News's 2012 report on the use of lean finely textured beef (LFTB) as filler in other beef products.  Because the report only targeted beef producer Beef Products Inc., the company claims that the news report was written with the intention of damaging their company's image and reputation, while ABC News claim that their report was not produced with this objective in mind. The report claimed LFTB to not be meat. This point is disputed. According to the chemist See Arr Oh, the Code of Federal Regulations includes LFTB within its definition of meat. Judge Cheryle Gering, in her ruling on the case, considers a brief acknowledgement of contrasting views to not be sufficient to alleviate liability in the event that news reporting is defamatory. The news report questioned the safety of LFTB. Its safety was previously asserted by the Food and Drug Administration. According to the article, "legal experts" are concerned with the effects lawsuits of this type could have on journalism, possibly preventing journalists from producing reports of this nature due to the cost of defending against such a lawsuit.
-
-===== Analysis =====
-
-This article was quite well written. It does a good job of presenting the various concerns involved in the dispute, presenting both sides of the argument quite fairly and equitably. I would consider the article's mention of "legal experts" to be rather dubious, however. It provides two examples of this opinion, from Michael Dorf and from Lin Wood, but it fails to present opposing arguments regarding this matter. The article does not present arguments from third parties explaining and expressing clearly the corporate and economic interest in such lawsuits. While it provides this information in other ways, such examples of information from third parties I think is necessary to provide a clearer insight into the details of the situation.
-
-One of the issues involved in this dispute is that of the public perception of LFTB. Since LFTB is produced from cattle, I think that it should be considered meat, and should be allowed in other meat products. However, I think that using it to add volume to those meat products while advertising and presenting them as being specific cuts or types of meat could be misleading; it is in consumers' interest to ensure that misleading advertising, if it is occurring in this situation, does not continue.
-====== # 7. Food safety. ======
 
 Article: McMaken, Ryan. "Why we're paying more for corn". 24 February 2012. //The Christian Science Monitor//.
 
@@ -1779,10 +1765,7 @@ I believe that God has created a sort of fettered omniscience for Himself, and h
 Gnosticism is a group of belief systems sharing certain core tenets, particularly the focus on the development of sophia (wisdom) to attain gnosis (knowledge) and on the rejection of some elements of the physical world in the endeavor to attain ascendance into the spiritual. It shares common themes and elements with many Christian and other belief systems. In the Gnostic Gospel according to Mary Magdalene, it is written “There is no sin, but it is you who make sin when you do the things that are like the nature of adultery, which is called sin.” (Gospel according to Mary Magdalene. Chapter 4, verse 26.) This sentence emphasizes the Gnostic nature of the text, in its equating of sin with adultery providing a connection to the traditional Gnostic focus on the rejection of elements of the physical in the interest of the finding of knowledge through wisdom. While it would be hard to prove concretely that things like adultery are bad, that badness can nevertheless be understood: it is a truth that can be taken on faith, it can be understood through the collective wisdom of society, or it can be felt in one’s heart.
 
   
-
-Present in my mind is the world presented by Bacon in The New Atlantis. While it isn’t presented as a dystopia in his novel, and seems that Bacon considers such an environment to be ideal, in light of the experiences of society nowadays approaching its traits in some ways, it raises frightening questions. For instance, what should the role be of surveillance in a society? In Bensalem, the society presented in the book, surveillance is present. And yet, surveillance today can seem frightening, considering the potential for its abuse. How should safeguards be put in place to simultaneously enable effective surveillance, while curtailing its abuse?
-
-  
+What should the role be of surveillance in a society? Surveillance today can seem frightening, considering the potential for its abuse. How should safeguards be put in place to simultaneously enable effective surveillance, while curtailing its abuse?
 
 Considering these elements in the process of creating a system for alternative society development is clearly a vital part of the process. Failure to do so can produce a system which is unjust, incompetent, and inefficient. By avoiding this failure, the system developed can embody its principle objectives of creating an efficient, effective, and just society. The concepts that in the many great texts of civilizations provide invaluable insights for the development of the Ember project.
 
