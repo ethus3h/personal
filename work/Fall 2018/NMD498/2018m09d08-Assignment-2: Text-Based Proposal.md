@@ -35,7 +35,7 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 
 ## Current project status
 
-The primary output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, storage and distribution, and archival, which is currently in use for storing and managing the more than eleven million files and forty git repositories used now for the project.
+The primary output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archival, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty git repositories used now for the project, as well as the structured archival of more than eighteen million additional documents outside of the project.
 
 ## Alignment of the approach to my and others' definitions of new media
 
