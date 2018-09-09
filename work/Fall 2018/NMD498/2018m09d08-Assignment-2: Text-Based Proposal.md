@@ -589,6 +589,1093 @@ A structure is the definition of what the structure is that an entity can have, 
 Statement
 
 A statement is a logical line of a document. It can be an invocation of a routine, or a declaration of an entity's structure or value.
+These do not indicate that information is guaranteed correct within the given authority context, but only that that is the intended authority of the material.
+
+  * Objective consensus: Like Wikipedia. Neutral point of view. Doesn't necessarily represent all points of view equally because of lack of consensus about them.
+  * Objective egalitarian: Neutral point of view, and tries to accept all viewpoints as equally legitimate.
+  * Subjective consensus: No neutral point of view, but established by general consensus.
+  * Objective single/subset source: Neutral point of view, as established by a single source or a subset of available sources.
+  * Objective individual/organization source: Neutral point of view, as believed by an individual or organization.
+  * Subjective single/subset source: Opinion (no neutral point of view), as established by a single source or a subset of available sources.
+  * Subjective individual/organization source: Opinion (no neutral point of view), as believed by an individual or organization.
+
+And the in-universe counterparts of the above:
+  * In-universe consensus
+  * In-universe egalitarian
+  * In-universe subjective consensus
+  * In-universe objective single/subset source
+  * In-universe objective individual/organization source
+  * In-universe subjective single/subset source
+  * In-universe subjective individual/organization source
+  **CDCE** means **Coded [[DCE]]**.
+
+It is a way of easily representing [[DCE]] content using [[FMNP]]-style [[@-codes]].
+
+The @-codes for CDCE are the same as the numeric [[DCE]] ids for each character, rather than HTML-alias–style named representations.
+
+I haven't defined any values yet.
+
+For some thoughts about what I'm going to do with this see [[CDCE ideas]].
+
+Any code can be converted into HTML display text. The function [[c]] will handle this, taking one CDCE-formatted argument and replacing it with the HTML output. The comment in the code reads:
+		#Parse a supplied CDCE string and return it as HTML
+It will do that using the database to provide an [[intf]]-style table of DCE codes and HTML replacements in Unicode.  A single DCE code does not need to map to a single Unicode character, because that would defeat the entire purpose of it.
+
+
+CDCE is Unicode text with the @-codes embedded in it as desired.
+
+The character @ obviously may need to be expressed using DCE itself to avoid syntactical confusion. It probably always should be.
+
+===== Example=====
+
+This is an invalid @27@DCE-form@21@tted string@560237@
+
+
+
+
+CDCE (a lot of this, particularly the parts in grey, aren’t important to worry about implementing yet)
+
+Actually this page is a misnomer. The page is really more about [[DCE]] than [[CDCE]]
+
+Note that not all suggested behaviours are absolute. For example, the document chunk options (see under STRUCTURAL) are not necessary; they are just one option for doing things. Semantic tagging is always good though — the system could probably be expanded a lot to maximize this. Or the automatic bibliography management option à la BiBTeX is optional too, or could be customized, etc. The basic philosophy of DCE is *FLEXIBILITY* — letting the user do what he or she wants in an elegant manner and without undue shenanigans, intrusive 'assistance', or ugly hacks.
+
+====== STRUCTURAL ======
+
+
+There are two principle structural levels for which elements need to be described: documents and texts. A document is a complete unit such as a book or journal article, which would comprise various textual regions (note that in typesetting some items, such as database records of titles or filenames, only one textual region would be used; in the first, either a "Document Title" or a "Standard" region type would be used, depending on how the database was being queried, that is, the presentation style of the information as a title or as standard text (such as if it were being displayed in a page that contained a list of database fields), and in the second, a "Standard" region type would be used for interface display in lists (other region types might be used at other times) (note that in any use cases when it is in a "Standard" textual region, it would still have the text type Title)). A textual region is a section of content that has one semantic componency, e. g. the body of a document or the title; a document is therefore comprised of texts.
+=====Textual region types: =====
+
+* Document title
+
+ * Author name (multiple author names will be compiled into a list) 
+
+* Illustrator name (multiple illustrator names will be compiled into a list) 
+
+* Editor name (multiple editor names will be compiled into a list) 
+
+
+
+*  Publisher's name 
+
+*  Address 
+
+*  Printing history 
+
+*  Copyright notice 
+
+*  Dedication 
+
+*  Author's note 
+
+*  Illustrator's note 
+
+*  Editor's note
+
+
+*  Publisher's note 
+
+*  Introduction 
+
+*  Forward 
+
+*  Preface
+
+
+*  Prologue 
+
+*  Date 
+
+*  Section title (might change in definition within document based on section hierarchy) 
+
+*  Standard (Document content) 
+
+*  Postlogue 
+
+*  Afterword 
+
+*  Date 
+
+*  Signature 
+
+*  Author biography 
+
+*  Illustrator biography 
+
+*  Editor biography 
+
+*  Typographic credits 
+
+*  Index 
+
+*  Bibliography
+
+
+===== Document chunks: =====
+
+*  Spine 
+
+*  Cover 
+
+*  Front flap
+
+
+*  End pages 
+
+*  Title page 
+
+*  Half-title 
+
+*  Contents 
+
+*  Back end pages 
+
+*  Back flap
+
+
+*  Back cover
+===== Text classes: =====
+
+*  Standard 
+
+*  Numbered list 
+
+*  Bulleted list 
+
+*  Block quotation 
+
+*  Poetry
+===== Text subclasses: =====
+
+*  Non-person proper name (can be linked to a Weave node) 
+
+*  Person (can be linked to a Weave node) 
+
+*  Non-person entity (can be linked to a Weave node) 
+
+*  In addition, any other text class can be a subclass
+
+====== CONTENTS ======
+: various presentation elements need to be addressed, such as animation of other elements, actions on keypresses, the ability to write programs, macros, etc. So basically one could make anything (program, slideshow, animated film) using this technique. Additional functionality like fonts (referenced or embedded), document- or character-specific additional glyphs or glyph modifications, colors, text sizes, text backgrounds and background types, page backgrounds, object stacking, wrap, leading, columns (both linear
+and multiple-section/semantic (e. g. the columns in a newspaper being used to store separate articles) (a 'column break' control would be needed for this)), Fontworks and similar, gradients (normal or using variables (e. g. using the text color or background color to determine the color of the gradient) (also as text itself, so text could have a gradient fill or outline)) should also be included.
+
+====== CONCEPTUAL ======
+
+
+Text language classes are types of text used to denote the language and script of a document or a section of text within the document (e. g. latin/english, han/vietnamese, latin/vietnamese, mixed/japanese, latin/php, latin/base64, latin/html, latin/c, latin/visual-basic-.net, none/whitespace (a programming language), latin/volapuk, latin/romaji, cyrillic/russkiy). They are used for identifying the correct spelling-check language. Characters from other scripts (most usefully, symbols) can be inserted in other script regions however. 
+
+
+<html>&#42;</html><html>&#42;</html><html>&#42;</html><html>&#42;</html> Are encodings such as volapuk or base64 'languages' as such? Should they be handled differently???
+
+<html>&#42;</html><html>&#42;</html><html>&#42;</html><html>&#42;</html><html>&#42;</html><html>&#42;</html> They should be handled differently. For one thing, spell checking is irrelevant. Also note the distinction between natlangs, programming languages, and encodings in how autocompletion, spellchecking, grammar/syntax checking, hyphenation, display, syntax highlighting, etc. are handled.
+===== Cross-language text type classes: =====
+ 
+
+*  Mathematics 
+
+*  Geometric sketches and graphs (2d, 3d, nd) 
+
+*  Western musical notation 
+
+*  Ancient Greek musical notation 
+
+*  Byzantine musical notation 
+
+*  Feynman diagrams 
+
+*  Electrical diagrams 
+
+*  Flow charts 
+
+*  Braille 
+
+*  Graphs 
+
+*  Tables 
+
+*  Graphics 
+
+*  Hybridization charts 
+
+*  Genealogical charts 
+
+*  Bitmaps 
+
+*  Symbols 
+
+*  Maps 
+
+*  Sign language transcriptions (see Chicago p. 145) 
+
+*  Hyperlinks 
+
+*  Raw data
+
+==== Only meaningful for electronic media: ====
+
+*  Vector audio (such as MIDI or Vocaloid) 
+
+*  Audio 
+
+*  Animated graphics 
+
+* Video
+
+* Interactive panoramic imagery (QuickTime-style)
+
+* Interactive 2D imagery (Google Maps - style; 2d video games too)
+
+* Interactive 3D imagery (Google SketchUp - style; 3d video games too)
+
+* Interactive text
+
+* Software (how will this work?)
+
+* Embedded resource: Typeface data (store a typeface as a DCE file); colour chart data (store a colour pallet as a DCE file); etc.
+
+
+
+Specify alt text for bitmaps, audio, and video, because they are binary files. 
+====== CHARACTERS ======
+ Separate conceptual characters should be encoded (as Unicode does). Variant glyph forms should be provided however, e. g.
+
+{{ :screen_shot_2011-12-13_at_11.49.00_am.png |}}
+
+vs
+
+{{ :screen_shot_2011-12-13_at_11.47.58_am.png |}}
+
+
+for the letter 'a', because in some source documents, this distinction is important. These glyph forms should be specified by variant form selector control characters (as in Unicode) that for each character have specific defined values. The character without any variant selector should not be required to default to any specific form (the font may determine this). Distinctly from Unicode's handling of this issue, the source separation rule should NOT be applied here; that applies to composite characters (e. g. "cm2" should remain a set of 7 characters (BEGIN UNIT, LATIN SMALL LETTER C, LATIN SMALL LETTER M, BEGIN EXPONENT, DIGIT TWO, END EXPONENT, END UNIT). This may seem clumsy, but it is much simpler for archival of large quantities of data to only have one encoding method for each possible content being encoded. If it is necessary to provide round-trip encoding, the following could be used: BEGIN CHARACTER UNIT, BEGIN UNIT, LATIN SMALL LETTER C, LATIN SMALL LETTER M, BEGIN EXPONENT, DIGIT TWO, END EXPONENT, END UNIT, END CHARACTER UNIT. This will, while remaining roughly internally and semantically equivalent to the previous example (because the CHARACTER UNIT characters are used for handling characters from other standards that are not 'real characters' but rather should be specified as multiple characters), will provide unambiguous round-trip compatibility with existing Unicode or other encoding implementations. A font would not need to have a separate glyph for that unit being viewed as as set of characters or as an individual character; rather, the pile of glyphs that would represent the first character would provide equally well for the second. Each character in an existing standard should have exactly one mapping to a character or sequence of characters in this standard (disregarding CHARACTER UNIT codes), so there will only be one possible mapping for every charater.
+
+===== STYLES =====
+
+Slant, italicization angle, weight, spacing, etc can also be defined using specific values. (might that be difficult, rendering wise? dynamic glyph modification? Eh so what if it is…)
+==== Useful: ====
+ 
+
+*  Serif/Roman (Centaur) 
+
+*  Sans-serif 
+
+*  Equal stroke thickness 
+
+*  Comic book (like in Naruto for dialogue bubbles) 
+
+*  Monospacey (a style that 'looks like' a monospaced typeface ("typewriter"), but because styles don't determine advance width, all it is is a style)
+
+* Fraktur (Fraaaaktur, anyone?)
+
+==== Blackboard styles, mostly useful for math or for education: ====
+
+*  Blackboard Italic 
+
+*  Blackboard Roman
+==== Handwritten or script: ====
+ 
+
+*  Cursive 
+
+*  Chancery 
+
+*  Lucida Handrwriting 
+
+*  Handwritten cursive
+
+
+*  Handwritten sans-serif
+==== Display: ====
+
+
+
+*  Papyrus
+
+
+*  Herculanum
+
+
+*  Harrington 
+
+*  Underland Chronicles
+
+* Forest
+
+* Centre Post
+
+* Inkcalig
+===== SPACING =====
+
+*  Ve r y d e n s e 
+
+*  Dense 
+
+*  Normal 
+
+*  Monospaced 
+
+*  Monospaced unstretched 
+
+*  Loose 
+
+*  Ve r y l o o s e
+===== SHAPES =====
+
+*  Upright 
+
+*  Italic 
+
+*  Slanted 
+
+*  Reversed italic 
+
+*  Reverse slanted
+===== WEIGHTS =====
+ 
+
+*  Extra-light 
+
+*  Light 
+
+*  Normal
+
+
+*  Bold 
+
+*  Extra-bold
+===== FILLS =====
+ 
+Plus pattern fills, gradient fills, animated fills, you name it…
+
+*  Solid 
+
+*  Outlined
+===== EFFECTS: =====
+Whether these are altered by the above font changes depends on the nesting.
+
+Stroke/dot/dash thickness/size/etc can be specified numerically as different from the default to enable such things as big dot - little dot - big dot - little dot patterns of underlines. And just as an example of the flexibility of DCE: the dot/dash patterns of strokes should be able to be modified programattically/dynamically too if desired (able to, for example, use the time the document is loaded to define the stroke pattern, or encode the time in a Morse code underline that updates every second (only in electronic media of course!), etc. EPIIC!
+==== STROKES ====
+
+Should vertical advance lines etc be specified here? Where should anchor points go? Kerning lines? Hint lines? etc. See down in Covers section too…
+
+*  Underlined (multiple builds down) 
+
+*  Overlined (multiple builds up) 
+
+*  Struck (multiple is centred) 
+
+Obviously these build up / down / out behaviours could be overridden by the user if so desired…
+
+*  Ascender line
+
+
+*  Descender line 
+
+*  X-height line
+==== DOTS (for used in modifying STROKES and COVERS) ====
+ 
+
+*  Dot 
+
+*  Rounded dash 
+
+*  Square dot
+
+
+*  Dash
+==== COVERS ====
+ 
+
+*  Circle 
+
+*  Square 
+
+*  Rounded square 
+
+*  Rounded-corner rectangle like {{ :screen_shot_2011-12-14_at_12.00.43_pm.png|}}
+
+*  Zero position (for typography)
+
+
+*  Advance width (for typography)
+==== COVER TYPES ====
+ 
+
+*  Normal 
+
+*  Outlined 
+
+*  Outlined negative 
+
+*  Negative
+
+
+*  Outlined inverse 
+
+*  Inverse
+====== COVERAGE ======
+ In any system, there should be at least one font that covers all the possibilities to allow for complete typesetting fexibility.
+====== ODD CHARACTERS ======
+
+: ASCII transcriptions For use in node titles, transcriptions, &c. 
+
+*  Unknown value: # 
+
+*  Unknown value: illegible: 
+
+* 
+
+
+*  Unknown value: Guess or approximation: ~ 
+
+*  Unspecified value: } 
+
+*  Escape: \ 
+
+*  Opening grouping character: (
+
+
+*  Closing grouping character: ) 
+
+*  Approximation range character: _ 
+
+*  Single character wildcard: ? 
+
+*  Multiple character wildcard: $ 
+
+*  Start name reference (use ()s): ! 
+
+*  Alternative: | 
+
+*  Approximate number of metacharacters: % 
+
+*  Error range opening (use ()s): { 
+
+*  Error range plus: +
+
+
+*  Error range minus: - 
+
+*  Error range plus or minus: ^ 
+
+*  Record sum: = 
+
+*  Non-original data: & 
+
+*  Begin annotation: [ 
+
+*  End annotation: ] 
+
+*  Original value: < 
+
+*  Ommitted portion: / 
+
+*  Insertion: > 
+
+*  Replaced original text with: `
+
+===== Examples =====
+
+: Assume that these special characters are distinguished somehow from the surrounding text to make their usage distinct from the same characters in the text.
+
+==== Comment ====
+
+Hangonaminnit. If these are separate characters, what do we need escaping for?? Maybe so the special annotation characters can be annotating text containing special annotation characters? This recursion is confusing… Also, that could pose a challenge to rendering… how to provide unambiguous visual clues about this kind of thing?? (A document is though possibly going to want to have parts of it that conflict with the determined visual clues… therefore they can't be *totally* unambiguous.) But at least in the edit view maybe there's some way… maybe WYSIWYM editing, sort of??
+
+<html>  &nbsp;&nbsp;Need to think about this…</html>
+
+==== Bibliographic entry. ====
+
+   !(#). "!(Tou 'ta ~(t(f|v)(a|o))niken yo*(%{((**){(+1){(-1)))ai me)". Serialised {(1856^(~2))_1897=1984_~(Winter 1984|Spring 1985). Pages ((&(128_129))|(<(56_}))).
+The author's name is unknown, and is being referenced as a node. The title of the book is _Tou 'ta_ and then something like either 'tva', 'tvo', 'tfa', or 'tfo', _niken yo_ and then two (plus or minus 1) illegible characters, _ai me_. The book was serialised beginning between approximately 1854 and approximately 1858, and ending in 1897, and then again from 1984 to sometime around either winter of 1984 or spring of 1985. Two possibilities for the pages being cited are given. First were some page numbers that were not in the original version of the document, which were used to indicate that the portion being cited is between pages 128 and 129 of the non-original numbering. Second was an original numbering system, using which the cited portion is between page 56 and an ending page that did not have a specified number in the original system.
+
+==== Quotation. ====
+
+  "This is a very wellwritten>( \[sic\]) book /as `(Mr Carter) said."
+After the word 'wellwritten', '[sic]' has been inserted. Some text has been skipped between 'book' and 'as'. 'Mr Carter' is replacing some text.
+A **[[DCE]] calendar format** is a structure for representing date/time within DCE. Which calendar format the parser uses is specified by the [[DCE calendar identifier|calendar identifier]].
+
+======Ranges:======
+A range is specified by:
+
+{base string #1}@4@{base string #2}
+
+where the base strings are the start and end points, and @4@ represents the [[DCE range character]].
+
+======Wrapper syntax:======
+
+The syntax for specifying a set of dates/times/ranges is using the [[DCE record summation character]] (represented here and in the [[Weave]] database as @5@).
+
+======List of formats======
+
+=====How to read this list:=====
+
+Each set of braces {} indicates an option that can be chosen or a value to be filled in.
+
+{@10@|@11@} means choose @10@ or @11@.
+
+All values to be filled in are in the [[DCE number format]].
+
+(@2@2@3@ represents the DCE sequence [[DCE separators|begin separator]] - [[DCE number format|2]] - [[DCE separators|end separator]].)
+
+=====Gregorian:=====
+
+(@2@1@3@ represents the DCE sequence [[DCE separators|begin separator]] - [[DCE number format|1]] - [[DCE separators|end separator]].)
+
+{[[DCE calendar identifier]]}@2@1@3@{[[DCE calendar string]]}
+
+====Base structure:====
+
+ {@10@|@11@}{year}@2@2@3@{month}@2@2@3@{day}@2@2@3@{hour}@2@2@3@{minute}@2@2@3@{second}@2@2@3@{subdivisions of a second}
+
+Example: @1@@2@1@3@**@10@****2012**@2@2@3@**10**@2@2@3@**7**@2@2@3@**15**@2@2@3@**@8@**@2@2@3@**@8@**@2@2@3@**@8@**
+
+What this represents is the year 2012 A. D., 10nth month October, 7th day — Sunday, 15th hour after midnight, and that the minute, second, and subdivisions of a second are unknown. The @8@ is representing a character for an unknown value (see also [[CDCE ideas]]; other of these "Odd Characters" could be used here too). The values have been marked in bold for clarity.
+
+A **[[DCE]] calendar identifier** is a DCE character representing a specific calendar, so that when handling e. g. [[datetime_string]]s the parser knows what [[DCE calendar format|calendar format]] to use. DCE calendar identifiers are also given mappings to ASCII letters by Weave for use in [[datetime_string]]s. If the number of calendars surpasses the number of ASCII letters, multiple letters can be used.
+
+======List of identifiers======
+
+=====Gregorian calendar:=====
+
+DCE: 9
+
+ASCII: G
+The **DCE number format** is the proper method for representing numbers in [[DCE]].
+
+Its simplest format is to use the Western/Arabic numerals 0123456789 to represent numbers. The decimal point is represented internally in [[Weave]] by its CDCE equivalent @12@. For example, 3 and three quarters would be: 3@12@75
+The **DCE range character** is the character used in DCE to represent ranges in data. DCE code 4. See [[Representing ranges in DCE]] for more information.
+The **DCE record summation character** (DCE code 5) is the [[DCE]] character used to denote the union of two records. Its deprecated internal ASCII representation in the [[Weave]] database was =.
+The **DCE separators** are ways of denoting divisions in strings. The two relevant characters are //begin separator// and //end separator//. Between the two is a positive [[DCE number format|integer]] denoting the level of separator, 1 being the highest-level separator, and continuing indefinitely.
+**DCE** is the //document-character-entity// encoding model/document structure model.
+
+The implementation of it in Weave is [[CDCE]].
+
+It assigns a numeric ID to every character it will encode.
+
+DCE data represents a string of **action**s to be taken. For example, a Character action indicates that the character it represents should be appended to the relevant **output context** (e.g. a screen, a paper document, or a data stream in a different text encoding). ← I came up with the ideas in this paragraph over supper at York tonight (8 February 2014)!
+
+DCE characters are grouped into Classes, that represent certain structures or use case groupings. These classes are not mutually exclusive, but are simply a convenient way to develop the DCE standard modularly. For example, I want to develop a [[DCBoxLayout]] or [[DCLayout]] character class corresponding to the [[Fracture Fluid|Fracture//Fluid]] box layout structure to enable the representation of flexible, semantically represented document layouts.
+
+In the context of DCE, the term "document" is largely used in a general sense, referring not only to static documents but to, for example, documents with embedded multimedia, or interactive Application documents.
+
+====== Brainstorming ideas: ======
+
+DCE should have Lego Dcs — be able to represent a Lego structure using DCE. DCE should use a HTML-based administration frontend to access characters, and manage characters and mappings (add/remove/edit). Mappings need to be stored for EACH version of DCE — not just the current one —… so a method for managing separate versions of DCE would be necessary. Use a SQLite database to store DCE data? (note 13 June 2013: I think MySQL would be better suited) Could add extensions to DCE to allow storing database-style data, & then use a DCE document to store the DCE database. That would be interesting… Should have Dcs & mapping databases stored separately & by version separately to avoid accidentally modifying data from previous versions.
+**dceutils** is PHP software for working with [[DCE]] data. Previously named [[libdce]]; renamed to dceutils 3 October 2013 due to a naming conflict with the [[https://gitorious.org/gstreamer-omap/libdce/source/80587a8de98494ebca4a20e68f47493769b13bbf:|Distributed Codec Engine]].
+
+Eventually it should support character set inheritance, so that, for example, precomposed Tibetan stacks conforming to the [[ref:GB T 22238-2008|GB/T 22238-2008]] standard (an extension of Unicode, with specific PUA assignments) could be converted to DCE with minimal effort by inheriting the Unicode parser and only providing mapping overrides for the needed codepoints.
+
+===== Subproject scope =====
+
+  * DcCore: Conversion utilities, Dc_Data class. [work in progress]
+  * DcMeta: Support functionality, including DcMetaArgumentHandler().
+  * DcRender: Rendering and related operations. [not begun]
+  Might be useful: http://www.slideshare.net/DanLynn1/storing-and-manipulating-graphs-in-hbase
+
+
+====== Example schema ======
+Note that this is simplified (doesn't deal with character encodings, localisation, strings, etc.... FIXME
+
+Rough example of how things might work (note that type 2 is a relationship and does not necessarily take data but has a node as its target, while type 3 is a metadatum and has to take data but only has its root node:
+
+===== Classes =====
+^ id ^ description ^
+| 0 | node |
+| 1 | relationship |
+| 2 | metadatum |
+
+===== Types =====
+^ id ^ class ^ description_1 ^ description_2 ^
+| 0 | 0 | person | |
+| 1 | 0 | basic node | |
+| 2 | 1 | has author | is author of |
+| 3 | 2 | has title | is title of |
+
+===== Users =====
+^ id ^ username ^ salted_password_hash ^ node ^ biometrics data ^
+| 0 | test | blahblahblah | 0 | DCEe... |
+
+===== Nodes =====
+^ id ^ node ^ date ^ type ^ data ^ node_1 ^ node_2 ^ author ^ permissions ^
+| 0 | 0 | DCEe... | 0 | DCEe... | | | 0 | DCEe... |
+| 1 | 0 | DCEe... | 0 | DCEe... | | | 0 | DCEe... |
+| 2 | 1 | DCEe... | 1 | DCEe... | | | 0 | DCEe... |
+| 3 | 2 | DCEe... | 2 | | 1 | 0 | 0 | DCEe... |
+| 4 | 3 | DCEe... | 1 | DCEe... | | | 0 | DCEe... |
+| 5 | 2 | DCEe... | 2 | DCEe... | 1 | 0 | 0 | DCEe... |
+| 6 | 4 | DCEe... | 3 | DCEe... | 1 | | 0 | DCEe... |
+====== Comments and ideas ======
+
+How to deal with complicated situations, e.g. three-node relationships? Could relationships all just be special cases of metadata? (Or maybe vice versa, although I don't think that would work?) What about nondirectional relationships? Or unidirectional?
+
+Everything in one big table??
+
+How to delete relationships??
+
+Relationships and metadata as nodes, all together in one big table??
+
+For each node: id
+
+For each node revision: id, node_id, revision_date, type, data, node_1, node_2
+
+node_id: related to node table
+
+type: e.g. "Node has number of pages metadata" or "Data" or "Person" or "node_1 is author of node_2"
+
+data: DCE data ID associated with the node (for metadata, this would be the value of the metadata; for a data-type node this would be its contents)
+
+node_1 and node_2: two nodes that this node represents a relationship between
+  * [[Authority contexts]]
+  * [[Modular Dc Sequence Builders]]
+
+  * Tagged nodes, including a system for storing the tags as part of a tag grouping (which could have permissions like a document). Would also have a global tag system, so people could add tags to the global tag grouping.
+  * Liberal relationship formation and node typing: A node can be assigned any other node as its type; a relationship can be from any type of node to any other type of node even if that is not how the relationship is defined (this situation could display a warning, for example)
+  * Hopefully these traits would help keep restrictions from being a pain in the ass
+
+
+====== Data flows ======
+Listed: tolerance per item — (maximum ping in ms | minimum bandwidth per second)
+===== Fully featured client =====
+
+==== Input ====
+  * keyboard(s) and button(s) — (0 | 200b)
+  * microphone(s) — (5 | 6144kb assuming 32 bits per sample 192kHz) (calculated using http://www.theaudioarchive.com/TAA_Resources_File_Size.htm )
+  * GPS(es) — (1000 | 1kb?)
+  * accelerometer(s) — (1000 | 512b?)
+  * ambient light sensor(s) — (1000 | 512b?)
+  * camera(s) — (100 | 48gb) (assuming 8K 60fps 48-bit RGBA) (calculated using http://web.forret.com/tools/video_fps.asp?width=7680&height=4320&fps=60&space=rgba&depth=48 )
+  * pointing tool(s):
+    * Simpler:
+      * mouse — (0 | 800kb?) ( see https://answers.yahoo.com/question/index?qid=20060707143627AAsH1ay )
+      * pointing stick
+      * trackball
+      * trackpad
+    * Complexer:
+      * tablet
+      * touchscreen
+      * multitouch trackpad (0 | 200kb?) (see http://www.digikey.com/product-search/en/integrated-circuits-ics/data-acquisition-touch-screen-controllers/2557134 )
+      * 3-dimensional pointing tools
+==== Output to user====
+  * Display(s) (2-dimensional)
+  * speaker(s)
+  * Display(s) (3-dimensional)
+  * status (etc.) light(s)
+  * projector(s)
+===== Server =====
+
+==== Input from clients ====
+  * Requests: 
+    * insert record
+    * get record
+    * get matching record list (e.g. search results)
+    * establish authentication
+==== Output to clients ====
+  * Responses:
+    * Confirmation messages (ACKs)
+    * records
+    * record lists
+    * authentication confirmation
+
+====== Note ======
+
+DCE named syntaxes? (as extension of named sequences) E.g. U+1F4B0 MONEY BAG could map to a Dc "Money bag". The Money bag Dc would be defined as: <Enclosing Bag>(<Class:Currency symbols>)
+
+This would allow a) the mapping to represent the money (currency symbol) semantic of the Unicode character and b) a user to create a visually identical sequence with something else in it (e.g. <Enclosing Bag><Begin Discrete Block><Begin Style Override><Begin Style Definition><Sans Serif><End Style Definition>XXX<End Style Override><End Discrete Block> to create a flour bag if the user wanted the same style as the Money bag)
+
+====== A little argument for the devising and establishment of an informatics economy and libertarian welfare NGO ======
+
+
+[[http://futuramerlin.com/Diffed-and-downloaded-19Oct2014/DiffNow%20Comparison%20Report.htm|Comparison with version 8, made using DiffNow]]
+
+
+
+===== Part 1: The Institution =====
+
+
+==== Rationale ====
+
+
+I would like to establish a project to create an adequate infrastructure for managing and providing for the basic needs of society. This organization could exist alongside governments and other social structures, as well as potentially taking their place in the event that they collapse or fail to perform as expected (as appears to be happening, for example, in several African countries) (Fund For Peace 2014; Wikipedia 2014).
+
+In this document, I will use the term “person” to refer to any independent, quantizable (able to be assessed discretely and independently of other elements) unit with a soul; a firmer, more satisfactory, analytical definition of it is unfortunately out of my grasp at present, as is a complete understanding of whether some things are rightly considered as persons. For example, does a rock have a soul? If that rock is is split in two, does each resulting portion have its own soul?
+
+In my view, as human society is sometimes unpredictable in the rights and safeties it affords those partaking of its benefits, I believe there is a need for a unified institution to be established outside of the realms of traditional governmental structures to provide some semblance of a filling of this void. While humans, as any other life, have the liberty of doing as they choose, and, in one way of looking at things, have no obligation to any particular social contract or structure, — (in other words — technically, everyone has the choice to do what they want, inasmuch as they can send the electrical signals to their nerves they choose to when they choose to, assuming they have such physical capacity) — while such “liberty” is indeed held by humans, they have come to expect and rely upon such social constructs for their safety and mutual benefit. For such reasons I feel it ideal to pursue the measure of establishing a single institution as I mentioned above. Those who choose not to partake of the protections I propose that such an organization would provide would, of course, open themselves up to forceful control by any who see fit: they would end up finding themselves in Hobbes' “state of nature”, “all at war with all” (HON211 2014). Locke writes that “The natural liberty of man is to be free from any superior power on earth” … “to have only the law of nature for his rule” (Locke 1997, p. 15). There presently exist many types of authority in the world, for example: the law of war, the principles established by the United Nations and similar organizations, the laws established by states' governments and their constituents (in the United States this would encompass the powers vested in the national, state, county, and township authorities, for example), and the bounds enforced within a family. What I propose in this essay does not neatly fall into any of those categories. It would not attempt to interfere with those authorities, allowing it to coexist with them — thus its purpose being mainly the protection of and provision for those people who choose to become, so to speak, the shareholders and benefactors of its contract. It would ideally provide some recourse for those who would desire asylum from those other power structures, by holding land, under its exclusive control, that it could share in various ways. These ways could include through the issuance of private parcels within which the owners could dictate their terms, and through the construction of tenements made available without charge to those participating in the organization I propose. Within all of these, parcels and tenements, the sole binding policy (in other words, the protections and/or restraints imposed through the organization's policy, doctrine, and practice) would be those of the organization (beyond any that may be held by private landholders). (There could also be, and in all probability would be, unallocated land over which no control is held or claimed.) Through allocation of such private parcels, large governments could theoretically be provided land technically held by this organization I propose, them being given authority over the land to dispense of as they choose — although such an arrangement would perhaps be unnecessary, as land with existing power structures would presumably be already managed in fair order. Locke writes that a king's privilege “may be questioned, opposed, and resisted” if he uses “unjust force”. In all, the basic premise of what I propose is yet another layer of order provided on an opt-in basis within the context of a world which is, fundamentally, in what I would consider a state of nature with power structures founded within it. (This brings to mind one of my arguments against some philosophical ideals of “anarchy”: the true absence of any social order imposed on the world would by definition allow the imposition of order by those within it, thus creating something of a paradox.) And yet, Locke writes that if “the electors or ways of election are altered without the consent and contrary to the common interest of the people” then “those chosen are not the legislative appointed by the people” (Locke 1997, p. 121). This is used as a justification for revolution, for example in Thomas Jefferson's Declaration of Independence, as mentioned in Professor Glover's lecture[TODO cite].
+
+I believe that the general rules of this organization should be established on the basis of rights: rather than making a rule that, for example, prohibits murder, instead a rule should be established that protects individuals’ right to life. In such a way, rules would not be created that infringe freedom more than that which is necessary to retain order in society.
+
+In the event that an individual who is party to the organization has interests that conflict with the interest of, for example, a government within the context of which this organization exists, such action should be taken as is deemed prudent and sensible. It would be, for example, distinctly unwise to antagonise a militarily powerful government the citizens of which are under threat from an individual who is party to this organization in the interest of protecting this individual’s rights. It can be considered that all who are not a member of any given social contract being discussed are in a state of nature. In this document, the social contract being discussed is that held between the members of this organization. From this perspective, there is no evident reason not to hunt for food those who are not party to this contract (for the same reason that humans hunt deer even when they are part of a social contract that forbids killing each other, since the deer are not party to their social contract); however it would likely be imprudent to hunt those who are protected by an institution with a strong military force.
+
+In my model world-state, such an organization is sufficiently extensive and effective as to in effect preclude the necessity of separate governments, outside of the individual community branches of the organisation serving to manage the organisation’s local presence and interests.
+
+==== What such a structure would provide ====
+
+
+This project would, in its complete form, provide useful elements of survival: shelter, nutrition (including food and water), medical care, education, and information. It would do this as its fulfilment of its objective of managing the various needs of a society, by enabling people to be effective participants in that society.
+
+One of its fundamental elements would be the creation of a butt-based information technology system, intended to provide rapid information storage and retrieval (ISR). This would likely use an append-only NoSQL database to store a softly directed concept graph. It would use, in the current implementation I am working on, eight columns: id (integer), node (integer, related to id), date (integer, related to a String node’s id), type (integer, related to type.id), data (integer, related to a String node’s id), deleted (Boolean), author (integer), access_control (integer, related to a String node’s id). Other tables would be needed, including class (id: integer; description: string); …[TODO]. [Also TODO: Looking at it as an object inheritance hierarchy?] [Also TODO: Asynchronous/non-request-driven (background/daemon/triggered/cron tasks)] I think that most or all knowledge can be effectively represented using three basic structures: nodes, relationships, and metadata. I am also developing the Document-Character-Entity encoding system (DCE), which is a state-switching hierarchical many-to-one binary character encoding model. DCE comprises a list of “DCE characters” (Dcs), which are individual semantic units that can be compiled together as a list, as well as individual mapping tables from Dcs to bytes; these mapping tables are linked by state-switch Dcs. Each Dc has rules indicating the syntactic context in which it can be sensibly used, and instructions for parsing it. These rules can be defined using the keywords if, then, else, precedes, succeeds, invalidate, any, state, valid, e.g. if Dc 165 meant “start styled region” it could perhaps be defined as: “if(precedes(<any, [end styled region]>)){state(styled);valid;}”. A Backus-Naur Form representation of this language would be [TODO].
+
+The nodes of a graph are the individual records that it stores. Relationships between those nodes are the edges of the graph, although it is possible that the system I am developing will provide for more complex relationships, for example by allowing relationships to connect several nodes to each other in a variety of ways, although whether that proves necessary or useful remains to be seen. Metadata are an item’s traits: information such as the title of a node, or a description of it. The way I have designed this system, placing all three of these types of entity into one table, allows relationships and metadata to have the attributes of nodes: for example, metadata could be attached to a relationship or another metadatum, or relationships could be specified that connect any combination of the three. There are many existing ISR systems, such as flat files and flat searching, flat-search filterable record sets, sorted records, a variety of tree and tree-like structures, tagged or labeled records, traditional tabular databases, relational databases, sparse tables, sparse matrices and entity-attribute-value models, graphs and digraphs, Boolean-queriable datasets, hierarchies, automated natural-language document acquisition and indexing, metadata-enriched natural-language document acquisition and indexing, and selective-display intelligent query results. The system I am proposing would primarily leverage a graph structure augmented through the use of richly labeled nodes, providing great flexibility in the structures it can manage; in addition, I believe that most or all of the above structures could be emulated within a graph-driven environment.
+
+One large challenge faced by the system I propose is the role of server-side processing (SSP). SSP is a vital element of much of modern butt application software, but it does not fit nicely into the information-driven model I propose. I think the best solution for this is through the application of dynamic parsing of DCE content as it is returned by the server. While this strategy could present a serious security risk, if the dynamic content is handed off to servers dedicated to this purpose and sandboxing is employed, I think this risk could be effectively mitigated, at least to the extent of avoiding access privilege escalation attacks against the main database. This will also provide effective options for building the wide variety of ISR systems I outlined above as both self-hosted applications and in userspace.
+
+There are a variety of content sources that would populate this ISR system: publicly available datasets, creative works, and other resources; resources added and/or created by individuals using the system; “dark” content such as is currently held by social networks, governments, and other organizations that do not publicly release their records; moderated content that has been reviewed and fact-checked and annotated as such by the NGO; dynamically generated content; and computed content, for example, the results from a mathematical calculation or an operation on a dataset.
+
+I propose that this ISR system be leveraged by the NGO for several purposes. First, it can be used to record the individuals who are participants in the NGO. Through the development and application of a multipronged biometrics system, perhaps similar to that of India’s Aadhaar program (Wikipedia 2014(d)), the use of names could be easily foregone, allowing for people who are mononymous, change their name frequently, have unconventional names (such as names without graphic representation, names that mutate over time, musical names, graphic names, etc., or even names that simply are not very common (For example, 马𩧢 (Mǎ Chěng) in China who is inconvenienced because her name is not supported by China’s computer systems. (LaFraniere 2009;  Wikipedia 2014(e)))), have no name, and so on and so forth to easily use the system, without being subjected to the usual tribulations that accompany any of the above in many modern governments. (It would also eliminate similar gender identity and other issues in receiving government services.) While instability of identification traits in individuals, either through subversion of the system or through chance, is indeed a concern, both for positive and negative identification (Sahoo, Choubisa, and Prasanna 2012), hopefully a sufficiently deep set of metrics could be established to prevent this from being an issue. When an individual becomes part of the NGO, they would be enrolled in the biometric identification system, and marked with a system for tracking of some type. This could take several forms: the most practical and useful, probably, would be a wristwatch-like interface to butt computing systems that would contain a GPS system and other useful electronics. The purpose of this would be the providing of emergency services: in the event of an emergency, the wearer could interact in it in a way to convey the existence and, if possible, the nature and situation of an emergency. This information would be entered automatically into the ISR system, which would provide a report of the emergency, including the person’s location, their direction and speed of travel, any pre-existing health conditions, their current health state (heart rate, blood pressure, and such). The system could automatically delegate the emergency to a nearby station of the NGO, which would act (presumably with the assistance of emergency response services) to resolve the situation. (I recall having encountered similar systems designed for elderly or disabled individuals; these served in large part as the inspiration for this scenario and solution.)
+
+This system also would provide an excellent opportunity for surveillance. By unifying all document processing and communications within the organization into the ISR system I propose, the process of collecting this data and monitoring it for threats would be vastly simplified. There are certainly compelling arguments against surveillance, but if one does not have faith and trust in the organizations created to protect them, those organizations have clearly failed at their purpose and begun to act not in the interest of those whose interests they are designed to protect, but most likely rather in the interest of their own perpetuation for the benefit of those who hold the power to control them. Thomas Jefferson famously wrote in the Declaration of Independence
+
+“that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. —That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, —That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness” (Jefferson 1776);
+
+in this rather radical passage he lays out in shockingly blunt language the Lockean principle that government is more of a means to an end than an end in and of itself. It is from this basic premise that I draw my conclusion that surveillance in the interest of safety of the people by the institutions they create for their protection is an excellent strategy; I also feel that similar scrutiny must be brought to bear upon the institutions themselves by the people who have created them, thus ensuring that those institutions act effectively in their interests. In addition, these institutions should never attempt to withhold armaments from the people they protect: individuals should be provided the means to create the weapons held by their government. At present this would be impractical (it would, for example, be foolhardy to attempt to overthrow a nuclear power at present, and yet giving nuclear weapons to every person would likely end up in global annihilation), but a long-term global general de-escalation of arms is of significant importance, so that people can, relatively realistically, be in control of the institutions they have created in power as well as in name. In the mean time, there is not much that can be done to this end beyond keeping your rifle maintained and your eye good in the hopes that the day may come that they might represent some element of political power you could have in aggregate with the others around you. Any revolution, of course, would likely only be engendered by horrible social mismanagement or oppression triggering a societal consensus to revolt (this has indeed been the case in some areas recently, such as in the Egyptian revolution in 2011 (Al Jazeera 2011)); this is quite fortunate as if it were not so, unpleasant chaos would no doubt ensue.
+
+Education and qualifications could be tracked through this system, as could taxes. For example, when a person completed testing by the organisation in a given subject, that score could be recorded in their profile in such a way that it could be used to determine what jobs they are allowed to work at. Taxation should be managed through time, so that a person would put in a certain number of hours of work selected from the jobs that need doing according to the ISR’s task record tracking system (possibly the number of hours necessary for a given amount of the organization’s services provided would be related to the level of qualification necessary for the work in question) to receive the organisation’s services in exchange. The person could choose which services to allocate their time credits to — for example, requesting food credits, requesting tickets to operas, or donating them to a militia. In such a way, the taxes levied would hopefully never have to be put to a use the individual did not believe in. Trading could also perhaps be managed through the ISR system.
+
+==== Implementation methodology and practical concerns ====
+
+
+Land property rights are often contentious. For example, if most of the farmers in a community use barbed wire to impede predators’ travel onto his property, thus averting the risk they present to their livestock, but a landowner whose property is surrounded on all sides by the property of these farmers wants to hunt the predators for their fur, there is a conflict between the interests of the landowners: the presence of barbed wire will interfere with the enclosed property’s supply of fur, while the absence of it will interfere with the outer properties’ supplies of livestock. For this reason, I think that the best solution is to have private land allocations be relatively small, and surrounded by buffer zones of publically owned land. In general, privately owned land could then be used in whatever manner desired by its owner. Some exceptions to this that seem to me rather inevitable would be: the use of streams (interfering with a stream to the detriment of public access or downstream property owner(s) should be restricted); the introduction of invasive species (as they can spread to public land or other properties); the introduction of dangerous quantities of radioactive substances (as they can present a health hazard to life outside of the property); and so on and so forth. These restrictions seem to be a necessary evil until a solution to the problem is found.
+
+A system for punishment for violating the standards of this organization could be created by the removal of benefits and protections provided by it.
+
+===== Part 2: The Spirit =====
+
+
+==== Ethical arguments ====
+
+
+Spiritual life is dependent on four central elements: compassion, morality, wisdom, and beauty. These elements are deeply interwoven; compromise, discretion, and balance are best used to balance them, just as the values of rights must be weighed in the rights-centric social contract I propose in the first section of this document. Compassion is the desire to ease others’ passage through their lives; it is closely related to and often a product of empathy, and is also sometimes partially or fully undertaken for the sense of satisfaction gained from having given aid. It could be argued that this makes compassionate acts fundamentally selfish, but I see no harm in such motivation, since the value of the actions remains untainted. The elements of compassion sustain society through the prevention of behavioural and cultural anarchy. Because society is a product of the interdependence of needs, it is also defined by the interdependence of aid; this is the fundamental premise of the social contract binding together the organisation that I propose.
+
+Compassion frequently engenders several traits of human interaction, most notably honesty, nonjudgmentalism, and friendship. Honesty is often a product of compassion, since it promotes healthy, effective collaboration. However, it is sometimes more compassionate to be silent or dishonest in some situations; for example, unflattering comments toward one’s companions are perhaps best left to be said to them by their own awareness or by gentle suggestion, rather than simply stating them bluntly. (It is frequently also necessary to be dishonest, for example, in the context of one’s service to one’s country; in the interest of patriotism one should hardly reveal important government secrets to a foreign national for the sake of compassion.) In general, it is best to not be judgmental of others, with it being more productive to criticise actions than the individuals making them; it is also frequently helpful in communication on such matters to speak using “I statements” (statements regarding one’s perception of the situation) than by stating as fact what one perceives about the other person. Friendship does not necessarily equal companionship; friendship is, rather, an effort to be aware of the other person’s feelings and have a special interest in their happiness and wellbeing.
+
+There is a somewhat poorly defined (in that it is commonly understood without reference to quantifiable metrics) concept I find worthy of consideration here: that of “evil”. It is a label commonly applied to things that fall outside of the bounds of the dominant moral dicta of the group or authority applying the label. Nevertheless, evil can be accurately assessed and described through its relation to specific fundamental premises relevant to the maintenance of an ordered society. Using such a basis for its description, evil is any action which disrupts the significant objectives and wellbeing of the society, culture, or individual affected by the actions beyond what is reasonable, and is justifiable by practicalities, such as survival and convenience. This concept is connected to the traditional Christian philosophy of everyone being a sinner (for my purposes, “sinner” referring to a person who has committed evil actions), but, given such a definition of “sinner”, I think that such a generalization would necessarily not include the “reasonable and justifiable” limitation, since human life almost invariably disrupts in some way the life around it (for example, in all probability most commonly in the northeastern United States by stepping on insect life and vegetation, which is difficult to avoid as a consequence of their ubiquity; or by eating food, a process which frequently involves the killing of edible plants and/or animals or the denial of a seed's and/or egg's germination), thus rendering nearly every human a sinner, and also a committer of evil acts assuming the conditional above is not taken into account. For this reason I think that a sinner should be considered as anyone who acts in a manner to disrupt the significant objectives and wellbeing of a society, culture, or individual, regardless of whether such disruption is potentially justifiable. (It also would presumably be evil to harbor fantasies of evil acts, since such fantasy would likely lead to some level of mental justification of them, subconsciously increasing the likelihood of the fantasizer committing such acts; although since it is presumably unreasonable to expect perfection in the area of avoiding such fantasy it is likely to fall under the conditional I mentioned above, except perhaps in extreme cases. This concept is quite contentious, however, given the widespread culture of respect (in Western society, at any rate) towards the absolute freedom of the mind. Personally, I have reservations about restrictions on thought, especially in terms of the possibility of legislating them; however I do think that speech and other expression should be restricted in some cases.)
+
+The way I see it, modern society is deeply permeated by immorality. Excessive materialism, pointless inefficiency, and many other challenges are widely accepted as the norm, and it is frequently difficult or impossible to survive without participating in their perpetuation.
+
+Death can bring emotional pain with it for those around someone who has died. However, it is a common aspect of life within this world, and killing is often an important element of survival. It seems to be common in some ways of looking at the world to consider some lives as more valuable than others, for example, from lowest to highest, plants, non-human animals, and humans), however I consider all to be equally valuable, with some protected above others by their innate power or their isolation, by the social contracts to which they are party, and/or by the emotional attachment of others to them. It can be sometimes difficult to identify clearly what holds life; consequently, it is likely preferable to respect them as if they do.
+
+There are fundamental rights that should be protected by a social contract: the right to their health, the right to live in an ethical and healthy society, the right to attribution for intellectual, artistic, and/or creative work, and the right to freedom of action and expression. These rights will frequently conflict with one another; in such instances, the relative value of each right should be considered and the action taken which seems best advised.
+
+Wisdom is vital to spiritual growth. It is not effectively gained through the unconditional acceptance of what one is told; rather, it is preferable to assess the information one encounters and the experiences one has, and evaluate them and from the draw one’s individual conclusion of what is true. Conversely, beliefs should not be forced upon others. Wisdom should be respected; for this reason, books should never have writing added to them by those other than the author, should never have adhesives affixed to them, should be handled with proper archival procedure if possible (using only acid-free paper inserts for identification), and should be protected from damage or destruction. All documents, artworks, and other objects of notable historic significance should also be retained as best possible. Immoral knowledge should be kept from those who would be damaged by it, but even that should be archived and retained for the completeness of the historic record.
+
+Nature and earth should be protected. Humans have had a significant and widespread effect on the earth, and have damaged it. This carries the risk of adversely affecting its ability to provide those necessities to humans that they rely upon.
+
+The Russian composer Igor Stravinsky wrote that music can be created and given form because its boundaries place it within a framework that enables it its existence.
+
+“Will I then have to lose myself in this abyss of freedom? To what shall I cling in order to escape the dizziness that seizes me before the virtuality of this infinitude? However, I shall not succumb. I shall overcome my terror and shall be reassured by the thought that I have the seven notes of the scale and its chromatic intervals at my disposal, that strong and weak accents are within my reach, and that in all of these I possess solid and concrete elements which offer me a field of experience just as vast as the upsetting and dizzy infinitude that had just frightened me.”
+
+At the same time, the passing outside of boundaries can play a role in forming something’s existence, as well. When the world was created, it was created through conscious intention, by some omnipotent being, and at the same time granted its own intention. It was deliberately given the power for self-direction, the power to create. In giving the world this self-direction, its creator used the creator’s omnipotence to limit its own power. This was accomplished through the creation of a system which is inherently unpredictable. When playing a role in the world, it is impossible to be a fully non-influencing observer, because things will always be affected by the act of observing them, as a consequence of the uncertainty principle. Thus, system state prediction is impossible. That is why one can not see the future, and can only look at one’s past inasmuch as it is remembered in the present. In ancient Greece, the cognitive metaphor for time was that the future was behind one, and the past in front of one, since one can only see what is in the past. If a person can know the future, or if he is fated to make a decision, he does not have self-direction. If one single person had self-direction, maybe that one person could know the future: but when more than one person has autonomy, none can know the future with absolute certainty. If God knew the future, He would not have given humans self-direction, because for him to know the outcome of the world, the decisions must have already been determined.
+
+Technological development holds great value for the continuation and improvement of humanity. Humans have been given technologically inclined minds; it seems that perhaps we are intended by some higher power to use them for our mutual betterment. For example, existing electronic tattoo technology could be used to integrate computing tools into the human body, and artificial insemination and cloning could be used to eliminate the need for sexuality (and its urges’ consequent damaging effects on society). It seems likely that the development of cyberorganisms could substantially reduce the inefficiencies and social challenges of humanity.
+
+When beings are aware of God, this awareness is the source of His power within them. When they know the power of God, He is made to exist for them. His power is a divine construct given meaning through conscious awareness, a meta-apotheosis of sorts — a power found consciously through the unconscious divine. He has power within His creations if they are aware of Him, but He nevertheless always exists outside of their awareness. God’s bringing forth of His power can lead to its recognition in the eyes of the living and it is through this recognition that it is made real for them. God is the source and creator of this power, but it must be made real by those within whom it resides. One can believe God exists without having faith that his actions are always just. Someone can believe in God without faith in His justice, or else someone can believe in God and have faith that He is just, and perhaps has compassion and empathy. The conditions of both belief in God and faith in his justice must be satisfied for a morally sovereign being to be able to know and respect His path. God is just, but His independent creations are not forced to conform to His justice. While they do have an ethical obligation to be just, there nevertheless does not exist any true guaranteed way to force them to be. If people believe that God cares about them, God then likely has some power over them through their belief in Him and their faith in His justice. They would then have their morally sovereign choices influenced by God’s will, but those choices would be realized through their own power. The Israelites doubted God, and He showed them His power repeatedly through the soulbinder Moses; in doing this, God eventually validated His strength for them, and they thus acted in accordance with what they perceived as His will. Rather than simply believing God exists, having faith in him is what is needed to be true to His will. God deliberately put restraints on His own omnipotence. If God is omnipotent, that must include the power to take away his own powers. Thus, He must not have absolute power to control every aspect of the world, or injustice would not exist. God has taken away His direct influence over the world and given living things the capacity for moral self-direction. Because of this, He has power over His creations when they are aware of His existence and His care for them. God cares about everything that happens, even if He cannot control it. A God that would sit by and watch the universal tragedies of moral self-direction while having the power to stop them would be an unjust God. The pain of moral sovereignty then invites the question: if God is omniscient, could not He have predicted such pain when he granted all living things this moral sovereignty? He could not. As an omnipotent being He would have the ability to give his creation the power for absolute self-direction, without the fate consequential of predictable physics, and correspondingly he would likewise have the ability to take away His own power to predict the path of His creation’s chaos. We need to understand the true nature of the world as we can perceive it before we can begin to understand the nature of the unknowable divine. The fettered omniscience of God’s knowledge of His creation has been implemented in what has been recognized as the theory of the uncertainty principle in quantum physics, according to which nothing can be predicted with absolute certainty. Traditional thinking would seem to hold that through a comprehensive understanding of all the positions and vectors in a closed system, all of the states of that situation — past, present, and future — can be known simultaneously. Yet the observer effect leads to the situation that the most basic particles of matter are unable to be observed or predicted, because any observation will inevitably change their state, thus contributing to the chaos inherent in the uncertainty principle. Maybe that is the manner in which God has created the world,the manner in which He granted its inhabitants moral sovereignty. Unpredictability can itself be restrained by certain constraints and rules, for example, gravity. If I am holding a ball and open my fingers, I can predict that it will begin falling as soon as my hand has departed from around it. Yet it is impossible to predict with such certainty whether I will choose to release it, or when I would do so. If God has the ability to create this bounded unpredictability, then moral sovereignty can truly exist, without the need for the nihilism of fate or predestination.
+
+In Inanna, there is a wide range of personalities and emotions that are symbolic of duality, for example, the contrast and connection between the tragic figure of Ereshkigal and the hopeful figure of Inanna. The presentation of Ereshkigal as a tragic figure in this text is quite striking: rather than the conventional image of the ruler of the underworld as a demon, she is someone who seeks friendship and compassion but is unable to have it. Her response to the kurgarra and galatur shows her desire for connection and understanding. She has become very angry and harsh from the emotional challenges she faced historically, namely the lack of any human emotional connection. She is the dark counterpart to Inanna’s aliveness, and hates Inanna for being able to experience what she desires. When Inanna was killed by Ereshkigal, Enki created the kurgarra and galatur, and instructed them to visit Ereshkigal and sympathize with her, so she would allow them to resurrect Inanna. The kurgarra and galatur did not understand Ereshkigal, though. Ereshkigal had not found the connection she needed in them. When Inanna was resurrected by the kurgarra and galatur, she tried to leave the underworld. The judges of the underworld, the Annuna, refused to let her leave without another taking her place, and sent the galla demons with her to bring a replacement back. The Annuna established a strict setting that seemed to follow more rigid protocols than Ereshkigal demanded. She did not feel one way or another about what people did; she seemed to have sort of a numbness to the world around her, to anything outside of her own mind, not caring particularly about what happened beyond her personal desires. This was balanced by the Annuna, who did not seem to have any human desires, but rather to simply be unbiased judges: the guardians and managers of the underworld. The galla, demons of the underworld, likewise did not have any particularly human traits, not having any concern about human relationships or knowing any human enjoyments. The galla and Annuna are needed to maintain balance in the universe between the living and the dead; without them, Ereshkigal would not have enough investment in what happened to maintain a structured, orderly system, since she would be too swayed by her individual desires. Even though the galla allowed Inanna to play a role in deciding who to send to the underworld in her place, I do not think that necessarily points to an emotional trait on their part; rather it might simply be that it does not matter to them who goes in her place. When Inanna chose to descend into the underworld, Neti, the gatekeeper of the underworld, asked her why she had come. Inanna replied, initially, that she was going for the sake of Ereshkigal, to attend the funeral of her husband, Gugalanna. Since Ereshkigal is Inanna’s counterpart, maybe Inanna knew on some level that Ereshkigal needed company, even though Ereshkigal may not have known that herself, and Inanna, in her compassion, went to be with her. Inanna was an inseparable part of Ereshkigal. The links between Ereshkigal and Inanna are found in the parallels between their relationships, as well. Both are widowed, their husbands, Gugalanna and Dumuzi, having died. Gugalanna was the Bull of Heaven, and Dumuzi was the Wild Bull, Ereshkigal and Gugalanna being Inanna and Dumuzi’s spiritual counterparts. The codependence of Inanna and Ereshkigal was representative of the balance needed in the world. As we discussed in class, this duality is widely evident throughout the symbolism in the stories of Inanna. It is a consequence of the importance of fertility in Sumerian culture, male and female being a metaphor for the agricultural lifestyle at the heart of the Sumerian society. Cultural views of human traits and failings are mirrored in these religious views, with the divine figures echoing human struggles. In Inanna, the emotions of the subjects are a critical element of the stories, giving them depth and the ability to connect to the reader. The symbolic theme of duality is central to the ideas presented in the stories, embodied in two opposite characters, Ereshkigal and Inanna.
+
+In Dao De Jing, the attributed author Laozi discusses a wide range of subjects, all through simple, concise aphorisms. The Daoist philosophy constructs a new form of paired duality, in which contrasting philosophical elements of presence and absence are inherently equal. Both the Laozi’s and Hein’s literature imbue their short literary form with many layers of meaning. Much in the manner of the Dutch poet and intellectual Piet Hein, Laozi is able to convey in this work many-layered, richly faceted concepts and meanings using far fewer words than would be ordinarily expected of such complex commentary and meaning, with reflection and analysis allowing the reader to find his own truths within them as well. The deceptively simple words of this poetry lead the mind to initially jump to some “obvious” interpretation, while further reflection and thought yields many more. They can be read repeatedly, a reader still finding new meaning in them upon every contemplation. Where the two diverge is in ambiguity: while they both share initially enigmatic and occasionally satirical stylistic traits, Hein's writing generally has some certain clear, fundamental meaning, less wide open to interpretation than the Dao De Jing. The Dao De Jing uses symbolism extensively. Its symbolic elements contrast and pair together the concepts of presence, yang, and emptiness, yin. This was novel in its time and place, paralleling the duality in Sumerian culture between the equals Inanna and Ereshkigal. The Daoist philosophy of equivalent duality broke apart traditional dualities which viewed the two as mutually incompatible entities: presence immutably good, and emptiness a frightening threat to be subsumed and filled. Clearly indicative of the lacunary traits inherent in this text are the presence of metaphors of the void: concepts of nothingness are used pervasively to define and delineate the way of life, and the progression by and through which things occur. Laozi writes: “Raise up whom you would remove, and provide when you mean to deprive. That is to do the unseen, unseen.” In this, the symbolic strength of the “nothingness” is to be there as a void having a sort of metaphorical pride in its accessible, generous strength. This nothingness is a nothingness which is not null, but rather void; it is not defined as encompassing nothing, but rather simply not defined as encompassing something. Jacques Lusseyran, a writer and World War II underground French resistance leader, recognised this nature of the void, in a sense — yet, as a torment — in his autobiography And There Was Light, writing of “…a void which filled me…” — a void with the capacity to exist as itself, to be a justified, true entity, not a defined null. The Daoist ideals of presence and emptiness form two necessary, fundamentally interdependent sides of the same coin. This contrast mirrors the contrasts between elements of Judaism and Theistic or Gnostic Luciferianism. The two religions have similar moral and ethical ideals and objectives, and are rooted in some of the same philosophical traditions, but use largely inverse imagery of deities. Judaism’s deity imagery is very immaterial: an intangible, unknowable God, yet a God with a direct, omnipotent influence over creation. Luciferianism's inspiration of hope is the Morning Star (Lucifer — the Light Bearer — in the Christian tradition; Inanna (Ištar) (Akkadian 𒀭𒈹 / Sumerian 𒀭𒌋𒁯) in the Sumerian tradition; or some interpretations of Lilith). Although the Morning Star figure has radically different interpretations and significances to different cultures and belief systems (for example, the Sumerian tradition is centered around fertility and food, but the Gnostic tradition is centered around self-denial) the symbolic parallels of the figure within its various cultures have a commonality in its position as a source of hope and inspiration. The Morning Star is often seen as acting through the truth of sophia (wisdom) and the capacity of humans to achieve some spiritual enlightenment through the rejection of the physical world (harkening back, incidentally, to Daoism’s strength of the nothingness). This is a very concrete, physical deity in the Sumerian tradition, reflecting the Sumerian agricultural economy (yet not a deity necessarily given to “micromanaging”, to use a word the author Mary Doria Russell uses to refer to some interpretations of God). This contrast between the two schools of thought echoes the contrast in Daoism found in the presence-absence duality. In the Tangut empire, declared independent in 1038 AD and destroyed by the Mongols in 1227, religion was predominantly Buddhist. The Tangut empire was a socially progressive nation with pioneering civil rights ethics, and since freedom of religious expression was protected, Daoism was a significant secondary religion in the empire. The son of the first emperor Jingzong, Prince Ning Ming, was a Daoist scholar, and noted for his Daoist leadership views and pacifism. “When asked about the ways of state governance, [Prince Ning Ming] said that it was necessary to have few desires and to cleanse the heart.” (Guilin Discovery Network Technology Co., Ltd.: Western Xia Customs — Sequel II) This is advice found throughout the Dao De Jing: In stanza 7, it is written “By disowning what they yield, Heaven can last and earth endure. So, surely, does the world-wise lord, who puts his interest far behind, and ends up in the lead…”. The Tangut empire was one of the first civilizations to have large print runs of books created using movable type, in some cases with single print runs of up to 100,000 copies of books. Through this range of parallels to and examples of Daoism, one can see the breadth of possibilities offered within the deceptively simple text of the Dao De Jing. In this revolutionary book, Laozi has discarded certain assumptions and cognitive metaphors about the nature of reality regarding the value of presence and absence. In doing so, he has created a truly universal text, in which truths can be found to apply to nearly any context.
+
+Gnosticism is a group of belief systems sharing certain core tenets, particularly the focuses on the development of sophia (wisdom) to attain gnosis (knowledge) and on the rejection of the physical world in the endeavor to attain ascendance into the spiritual. It shares common themes and elements with many Christian and other belief systems. Syncretism is the sharing of discrete elements between belief systems. The texts we have studied in this unit are a perfect example of such a fusing of religious elements, sharing many commonalities both between the Gnostic and non-Gnostic gospels, and with the texts we have studied over this past semester and a half. While Gnosticism is a term applied to a range of diverse, in some ways incompatible belief systems (such as Sethianism, Gnostic Luciferianism, and Mandaeism), Gnostic belief systems retain the shared basis of Gnostic thinking, presenting one excellent example of the presence of distinct common elements shared between a variety of belief systems. A wide range of shared themes and symbolism are also visible in other religious contexts, such as mainstream modern Christian faiths, Daoism, Buddhism, and the Sumerian religion seen in Inanna. In the non-canonical gospels, there were many shared themes with Gnostic writings; thus these gospels have become known as the Gnostic gospels. That does not necessarily indicate a shared Gnostic origin for them, but rather indicates that they share elements of the diverse Gnostic tradition. For example, the gospel of Judas is strongly Sethian (“The first is [S]eth, who is called Christ”, p. 6), while the gospel of Thomas is a more general Christian text with some common themes of Gnosticism (it may have played a role in the development of the general themes of the Gnostic tradition). In the Gospel of Mary, it is written “There is no sin, but it is you who make sin when you do the things that are like the nature of adultery, which is called sin.” This sentence emphasizes the Gnostic nature of the text, in its equating of sin with adultery providing a connection to the traditional Gnostic focus on the rejection of the physical in the interest of the finding of knowledge through wisdom. The parallels in name symbolism in religious traditions are very interesting. In the And the parallels between spiritual figures that cross over between various religious traditions. That is very noticeable in the Roman and Greek traditions, which have very significant parallel between them, with many individual gods corresponding between one and the other. But also between other religions such as Christianity and Sumerian tradition, the most obvious example being the parallel between Jesus and Inanna, both known as the Morning Star to their respective cultures. For example, in the Exsultet, the line “Flammas ejus lúcifer matutínus invéniat: Ille, inquam, lúcifer, qui nescit occásum: Christus Fílius tuus, qui, regréssus ab ínferis, humáno géneri serénus illúxit”… refers to Jesus as the Morning Star: “May this flame be found still burning by the Morning Star: the one Morning Star who never sets, Christ your Son, who coming back from death’s domain has shed his peaceful light on humanity”. (http://www.ccwatershed.org/exsultet/) These are a few examples of the many interesting facets of the sharing of ideas between a diverse array of religions, as well as of the role name symbolism can play in the context of religious thought. In religion, there is frequent overlap and sharing of common elements between various faiths, creating a diverse religious culture that is nevertheless interconnected. For example, Gnosticism is a group of belief systems sharing certain core tenets, particularly the focuses on the development of sophia (wisdom) to attain gnosis (knowledge) and on the rejection of the physical world in the endeavor to attain ascendance into the spiritual. It shares common themes and elements with many Christian and other belief systems. Syncretism is the sharing of discrete elements between belief systems. The texts we have studied in this unit are a perfect example of such a fusing of religious elements, sharing many commonalities both between the Gnostic and non-Gnostic gospels, and with the texts we have studied over this past semester and a half. While Gnosticism is a term applied to a range of diverse, in some ways incompatible belief systems (such as Sethianism, Gnostic Luciferianism, and Mandaeism), Gnostic belief systems retain the shared basis of Gnostic thinking, presenting one excellent example of the presence of distinct common elements shared between a variety of belief systems. A wide range of shared themes and symbolism are also visible in other religious contexts, such as mainstream modern Christian faiths, Daoism, Buddhism, and the Sumerian religion seen in Inanna. Another example of the diverse sharing of religious thought, the Dao De Jing uses symbolism extensively. Its symbolic elements contrast and pair together the concepts of presence, yang, and emptiness, yin. This was novel in its time and place, paralleling the duality in Sumerian culture between the equals Inanna and Ereshkigal. The Daoist philosophy of equivalent duality broke apart traditional dualities which viewed the two as mutually incompatible entities: presence immutably good, and emptiness a frightening threat to be subsumed and filled. This is also a concept that is explored in the Manichaean philosophical basis that influenced St Augustine's writing. The Daoist ideals of presence and emptiness form two necessary, fundamentally interdependent sides of the same coin. This contrast mirrors the contrasts between elements of Judaism and Theistic or Gnostic Luciferianism. The two religions have similar moral and ethical ideals and objectives, and are rooted in some of the same philosophical traditions, but use largely inverse imagery of deities. Judaism’s deity imagery is very immaterial: an intangible, unknowable God, yet a God with a direct, omnipotent influence over creation. Luciferianism's inspiration of hope is the Morning Star (Lucifer — the Light Bearer — in the Christian tradition; Inanna in the Sumerian tradition; or some interpretations of Lilith). Although the Morning Star figure has radically different interpretations and significances to different cultures and belief systems (for example, the Sumerian tradition is centered around fertility and food, but the Gnostic tradition is centered around self-denial) the symbolic parallels of the figure within its various cultures have a commonality in its position as a source of hope and inspiration. The Morning Star is often seen as acting through the truth of sophia and the capacity of humans to achieve some spiritual enlightenment through the rejection of the physical world (harkening back, incidentally, to Daoism’s strength of the nothingness). This is a very concrete, physical deity in the Sumerian tradition, reflecting the Sumerian agricultural economy (yet not a deity necessarily given to “micromanaging”, to use a word the author Mary Doria Russell uses to refer to some interpretations of God). This contrast between the two schools of thought echoes the contrast in Daoism found in the presence-absence duality. In the non-canonical gospels we read in this unit, there were many shared themes with Gnostic writings; thus these gospels have become known as the Gnostic gospels. That does not necessarily indicate a shared Gnostic origin for them, but rather indicates that they share elements of the diverse Gnostic tradition. For example, the gospel of Judas is strongly Sethian (“The first is [S]eth, who is called Christ”, p. 6), while the gospel of Thomas is a more general Christian text with some common themes of Gnosticism (it may have played a role in the development of the general themes of the Gnostic tradition). In the Gospel of Mary, it is written “There is no sin, but it is you who make sin when you do the things that are like the nature of adultery, which is called sin. ” This sentence emphasizes the Gnostic nature of the text, in its equating of sin with adultery providing a connection to the traditional Gnostic focus on the rejection of the physical in the interest of the finding of knowledge through wisdom. The parallels in name symbolism in religious traditions are very interesting. In the And the parallels between spiritual figures that cross over between various religious traditions. That is very noticeable in the Roman and Greek traditions, which have very significant parallel between them, with many individual gods corresponding between one and the other. But also between other religions such as Christianity and Sumerian tradition, the most obvious example being the parallel between Jesus and Inanna, both known as the Morning Star to their respective cultures. For example, in the Exsultet, the line “Flammas ejus lúcifer matutínus invéniat: Ille, inquam, lúcifer, qui nescit occ ásum: Christus F ílius tuus, qui, regréssus ab ínferis, humáno géneri serénus illúxit ”... refers to Jesus as the Morning Star: “May this flame be found still burning by the Morning Star: the one Morning Star who never sets, Christ your Son, who coming back from death's domain has shed his peaceful light on humanity”. ( http://www.ccwatershed.org/exsultet/ ) Another example of name symbolism is found in the Jewish tradition's naming of the first humans: Cain's name symbolizes worldly things, material goods, and possessions; Abel's name symbolizes the immaterial, the ethereal, and the intangible, and Seth's name refers to the “appointed”, a concept later reflected in the Sethian equating of Christ to Seth. These symbolic meanings of these names have held a long-lasting and pervasive influence on the understanding and portrayal of these figures in religion and popular culture, even as far afield as in their characterizations in the anime Trinity Blood. These are a few examples of the many interesting facets of the sharing of ideas between a diverse array of religions, as well as of the role name symbolism can play in the context of religious thought.
+
+An important salient point that Francis Bacon makes in his Great Instauration is that “man is but the servant and interpreter of nature": In this, Bacon makes the point that humans are, in scientific observance, simply looking at the nature of which they are a part, and placing an interpretation as best they can reconcile from their observations upon it. Perhaps, even, it could be said that this is much as the analogy of the observation of water by a fish: Humans are one part of nature, swimming within it as their lifelong context of existence, and in science we try to assess and come to terms with the water of the nature around us.
+
+
+==== Findings of Beauty ====
+
+
+Beauty is that which evokes aesthetic pleasure; spiritual beauty is the ability to make that manifest in one’s behaviours and thoughts.
+
+There are many traits that are prominent elements of the making of beautiful music. In electronic dance music, especially, several distinctive production techniques have enjoyed recent popularity. Sidechaining and pumping is one such technique, used to great effect for example in DJ Spoke’s “Million Miles Away” and 009 Sound System’s “Dreamscape”. Another is the reduction of time between pitches in melismatic vocal lines, a practice that originated with the practice of removing the delay time in automatic pitch correction software. Modulation, cutoff and overtone automation, and other techniques have been combined to create the distinctive sound of the brostep genre. Hip-hop beats, employing classic kicks and claps as well as the intense, elongated, almost melodic effects of trap and drill beats, have come to prominence in many styles of music. Pitch shifting and tempo manipulation, and fragmented and chopped vocal samples have seen similar popularity.
+
+Lifted trucks with big swampers are also incredibly beautiful.
+
+There is a certain beauty in blood and viscera. That is because these are signs of the death necessary for life: they represent nourishment.
+
+It is traditional that on the first day of May each year, one awakens early and takes baskets decorated with crepe paper holding gifts and delivers them in secret to friends, for them to discover when they awaken. This is a traditional way of reaffirming community bonds in anticipation of the spring.
+
+==== Taken on faith ====
+
+
+Despite the seeming rationality of Occam’s Razor, which is a statement to the effect that “[n]o more things should be presumed to exist” than are needed to explain the observations about which a collective truth has been established through consensus, I nevertheless often choose to believe things on faith, despite being unable to prove them through scientific observation and logic. I come to these conclusions frequently as ways to best explain the world around me — the parts of it, especially, which I do not fully understand in the context of scientific analysis, but nevertheless seem to observe on a daily basis and do not believe are hallucinations: life, emotions, and other similarly difficult-to-quantify and/or supernatural elements of the world around us. While they are not scientifically measurable at present, I have drawn conclusions that seem to me to be the most suitable and rational fit for the observations I make, creating a worldview that to most people would likely appear to be a myth, as it is derived from my individual perceptions; and yet this worldview is as real to me as the perceptions that are established through consensus and scientific reasoning.
+
+Every being has at least a twofold existence. The earthly plane is that which is most commonly perceived as matter, while the aetheric plane is that which is mostly perceived through the mind and soul. Each classification of life is generally given more to operating within one or the other of these planes. Humans, for example, are generally most strongly attached to the earthly plane, while the aelfe (fairies) are most strongly attached to the aetheric plane. Nevertheless, any being has the capacity for operating in both planes. A soulbinder (a person with pure intentions and the requisite knowledge to control reality) can operate with equal facility on either plane; such a person is known as a planewalker. Aelfe are generally only perceived by those who are sensitive to the aetheric plane. They can be classified by the element to which they are most strongly attached, thus: air spirits, dragons (aelfe with a predisposition towards fire), undines (with a predisposition towards water), and earth spirits. Each of the four elements corresponds to a season, and the aelfe are most active in the season corresponding to their dominant element, as well as in the opposite element’s season in the interest of retaining balance and order: air, an active element corresponding to spring, is the opposite of earth, a passive element which corresponds to fall, while water, a passive element corresponding to winter, is the opposite of fire, an active element which corresponds to summer.
+
+Aetheric energy is often present in the physical world. Improving the healthy aetheric energy in an area will bring the healing attentions of aelfe to that area. To promote healthy aetheric energy, its flow into and out of a room can be regulated by hanging, for example, a red knot, a Celtic knot emblem, or a double-terminated or round clear faceted quartz crystal over a doorway or in a window. The presence of aetheric energy in the physical world is the premise of several traditions, such as feng shui; it is also in all probability the force that was misinterpreted by the pseudoscientist Wilhelm Reich as “orgone”. Unhealthy aetheric energy can have harmful effects; dowsing can be used to locate this unhealthy energy, which can be converted to healthy aetheric energy using a quartz crystal, preferably a double-terminated one. A fiberglass resin base containing metal filings, a copper coil, and a quartz crystal, (an aetheric energy transmuter, can be effectively used to repair unhealthy aetheric energies in an area, or to gather healthy aetheric energy; a quadrant of them surrounding an area will have significant effects.
+
+===== Sources =====
+
+
+Al Jazeera. “Timeline: Egypt's revolution”. 2011. ( http://www.aljazeera.com/news/middleeast/2011/01/201112515334871490.html )
+
+Apache Software Foundation. The Apache HBase™ Reference Guide, Revision 2.0.0-SNAPSHOT. 2014. Chapter 5, “Data Model”. ( http://hbase.apache.org/book/datamodel.html )
+
+Fund for Peace. “The Fragile States Index 2014”. 2014. ( http://ffp.statesindex.org/rankings-2014 )
+
+Gibbs, Phil. 1996. (Updated 1997 by Sugihara Hiroshi.) “What is Occam’s Razor?”. ( http://math.ucr.edu/home/baez/physics/General/occam.html )
+
+Glover, Robert. Lecture of 2 October 2014.
+
+Haddon, Mark. The Curious Incident of the Dog in the Night-time. 2003.
+
+Jefferson, Thomas. “The Declaration of Independence: A Transcription”. 1776. ( http://www.archives.gov/exhibits/charters/declaration_transcript.html )
+
+LaFraniere, Sharon. “Name Not on Our List? Change It, China Says”. New York Times. 2009. ( http://www.nytimes.com/2009/04/21/world/asia/21china.html?pagewanted=all&_r=0 )
+
+Locke, John. The Second Treatise of Government. 1997.
+
+HON211. Discussion in HON211 class of 2 October 2014 — Hobbes' “state of nature”, “all at war with all” was mentioned
+
+Malewicz, Austern, Bik et al. “Pregel: A system for large-scale graph processing”. 2010. In Proceedings of the 2010 ACM SIGMOD International Conference on Management of Data. ( http://dl.acm.org/citation.cfm?id=1807184 )
+
+Personal conversation
+
+Sahoo, Choubisa, and Prasanna. “Multimodal Biometric Person Authentication: A Review”. 2012. In IETE Technical Review, vol. 29 issue 1, January–February 2012.
+
+Stravinsky, Igor. Poetics of Music in the Form of Six Lessons. 1970.
+
+DJ Spoke. “Million Miles Away”. Trance Number Ones, Vol. 1. 2007.
+
+Trask, R. L. and Mayblin, Bill. Introducing Linguistics. 2005.
+
+Wallace, Elliot. “Analytical Paper 2”. 2013.
+
+Wallace, Elliot. “Articles”. 2012(b).
+
+Wallace, Elliot. “Weave structures”. 2012.
+
+Wikipedia. “Entity-attribute-value model” (revision 623968433). (2014(c)) ( https://en.wikipedia.org/w/index.php?title=Entity%E2%80%93attribute%E2%80%93value_model&oldid=623968433 )
+
+Wikipedia. “List of countries by Fragile States Index” (revision 626538232). 2014. ( https://en.wikipedia.org/w/index.php?title=List_of_countries_by_Fragile_States_Index&oldid=626538232 )
+
+Wikipedia. “Naming laws in the People’s Republic of China” (revision 590983533). 2014(e). ( https://en.wikipedia.org/w/index.php?title=Naming_laws_in_the_People%27s_Republic_of_China&oldid=590983533 )
+
+Wikipedia. “Occam’s razor” (revision 629036926). 2014(b). ( https://en.wikipedia.org/w/index.php?title=Occam%27s_razor&oldid=629036926 )
+
+Wikipedia. “Unique Identification Authority of India” (revision 627783261). 2014(d). ( https://en.wikipedia.org/w/index.php?title=Unique_Identification_Authority_of_India&oldid=627783261#Security_features )
+
+009 Sound System. “Dreamscape”.
+
+
+
+When a statement is not accompanied by a citation footnote, it is likely from any of my opinions and things I have picked up as “common knowledge”, and/or syntheses of the various texts listed above (although I have tried to put footnotes on the latter).
+
+====== UI ideas for the Ember project ======
+
+===== Button =====
+
+Layers:
+  - Background
+  - Highlights (like murrine, except not round: `-. `-' .-' .-. = left up right down, respectively)
+  - Content
+  - <del>Content highlights (?) (like the iOS glossy-icon overlay)</del>
+
+Instead of content highlights, have a boolean parameter for stacking order that allows the Highlights layer to go above or below the Content layer.
+**Fracture%%//%%Active** is a in development web service for providing data storage, manipulation, and web UI construction to authorised clients. Provides access to the [[DCE utilities]]. Renamed from [[Futuramerlin Active Scripting Library]] 3 October 2013.
+
+It should use a database to maintain a list of API keys (not really, since it's not an API, but you get the idea). Those keys could be assigned unique numbers by the Token Registry.
+
+====== Components ======
+
+  * FractureTokenRegistry
+    * Accepts: request for a key and paired value [required even for simply assigning unique identifiers, so as to enable some amount of reverse lookup], OR a retrieval request, specified by key
+    * Does: Adds a key to the key registry, making sure to prevent conflicts/race conditions, OR reads a key's accompanying data from the registry
+    * Returns: A new key, OR the retrieved data
+  * FractureFMDR
+    * Accepts: a submission of data (see [[Futuramerlin Document Registry]] for information on specifics of database fields), OR a retrieval request, specified by ID
+    * Does: Adds a record to the Document Registry, making sure to prevent conflicts/race conditions, OR reads an ID's accompanying data from the registry
+    * Returns: A new ID, OR the requested data
+  * FractureStorage
+    * Accepts: data (optionally with authorization code) OR request for data, accompanied by key OR request for removal of data, providing a key and an authorization code for authentication OR request for updating data, providing a key, data, and an authorization code for authentication
+    * Does: store data, using FractureTokenRegistry to get unique identifier OR read data OR remove data (accompanied by removal code) OR replace data accompanying key with new data
+    * Returns: identifier OR data OR confirmation OR confirmation
+  * FractureDceutils
+    * Provide wrapper around necessary [[dceutils]] functions, including converting to/from base64 Dc list, converting a sequence of key/value pairs of arbitrary base64 Dc lists to a DCE document, and extracting data from a DCE document given a key.
+  * FractureDB
+    * object-oriented wrapper for some common database operations around PDO
+  * SpecialPurposeUtilities
+    * removed from roadmap
+
+
+===== External modules =====
+These provide support for external software, including [[RACE THE °MUSIC]] and [[ARCMAJ3]].
+
+  * External modules — include by passing a parameter ?module=ModuleName
+    * **RaceTheMusic**
+      * RTMHighScores_Compute
+        * Accepts: A list of user scores
+        * Does: Compare with previous [[RACE THE °MUSIC]] high score list and update the high score list using FractureStorage
+        * Returns: New high score list
+      * RTMHighScores_Retrieve
+        * Accepts: A request
+        * Does: Retrieve current [[RACE THE °MUSIC]] high score list
+        * Returns: High score list
+    * **arcmaj3**
+      * ArcM_Request_Bucket
+      * ArcM_Submit_Bucket
+
+
+**Futuramerlin IDs** are sequential, unique numbers assigned. The current registration data is the [[Futuramerlin Document Registry]]. These are not the same as [[Token Registry]] keys.
+**HTTP sync**: be able to keep a local, up-to-date copy of a website w/o having to redownload each file every time (check modification times & such). (what I wanted for WG2 document registry) Part of the [[DCE interface]] project.
+**Metadata** are records of concrete attributes of [[nodes]]. See [[metadatum]] for more information.
+A **metadatum** is a record of a concrete attribute of or an objective truth regarding a [[node]], such as the number of words in a book or the dimensions of a sculpture.
+Idea: Modular Dc Sequence Builders
+
+For instance: A set builder: Collects nodes. Could be used for file uploads, etc.
+
+So, if I want to "upload" a file (send it to an Ember app), I am given a set builder dialog. It lets me pick a document or data record to send. Then, the set containing that document (at its present revision) is saved as a node; that node ID is then passed to the app. The node would have a trait indicating that it was static (that the contents it references would not be able to be changed — just revisions of them at the present state). Alternatively, a dynamic set could be created, in which the document would be able to be updated. Sets could have restrictions e.g. about how many documents they could contain, whether they could contain complex structures (such as a directory tree), whether one document could be swapped out with another or not, (or whether they are dynamic or static). Sets could also be driven by search criteria (e.g. the most relevant 10 nodes for a given keyword, or all nodes matching "DOOM" XOR "MOOD", or all four nodes with type Musician and a "is member of" relationship to "The Beatles", or the rapidly changing set of nodes with type Musician and a current or past "is member of" relationship to "Yes"), or built programmatically from new or existing nodes. This would allow file uploads, searches, etc. to all be driven using the SAME basic user interface module. Basically, a file picker on steroids. The set node would have a Dc sequence representation, as do all nodes, so this is really a Dc sequence builder. A set builder could also be used, for example, to choose what nodes to perform an operation on. So, if I'm writing an app to find all the "has foo of" relationships, delete them, and create corresponding "has bar of" relationships, I could create a dynamic set representing all the "has foo of" relationships, the app would know the node ID of that set, and it would then operate on the present state of that set whenever it is run. Of course, like anything else in Ember a set could "time travel" — a new set could display its results as if it had existed at a previous time, or the previous contents of the set could be displayed even if it did exist then. Another application of the set builder could be creating an Ember theme to share with the community that displayed the current top 10 tracks on the Billboard Hot 100 — a set could be created representing the top 10, and a rule could be created if desired to deal with the condition if the Hot 100 was discontinued: the set could be configured to return nothing, to return a fixed list, to return the top 10 from the final edition of the charts, etc..
+
+Likewise, a Color sequence builder should exist, and a Time sequence builder, and a Number sequence builder (could handle variables and complex expressions!), and a Mathematical Equation sequence builder (which would create a Number sequence builder for numbers).
+====== n-space-native computer graphics system ======
+
+Idea for a robust //n//-space-native multithreaded compositing computer graphics system...:
+
+There can be many applications.
+
+Each application can write to many source spaces, each of which has its own pair of buffers. Each source has two buffers so the data can be read by the compositor at any time, even while the source AND one buffer are being updated. That way, the compositor doesn't ever have to wait. It could just not paint things that weren't ready, but then that could make those things flicker.
+
+There is one OS output system.
+
+Compositor is a space of the same type as the output (for a 2-dimensional computer screen, for example, the composition space is 2-dimensional).
+
+A space is an //n//-dimensional data structure of graphics (generally vector) objects. Except for the composition space, spaces are organized in relation to other spaces (the origin of the enclosed space corresponds to a given position in the enclosing space). When the enclosed space has more dimensions than the enclosing space, each extra dimension can be chosen to be sliced, projected, or (sliced and?) protruding from the enclosing space. The compositor should also be able to handle other cases correctly, e.g. when the size of one unit in a space is different from another, when a space is rotated relative to another, when the size of one unit changes within a space, unusually shaped spaces, spaces that wrap around at the edges, spaces with holes in them, spaces split into parts, spaces with areas that teleport, spaces that change over time, two or more //a//-dimensional spaces with //b// intersecting dimensions (for //b// less than or equal to //a// — the other dimensions protruding), etc..
+
+Regarding unusually shaped spaces: consider a piece of string as a one-dimensional space. It has a clear linear point system along its length, but it can be bent within 3 dimensions. This case should be handled correctly by the compositor.
+
+FIXME: How to handle situations where an application needs to reference another application's spaces? Shouldn't be too hard to do, but maybe should have some sort of security/access protection system in place....
+
+{{ ::diagram-graphics-system-15may2014-v2-15may2014_crop_15_may_2014.png?1000 |}}
+
+The finely dashed lines indicate data going to or coming from multiple instances of the structures shown.
+
+To clarify: the compositor should be able to composite any number of simple or complex //n//-dimensional spaces into a single simple //n//-dimensional space.
+
+===== Pseudocode for the methods: =====
+
+==== Semaphores used, and their meanings/purposes: ====
+
+  * When S is up, Compositor can read buffer A
+  * When T is up, Compositor can read buffer B
+  * When U is up, Source can write to buffer A
+  * When V is up, Source can write to buffer B
+
+==== Source.push() ====
+
+<code>
+if(S, V are up):
+    T.down()
+    copy Source to buffer B
+    T.up()
+else if(T, U are up):
+    S.down()
+    copy Source to buffer A
+    S.up()
+</code>
+
+==== Compositor.pull() ====
+
+<code>
+if(S is up):
+    U.down()
+    copy buffer A into Compositor
+    U.up()
+else if(T is up):
+    V.down()
+    copy buffer B into Compositor
+    V.up()
+</code>
+
+A **node** is an individual record of an item. It is the central element to data organisation in [[Weave]]. A node can have both [[metadata]] and [[relationships]] to provide information regarding it. 
+
+It can have a [[data]] file attached to it.
+
+A node can have the following fields:
+
+[[Title]]
+
+[[Sort title]]
+
+[[Display title]]
+
+[[Short title]]
+
+[[Type]]
+
+[[Description]]
+
+[[Disambiguation description]]
+
+[[Source (citation)]]
+
+[[Comments]]
+
+[[Short description]]
+
+[[Universe status]]
+
+[[Copyright status]]
+
+[[Morality status]]
+
+[[Morality status as pertinent to minors]]
+
+[[Personal data status]]
+
+A node's dissemination can be controlled through the use of [[Permissions]].
+**Nodes** are individual records of items in [[Weave]]. See [[node]] for more information
+**Physical location ideas**: retail area, meditation area, soup kitchen, office (?), free shelter. Objective: provide a peaceful sanctuary where people can go when they need somewhere to go. Could have modular housing underground, extensible by addition of units? Meditation area & soup kitchen should be 24/7. Have work space for producing full-body suits? ←far-out idea, probably… Have multistory gardens, with mirrors to reflect sunlight in?
+**Quick look equivalent** behavior (proposal): when using file manager or [[DCE interface]] [[project browser]] or [[indexing launcher tool|Home Screen]] (or KFind?), space should be the trigger hotkey for previewing documents Quick Look style. If a document or documents is/are selected, hotkey previews those. If no document or documents are selected, document under cursor is previewed & highlighted using a special color. While previewing documents, the arrow keys can be used to navigate between which document is being shown. Previews of multipage documents should be scrollable, & audio/video should be playable.
+A **relationship** is a description of the connection between two [[nodes]].
+**Relationships** are information regarding the connection between two [[nodes]]. See [[Relationship]] for more information.
+Representing ranges in [[DCE]] is handled using the [[DCE range character]], as such: [start value] - [range] - [end value].
+**Seraph X1**: Idea: Make a laptop called Seraph X1 — update model each year (e. g. Seraph X1 2013, 2014, etc.). Testing models would be Seraph XT1-1, where the first number is the iteration # (2013 model would be XT1, 2014 model would be XT2, etc.), & the 2nd number is the individual test machine #. [[Wreathe]] preinstalled, of course.
+
+
+
+2015-01-05 note: A thought: In [[Ember Document Format]], "Dc" can mean "Document component" instead of "DCE character" — "Document character" being a "backronym" except it's an initialism, so I guess it's a backralism. Just thought this up. :) (both the backralism for "Dc" and the word "backralism" itself.) :)
+
+2015-01-08 note: I just had a dream before I woke up. There was an area with a doorway to it, and two guards guarding it. A guy from one side tried to get into the area, and the guard trying to keep people from that side from getting in failed to get him before he got in, but then that guard grabbed him and tried to toss him outside, only to be stopped by the other guard because the guy had actually gotten in and so the first guard couldn't toss him out now. There was a magnificent fruit display inside the main room of the area, with Lady America in an long iridescent dress reclining on the table with it; the display was nearly all eaten. When it was finished being eaten, there was a men's choir singing in unison in French, introducing the thousand-pound dish that was to follow. In the last line, they introduced the name of the dish, //le bœuf de florange// (8re 4mi 4fa 4re 1do) (florange = portmanteau of //fleur// and //orange//). Once they finished singing, Lady America leaped off the table and pulled back the tablecloth. The higher level of the table that the first dish had been sitting on disappeared, and revealed the //bœuf de florange//, a sumptuous display of oranges (not necessarily whole — displayed fancily, and maybe other fruit? I don't remember) with grapefruit-sized lotus blossoms all over it (I'm not sure how this worked, because the platform that disappeared was only like 1 foot tall and the //bœuf de florange// was maybe 3 feet tall — I guess that's just because it's a dream), and Lady Europa reclining on the table with it (a very traditionally beautiful woman, slender and with pale skin and all that, wearing an iridescent pink-with-lavender-highlights dress identical to Lady America's). (I think some other similarly-dressed women appeared there around the //bœuf de florange// too, but I'm not totally sure about that, and I'd think it would distract from Lady Europa's glory, if such a thing is possible...) She arose gracefully when she and the //bœuf de florange// were revealed.
+
+I think the situation was like the room with the food was a place for refugees from an occupied area, maybe — and the guard that didn't want people to enter was on the occupiers' side, and the people that were trying to enter were residents of the occupied area and of the same nationality as those in the unoccupied area. I'm not 100% sure about all that though, since it's a dream.
+
+2014-01-08a09 note: I should have incremental patches in eser — snapshot, then patch for that snapshot, then patch for that patch. That shouldn't be too hard, I don't think? (Maybe: rsync to stable after creating a patch?)
+
+2015-01-11 note: (note that the previous note, dated 2014-01-08a09 was actually in 2015). I should add another (maybe 2 more?) sections to the Ember book, one detailing the knowledge necessary to build a society from scratch, from skills necessary for basic survival, to current technology; as well as perhaps history that can be used to understand what the best systems of government are, etc. — and the other describing Ember as a book (since there are all the other aspects of Ember — the media library, the computing environment, etc. that have sections of the book, perhaps the Ember book should have a section).
+
+2015-01-12 note: To add to Ember book: a mathematics section in the skills section.
+
+2015-04-22a23 note: The [[ref:PHMV]] ([[ref:Pixie Hollow Music Video]]) is effectively a dead art form. Because the Pixie Hollow game — the medium through which the videos are created — has been closed, never again <del>will</del>can such artworks be created, most likely. And as copyright holders choose to take them down, there might be fewer and fewer of them in existence, until perhaps they have all disappeared, mere specks of dust in the ashes of history.
+====== Structuring EMBER DMS ======
+
+The [[Ember]] data management system: project objectives, implementation plan, and operational structure.
+
+===== Project objectives =====
+
+
+===== Implementation plan =====
+
+
+===== Operational structure =====
+
+**Weave** — the subject of this wiki, at the time of its creation — is a database designed to use relationships to organise information.
+
+It is an organisational structure based on three classes of information using which all knowledge can be organised. Its structural philosophy uses [[nodes]], [[relationships]], and [[metadata]] to organise information. A [[node]] represents an individual item or concept. A [[relationship]] is a description of the connection between two [[nodes]]. A [[metadatum]] is an objective truth about a [[node]], such as the number of words in a book or the dimensions of a sculpture. (Illustrations of this are available at [[use cases]].)
+
+Its homepage in English can be found at [[http://futuramerlin.com/r.php?c=w&a=1&locale=|http://futuramerlin.com/r.php?c=w&a=1&locale=]].
+
+It uses the [[CDCE]] format for the storage of its data. It uses a MySQL database for storage. It is written in PHP.  This is a documentation wiki regarding it.
+
+====== Documentation links moved from from start page: ======
+
+[[Weave]]
+
+[[Glossary etc]]
+
+[[use cases]]
+
+[[database layout (old)]]
+
+[[CDCE ideas]]
+
+[[datetime_string]]
+
+
 ## Overview
 
 A simple programming language should be provided for easily writing portable algorithms to be transpiled to and used by programs in other languages. The name "StageL" comes from calling it a "staging language" (which refers to its being a tool for developing the main EITE software, which should provide a more complete language). This project was inspired by the ugly code that resulted when I tried to write using these principles directly in JavaScript, needing a lot of easy-to-mess-up boilerplate code and awkward notation (largely because it is not strongly typed).
