@@ -207,6 +207,7 @@ Credits
 
 I would like to thank my classmates for their feedback on the project, and Jeremy Mason for mentoring me during an earlier iteration of the development of some of these ideas.
 
+ robotic gardener. What it would do is automate the process of growing and harvesting crops. By combining small motors and sensors and a simple programmable computer system like an Arduino, a small self-contained box could be constructed that would accept a seed as input and produce crops and more seed as output. This could be used for easily growing many types of plant, by providing different growing instructions and seeds as needed. It could also be built in a way that tries to use energy from the environment efficiently, and avoid excessive use of mains power. This would be helpful in simplifying access to plant products, even plants that are not commonly available easily. For example, if one wants a type of plant like clover that is usually only available in the wild in summer, and not sold in the winter, but the person wants it available to them year round, then it could be grown by the robotic gardener.
 
 # Alignment of the project approach to the traits of the currently emerging new media
 
