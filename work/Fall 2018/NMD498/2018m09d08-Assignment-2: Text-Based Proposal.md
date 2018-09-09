@@ -147,6 +147,67 @@ To decentralize such a system, individual computers that make up the information
 
 For instance, if a community in Maine, USA implemented such a system, and a community in Peru implemented such a system, the two systems would be able to be connected when a network connection between them was available, being able to share work assignments remotely, but if a storm or other situation disrupted the network connection, the two communities’ economies would split into separate economies and continue working independently seamlessly, and then recombine when the network connection returned. In such a system, each individual who has a computer thus has access to and control over that part of the economy. This still leaves one centralized aspect, though, which is the software controlling the economies. If it is community-maintained libre software, that problem is largely eliminated, aside from the usual problems of project governance. If it is preferred, the software could also have facilities for creating ad-hoc centralization, where one instance of the software within each group of instances accessible within a given network would adopt the role of leader. This could be decided automatically, and made fully invisible to users of the system, or through community selection with automatic selection as a fallback, which would probably be preferable so as to ensure that systems with good connectivity and uptime (such as servers in datacenters) were selected as leaders, avoiding unnecessary inefficiency and maximizing reliability.
 
+Approach 1—ElliotC (Updated Again)
+Abstract
+
+This is a proposal for developing an information technology system that allows various types of data to be given a first-class role; this is part of a broader proposal to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
+Background
+
+This part of this project will challenge the power structures of information technology corporations by providing a free/libre alternative to their services. The goal of the project is to develop an alternative system that respects freedom and openness. At present, owning common consumer goods often tends to turn one into a walking billboard through the presence of built in advertising on products. This should not be be necessary to be able to participate practically and meaningfully in society. Rather, it should only be something that people could choose if they explicitly want to.
+Explanation
+
+This project has a very large scope. Consequently, for this Approach, the target goals would be more limited. A practical implementation target for the context of this class project is the development of a simple state-machine–driven interpreter of the token-based document format specification for the information technology environment aspect of the project. A JavaScript implementation of this project is under way. JavaScript would allow the project to be portable on the Web platform, and perhaps allow implementing graphical user interface elements of the project sooner, while Bash would allow a character-mode textual user interface, perhaps a command-line environment. Either of these types of implementations of the format is valuable, regardless of the language they are developed in, and should be developed at some point; for this project only one would really be practical for meeting the implementation target within the context of this class, most likely. There have been several previous attempts at developing this, but they have not worked out for various reasons.
+
+The first implementation was in PHP, and had poor architecture and rather unmaintainable code. A second attempt in Java was excessively ambitious in attempting to parse a programming-language-style document format interactively, without any specification and only minimal planning or architecture, as well as being highly overengineered. An attempt in PHP and JQuery to build a user interface toolkit based on these principles crashed and burned due to poor code architecture and attempting to “put the cart before the horse” in developing a UI toolkit without any specification for it, and without consideration of the existing (specified) aspects of the format. A fresh attempt in PHP stalled due to also being rather unmaintainable and awkwardly written, specifically in its use of dynamically written JavaScript, and trouble storing arbitrary binary content, independent of character encoding, in HTML text boxes (which are really the wrong tool for the job). An implementation in Bash was considered and a command-line interface designed for it, but probably this will simply become a wrapper around the JavaScript implementation. The JavaScript implementation here will attempt to avoid these issues by only implementing what has already been specified, not attempting to handle the programming-language-style format yet, using extensive unit tests (which was very helpful in the Java implementation), and using modularized code (which has been helpful in successful projects undertaken in the interim), and by planning the architecture of the code (shown in the diagram below) before implementing it.
+Design diagram
+
+        External I/O: document source ──────────────╮
+               (as Dc sequence)                      │
+                                                     ↓
+   [○ Document execution state] ╮    ╭ [○ Document as Dc sequence] ←╮
+                ↑               ↓    ↓                              │
+                ╰───── Document execution loop:  ───────────────────╯
+  Other External I/O ← iterates over tokens (Dcs)
+                                   ↓
+                              Renderer: converts and
+                              and writes to renderer
+                              buffer visible document
+                              elements
+                                     ↓
+                              ⎡ Renderer buffer: holds     ⎤
+                              ⎢ representation of document ⎥
+                              ⎢ in the format desired for  ⎥
+External I/O: render target ← ⎢ output (terminal text for  ⎥
+(e.g. terminal or browser)    ⎢ a CLI, HTML for a browser, ⎥
+                              ⎢ bitmap for a raster        ⎥
+                              ⎢ monitor or HTML Canvas,    ⎥
+                              ⎢ other formats for export,  ⎥
+                              ⎣ etc.)                      ⎦
+
+Current JavaScript implementation
+
+The new JavaScript implementation is in progress. The source code for the project, including the new JavaScript implementation, can be found online (its main interesting code file is here as of this writing), and it can be run at this Web page, although the Web page version of it may not be up to date with the current version of the source code (at the moment, it is still showing the results of a marginally-related CSS test I was doing; I will update it periodically, although updating it takes a bit longer than just updating the source code, so I am not inclined to bother that often).
+Pictures
+
+Here is a picture of the latest mockup of this proposal, running in a Web browser.
+
+ 
+Interactive mockup
+
+Here is an interactive mockup of a proposed user interface for the project.
+
+http://futuramerlin.com/people/elliot/writings/blogs/elliotchandlernmd442/2017/12/06/12799819e/
+Budget
+
+The work for the partial implementation of the project in JavaScript will probably take in the area of 100 hours, spread throughout the semester. The costs of supporting me during this semester are approximately $420 per month for housing including utilities, and $150 per month for food, yielding $570 per month total, and $3420 for the semester. I plan to volunteer my time for this. I would not have a job anyway until the summer, so the investment of time for this will come out of my time outside of class, rather than replacing a job. The most recent costs of technical infrastructure is US$106.20 for three years of Web hosting, plus US$83.76 for eight year ownership of domain name. The cost for the semester of Web hosting is therefore US$17.70, and the cost for the semester of the domain name is US$5.24. The full implementation of the project is a very large project, and will require substantial investment of time and money. Land and a building for the project would cost tens or hundreds of thousands of US dollars, which I hope to fund by getting a well-paying job enabled by my education. That education will probably require at least two semesters of university without financial aid, which will require tens of thousands of dollars in student loans and their interest. Significant volunteer involvement and/or external investment would be necessary for a full implementation, since the project is too large for me to complete solo.
+Audience
+
+The intended audience for the part of this project I am undertaking this semester is very limited. It is simply a technology demo and beginning of an implementation of a tool with larger scope. Consequently, it will presumably be rather limited in its practical utility, making it not suitable for a general audience, and mainly useful as a tool for demonstrating some of the principles used in this project, and as a core starting-point for the implementation of a more substantial and practically useful set of capabilities. People that would be especially benefited by the full form of this project include individuals from marginalized groups, especially those with disabilities, mental illnesses, and the homeless, by enabling them to support themselves through a community and reducing barriers presented to them by discrimination, and by reducing the need for individuals’ dependence on the traditional monetary economy.
+Credits
+
+I would like to thank my classmates for their feedback on the project, and Jeremy Mason for mentoring me during an earlier iteration of the development of some of these ideas.
+
+
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
