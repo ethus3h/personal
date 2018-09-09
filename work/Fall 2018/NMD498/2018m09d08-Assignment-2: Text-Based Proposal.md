@@ -69,7 +69,7 @@ The main output of the project so far has been the successful development of two
   - This includes both in writing and in person. My in-person speaking on it is particularly disastrously bad.
 
 ## Finances, budget, and stability
-- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment, a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration is good through the end of 2022, at which point it will need renewal, which is about US$10/year.)
+- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment, a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration (`futuramerlin.com`) is good through the end of 2022, at which point it will need renewal, which is about US$10/year.)
 - While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
 
 ## Steps dependent on interpersonal connections
