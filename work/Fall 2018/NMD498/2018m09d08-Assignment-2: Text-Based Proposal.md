@@ -1,7 +1,8 @@
-Link http://jonippolito.net/teaching/capstone/text_proposal_template.html
+The structure of this document is based on "Text-based project proposal: Template" (http://jonippolito.net/teaching/capstone/text_proposal_template.html).
+
+Note that some sections have been re-ordered, to ensure that the most relevant and accessible information is presented first, with lengthier and more abstruse sections placed later.
 
 # Abstract
-
 
 This proposal suggests a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
 
@@ -13,11 +14,7 @@ There is also no project to ensure the availability of communities managed in th
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
 
-## Evidence of the problem
-
-Due to its length, see the section of the same name at the end of the proposal.
-
-# Three existing projects that come closest to solving
+# Existing work towards solving this problem
 - MusicBrainz
 - Wikimedia
 - United States of America
@@ -42,33 +39,6 @@ The primary components comprising the project are currently unfinished, but a va
 
 The main output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archiving, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty git repositories used now for the project, as well as the structured archiving of more than eighteen million additional documents outside of the project.
 
-## Alignment of the approach to my and others' definitions of new media
-
-Henry Jenkins's article "Eight Traits of the New Media Landscape" provides eight traits that its author observes in the prominent currently emerging new media. I do _not_ consider this article to be a definition, _per se_, of the currently emerging new media, much less as one of new media in general, and it has some issues (discussed below) when taken as such. However, I will here evaluate my project in consideration of this set of traits when assumed to be defining traits of new media in general.
-
-The first of these defining traits is _innovation_. I agree that the technologies that make up new media are indeed innovative. Whether individual new media works are themselves technologically innovative varies depending on the work, I think. As a communication medium, the information technology environment aspect of my project proposal is arguably merely an extension and refinement of existing communication media. However, because those existing media are themselves innovative, even so my project is a work within new media, even if it is not itself a new medium.
-
-The second defining trait is _convergence_. My proposal is highly convergent, being a broadly scoped project to innovate across a wide range of aspects of society, industry, and technology. Even regarding only the information technology environment, it is intended to inherit the capabilities of existing computers, which are used for text, sound, image, video, and interactive media, among others.
-
-The third defining trait is _everyday_ presence. As a project to develop a unified system providing all the knowledge resources needed for running a society, if it is successfully completed and used to its envisioned potential, it would serve as the framework for people's everyday lives. When only available in partial form, those portions of it can be used in everyday settings as well (e.g. large chunks of my classwork and other data I rely on and use on an everyday basis (personal projects, music library, email, etc.) are stored and managed using software I developed in the course of developing this project).
-
-The fourth trait is _appropriation_. My proposed project ideally will be highly appropriative, because so much work has already been done. It would likely be hugely wasteful and impractical to attempt to build everything from scratch, rather than to leverage existing systems and merely work to fill gaps and integrate the various existing technologies well. That said, reliance on proprietary or externally managed technologies should be eliminated as soon as practical, with all elements of the project and its dependencies being fully libre, because proprietary, non-maintainable, and trade-dependent systems are brittle and are a huge threat to the ability of human society to maintain its standards of living over time.
-
-The fifth trait is _networkedness_. As a design goal for my project, networking should be provided when available, but never mandatory. Systems that depend entirely on networking are, echoing my discussion of the fourth point, brittle. A cloud computing–backed virtual digital assistant, for instance, is thoroughly useless in the event of networking being unavailable. Once constructed, the best tools would be fully usable in a vacuum.
-
-The sixth trait is being _global_. My proposed project is intended to be able to be geographically dispersed, although individual commumnities would only be able to collaborate on physical projects by being physically colocated, for obvious reasons.
-
-The seventh trait is _generational_. Whether an age gap will affect my project is hard to predict. If it does, it should only be by the choice of individuals, rather than by inaccessibility or prejudice: if people who are a different age than the majority involved in the project, those people should be provided any necessary accommodations to the fullest extent possible (medical care for the elderly, education for the young, and so on). Any project I'm involved in should not engage in discrimination based on age, although for the time being probably only adults would be practical for this project to serve due to lawyers (e.g. I think Google doesn't allow kids to use it, so this presumably shouldn't either).
-
-The eighth trait is _inequality_. This will likely affect the project initially, because a community being developed by it would presumably be unable to fully support individuals until it was quite far along, meaning that people involved in the project would need to be able to provide for themselves and (for physical aspects) provide transportation to it, restricting practical access to it to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while accommodating diversity and freedom.
-
-My opinion of this definition of new media, when taken as such, is that it is rather poor. However, it is not presented as such in the article: rather, it is presented as a list of traits of "the new media landscape" or "the contemporary media landscape", indicating that it is a list of (not necessarily defining) things that can be observed about the specific set of media emerging at the time of the article's composition. I will assess its quality as a definition, but please remember that I don't believe these criticisms are valid when regarding the article as what it actually presents itself to be. First, it seems somewhat focused on _currently_ new media (computer technology, hacktivism, etc.), while new media can in my view encompass any means of communicating (a medium) that is gathering influence at a given time (newness), at least when the term is assessed as the sum of its constituent components. Granted, the definition represents what new media is often currently taken to mean, practically speaking, so it is only in pedantic and prescriptive usage that it is flawed in that regard. Second, many of the described defining traits are not required in the slightest for a medium to be new. Everyday presence is particularly egregious in how little dependency _being a new medium_ has on it: many new media are presumably developed and are never widely considered or gain everyday currency due to not having been very useful — it seems inconceivable that every new medium developed immediately has everyday presence, or that it is not "new" until it has such presence. Again, this is an issue that only arises when considering the article as a definition of new media in general rather than as observations of commonalities of the prominent new media when it was written. I suspect that more logical issues would appear given further scrutiny of the traits as a general definition media, but I'm sleepy. Good night!
-    
-
-# Features of my proposed solution, in detail
-
-Due to its length, see the section of the same name at the end of the proposal.
-
 # Expected outcomes
 
 - Completed, stable software environment used for developing the project
@@ -86,7 +56,7 @@ Due to its length, see the section of the same name at the end of the proposal.
     - Ideally, the entirety of the knowledge assets (perhaps excluding section 3 of the library) would be available in a wristband storage format, or something similar, ensuring that every person carries the entirety of the contents of the project with them, essentially becoming human backups of the data, and with any single person having the knowledge necessary to recreate the entire project and all its technology if they want. Printed books should also be available and distributed to libraries.
     - The cloud computing infrastructure should use a decentralized, asynchronously resolving append-only data store, similar to blockchains, to ensure the preservation and longevity of data stored using it as best as possible.
 
-# Tasks list (at least twenty specific items)
+# Tasks list
 
 ## Planning and strategy
 - The most important tasks are also the most difficult. Developing assets (specifications, software, etc.) is trivial compared to developing communication skills and establishing allies. There's a reason there are several usable computer programs developed for this project, but no other people working on it.
@@ -150,5 +120,24 @@ These tasks are much less important than the above, but are much easier and comp
 - https://medium.com/mydata
 - https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire
 
-# Features of my proposed solution, in detail
+# Features of the proposed solution, in detail
 
+# Alignment of the project approach to the traits of the currently emerging new media
+
+Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
+
+The first of these traits is _innovation_. As a communication medium, the information technology environment aspect of this project proposal is arguably merely an extension and refinement of existing communication media. However, because those existing media are themselves innovative, this project remains a work within new media, even if it is not itself a new medium.
+
+The second trait is _convergence_. This proposal is highly convergent, being a broadly scoped project to innovate across a wide range of aspects of society, industry, and technology. Even regarding only the information technology environment, it is intended to inherit the capabilities of existing computers, which are used for text, sound, image, video, and interactive media, among others.
+
+The third defining trait is _everyday_ presence. As a project to develop a unified system providing all the knowledge resources needed for running a society, if it is successfully completed and used to its envisioned potential, it would serve as the framework for people's everyday lives. When only available in partial form, those portions of it can be used in everyday settings as well (e.g. large chunks of my classwork and other data I rely on and use on an everyday basis (personal projects, music library, email, etc.) are stored and managed using software developed in the course of developing this project).
+
+The fourth trait is _appropriation_. This proposed project ideally will be highly appropriative, because so much work has already been done. It would in all probability be hugely wasteful and impractical to attempt to build everything from scratch, rather than to leverage existing systems (even if only practical through inspiration!) and merely work to fill gaps and integrate the various existing technologies well. That said, reliance on proprietary or externally managed technologies should be eliminated as soon as practical, with all elements of the project and its dependencies being fully libre, because proprietary, non-maintainable, and trade-dependent systems are brittle and are a huge threat to the ability of human society to maintain its standards of living over time.
+
+The fifth trait is _networkedness_. As a design goal for this project, networking should be provided when available, but never mandatory. Systems that depend entirely on networking are, echoing the discussion of the fourth point, brittle. A cloud computing–backed virtual digital assistant, for instance, is thoroughly useless in the event of networking being unavailable. Once constructed, the best tools would be fully usable in a vacuum.
+
+The sixth trait is being _global_. The proposed project is intended to be able to be geographically dispersed, although individual commumnities would only be able to collaborate on physical projects by being physically colocated, for obvious reasons.
+
+The seventh trait is _generational_. Whether an age gap will affect this project is hard to predict. If it does, it should only be by the choice of individuals, rather than by inaccessibility or prejudice: if people who are a different age than the majority involved in the project, those people should be provided any necessary accommodations to the fullest extent possible (medical care for the elderly, education for the young, and so on). This project should not engage in discrimination based on age, although for the time being probably only adults would be practical for this project to serve, in the interest of ensuring the presence of a sufficient child protection framework (e.g. I think Google doesn't allow kids to use it, so this presumably shouldn't either).
+
+The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
