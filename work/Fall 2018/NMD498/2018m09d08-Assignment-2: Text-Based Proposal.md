@@ -13,7 +13,7 @@ There is no project to systematically support the libre development and distribu
 
 There is also no project to ensure the availability of communities managed in the long-term interest their constituents, humanity, and the environment. This results in human suffering and inequality, catastrophic cultural and historical loss, and prolonged global ecological crises caused by government and corporate apathy and abuse.
 
-These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.hde
+These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
 
 ## Sources as evidence that this is problem
 
