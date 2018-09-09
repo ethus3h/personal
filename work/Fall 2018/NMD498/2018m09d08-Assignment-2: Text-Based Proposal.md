@@ -604,7 +604,7 @@ And the in-universe counterparts of the above:
   * In-universe subjective single/subset source
   * In-universe subjective individual/organization source
   
-Note that not all suggested behaviours are absolute. For example, the document chunk options (see under STRUCTURAL) are not necessary; they are just one option for doing things. Semantic tagging is always good though — the system could probably be expanded a lot to maximize this. Or the automatic bibliography management option à la BiBTeX is optional too, or could be customized, etc. The basic philosophy of DCE is *FLEXIBILITY* — letting the user do what he or she wants in an elegant manner and without undue shenanigans, intrusive 'assistance', or ugly hacks.
+Note that not all suggested behaviours are absolute. For example, the document chunk options (see under STRUCTURAL) are not necessary; they are just one option for doing things. Semantic tagging is always good though — the system could probably be expanded a lot to maximize this. Or the automatic bibliography management option à la BiBTeX is optional too, or could be customized, etc. The basic philosophy of DCE is *FLEXIBILITY* — letting the user do what they want in an elegant manner and without undue shenanigans, intrusive 'assistance', or ugly hacks.
 
 ====== STRUCTURAL ======
 
