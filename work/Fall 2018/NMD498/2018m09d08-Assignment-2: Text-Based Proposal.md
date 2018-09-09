@@ -31,7 +31,7 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 
 # General approach
 
-This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment.
+This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. The communites should attempt to provide a consistent and complete experience to the people who are part of them, without depending on support from external infrastructure, technology, or government. Relying on external support increases fragility. 
 
 To organize the broad scope of this project, it is currently divided into four primary areas of work: 
 - A specification of principles and methods on which the project is based
