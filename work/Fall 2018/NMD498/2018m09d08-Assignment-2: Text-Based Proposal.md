@@ -1645,6 +1645,4698 @@ within all of which, parcels and tenements, the sole binding policy (in other wo
 
 "A system for punishment for violating the standards of this organization could be created by the removal of benefits and protections provided by it."
 
+     
+
+  
+
+  
+
+  
+
+Ember_Ember_
+
+1st Edition
+
+Version 1.0.52
+
+2015 November 30
+
+Copyright © Ember
+
+*   Contents
+
+Contents 3
+
+1 About this book 6
+
+2 The Ember project: Premises, principles, and purpose 7
+
+1.1 Project structure and implementation information 14
+
+2.1 More details 15
+
+2.2 Part 1: The Institution 16
+
+2.2.1 Rationale 16
+
+2.2.2 What such a structure would provide 17
+
+2.2.3 Implementation methodology and practical concerns 20
+
+2.3 Part 2: The Spirit 22
+
+2.3.1 Ethical arguments 22
+
+2.3.2 Findings of Beauty 30
+
+2.3.3 Taken on faith 31
+
+2.4 Sources 32
+
+3 The Ember organization 34
+
+3.1 Ethical postulates upon which it is based 35
+
+3.2 Specifications 36
+
+4 The Ember philosophical basis 37
+
+5 The Ember services collective 38
+
+5.1 Specifications of goods and services 39
+
+6 The Ember computing environment 40
+
+6.1 Structural principles 41
+
+6.2 Data formats 42
+
+6.2.1 EDF Specification 42
+
+6.2.1.1 Header 42
+
+6.2.1.1.1 Creation metadata format specification 43
+
+6.2.1.2 Body 43
+
+6.2.2 ENF Specification 44
+
+6.3 Server behavior specification 45
+
+6.4 OS client behavior specification 46
+
+6.5 WWW client behavior specification 47
+
+6.6 Use cases 48
+
+6.6.1 Use case 1 48
+
+6.7 Structural principles: old Weave version 50
+
+6.7.1 Nodes 50
+
+6.7.2 Relationships 50
+
+6.7.3 Metadata 50
+
+6.8 Ideas and Notes 51
+
+6.8.1 Authority Contexts 51
+
+6.8.2 Modular Dc Sequence Builders 51
+
+6.8.3 General ideas 52
+
+6.8.4 Data flows 52
+
+6.8.4.1 Fully featured client 52
+
+6.8.4.1.1 Input 52
+
+6.8.4.1.2 Output to user 53
+
+6.8.4.2 Server 53
+
+6.8.4.2.1 Input from clients 53
+
+6.8.4.2.2 Output to clients 53
+
+6.8.5 Note: DCE named syntaxes 54
+
+6.8.6 Node examples — use cases: 54
+
+6.8.7 Implementation 54
+
+6.8.8 Database schema ideas 55
+
+6.8.8.1 Ember data modeling 55
+
+6.8.8.1.1 Example schema 55
+
+6.8.8.1.1.1 Classes 55
+
+6.8.8.1.1.2 Types 55
+
+6.8.8.1.1.3 Users 55
+
+6.8.8.1.1.4 Nodes 55
+
+6.8.8.1.2 Comments and ideas 56
+
+6.8.9 Structuring EMBER DMS 56
+
+6.8.9.1 Project objectives 56
+
+6.8.9.2 Implementation plan 57
+
+6.8.9.3 Operational structure 57
+
+6.8.10 UI ideas for the Ember project 57
+
+6.8.10.1 Button 57
+
+6.8.11 _n_\-space-native computer graphics system 57
+
+6.8.11.1 Pseudocode for the methods: 58
+
+6.8.11.1.1 Semaphores used, and their meanings/purposes: 58
+
+6.8.11.1.2 Source.push() 59
+
+6.8.11.1.3 Compositor.pull() 59
+
+6.8.12 Coal (data storage system) 59
+
+6.8.12.1 File formats and extensions 60
+
+6.8.12.2 Status codes 61
+
+6.8.13 Notes on development principles 62
+
+6.8.13.1 Rules 62
+
+6.8.13.2 The Test-Driven Development Procedure 63
+
+6.8.14 Procedures outline 63
+
+6.8.15 URI scheme and directory structure for Ember 64
+
+6.8.16 Groups and Domains 65
+
+6.8.16.1 Groups 65
+
+6.8.16.2 Domains 65
+
+6.8.17 Notes on apps and features 66
+
+7 The Ember knowledge reference 71
+
+7.1 How to Study 72
+
+Information studies: The Ember language and logical system 73
+
+7.1.1 Notation 73
+
+7.1.2 Sentences 75
+
+7.2 Mathematics 76
+
+7.3 Physical sciences 77
+
+7.3.1 Chemistry 77
+
+7.4 History 81
+
+7.4.1 1900s 81
+
+8 The Ember media library 82
+
+8.1 Using the Web environment 83
+
+9 The Ember spiritual framework 84
+
+10 The Ember multimedia artwork 85
+
+10.1 In-universe reference 86
+
+10.1.1 Characters 86
+
+10.1.1.1.1 Blossom 86
+
+10.1.1.1.2 Leaf 86
+
+10.1.2 Places 87
+
+10.1.2.1 Ilien 87
+
+10.1.3 Years 87
+
+10.1.4 Cultures 87
+
+10.1.4.1 Languages 87
+
+10.1.4.1.1 Ilentu 87
+
+10.1.4.2 Names 88
+
+10.1.4.2.1.1 List of common names 88
+
+11 Resources 89
+
+11.1 Additional reading 90
+
+11.2 Cool and interesting people and Web sites 91
+
+12 References 92
+
+13 Index 93
+
+  
+
+  
+
+About this book
+
+The version number used in this book follows the format (where the contents in brackets are to be substituted with their respective records):
+
+\[nonnegative integer: EDITION\].\[nonnegative integer: REVISION\].\[structure: VERSION\]
+
+VERSION structure format:
+
+\[nonnegative integer VERSION\]|\[structure MINOR REVISION\]
+
+MINOR REVISION structure format:
+
+\[nonnegative integer\]|\[structure conforming to MINOR REVISION\].\[structure conforming to MINOR REVISION\]
+
+The Ember project: Premises, principles, and purpose
+
+  
+
+  
+
+Topics:
+
+  
+
+*   Inanna / Jesus / Lucifer
+*   Gnosticism
+*   Aelfe / faeries / dragons
+*   Free trade – importance of it
+*   Preservation of history
+*   Equality of species
+*   Social contract between humans only
+
+  
+
+One role of Ember would be to provide goods. For this, it would be ideal for Ember to control as much of the supply chain as possible. That would allow efficient provision of the goods such as to reduce cost and ensure quality. That control of the supply chain would, in an ideal scenario, extend to all stages of the process, from production of the raw materials to component production to assembly to distribution, as well as shipping at all stages of the process. If Ember both controlled production of raw materials in a region and was the dominant institution working to ensure that those resources are used responsibly, it would of course be important to take the interest Ember has in using the resources sustainably into consideration.
+
+  
+
+  
+
+Ember is a multifaceted project to develop a scalable environment for building an effective society.
+
+  
+
+The aim of the Ember project
+
+  
+
+Create a system to enable efficacy, efficiency, and justice of society.
+
+The Ember Project would create a global power structure that would work to create an efficient opt-in society.
+
+Introduction: Ethics and Ember
+
+In the emerging hacker culture of the early 1960s, a man named Ted Nelson, a graduate student at Harvard, began work on a computerized information management system that would later become known as “Project Xanadu”. The project promised amazing abilities. It was designed to provide definitive copies of documents that would be preserved in perpetuity, which could be referenced in other documents by quotations or references, so that the original source document of a passage could always easily be found. This aimed to provide an indefinitely scalable computerized collective memory for the preservation of humanity’s history and knowledge. This monumental project, despite significant corporate backing, was not a success. (Wolf, Gary. “The Curse of Xanadu”. (link) (IA)) I’d like to look at why it failed — but we’ll get back to that later.
+
+  
+
+There are a large number of works of great cultural importance. They have touched on a number of meaningful subjects, but several subjects have stood out particularly for me: ethics, rights, prejudice and bigotry, and theology. These are elements of society that play important roles, influencing the ways people live and experience their daily lives.
+
+  
+
+When you look at life from a perspective of fundamentals, there are a few things that are necessary: food, water, and shelter. Without these basic elements, humans would not survive very long. If one is hard working and clever, one can provide these things for one’s self, by living off the land. When humans start to live together in communities, things become more complicated; medical care and education become important. The goals of a community are to make life more secure and predictable for the community’s members, and to reduce the hardships associated with “primitive” living (living without the support systems of a complex society). But with those goals comes a problem: how are those goals to be effectively implemented? Through the development of strategies such as specialization of individuals’ abilities and the creation of technological solutions, these challenges can be met.
+
+  
+
+As more people start living together, though, they will almost inevitably come into conflict. What can be done when the individual’s interests conflict with those of the society? What about conflicts between individuals? To deal with these issues, laws and a justice system can be put into place. An economy or labor-sharing strategy can aid in the exchange of services and goods, to avoid conflicts over these matters. A free market economy is helpful to a society, because it redirects the energies of greed and uses them as a force for technological development.
+
+  
+
+Philosophical discourse becomes important in many areas, such as the resolution of the conflicts and challenges of a complex society, and the research into understanding the world around us. This discourse leads to the development of more complex technology drawing on the ideas of the society, then leading to debates about ethics, to scientific investigation about the nature of our world, and to the development of ways to understand and accept who we are, such as religion and science.
+
+  
+
+Ideas, knowledge, and art become economically motivated, and so copyright and patent laws are established to encourage and protect innovation in these areas. The wide availability of information becomes increasingly relevant, and information technology and distribution systems such as books and computers are developed. Support infrastructures are created and strengthened, to protect society against threats both external and internal, such as disease, crime, terrorism, civil unrest, and war.
+
+  
+
+I would like to attempt to improve on the existing systems that have developed for solving these problems. I would like to undertake this project in an incremental, scalable manner, rather than creating a complex system that would need to be implemented all at once to be effective. That way, small improvements could be made without attempting to undertake the insurmountable task of improving larger components of society at once. This incremental development would allow for the strengths of the existing systems to persist, as well.
+
+  
+
+The many texts I have studied have helped me understand better how I could go about achieving these goals, and have provided interesting and valuable insights about what I believe. In many cases, it is difficult or impossible to prove to the satisfaction of a large number of people what the ideal systems are for society; in such cases I can only at once stand by my own beliefs and also accept that other valid solutions and reasonings can exist as well.
+
+  
+
+The most important thing I think I will achieve, which has both shaped and been shaped by my experience of study, is the incremental development of improved and redeveloped societal structure and infrastructure. To this end, I have gathered a number of disparate elements of the project under the name of “Ember”, for ease of reference; these diverse objectives I believe have the potential to improve the general standard of living. At the same time, it is important to ensure that the Ember project does not fall into the same pitfalls that befell Project Xanadu, despite their many parallels and similarities.
+
+  
+
+Project Xanadu and Ember are both projects with lofty goals, born out of a Nietzscheian rage at the status quo, aiming to radically transform and reshape various aspects of society for the better. They are both ambitious, and championed by someone without a thorough understanding of the technological and economic realities and limitations of the world around them. They both are driven by grand ideas, with little thought given to short term practical implementation and utility of those ideas. They both have the potential to absorb vast amounts of investment without return. My hope is that by assessing and strategizing around these similar aspects, and understanding the ways in which they relate to Project Xanadu’s failure to produce, such a catastrophe can be avoided by Ember.
+
+  
+
+Ember is a multifaceted project to develop a scalable environment for building an effective society. The goal of the project is to create a system to enable efficacy, efficiency, and justice within society, by creating a social structure that would work to create an efficient opt-in society within the framework of the diverse and valuable existing societies. The plan for the project is to pursue these goals by developing individual components that each provide an integral part of the whole societal system. My current proposal is comprised of several components, including a coordination organization, a philosophy of ethics, a nonprofit standards-driven services collective, a computing environment, a reference collection of the most important knowledge, a library of great cultural works, a spiritual framework, and a multimedia artwork.
+
+  
+
+The four subjects that will prove integral in the effective development of the Ember project that I would principally like to discuss in this paper and which have been of most import to my journey of learning are ethics, rights, prejudice and bigotry, and theology.
+
+  
+
+Ethics are one of the central aspects of a complex society, with an understanding of what is “justice” being necessary for the establishment of effective justice systems, and an understanding of what is ethically acceptable scientific research and technological development being necessary for a society to respect the dignity of the world.
+
+  
+
+In the Zimbardo prison experiment, we saw an influential and famous experiment that was ethically very dubious, and likely had lasting effects on the research participants. Is such research justified? This is a hard case to make, as the benefits derived from the Zimbardo experiment have been doubtful at best due to the poorly undertaken nature of the research. However, could such research that damages the participants be considered ethical in any scenario? Could it, perhaps, but only with the full understanding and consent of the participants? It seems likely that the nature of such an experiment is fundamentally harmful in such a way that it would be best to attempt to gain the knowledge through other, more ethical research methods if at all possible before trying such research techniques. By no means should such research practices as those seen in Zimbardo be standard or generally accepted within the scientific community.
+
+  
+
+Some scientific research is seen as harming the public interest for other reasons, such as Galileo Galilei’s assertions of a heliocentric planetary model, which were regarded as heresy by the Catholic church, which was the dominant social force in determining matters of ethics and morality in Europe at that time. This is a matter of ethics, as opposed to a matter purely of science, as the scientific results were considered to be evil. However, it seems that Galileo’s research has done no lasting harm, considering that it has become widely accepted and is no longer a matter of significant contention. Perhaps this acceptance is because the issue with Galileo’s research is the results he found, while with Zimbardo’s it is the ethics of the manner in which the research was undertaken.
+
+  
+
+Rights are an important social issue. In Mrs. Dalloway, by Virginia Woolf, we encountered the debate about what rights should be protected in the thorny instance of an individual with mental challenges. One can consider whether Septimus Warren Smith had the right to not be controlled by Holmes and Bradshaw. Referring to Septimus, Woolf writes: “Lately he had become excited suddenly for no reason (and both Dr. Holmes and Sir William Bradshaw said excitement was the worst thing for him)” (Woolf, Virginia. Mrs. Dalloway. p. 140). Does not Septimus have the right to exist without being bothered, regardless of whether it is considered the best thing for him? He does no one else any harm by being as he is, and is not disrupting society in any way, except inasmuch as it may perhaps reduce his ability to contribute to it. And even that seems that it may be excusable in light of the value of one’s right to liberty, much as one could make such an argument for the legitimization of a right to suicide.
+
+  
+
+Likewise, is involuntary confinement of someone who is not a threat to society moral or ethical? Does it violate the tradition of habeas corpus? “Worshipping proportion, Sir William not only prospered himself but made England prosper, secluded her lunatics, forbade childbirth, penalised despair, made it impossible for the unfit to propagate their views until they, too, shared his sense of proportion” (Ibid. p. 99). Does Bradshaw have any right whatsoever to impose such restraints, to place such barriers upon freedom of expression and action? Perhaps one could argue that the mentally incompetent are incapable by nature of exercising these rights appropriately and effectively, and thus should not be afforded them. Nevertheless, even such disabled and tragically affected individuals still likely have the right to have their desires and conscience and feelings paid respect and honored by the society around them. They are, presumably, individuals with their own emotions, realities, and conceptions of the world, thus deserving the same respect afforded to the healthy in any just and non-oppressive society. These are important social issues to consider and address in the development of an evolving societal system.
+
+  
+
+Bigotry, hatred, racism, prejudice, and oppression are critical issues to address in the modern society, with tragedies such as slavery, genocide, and wartime racism persisting strongly into the present. An understanding needs to be built and lessons learned from history about how these elements can be addressed effectively and thoroughly, protecting the rights of all. In several of the texts we have studied in this sequence, we encountered racism as a prominent theme, most notably in The Souls of Black Folk and Incidents in the Life of a Slave Girl. In The Souls of Black Folk, by prominent author W. E. B. Du Bois, it is written that “the South believed an educated Negro to be a dangerous Negro” (Du Bois, W. E. B.. The Souls of Black Folk. p. 24). Du Bois considered this assessment by the South to have some validity, because of the role of education in bringing forth “dissatisfaction and discontent” (Ibid.). Such discontent would likely have been far greater among African Americans, due to the profound injustices they experienced. In addition, this generalization shows the egregious violations of rights and hatred that can emerge, piling injustice on top of bitter injustice, when one group is considered inferior to another.
+
+  
+
+In Incidents in the Life of a Slave Girl, we see the brutal realities of life as an African American woman in the antebellum south. It reveals in its tragedy the horrors that they underwent through no fault of their own but merely the chance of having a different skin color. The recent development of feminist philosophies such as those seen in Virginia Woolf’s and Adrienne Rich’s work is clearly a step in the right direction, helping to sway the pendulum away from injustice, continuing along the path boldly set by the civil rights movement in the 1960s. However, racism and racial violence still persist, as evidenced and highlighted by the recent racial tension surrounding police brutality.
+
+  
+
+Theology plays an important role in society, providing a way for individuals to understand their role in that society and in the world. Occam’s Razor is a famous statement to the effect that “No more things should be presumed to exist…” (Haddon, Mark. The Curious Incident of the Dog in the Night-Time. p. 90) than are needed to explain the observations about which a collective truth has been established through consensus. Despite the seeming rationality of that statement, I nevertheless often choose to believe things on faith, despite being unable to prove them through scientific observation and logic. I come to these conclusions frequently as ways to best explain the parts of the world around me that I do not understand scientifically, but nevertheless seem to observe on a daily basis and believe to be real: life, emotions, and other similarly difficult-to-quantify elements of the world around us. By considering the world and drawing my own conclusions, I can create my own worldview, as real to me as the perceptions that are established through consensus and scientific reasoning.
+
+  
+
+The Music of Life presents a model of life that can be mistakenly argued to be unscientific, because it does not explain many of the vagaries of the way life and the way one’s personality and other traits that make one an individual come about. This model indicates that these traits are not coded in one’s genes, but originate otherwise. This model is scientifically reasonable, though, since the systems by which these traits develop and function are not fully or thoroughly understood, and are likely not completely determined quanta that can be effectively evaluated by measuring systems. Perhaps it is not possible to understand these traits at all. Perhaps one wishes genes might provide the definitive coding for an organism, providing a thorough way to comprehend the way that organism evolves and develops. However, this is not the way genes work.
+
+  
+
+I believe that God has created a sort of fettered omniscience for Himself, and has taken away His direct influence over the world and given living things the capacity for moral self-direction. This aspect of the world’s traits has been implemented in what has been recognized as the theory of the uncertainty principle in quantum mechanics, according to which nothing can be predicted with absolute certainty. Traditional thinking would seem to hold that through a comprehensive understanding of all the positions and vectors in a closed system, all of the states of that situation — past, present, and future — can be known simultaneously. Yet the observer effect leads to the situation that the most basic particles of matter are unable to be observed or predicted, because any observation will inevitably change their state, thus contributing to the chaos inherent in the uncertainty principle. In a lecture on quantum mechanics, the speaker discussed the idea of determinism: I believe that these maxims of unpredictability lead to the effective disintegration of multi-scale determinism, while it does seem to remain effective and in effect in the world on our scale. This unpredictability enables the world to exist as it does with true moral sovereignty, without the consequential ethical nihilism of the philosophies of fate or predestination.
+
+  
+
+Gnosticism is a group of belief systems sharing certain core tenets, particularly the focus on the development of sophia (wisdom) to attain gnosis (knowledge) and on the rejection of some elements of the physical world in the endeavor to attain ascendance into the spiritual. It shares common themes and elements with many Christian and other belief systems. In the Gnostic Gospel according to Mary Magdalene, it is written “There is no sin, but it is you who make sin when you do the things that are like the nature of adultery, which is called sin.” (Gospel according to Mary Magdalene. Chapter 4, verse 26.) This sentence emphasizes the Gnostic nature of the text, in its equating of sin with adultery providing a connection to the traditional Gnostic focus on the rejection of elements of the physical in the interest of the finding of knowledge through wisdom. While it would be hard to prove concretely that things like adultery are bad, that badness can nevertheless be understood: it is a truth that can be taken on faith, it can be understood through the collective wisdom of society, or it can be felt in one’s heart.
+
+  
+
+Present in my mind is the world presented by Bacon in The New Atlantis. While it isn’t presented as a dystopia in his novel, and seems that Bacon considers such an environment to be ideal, in light of the experiences of society nowadays approaching its traits in some ways, it raises frightening questions. For instance, what should the role be of surveillance in a society? In Bensalem, the society presented in the book, surveillance is present. And yet, surveillance today can seem frightening, considering the potential for its abuse. How should safeguards be put in place to simultaneously enable effective surveillance, while curtailing its abuse?
+
+  
+
+Considering these elements in the process of creating a system for alternative society development is clearly a vital part of the process. Failure to do so can produce a system which is unjust, incompetent, and inefficient. By avoiding this failure, the system developed can embody its principle objectives of creating an efficient, effective, and just society. The concepts that in the many great texts of civilizations provide invaluable insights for the development of the Ember project.
+
+*   Project structure and implementation information
+
+Ember will achieve these goals through creating individual components that each provide an integral part of the whole societal system. Implementation will probably need to be undertaken in stages, given the nature of
+
+More details
+
+It is a database designed to use relationships to organise information.
+
+It is an organisational structure based on three classes of information using which all knowledge can be organised. Its structural philosophy uses nodes, relationships, and metadata to organise information. A node represents an individual item or concept. A relationship is a description of the connection between two nodes. A metadatum is an objective truth about a node, such as the number of words in a book or the dimensions of a sculpture. (Illustrations of this are available at use cases.)
+
+The homepage of Weave in English can be found at http://futuramerlin.com/r.php?c=w&a=1&locale=. Ember does not yet have a working implementation.
+
+Ember (and Weave) use the DCE format for the storage of its data. It uses a MySQL database for storage. It is written in PHP.
+
+I found a quotation (14 March 2014, when I'm writing this) that seems to explain to some extent what I'm trying to do with this/these project(s): "Machines don't have a universal noun - that's why they suck." (http://www.looah.com/source/view/2284). This is one of the problems I hope Ember+DCE will solve.
+
+  
+
+**A little argument for the devising and establishment of an informatics economy and libertarian welfare NGO**
+
+Comparison with version 8, made using DiffNow
+
+  
+
+Part 1: The Institution
+
+  
+
+  
+
+Rationale
+
+I would like to establish a project to create an adequate infrastructure for managing and providing for the basic needs of society. This organization could exist alongside governments and other social structures, as well as potentially taking their place in the event that they collapse or fail to perform as expected (as appears to be happening, for example, in several African countries) (Fund For Peace 2014; Wikipedia 2014).
+
+In this document, I will use the term “person” to refer to any independent, quantizable (able to be assessed discretely and independently of other elements) unit with a soul; a firmer, more satisfactory, analytical definition of it is unfortunately out of my grasp at present, as is a complete understanding of whether some things are rightly considered as persons. For example, does a rock have a soul? If that rock is split in two, does each resulting portion have its own soul?
+
+In my view, as human society is sometimes unpredictable in the rights and safeties it affords those partaking of its benefits, I believe there is a need for a unified institution to be established outside of the realms of traditional governmental structures to provide some semblance of a filling of this void. While humans, as any other life, have the liberty of doing as they choose, and, in one way of looking at things, have no obligation to any particular social contract or structure, — (in other words — technically, everyone has the choice to do what they want, inasmuch as they can send the electrical signals to their nerves they choose to when they choose to, assuming they have such physical capacity) — while such “liberty” is indeed held by humans, they have come to expect and rely upon such social constructs for their safety and mutual benefit. For such reasons I feel it ideal to pursue the measure of establishing a single institution as I mentioned above. Those who choose not to partake of the protections I propose that such an organization would provide would, of course, open themselves up to forceful control by any who see fit: they would end up finding themselves in Hobbes' “state of nature”, “all at war with all” (HON211 2014). Locke writes that “The natural liberty of man is to be free from any superior power on earth” … “to have only the law of nature for his rule” (Locke 1997, p. 15). There presently exist many types of authority in the world, for example: the law of war, the principles established by the United Nations and similar organizations, the laws established by states' governments and their constituents (in the United States this would encompass the powers vested in the national, state, county, and township authorities, for example), and the bounds enforced within a family. What I propose in this essay does not neatly fall into any of those categories. It would not attempt to interfere with those authorities, allowing it to coexist with them — thus its purpose being mainly the protection of and provision for those people who choose to become, so to speak, the shareholders and benefactors of its contract. It would ideally provide some recourse for those who would desire asylum from those other power structures, by holding land, under its exclusive control, that it could share in various ways. These ways could include through the issuance of private parcels within which the owners could dictate their terms, and through the construction of tenements made available without charge to those participating in the organization I propose. Within all of these, parcels and tenements, the sole binding policy (in other words, the protections and/or restraints imposed through the organization's policy, doctrine, and practice) would be those of the organization (beyond any that may be held by private landholders). (There could also be, and in all probability would be, unallocated land over which no control is held or claimed.) Through allocation of such private parcels, large governments could theoretically be provided land technically held by this organization I propose, them being given authority over the land to dispense of as they choose — although such an arrangement would perhaps be unnecessary, as land with existing power structures would presumably be already managed in fair order. Locke writes that a king's privilege “may be questioned, opposed, and resisted” if he uses “unjust force”. In all, the basic premise of what I propose is yet another layer of order provided on an opt-in basis within the context of a world which is, fundamentally, in what I would consider a state of nature with power structures founded within it. (This brings to mind one of my arguments against some philosophical ideals of “anarchy”: the true absence of any social order imposed on the world would by definition allow the imposition of order by those within it, thus creating something of a paradox.) And yet, Locke writes that if “the electors or ways of election are altered without the consent and contrary to the common interest of the people” then “those chosen are not the legislative appointed by the people” (Locke 1997, p. 121). This is used as a justification for revolution, for example in Thomas Jefferson's Declaration of Independence, as mentioned in Professor Glover's lecture \[TODO cite\].
+
+I believe that the general rules of this organization should be established on the basis of rights: rather than making a rule that, for example, prohibits murder, instead a rule should be established that protects individuals’ right to life. In such a way, rules would not be created that infringe freedom more than that which is necessary to retain order in society.
+
+In the event that an individual who is party to the organization has interests that conflict with the interest of, for example, a government within the context of which this organization exists, such action should be taken as is deemed prudent and sensible. It would be, for example, distinctly unwise to antagonize a militarily powerful government the citizens of which are under threat from an individual who is party to this organization in the interest of protecting this individual’s rights. It can be considered that all who are not a member of any given social contract being discussed are in a state of nature. In this document, the social contract being discussed is that held between the members of this organization. From this perspective, there is no evident reason not to hunt for food those who are not party to this contract (for the same reason that humans hunt deer even when they are part of a social contract that forbids killing each other, since the deer are not party to their social contract); however it would likely be imprudent to hunt those who are protected by an institution with a strong military force.
+
+In my model world-state, such an organization is sufficiently extensive and effective as to in effect preclude the necessity of separate governments, outside of the individual community branches of the organization serving to manage the organization’s local presence and interests.
+
+  
+
+What such a structure would provide
+
+This project would, in its complete form, provide useful elements of survival: shelter, nutrition (including food and water), medical care, education, and information. It would do this as its fulfilment of its objective of managing the various needs of a society, by enabling people to be effective participants in that society.
+
+One of its fundamental elements would be the creation of a butt-based information technology system, intended to provide rapid information storage and retrieval (ISR). This would likely use an append-only NoSQL database to store a softly directed concept graph. It would use, in the current implementation I am working on, eight columns: id (integer), node (integer, related to id), date (integer, related to a String node’s id), type (integer, related to type.id), data (integer, related to a String node’s id), deleted (Boolean), author (integer), access\_control (integer, related to a String node’s id). Other tables would be needed, including class (id: integer; description: string); …\[TODO\]. \[Also TODO: Looking at it as an object inheritance hierarchy?\] \[Also TODO: Asynchronous/non-request-driven (background/daemon/triggered/cron tasks)\] I think that most or all knowledge can be effectively represented using three basic structures: nodes, relationships, and metadata. I am also developing the Document-Character-Entity encoding system (DCE), which is a state-switching hierarchical many-to-one binary character encoding model. DCE comprises a list of “DCE characters” (Dcs), which are individual semantic units that can be compiled together as a list, as well as individual mapping tables from Dcs to bytes; these mapping tables are linked by state-switch Dcs. Each Dc has rules indicating the syntactic context in which it can be sensibly used, and instructions for parsing it. These rules can be defined using the keywords if, then, else, precedes, succeeds, invalidate, any, state, valid, e.g. if Dc 165 meant “start styled region” it could perhaps be defined as:
+
+if(precedes(<any, \[end styled region\]>)){state(styled);valid;}
+
+. A Backus-Naur Form representation of this language would be \[TODO\].
+
+The nodes of a graph are the individual records that it stores. Relationships between those nodes are the edges of the graph, although it is possible that the system I am developing will provide for more complex relationships, for example by allowing relationships to connect several nodes to each other in a variety of ways, although whether that proves necessary or useful remains to be seen. Metadata are an item’s traits: information such as the title of a node, or a description of it. The way I have designed this system, placing all three of these types of entity into one table, allows relationships and metadata to have the attributes of nodes: for example, metadata could be attached to a relationship or another metadatum, or relationships could be specified that connect any combination of the three. There are many existing ISR systems, such as flat files and flat searching, flat-search filterable record sets, sorted records, a variety of tree and tree-like structures, tagged or labeled records, traditional tabular databases, relational databases, sparse tables, sparse matrices and entity-attribute-value models, graphs and digraphs, Boolean-queryable datasets, hierarchies, automated natural-language document acquisition and indexing, metadata-enriched natural-language document acquisition and indexing, and selective-display intelligent query results. The system I am proposing would primarily leverage a graph structure augmented through the use of richly labeled nodes, providing great flexibility in the structures it can manage; in addition, I believe that most or all of the above structures could be emulated within a graph-driven environment.
+
+One large challenge faced by the system I propose is the role of server-side processing (SSP). SSP is a vital element of much of modern butt application software, but it does not fit nicely into the information-driven model I propose. I think the best solution for this is through the application of dynamic parsing of DCE content as it is returned by the server. While this strategy could present a serious security risk, if the dynamic content is handed off to servers dedicated to this purpose and sandboxing is employed, I think this risk could be effectively mitigated, at least to the extent of avoiding access privilege escalation attacks against the main database. This will also provide effective options for building the wide variety of ISR systems I outlined above as both self-hosted applications and in user space.
+
+There are a variety of content sources that would populate this ISR system: publicly available datasets, creative works, and other resources; resources added and/or created by individuals using the system; “dark” content such as is currently held by social networks, governments, and other organizations that do not publicly release their records; moderated content that has been reviewed and fact-checked and annotated as such by the NGO; dynamically generated content; and computed content, for example, the results from a mathematical calculation or an operation on a dataset.
+
+I propose that this ISR system be leveraged by the NGO for several purposes. First, it can be used to record the individuals who are participants in the NGO. Through the development and application of a multipronged biometrics system, perhaps similar to that of India’s Aadhaar program (Wikipedia 2014(d)), the use of names could be easily foregone, allowing for people who are mononymous, change their name frequently, have unconventional names (such as names without graphic representation, names that mutate over time, musical names, graphic names, etc., or even names that simply are not very common (For example, 马𩧢 (Mǎ Chěng) in China who is inconvenienced because her name is not supported by China’s computer systems. (LaFraniere 2009; Wikipedia 2014(e)))), have no name, and so on and so forth to easily use the system, without being subjected to the usual tribulations that accompany any of the above in many modern governments. (It would also eliminate similar gender identity and other issues in receiving government services.) While instability of identification traits in individuals, either through subversion of the system or through chance, is indeed a concern, both for positive and negative identification (Sahoo, Choubisa, and Prasanna 2012), hopefully a sufficiently deep set of metrics could be established to prevent this from being an issue. When an individual becomes part of the NGO, they would be enrolled in the biometric identification system, and marked with a system for tracking of some type. This could take several forms: the most practical and useful, probably, would be a wristwatch-like interface to cloud computing systems that would contain a GPS system and other useful electronics. The purpose of this would be the providing of emergency services: in the event of an emergency, the wearer could interact in it in a way to convey the existence and, if possible, the nature and situation of an emergency. This information would be entered automatically into the ISR system, which would provide a report of the emergency, including the person’s location, their direction and speed of travel, any pre-existing health conditions, their current health state (heart rate, blood pressure, and such). The system could automatically delegate the emergency to a nearby station of the NGO, which would act (presumably with the assistance of emergency response services) to resolve the situation. (I recall having encountered similar systems designed for elderly or disabled individuals; these served in large part as the inspiration for this scenario and solution.)
+
+This system also would provide an excellent opportunity for surveillance. By unifying all document processing and communications within the organization into the ISR system I propose, the process of collecting this data and monitoring it for threats would be vastly simplified. There are certainly compelling arguments against surveillance, but if one does not have faith and trust in the organizations created to protect them, those organizations have clearly failed at their purpose and begun to act not in the interest of those whose interests they are designed to protect, but most likely rather in the interest of their own perpetuation for the benefit of those who hold the power to control them. Thomas Jefferson famously wrote in the Declaration of Independence
+
+“that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. —That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, —That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness” (Jefferson 1776);
+
+in this rather radical passage he lays out in shockingly blunt language the Lockean principle that government is more of a means to an end than an end in and of itself. It is from this basic premise that I draw my conclusion that surveillance in the interest of safety of the people by the institutions they create for their protection is an excellent strategy; I also feel that similar scrutiny must be brought to bear upon the institutions themselves by the people who have created them, thus ensuring that those institutions act effectively in their interests. In addition, these institutions should never attempt to withhold armaments from the people they protect: individuals should be provided the means to create the weapons held by their government. At present this would be impractical (it would, for example, be foolhardy to attempt to overthrow a nuclear power at present, and yet giving nuclear weapons to every person would likely end up in global annihilation), but a long-term global general de-escalation of arms is of significant importance, so that people can, relatively realistically, be in control of the institutions they have created in power as well as in name. In the meantime, there is not much that can be done to this end beyond keeping your rifle maintained and your eye good in the hopes that the day may come that they might represent some element of political power you could have in aggregate with the others around you. Any revolution, of course, would likely only be engendered by horrible social mismanagement or oppression triggering a societal consensus to revolt (this has indeed been the case in some areas recently, such as in the Egyptian revolution in 2011 (Al Jazeera 2011)); this is quite fortunate as if it were not so, unpleasant chaos would no doubt ensue.
+
+Education and qualifications could be tracked through this system, as could taxes. For example, when a person completed testing by the organization in a given subject, that score could be recorded in their profile in such a way that it could be used to determine what jobs they are allowed to work at. Taxation should be managed through time, so that a person would put in a certain number of hours of work selected from the jobs that need doing according to the ISR’s task record tracking system (possibly the number of hours necessary for a given amount of the organization’s services provided would be related to the level of qualification necessary for the work in question) to receive the organization’s services in exchange. The person could choose which services to allocate their time credits to — for example, requesting food credits, requesting tickets to operas, or donating them to a militia. In such a way, the taxes levied would hopefully never have to be put to a use the individual did not believe in. Trading could also perhaps be managed through the ISR system.
+
+  
+
+Implementation methodology and practical concerns
+
+Land property rights are often contentious. For example, if most of the farmers in a community use barbed wire to impede predators’ travel onto his property, thus averting the risk they present to their livestock, but a landowner whose property is surrounded on all sides by the property of these farmers wants to hunt the predators for their fur, there is a conflict between the interests of the landowners: the presence of barbed wire will interfere with the enclosed property’s supply of fur, while the absence of it will interfere with the outer properties’ supplies of livestock. For this reason, I think that the best solution is to have private land allocations be relatively small, and surrounded by buffer zones of publically owned land. In general, privately owned land could then be used in whatever manner desired by its owner. Some exceptions to this that seem to me rather inevitable would be: the use of streams (interfering with a stream to the detriment of public access or downstream property owner(s) should be restricted); the introduction of invasive species (as they can spread to public land or other properties); the introduction of dangerous quantities of radioactive substances (as they can present a health hazard to life outside of the property); and so on and so forth. These restrictions seem to be a necessary evil until a solution to the problem is found.
+
+A system for punishment for violating the standards of this organization could be created by the removal of benefits and protections provided by it.
+
+  
+
+Part 2: The Spirit
+
+  
+
+  
+
+Ethical arguments
+
+Spiritual life is dependent on four central elements: compassion, morality, wisdom, and beauty. These elements are deeply interwoven; compromise, discretion, and balance are best used to balance them, just as the values of rights must be weighed in the rights-centric social contract I propose in the first section of this document. Compassion is the desire to ease others’ passage through their lives; it is closely related to and often a product of empathy, and is also sometimes partially or fully undertaken for the sense of satisfaction gained from having given aid. It could be argued that this makes compassionate acts fundamentally selfish, but I see no harm in such motivation, since the value of the actions remains untainted. The elements of compassion sustain society through the prevention of behavioral and cultural anarchy. Because society is a product of the interdependence of needs, it is also defined by the interdependence of aid; this is the fundamental premise of the social contract binding together the organization that I propose.
+
+Compassion frequently engenders several traits of human interaction, most notably honesty, nonjudgmentalism, and friendship. Honesty is often a product of compassion, since it promotes healthy, effective collaboration. However, it is sometimes more compassionate to be silent or dishonest in some situations; for example, unflattering comments toward one’s companions are perhaps best left to be said to them by their own awareness or by gentle suggestion, rather than simply stating them bluntly. (It is frequently also necessary to be dishonest, for example, in the context of one’s service to one’s country; in the interest of patriotism one should hardly reveal important government secrets to a foreign national for the sake of compassion.) In general, it is best to not be judgmental of others, with it being more productive to criticize actions than the individuals making them; it is also frequently helpful in communication on such matters to speak using “I statements” (statements regarding one’s perception of the situation) than by stating as fact what one perceives about the other person. Friendship does not necessarily equal companionship; friendship is, rather, an effort to be aware of the other person’s feelings and have a special interest in their happiness and wellbeing.
+
+There is a somewhat poorly defined (in that it is commonly understood without reference to quantifiable metrics) concept I find worthy of consideration here: that of “evil”. It is a label commonly applied to things that fall outside of the bounds of the dominant moral dicta of the group or authority applying the label. Nevertheless, evil can be accurately assessed and described through its relation to specific fundamental premises relevant to the maintenance of an ordered society. Using such a basis for its description, evil is any action which disrupts the significant objectives and wellbeing of the society, culture, or individual affected by the actions beyond what is reasonable, and is justifiable by practicalities, such as survival and convenience. This concept is connected to the traditional Christian philosophy of everyone being a sinner (for my purposes, “sinner” referring to a person who has committed evil actions), but, given such a definition of “sinner”, I think that such a generalization would necessarily not include the “reasonable and justifiable” limitation, since human life almost invariably disrupts in some way the life around it (for example, in all probability most commonly in the northeastern United States by stepping on insect life and vegetation, which is difficult to avoid as a consequence of their ubiquity; or by eating food, a process which frequently involves the killing of edible plants and/or animals or the denial of a seed's and/or egg's germination), thus rendering nearly every human a sinner, and also a committer of evil acts assuming the conditional above is not taken into account. For this reason I think that a sinner should be considered as anyone who acts in a manner to disrupt the significant objectives and wellbeing of a society, culture, or individual, regardless of whether such disruption is potentially justifiable. (It also would presumably be evil to harbor fantasies of evil acts, since such fantasy would likely lead to some level of mental justification of them, subconsciously increasing the likelihood of the fantasizer committing such acts; although since it is presumably unreasonable to expect perfection in the area of avoiding such fantasy it is likely to fall under the conditional I mentioned above, except perhaps in extreme cases. This concept is quite contentious, however, given the widespread culture of respect (in Western society, at any rate) towards the absolute freedom of the mind. Personally, I have reservations about restrictions on thought, especially in terms of the possibility of legislating them; however I do think that speech and other expression should be restricted in some cases.)
+
+The way I see it, modern society is deeply permeated by immorality. Excessive materialism, pointless inefficiency, and many other challenges are widely accepted as the norm, and it is frequently difficult or impossible to survive without participating in their perpetuation.
+
+Death can bring emotional pain with it for those around someone who has died. However, it is a common aspect of life within this world, and killing is often an important element of survival. It seems to be common in some ways of looking at the world to consider some lives as more valuable than others, for example, from lowest to highest, plants, non-human animals, and humans), however I consider all to be equally valuable, with some protected above others by their innate power or their isolation, by the social contracts to which they are party, and/or by the emotional attachment of others to them. It can be sometimes difficult to identify clearly what holds life; consequently, it is likely preferable to respect them as if they do.
+
+There are fundamental rights that should be protected by a social contract: the right to their health, the right to live in an ethical and healthy society, the right to attribution for intellectual, artistic, and/or creative work, and the right to freedom of action and expression. These rights will frequently conflict with one another; in such instances, the relative value of each right should be considered and the action taken which seems best advised.
+
+Wisdom is vital to spiritual growth. It is not effectively gained through the unconditional acceptance of what one is told; rather, it is preferable to assess the information one encounters and the experiences one has, and evaluate them and from the draw one’s individual conclusion of what is true. Conversely, beliefs should not be forced upon others. Wisdom should be respected; for this reason, books should never have writing added to them by those other than the author, should never have adhesives affixed to them, should be handled with proper archival procedure if possible (using only acid-free paper inserts for identification), and should be protected from damage or destruction. All documents, artworks, and other objects of notable historic significance should also be retained as best possible. Immoral knowledge should be kept from those who would be damaged by it, but even that should be archived and retained for the completeness of the historic record.
+
+Nature and earth should be protected. Humans have had a significant and widespread effect on the earth, and have damaged it. This carries the risk of adversely affecting its ability to provide those necessities to humans that they rely upon.
+
+The Russian composer Igor Stravinsky wrote that music can be created and given form because its boundaries place it within a framework that enables it its existence.
+
+“Will I then have to lose myself in this abyss of freedom? To what shall I cling in order to escape the dizziness that seizes me before the virtuality of this infinitude? However, I shall not succumb. I shall overcome my terror and shall be reassured by the thought that I have the seven notes of the scale and its chromatic intervals at my disposal, that strong and weak accents are within my reach, and that in all of these I possess solid and concrete elements which offer me a field of experience just as vast as the upsetting and dizzy infinitude that had just frightened me.”
+
+At the same time, the passing outside of boundaries can play a role in forming something’s existence, as well. When the world was created, it was created through conscious intention, by some omnipotent being, and at the same time granted its own intention. It was deliberately given the power for self-direction, the power to create. In giving the world this self-direction, its creator used the creator’s omnipotence to limit its own power. This was accomplished through the creation of a system which is inherently unpredictable. When playing a role in the world, it is impossible to be a fully non-influencing observer, because things will always be affected by the act of observing them, as a consequence of the uncertainty principle. Thus, system state prediction is impossible. That is why one cannot see the future, and can only look at one’s past inasmuch as it is remembered in the present. In ancient Greece, the cognitive metaphor for time was that the future was behind one, and the past in front of one, since one can only see what is in the past. If a person can know the future, or if he is fated to make a decision, he does not have self-direction. If one single person had self-direction, maybe that one person could know the future: but when more than one person has autonomy, none can know the future with absolute certainty. If God knew the future, He would not have given humans self-direction, because for him to know the outcome of the world, the decisions must have already been determined.
+
+Technological development holds great value for the continuation and improvement of humanity. Humans have been given technologically inclined minds; it seems that perhaps we are intended by some higher power to use them for our mutual betterment. For example, existing electronic tattoo technology could be used to integrate computing tools into the human body, and artificial insemination and cloning could be used to eliminate the need for sexuality (and its urges’ consequent damaging effects on society). It seems likely that the development of cyberorganisms could substantially reduce the inefficiencies and social challenges of humanity.
+
+When beings are aware of God, this awareness is the source of His power within them. When they know the power of God, He is made to exist for them. His power is a divine construct given meaning through conscious awareness, a meta-apotheosis of sorts — a power found consciously through the unconscious divine. He has power within His creations if they are aware of Him, but He nevertheless always exists outside of their awareness. God’s bringing forth of His power can lead to its recognition in the eyes of the living and it is through this recognition that it is made real for them. God is the source and creator of this power, but it must be made real by those within whom it resides. One can believe God exists without having faith that his actions are always just. Someone can believe in God without faith in His justice, or else someone can believe in God and have faith that He is just, and perhaps has compassion and empathy. The conditions of both belief in God and faith in his justice must be satisfied for a morally sovereign being to be able to know and respect His path. God is just, but His independent creations are not forced to conform to His justice. While they do have an ethical obligation to be just, there nevertheless does not exist any true guaranteed way to force them to be. If people believe that God cares about them, God then likely has some power over them through their belief in Him and their faith in His justice. They would then have their morally sovereign choices influenced by God’s will, but those choices would be realized through their own power. The Israelites doubted God, and He showed them His power repeatedly through the soulbinder Moses; in doing this, God eventually validated His strength for them, and they thus acted in accordance with what they perceived as His will. Rather than simply believing God exists, having faith in him is what is needed to be true to His will. God deliberately put restraints on His own omnipotence. If God is omnipotent, that must include the power to take away his own powers. Thus, He must not have absolute power to control every aspect of the world, or injustice would not exist. God has taken away His direct influence over the world and given living things the capacity for moral self-direction. Because of this, He has power over His creations when they are aware of His existence and His care for them. God cares about everything that happens, even if He cannot control it. A God that would sit by and watch the universal tragedies of moral self-direction while having the power to stop them would be an unjust God. The pain of moral sovereignty then invites the question: if God is omniscient, could not He have predicted such pain when he granted all living things this moral sovereignty? He could not. As an omnipotent being He would have the ability to give his creation the power for absolute self-direction, without the fate consequential of predictable physics, and correspondingly he would likewise have the ability to take away His own power to predict the path of His creation’s chaos. We need to understand the true nature of the world as we can perceive it before we can begin to understand the nature of the unknowable divine. The fettered omniscience of God’s knowledge of His creation has been implemented in what has been recognized as the theory of the uncertainty principle in quantum physics, according to which nothing can be predicted with absolute certainty. Traditional thinking would seem to hold that through a comprehensive understanding of all the positions and vectors in a closed system, all of the states of that situation — past, present, and future — can be known simultaneously. Yet the observer effect leads to the situation that the most basic particles of matter are unable to be observed or predicted, because any observation will inevitably change their state, thus contributing to the chaos inherent in the uncertainty principle. Maybe that is the manner in which God has created the world, the manner in which He granted its inhabitants moral sovereignty. Unpredictability can itself be restrained by certain constraints and rules, for example, gravity. If I am holding a ball and open my fingers, I can predict that it will begin falling as soon as my hand has departed from around it. Yet it is impossible to predict with such certainty whether I will choose to release it, or when I would do so. If God has the ability to create this bounded unpredictability, then moral sovereignty can truly exist, without the need for the nihilism of fate or predestination.
+
+In Inanna, there is a wide range of personalities and emotions that are symbolic of duality, for example, the contrast and connection between the tragic figure of Ereshkigal and the hopeful figure of Inanna. The presentation of Ereshkigal as a tragic figure in this text is quite striking: rather than the conventional image of the ruler of the underworld as a demon, she is someone who seeks friendship and compassion but is unable to have it. Her response to the kurgarra and galatur shows her desire for connection and understanding. She has become very angry and harsh from the emotional challenges she faced historically, namely the lack of any human emotional connection. She is the dark counterpart to Inanna’s aliveness, and hates Inanna for being able to experience what she desires. When Inanna was killed by Ereshkigal, Enki created the kurgarra and galatur, and instructed them to visit Ereshkigal and sympathize with her, so she would allow them to resurrect Inanna. The kurgarra and galatur did not understand Ereshkigal, though. Ereshkigal had not found the connection she needed in them. When Inanna was resurrected by the kurgarra and galatur, she tried to leave the underworld. The judges of the underworld, the Annuna, refused to let her leave without another taking her place, and sent the galla demons with her to bring a replacement back. The Annuna established a strict setting that seemed to follow more rigid protocols than Ereshkigal demanded. She did not feel one way or another about what people did; she seemed to have sort of a numbness to the world around her, to anything outside of her own mind, not caring particularly about what happened beyond her personal desires. This was balanced by the Annuna, who did not seem to have any human desires, but rather to simply be unbiased judges: the guardians and managers of the underworld. The galla, demons of the underworld, likewise did not have any particularly human traits, not having any concern about human relationships or knowing any human enjoyments. The galla and Annuna are needed to maintain balance in the universe between the living and the dead; without them, Ereshkigal would not have enough investment in what happened to maintain a structured, orderly system, since she would be too swayed by her individual desires. Even though the galla allowed Inanna to play a role in deciding who to send to the underworld in her place, I do not think that necessarily points to an emotional trait on their part; rather it might simply be that it does not matter to them who goes in her place. When Inanna chose to descend into the underworld, Neti, the gatekeeper of the underworld, asked her why she had come. Inanna replied, initially, that she was going for the sake of Ereshkigal, to attend the funeral of her husband, Gugalanna. Since Ereshkigal is Inanna’s counterpart, maybe Inanna knew on some level that Ereshkigal needed company, even though Ereshkigal may not have known that herself, and Inanna, in her compassion, went to be with her. Inanna was an inseparable part of Ereshkigal. The links between Ereshkigal and Inanna are found in the parallels between their relationships, as well. Both are widowed, their husbands, Gugalanna and Dumuzi, having died. Gugalanna was the Bull of Heaven, and Dumuzi was the Wild Bull, Ereshkigal and Gugalanna being Inanna and Dumuzi’s spiritual counterparts. The codependence of Inanna and Ereshkigal was representative of the balance needed in the world. As we discussed in class, this duality is widely evident throughout the symbolism in the stories of Inanna. It is a consequence of the importance of fertility in Sumerian culture, male and female being a metaphor for the agricultural lifestyle at the heart of the Sumerian society. Cultural views of human traits and failings are mirrored in these religious views, with the divine figures echoing human struggles. In Inanna, the emotions of the subjects are a critical element of the stories, giving them depth and the ability to connect to the reader. The symbolic theme of duality is central to the ideas presented in the stories, embodied in two opposite characters, Ereshkigal and Inanna.
+
+In Dao De Jing, the attributed author Laozi discusses a wide range of subjects, all through simple, concise aphorisms. The Daoist philosophy constructs a new form of paired duality, in which contrasting philosophical elements of presence and absence are inherently equal. Both the Laozi’s and Hein’s literature imbue their short literary form with many layers of meaning. Much in the manner of the Dutch poet and intellectual Piet Hein, Laozi is able to convey in this work many-layered, richly faceted concepts and meanings using far fewer words than would be ordinarily expected of such complex commentary and meaning, with reflection and analysis allowing the reader to find his own truths within them as well. The deceptively simple words of this poetry lead the mind to initially jump to some “obvious” interpretation, while further reflection and thought yields many more. They can be read repeatedly, a reader still finding new meaning in them upon every contemplation. Where the two diverge is in ambiguity: while they both share initially enigmatic and occasionally satirical stylistic traits, Hein's writing generally has some certain clear, fundamental meaning, less wide open to interpretation than the Dao De Jing. The Dao De Jing uses symbolism extensively. Its symbolic elements contrast and pair together the concepts of presence, yang, and emptiness, yin. This was novel in its time and place, paralleling the duality in Sumerian culture between the equals Inanna and Ereshkigal. The Daoist philosophy of equivalent duality broke apart traditional dualities which viewed the two as mutually incompatible entities: presence immutably good, and emptiness a frightening threat to be subsumed and filled. Clearly indicative of the lacunary traits inherent in this text are the presence of metaphors of the void: concepts of nothingness are used pervasively to define and delineate the way of life, and the progression by and through which things occur. Laozi writes: “Raise up whom you would remove, and provide when you mean to deprive. That is to do the unseen, unseen.” In this, the symbolic strength of the “nothingness” is to be there as a void having a sort of metaphorical pride in its accessible, generous strength. This nothingness is a nothingness which is not null, but rather void; it is not defined as encompassing nothing, but rather simply not defined as encompassing something. Jacques Lusseyran, a writer and World War II underground French resistance leader, recognized this nature of the void, in a sense — yet, as a torment — in his autobiography And There Was Light, writing of “…a void which filled me…” — a void with the capacity to exist as itself, to be a justified, true entity, not a defined null. The Daoist ideals of presence and emptiness form two necessary, fundamentally interdependent sides of the same coin. This contrast mirrors the contrasts between elements of Judaism and Theistic or Gnostic Luciferianism. The two religions have similar moral and ethical ideals and objectives, and are rooted in some of the same philosophical traditions, but use largely inverse imagery of deities. Judaism’s deity imagery is very immaterial: an intangible, unknowable God, yet a God with a direct, omnipotent influence over creation. Luciferianism's inspiration of hope is the Morning Star (Lucifer — the Light Bearer — in the Christian tradition; Inanna (Ištar) (Akkadian 𒀭𒈹 / Sumerian 𒀭𒌋𒁯) in the Sumerian tradition; or some interpretations of Lilith). Although the Morning Star figure has radically different interpretations and significances to different cultures and belief systems (for example, the Sumerian tradition is centered on fertility and food, but the Gnostic tradition is centered on self-denial) the symbolic parallels of the figure within its various cultures have a commonality in its position as a source of hope and inspiration. The Morning Star is often seen as acting through the truth of sophia (wisdom) and the capacity of humans to achieve some spiritual enlightenment through the rejection of the physical world (harkening back, incidentally, to Daoism’s strength of the nothingness). This is a very concrete, physical deity in the Sumerian tradition, reflecting the Sumerian agricultural economy (yet not a deity necessarily given to “micromanaging”, to use a word the author Mary Doria Russell uses to refer to some interpretations of God). This contrast between the two schools of thought echoes the contrast in Daoism found in the presence-absence duality. In the Tangut empire, declared independent in 1038 AD and destroyed by the Mongols in 1227, religion was predominantly Buddhist. The Tangut empire was a socially progressive nation with pioneering civil rights ethics, and since freedom of religious expression was protected, Daoism was a significant secondary religion in the empire. The son of the first emperor Jingzong, Prince Ning Ming, was a Daoist scholar, and noted for his Daoist leadership views and pacifism. “When asked about the ways of state governance, \[Prince Ning Ming\] said that it was necessary to have few desires and to cleanse the heart.” (Guilin Discovery Network Technology Co., Ltd.: Western Xia Customs — Sequel II) This is advice found throughout the Dao De Jing: In stanza 7, it is written “By disowning what they yield, Heaven can last and earth endure. So, surely, does the world-wise lord, who puts his interest far behind, and ends up in the lead…”. The Tangut empire was one of the first civilizations to have large print runs of books created using movable type, in some cases with single print runs of up to 100,000 copies of books. Through this range of parallels to and examples of Daoism, one can see the breadth of possibilities offered within the deceptively simple text of the Dao De Jing. In this revolutionary book, Laozi has discarded certain assumptions and cognitive metaphors about the nature of reality regarding the value of presence and absence. In doing so, he has created a truly universal text, in which truths can be found to apply to nearly any context.
+
+Gnosticism is a group of belief systems sharing certain core tenets, particularly the focuses on the development of sophia (wisdom) to attain gnosis (knowledge) and on the rejection of the physical world in the endeavor to attain ascendance into the spiritual. It shares common themes and elements with many Christian and other belief systems. Syncretism is the sharing of discrete elements between belief systems. The texts we have studied in this unit are a perfect example of such a fusing of religious elements, sharing many commonalities both between the Gnostic and non-Gnostic gospels, and with the texts we have studied over this past semester and a half. While Gnosticism is a term applied to a range of diverse, in some ways incompatible belief systems (such as Sethianism, Gnostic Luciferianism, and Mandaeism), Gnostic belief systems retain the shared basis of Gnostic thinking, presenting one excellent example of the presence of distinct common elements shared between a variety of belief systems. A wide range of shared themes and symbolism are also visible in other religious contexts, such as mainstream modern Christian faiths, Daoism, Buddhism, and the Sumerian religion seen in Inanna. In the non-canonical gospels, there were many shared themes with Gnostic writings; thus these gospels have become known as the Gnostic gospels. That does not necessarily indicate a shared Gnostic origin for them, but rather indicates that they share elements of the diverse Gnostic tradition. For example, the gospel of Judas is strongly Sethian (“The first is \[S\]eth, who is called Christ”, p. 6), while the gospel of Thomas is a more general Christian text with some common themes of Gnosticism (it may have played a role in the development of the general themes of the Gnostic tradition). In the Gospel of Mary, it is written “There is no sin, but it is you who make sin when you do the things that are like the nature of adultery, which is called sin.” This sentence emphasizes the Gnostic nature of the text, in its equating of sin with adultery providing a connection to the traditional Gnostic focus on the rejection of the physical in the interest of the finding of knowledge through wisdom. The parallels in name symbolism in religious traditions are very interesting. In the And the parallels between spiritual figures that cross over between various religious traditions. That is very noticeable in the Roman and Greek traditions, which have very significant parallel between them, with many individual gods corresponding between one and the other. But also between other religions such as Christianity and Sumerian tradition, the most obvious example being the parallel between Jesus and Inanna, both known as the Morning Star to their respective cultures. For example, in the Exsultet, the line “Flammas ejus lúcifer matutínus invéniat: Ille, inquam, lúcifer, qui nescit occásum: Christus Fílius tuus, qui, regréssus ab ínferis, humáno géneri serénus illúxit”… refers to Jesus as the Morning Star: “May this flame be found still burning by the Morning Star: the one Morning Star who never sets, Christ your Son, who coming back from death’s domain has shed his peaceful light on humanity”. (http://www.ccwatershed.org/exsultet/) These are a few examples of the many interesting facets of the sharing of ideas within a diverse array of religions, as well as of the role name symbolism can play in the context of religious thought. In religion, there is frequent overlap and sharing of common elements between various faiths, creating a diverse religious culture that is nevertheless interconnected. For example, Gnosticism is a group of belief systems sharing certain core tenets, particularly the focuses on the development of sophia (wisdom) to attain gnosis (knowledge) and on the rejection of the physical world in the endeavor to attain ascendance into the spiritual. It shares common themes and elements with many Christian and other belief systems. Syncretism is the sharing of discrete elements between belief systems. The texts we have studied in this unit are a perfect example of such a fusing of religious elements, sharing many commonalities both between the Gnostic and non-Gnostic gospels, and with the texts we have studied over this past semester and a half. While Gnosticism is a term applied to a range of diverse, in some ways incompatible belief systems (such as Sethianism, Gnostic Luciferianism, and Mandaeism), Gnostic belief systems retain the shared basis of Gnostic thinking, presenting one excellent example of the presence of distinct common elements shared between a variety of belief systems. A wide range of shared themes and symbolism are also visible in other religious contexts, such as mainstream modern Christian faiths, Daoism, Buddhism, and the Sumerian religion seen in Inanna. Another example of the diverse sharing of religious thought, the Dao De Jing uses symbolism extensively. Its symbolic elements contrast and pair together the concepts of presence, yang, and emptiness, yin. This was novel in its time and place, paralleling the duality in Sumerian culture between the equals Inanna and Ereshkigal. The Daoist philosophy of equivalent duality broke apart traditional dualities which viewed the two as mutually incompatible entities: presence immutably good, and emptiness a frightening threat to be subsumed and filled. This is also a concept that is explored in the Manichaean philosophical basis that influenced St Augustine's writing. The Daoist ideals of presence and emptiness form two necessary, fundamentally interdependent sides of the same coin. This contrast mirrors the contrasts between elements of Judaism and Theistic or Gnostic Luciferianism. The two religions have similar moral and ethical ideals and objectives, and are rooted in some of the same philosophical traditions, but use largely inverse imagery of deities. Judaism’s deity imagery is very immaterial: an intangible, unknowable God, yet a God with a direct, omnipotent influence over creation. Luciferianism's inspiration of hope is the Morning Star (Lucifer — the Light Bearer — in the Christian tradition; Inanna in the Sumerian tradition; or some interpretations of Lilith). Although the Morning Star figure has radically different interpretations and significances to different cultures and belief systems (for example, the Sumerian tradition is centered on fertility and food, but the Gnostic tradition is centered on self-denial) the symbolic parallels of the figure within its various cultures have a commonality in its position as a source of hope and inspiration. The Morning Star is often seen as acting through the truth of sophia and the capacity of humans to achieve some spiritual enlightenment through the rejection of the physical world (harkening back, incidentally, to Daoism’s strength of the nothingness). This is a very concrete, physical deity in the Sumerian tradition, reflecting the Sumerian agricultural economy (yet not a deity necessarily given to “micromanaging”, to use a word the author Mary Doria Russell uses to refer to some interpretations of God). This contrast between the two schools of thought echoes the contrast in Daoism found in the presence-absence duality. In the non-canonical gospels we read in this unit, there were many shared themes with Gnostic writings; thus these gospels have become known as the Gnostic gospels. That does not necessarily indicate a shared Gnostic origin for them, but rather indicates that they share elements of the diverse Gnostic tradition. For example, the gospel of Judas is strongly Sethian (“The first is \[S\]eth, who is called Christ”, p. 6), while the gospel of Thomas is a more general Christian text with some common themes of Gnosticism (it may have played a role in the development of the general themes of the Gnostic tradition). In the Gospel of Mary, it is written “There is no sin, but it is you who make sin when you do the things that are like the nature of adultery, which is called sin.” This sentence emphasizes the Gnostic nature of the text, in its equating of sin with adultery providing a connection to the traditional Gnostic focus on the rejection of the physical in the interest of the finding of knowledge through wisdom. The parallels in name symbolism in religious traditions are very interesting. In the And the parallels between spiritual figures that cross over between various religious traditions. That is very noticeable in the Roman and Greek traditions, which have very significant parallel between them, with many individual gods corresponding between one and the other. But also between other religions such as Christianity and Sumerian tradition, the most obvious example being the parallel between Jesus and Inanna, both known as the Morning Star to their respective cultures. For example, in the Exsultet, the line “Flammas ejus lúcifer matutínus invéniat: Ille, inquam, lúcifer, qui nescit occ ásum: Christus Fílius tuus, qui, regréssus ab ínferis, humáno géneri serénus illúxit”… refers to Jesus as the Morning Star: “May this flame be found still burning by the Morning Star: the one Morning Star who never sets, Christ your Son, who coming back from death's domain has shed his peaceful light on humanity”. (http://www.ccwatershed.org/exsultet/ ) Another example of name symbolism is found in the Jewish tradition's naming of the first humans: Cain's name symbolizes worldly things, material goods, and possessions; Abel's name symbolizes the immaterial, the ethereal, and the intangible, and Seth's name refers to the “appointed”, a concept later reflected in the Sethian equating of Christ to Seth. These symbolic meanings of these names have held a long-lasting and pervasive influence on the understanding and portrayal of these figures in religion and popular culture, even as far afield as in their characterizations in the anime Trinity Blood. These are a few examples of the many interesting facets of the sharing of ideas within a diverse array of religions, as well as of the role name symbolism can play in the context of religious thought.
+
+An important salient point that Francis Bacon makes in his Great Instauration is that “man is but the servant and interpreter of nature": In this, Bacon makes the point that humans are, in scientific observance, simply looking at the nature of which they are a part, and placing an interpretation as best they can reconcile from their observations upon it. Perhaps, even, it could be said that this is much as the analogy of the observation of water by a fish: Humans are one part of nature, swimming within it as their lifelong context of existence, and in science we try to assess and come to terms with the water of the nature around us.
+
+  
+
+Findings of Beauty
+
+Beauty is that which evokes aesthetic pleasure; spiritual beauty is the ability to make that manifest in one’s behaviors and thoughts.
+
+There are many traits that are prominent elements of the making of beautiful music. In electronic dance music, especially, several distinctive production techniques have enjoyed recent popularity. Sidechaining and pumping is one such technique, used to great effect for example in DJ Spoke’s “Million Miles Away” (Spoke 2007) and 009 Sound System’s “Dreamscape”. Another is the reduction of time between pitches in melismatic vocal lines, a practice that originated with the practice of removing the delay time in automatic pitch correction software. Modulation, cutoff and overtone automation, and other techniques have been combined to create the distinctive sound of the brostep genre. Hip-hop beats, employing classic kicks and claps as well as the intense, elongated, almost melodic effects of trap and drill beats, have come to prominence in many styles of music. Pitch shifting and tempo manipulation, and fragmented and chopped vocal samples have seen similar popularity.
+
+Lifted trucks with big swampers are also incredibly beautiful.
+
+There is a certain beauty in blood and viscera. That is because these are signs of the death necessary for life: they represent nourishment.
+
+It is traditional that on the first day of May each year, one awakens early and takes baskets decorated with crepe paper holding gifts and delivers them in secret to friends, for them to discover when they awaken. This is a traditional way of reaffirming community bonds in anticipation of the spring.
+
+  
+
+Taken on faith
+
+Despite the seeming rationality of Occam’s Razor, which is a statement to the effect that “\[n\]o more things should be presumed to exist” than are needed to explain the observations about which a collective truth has been established through consensus, I nevertheless often choose to believe things on faith, despite being unable to prove them through scientific observation and logic. I come to these conclusions frequently as ways to best explain the world around me — the parts of it, especially, which I do not fully understand in the context of scientific analysis, but nevertheless seem to observe on a daily basis and do not believe are hallucinations: life, emotions, and other similarly difficult-to-quantify and/or supernatural elements of the world around us. While they are not scientifically measurable at present, I have drawn conclusions that seem to me to be the most suitable and rational fit for the observations I make, creating a worldview that to most people would likely appear to be a myth, as it is derived from my individual perceptions; and yet this worldview is as real to me as the perceptions that are established through consensus and scientific reasoning.
+
+Every being has at least a twofold existence. The earthly plane is that which is most commonly perceived as matter, while the aetheric plane is that which is mostly perceived through the mind and soul. Each classification of life is generally given more to operating within one or the other of these planes. Humans, for example, are generally most strongly attached to the earthly plane, while the aelfe (fairies) are most strongly attached to the aetheric plane. Nevertheless, any being has the capacity for operating in both planes. A soulbinder (a person with pure intentions and the requisite knowledge to control reality) can operate with equal facility on either plane; such a person is known as a planewalker. Aelfe are generally only perceived by those who are sensitive to the aetheric plane. They can be classified by the element to which they are most strongly attached, thus: air spirits, dragons (aelfe with a predisposition towards fire), undines (with a predisposition towards water), and earth spirits. Each of the four elements corresponds to a season, and the aelfe are most active in the season corresponding to their dominant element, as well as in the opposite element’s season in the interest of retaining balance and order: air, an active element corresponding to spring, is the opposite of earth, a passive element which corresponds to fall, while water, a passive element corresponding to winter, is the opposite of fire, an active element which corresponds to summer.
+
+Aetheric energy is often present in the physical world. Improving the healthy aetheric energy in an area will bring the healing attentions of aelfe to that area. To promote healthy aetheric energy, its flow into and out of a room can be regulated by hanging, for example, a red knot, a Celtic knot emblem, or a double-terminated or round clear faceted quartz crystal over a doorway or in a window. The presence of aetheric energy in the physical world is the premise of several traditions, such as feng shui; it is also in all probability the force that was misinterpreted by the pseudoscientist Wilhelm Reich as “orgone”. Unhealthy aetheric energy can have harmful effects; dowsing can be used to locate this unhealthy energy, which can be converted to healthy aetheric energy using a quartz crystal, preferably a double-terminated one. A fiberglass resin base containing metal filings, a copper coil, and a quartz crystal, (an aetheric energy transmuter, can be effectively used to repair unhealthy aetheric energies in an area, or to gather healthy aetheric energy; a quadrant of them surrounding an area will have significant effects.
+
+  
+
+May baskets and may poles, fairy houses, and mushrooms… awesome things
+
+  
+
+Sources
+
+Al Jazeera. “Timeline: Egypt's revolution”. 2011. (http://www.aljazeera.com/news/middleeast/2011/01/201112515334871490.html )
+
+Apache Software Foundation. The Apache HBase™ Reference Guide, Revision 2.0.0-SNAPSHOT. 2014. Chapter 5, “Data Model”. (http://hbase.apache.org/book/datamodel.html )
+
+Fund for Peace. “The Fragile States Index 2014”. 2014. (http://ffp.statesindex.org/rankings-2014 )
+
+Gibbs, Phil. 1996. (Updated 1997 by Sugihara Hiroshi.) “What is Occam’s Razor?” (http://math.ucr.edu/home/baez/physics/General/occam.html )
+
+Glover, Robert. Lecture of 2 October 2014.
+
+Haddon, Mark. The Curious Incident of the Dog in the Night-time. 2003.
+
+Jefferson, Thomas. “The Declaration of Independence: A Transcription”. 1776. (http://www.archives.gov/exhibits/charters/declaration\_transcript.html )
+
+LaFraniere, Sharon. “Name Not on Our List? Change It, China Says”. New York Times. 2009. (http://www.nytimes.com/2009/04/21/world/asia/21china.html?pagewanted=all&\_r=0 )
+
+Locke, John. The Second Treatise of Government. 1997.
+
+HON211. Discussion in HON211 class of 2 October 2014 — Hobbes' “state of nature”, “all at war with all” was mentioned
+
+Malewicz, Austern, Bik et al. “Pregel: A system for large-scale graph processing”. 2010. In Proceedings of the 2010 ACM SIGMOD International Conference on Management of Data. (http://dl.acm.org/citation.cfm?id=1807184 )
+
+Personal conversation
+
+Sahoo, Choubisa, and Prasanna. “Multimodal Biometric Person Authentication: A Review”. 2012. In IETE Technical Review, vol. 29 issue 1, January–February 2012.
+
+Stravinsky, Igor. Poetics of Music in the Form of Six Lessons. 1970.
+
+DJ Spoke. “Million Miles Away”. Trance Number Ones, Vol. 1. 2007.
+
+Trask, R. L. and Mayblin, Bill. Introducing Linguistics. 2005.
+
+Wallace, Elliot. “Analytical Paper 2”. 2013.
+
+Wallace, Elliot. “Articles”. 2012(b).
+
+Wallace, Elliot. “Weave structures”. 2012.
+
+Wikipedia. “Entity-attribute-value model” (revision 623968433). (2014©) (https://en.wikipedia.org/w/index.php?title=Entity%E2%80%93attribute%E2%80%93value\_model&oldid=623968433 )
+
+Wikipedia. “List of countries by Fragile States Index” (revision 626538232). 2014. (https://en.wikipedia.org/w/index.php?title=List\_of\_countries\_by\_Fragile\_States\_Index&oldid=626538232 )
+
+Wikipedia. “Naming laws in the People’s Republic of China” (revision 590983533). 2014(e). (https://en.wikipedia.org/w/index.php?title=Naming\_laws\_in\_the\_People%27s\_Republic\_of\_China&oldid=590983533 )
+
+Wikipedia. “Occam’s razor” (revision 629036926). 2014(b). (https://en.wikipedia.org/w/index.php?title=Occam%27s\_razor&oldid=629036926 )
+
+Wikipedia. “Unique Identification Authority of India” (revision 627783261). 2014(d). (https://en.wikipedia.org/w/index.php?title=Unique\_Identification\_Authority\_of\_India&oldid=627783261#Security\_features )
+
+009 Sound System. “Dreamscape”.
+
+When a statement is not accompanied by a citation footnote, it is likely from any of my opinions and things I have picked up as “common knowledge”, and/or syntheses of the various texts listed above (although I have tried to put footnotes on the latter). I apologize in retrospect for any errors in punk chew asian and spelling,
+
+  
+
+The Ember organization
+
+The central part of Ember, which its other parts are constructed to serve, is those people who have chosen to become members of the Ember organization. This organization will impose no restrictions on those who chose to become its members apart from the protection of their rights (and any restrictions that such protection entails), and anyone can choose to become a part of it or to leave it at any time. Becoming a member involves being listed in the central Ember computing environment database, presumably with sufficient biometric data to prevent identity theft or other fraudulent activity. Names, addresses, or other such personal information, beyond the biometric data previously mentioned, would not be required for the process of becoming a member. Members are not obligated to use any of the services provided by Ember, and could request at any time the termination of any services presently provided to them, including (I suppose?) even the basic protection of their human rights that Ember should by default provide.
+
+Ethical postulates upon which it is based
+
+Specifications
+
+The specifications of the Ember society are the “laws” that make it work. However, they are not laws in the traditional sense, inasmuch as any person is free to leave Ember at any time. However, if a person violates the rules of Ember while they are not a member of it, then if they chose to become a member of it again, they may be penalized for such violations.
+
+  
+
+The Ember philosophical basis
+
+The Ember services collective
+
+Another component of Ember is a nonprofit organization that organizes the procurement and distribution of goods and services for its members, and perhaps those who are not its members as well. The goal of this organization would be to provide any needful things desired by its members for their lives. For instance, if a person chose to receive food through Ember, they could request that it be provided in exchange for labor. Their labor would help contribute to services requested in the future by them or other Ember members. The organization should have 24/7 available buildings staffed by Ember members from whom aid could be sought, such as the furnishing of meals, shelter, clothing, access to information, or other services, in exchange for labor. That way, if an Ember member is in trouble in a strange town, for instance, with no money, identification (beyond their own body), or other resources, they could go to the local Ember building to receive any services they desire; they could even build up credit in preparation for such an incident by working for the Ember collective prior to taking a trip, for instance, so they would have already earned any services they might want — travel insurance, of sorts.
+
+Specifications of goods and services
+
+The Ember computing environment
+
+This section documents the Ember computing environment specifications. The Ember computing environment is a centralized append-only cloud database, synchronized regularly to the Internet Archive, and a computer operating system and Web interface for using that database.
+
+It consists of the following components:
+
+  
+
+  
+
+*   Data formats: Abstract specifications of the data formats used by the computing environment.
+*   Data archive: append-only list of records, each comprising a unique ID paired with an EDF node. See Structural principles section for details.
+*   Server infrastructure: A computing cloud that responds to requests from clients. “Server” does not necessarily refer to a hardware server, but rather to an application that responds to requests from another application (client or server).
+
+*   Public interface servers: Accept API requests from clients and pass them to the correct handlers.
+*   Application servers: Handles user authentication, in-the-cloud compute tasks, etc.
+*   Search servers: Receives search requests from and returns results to the public interface servers. Indexes documents as they are added to the data repository.
+*   Data servers: Receive instructions from and return data to the public interface servers and the application servers. Interact with the data repository. Handles encryption and decryption of documents.
+
+*   Clients: Applications that interact with end users or follow instructions to leverage the computing environment.  
+    
+
+Structural principles
+
+Ember has several components:
+
+Data formats
+
+EDF Specification
+
+Header
+
+The Ember Document Format (EDF) is a data format used by the Ember computing environment. It is a descendent of DCE, although it is **not** a version of DCE, and is **not** compatible with the DCE specifications. EDF as presented in this version of _Ember_ is NOT the same file format as EDF presented in version 43, and is NOT compatible with it. The earlier format can be identified by the magic number at the beginning 0x 89 45 44 46 65 0D 0A 1A 0A FE FF. The magic number of this file format is 0x 89 45 44 46 65 0D 0A 1A FE FF 0A.
+
+The latest version of this book (_Ember_) is the official latest EDF specification
+
+  
+
+Every EDF file begins with a 4096 byte header portion. That will follow a format that will not change in the future. Header format (partly based on the PNG example and advice at http://www.fadden.com/tech/file-formats.html ) (in ASCII, variable and non-ASCII byte regions marked by brackets \[\]):
+
+\[0x89\]EDFe\[0x0D0A1AFEFF0A\]|http://futuramerlin.com/|Format version:\[972 bytes identifying file format version; these are defined in the specification\]|MD5:\[32 bytes of MD5 checksum in lowercase ASCII hexadecimal\]|SHA1:\[40 bytes of SHA-1 checksum in lowercase ASCII hexadecimal\]|SHA512:\[128 bytes of SHA-512 checksum in lowercase ASCII hexadecimal\]|Author Identifier:\[567 bytes identifying the way the file was created (i.e. what software was used to produce it); these are defined in the specification\]|Creation metadata:\[1517 bytes to be used as specified below\]|Comments:\[501 bytes for use by document creators or other software\]|MD5:\[32 bytes of MD5 header checksum in lowercase ASCII hexadecimal\]|SHA1:\[40 bytes of SHA-1 header checksum in lowercase ASCII hexadecimal\]|SHA512:\[128 bytes of SHA-512 header checksum in lowercase ASCII hexadecimal\] \[0x00\]
+
+Other than this header, which is guaranteed to be the same in all future versions of this specification, all other aspects of the file format may vary in future specifications. The non-header checksums are of all of the document except the header. The header checksums are of the beginning of the file to the end of the Author Identifier region.
+
+The file format version for this version of the standard is ASCII 1\_0\_44 padded with 966 ASCII spaces.
+
+If the Author Identifier begins with ASCII PUAI: then it is a Private Use Author Identifier and is not specified by this standard. Private Use Author Identifiers and Comments may not contain the vertical bar | or ASCII null (0x00).
+
+Creation metadata format specification
+
+If the Creation metadata starts with **20 ASCII spaces**, the following data (until the end of the Creation metadata block) is to be interpreted (using the Gregorian calendar) as:
+
+|Creation time:\[±6-digit year\]-\[2-digit month\]-\[2-digit day\] \[2-digit 24-hour hour\].\[2-digit minute\].\[2-digit second\].\[6-digit microseconds\] \[time zone offset in seconds\] \[32 spaces reserved for future use for time certainty value\]|Creation location: \[location beginning with “geo:” or “(name) ”, padded to the right with spaces\]
+
+  
+
+If the location begins with geo:, it is to be interpreted as a geo URI (http://tools.ietf.org/html/rfc5870 ).
+
+  
+
+If the time certainty value begins with an ASCII space, it is a private use value not specified by this standard.
+
+  
+
+If the Creation time or Creation location are all empty (filled with spaces), they are to be interpreted as unknown.
+
+  
+
+If the Creation time or Creation location begin with a space, it/they is/are a private use value not specified by this standard.
+
+  
+
+Example (geo URI example from https://en.wikipedia.org/wiki/Geo\_URI ):
+
+|Creation time: +002015-03-16 18.23.34.000000 +50400 \[32 spaces\]|Creation location: geo:37.786971,-122.399677;crs=Moon-2011;u=35\[lots of spaces\]
+
+Body
+
+The remaining information in this section pertains to this version of the specification, and may change in future versions.
+
+  
+
+At present, any ASCII text can be placed inside an EDF file. No meaning is given to it beyond that inherent to it.
+
+  
+
+Each EDF file has three components: a header, a record data chunk, and a complex data chunk. The information in the record data chunk is required to be entirely redundant to the information in the complex data chunk, and is included to provide an efficiently machine-readable representation of structured data included in the complex data chunk.
+
+  
+
+  
+
+  
+
+Blocks
+
+Name
+
+Type
+
+ID
+
+Bar
+
+Latin
+
+Script
+
+5
+
+blah
+
+Greek
+
+Script
+
+6
+
+blah
+
+Characters
+
+**B**
+
+**Latin Letter Capital B**
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Block
+
+5
+
+Latin
+
+ASCII
+
+0
+
+Foo
+
+Bar
+
+  
+
+Foo
+
+Bar
+
+Unicode
+
+U+0000
+
+Foo
+
+Bar
+
+  
+
+Foo
+
+Bar
+
+Mojikyo
+
+030400
+
+Foo
+
+Bar
+
+  
+
+Foo
+
+Bar
+
+Foo
+
+Bar
+
+Foo
+
+Bar
+
+35203
+
+Foo
+
+Bar
+
+Foo
+
+Bar
+
+Foo
+
+Bar
+
+**C**
+
+**Latin Letter Capital C**
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Block
+
+5
+
+Latin
+
+ASCII
+
+0
+
+Foo
+
+Bar
+
+  
+
+Foo
+
+Bar
+
+Unicode
+
+U+0000
+
+Foo
+
+Bar
+
+  
+
+Foo
+
+Bar
+
+Mojikyo
+
+030400
+
+Foo
+
+Bar
+
+  
+
+Foo
+
+Bar
+
+Foo
+
+Bar
+
+Foo
+
+Bar
+
+35205
+
+Foo
+
+Bar
+
+Foo
+
+Bar
+
+Foo
+
+Bar
+
+  
+
+ENF Specification
+
+Ember Node File specification:
+
+  
+
+File extension enf
+
+  
+
+An ENF is a EDF document with additional information required.
+
+Server behavior specification
+
+OS client behavior specification
+
+WWW client behavior specification
+
+Use cases
+
+Use case 1
+
+  
+
+Structural principles: old Weave version
+
+Note that this section is VERY outdated as of 2014-12-30, and describes the Weave system. The current proposed data structure as of 2014-12-30 is similar, but uses an append-only list instead, in which each entry is a node. (That way, relationships, metadata, etc. are all nodes and so have all of the fun and useful properties of nodes.)
+
+Nodes
+
+A **node** is an individual record of an item. It is the central element to data organisation in Weave. A node can have both metadata and relationships to provide information regarding it.
+
+It can have a data file attached to it.
+
+A node can have the following fields:
+
+Title
+
+Sort title
+
+Display title
+
+Short title
+
+Type
+
+Description
+
+Disambiguation description
+
+Source (citation)
+
+Comments
+
+Short description
+
+Universe status
+
+Copyright status
+
+Morality status
+
+Morality status as pertinent to minors
+
+Personal data status
+
+A node's dissemination can be controlled through the use of Permissions.
+
+Relationships
+
+A **relationship** is a description of the connection between two nodes.
+
+Metadata
+
+A metadatum is a record of a concrete attribute of or an objective truth regarding a node, such as the number of words in a book or the dimensions of a sculpture.
+
+Ideas and Notes
+
+Authority Contexts
+
+These do not indicate that information is guaranteed correct within the given authority context, but only that that is the intended authority of the material.
+
+*   Objective consensus: Like Wikipedia. Neutral point of view. Doesn't necessarily represent all points of view equally because of lack of consensus about them.
+*   Objective egalitarian: Neutral point of view, and tries to accept all viewpoints as equally legitimate.
+*   Subjective consensus: No neutral point of view, but established by general consensus.
+*   Objective single/subset source: Neutral point of view, as established by a single source or a subset of available sources.
+*   Objective individual/organization source: Neutral point of view, as believed by an individual or organization.
+*   Subjective single/subset source: Opinion (no neutral point of view), as established by a single source or a subset of available sources.
+*   Subjective individual/organization source: Opinion (no neutral point of view), as believed by an individual or organization.
+
+And the in-universe counterparts of the above:
+
+*   In-universe consensus
+*   In-universe egalitarian
+*   In-universe subjective consensus
+*   In-universe objective single/subset source
+*   In-universe objective individual/organization source
+*   In-universe subjective single/subset source
+*   In-universe subjective individual/organization source
+
+Modular Dc Sequence Builders
+
+Idea: Modular Dc Sequence Builders
+
+For instance: A set builder: Collects nodes. Could be used for file uploads, etc.
+
+So, if I want to "upload" a file (send it to an Ember app), I am given a set builder dialog. It lets me pick a document or data record to send. Then, the set containing that document (at its present revision) is saved as a node; that node ID is then passed to the app. The node would have a trait indicating that it was static (that the contents it references would not be able to be changed — just revisions of them at the present state). Alternatively, a dynamic set could be created, in which the document would be able to be updated. Sets could have restrictions e.g. about how many documents they could contain, whether they could contain complex structures (such as a directory tree), whether one document could be swapped out with another or not, (or whether they are dynamic or static). Sets could also be driven by search criteria (e.g. the most relevant 10 nodes for a given keyword, or all nodes matching "DOOM" XOR "MOOD", or all four nodes with type Musician and a "is member of" relationship to "The Beatles", or the rapidly changing set of nodes with type Musician and a current or past "is member of" relationship to "Yes"), or built programmatically from new or existing nodes. This would allow file uploads, searches, etc. to all be driven using the SAME basic user interface module. Basically, a file picker on steroids. The set node would have a Dc sequence representation, as do all nodes, so this is really a Dc sequence builder. A set builder could also be used, for example, to choose what nodes to perform an operation on. So, if I'm writing an app to find all the "has foo of" relationships, delete them, and create corresponding "has bar of" relationships, I could create a dynamic set representing all the "has foo of" relationships, the app would know the node ID of that set, and it would then operate on the present state of that set whenever it is run. Of course, like anything else in Ember a set could "time travel" — a new set could display its results as if it had existed at a previous time, or the previous contents of the set could be displayed even if it did exist then. Another application of the set builder could be creating an Ember theme to share with the community that displayed the current top 10 tracks on the Billboard Hot 100 — a set could be created representing the top 10, and a rule could be created if desired to deal with the condition if the Hot 100 was discontinued: the set could be configured to return nothing, to return a fixed list, to return the top 10 from the final edition of the charts, etc..
+
+Likewise, a Color sequence builder should exist, and a Time sequence builder, and a Number sequence builder (could handle variables and complex expressions!), and a Mathematical Equation sequence builder (which would create a Number sequence builder for numbers).
+
+General ideas
+
+*   Tagged nodes, including a system for storing the tags as part of a tag grouping (which could have permissions like a document). Would also have a global tag system, so people could add tags to the global tag grouping.
+*   Liberal relationship formation and node typing: A node can be assigned any other node as its type; a relationship can be from any type of node to any other type of node even if that is not how the relationship is defined (this situation could display a warning, for example)
+*   Hopefully these traits would help keep restrictions from being a pain in the ass
+
+Data flows
+
+Listed: tolerance per item — (maximum ping in ms | minimum bandwidth per second)
+
+Fully featured client
+
+Input
+
+*   keyboard(s) and button(s) — (0 | 200b)
+*   microphone(s) — (5 | 6144kb assuming 32 bits per sample 192kHz) (calculated using http://www.theaudioarchive.com/TAA\_Resources\_File\_Size.htm )
+*   GPS(es) — (1000 | 1kb?)
+*   accelerometer(s) — (1000 | 512b?)
+*   ambient light sensor(s) — (1000 | 512b?)
+*   camera(s) — (100 | 48gb) (assuming 8K 60fps 48-bit RGBA) (calculated using http://web.forret.com/tools/video\_fps.asp?width=7680&height=4320&fps=60&space=rgba&depth=48 )
+*   pointing tool(s):
+
+*   Simpler:
+
+*   mouse — (0 | 800kb?) ( see https://answers.yahoo.com/question/index?qid=20060707143627AAsH1ay )
+*   pointing stick
+*   trackball
+*   trackpad
+
+*   Complexer:
+
+*   tablet
+*   touchscreen
+*   multitouch trackpad (0 | 200kb?) (see http://www.digikey.com/product-search/en/integrated-circuits-ics/data-acquisition-touch-screen-controllers/2557134 )
+*   3-dimensional pointing tools
+
+  
+
+Output to user
+
+*   Display(s) (2-dimensional)
+*   speaker(s)
+*   Display(s) (3-dimensional)
+*   status (etc.) light(s)
+*   projector(s)
+
+  
+
+Server
+
+Input from clients
+
+*   Requests:
+
+*   insert record
+*   get record
+*   get matching record list (e.g. search results)
+*   establish authentication
+
+  
+
+Output to clients
+
+*   Responses:
+
+*   Confirmation messages (ACKs)
+*   records
+*   record lists
+*   authentication confirmation
+
+Note: DCE named syntaxes
+
+DCE named syntaxes? (as extension of named sequences) E.g. U+1F4B0 MONEY BAG could map to a Dc "Money bag". The Money bag Dc would be defined as: <Enclosing Bag>(<Class:Currency symbols>)
+
+This would allow a) the mapping to represent the money (currency symbol) semantic of the Unicode character and b) a user to create a visually identical sequence with something else in it (e.g.
+
+<Enclosing Bag><Begin Discrete Block><Begin Style Override><Begin Style Definition><Sans Serif><End Style Definition>XXX<End Style Override><End Discrete Block>
+
+to create a flour bag if the user wanted the same style as the Money bag)
+
+Node examples — use cases:
+
+Node — a new document someone created… — type: Digital data Has title (file name); has relationships: ☆→created by (ember account), ☆has revisions (each time saved or autosaved). Node: — a piece of music someone had in their computer upon backing up w/ Ember… — type: Digital data. Has title (file name); Relationships: has revision: only the current revision, since it’s never been resaved; has creator (ember account).; has date created (date created from filesystem — with source annotation) Note that the content & format metadata are stored with the Revision nodes, not with the main nodes. Each revision node has autodetected music metadata (e.g. by Musicbrainz PUID lookup) or other autodetected metadata, such as plagiarism detection information. Music metadata & such can be added manually to main &/or revision nodes. DCE (and Wreathe and Ember) should use Google Wave’s letter-by-letter edit tracking technology… then DCE data backed up wouldn’t need independent revision nodes like that — but instead just independent revision nodes for actual conceptual revisions of the document. Maybe, to prevent confusion, autosaved revisions could be called by a different name (i.e. a word other than “revision”.)?…. Wreathe and Ember should hide their DCE underpinnings, for the most part, but at the same time, lower-level DCE editing should be easy.
+
+Implementation
+
+A full DCE editor à la Wreathe isn’t necessarily necessary for Ember’s web-based administration — just use the all-in-one DCE editor / Ember browser / etc. in Wreathe if one wants desktop-power-level DCE editing in Wreathe \[possibly meant to write Ember there?\]. Plus, DCE editing can be easily implemented in a web environment without worrying about rendering or display so much — just work with the raw Dcs if that kind of “advanced” functionality is desired, if necessary…?
+
+Database schema ideas
+
+Ember data modeling
+
+Might be useful: http://www.slideshare.net/DanLynn1/storing-and-manipulating-graphs-in-hbase
+
+Example schema
+
+Note that this is simplified (doesn't deal with character encodings, localisation, strings, etc….
+
+Rough example of how things might work (note that type 2 is a relationship and does not necessarily take data but has a node as its target, while type 3 is a metadatum and has to take data but only has its root node:
+
+  
+
+Top of Form
+
+  
+
+Classes
+
+id
+
+**description**
+
+0
+
+node
+
+1
+
+relationship
+
+2
+
+metadatum
+
+Top of Form
+
+  
+
+Types
+
+id
+
+**class**
+
+**description\_1**
+
+**description\_2**
+
+0
+
+0
+
+person
+
+  
+
+1
+
+0
+
+basic node
+
+  
+
+2
+
+1
+
+has author
+
+is author of
+
+3
+
+2
+
+has title
+
+is title of
+
+Top of Form
+
+  
+
+Users
+
+id
+
+**username**
+
+**salted\_password\_hash**
+
+**node**
+
+**biometrics data**
+
+0
+
+test
+
+blahblahblah
+
+0
+
+DCEe…
+
+Top of Form
+
+  
+
+Nodes
+
+id
+
+**node**
+
+**date**
+
+**type**
+
+**data**
+
+**node\_1**
+
+**node\_2**
+
+**author**
+
+**permissions**
+
+0
+
+0
+
+DCEe…
+
+0
+
+DCEe…
+
+  
+
+  
+
+0
+
+DCEe…
+
+1
+
+0
+
+DCEe…
+
+0
+
+DCEe…
+
+  
+
+  
+
+0
+
+DCEe…
+
+2
+
+1
+
+DCEe…
+
+1
+
+DCEe…
+
+  
+
+  
+
+0
+
+DCEe…
+
+3
+
+2
+
+DCEe…
+
+2
+
+  
+
+1
+
+0
+
+0
+
+DCEe…
+
+4
+
+3
+
+DCEe…
+
+1
+
+DCEe…
+
+  
+
+  
+
+0
+
+DCEe…
+
+5
+
+2
+
+DCEe…
+
+2
+
+DCEe…
+
+1
+
+0
+
+0
+
+DCEe…
+
+6
+
+4
+
+DCEe…
+
+3
+
+DCEe…
+
+1
+
+  
+
+0
+
+DCEe…
+
+Top of Form
+
+  
+
+Comments and ideas
+
+How to deal with complicated situations, e.g. three-node relationships? Could relationships all just be special cases of metadata? (Or maybe vice versa, although I don't think that would work?) What about nondirectional relationships? Or unidirectional?
+
+Everything in one big table??
+
+How to delete relationships??
+
+Relationships and metadata as nodes, all together in one big table??
+
+For each node: id
+
+For each node revision: id, node\_id, revision\_date, type, data, node\_1, node\_2
+
+node\_id: related to node table
+
+type: e.g. "Node has number of pages metadata" or "Data" or "Person" or "node\_1 is author of node\_2"
+
+data: DCE data ID associated with the node (for metadata, this would be the value of the metadata; for a data-type node this would be its contents)
+
+node\_1 and node\_2: two nodes that this node represents a relationship between
+
+Structuring EMBER DMS
+
+  
+
+The Ember data management system: project objectives, implementation plan, and operational structure.
+
+Project objectives
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Implementation plan
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Operational structure
+
+UI ideas for the Ember project
+
+Top of Form
+
+  
+
+Button
+
+Layers:
+
+*   Background
+*   Highlights (like murrine, except not round: \`-. \`-' .-' .-. = left up right down, respectively)
+*   Content
+
+Instead of content highlights, have a boolean parameter for stacking order that allows the Highlights layer to go above or below the Content layer.
+
+_n_\-space-native computer graphics system
+
+Idea for a robust n-space-native multithreaded compositing computer graphics system…:
+
+There can be many applications.
+
+Each application can write to many source spaces, each of which has its own pair of buffers. Each source has two buffers so the data can be read by the compositor at any time, even while the source AND one buffer are being updated. That way, the compositor doesn't ever have to wait. It could just not paint things that weren't ready, but then that could make those things flicker.
+
+There is one OS output system.
+
+Compositor is a space of the same type as the output (for a 2-dimensional computer screen, for example, the composition space is 2-dimensional).
+
+A space is an n-dimensional data structure of graphics (generally vector) objects. Except for the composition space, spaces are organized in relation to other spaces (the origin of the enclosed space corresponds to a given position in the enclosing space). When the enclosed space has more dimensions than the enclosing space, each extra dimension can be chosen to be sliced, projected, or (sliced and?) protruding from the enclosing space. The compositor should also be able to handle other cases correctly, e.g. when the size of one unit in a space is different from another, when a space is rotated relative to another, when the size of one unit changes within a space, unusually shaped spaces, spaces that wrap around at the edges, spaces with holes in them, spaces split into parts, spaces with areas that teleport, spaces that change over time, two or more a-dimensional spaces with b intersecting dimensions (for b less than or equal to a — the other dimensions protruding), etc..
+
+Regarding unusually shaped spaces: consider a piece of string as a one-dimensional space. It has a clear linear point system along its length, but it can be bent within 3 dimensions. This case should be handled correctly by the compositor.
+
+: How to handle situations where an application needs to reference another application's spaces? Shouldn't be too hard to do, but maybe should have some sort of security/access protection system in place….
+
+  
+
+The finely dashed lines indicate data going to or coming from multiple instances of the structures shown.
+
+To clarify: the compositor should be able to composite any number of simple or complex n-dimensional spaces into a single simple n-dimensional space.
+
+Top of Form
+
+  
+
+Pseudocode for the methods:
+
+Top of Form
+
+  
+
+Bottom of Form
+
+Semaphores used, and their meanings/purposes:
+
+*   When S is up, Compositor can read buffer A
+*   When T is up, Compositor can read buffer B
+*   When U is up, Source can write to buffer A
+*   When V is up, Source can write to buffer B
+
+Top of Form
+
+  
+
+Bottom of Form
+
+Source.push()
+
+if(S, V are up):
+
+T.down()
+
+copy Source to buffer B
+
+T.up()
+
+else if(T, U are up):
+
+S.down()
+
+copy Source to buffer A
+
+S.up()
+
+Top of Form
+
+  
+
+Bottom of Form
+
+Compositor.pull()
+
+if(S is up):
+
+U.down()
+
+copy buffer A into Compositor
+
+U.up()
+
+else if(T is up):
+
+V.down()
+
+copy buffer B into Compositor
+
+V.up()
+
+Coal (data storage system)
+
+The Coal Project is an experimental knowledge archival system built using the Internet Archive’s services. The project stores knowledge in a consistent way that enables the information to be understandable by both computers and humans, and accessible to historians, analysts, and other researchers. It is distinct from projects such as Wikidata and MusicBrainz that aim to collect knowledge, in that a primary purpose of the Coal Project is to archive this information. It is also distinct from projects such as the Internet Archive that primarily archive unstructured documents, in that the Coal Project archives knowledge in a way that can be understood by computers. The Coal Project can supplement archived documents by making the knowledge they contain available separately from the documents themselves, as well as by placing documents within the historical context in which they were created by making connections between the documents and other archived records.
+
+Coal is the storage system for Ember.
+
+  
+
+In a nutshell: Long number in, short number out… then later, can put the short number in and get the long number out
+
+File formats and extensions
+
+*   \*.cct: Coal chunk temporary data file.
+*   \*.cot: Coal temporary data file. Can be any binary data.
+*   \*.coal: Encrypted, compressed Coal chunk.
+*   \*.coal4: Encrypted, compressed Coal chunk, with embedded metadata.
+*   \*.cstf: Coal string temporary file (data provided as string for new coal)
+
+Top of Form
+
+  
+
+Status codes
+
+Code
+
+**Meaning**
+
+0
+
+Successful
+
+1
+
+Incorrect authorization key
+
+2
+
+Moving uploaded file failed
+
+3
+
+Uploaded file does not exist at $target\_path
+
+4
+
+Chunk encryption failed too many times
+
+5
+
+Coal creation failed too many times
+
+6
+
+Uploaded file not referenced in $\_FILES
+
+7
+
+Retrieved coal was null
+
+8
+
+Chunk data sent for insertion failed checks
+
+9
+
+Chunk insertion failed too many times
+
+10
+
+S3 bucket exists and not owned by user (see also code 36)
+
+11
+
+Unknown exception while uploading to Internet Archive
+
+12
+
+cURL request failed
+
+13
+
+  
+
+14
+
+Decrypted chunk failed checks too many times
+
+15
+
+Retrieved chunk data failed checks too many times
+
+16
+
+Chunk retrieval failed too many times
+
+17
+
+Block list retrieval failed too many times
+
+18
+
+Returned block data failed checks too many times
+
+19
+
+Compiled record data failed checks too many times
+
+20
+
+retrieveCoal failed
+
+21
+
+resetstatus ran too many times (note: this was a mistake that was supposed to mean what 16 already means)
+
+22
+
+Returned block data failed checks at least once (potential error)
+
+23
+
+Complied record data failed checks at least once (potential error)
+
+24
+
+Block list retrieval failed at least once (potential error)
+
+25
+
+(informational code: not an error) Duplicate found
+
+26
+
+(informational code: not an error) Running procedure for handling duplicate chunk
+
+27
+
+(informational code: not an error) ia\_upload returned error 10
+
+28
+
+(informational code: not an error) ia\_upload returned other error
+
+29
+
+(informational code: not an error) Retrieved chunk data failed check; retrying
+
+30
+
+(informational code: not an error) Decrypted chunk failed check; retrying
+
+31
+
+(informational code: not an error) Coal creation failed; retrying
+
+32
+
+ID missing from chunk retrieval request
+
+33
+
+(status code: potentially an error) Chunk address too short
+
+34
+
+(from S3 library) S3::putObjectFile(): Failed to copy file
+
+35
+
+(from S3 library) S3::putBucket(): Unable to create bucket (it may already exist and/or be owned by someone else)
+
+36
+
+(previously used code 10) insertChunk returned a non-zero status code
+
+37
+
+(potential error) Coal test retrieval failed; sleeping and retrying
+
+38
+
+(potential error) Chunk metadata parsing failed; retrying
+
+39
+
+Chunk metadata parsing failed too many times
+
+40
+
+(potential error) Coal metadata chunk parsing failed; retrying
+
+41
+
+Coal metadata chunk parsing failed too many times
+
+42
+
+(potential error) Coal metadata chunk metadata parsing failed; retrying
+
+43
+
+Coal metadata chunk metadata parsing failed too many times
+
+44
+
+ia\_upload failed too many times
+
+45
+
+Coal test retrieval failed
+
+46
+
+Coal metadata was not correctly unserialized to an array
+
+46
+
+Coal metadata was not correctly unserialized to an array
+
+46
+
+Coal metadata was not correctly unserialized to an array
+
+46
+
+Coal metadata was not correctly unserialized to an array
+
+50
+
+ID for chunk retrieval was invalid (supersedes error 32, erroneously presented as an informational status in the code)
+
+Notes on development principles
+
+  
+
+Rules
+
+  
+
+*   Never remove a feature, capability, or option. If the development of an improved architecture or addition of new features involves scrapping existing code, reintroduce all previously existing capabilities before releasing the changes to the software.
+*   Make sure that all tests pass when releasing changes to the software.
+*   Resolve issues exclusively in the following order (within each category, resolve in order of decreasing priority):
+
+*   Poor implementations
+*   Poorly tested implementations
+*   Bugs:
+
+*   Because code is an implementation of the expectations defined by the tests, if the tests pass, then any bugs are in the tests, not the code. Therefore, as with all other changes, fix any given bug using the test-driven development (TDD) procedure.
+
+*   Enhancements
+
+*   Implement any desired changes using the TDD procedure.
+
+  
+
+  
+
+The Test-Driven Development Procedure
+
+  
+
+*   Write the simplest possible failing unit test that represents the desired change.
+*   Make the minimum changes to code necessary to make that test pass.
+*   If necessary, refactor the code and/or test suite.
+*   Repeat from step 1.
+
+  
+
+  
+
+Procedures outline
+
+Main:
+
+*   Greet user
+*   Create a ProcessManager
+*   Start Bootstrapper thread
+*   Wait for Bootstrapper to indicate that all SessionManager threads have finished
+*   Exit
+
+  
+
+Bootstrapper:
+
+*   For each interaction context (e.g. terminal, display, etc) found, create a corresponding Context object indicating the traits and capacities (e.g. display resolution, input interfaces such as a mouse or keyboard, capacity for direct access to the hardware, size of a terminal, etc.) of that context, and start a session manager thread (passing the relevant Context object to it so it knows what to do).
+*   Wait until each SessionManager is terminated, or until any one SessionManager sends a shutdown signal and no other sessions are active, or until any session sends a global override shutdown (in which case other logged-on users’ accounts’ states should be allowed to finish being saved if saving is still in process, to the cloud if online, and to disk if offline).
+*   Indicate to main thread that all session threads have finished.
+
+  
+
+SessionManager:
+
+*   Greet the user.
+*   Create a ProcessManager.
+*   Start an ApiClient thread to manage any requests to the server.
+*   Display a login screen.
+*   When a user attempts to log in, check the data with the ApiClient, or with a local cached configuration.
+
+*   If the credentials are correct:
+
+*   Start a CommandHandler thread to process instructions from the UserInterface.
+*   Start a UserInterface thread, passing the session manager’s Context object to it.
+*   Wait until the UserInterface thread indicates that the session has ended.
+*   Go to step 4.
+
+*   If the credentials are incorrect:
+
+*   Inform the user.
+*   Go to step 4.
+
+  
+
+URI scheme and directory structure for Ember
+
+  
+
+Base URL:
+
+ember://\[int:Ember version node ID\]/\[int:Ember user node ID\]<(optional).\[int:User domain node ID\]>/\[DCE:Time at which to view the request\]/\[int:resource node ID\]\_Name/\[subresources\]
+
+  
+
+Subresources:
+
+For example: Listing
+
+ember://1/2/\[time\]/3\_ArbitraryNode/M\_Title/
+
+where \[time\] was the DCE representation of Now would return a list of node IDs providing Titles for node 3.
+
+  
+
+Other modes of accessing things can work too:
+
+ember://1/2/\[time\]/4\_ScratchPad/ might be user 2’s scratch pad directory.
+
+ember://1/2/\[time\]/5\_Environment/6\_Keyboard might be a file representing user 2’s keyboard, like something from /dev/ in Linux.
+
+Etc.
+
+  
+
+All Ember URIs must be: ember://(\[\[a-zA-Z0-9%\_\]\]/)+<(optional)/>
+
+  
+
+% would be used for escaping
+
+\_ separates a filesystem identifier (either a node ID or a subresource type identifier) from the file name
+
+The file name is not really definitive of anything; the node ID is what distinguishes one thing from another. File names are useful for being user-friendly, though.
+
+  
+
+Subresource types:
+
+*   M: Metadatum
+*   R: Relationship
+*   H: History of node
+*   D: Data of this node or subresource
+*   C: Data of the relationship of the specified node to another node with regard to the enclosing directory
+*   (…?)
+
+  
+
+Subresources can be chained together:
+
+ember://1/2/\[time\]/3\_ArbitraryNode/M\_Title/7\_ArbitraryNodeTitle/H\_History/8\_RevisionOfArbitraryNodeTitle/M\_CreatedBy/9\_UserWhoCreatedRevisionOfArbitraryNodeTitle/M\_Parent/C\_10
+
+would be the DCE representation of the information about the relationship between the user who created revision 8 of node 3’s title, and that user’s parent.
+
+  
+
+Ember builtin commands (built in to the shell/CLI) should be exposed via the directory structure. As should other resources Dcs, DCE mapping data, relationship types, node types, metadata types, etc….
+
+  
+
+Groups and Domains
+
+I think there should be a couple features in Ember to make it optimally useful for business use: user groups and domains.
+
+  
+
+Groups
+
+A user group is a list or dynamic set of users that can be used in much the same way as a real user in e.g. ACLs.
+
+  
+
+Domains
+
+A domain is a user group with some extra features, as well as including subdomains. Each user in a domain can choose to use their Ember account as their personal user account, or as any one of their domain roles. Each domain has a _domain authority_ who determines who has what rights in that domain. If the domain authority of the top-level domain so chooses, he/she can have absolute control over all the subdomains within his/her domain (overriding the domain authorities of the individual subdomains). This is only the case if he/she was the creator of the subdomain, unless the actual creator of the subdomain chooses to delegate that control to the parent domain’s authority. Domain authorities can transfer their power to any user, user group, or domain, just as (almost) any document can have its ownership changed. This is because domains are nodes, as are user groups and users. (Note that user nodes can’t have their owner changed, however they can be merged.) Domain/subdomain links do NOT have to be strictly hierarchical.
+
+  
+
+(Somewhat sexist, sorry, I don’t feel like fixing it right now) domain example:
+
+  
+
+Boss of company A creates domain for his company, giving his CFO membership in the domain, and creating a Finances subdomain for the finances department in which the CFO is the authority. Boss of company B creates domain for his financial consulting company, and is the authority of it. Company A chooses to purchase company B to manage internal finances at Company A, and so the company B domain is added by the CFO of company A as a subdomain of Company A’s Finances subdomain; the boss of B releases absolute control over his consulting domain to company B.
+
+  
+
+End result (doesn’t quite correspond exactly to the story above since I decided to add a couple more examples, but is basically it):
+
+*   Company A domain:
+
+*   Authority: Company A boss
+*   Member: CFO
+*   Members: Other employees, with varying levels of access (Authority can set ACLs for members’ access to documents)
+*   Subdomain: Finances:
+
+*   Presiding authority: Company A boss
+*   Authority: CFO
+*   Members: Finances employees
+*   Subdomain: Company B
+
+*   Presiding authority: Company A boss (Given that Company B boss delegated authority to company A boss even if not, could still be an uncontrolled subdomain)
+*   Authority: Company B boss
+*   Members: Company B employees
+*   Subdomain: Company A domain, if Company B boss added it as a subdomain (if Company A boss accepted it as a parent domain, it would then show up as a subdomain for him too) (this is pretty much pointless and random, but provides an example of why domains are not strict hierarchies)
+
+  
+
+Notes on apps and features
+
+  
+
+There are a bunch of apps and features that I want to figure out how they will map onto Ember. This is an initial attempt at enumerating (is that the right word for _making a list of_?) them. (Also: Be able to have a user run one document/app in a given domain, and another in another, and a third as themselves, etc.. No need to make them have separate sessions for working in different domains if they don’t want to that would make browsing Facebook at work a lot more annoying!.) Maybe more ideas (a lot already added from): http://fileformats.archiveteam.org/wiki/Electronic\_File\_Formats
+
+  
+
+*   Getting a summary of everything going on (start / home screen kind of thing): Customizable. For example, could contain:
+
+*   A brief reminder of who/where/when/etc. I am
+*   What I have to do today (schedule, tasks, etc.)
+*   Important news (e.g. emergencies, etc.)
+*   A search box
+*   A way to easily create a journal entry, blog/microblog post, social networking status update, etc.
+*   A way to easily add an event to my schedule or a task to my to-do list or a note to myself (Stickies style) or a more thorough journal-y note to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
+*   A way to easily compose an IM / email / etc. or place a voice/videocall
+*   Messages from others (emails, IMs, voice/videomails, etc.)
+*   Other guided information resources (see below)
+*   A hierarchy of things to browse through (web-portal style)
+*   …
+
+*   Media playback
+
+*   Movies
+
+*   Feature films
+*   Video series
+*   Online streaming home video (YouTube, etc.)
+*   …
+
+*   Music
+
+*   Albums
+*   Individual tracks
+*   Music videos
+*   Artist/album/tag/etc. radio
+*   Playlists, including shared playlists
+*   Scores
+*   …
+
+*   Games
+
+*   Interactive fiction, MUDs, MOOs, MMOs, puzzles, board game simulations, many other types of games …
+
+*   Ebooks
+*   Poetry
+*   Quotations
+*   Essays
+*   News
+*   Comics
+*   Manga
+*   Blogs & RSS feeds
+*   Consuming realtime media (television, radio, livestreams, …)
+*   …
+
+*   Document creation and sharing
+
+*   Writing a paper
+*   Collaborative document editing / creation
+*   Composing a score
+*   Writing a book
+*   Creating a movie
+*   Creating a storyboard for a movie
+*   Writing a script
+*   Editing a photograph
+*   Creating animation
+*   Notes to myself (Stickies style)
+*   More thorough journal-y notes to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
+*   3D modeling and rendering
+*   CAD
+*   Diagramming
+*   Creating a database
+*   Mind mapping
+*   Recording and producing a song
+*   Diagramming structures in multiple dimensions
+*   Developing apps
+*   Designing a typeface
+*   Working with GIS data
+*   Recording a photograph or a video using a webcam, scanner, camera, …
+*   Recording audio using a microphone
+*   Working with geometric figures
+*   Recording music from a USB/MIDI instrument
+*   Blogging and microblogging
+*   Working with legal documents
+*   …
+
+*   Browsing through documents and information
+
+*   Browsing a Web site
+*   Browsing through Ember nodes
+*   …
+
+*   Working with structured information (this is mostly also document creation / management)
+
+*   Managing a genealogy using Ember records
+*   Managing a calendar / schedule
+*   Managing a to-do list
+*   Managing a contacts directory
+*   Working with scientific data
+*   Maintaining a retail environment (online or physical)
+*   Managing recipes
+*   Managing a reading list
+*   Journaling
+*   Managing a bibliography
+*   Fantasy sports
+*   Managing and using bookmarks
+*   Managing financial information
+*   Managing personal notes, documents, projects, photographs, videos, etc.
+*   Managing a class
+*   Participating in a class
+*   …
+
+*   Resources/tools
+
+*   Dictionary
+*   Thesaurus
+*   Chemical elements chart and data
+*   Maps, travel directions, and sky charts
+*   Calculator
+*   Using the computer as a flashlight
+*   Field guides / identification keys
+*   Instructions and how-to information
+*   Lessons on things
+
+*   Typing lessons
+*   Instrument lessons
+*   Tutorials on using software
+*   …
+
+*   Support using Ember
+*   Nutrition information
+*   Support in other aspects of life (e.g. help with trouble fishing, etc.)
+*   …
+
+*   Management
+
+*   Database creation and administration (this is really “Document creation”, but also listed here)
+*   Network administration
+*   Programming
+*   Emulation of other computing systems
+*   Working with files and directories
+*   Converting data from one format to another
+*   Compressing and/or archiving data and/or directory structures
+*   Imaging disks
+*   Encrypting, decrypting, creating checksum records for, checking against checksum records, packing with parity data, restoring from parity data…
+*   Running apps (this is basically just opening documents)
+
+*   Distributed computing
+
+*   Forensics
+*   Computer security
+
+*   Malware prevention, intrusion detection, …
+
+*   Data serialization
+*   …
+
+*   Exchange
+
+*   Buying and selling goods
+*   Trading stocks
+*   Purchasing and selling tickets
+*   Issuing and redeeming coupons
+*   Sending money (money-order style)
+*   …
+
+*   Searching
+
+*   Answers (e.g. facts, math questions)
+*   Finding media (e.g. news, movies, music, etc.)
+*   Locating documents
+*   …
+
+*   Guided time use and content consumption
+
+*   Notifications
+
+*   Emergencies
+*   Important news
+*   Emails
+*   Blog feeds
+*   Things I’m supposed to be doing
+*   Personal health warnings
+*   Computer status warnings (disk/memory failure, overheating, can’t connect to Ember server, running out of battery power, …)
+*   …
+
+*   Activity guidance
+
+*   What to do right now
+*   What I have on my schedule upcoming
+*   …
+
+*   News headlines
+*   Blog feeds
+*   Podcasts
+*   Top charts (popular items)
+*   Best charts (classics / enduring popularity items)
+*   Suggested recipes
+*   Fitness tips
+*   Weather information
+*   Stock market information
+*   Computer’s status (resource usage, etc.)
+*   Personal health
+*   Sports information
+*   Acquaintance suggestions (people I might find interesting to talk to / get to know)
+*   Dating suggestions / matchmaking
+*   …
+
+*   Communication
+
+*   Instant messaging
+*   Email
+*   Video chat and group video chat
+*   Audio and video messages
+*   Collaborative document editing (this is “Document creation” but is related to communication)
+*   Social networking
+*   Blogging and microblogging (this is “Document creation” but is also a form of communication)
+*   Newsgroups
+*   BBSes
+*   File sharing
+*   Industrial automation (machine embroidery, etc.) (not sure if this fits in communication, since it’s communication with machines)
+*   Sharing/microblogging/adding as status updates URLs, photographs, music, videos, …
+*   Social bookmarking
+*   …
+
+  
+
+The Ember knowledge reference
+
+It is important to study. To study effectively is challenging.
+
+How to Study
+
+*   Information studies: The Ember language and logical system
+
+This section covers the subjects:
+
+*   Identifiers (Abstract identifiers; sets, lists, and other groups)
+*   Language (grammatical words; other words and their meanings; expressions and sentences; logic and proofs)
+*   Quantities (Quantitative information, constant and abstract (mathematics); their application in modeling the physical world; their abstract applications (such as in business))
+
+Because these subjects are all related, the section will cover the essentials in the order they should be learned for basic comprehension (dependency bootstrapping); and then include additional knowledge that can be pieced together as desired. These areas will cover the traditional disciplines of: mathematics, including algebra, geometry, calculus, and discrete mathematics; logic; and language.
+
+Notation
+
+llx = welsh ll
+
+lj = palatalized l
+
+r = flipped r
+
+  
+
+Sound
+
+Letter
+
+Letter
+
+a
+
+─
+
+a
+
+u (as in doom)
+
+ᴗ
+
+u
+
+e (open e)
+
+(
+
+e
+
+o (long o)
+
+O
+
+o
+
+ej / $ (as in café)
+
+/
+
+$
+
+eex / % (schwa)
+
+φ
+
+%
+
+w (as in bœuf)
+
+ᴖ
+
+w
+
+i (as in beam)
+
+\\
+
+i
+
+y (u with a smile)
+
+I
+
+y
+
+arx / A (alejtvenated a)
+
+─̒
+
+A
+
+urx / U (alejtvenated u)
+
+ᴗ̒
+
+U
+
+erx / E (alejtvenated e)
+
+(̒
+
+E
+
+orx / O (alejtvenated o)
+
+O̒
+
+O
+
+ojx / W (alejtvenated w)
+
+ᴖ̒
+
+W
+
+irx / I (alejtvenated i)
+
+\\̒
+
+I
+
+ujx / Y (alejtvenated y)
+
+I̒
+
+Y
+
+l (as in lemon)
+
+)
+
+l
+
+llx / L (as in Machynlleth)
+
+ɤ rotated 90 degr. left
+
+L
+
+lj / q (palatalized l)
+
+backwards 9
+
+q
+
+d (flipped r)
+
+backwards 6
+
+d
+
+v (b/v)
+
+9
+
+v
+
+t (hard)
+
+6
+
+t
+
+tjx / T (t with tongue flat against hard palate and teeth)
+
+ɤ
+
+T
+
+z (as in azure)
+
+ɤ rot. 90 degr. right
+
+z
+
+n
+
+ɤ rot. 180 degr.
+
+n
+
+f
+
+S
+
+f
+
+s (as in stop)
+
+backwards S
+
+s
+
+h (as in Schweppes)
+
+~
+
+h
+
+m
+
+Backwards ~
+
+m
+
+tj / J (t+y)
+
+  
+
+J
+
+nj / N (n+y)
+
+  
+
+N
+
+sj / S (s+y)
+
+  
+
+S
+
+\[CANNED\] dj / D (d – NOT flipped r - +y)
+
+  
+
+D
+
+lu / , (start of sentence)
+
+⊱ / E
+
+,
+
+tu / . (end of sentence)
+
+⊰ / 3
+
+.
+
+1
+
+  
+
+  
+
+2
+
+  
+
+  
+
+3
+
+  
+
+  
+
+4
+
+  
+
+  
+
+5 / ez
+
+  
+
+  
+
+6
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+LultdilesnnasedladTtdnezntu
+
+,ltdilesnnasedladTtdnezn.
+
+In other words: “es” = 5. (where “es” is the name of the variable)
+
+Note: consonant + consonant is prounced (& can be spelled) consonant+schwa+consonant. Vowel+vowel should have a similar rule, but I haven’t decided on one yet.
+
+lu – start of sentence
+
+l – start bracket
+
+t – define
+
+di – type: identifier
+
+l – start bracket
+
+es – name of identifier
+
+n – end bracket
+
+n – end bracket
+
+as – previous item
+
+ed – set property:
+
+l – start bracket
+
+ad – value – this is the property
+
+T – list separator
+
+t - define
+
+dn – type: number
+
+ez – 5
+
+n – end bracket
+
+tu – end sentence
+
+fwiw, referring to an identifier:
+
+z – identifier reference marker
+
+l – start bracket
+
+es – identifier
+
+n – end bracket
+
+  
+
+$identifier#
+
+$identifier@is \[final?\] \[type\]#
+
+Identifier.target.
+
+  
+
+Type can be number,
+
+Sentences
+
+\[complex noun\] = \[noun modifier\]?\[noun\]
+
+\[noun modifier\] = \[adjective\]|\[complex verb, modified to be a trait (test > testing / testy)\]
+
+\[complex verb\] =
+
+A sentence can be:
+
+sentence = \[interjection\]|
+
+\[simpleSentence\] = (\[\[noun\]|\[complex noun\]: subject\]|\[simpleSentence\] \[verb\] \[\[noun\]|\[complex noun\]: object\]|\[simpleSentence\])
+
+\[compoundSentence\] =
+
+For example: “Oh!” is a sentence, consisting of one
+
+  
+
+*   \[interjection\]
+*   \[assignment\]
+*   \[relationship\]
+*   Identifier is trait
+
+  
+
+An interjection is a single word with a specified meaning that is not otherwise classified. It is usually an expression of the speaker’s condition or emotion. For example: “Oh” could indicate the speaker’s comprehension, surprise, or fear, among others. “Damn”, while it has other meanings as a verb and an adjective, as an interjection usually indicates the speaker’s anger.
+
+  
+
+An assignment is when a name is given to a value. Examples:
+
+Mathematics
+
+  
+
+Physical sciences
+
+Chemistry
+
+  
+
+  
+
+2 0
+
+Neutronium
+
+n
+
+1
+
+1
+
+IA
+
+  
+
+  
+
+  
+
+Key:
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+18
+
+VIIIA
+
+1
+
+3
+
+1
+
+Hydrogen
+
+H
+
+1.0079
+
+1
+
+2
+
+IIA
+
+  
+
+Iso-topes
+
+  
+
+#
+
+Name
+
+Symbol
+
+Atomic mass
+
+Valence electron configuration
+
+  
+
+State at std. cond.
+
+Metal/
+
+nonmetal
+
+Occurrence
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+13
+
+IIIB
+
+14
+
+IVA
+
+15
+
+VA
+
+16
+
+VIA
+
+17
+
+VIIA
+
+2
+
+2
+
+Helium
+
+He
+
+4.00260
+
+2
+
+  
+
+1,-1
+
+  
+
+  
+
+  
+
+  
+
+Orbitals
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+2
+
+2
+
+3
+
+Lithium
+
+Li
+
+6.941
+
+2
+
+1
+
+3
+
+4
+
+Beryllium
+
+Be
+
+9.0121831
+
+2
+
+2
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+1
+
+  
+
+  
+
+2
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+3
+
+2
+
+11
+
+Sodium
+
+Na
+
+1.0079
+
+2
+
+8
+
+1
+
+  
+
+3
+
+IIIB
+
+4
+
+IVB
+
+5
+
+VB
+
+6
+
+VIB
+
+7
+
+VIIB
+
+8
+
+9
+
+10
+
+11
+
+IB
+
+12
+
+IIB
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+1
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+VIIIB aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+4
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+5
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+6
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+7
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Lanthanides
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Actinides
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+2 0
+
+Neutronium
+
+n
+
+1
+
+1
+
+IA
+
+  
+
+  
+
+  
+
+Key:
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+18
+
+VIIIA
+
+1
+
+3
+
+1
+
+Hydrogen
+
+H
+
+1.0079
+
+1
+
+2
+
+IIA
+
+  
+
+Iso-topes
+
+  
+
+#
+
+Name
+
+Symbol
+
+Atomic mass
+
+Valence electron configuration
+
+  
+
+State at std. cond.
+
+Metal/
+
+nonmetal
+
+Occurrence
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+13
+
+IIIB
+
+14
+
+IVA
+
+15
+
+VA
+
+16
+
+VIA
+
+17
+
+VIIA
+
+2
+
+2
+
+Helium
+
+He
+
+4.00260
+
+2
+
+  
+
+1,-1
+
+  
+
+  
+
+  
+
+  
+
+Orbitals
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+2
+
+2
+
+3
+
+Lithium
+
+Li
+
+6.941
+
+2
+
+1
+
+3
+
+4
+
+Beryllium
+
+Be
+
+9.0121831
+
+2
+
+2
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+1
+
+  
+
+  
+
+2
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+3
+
+2
+
+11
+
+Sodium
+
+Na
+
+1.0079
+
+2
+
+8
+
+1
+
+  
+
+3
+
+IIIB
+
+4
+
+IVB
+
+5
+
+VB
+
+6
+
+VIB
+
+7
+
+VIIB
+
+8
+
+9
+
+10
+
+11
+
+IB
+
+12
+
+IIB
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+1
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+VIIIB aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+4
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+5
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+6
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+7
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Lanthanides
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Actinides
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+1
+
+IA
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+18
+
+VIIIA
+
+3
+
+1
+
+Hydrogen
+
+H
+
+1.0079
+
+1
+
+2
+
+IIA
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+13
+
+IIIB
+
+14
+
+IVA
+
+15
+
+VA
+
+16
+
+VIA
+
+17
+
+VIIA
+
+  
+
+1,-1
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+3
+
+IIIB
+
+4
+
+IVB
+
+5
+
+VB
+
+6
+
+VIB
+
+7
+
+VIIB
+
+8
+
+9
+
+10
+
+11
+
+IB
+
+12
+
+IIB
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+VIIIB aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+History
+
+1900s
+
+In 1969, the Apollo 11 carried astronauts Neil Armstrong and Buzz Aldrin into space, who then landed on the moon.
+
+The Ember media library
+
+The Ember Media Library is a collection of documents, including various great creative works, useful reference works, and rare information. It is part of this book, and should be included with it in the final version \*TODO\*.
+
+  
+
+Using the Web environment
+
+The Media Library includes a Web environment as a Vagrant virtual machine. For more information on installing and using Vagrant, visit the Vagrant Documentation Web site at https://docs.vagrantup.com/ (HashiCorp n.d.) or reference the book _Vagrant: Up and Running_ (Hashimoto, Mitchell, 2013) (Hashimoto 28 May 2013). Vagrant requires VirtualBox to be installed. When using it, it may be advisable to disconnect the media library’s storage medium before running vagrant destroy, because if you are running Vagrant as a user with write permission to the folder, it may follow the symlink and erase it. This seems to possibly be a bug in Vagrant; this may be related to this issue https://github.com/MSOpenTech/vagrant-azure/issues/30 (npoggi 2014)
+
+To start using the Web environment, cd to the “Meta/Web environment” folder. If there is not a Vagrantfile in the folder (there should be), run:
+
+vagrant init https://archive.org/download
+
+/virtualbox\_201501/virtualbox.box
+
+and update the Vagrantfile as desired. If there is already a Vagrantfile, continue to the next step:
+
+vagrant up
+
+The Ember spiritual framework
+
+The Ember multimedia artwork
+
+Another aspect of Ember is a multimedia artwork, consisting of several components. Blossom & Leaf is a planned multimedia story centered around two characters, named Blossom and Leaf. I would like to write a webcomic (this is called Images), produce a film called Blossom & Leaf, and produce a band called Blossom & Leaf. The fictional world within which the story takes place is called Ilien. The story is very much a work in progress.
+
+In-universe reference
+
+This section will discuss the story within the context of the fictional universe.
+
+Characters
+
+Blossom
+
+Blossom is a character in the Blossom & Leaf story.
+
+(This page describes her current condition, rather than her condition at earlier points in the story)
+
+*   Picture: (none yet)
+*   Gender: Female
+*   Species: ilentu
+*   Date born: 128 IY 2048
+*   Personality: Kind and empathetic. A little bit psycho with a thing for blood.
+*   Strength: ∞
+
+Leaf
+
+Leaf is a character in the Blossom & Leaf story. Basically a combination of Goku, Belldandy, Abel Nightrode, and Kenpachi Zaraki.
+
+(This page describes his current condition, rather than his condition at earlier points in the story)
+
+*   Picture: (have one hand drawn but not a very good one… will scan and upload sometime or other maybe)
+*   Gender: Male
+*   Species: ilentu
+*   Date born: 128 IY 2048
+*   Personality: Kind and empathetic. A little bit psycho with a thing for blood.
+*   Strength: ∞
+
+Last night (the night connecting 11 Sept. 2014 and 12 Sept. 2014) I had a dream that gave me some information.
+
+  
+
+I had telekinetic powers. God was a thing that reminded me of the stuffed spider in the oatmeal bucket in john edwards market, except monochrome dark brown. And, a lot bigger (same scale as butts). He orbited the earth. He was over the united states in the summer. That was wehre i was too. I saw him in the himalayas too in the dream, but i wasn't there (that was when i didn't have any powers isnce he wasn't over america.)
+
+  
+
+His presence over a place wa needed for powers.
+
+  
+
+There were many powers given by Him, but usually a person only had one (e.g. mine = telekinesis). It took me a while to learn again (i'd been able to do this a long time ago but thought it was a dream) but a friend tought me telekinesis again refreshing my memory. She wore blue dress with light blue grid marks ~1/2" square from each other.
+
+  
+
+I could fly using my telekinesis byy levitating myself, as i could levitate other things.
+
+  
+
+I also dreamed that people with psyschic powers like me & my friend were that way because of being mutants. And because of nanomachines. Both those ideas seem to conflic with the idea of god granted power. And the second seems too be kresnik ripoff.
+
+  
+
+Most people at this time did not know the existence of these abilities (secret society kindd of thing).
+
+  
+
+Chi was the mechanism of the powers.
+
+  
+
+Places
+
+Ilien
+
+Ilien, the world within which the Blossom & Leaf story takes place, is a planet within the same universe as Earth.
+
+Years
+
+Cultures
+
+Languages
+
+Ilentu
+
+Has at least two scripts, one of which is very curly like the cursive form of Anoé, and one which is more practical, like my old syllabic version of Ilentu.
+
+Names
+
+List of common names
+
+List of common names:
+
+Ilienian
+
+**Earth**
+
+**Notes**
+
+  
+
+Brightstorm
+
+  
+
+  
+
+Echo
+
+  
+
+Ruan
+
+Rowan
+
+from Nancy Springer
+
+  
+
+Slaughter
+
+from the sculpture
+
+Elen
+
+Elen
+
+from Joan Aiken
+
+Zuria
+
+Zoriah
+
+  
+
+Top of Form
+
+Bottom of Form
+
+Resources
+
+Additional reading
+
+*   Lunde, Ken. _CJKV Information Processing_. Second edition, 2009. (Lunde 2009)
+*   Pei, Mario. _The Story of Language_.
+
+Cool and interesting people and Web sites
+
+*   Bettencourt, Rebecca G. http://www.kreativekorp.com/
+*   Mason, Jeremy
+*   Miller, Herman https://www.prismnet.com/~hmiller/
+*   Travis, Susan Maday
+*   Turner, Emily Sherwood
+*   Vining, Thomas F. http://vfthomas.com/
+*   Walsh, Pam
+*   West, Andrew
+*   The GUI Gallery
+
+References
+
+Ayres, Frank, and Elliot Mendelson. 2000. _Calculus Crash Course._ Series: Schaum's Easy Outlines. McGraw-Hill. http://www.atilim.edu.tr/~math153/000cal02.pdf.
+
+Briggs, William, Lyle Cochran, Bernard Gillett, and Eric Schulz. 2013. _Calculus for Scientists and Engineers: Early Transcendentals._
+
+—. n.d. _Calculus for Scientists and Engineers: Early Transcendentals._ Interactive CDF edition.
+
+HashiCorp. n.d. _Vagrant Documentation._ Accessed 01 16, 2015. https://docs.vagrantup.com/.
+
+Hashimoto, Mitchell. 28 May 2013. _Vagrant: Up and Running._ 1st. Edited by Courtney Nash and Mike Loukides. Sebastopol, California: O'Reilly.
+
+Lunde, Ken. 2009. _CJKV Information Processing._ Second edition. Sebastopol, California: O'Reilly.
+
+2015\. _Math Lab notes_ (February 10).
+
+npoggi. 2014. _vagrant destoy deletes everything it has access to #30._ 08 07. Accessed 01 16, 2015. https://github.com/MSOpenTech/vagrant-azure/issues/30.
+
+Paul. n.d. "Improper Integrals." _Paul's Online Notes._ http://tutorial.math.lamar.edu/Classes/CalcII/ImproperIntegrals.aspx.
+
+Purplemath. n.d. "Fractional (Rational) Exponents." _Purplemath._ Accessed 2 9, 2015. https://web.archive.org/web/20150209204643/http://www.purplemath.com/modules/exponent5.htm.
+
+Spoke, DJ. 2007. "Million Miles Away." _Trance Number Ones Vol. 1._
+
+TheMathPage. n.d. "Negative Exponents." _TheMathPage._ Accessed 2 9, 2015. https://web.archive.org/web/20150209204749/http://www.themathpage.com/alg/negative-exponents.htm.
+
+withlove, interview by Elliot Wallace. 2015. _Question on Freenode ##math channel_ (2 10).
+
+  
+
+Index
+
+**No index entries found.**
+
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
