@@ -211,6 +211,79 @@ I would like to thank my classmates for their feedback on the project, and Jerem
 More complex version:
 
 I would like to create a robotic gardener. What it would do is automate the process of growing and harvesting crops. By combining small motors and sensors and a simple programmable computer system like an Arduino, a small self-contained box could be constructed that would accept a seed as input and produce crops and more seed as output. This could be used for easily growing many types of plant, by providing different growing instructions and seeds as needed. It could also be built in a way that tries to use energy from the environment efficiently, and avoid excessive use of mains power. This would be helpful in simplifying access to plant products, even plants that are not commonly available easily. For example, if one wants a type of plant like clover that is usually only available in the wild in summer, and not sold in the winter, but the person wants it available to them year round, then it could be grown by the robotic gardener.
+
+# Specification
+
+Page location: [Core project components](/components.htm)
+
+## Strategy
+
+See [the dedicated sub-page](strategy.htm).
+
+## Goals
+
+An Ember community should provide useful elements of survival: shelter, nutrition (including food and water), medical care, education, and information. It would do this as its fulfilment of its objective of managing the various needs of a society, by enabling people to be effective participants in that society.
+
+One role of Ember would be to provide goods. For this, it would be ideal for Ember to control as much of the supply chain as possible. That would allow efficient provision of the goods such as to reduce cost and ensure quality. That control of the supply chain would, in an ideal scenario, extend to all stages of the process, from production of the raw materials to component production to assembly to distribution, as well as shipping at all stages of the process. If Ember both controlled production of raw materials in a region and was the dominant institution working to ensure that those resources are used responsibly, it would of course be important to take the interest Ember has in using the resources sustainably into consideration.
+
+There should be a universally and easily accessible facility to allow the community to vote easily, with systems in place to prevent voter suppression or intimidation.
+
+## Project structure and implementation
+
+Ember will achieve these goals through creating individual components that each provide an integral part of the whole societal system. Implementation will probably need to be undertaken in stages.
+
+## Rationale
+
+Human society is sometimes unpredictable in the rights and safeties it affords. Consequently, a unified institution with the aim of remedying these issues should be established outside of the realms of traditional governmental structures. Participation in Ember communities shall be dependent on agreement to specified terms, to best protect the rights of the individuals making up the community.
+
+## Licensing
+
+Aside from sections 2 and 3 of the [Ember Library](/library), all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Strict Ember Freedom Requirements. This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its [ancillary projects](/ancillary) are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, software, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
+
+### Rationale
+
+These licensing requirements are present to attempt to prevent regressions in the availability and utility of the Ember project.
+
+### Ember Minimal Freedom Requirements (EMFR)
+
+For given Information to be compliant with this standard, the following must be true:
+
+*   Self-contained: All information necessary for the full and complete use of the Information must also be EMFR-compliant.
+*   Redistributable: The Information must be legally redistributable.
+*   Source included: The preferred form for editing the Information must be available and EMFR-compliant; when used by Ember or when presented as EMFR-compliant, if the Information is in a form that is not the preferred form for editing it, a copy of the Information in the preferred form for editing it must always be included with the other copy.
+*   Notice of terms: When used by Ember or when presented as EMFR-compliant, documentation of these requirements must be provided with all copies of the Information.
+*   Irrevocable: The restrictions on the Information that make it EMFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
+*   Unencumbered and unencumbering: The Information may not employ any means to prevent or hinder copying or using it freely (e.g. DRM); furthermore, if the Information enables access to information that employs such means, the Information must not be complicit in facilitating those restrictions (for instance, an EMFR-compliant app that allows streaming DRM-protected content to an HDMI content-protection–enabled monitor MUST enable that content to be used freely by the user, and may not simply pass protected content through to the monitor without being able to decrypt it and enable its free use by the user; software like Firefox's content-decryption-module sandbox is thus not EMFR-compliant).
+
+### Ember Freedom Requirements (EFR)
+
+This is the same as the Ember Minimal Freedom Requirements, with the following additional restrictions:
+
+*   Requiring non-misleading attribution: Attribution to the source of the Information must be required; if the Information is a derivative work, it must be made clear that it has been modified from the source information.
+*   Editable: It must be legal to modify the Information, and to redistribute both modified and/or unmodified copies of the Information.
+*   Mandatory publication: The Information must be promptly published and made widely available publicly at the cost of distribution or less.
+*   Copyleft: These requirements must be required to apply to all derivative works of the Information, and must be required to apply to all information packaged with the Information (e.g., non-EFR-compliant firmware may not be provided with an EFR-compliant kernel).
+*   Inherited: New information created using the Information must be EMFR-compliant.
+*   Provision as a service: When the Information is provided as a service (as in the case of software being run on a server), the Information must be made readily available to those who access the service, and documentation of these requirements must be provided with the service.
+*   Notice of terms: Documentation of these requirements must be provided with all copies of the Information.
+*   Restricted use: The Information may not itself be used as or as part of advertizement or propaganda without the agreement of its creator or creators, although it may be used as a tool for the creation of advertizement or propaganda.
+*   Irrevocable: The restrictions on the Information that make it EFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
+
+## Designs
+
+The Ember project should develop designs for things such as clothing, tools, and housing. Any finished design provided by the project should conform to some specific traits.
+
+*   Buildable: All technologies and materials needed to build, use, and disassemble the design must also meet these design requirements, and must be fully specified in this document, with reference within the design to those other design specifications, so that every design listed here can be built, used, and disassembled without any knowledge outside of this document, beginning with only the materials available naturally.
+*   Deconstructable: The design should be able to be disassembled and/or reassembled without any damage or loss to the materials used.
+*   Materials: All materials needed to build and use a design should be:
+    *   readily available (not rare or geographically restricted)
+    *   in a form that can be efficiently returned to a natural state if desired at the end of their lifespan (many plastics, for instance, would fail this criterion unless an energy-efficient tool for reversing their creation is available)
+    *   all technologies needed for their sourcing, processing, and end-of-life processing must meet these requirements
+    *   in a form that will return to a natural material over time (the goal of this rule is to avoid materials that result in nonbiodegradeable litter like the microparticles that synthetic textiles sometimes result in; it could probably be better written)
+*   Rugged: All item designs should be long-lasting (not disposable, able to function for many years), rugged, and able to function in adverse conditions.
+*   Safe: All designs should be safe to build, use, disassemble, and biodegrade.
+*   Reliable: All designs should work predictably and reliably.
+
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
