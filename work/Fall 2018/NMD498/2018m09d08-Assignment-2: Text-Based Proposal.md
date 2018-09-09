@@ -605,6 +605,16 @@ A simple programming language should be provided for easily writing portable alg
 *   All input/output to/from the language is as functions. All code must be in a function, with declared parameters, parameter types, variables needed, and return type. (The expense of the simple type system is that changing return values would break functions' API, since "out" parameters and/or pointers would not be available, but this should allow the code to be simple and readable, which is a priority for this language.)
 *   Output files should retain the structure and comments of the input files, thereby retaining readability as far as the target language permits.
 *   All behavior should be specified. Ambiguous programs should be impossible to write knowing the specification, and (as far as possible) the meaning of a program should be obvious and unambiguous _without_ the language specification. Programs that do not match the specification exactly should be entirely rejected, rather than produce warnings or have a best guess of its meaning made.
+## Library Section 1: Basic knowledge, to be included in the text of this specification
+
+This section of the library will require research and writing. It should consist of many short sections, each covering a topic. Each of these sections should list all other sections that must be understood as prerequisites for understanding it; the dependency tree of every section should culminate in a single section that gives a basic understanding of the dominant language of the reference (probably English, for the forseeable future), so that by translating that one section into another language, every other concept in the reference can be understood by reading its section and its section's prerequisites.
+
+## Library Section 2: Great cultural works, to be included as digital data as part of this specification
+
+
+## Library Section 3: The data held by the Ember cloud infrastructure
+
+This section of the library will presumably be too much information to be included in the Ember specification, although future information storage technology advances may render that less of an issue.
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
