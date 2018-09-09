@@ -1,4 +1,4 @@
-This document is based on the template available at http://jonippolito.net/teaching/capstone/text_proposal_template.html
+The structure of this document is based on "Text-based project proposal: Template" (http://jonippolito.net/teaching/capstone/text_proposal_template.html).
 
 Note that some sections have been re-ordered, to ensure that the most relevant and accessible information is presented first, with lengthier and more abstruse sections placed later.
 
@@ -43,10 +43,6 @@ The primary components comprising the project are currently unfinished, but a va
 
 The main output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archiving, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty git repositories used now for the project, as well as the structured archiving of more than eighteen million additional documents outside of the project.
 
-# Features of the proposed solution, in detail
-
-Due to its length, see the section of the same name at the end of the proposal.
-
 # Expected outcomes
 
 - Completed, stable software environment used for developing the project
@@ -64,7 +60,7 @@ Due to its length, see the section of the same name at the end of the proposal.
     - Ideally, the entirety of the knowledge assets (perhaps excluding section 3 of the library) would be available in a wristband storage format, or something similar, ensuring that every person carries the entirety of the contents of the project with them, essentially becoming human backups of the data, and with any single person having the knowledge necessary to recreate the entire project and all its technology if they want. Printed books should also be available and distributed to libraries.
     - The cloud computing infrastructure should use a decentralized, asynchronously resolving append-only data store, similar to blockchains, to ensure the preservation and longevity of data stored using it as best as possible.
 
-# Tasks list (at least twenty specific items)
+# Tasks list
 
 ## Planning and strategy
 - The most important tasks are also the most difficult. Developing assets (specifications, software, etc.) is trivial compared to developing communication skills and establishing allies. There's a reason there are several usable computer programs developed for this project, but no other people working on it.
