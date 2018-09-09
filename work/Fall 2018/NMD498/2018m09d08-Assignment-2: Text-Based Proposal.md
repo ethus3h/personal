@@ -95,6 +95,8 @@ The main output of the project so far has been the successful development of two
 These tasks are much less important than the above, but are much easier and comprehensible for me. Consequently, this is where most of my work so far has been.
 
 - Develop, write, test, and document specifications
+  - Community governance specifications
+  - Technology information and specifications (engineering, construction, information technology, etc.), without dependencies (enough information should be included to enable full construction of all technologies starting from nature, without any existing knowledge or technology/machinery)
 - Continue development of support software
 - Develop software for information technology environment (EITE)
   - Finish specifying and implement portable, trivial staging language (StageL)
@@ -107,9 +109,8 @@ These tasks are much less important than the above, but are much easier and comp
   - Other EITE development tasks: networking, data storage and distribution, etc.
 - Write/compile the library
   - Write, compile, and organize content for part 1 of the library
-    - Community governance specifications
-    - Technology information and specifications (engineering, construction, information technology, etc.), without dependencies: all information should be included in 
-    - Subject area information (history, mathematics, engineering, etc.)
+    - Specifications (from above)
+    - Subject area information (history, mathematics, linguistics, engineering, etc.)
   - Continue compiling part 2 of the library
 - Dependent on additional finances, land, and people, provide physical cloud computing infrastructure.
 - Figure out how to connect the community's network to the Internet, somehow (it shouldn't be dependent on external parties: it should follow the Internet Archive's model of being an AS with peering agreements) to allow accessing and preserving the knowledge there
