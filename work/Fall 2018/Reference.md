@@ -11,21 +11,7 @@ In a Google Doc, write a draft of the Text-based Proposal for your current capst
 http://nmdprojects.net/teaching_resources/text_based_proposal_template.html(Later you will re-create the timeline in Ganttproject and the budget in office software like Google Sheets or Excel.) (edited)
 
 COS312: 
-- Assigngment 1: 4 unity tutorials Upload Assignment: Week 1: Introduction to the Unity Interface (9/9/18)
-Content
-1.   Assignment Information
-
-    Due Date
-    Sunday, September 9, 2018 11:59 PM
-    Points Possible
-    100
-
-    Week 1: 
-
-    Install Unity and do these 4 tutorials (about 5 minutes each) https://unity3d.com/learn/tutorials/s/interactive-tutorials. Deposit on the Blackboard screen captures of the “done” page of each tutorial (4 of them, NOT the whole game folder). Also I suggest watching the Live Training: Prototyping standard assets (1:00:15) to get a feel for what is available in the Standard Assets.
-    Week_01_2018.pdf
-
-
+- Assigngment 1: 4 unity tutorials due Sunday, September 9, 2018 11:59 PM : 4 tutorials  https://unity3d.com/learn/tutorials/s/interactive-tutorials .screen captures of the “done” page of each tutoria
 - Assignenmnts on Black board (https://my.umaine.edu)
 
 NMD344:
