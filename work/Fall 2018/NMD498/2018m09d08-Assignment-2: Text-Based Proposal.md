@@ -4,6 +4,8 @@ Note that some sections have been re-ordered, to ensure that the most relevant a
 
 This *is* the scaled-down version of the project. It's much less ambitious now, no longer including a unified philosophy of existence and spirituality, two separate religions, a feature film trilogy, and a pop band.... -_-;
 
+At the bottom is a bunch of text related to the project. Most of it is probably pretty bad....
+
 # Abstract
 
 This proposal suggests a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
