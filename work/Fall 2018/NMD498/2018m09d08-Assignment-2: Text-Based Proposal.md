@@ -290,6 +290,305 @@ An Ember community is a group of individuals who have chosen to create an Ember 
 ## Services collective
 
 An Ember community's services collective is a not-for-profit that organizes the procurement and distribution of goods and services for its members, and perhaps those who are not its members as well. The goal of this organization would be to provide any needful things desired by its members for their lives. For instance, if a person chose to receive food through Ember, they could request that it be provided in exchange for labor. Their labor would help contribute to services requested in the future by them or other Ember members. The organization should have 24/7 available buildings staffed by Ember members from whom aid could be sought, such as the furnishing of meals, shelter, clothing, access to information, or other services, in exchange for labor. That way, if an Ember member is in trouble in a strange town, for instance, with no money, identification (beyond their own body), or other resources, they could go to the local Ember building to receive any services they desire; they could even build up credit in preparation for such an incident by working for the Ember collective prior to taking a trip, for instance, so they would have already earned any services they might want.
+## Introduction
+
+This section documents the Ember computing environment: a centralized append-only information store, a computer operating system integrated with that information store, and related specifications. This is a work-in-progress draft, and everything here is subject to change and is not presently suited for implementation.
+
+## Overview
+
+The computing environment will consist of the following components:
+
+*   Development principles, describing the process to use for creating the computing environment
+*   Data formats
+    *   Specifications
+    *   Reference implementations
+*   Client app
+*   Server apps:
+    *   Public-facing API
+    *   Search engine
+    *   Storage backend
+
+## Development principles
+
+### Prerequisites for code to be added to the repository
+
+*   Code must be readable and documented.
+*   Code must not cause or have failing tests.
+*   Code should include thorough automatic test coverage.
+*   Code must address a deviation from the current specification (bug, missing feature, etc.), and may not contain other code.
+
+### How issues should be prioritised
+
+Ordered from highest priority to lowest priority
+
+1.  Security vulnerabilities
+2.  Functional regressions
+3.  Incorrect results
+4.  Crashes and similar critical usability issues
+5.  Slow code with a significant impact on usability
+6.  Aesthetic regressions
+7.  Minor usability issues
+8.  Slow code with a moderate impact on usability
+9.  Missing features
+
+## Implementation process flow
+
+This diagram shows conceptually how data flows at a high level in the process of running an EITE document using an interpreter (a compile-then-run system would use different data flows, but the overall effect would be equivalent). The non-bracketed elements represent programmed processes. The bracketed elements represent data structures. A circle ○ represents data storage persists for the lifetime of the document being open or being executed (not necessarily in RAM: for a long-running background task, like a periodic mail fetcher, this data could be moved to disk or the cloud if useful to free up local memory). Other data structures can be buffered/streaming FIFOs that discard input as it becomes unneccesary. The arrows represent data flows into and out of data storage or the system. This diagram assumes a Dc sequence as input; other forms of input would need a separate conversion/interpretation step for this.
+
+        External I/O: document source ──────────────╮
+               (as Dc sequence)                      │
+                                                     ↓
+   \[○ Document execution state\] ╮    ╭ \[○ Document as Dc sequence\] ←╮
+                ↑               ↓    ↓                              │
+                ╰───── Document execution loop:  ───────────────────╯
+  Other External I/O ← iterates over tokens (Dcs)
+                                   ↓
+                              Renderer: converts and
+                              and writes to renderer
+                              buffer visible document
+                              elements
+                                     ↓
+                              ⎡ Renderer buffer: holds     ⎤
+                              ⎢ representation of document ⎥
+                              ⎢ in the format desired for  ⎥
+External I/O: render target ← ⎢ output (terminal text for  ⎥
+(e.g. terminal or browser)    ⎢ a CLI, HTML for a browser, ⎥
+                              ⎢ bitmap for a raster        ⎥
+                              ⎢ monitor or HTML Canvas,    ⎥
+                              ⎢ other formats for export,  ⎥
+                              ⎣ etc.)                      ⎦
+
+## Command-line interface (mostly unimplemented)
+
+The EITE provides the following user-facing command-line scripts.
+
+`eite`
+
+This is the main interface for EITE. Synopsis: `eite [check|run|run-tests|source-to-tree|tree-to-source] (<path-to-document>|-)`
+
+The EITE provides the following additional command-line scripts that it uses internally.
+
+`eite-check`
+
+Return false if the specified source document cannot be parsed. Synopsis: `eite-check (<path-to-document>|-)`
+
+`eite-run`
+
+Run the specified document. Synopsis: `eite-run (<path-to-document>|-) [--graphical]`
+
+`eite-run-tests`
+
+Run test suite. Synopsis: `eite-run-tests`
+
+`eite-source-to-tree`
+
+Given a source file, print out an AST representation of the document. Synopsis: `eite-run (<path-to-document>|-) [--graphical]`
+
+`eite-tree-to-source`
+
+Given an AST representation of a document, print out the source file for it. Synopsis: `eite-run (<path-to-document>|-) [--graphical]`
+
+## Data formats
+
+### Test suite
+
+eet
+
+EITE execution test: given an input document in a specified format, run it and compare its output (the printable state of the document after it exits) to the expected output.
+
+ept
+
+EITE parse test: given an input document in a specified format, parse it and compare its representation as a Dc list to the expected representation.
+
+### EITE Language
+
+#### Objective
+
+Develop a machine-readable language that can be source-to-source translated into other languages. It should be practically useable as a shell as well as for running stored programs. Possible target languages to investigate include Bash, Rakudo Perl 6, NQP, C--, C, PyQt5, and JQuery.
+
+#### Language profiles
+
+EITE Language programs may optionally declare a non-default language profile to use: Core, Basic, and Dangerous (the default is "Standard"). Core and Basic both restrict the program to a subset of the language. The Basic language interpreter is written using the Core subset of the language, and provides useful shortcuts to use in the development of the interpreter for the Standard profile. The Default language interpreter is written using the Basic subset of the language. The Dangerous profile allows using language features which are probably a bad idea to use, but may be needed in some cases.
+
+#### Dcs
+
+The core unit of the EITE Language is the Dc (Document Component). The defined Dcs are listed in DcData.csv. An EITE Language document is a list of Dcs, and a file is considered _structurally valid_ if it can be interpreted as such. A Dc can have a syntactical pattern that it can require if it is to be meaningful. For example, a marker to _begin_ a section of a document might be required to have a matching _end_ marker. A document is only _syntactically valid_ if the usage of each Dc contained within it conforms to the Dc's defined syntax, even if the document is otherwise structurally valid.
+
+##### Reading DcData.csv
+
+DcData.csv contains nine columns, each of which gives some information about a given Dc.
+
+From left to right, the columns are: ID, Name, Combining class, Bidirectional class, Simple case mapping, Type, Script, Details, and Description.
+
+The "ID" column specifies the number used to refer to a given Dc. Once an ID has been specified in a stable version, its meaning will not change in future versions.
+
+The "Name" column specifies an informative name for the Dc. The names may change in future versions if the current names seem suboptimal. They should not be relied on as unique or stable identifiers. If a name is prefixed with "!", then that Dc is deprecated. Names _should_ be unique within any given version of DcData.csv, although errors in it could compromise that (it is not currently checked by a computer).
+
+"Combining class" column: See below.
+
+"Bidirectional class" column: See below.
+
+"Simple case mapping" column: This column contains the ID of the uppercase form of characters with the "Ll" type, and the ID of the lowercase form of characters with the "Lu" type.
+
+"Type" column: See below.
+
+The "Script" column indicates the script or other set to which the character belongs. Values needing further explanation include "Semantic", "DCE", "DCE sheets", "Noncharacters", "DCE versions", "Encapsulation", "EL Syntax", "EL Routines", and "EL Types".
+
+The "Details" column contains various additional information about characters, as a comma-separated list.
+
+*   List entries beginning with ">" are cross-references to related Dcs. List entries beginning with "<" are decompositions.
+*   List entries beginning with "(" indicate the syntax (parameter type signatures) for EITE Language routines.
+*   List entries beginning with ":" indicate the required syntax for the given Dc, using a form similar to regular expressions:
+    *   a bracketed list of Dcs \[\] indicate a set of possible Dcs
+    *   a bracketed list of Dcs with a ^ at the beginning indicates an inversion of the set
+    *   \+ indicates 1 or more of the preceding item
+    *   a Dc ID in brackets with a colon before the closing brackets indicates any syntactically correct sequence of Dcs beginning with the enclosed Dc ID
+    *   "~" represents the Dc the syntax of which is being defined
+
+The remaining list entries are aliases (alternate names for the characters, for ease of look-up).
+
+The "Description" column contains additional comments regarding the Dc.
+
+Three columns' contents are directly inherited from the Unicode Standard: Combining class (inherits Unicode's "Canonical\_Combining\_Class property"), Bidirectional class (inherits Unicode's "Bidi\_Class" property), and Type (inherits Unicode's "General\_Category" property). The "Simple case mapping" and "Script" columns should also be inherited from Unicode in some manner, but are not at present. For characters not included in Unicode, a reasonable value is chosen in the pattern of the values used by Unicode. If there are discrepancies between this value and Unicode's value for a given character that is in both sets, this should be reported as an error in the EITE Language standard. Unicode's values should take precedence.
+
+"Type" column values also extend the Unicode Standard's possible values with the "!Cx" category, denoting characters that do not fit neatly into Unicode's existing categories.
+
+##### Notes on specific Dcs
+
+###### Dcs 241–245: Mode indicators
+
+Inclusion of the mode indicators in documents is _optional_. The selected mode expresses information about the document's expected execution environment. These modes are shortcuts that set up the environment in advance so that the document does not need to contain specific code to set up these contexts. This lets the resulting documents more concise and readable.
+
+###### Dcs 246–255: Source formatting control
+
+Dcs 246 through 255 control the formatting of the EM format version of a document.
+
+#### Document formats
+
+There are six file formats defined by this specification. Five of them (ELD, ELS, ELQ, DELQ, SELQ, and ELQ) are general-use formats, while the fifth (ERD, not yet specified) is a special-purpose format with a subset of the other formats' capabilities. ELQ and DELQ are intended as an intermediate, more-readable format, and are not intended for information interchange (they are much larger than the other formats for a given document, in general).
+
+To allow backward compatibility, once a completed version of this standard has been released, the meaning of any given Dc will not change. That will ensure that existing documents retain their meaning when interpreted using a newer version of the specification. While they are semantically stable, they are not necessarily presentation-stable (a Dc representing "A" in one version may look different from one version to the next, but it won't change to represent a "B"). Implementations should be able to render a document exactly as determined by earlier versions of the specification as well. A syntax should be provided to indicate the version of the specification a given Dc, region of Dcs, or document should be displayed using (exactly, not just semantically), although Dcs have not been created for this purpose yet.
+
+There is a one-to-one correspondence between ELD, ELS, ELQ, and DELQ files (for any given document in one of those formats, there is only one way to represent it in the other formats), but not for ERD files (because ERD files can only represent a subset of EITE Language documents). That means that documents can be losslessly round-trip-converted between those four formats. _However_, when converting from an ELS file, if it does not have a version specified, its behavior may change due to changes in the mapping between source code and Dc IDs. Source form should be able to represent syntactically invalid documents unambiguously. Whether structurally invalid source-form documents should be able to be represented as structurally valid Dc sequences is debatable.
+
+ELD, ELS, and ELQ files are subsets of ASCII text files, with lines delimited by 0x0A (line feed). Bytes 0x00 through 0x09, 0x0B through 0x1F, and 0x7F through 0xFF (all ranges inclusive) are disallowed. Files must end with 0x0A. This may later be changed to use UTF-8.
+
+At the end of each format's summary (except for EMR), a simple "Hello, World!" document is given in the format.
+
+##### EITE Language documents (ELD), .eld
+
+EITE Language documents are a list of Dcs. The Dcs mappable to the permitted ASCII characters are represented by those ASCII characters, with the exception of 0x40 "`@`" (Dc 1). All other Dcs are represented by "`@`" followed by the integer Dc ID followed by a space, such that, for instance, "`@`" would be represented as "`@1` ".
+
+    Hello, World!
+
+##### EITE Language source files (ELS), .els
+
+EITE Language source files are a programming language–inspired representation of EITE Language documents. It is the most readable of the formats, but also the most technically complex.
+
+    dc:
+        Hello, World!
+
+or more idiomatically (but not the exact equivalent of the others in terms of the Dcs used),
+
+    say 'Hello, World!'
+
+which would be
+
+    256 258 260 262 # . . . .
+    264 263 57 86 # . . H e
+    93 93 96 30 # l l o ,
+    18 72 96 99 # . W o r
+    93 85 19 261 # l d ! .
+    259 # .
+
+in Dcs, or even more simply the `say` could be omitted since literals are printed by default: `'Hello, World!'`.
+
+##### EITE Language sequence files (ELQ), .elq
+
+A list of Dc numbers. Four Dcs are given per line, separated by spaces.
+
+    57 86 93 93
+    96 30 18 72
+    96 99 93 85
+    19
+
+##### Documented EITE Language sequence files (DELQ), .delq
+
+A variant of the EMS format for easier reading: after each line, the printable ASCII equivalent of each Dc is given following `0x202320`, each separated from the next by a space. If there is no printable ASCII equivalent, or the character is a space, "." is used instead.
+
+    57 86 93 93 # H e l l
+    96 30 18 72 # o , . W
+    96 99 93 85 # o r l d
+    19 # !
+
+##### Source-Documented EITE Language sequence files (SELQ), .selq
+
+A variant of the ELQ and ELS formats for easier reading: the ELS source version is given in a comment in the style of the DELQ format, but the number of Dcs on each line is determined by the source lines to which they correspond.
+
+    # dc:
+    57 86 93 93 96 96 30 18 72 96 99 93 85 19 #     Hello, World!
+
+##### EITE Record Documents (ERD), .erd
+
+This is a special format in the "Structured" mode used for structured record storage in the EITE cloud. It is not yet defined, but will most likely be a subset of one of the other formats.
+
+#### Structures in the EITE Language
+
+The EITE Language uses the following main types of entity to represent information:
+
+Type
+
+Types are templates describing the structure of objects. They are known as prototypes or classes in most programming languages, depending on whether objects described by them inherit changes to the types made after the object was created. (Objects can be used as types by casting.) Type names begin with a capital letter when in source form.
+
+Object
+
+An object is an entity that conforms to a given type (an _instance_ of that type). The most general type is _object_, and there is no need for an object to conform to any other type.
+
+Block
+
+A block is a group of statements. The routine `block` indicates a separation between blocks, although in most cases block division is indicated implicitly by a `:` at the end of a line (in which case the block indentation level increases), or by the decrease in whitespace marking a decrease in block indentation level.
+
+Project
+
+A project is a single document, and if relevant, any other documents maintained as part of that document.
+
+Module
+
+A module is one or more Library-mode documents that have a package name for addressing the things they provide.
+
+List
+
+A list is an ordered list of objects. An inline list is begun by `[` and terminated by `]`. Example: `listName=["a" [5 6] $b]; say $listName[0]` stores three Objects in a list named `listName` and prints `a`. Objects can be given custom identifiers for addressing them by separating them using `:` , in which case they should be additionally separated by `,` . Example: `listName=[foo: "a", bar: [5, 6], baz: b]; say $listName[foo]`.
+
+String
+
+A string is a list of Dcs. (Because all Dcs can be used in strings, any data type can be cast to a string.) An inline list is begun by `"` and terminated by a second `"`. In source form, `"` and `\` must be escaped using `\`. Example: `stringName="Hello, \"World\"!"` stores the string `Hello, "World"!` in a string named `stringName`. Strings can be concatenated by placing them beside each other: `a="foo"; b="baz"; say $a"bar"$b` prints `foobarbaz`. String literals can be specified without the quotation marks when they are used as parameters to a routine, because then they won't be confused for routine invocations. They need to have quotation marks if they look like numbers, though. I \*think\* context can be used to ensure that they aren't mistaken for types, but I'm not sure about that.
+
+Routine
+
+A routine is a set of instructions for a computer to follow as part of the process of interpreting a document. Similar concepts are known as functions or subroutines in most programming languages, or as methods when used within objects. Routines have an associated structure that indicates what parameters may be passed to it; they will be accessible through a list named `!par`, and if named, then also through their names. Specifying a return type for a routine is optional. If none is specified, it will be treated as "void", meaning no return type is expected. It is denoted by `()` followed by a block of statements, with its structure, if desired, within the parentheses. Example: `String foo(String, String qux?, *){say $!par[1]$!par[2]$qux}; foo("bar" "baz"); foo("bar" 6 "qux") # qux is 6, param 0 is bar, param 1 is 6, and param 2 is qux; foo(qux=6 "bar") # qux is still 6, but now parameter 0 is 6 and 1 is bar` represents an unnamed (positional-only) string parameter, an optional string parameter named "qux", and an unknown number (zero or more) of additional parameters of any type, and prints
+
+    bazbaz
+    6qux6
+    bar6
+
+. Because literals are printed by default when at the beginning of a statement, the "invoke" routine must be used to invoke a routine in some cases, such as when referencing a routine by a name stored in a variable or constant: `a="I! Am! An! Awkward! Identifier!"; $a(){say "blob"}; invoke $a`. An alternative syntax for routine invocation, omitting parentheses, can be used if desired: `foo(String, String qux?){}; foo qux=6 bar`
+
+Operator
+
+An operator is a short notation or syntax pattern for some common routines (e.g., `Number a + Number b` in place of `add(Number a, Number b)`, or `if true; then say 'Hello, World!'; else die` in place of `if(true, (){say 'Hello, World!'}, (){die})`).
+
+Identifier
+
+An identifier is a name for an object. They are indicated by `$`, except for identifiers for routines, which do not have the `$` prefix. Before the `$` a type signature is often present. Except for routines, `!` following the `$` indicates a language-defined identifier, and must be escaped if used as the first character of a custom identifier. For routines, the pattern is inverted: `!` before an identifier indicates that a custom routine is being referenced (it must be included in calls to `invoke`, as well). `(` following the `$` indicates a special value, not a normal identifier, using Bash's syntax: `$(say "foo"; say "bar")` represents the output of the code between the `(` and the `)`, and `$(<foo)` represents the contents of the file `foo`.
+
+Structure
+
+A structure is the definition of what the structure is that an entity can have, similar to type definitions or type signatures in some programming languages. A type can contain named Structures without any values for defining an interface.
+
+Statement
+
+A statement is a logical line of a document. It can be an invocation of a routine, or a declaration of an entity's structure or value.
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
