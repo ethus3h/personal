@@ -80,6 +80,27 @@ The primary output of the project so far has been the successful development of 
 - Ensure that organization's financial stability (through sources such as an endowment and grants)
 - Transfer control of the project's assets (Web presence, etc.) to that organization 
 
+## Development
+
+These tasks are much less important than the above, but are much easier and comprehensible for me. Consequently, this is where most of my work so far has been.
+
+- Continue development of support software
+- Develop software for information technology environment (EITE)
+  - Finish specifying and implement portable, trivial staging language (StageL)
+  - Port existing EITE implementation to StageL
+  - Provide and implement StageL inside EITE
+  - Get text rendering implemented in EITE
+  - UI widgets
+  - Implement simple document editor in EITE
+  - Complex text rendering support
+  - Other EITE development tasks: networking, data storage and distribution, etc.
+- Write/compile the library
+  - Write, compile, and organize content for part 1 of the library
+    - Community governance specifications
+    - Subject area information (history, mathematics, engineering, etc.)
+  - Continue compiling part 2 of the library
+- Dependent on additional finances, land, and people, provide physical cloud computing infrastructure.
+- Figure out how to connect the community's network to the Internet, somehow (it shouldn't be dependent on external parties: it should follow the Internet Archive's model of being an AS with peering agreements) to allow accessing and preserving the knowledge there
 
 # Resources needed
 - Time
