@@ -13,14 +13,9 @@ There is also no project to ensure the availability of communities managed in th
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
 
-## Sources as evidence that this is problem
+## Evidence of the problem
 
-- https://www.archiveteam.org/
-- https://archive.org/download/DigitalAmnesiaDocumentary/DigitalAmnesiaDocumentary.HD.mp4
-- https://medium.com/mydata/gdpr-data-portability-is-a-false-promise-af460d35a629
-- https://mydata2017.org/presentations/
-- https://medium.com/mydata
-- https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire
+Due to its length, see the section of the same name at the end of the proposal.
 
 # Three existing projects that come closest to solving
 - MusicBrainz
@@ -50,6 +45,8 @@ The main output of the project so far has been the successful development of two
 ## Alignment of the approach to my and others' definitions of new media
 
 # Features of my proposed solution, in detail
+
+Due to its length, see the section of the same name at the end of the proposal.
 
 # Expected outcomes
 
@@ -122,3 +119,15 @@ These tasks are much less important than the above, but are much easier and comp
   - Financial
   - Personal (finances; energy and focus; time availability)
   - Organizational
+
+## Evidence of the problem
+
+- https://www.archiveteam.org/
+- https://archive.org/download/DigitalAmnesiaDocumentary/DigitalAmnesiaDocumentary.HD.mp4
+- https://medium.com/mydata/gdpr-data-portability-is-a-false-promise-af460d35a629
+- https://mydata2017.org/presentations/
+- https://medium.com/mydata
+- https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire
+
+# Features of my proposed solution, in detail
+
