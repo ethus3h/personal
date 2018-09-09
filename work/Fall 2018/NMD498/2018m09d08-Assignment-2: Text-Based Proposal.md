@@ -62,7 +62,7 @@ The primary output of the project so far has been the successful development of 
 
 ## Planning and strategy
 - The most important tasks are also the most difficult. Developing assets (specifications, software, etc.) is trivial compared to developing communication skills and establishing allies. There's a reason there are several usable computer programs developed for this project, but no other people working on it.
-- My role in this project should be to coordinate and facilitate it to the point until someone more capable is available and/or until it is self-managed, and my presence or absence would have no appreciable effect on it.
+- My role in this project should be to coordinate and facilitate until a person or persons more capable is/are available, and/or until it is self-managed, and my presence or absence would have no appreciable effect on it.
 
 ## People and communication
 - Establish connections with people. Human connections will be critical for the success of this project.
