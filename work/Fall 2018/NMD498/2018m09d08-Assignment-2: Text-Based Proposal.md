@@ -156,47 +156,17 @@ The eighth trait is _inequality_. Unfortunately, this likely may affect the proj
 # Needs work
 
 will investigate: humans standerd of living
-ty
-ooh ooh ooh ooh stayin alive
-:3
 there is no *successful* project
-perhaps
-lol
 well
 nothing doing enough, i guess.
-(i guess you can't read this)
-hyperbole?
-oh
-lo
-*lol
-i assumed you had'nt ebacues you were still saying the things i'd wrritten a while before
-m
-well, my mention of the word "successful" preceded your mention of it quite significantly, is all
 goal instead of problem: disastrously
-lol yeah
-this is the scaled back version
-it no longer includes the unified framework for spirituality and philosophy, the two separate religions, the feature film trilogy, or the pop band
 communicate better how its use of the Internet fits in with the non-dependency design goal
 Extension and refinement *is* the innovation
-yeah i guess
-uh
-i dunno what ur asking, sorry
 appropriative but dependencyless
-lol
 only adults would be practical for this project to serve
-awkward
-hm
-I guess, dunno how to make it better rrly
-uh yeah
-like basically no web services do
-that's reasonable
-they're just my scratch pad
-uh
-sure they could, just not keep them with them in the community at the moment
 presumably those issues would be resolved by such time as that were relevant
 by the time people could live in the community full time
 presumably it would have child protection etc in place
-i did'nt write all the notes yensterday
 
 I have generally advocated for the use of an information technology system to manage and facilitate work by individuals, by tracking what needs to be done and what skills people have, and offering jobs to people with the relevant skills. This would allow the individuals to bypass the difficult job search and application process, which uses a lot of individuals’ time and energy without producing any real value from that expenditure. Then, when a job is completed, the person who did the work would be granted credits corresponding to the work they did, which could then be exchanged for goods or services. This type of system could be implemented as a single, centralized system. However, it could also be implemented as a decentralized system.
 
