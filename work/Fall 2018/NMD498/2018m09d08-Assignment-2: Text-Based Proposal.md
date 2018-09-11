@@ -713,8 +713,6 @@ Node — a new document someone created… — type: Digital data Has title (fil
 A full DCE editor à la Wreathe isn’t necessarily necessary for Ember’s web-based administration — just use the all-in-one DCE editor / Ember browser / etc. in Wreathe if one wants desktop-power-level DCE editing in Wreathe [possibly meant to write Ember there?]. Plus, DCE editing can be easily implemented in a web environment without worrying about rendering or display so much — just work with the raw Dcs if that kind of “advanced” functionality is desired, if necessary…?
 
 
-One role of Ember would be to provide goods. For this, it would be ideal for Ember to control as much of the supply chain as possible. That would allow efficient provision of the goods such as to reduce cost and ensure quality. That control of the supply chain would, in an ideal scenario, extend to all stages of the process, from production of the raw materials to component production to assembly to distribution, as well as shipping at all stages of the process. If Ember both controlled production of raw materials in a region and was the dominant institution working to ensure that those resources are used responsibly, it would of course be important to take the interest Ember has in using the resources sustainably into consideration.
-
 There are a large number of works of great cultural importance. They have touched on a number of meaningful subjects, but several subjects have stood out particularly for me: ethics, rights, prejudice and bigotry, and theology. These are elements of society that play important roles, influencing the ways people live and experience their daily lives.
 
   
