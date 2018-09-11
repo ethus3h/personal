@@ -10,9 +10,9 @@ This proposal suggests a project to develop and facilitate collaboration on a sp
 
 # The problem
 
-There is no project to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. This results in wasted effort on developing redundant proprietary technologies, regressions in standards of living caused by the unavailability of proprietary systems, and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain).
+There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. This results in wasted effort on developing redundant proprietary technologies, regressions in standards of living caused by the unavailability of proprietary systems, and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain).
 
-There is also no project to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. This results in human suffering and inequality, catastrophic cultural and historical loss, and prolonged global ecological crises caused by government and corporate apathy and abuse.
+There is also no project that is sucessfully ensuring the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. This results in human suffering and inequality, catastrophic cultural and historical loss, and prolonged global ecological crises caused by government and corporate apathy and abuse.
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
 
@@ -24,6 +24,14 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 - Internet Archive
 
 # General approach
+
+communicate better how its use of the Internet fits in with the non-dependency design goal
+Extension and refinement *is* the innovation
+appropriative but dependencyless
+only adults would be practical for this project to serve
+presumably those issues would be resolved by such time as that were relevant
+by the time people could live in the community full time
+presumably it would have child protection etc in place
 
 This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. The communites should attempt to provide a consistent and complete experience to the people who are part of them, without depending on support from external infrastructure, technology, or government. Relying on external support increases fragility. 
 
@@ -68,7 +76,7 @@ The main output of the project so far has been the successful development of two
 - Establish connections with people. Human connections will be critical for the success of this project.
 - Develop effective communication skills and strategies. Without being able to get allies in developing the project, it would be dead in the water.
   - That means being able to express clearly, succinctly, and persuasively the following (at least): _what_ this project is, _why_ it is important and achievable, and _how_ to help with it.
-  - This includes both in writing and in person. My in-person speaking on it is particularly disastrously bad.
+  - This includes both in writing and in person. Improving my in-person communication skills is especially important (my in-person speaking on this project is disastrously bad).
 
 ## Finances, budget, and stability
 - Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration (`futuramerlin.com`) is good through the end of 2022, at which point it will need renewal, which is about US$10/year.)
@@ -105,7 +113,7 @@ These tasks are much less important than the above, but are much easier and comp
     - Subject area information (history, mathematics, linguistics, engineering, etc.)
   - Continue compiling part 2 of the library
 - (Dependent on additional finances, land, and people) Provide physical cloud computing infrastructure
-- Figure out how to connect the community's network to the Internet, somehow (it shouldn't be dependent on external parties: it should follow the Internet Archive's model of being an AS with peering agreements) to allow accessing and preserving the knowledge there
+- Figure out how to connect the community's network to the Internet, somehow (its connection shouldn't be dependent on external parties: it should follow the Internet Archive's model of being an AS with peering agreements) to allow accessing and preserving the knowledge there. In accordance with avoiding dependencies on external resources, the Internet should likely not be relied on for providing connectivity, although at least in the beginning it is useful for communication to facilitate the project, and perhaps the benefits of providing Internet-based remote login to the information technology environment would outweigh the risks.
 
 # Resources needed
 - Communication skills
@@ -132,6 +140,9 @@ These tasks are much less important than the above, but are much easier and comp
 
 # Features of the proposed solution, in detail
 
+## Design goals
+
+- 
 
 # Alignment of the project approach to the traits of the currently emerging new media
 
@@ -155,18 +166,6 @@ The eighth trait is _inequality_. Unfortunately, this likely may affect the proj
 
 # Needs work
 
-will investigate: humans standerd of living
-there is no *successful* project
-well
-nothing doing enough, i guess.
-goal instead of problem: disastrously
-communicate better how its use of the Internet fits in with the non-dependency design goal
-Extension and refinement *is* the innovation
-appropriative but dependencyless
-only adults would be practical for this project to serve
-presumably those issues would be resolved by such time as that were relevant
-by the time people could live in the community full time
-presumably it would have child protection etc in place
 
 I have generally advocated for the use of an information technology system to manage and facilitate work by individuals, by tracking what needs to be done and what skills people have, and offering jobs to people with the relevant skills. This would allow the individuals to bypass the difficult job search and application process, which uses a lot of individuals’ time and energy without producing any real value from that expenditure. Then, when a job is completed, the person who did the work would be granted credits corresponding to the work they did, which could then be exchanged for goods or services. This type of system could be implemented as a single, centralized system. However, it could also be implemented as a decentralized system.
 
