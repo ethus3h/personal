@@ -41,6 +41,8 @@ The primary components comprising the project are currently unfinished, but a va
 
 The main output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archiving, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty version control repositories used now for the project, as well as the structured archiving of more than eighteen million additional documents outside of the project.
 
+Other parts of the project are also begun. (The technical specifications and other data produced so far for the project are not included in this proposal document.)
+
 # Expected outcomes
 
 - Completed, stable software environment used for developing the project
