@@ -14,7 +14,16 @@ There is also no project that is sucessfully ensuring the availability of commun
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
 
-# Existing work towards solving this problem
+## Evidence of the problem
+
+- _Digital Amnesia_ (2014 film). https://archive.org/download/DigitalAmnesiaDocumentary/DigitalAmnesiaDocumentary.HD.mp4
+- Madge, Robert. "GDPR: data portability is a false promise". 2017 July 4, in _MyData_. https://medium.com/mydata/gdpr-data-portability-is-a-false-promise-af460d35a629
+- "National Museum of Brazil fire". In _Wikipedia_. https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire
+- Browne, Malachy. "YouTube Removes Videos Showing Atrocities in Syria". 2017 Aug. 22, in _The New York Times_. https://web.archive.org/web/20171004135730/https://www.nytimes.com/2017/08/22/world/middleeast/syria-youtube-videos-isis.html
+- "Deforestation". In _Wikipedia_. https://en.wikipedia.org/wiki/Deforestation
+- ArchiveTeam. "A Million Ways to Die on the Web". https://www.archiveteam.org/index.php?title=A_Million_Ways_to_Die_on_the_Web
+
+## Existing work towards solving this problem
 - The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union.
 - The GNU (https://www.gnu.org/) and KDE (https://www.kde.org/) communities have produced a large number of successful free/libre/open-source software packages, which are already in use to facilitate development of this project.
 - The United States of America (https://www.wikimedia.org/) was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
@@ -120,15 +129,6 @@ These tasks are much less important than the above, but are much easier and comp
   - Financial
   - Personal (finances; energy and focus; time availability)
   - Organizational
-
-# Evidence of the problem
-
-- _Digital Amnesia_ (2014 film). https://archive.org/download/DigitalAmnesiaDocumentary/DigitalAmnesiaDocumentary.HD.mp4
-- Madge, Robert. "GDPR: data portability is a false promise". 2017 July 4, in _MyData_. https://medium.com/mydata/gdpr-data-portability-is-a-false-promise-af460d35a629
-- "National Museum of Brazil fire". In _Wikipedia_. https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire
-- Browne, Malachy. "YouTube Removes Videos Showing Atrocities in Syria". 2017 Aug. 22, in _The New York Times_. https://web.archive.org/web/20171004135730/https://www.nytimes.com/2017/08/22/world/middleeast/syria-youtube-videos-isis.html
-- "Deforestation". In _Wikipedia_. https://en.wikipedia.org/wiki/Deforestation
-- ArchiveTeam. "A Million Ways to Die on the Web". https://www.archiveteam.org/index.php?title=A_Million_Ways_to_Die_on_the_Web
 
 # Features of the proposed solution, in detail
 
