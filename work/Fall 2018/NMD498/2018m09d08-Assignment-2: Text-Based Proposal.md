@@ -547,6 +547,48 @@ External I/O: render target ← ⎢ output (terminal text for  ⎥
                               ⎣ etc.)                      ⎦
 ```
 
+#### Possible client execution flow
+
+Procedures outline
+
+Main:
+
+*   Greet user
+*   Create a ProcessManager
+*   Start Bootstrapper thread
+*   Wait for Bootstrapper to indicate that all SessionManager threads have finished
+*   Exit
+
+  
+
+Bootstrapper:
+
+*   For each interaction context (e.g. terminal, display, etc) found, create a corresponding Context object indicating the traits and capacities (e.g. display resolution, input interfaces such as a mouse or keyboard, capacity for direct access to the hardware, size of a terminal, etc.) of that context, and start a session manager thread (passing the relevant Context object to it so it knows what to do).
+*   Wait until each SessionManager is terminated, or until any one SessionManager sends a shutdown signal and no other sessions are active, or until any session sends a global override shutdown (in which case other logged-on users’ accounts’ states should be allowed to finish being saved if saving is still in process, to the cloud if online, and to disk if offline).
+*   Indicate to main thread that all session threads have finished.
+
+  
+
+SessionManager:
+
+*   Greet the user.
+*   Create a ProcessManager.
+*   Start an ApiClient thread to manage any requests to the server.
+*   Display a login screen.
+*   When a user attempts to log in, check the data with the ApiClient, or with a local cached configuration.
+
+*   If the credentials are correct:
+
+*   Start a CommandHandler thread to process instructions from the UserInterface.
+*   Start a UserInterface thread, passing the session manager’s Context object to it.
+*   Wait until the UserInterface thread indicates that the session has ended.
+*   Go to step 4.
+
+*   If the credentials are incorrect:
+
+*   Inform the user.
+*   Go to step 4.
+
 ### StageL
 
 #### Overview
@@ -672,65 +714,6 @@ Ideas, knowledge, and art become economically motivated, and so copyright and pa
 
 I would like to attempt to improve on the existing systems that have developed for solving these problems. I would like to undertake this project in an incremental, scalable manner, rather than creating a complex system that would need to be implemented all at once to be effective. That way, small improvements could be made without attempting to undertake the insurmountable task of improving larger components of society at once. This incremental development would allow for the strengths of the existing systems to persist, as well.
 
-
-*   Implement any desired changes using the TDD procedure.
-
-  
-
-  
-
-The Test-Driven Development Procedure
-
-  
-
-*   Write the simplest possible failing unit test that represents the desired change.
-*   Make the minimum changes to code necessary to make that test pass.
-*   If necessary, refactor the code and/or test suite.
-*   Repeat from step 1.
-
-  
-
-  
-
-Procedures outline
-
-Main:
-
-*   Greet user
-*   Create a ProcessManager
-*   Start Bootstrapper thread
-*   Wait for Bootstrapper to indicate that all SessionManager threads have finished
-*   Exit
-
-  
-
-Bootstrapper:
-
-*   For each interaction context (e.g. terminal, display, etc) found, create a corresponding Context object indicating the traits and capacities (e.g. display resolution, input interfaces such as a mouse or keyboard, capacity for direct access to the hardware, size of a terminal, etc.) of that context, and start a session manager thread (passing the relevant Context object to it so it knows what to do).
-*   Wait until each SessionManager is terminated, or until any one SessionManager sends a shutdown signal and no other sessions are active, or until any session sends a global override shutdown (in which case other logged-on users’ accounts’ states should be allowed to finish being saved if saving is still in process, to the cloud if online, and to disk if offline).
-*   Indicate to main thread that all session threads have finished.
-
-  
-
-SessionManager:
-
-*   Greet the user.
-*   Create a ProcessManager.
-*   Start an ApiClient thread to manage any requests to the server.
-*   Display a login screen.
-*   When a user attempts to log in, check the data with the ApiClient, or with a local cached configuration.
-
-*   If the credentials are correct:
-
-*   Start a CommandHandler thread to process instructions from the UserInterface.
-*   Start a UserInterface thread, passing the session manager’s Context object to it.
-*   Wait until the UserInterface thread indicates that the session has ended.
-*   Go to step 4.
-
-*   If the credentials are incorrect:
-
-*   Inform the user.
-*   Go to step 4.
 
   
 
