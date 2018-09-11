@@ -273,6 +273,226 @@ To decentralize such a system, individual computers that make up the information
 
 For instance, two geographically remote implementations of this system would be able to be connected when a network connection between them was available, being able to share work assignments remotely, but if a storm or other situation disrupted the network connection, the two communities’ economies would split into separate economies and continue working independently seamlessly, and then recombine when the network connection returned. In such a system, each individual who has a computer thus has access to and control over that part of the economy. This still leaves one centralized aspect, though, which is the software controlling the economies. If it is community-maintained libre software, that problem is largely eliminated, aside from the usual problems of project governance. If it is preferred, the software could also have facilities for creating ad-hoc centralization, where one instance of the software within each group of instances accessible within a given network would adopt the role of leader. This could be decided automatically, and made fully invisible to users of the system, or through community selection with automatic selection as a fallback, which would probably be preferable so as to ensure that systems with good connectivity and uptime (such as servers in datacenters) were selected as leaders, avoiding unnecessary inefficiency and maximizing reliability.
 
+## Target solution spaces
+
+- Getting a summary of everything going on (start / home screen kind of thing): Customizable. For example, could contain:
+
+- A brief reminder of who/where/when/etc. I am
+- What I have to do today (schedule, tasks, etc.)
+- Important news (e.g. emergencies, etc.)
+- A search box
+- A way to easily create a journal entry, blog/microblog post, social networking status update, etc.
+- A way to easily add an event to my schedule or a task to my to-do list or a note to myself (Stickies style) or a more thorough journal-y note to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
+- A way to easily compose an IM / email / etc. or place a voice/videocall
+- Messages from others (emails, IMs, voice/videomails, etc.)
+- Other guided information resources (see below)
+- A hierarchy of things to browse through (web-portal style)
+- …
+
+- Media playback
+
+- Movies
+
+- Feature films
+- Video series
+- Online streaming home video (YouTube, etc.)
+- …
+
+- Music
+
+- Albums
+- Individual tracks
+- Music videos
+- Artist/album/tag/etc. radio
+- Playlists, including shared playlists
+- Scores
+- …
+
+- Games
+
+- Interactive fiction, MUDs, MOOs, MMOs, puzzles, board game simulations, many other types of games …
+
+- Ebooks
+- Poetry
+- Quotations
+- Essays
+- News
+- Comics
+- Manga
+- Blogs & RSS feeds
+- Consuming realtime media (television, radio, livestreams, …)
+- …
+
+- Document creation and sharing
+
+- Writing a paper
+- Collaborative document editing / creation
+- Composing a score
+- Writing a book
+- Creating a movie
+- Creating a storyboard for a movie
+- Writing a script
+- Editing a photograph
+- Creating animation
+- Notes to myself (Stickies style)
+- More thorough journal-y notes to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
+- 3D modeling and rendering
+- CAD
+- Diagramming
+- Creating a database
+- Mind mapping
+- Recording and producing a song
+- Diagramming structures in multiple dimensions
+- Developing apps
+- Designing a typeface
+- Working with GIS data
+- Recording a photograph or a video using a webcam, scanner, camera, …
+- Recording audio using a microphone
+- Working with geometric figures
+- Recording music from a USB/MIDI instrument
+- Blogging and microblogging
+- Working with legal documents
+- …
+
+- Browsing through documents and information
+
+- Browsing a Web site
+- Browsing through Ember nodes
+- …
+
+- Working with structured information (this is mostly also document creation / management)
+
+- Managing a genealogy using Ember records
+- Managing a calendar / schedule
+- Managing a to-do list
+- Managing a contacts directory
+- Working with scientific data
+- Maintaining a retail environment (online or physical)
+- Managing recipes
+- Managing a reading list
+- Journaling
+- Managing a bibliography
+- Fantasy sports
+- Managing and using bookmarks
+- Managing financial information
+- Managing personal notes, documents, projects, photographs, videos, etc.
+- Managing a class
+- Participating in a class
+- …
+
+- Resources/tools
+
+- Dictionary
+- Thesaurus
+- Chemical elements chart and data
+- Maps, travel directions, and sky charts
+- Calculator
+- Using the computer as a flashlight
+- Field guides / identification keys
+- Instructions and how-to information
+- Lessons on things
+
+- Typing lessons
+- Instrument lessons
+- Tutorials on using software
+- …
+
+- Support using Ember
+- Nutrition information
+- Support in other aspects of life (e.g. help with trouble fishing, etc.)
+- …
+
+- Management
+
+- Database creation and administration (this is really “Document creation”, but also listed here)
+- Network administration
+- Programming
+- Emulation of other computing systems
+- Working with files and directories
+- Converting data from one format to another
+- Compressing and/or archiving data and/or directory structures
+- Imaging disks
+- Encrypting, decrypting, creating checksum records for, checking against checksum records, packing with parity data, restoring from parity data…
+- Running apps (this is basically just opening documents)
+
+- Distributed computing
+
+- Forensics
+- Computer security
+
+- Malware prevention, intrusion detection, …
+
+- Data serialization
+- …
+
+- Exchange
+
+- Buying and selling goods
+- Trading stocks
+- Purchasing and selling tickets
+- Issuing and redeeming coupons
+- Sending money (money-order style)
+- …
+
+- Searching
+
+- Answers (e.g. facts, math questions)
+- Finding media (e.g. news, movies, music, etc.)
+- Locating documents
+- …
+
+- Guided time use and content consumption
+
+- Notifications
+
+- Emergencies
+- Important news
+- Emails
+- Blog feeds
+- Things I’m supposed to be doing
+- Personal health warnings
+- Computer status warnings (disk/memory failure, overheating, can’t connect to Ember server, running out of battery power, …)
+- …
+
+- Activity guidance
+
+- What to do right now
+- What I have on my schedule upcoming
+- …
+
+- News headlines
+- Blog feeds
+- Podcasts
+- Top charts (popular items)
+- Best charts (classics / enduring popularity items)
+- Suggested recipes
+- Fitness tips
+- Weather information
+- Stock market information
+- Computer’s status (resource usage, etc.)
+- Personal health
+- Sports information
+- Acquaintance suggestions (people I might find interesting to talk to / get to know)
+- Dating suggestions / matchmaking
+- …
+
+- Communication
+
+- Instant messaging
+- Email
+- Video chat and group video chat
+- Audio and video messages
+- Collaborative document editing (this is “Document creation” but is related to communication)
+- Social networking
+- Blogging and microblogging (this is “Document creation” but is also a form of communication)
+- Newsgroups
+- BBSes
+- File sharing
+- Industrial automation (machine embroidery, etc.) (not sure if this fits in communication, since it’s communication with machines)
+- Sharing/microblogging/adding as status updates URLs, photographs, music, videos, …
+- Social bookmarking
+- …
+
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
@@ -2489,220 +2709,3 @@ There are a bunch of apps and features that I want to figure out how they will m
 
   
 
-*   Getting a summary of everything going on (start / home screen kind of thing): Customizable. For example, could contain:
-
-*   A brief reminder of who/where/when/etc. I am
-*   What I have to do today (schedule, tasks, etc.)
-*   Important news (e.g. emergencies, etc.)
-*   A search box
-*   A way to easily create a journal entry, blog/microblog post, social networking status update, etc.
-*   A way to easily add an event to my schedule or a task to my to-do list or a note to myself (Stickies style) or a more thorough journal-y note to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
-*   A way to easily compose an IM / email / etc. or place a voice/videocall
-*   Messages from others (emails, IMs, voice/videomails, etc.)
-*   Other guided information resources (see below)
-*   A hierarchy of things to browse through (web-portal style)
-*   …
-
-*   Media playback
-
-*   Movies
-
-*   Feature films
-*   Video series
-*   Online streaming home video (YouTube, etc.)
-*   …
-
-*   Music
-
-*   Albums
-*   Individual tracks
-*   Music videos
-*   Artist/album/tag/etc. radio
-*   Playlists, including shared playlists
-*   Scores
-*   …
-
-*   Games
-
-*   Interactive fiction, MUDs, MOOs, MMOs, puzzles, board game simulations, many other types of games …
-
-*   Ebooks
-*   Poetry
-*   Quotations
-*   Essays
-*   News
-*   Comics
-*   Manga
-*   Blogs & RSS feeds
-*   Consuming realtime media (television, radio, livestreams, …)
-*   …
-
-*   Document creation and sharing
-
-*   Writing a paper
-*   Collaborative document editing / creation
-*   Composing a score
-*   Writing a book
-*   Creating a movie
-*   Creating a storyboard for a movie
-*   Writing a script
-*   Editing a photograph
-*   Creating animation
-*   Notes to myself (Stickies style)
-*   More thorough journal-y notes to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
-*   3D modeling and rendering
-*   CAD
-*   Diagramming
-*   Creating a database
-*   Mind mapping
-*   Recording and producing a song
-*   Diagramming structures in multiple dimensions
-*   Developing apps
-*   Designing a typeface
-*   Working with GIS data
-*   Recording a photograph or a video using a webcam, scanner, camera, …
-*   Recording audio using a microphone
-*   Working with geometric figures
-*   Recording music from a USB/MIDI instrument
-*   Blogging and microblogging
-*   Working with legal documents
-*   …
-
-*   Browsing through documents and information
-
-*   Browsing a Web site
-*   Browsing through Ember nodes
-*   …
-
-*   Working with structured information (this is mostly also document creation / management)
-
-*   Managing a genealogy using Ember records
-*   Managing a calendar / schedule
-*   Managing a to-do list
-*   Managing a contacts directory
-*   Working with scientific data
-*   Maintaining a retail environment (online or physical)
-*   Managing recipes
-*   Managing a reading list
-*   Journaling
-*   Managing a bibliography
-*   Fantasy sports
-*   Managing and using bookmarks
-*   Managing financial information
-*   Managing personal notes, documents, projects, photographs, videos, etc.
-*   Managing a class
-*   Participating in a class
-*   …
-
-*   Resources/tools
-
-*   Dictionary
-*   Thesaurus
-*   Chemical elements chart and data
-*   Maps, travel directions, and sky charts
-*   Calculator
-*   Using the computer as a flashlight
-*   Field guides / identification keys
-*   Instructions and how-to information
-*   Lessons on things
-
-*   Typing lessons
-*   Instrument lessons
-*   Tutorials on using software
-*   …
-
-*   Support using Ember
-*   Nutrition information
-*   Support in other aspects of life (e.g. help with trouble fishing, etc.)
-*   …
-
-*   Management
-
-*   Database creation and administration (this is really “Document creation”, but also listed here)
-*   Network administration
-*   Programming
-*   Emulation of other computing systems
-*   Working with files and directories
-*   Converting data from one format to another
-*   Compressing and/or archiving data and/or directory structures
-*   Imaging disks
-*   Encrypting, decrypting, creating checksum records for, checking against checksum records, packing with parity data, restoring from parity data…
-*   Running apps (this is basically just opening documents)
-
-*   Distributed computing
-
-*   Forensics
-*   Computer security
-
-*   Malware prevention, intrusion detection, …
-
-*   Data serialization
-*   …
-
-*   Exchange
-
-*   Buying and selling goods
-*   Trading stocks
-*   Purchasing and selling tickets
-*   Issuing and redeeming coupons
-*   Sending money (money-order style)
-*   …
-
-*   Searching
-
-*   Answers (e.g. facts, math questions)
-*   Finding media (e.g. news, movies, music, etc.)
-*   Locating documents
-*   …
-
-*   Guided time use and content consumption
-
-*   Notifications
-
-*   Emergencies
-*   Important news
-*   Emails
-*   Blog feeds
-*   Things I’m supposed to be doing
-*   Personal health warnings
-*   Computer status warnings (disk/memory failure, overheating, can’t connect to Ember server, running out of battery power, …)
-*   …
-
-*   Activity guidance
-
-*   What to do right now
-*   What I have on my schedule upcoming
-*   …
-
-*   News headlines
-*   Blog feeds
-*   Podcasts
-*   Top charts (popular items)
-*   Best charts (classics / enduring popularity items)
-*   Suggested recipes
-*   Fitness tips
-*   Weather information
-*   Stock market information
-*   Computer’s status (resource usage, etc.)
-*   Personal health
-*   Sports information
-*   Acquaintance suggestions (people I might find interesting to talk to / get to know)
-*   Dating suggestions / matchmaking
-*   …
-
-*   Communication
-
-*   Instant messaging
-*   Email
-*   Video chat and group video chat
-*   Audio and video messages
-*   Collaborative document editing (this is “Document creation” but is related to communication)
-*   Social networking
-*   Blogging and microblogging (this is “Document creation” but is also a form of communication)
-*   Newsgroups
-*   BBSes
-*   File sharing
-*   Industrial automation (machine embroidery, etc.) (not sure if this fits in communication, since it’s communication with machines)
-*   Sharing/microblogging/adding as status updates URLs, photographs, music, videos, …
-*   Social bookmarking
-*   …
