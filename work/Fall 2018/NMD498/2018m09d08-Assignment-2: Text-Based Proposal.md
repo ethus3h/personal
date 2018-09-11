@@ -4,9 +4,9 @@ Note that some sections have been re-ordered, to ensure that the most relevant a
 
 At the bottom is a bunch of text related to the project. Most of it is probably pretty bad....
 
-# Abstract FIXME
+# Abstract
 
-This proposal suggests a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
+This proposal introduces a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
 
 # The problem
 
