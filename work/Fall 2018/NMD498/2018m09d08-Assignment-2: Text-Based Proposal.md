@@ -510,6 +510,23 @@ External I/O: render target ← ⎢ output (terminal text for  ⎥
 
 ### StageL
 
+#### Overview
+
+A simple programming language should be provided for easily writing portable algorithms to be transpiled to and used by programs in other languages. The name "StageL" comes from calling it a "staging language" (which refers to its being a tool for developing the main EITE software, which should provide a more complete language). This project was inspired by the ugly code that resulted when I tried to write using these principles directly in JavaScript, needing a lot of easy-to-mess-up boilerplate code and awkward notation (largely because it is not strongly typed).
+
+#### Design goals
+- Imperative language. Trivial to implement, learn, and read; extremely portable.
+- Provide function calls, arrays, strings, numbers, booleans, and operators for these types with strict typing. Objects and first-class functions are out of scope for this language.
+- Commonly used more complex constructs, such as arbitrary-precision numbers and associative arrays, should be offered as abstractions implemented within StageL as part of a common library of reference code.
+- Implemented as a transpiler that accepts a file as input and produces a file in the target language as output.
+- Have an implementation of itself using itself, to provide testing and portability of the language.
+- Have an implementation in Bash.
+- Should probably transpile to (at least) JavaScript, C, Java, Bash, PHP, WebAssembly, Microsoft CIL, Lisp, x86 assembly, and Python, in roughly that order of priority. (JavaScript is desired as soon as possible for work on the main EITE software; C and Java should follow soon thereafter for their portability; the other languages are nice to have to cover a diverse range of development environments, and additionally, in the case of CIL/x86 assembly/Lisp, of providing interesting challenges in ensuring that the language really is easily portable due to their difference from the others.)
+- Focus on simplicity and portability: it should purely be an algorithm representation format, without input/output capabilities. StageL is for implementing the algorithms of a program once, and having it be available in various languages. Things such as input/output and native calls should be provided as an API specification for the StageL source file: at the top of the file, it should declare all the implementation-dependent functions that it requires; these would then be provided separately by the programmer and/or by a set of functions provided with StageL for each target language.
+- All input/output to/from/within the language takes the form of functions. All code must be in a function, with declared parameters, parameter types, variables needed, and return type. (The expense of the simple type system is that changing return values would break functions' API, since "out" parameters and/or pointers would not be available, but this should allow the code to be simple and readable, which is a priority for this language.)
+- Output files should retain the structure and comments of the input files, thereby retaining readability as far as the target language permits.
+- All behavior should be specified. Ambiguous programs should be impossible to write knowing the specification, and (as far as possible) the meaning of a program should be obvious and unambiguous _without_ the language specification. Programs that do not match the specification exactly should be entirely rejected, rather than produce warnings or have a best guess of its meaning made.
+
 ### EITE document formats
 
 There are two conceptually significant document formats for storing EITE data. Both formats consist of a sequence of Dcs. The simpler format would be a simple list of Dcs, similar to a character-based text encoding. The more complex format (the "EITE Language") would be a traditional programming language. The two formats should share a one-to-one equivalency for a given document, and merely be different ways of representing that document.
@@ -605,46 +622,6 @@ The eighth trait is _inequality_. Unfortunately, this likely may affect the proj
 # Needs work
 
 
-These do not indicate that information is guaranteed correct within the given authority context, but only that that is the intended authority of the material.
-
- And the in-universe counterparts of the above:
-  * In-universe consensus
-  * In-universe egalitarian
-  * In-universe subjective consensus
-  * In-universe objective single/subset source
-  * In-universe objective individual/organization source
-  * In-universe subjective single/subset source
-  * In-universe subjective individual/organization source
-  
-Note that not all suggested behaviours are absolute. For example, the document chunk options (see under STRUCTURAL) are not necessary; they are just one option for doing things. Semantic tagging is always good though — the system could probably be expanded a lot to maximize this. Or the automatic bibliography management option à la BiBTeX is optional too, or could be customized, etc. 
-
-====== STRUCTURAL ======
-
-
-
-
-**Physical location ideas**: retail area, meditation area, soup kitchen, office (?), free shelter. Objective: provide a peaceful sanctuary where people can go when they need somewhere to go. Could have modular housing underground, extensible by addition of units? Meditation area & soup kitchen should be 24/7. Have work space for producing full-body suits? ←far-out idea, probably… Have multistory gardens, with mirrors to reflect sunlight in?
-
-2015-01-11 note: (note that the previous note, dated 2014-01-08a09 was actually in 2015). I should add another (maybe 2 more?) sections to the Ember book, one detailing the knowledge necessary to build a society from scratch, from skills necessary for basic survival, to current technology; as well as perhaps history that can be used to understand what the best systems of government are, etc. — and the other describing Ember as a book (since there are all the other aspects of Ember — the media library, the computing environment, etc. that have sections of the book, perhaps the Ember book should have a section).
-
-2015-04-22a23 note: The [[ref:PHMV]] ([[ref:Pixie Hollow Music Video]]) is effectively a dead art form. Because the Pixie Hollow game — the medium through which the videos are created — has been closed, never again <del>will</del>can such artworks be created, most likely. And as copyright holders choose to take them down, there might be fewer and fewer of them in existence, until perhaps they have all disappeared, mere specks of dust in the ashes of history.
-
-## Overview
-
-A simple programming language should be provided for easily writing portable algorithms to be transpiled to and used by programs in other languages. The name "StageL" comes from calling it a "staging language" (which refers to its being a tool for developing the main EITE software, which should provide a more complete language). This project was inspired by the ugly code that resulted when I tried to write using these principles directly in JavaScript, needing a lot of easy-to-mess-up boilerplate code and awkward notation (largely because it is not strongly typed).
-
-## Design goals
-
-*   Imperative language. Trivial to implement, learn, and read; extremely portable.
-*   Provide function calls, arrays, strings, numbers, booleans, and operators for these types with strict typing. Objects and first-class functions are out of scope for this language.
-*   Implemented as a transpiler that accepts a file as input and produces a file in the target language as output.
-*   Have an implementation of itself using itself, to provide testing and portability of the language.
-*   Have an implementation in Bash.
-*   Should transpile to (at least) JavaScript, C, Java, Bash, PHP, Microsoft CIL, Lisp, x86 assembly, and Python, in roughly that order of priority. (JavaScript is desired as soon as possible for work on the main EITE software; C and Java should follow soon thereafter for their portability; the other languages are nice to have to cover a diverse range of development environments, and additionally, in the case of CIL/x86 assembly/Lisp, of providing interesting challenges in ensuring that the language really is easily portable due to their difference from the others.)
-*   Focus on simplicity and portability: it should purely be an algorithm representation format, without input/output capabilities. It is for implementing the algorithms of a program once, and having it be available in various languages. Things such as input/output and native calls should be provided as an API specification for the StageL source file: at the top of the file, it should declare all the implementation-dependent functions that it requires; these would then be provided separately by the programmer and/or by a set of functions provided with StageL for each target language.
-*   All input/output to/from the language is as functions. All code must be in a function, with declared parameters, parameter types, variables needed, and return type. (The expense of the simple type system is that changing return values would break functions' API, since "out" parameters and/or pointers would not be available, but this should allow the code to be simple and readable, which is a priority for this language.)
-*   Output files should retain the structure and comments of the input files, thereby retaining readability as far as the target language permits.
-*   All behavior should be specified. Ambiguous programs should be impossible to write knowing the specification, and (as far as possible) the meaning of a program should be obvious and unambiguous _without_ the language specification. Programs that do not match the specification exactly should be entirely rejected, rather than produce warnings or have a best guess of its meaning made.
 ## Library Section 1: Basic knowledge, to be included in the text of this specification
 
 This section of the library will require research and writing. It should consist of many short sections, each covering a topic. Each of these sections should list all other sections that must be understood as prerequisites for understanding it; the dependency tree of every section should culminate in a single section that gives a basic understanding of the dominant language of the reference (probably English, for the forseeable future), so that by translating that one section into another language, every other concept in the reference can be understood by reading its section and its section's prerequisites.
