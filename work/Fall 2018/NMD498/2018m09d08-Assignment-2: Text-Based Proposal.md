@@ -225,12 +225,13 @@ The computing environment will consist of the following components (subject to c
 - Data formats
   - Specifications
   - Reference implementations
+- Data storage: append-only set of records, each comprising a unique ID paired with a node document
 - Client app
 - Server apps:
   - Public-facing API
   - Search engine
   - Storage backend
-
+    
 ### Development principles
 
 #### Prerequisites for code to be added to the repository
@@ -2034,17 +2035,7 @@ It consists of the following components:
 
   
 
-*   Data formats: Abstract specifications of the data formats used by the computing environment.
-*   Data archive: append-only list of records, each comprising a unique ID paired with an EDF node. See Structural principles section for details.
-*   Server infrastructure: A computing cloud that responds to requests from clients. “Server” does not necessarily refer to a hardware server, but rather to an application that responds to requests from another application (client or server).
 
-*   Public interface servers: Accept API requests from clients and pass them to the correct handlers.
-*   Application servers: Handles user authentication, in-the-cloud compute tasks, etc.
-*   Search servers: Receives search requests from and returns results to the public interface servers. Indexes documents as they are added to the data repository.
-*   Data servers: Receive instructions from and return data to the public interface servers and the application servers. Interact with the data repository. Handles encryption and decryption of documents.
-
-*   Clients: Applications that interact with end users or follow instructions to leverage the computing environment.  
-    
 
 Structural principles
 
