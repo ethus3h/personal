@@ -316,6 +316,8 @@ To decentralize such a system, individual computers that make up the information
 
 For instance, two geographically remote implementations of this system would be able to be connected when a network connection between them was available, being able to share work assignments remotely, but if a storm or other situation disrupted the network connection, the two communities’ economies would split into separate economies and continue working independently seamlessly, and then recombine when the network connection returned. In such a system, each individual who has a computer thus has access to and control over that part of the economy. This still leaves one centralized aspect, though, which is the software controlling the economies. If it is community-maintained libre software, that problem is largely eliminated, aside from the usual problems of project governance. If it is preferred, the software could also have facilities for creating ad-hoc centralization, where one instance of the software within each group of instances accessible within a given network would adopt the role of leader. This could be decided automatically, and made fully invisible to users of the system, or through community selection with automatic selection as a fallback, which would probably be preferable so as to ensure that systems with good connectivity and uptime (such as servers in datacenters) were selected as leaders, avoiding unnecessary inefficiency and maximizing reliability.
 
+Thorough user group and subgroup support should be provided. This would be especially useful for facilitating collaboration between individuals, such as in business use of the software.
+
 ### Target solution spaces
 
 - Getting a summary of everything going on (start / home screen kind of thing): Customizable. For example, could contain:
@@ -508,6 +510,8 @@ There are two principle structural levels for which elements need to be describe
 
 A node is a document, represented as a sequence of Dcs, stored in the EITE system. A document created by an individual would presumably, when stored as a node, have additional information not managed by the individual, such as who has the right to read and edit it. Thus, the document an individual would work with would be stored as a portion of a larger document representing its corresponding node. Because the system is append-only, nodes would have revisions, representing each time it was changed. For letter-by-letter changes, produced while typing without saving, instead of saving a new revision, letter-by-letter change tracking and storage could be used, such as is used by Etherpad.
 
+Various fully featured ways to interact with the system should be provided. For instance, a graphical interface, a command-line interface, and a UNIX-style "everything is a file" interface. (Filesystems, especially APIs exposed as filesystem entities have their own challenges and risks, such as confusing scripts that aren't designed to work with anything except plain old files, having unusual structures such as files not present in any directory, infinite directory trees resulting from hardlinks to directories, files with multiple forks, or named pipes, and if providing nodes by filename, having files and directories with the same names or directories with a data fork; these issues will need work and research to resolve well and provide good user experiences.)
+
 #### Complex Dc sequences, Sequence Builders, and Dynamic Sets
 
 A complex sequence of Dcs could be built using special-purpose input tools for constructing them. For instance, purpose-built tools could be provided for constructing a sequence of Dcs representing a mathematical equation, or a sequence of Dcs representing a given time or color.
@@ -546,48 +550,6 @@ External I/O: render target ← ⎢ output (terminal text for  ⎥
                               ⎢ other formats for export,  ⎥
                               ⎣ etc.)                      ⎦
 ```
-
-#### Possible client execution flow
-
-Procedures outline
-
-Main:
-
-*   Greet user
-*   Create a ProcessManager
-*   Start Bootstrapper thread
-*   Wait for Bootstrapper to indicate that all SessionManager threads have finished
-*   Exit
-
-  
-
-Bootstrapper:
-
-*   For each interaction context (e.g. terminal, display, etc) found, create a corresponding Context object indicating the traits and capacities (e.g. display resolution, input interfaces such as a mouse or keyboard, capacity for direct access to the hardware, size of a terminal, etc.) of that context, and start a session manager thread (passing the relevant Context object to it so it knows what to do).
-*   Wait until each SessionManager is terminated, or until any one SessionManager sends a shutdown signal and no other sessions are active, or until any session sends a global override shutdown (in which case other logged-on users’ accounts’ states should be allowed to finish being saved if saving is still in process, to the cloud if online, and to disk if offline).
-*   Indicate to main thread that all session threads have finished.
-
-  
-
-SessionManager:
-
-*   Greet the user.
-*   Create a ProcessManager.
-*   Start an ApiClient thread to manage any requests to the server.
-*   Display a login screen.
-*   When a user attempts to log in, check the data with the ApiClient, or with a local cached configuration.
-
-*   If the credentials are correct:
-
-*   Start a CommandHandler thread to process instructions from the UserInterface.
-*   Start a UserInterface thread, passing the session manager’s Context object to it.
-*   Wait until the UserInterface thread indicates that the session has ended.
-*   Go to step 4.
-
-*   If the credentials are incorrect:
-
-*   Inform the user.
-*   Go to step 4.
 
 ### StageL
 
@@ -718,52 +680,3 @@ I would like to attempt to improve on the existing systems that have developed f
   
 
 Ember builtin commands (built in to the shell/CLI) should be exposed via the directory structure. As should other resources Dcs, DCE mapping data, relationship types, node types, metadata types, etc….
-
-  
-
-Groups and Domains
-
-I think there should be a couple features in Ember to make it optimally useful for business use: user groups and domains.
-
-  
-
-Groups
-
-A user group is a list or dynamic set of users that can be used in much the same way as a real user in e.g. ACLs.
-
-  
-
-Domains
-
-A domain is a user group with some extra features, as well as including subdomains. Each user in a domain can choose to use their Ember account as their personal user account, or as any one of their domain roles. Each domain has a _domain authority_ who determines who has what rights in that domain. If the domain authority of the top-level domain so chooses, he/she can have absolute control over all the subdomains within his/her domain (overriding the domain authorities of the individual subdomains). This is only the case if he/she was the creator of the subdomain, unless the actual creator of the subdomain chooses to delegate that control to the parent domain’s authority. Domain authorities can transfer their power to any user, user group, or domain, just as (almost) any document can have its ownership changed. This is because domains are nodes, as are user groups and users. (Note that user nodes can’t have their owner changed, however they can be merged.) Domain/subdomain links do NOT have to be strictly hierarchical.
-
-  
-
-Boss of company A creates domain for their company, giving their CFO membership in the domain, and creating a Finances subdomain for the finances department in which the CFO is the authority. Boss of company B creates domain for their financial consulting company, and is the authority of it. Company A chooses to purchase company B to manage internal finances at Company A, and so the company B domain is added by the CFO of company A as a subdomain of Company A’s Finances subdomain; the boss of B releases absolute control over their consulting domain to company B.
-
-  
-
-End result (doesn’t quite correspond exactly to the story above since I decided to add a couple more examples, but is basically it):
-
-*   Company A domain:
-
-*   Authority: Company A boss
-*   Member: CFO
-*   Members: Other employees, with varying levels of access (Authority can set ACLs for members’ access to documents)
-*   Subdomain: Finances:
-
-*   Presiding authority: Company A boss
-*   Authority: CFO
-*   Members: Finances employees
-*   Subdomain: Company B
-
-*   Presiding authority: Company A boss (Given that Company B boss delegated authority to company A boss even if not, could still be an uncontrolled subdomain)
-*   Authority: Company B boss
-*   Members: Company B employees
-*   Subdomain: Company A domain, if Company B boss added it as a subdomain (if Company A boss accepted it as a parent domain, it would then show up as a subdomain for them too) (this is pretty much pointless and random, but provides an example of why domains are not strict hierarchies)
-
-  
-(Also: Be able to have a user run one document/app in a given domain, and another in another, and a third as themselves, etc.. No need to make them have separate sessions for working in different domains if they don’t want to
-
-  
-
