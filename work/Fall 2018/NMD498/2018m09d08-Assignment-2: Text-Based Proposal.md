@@ -273,6 +273,10 @@ The computing environment will consist of the following components (subject to c
     
 ### Development principles
 
+- Never remove a feature, capability, or option. If the development of an improved architecture or addition of new features involves scrapping existing code, reintroduce all previously existing capabilities before releasing the changes to the software.
+- Make sure that all tests pass when releasing changes to the software.
+- Thorough automated unit tests should be provided and kept passing.
+
 #### Prerequisites for code to be added to the repository
 
 - Code must be readable and documented.
@@ -668,17 +672,6 @@ Ideas, knowledge, and art become economically motivated, and so copyright and pa
 
 I would like to attempt to improve on the existing systems that have developed for solving these problems. I would like to undertake this project in an incremental, scalable manner, rather than creating a complex system that would need to be implemented all at once to be effective. That way, small improvements could be made without attempting to undertake the insurmountable task of improving larger components of society at once. This incremental development would allow for the strengths of the existing systems to persist, as well.
 
-*   Never remove a feature, capability, or option. If the development of an improved architecture or addition of new features involves scrapping existing code, reintroduce all previously existing capabilities before releasing the changes to the software.
-*   Make sure that all tests pass when releasing changes to the software.
-*   Resolve issues exclusively in the following order (within each category, resolve in order of decreasing priority):
-
-*   Poor implementations
-*   Poorly tested implementations
-*   Bugs:
-
-*   Because code is an implementation of the expectations defined by the tests, if the tests pass, then any bugs are in the tests, not the code. Therefore, as with all other changes, fix any given bug using the test-driven development (TDD) procedure.
-
-*   Enhancements
 
 *   Implement any desired changes using the TDD procedure.
 
