@@ -254,6 +254,8 @@ People that would be especially benefited by the full form of this project inclu
 
 An important basic principle of EITE is flexibility. It should allow the user do what they want in an elegant manner, without undue shenanigans, difficult workarounds, or unwanted assistance. It should accommodate various workflows, and be thoroughly customizable. Its default configuration should be simple and easy to use. User interfaces should abstract away technical complexities by default while remaining fully usable, while allowing access to those complexities if desired.
 
+The system should use a single, libre, fully specified data format to store all types of information it processes, and development of the system should strive to ensure that a thorough selection of capabilities are provided out of the box using a consistent and customizable user interface, obviating the need for external apps (which often tend to be inconsistent in things such as internationalization and accessibility). The use of a single data format would allow, for instance, text, structured data, sound, and interactive media such as computer games to all be practically equivalent to each other, such that wherever one could be used, another could be used instead, ensuring thorough flexibility. (External apps should be possible to use, for instance as references to facilitate developing libre alternatives, as well as to provide historical access and allow verifying that libre alternatives are actually equivalent, but while they should be possible to use, they should not be _necessary_ to use.)
+
 ### Overview
 
 The computing environment will consist of the following components (subject to change):
@@ -665,77 +667,6 @@ Philosophical discourse becomes important in many areas, such as the resolution 
 Ideas, knowledge, and art become economically motivated, and so copyright and patent laws are established to encourage and protect innovation in these areas. The wide availability of information becomes increasingly relevant, and information technology and distribution systems such as books and computers are developed. Support infrastructures are created and strengthened, to protect society against threats both external and internal, such as disease, crime, terrorism, civil unrest, and war.
 
 I would like to attempt to improve on the existing systems that have developed for solving these problems. I would like to undertake this project in an incremental, scalable manner, rather than creating a complex system that would need to be implemented all at once to be effective. That way, small improvements could be made without attempting to undertake the insurmountable task of improving larger components of society at once. This incremental development would allow for the strengths of the existing systems to persist, as well.
-
-Specifications
-
-The specifications of the Ember society are the “laws” that make it work. However, they are not laws in the traditional sense, inasmuch as any person is free to leave Ember at any time. However, if a person violates the rules of Ember while they are not a member of it, then if they chose to become a member of it again, they may be penalized for such violations.
-
-Specifications of goods and services
-
-Modular Dc Sequence Builders
-
-Idea: 
-General ideas
-
-*   Tagged nodes, including a system for storing the tags as part of a tag grouping (which could have permissions like a document). Would also have a global tag system, so people could add tags to the global tag grouping.
-*   Liberal relationship formation and node typing: A node can be assigned any other node as its type; a relationship can be from any type of node to any other type of node even if that is not how the relationship is defined (this situation could display a warning, for example)
-*   Hopefully these traits would help keep restrictions from being a pain in the ass
-
-Node examples — use cases:
-
-Node — a new document someone created… — type: Digital data Has title (file name); has relationships: ☆→created by (ember account), ☆has revisions (each time saved or autosaved). Node: — a piece of music someone had in their computer upon backing up w/ Ember… — type: Digital data. Has title (file name); Relationships: has revision: only the current revision, since it’s never been resaved; has creator (ember account).; has date created (date created from filesystem — with source annotation) Note that the content & format metadata are stored with the Revision nodes, not with the main nodes. Each revision node has autodetected music metadata (e.g. by Musicbrainz PUID lookup) or other autodetected metadata, such as plagiarism detection information. Music metadata & such can be added manually to main &/or revision nodes. DCE (and Wreathe and Ember) should use Google Wave’s letter-by-letter edit tracking technology… then DCE data backed up wouldn’t need independent revision nodes like that — but instead just independent revision nodes for actual conceptual revisions of the document. Maybe, to prevent confusion, autosaved revisions could be called by a different name (i.e. a word other than “revision”.)?…. Wreathe and Ember should hide their DCE underpinnings, for the most part, but at the same time, lower-level DCE editing should be easy.
-
-Implementation
-
-A full DCE editor à la Wreathe isn’t necessarily necessary for Ember’s web-based administration — just use the all-in-one DCE editor / Ember browser / etc. in Wreathe if one wants desktop-power-level DCE editing in Wreathe \[possibly meant to write Ember there?\]. Plus, DCE editing can be easily implemented in a web environment without worrying about rendering or display so much — just work with the raw Dcs if that kind of “advanced” functionality is desired, if necessary…?
-
-Database schema ideas
-
-Ember data modeling
-
-Might be useful: http://www.slideshare.net/DanLynn1/storing-and-manipulating-graphs-in-hbase
-
-Example schema
-
-Note that this is simplified (doesn't deal with character encodings, localisation, strings, etc….
-
-Rough example of how things might work (note that type 2 is a relationship and does not necessarily take data but has a node as its target, while type 3 is a metadatum and has to take data but only has its root node:
-
-Comments and ideas
-
-How to deal with complicated situations, e.g. three-node relationships? Could relationships all just be special cases of metadata? (Or maybe vice versa, although I don't think that would work?) What about nondirectional relationships? Or unidirectional?
-
-Everything in one big table??
-
-How to delete relationships??
-
-Relationships and metadata as nodes, all together in one big table??
-
-
-_n_\-space-native computer graphics system
-
-Idea for a robust n-space-native multithreaded compositing computer graphics system…:
-
-There can be many applications.
-
-Each application can write to many source spaces, each of which has its own pair of buffers. Each source has two buffers so the data can be read by the compositor at any time, even while the source AND one buffer are being updated. That way, the compositor doesn't ever have to wait. It could just not paint things that weren't ready, but then that could make those things flicker.
-
-There is one OS output system.
-
-Compositor is a space of the same type as the output (for a 2-dimensional computer screen, for example, the composition space is 2-dimensional).
-
-A space is an n-dimensional data structure of graphics (generally vector) objects. Except for the composition space, spaces are organized in relation to other spaces (the origin of the enclosed space corresponds to a given position in the enclosing space). When the enclosed space has more dimensions than the enclosing space, each extra dimension can be chosen to be sliced, projected, or (sliced and?) protruding from the enclosing space. The compositor should also be able to handle other cases correctly, e.g. when the size of one unit in a space is different from another, when a space is rotated relative to another, when the size of one unit changes within a space, unusually shaped spaces, spaces that wrap around at the edges, spaces with holes in them, spaces split into parts, spaces with areas that teleport, spaces that change over time, two or more a-dimensional spaces with b intersecting dimensions (for b less than or equal to a — the other dimensions protruding), etc..
-
-Regarding unusually shaped spaces: consider a piece of string as a one-dimensional space. It has a clear linear point system along its length, but it can be bent within 3 dimensions. This case should be handled correctly by the compositor.
-
-: How to handle situations where an application needs to reference another application's spaces? Shouldn't be too hard to do, but maybe should have some sort of security/access protection system in place….
-
-  
-
-The finely dashed lines indicate data going to or coming from multiple instances of the structures shown.
-
-To clarify: the compositor should be able to composite any number of simple or complex n-dimensional spaces into a single simple n-dimensional space.
-
 
 *   Never remove a feature, capability, or option. If the development of an improved architecture or addition of new features involves scrapping existing code, reintroduce all previously existing capabilities before releasing the changes to the software.
 *   Make sure that all tests pass when releasing changes to the software.
