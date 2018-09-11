@@ -227,6 +227,8 @@ Web-based information technology companies such as Google, Amazon, and Facebook 
 
 People that would be especially benefited by the full form of this project include individuals from marginalized groups, especially those with disabilities, mental illnesses, and the homeless, by enabling them to support themselves through a community and reducing barriers presented to them by discrimination, and by reducing the need for individuals’ dependence on the traditional monetary economy.
 
+An important basic principle of EITE is flexibility. It should allow the user do what they want in an elegant manner, without undue shenanigans, difficult workarounds, or unwanted assistance. It should accommodate various workflows, and be thoroughly customizable. Its default configuration should be simple and easy to use.
+
 ### Overview
 
 The computing environment will consist of the following components (subject to change):
@@ -447,7 +449,7 @@ For instance, two geographically remote implementations of this system would be 
   - Computer’s status (resource usage, etc.)
   - Personal health
   - Sports information
-  - Acquaintance suggestions (people I might find interesting to talk to / get to know)
+  - Acquaintance suggestions (people one might find interesting to talk to or to get to know)
   - Dating suggestions / matchmaking
   - …
 - Communication
@@ -465,6 +467,13 @@ For instance, two geographically remote implementations of this system would be 
   - Sharing/microblogging/adding as status updates URLs, photographs, music, videos, …
   - Social bookmarking
   - …
+
+### Semantic representation
+
+There are two principle structural levels for which elements need to be described: documents and texts. A document is a complete unit such as a book or journal article, which would comprise various textual regions (note that in typesetting some items, such as database records of titles or filenames, only one textual region would be used; in the first, either a "Document Title" or a "Standard" region type would be used, depending on how the database was being queried, that is, the presentation style of the information as a title or as standard text (such as if it were being displayed in a page that contained a list of database fields), and in the second, a "Standard" region type would be used for interface display in lists (other region types might be used at other times) (note that in any use cases when it is in a "Standard" textual region, it would still have the text type Title)). A textual region is a section of content that has one semantic componency, e. g. the body of a document or the title; a document is therefore comprised of texts.
+
+- Liberal relationship formation and node typing: A node can be assigned any other node as its type; a relationship can be from any type of node to any other type of node even if that is not how the relationship is defined (this situation could display a warning, for example).
+- Authority contexts: Information should be able to be tagged with information on its authority. When used at the node level, as opposed to within document content, authority context information should be validated to ensure the utility of the available nodes (so that the authority context tagging can be used to evaluate the reliability of a given document). For instance, objective consensus, reflecting a neutral point of view, not necessarily trying to represent all points of view equally because of lack of consensus about them, versus subjective individual/organization source, representing an individual or organization's opinion, without necessarily any regard for a neutral point of view, such as in opinion writing or advertising.
 
 ### Implementation challenges and strategy
 
@@ -598,15 +607,7 @@ The eighth trait is _inequality_. Unfortunately, this likely may affect the proj
 
 These do not indicate that information is guaranteed correct within the given authority context, but only that that is the intended authority of the material.
 
-  * Objective consensus: Like Wikipedia. Neutral point of view. Doesn't necessarily represent all points of view equally because of lack of consensus about them.
-  * Objective egalitarian: Neutral point of view, and tries to accept all viewpoints as equally legitimate.
-  * Subjective consensus: No neutral point of view, but established by general consensus.
-  * Objective single/subset source: Neutral point of view, as established by a single source or a subset of available sources.
-  * Objective individual/organization source: Neutral point of view, as believed by an individual or organization.
-  * Subjective single/subset source: Opinion (no neutral point of view), as established by a single source or a subset of available sources.
-  * Subjective individual/organization source: Opinion (no neutral point of view), as believed by an individual or organization.
-
-And the in-universe counterparts of the above:
+ And the in-universe counterparts of the above:
   * In-universe consensus
   * In-universe egalitarian
   * In-universe subjective consensus
@@ -615,15 +616,12 @@ And the in-universe counterparts of the above:
   * In-universe subjective single/subset source
   * In-universe subjective individual/organization source
   
-Note that not all suggested behaviours are absolute. For example, the document chunk options (see under STRUCTURAL) are not necessary; they are just one option for doing things. Semantic tagging is always good though — the system could probably be expanded a lot to maximize this. Or the automatic bibliography management option à la BiBTeX is optional too, or could be customized, etc. The basic philosophy of DCE is *FLEXIBILITY* — letting the user do what they want in an elegant manner and without undue shenanigans, intrusive 'assistance', or ugly hacks.
+Note that not all suggested behaviours are absolute. For example, the document chunk options (see under STRUCTURAL) are not necessary; they are just one option for doing things. Semantic tagging is always good though — the system could probably be expanded a lot to maximize this. Or the automatic bibliography management option à la BiBTeX is optional too, or could be customized, etc. 
 
 ====== STRUCTURAL ======
 
 
-There are two principle structural levels for which elements need to be described: documents and texts. A document is a complete unit such as a book or journal article, which would comprise various textual regions (note that in typesetting some items, such as database records of titles or filenames, only one textual region would be used; in the first, either a "Document Title" or a "Standard" region type would be used, depending on how the database was being queried, that is, the presentation style of the information as a title or as standard text (such as if it were being displayed in a page that contained a list of database fields), and in the second, a "Standard" region type would be used for interface display in lists (other region types might be used at other times) (note that in any use cases when it is in a "Standard" textual region, it would still have the text type Title)). A textual region is a section of content that has one semantic componency, e. g. the body of a document or the title; a document is therefore comprised of texts.
 
-  * Liberal relationship formation and node typing: A node can be assigned any other node as its type; a relationship can be from any type of node to any other type of node even if that is not how the relationship is defined (this situation could display a warning, for example)
-  * Hopefully these traits would help keep restrictions from being a pain in the ass
 
 **Physical location ideas**: retail area, meditation area, soup kitchen, office (?), free shelter. Objective: provide a peaceful sanctuary where people can go when they need somewhere to go. Could have modular housing underground, extensible by addition of units? Meditation area & soup kitchen should be 24/7. Have work space for producing full-body suits? ←far-out idea, probably… Have multistory gardens, with mirrors to reflect sunlight in?
 
