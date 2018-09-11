@@ -8,6 +8,15 @@ At the bottom is a bunch of text related to the project. Most of it is probably 
 
 This proposal suggests a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
 
+
+  
+
+Ember is a multifaceted project to develop a scalable environment for building an effective society.
+
+Create a system to enable efficacy, efficiency, and justice of society.
+
+The Ember Project would create a global power structure that would work to create an efficient opt-in society.
+
 # The problem
 
 There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. This results in wasted effort on developing redundant proprietary technologies, regressions in standards of living caused by the unavailability of proprietary systems, and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain).
@@ -1811,28 +1820,6 @@ within all of which, parcels and tenements, the sole binding policy (in other wo
 
 One role of Ember would be to provide goods. For this, it would be ideal for Ember to control as much of the supply chain as possible. That would allow efficient provision of the goods such as to reduce cost and ensure quality. That control of the supply chain would, in an ideal scenario, extend to all stages of the process, from production of the raw materials to component production to assembly to distribution, as well as shipping at all stages of the process. If Ember both controlled production of raw materials in a region and was the dominant institution working to ensure that those resources are used responsibly, it would of course be important to take the interest Ember has in using the resources sustainably into consideration.
 
-  
-
-  
-
-Ember is a multifaceted project to develop a scalable environment for building an effective society.
-
-  
-
-The aim of the Ember project
-
-  
-
-Create a system to enable efficacy, efficiency, and justice of society.
-
-The Ember Project would create a global power structure that would work to create an efficient opt-in society.
-
-Introduction: Ethics and Ember
-
-In the emerging hacker culture of the early 1960s, Ted Nelson, a graduate student at Harvard, began work on a computerized information management system that would later become known as “Project Xanadu”. The project promised amazing abilities. It was designed to provide definitive copies of documents that would be preserved in perpetuity, which could be referenced in other documents by quotations or references, so that the original source document of a passage could always easily be found. This aimed to provide an indefinitely scalable computerized collective memory for the preservation of humanity’s history and knowledge. This monumental project, despite significant corporate backing, was not a success. (Wolf, Gary. “The Curse of Xanadu”. (link) (IA)) I’d like to look at why it failed — but we’ll get back to that later.
-
-  
-
 There are a large number of works of great cultural importance. They have touched on a number of meaningful subjects, but several subjects have stood out particularly for me: ethics, rights, prejudice and bigotry, and theology. These are elements of society that play important roles, influencing the ways people live and experience their daily lives.
 
   
@@ -1856,78 +1843,6 @@ Ideas, knowledge, and art become economically motivated, and so copyright and pa
 I would like to attempt to improve on the existing systems that have developed for solving these problems. I would like to undertake this project in an incremental, scalable manner, rather than creating a complex system that would need to be implemented all at once to be effective. That way, small improvements could be made without attempting to undertake the insurmountable task of improving larger components of society at once. This incremental development would allow for the strengths of the existing systems to persist, as well.
 
   
-
-The many texts I have studied have helped me understand better how I could go about achieving these goals, and have provided interesting and valuable insights about what I believe. In many cases, it is difficult or impossible to prove to the satisfaction of a large number of people what the ideal systems are for society; in such cases I can only at once stand by my own beliefs and also accept that other valid solutions and reasonings can exist as well.
-
-  
-
-The most important thing I think I will achieve, which has both shaped and been shaped by my experience of study, is the incremental development of improved and redeveloped societal structure and infrastructure. To this end, I have gathered a number of disparate elements of the project under the name of “Ember”, for ease of reference; these diverse objectives I believe have the potential to improve the general standard of living. At the same time, it is important to ensure that the Ember project does not fall into the same pitfalls that befell Project Xanadu, despite their many parallels and similarities.
-
-  
-
-Project Xanadu and Ember are both projects with lofty goals, born out of a Nietzscheian rage at the status quo, aiming to radically transform and reshape various aspects of society for the better. They are both ambitious, and championed by someone without a thorough understanding of the technological and economic realities and limitations of the world around them. They both are driven by grand ideas, with little thought given to short term practical implementation and utility of those ideas. They both have the potential to absorb vast amounts of investment without return. My hope is that by assessing and strategizing around these similar aspects, and understanding the ways in which they relate to Project Xanadu’s failure to produce, such a catastrophe can be avoided by Ember.
-
-  
-
-Ember is a multifaceted project to develop a scalable environment for building an effective society. The goal of the project is to create a system to enable efficacy, efficiency, and justice within society, by creating a social structure that would work to create an efficient opt-in society within the framework of the diverse and valuable existing societies. The plan for the project is to pursue these goals by developing individual components that each provide an integral part of the whole societal system. My current proposal is comprised of several components, including a coordination organization, a philosophy of ethics, a nonprofit standards-driven services collective, a computing environment, a reference collection of the most important knowledge, a library of great cultural works, a spiritual framework, and a multimedia artwork.
-
-  
-
-The four subjects that will prove integral in the effective development of the Ember project that I would principally like to discuss in this paper and which have been of most import to my journey of learning are ethics, rights, prejudice and bigotry, and theology.
-
-  
-
-Ethics are one of the central aspects of a complex society, with an understanding of what is “justice” being necessary for the establishment of effective justice systems, and an understanding of what is ethically acceptable scientific research and technological development being necessary for a society to respect the dignity of the world.
-
-  
-
-In the Zimbardo prison experiment, we saw an influential and famous experiment that was ethically very dubious, and likely had lasting effects on the research participants. Is such research justified? This is a hard case to make, as the benefits derived from the Zimbardo experiment have been doubtful at best due to the poorly undertaken nature of the research. However, could such research that damages the participants be considered ethical in any scenario? Could it, perhaps, but only with the full understanding and consent of the participants? It seems likely that the nature of such an experiment is fundamentally harmful in such a way that it would be best to attempt to gain the knowledge through other, more ethical research methods if at all possible before trying such research techniques. By no means should such research practices as those seen in Zimbardo be standard or generally accepted within the scientific community.
-
-  
-
-Some scientific research is seen as harming the public interest for other reasons, such as Galileo Galilei’s assertions of a heliocentric planetary model, which were regarded as heresy by the Catholic church, which was the dominant social force in determining matters of ethics and morality in Europe at that time. This is a matter of ethics, as opposed to a matter purely of science, as the scientific results were considered to be evil. However, it seems that Galileo’s research has done no lasting harm, considering that it has become widely accepted and is no longer a matter of significant contention. Perhaps this acceptance is because the issue with Galileo’s research is the results he found, while with Zimbardo’s it is the ethics of the manner in which the research was undertaken.
-
-  
-
-Rights are an important social issue. In Mrs. Dalloway, by Virginia Woolf, we encountered the debate about what rights should be protected in the thorny instance of an individual with mental challenges. One can consider whether Septimus Warren Smith had the right to not be controlled by Holmes and Bradshaw. Referring to Septimus, Woolf writes: “Lately he had become excited suddenly for no reason (and both Dr. Holmes and Sir William Bradshaw said excitement was the worst thing for him)” (Woolf, Virginia. Mrs. Dalloway. p. 140). Does not Septimus have the right to exist without being bothered, regardless of whether it is considered the best thing for him? He does no one else any harm by being as he is, and is not disrupting society in any way, except inasmuch as it may perhaps reduce his ability to contribute to it. And even that seems that it may be excusable in light of the value of one’s right to liberty, much as one could make such an argument for the legitimization of a right to suicide.
-
-  
-
-Likewise, is involuntary confinement of someone who is not a threat to society moral or ethical? Does it violate the tradition of habeas corpus? “Worshipping proportion, Sir William not only prospered himself but made England prosper, secluded her lunatics, forbade childbirth, penalised despair, made it impossible for the unfit to propagate their views until they, too, shared his sense of proportion” (Ibid. p. 99). Does Bradshaw have any right whatsoever to impose such restraints, to place such barriers upon freedom of expression and action? Perhaps one could argue that the mentally incompetent are incapable by nature of exercising these rights appropriately and effectively, and thus should not be afforded them. Nevertheless, even such disabled and tragically affected individuals still likely have the right to have their desires and conscience and feelings paid respect and honored by the society around them. They are, presumably, individuals with their own emotions, realities, and conceptions of the world, thus deserving the same respect afforded to the healthy in any just and non-oppressive society. These are important social issues to consider and address in the development of an evolving societal system.
-
-  
-
-Bigotry, hatred, racism, prejudice, and oppression are critical issues to address in the modern society, with tragedies such as slavery, genocide, and wartime racism persisting strongly into the present. An understanding needs to be built and lessons learned from history about how these elements can be addressed effectively and thoroughly, protecting the rights of all. In several of the texts we have studied in this sequence, we encountered racism as a prominent theme, most notably in The Souls of Black Folk and Incidents in the Life of a Slave Girl. In The Souls of Black Folk, by prominent author W. E. B. Du Bois, it is written that “the South believed an educated Negro to be a dangerous Negro” (Du Bois, W. E. B.. The Souls of Black Folk. p. 24). Du Bois considered this assessment by the South to have some validity, because of the role of education in bringing forth “dissatisfaction and discontent” (Ibid.). Such discontent would likely have been far greater among African Americans, due to the profound injustices they experienced. In addition, this generalization shows the egregious violations of rights and hatred that can emerge, piling injustice on top of bitter injustice, when one group is considered inferior to another.
-
-  
-
-In Incidents in the Life of a Slave Girl, we see the brutal realities of life as an African American woman in the antebellum south. It reveals in its tragedy the horrors that they underwent through no fault of their own but merely the chance of having a different skin color. The recent development of feminist philosophies such as those seen in Virginia Woolf’s and Adrienne Rich’s work is clearly a step in the right direction, helping to sway the pendulum away from injustice, continuing along the path boldly set by the civil rights movement in the 1960s. However, racism and racial violence still persist, as evidenced and highlighted by the recent racial tension surrounding police brutality.
-
-  
-
-Theology plays an important role in society, providing a way for individuals to understand their role in that society and in the world. Occam’s Razor is a famous statement to the effect that “No more things should be presumed to exist…” (Haddon, Mark. The Curious Incident of the Dog in the Night-Time. p. 90) than are needed to explain the observations about which a collective truth has been established through consensus. Despite the seeming rationality of that statement, I nevertheless often choose to believe things on faith, despite being unable to prove them through scientific observation and logic. I come to these conclusions frequently as ways to best explain the parts of the world around me that I do not understand scientifically, but nevertheless seem to observe on a daily basis and believe to be real: life, emotions, and other similarly difficult-to-quantify elements of the world around us. By considering the world and drawing my own conclusions, I can create my own worldview, as real to me as the perceptions that are established through consensus and scientific reasoning.
-
-  
-
-The Music of Life presents a model of life that can be mistakenly argued to be unscientific, because it does not explain many of the vagaries of the way life and the way one’s personality and other traits that make one an individual come about. This model indicates that these traits are not coded in one’s genes, but originate otherwise. This model is scientifically reasonable, though, since the systems by which these traits develop and function are not fully or thoroughly understood, and are likely not completely determined quanta that can be effectively evaluated by measuring systems. Perhaps it is not possible to understand these traits at all. Perhaps one wishes genes might provide the definitive coding for an organism, providing a thorough way to comprehend the way that organism evolves and develops. However, this is not the way genes work.
-
-  
-
-I believe that God has created a sort of fettered omniscience for Himself, and has taken away His direct influence over the world and given living things the capacity for moral self-direction. This aspect of the world’s traits has been implemented in what has been recognized as the theory of the uncertainty principle in quantum mechanics, according to which nothing can be predicted with absolute certainty. Traditional thinking would seem to hold that through a comprehensive understanding of all the positions and vectors in a closed system, all of the states of that situation — past, present, and future — can be known simultaneously. Yet the observer effect leads to the situation that the most basic particles of matter are unable to be observed or predicted, because any observation will inevitably change their state, thus contributing to the chaos inherent in the uncertainty principle. In a lecture on quantum mechanics, the speaker discussed the idea of determinism: I believe that these maxims of unpredictability lead to the effective disintegration of multi-scale determinism, while it does seem to remain effective and in effect in the world on our scale. This unpredictability enables the world to exist as it does with true moral sovereignty, without the consequential ethical nihilism of the philosophies of fate or predestination.
-
-  
-
-Gnosticism is a group of belief systems sharing certain core tenets, particularly the focus on the development of sophia (wisdom) to attain gnosis (knowledge) and on the rejection of some elements of the physical world in the endeavor to attain ascendance into the spiritual. It shares common themes and elements with many Christian and other belief systems. In the Gnostic Gospel according to Mary Magdalene, it is written “There is no sin, but it is you who make sin when you do the things that are like the nature of adultery, which is called sin.” (Gospel according to Mary Magdalene. Chapter 4, verse 26.) This sentence emphasizes the Gnostic nature of the text, in its equating of sin with adultery providing a connection to the traditional Gnostic focus on the rejection of elements of the physical in the interest of the finding of knowledge through wisdom. While it would be hard to prove concretely that things like adultery are bad, that badness can nevertheless be understood: it is a truth that can be taken on faith, it can be understood through the collective wisdom of society, or it can be felt in one’s heart.
-
-  
-What should the role be of surveillance in a society? Surveillance today can seem frightening, considering the potential for its abuse. How should safeguards be put in place to simultaneously enable effective surveillance, while curtailing its abuse?
-
-Considering these elements in the process of creating a system for alternative society development is clearly a vital part of the process. Failure to do so can produce a system which is unjust, incompetent, and inefficient. By avoiding this failure, the system developed can embody its principle objectives of creating an efficient, effective, and just society. The concepts that in the many great texts of civilizations provide invaluable insights for the development of the Ember project.
-
-*   Project structure and implementation information
-
-Ember will achieve these goals through creating individual components that each provide an integral part of the whole societal system. Implementation will probably need to be undertaken in stages, given the nature of
-
 More details
 
 It is a database designed to use relationships to organise information.
