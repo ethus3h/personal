@@ -241,7 +241,7 @@ Web-based information technology companies such as Google, Amazon, and Facebook 
 
 People that would be especially benefited by the full form of this project include individuals from marginalized groups, especially those with disabilities, mental illnesses, and the homeless, by enabling them to support themselves through a community and reducing barriers presented to them by discrimination, and by reducing the need for individuals’ dependence on the traditional monetary economy.
 
-An important basic principle of EITE is flexibility. It should allow the user do what they want in an elegant manner, without undue shenanigans, difficult workarounds, or unwanted assistance. It should accommodate various workflows, and be thoroughly customizable. Its default configuration should be simple and easy to use.
+An important basic principle of EITE is flexibility. It should allow the user do what they want in an elegant manner, without undue shenanigans, difficult workarounds, or unwanted assistance. It should accommodate various workflows, and be thoroughly customizable. Its default configuration should be simple and easy to use. User interfaces should abstract away technical complexities by default while remaining fully usable, while allowing access to those complexities if desired.
 
 ### Overview
 
@@ -489,6 +489,8 @@ There are two principle structural levels for which elements need to be describe
 - Liberal relationship formation and node typing: A node can be assigned any other node as its type; a relationship can be from any type of node to any other type of node even if that is not how the relationship is defined (this situation could display a warning, for example).
 - Authority contexts: Information should be able to be tagged with information on its authority. When used at the node level, as opposed to within document content, authority context information should be validated to ensure the utility of the available nodes (so that the authority context tagging can be used to evaluate the reliability of a given document). For instance, objective consensus, reflecting a neutral point of view, not necessarily trying to represent all points of view equally because of lack of consensus about them, versus subjective individual/organization source, representing an individual or organization's opinion, without necessarily any regard for a neutral point of view, such as in opinion writing or advertising.
 
+A node is a document, represented as a sequence of Dcs, stored in the EITE system. A document created by an individual would presumably, when stored as a node, have additional information not managed by the individual, such as who has the right to read and edit it. Thus, the document an individual would work with would be stored as a portion of a larger document representing its corresponding node. Because the system is append-only, nodes would have revisions, representing each time it was changed. For letter-by-letter changes, produced while typing without saving, instead of saving a new revision, letter-by-letter change tracking and storage could be used, such as is used by Etherpad.
+
 ### Implementation challenges and strategy
 
 An implementation of a simple state-machine–driven interpreter of the token-based document format specification for the information technology environment aspect of the project is under way. There have been several previous attempts at developing this, but they have not worked out for various reasons. The first implementation was in PHP, and had poor architecture and rather unmaintainable code. A second attempt in Java was excessively ambitious in attempting to parse a programming-language-style document format interactively, without any specification and only minimal planning or architecture, as well as being highly overengineered. An attempt in PHP and JQuery to build a user interface toolkit based on these principles crashed and burned due to poor code architecture and attempting to “put the cart before the horse” in developing a UI toolkit without any specification for it, and without consideration of the existing (specified) aspects of the format. A fresh attempt in PHP stalled due to also being rather unmaintainable and awkwardly written, specifically in its use of dynamically written JavaScript, and trouble storing arbitrary binary content, independent of character encoding, in HTML text boxes (which are really the wrong tool for the job). An implementation in Bash was considered and a command-line interface designed for it, but probably this will simply become a wrapper around the JavaScript implementation. The JavaScript implementation here will attempt to avoid these issues by only implementing what has already been specified, not attempting to handle the programming-language-style format yet, using extensive unit tests (which was very helpful in the Java implementation), and using modularized code (which has been helpful in successful projects undertaken in the interim), and by planning the architecture of the code (shown in the diagram below) before implementing it. A staging language will be implemented in JavaScript to allow the code written for the project to be trivially portable to other platforms and languages.
@@ -529,6 +531,7 @@ External I/O: render target ← ⎢ output (terminal text for  ⎥
 A simple programming language should be provided for easily writing portable algorithms to be transpiled to and used by programs in other languages. The name "StageL" comes from calling it a "staging language" (which refers to its being a tool for developing the main EITE software, which should provide a more complete language). This project was inspired by the ugly code that resulted when I tried to write using these principles directly in JavaScript, needing a lot of easy-to-mess-up boilerplate code and awkward notation (largely because it is not strongly typed).
 
 #### Design goals
+
 - Imperative language. Trivial to implement, learn, and read; extremely portable.
 - Provide function calls, arrays, strings, numbers, booleans, and operators for these types with strict typing. Objects and first-class functions are out of scope for this language.
 - Commonly used more complex constructs, such as arbitrary-precision numbers and associative arrays, should be offered as abstractions implemented within StageL as part of a common library of reference code.
@@ -635,16 +638,6 @@ The eighth trait is _inequality_. Unfortunately, this likely may affect the proj
 
 # Needs work
 
-
-
-===== Node examples — use cases: =====
-
-Node — a new document someone created… — type: Digital data Has title (file name); has relationships: ☆→created by (ember account), ☆has revisions (each time saved or autosaved). Node: — a piece of music someone had in their computer upon backing up w/ Ember… — type: Digital data. Has title (file name); Relationships: has revision: only the current revision, since it’s never been resaved; has creator (ember account).; has date created (date created from filesystem — with source annotation) Note that the content & format metadata are stored with the Revision nodes, not with the main nodes. Each revision node has autodetected music metadata (e.g. by Musicbrainz PUID lookup) or other autodetected metadata, such as plagiarism detection information. Music metadata & such can be added manually to main &/or revision nodes. DCE (and Wreathe and Ember) should use Google Wave’s letter-by-letter edit tracking technology… then DCE data backed up wouldn’t need independent revision nodes like that — but instead justindependent revision nodes for actual conceptual revisions of the document. Maybe, to prevent confusion, autosaved revisions could be called by a different name (i.e. a word other than “revision”.)?…. Wreathe and Ember should hide their DCE underpinnings, for the most part, but at the same time, lower-level DCE editing should be easy.
-====== Implementation ======
-
-A full DCE editor à la Wreathe isn’t necessarily necessary for Ember’s web-based administration — just use the all-in-one DCE editor / Ember browser / etc. in Wreathe if one wants desktop-power-level DCE editing in Wreathe [possibly meant to write Ember there?]. Plus, DCE editing can be easily implemented in a web environment without worrying about rendering or display so much — just work with the raw Dcs if that kind of “advanced” functionality is desired, if necessary…?
-
-
 There are a large number of works of great cultural importance. They have touched on a number of meaningful subjects, but several subjects have stood out particularly for me: ethics, rights, prejudice and bigotry, and theology. These are elements of society that play important roles, influencing the ways people live and experience their daily lives.
 
   
@@ -680,28 +673,6 @@ Specifications
 The specifications of the Ember society are the “laws” that make it work. However, they are not laws in the traditional sense, inasmuch as any person is free to leave Ember at any time. However, if a person violates the rules of Ember while they are not a member of it, then if they chose to become a member of it again, they may be penalized for such violations.
 
 Specifications of goods and services
-
-Authority Contexts
-
-These do not indicate that information is guaranteed correct within the given authority context, but only that that is the intended authority of the material.
-
-*   Objective consensus: Like Wikipedia. Neutral point of view. Doesn't necessarily represent all points of view equally because of lack of consensus about them.
-*   Objective egalitarian: Neutral point of view, and tries to accept all viewpoints as equally legitimate.
-*   Subjective consensus: No neutral point of view, but established by general consensus.
-*   Objective single/subset source: Neutral point of view, as established by a single source or a subset of available sources.
-*   Objective individual/organization source: Neutral point of view, as believed by an individual or organization.
-*   Subjective single/subset source: Opinion (no neutral point of view), as established by a single source or a subset of available sources.
-*   Subjective individual/organization source: Opinion (no neutral point of view), as believed by an individual or organization.
-
-And the in-universe counterparts of the above:
-
-*   In-universe consensus
-*   In-universe egalitarian
-*   In-universe subjective consensus
-*   In-universe objective single/subset source
-*   In-universe objective individual/organization source
-*   In-universe subjective single/subset source
-*   In-universe subjective individual/organization source
 
 Modular Dc Sequence Builders
 
