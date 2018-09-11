@@ -152,6 +152,7 @@ These design goals are present to attempt to prevent regressions in the availabi
 - Reliable: All designs should work predictably and reliably.
 - Libre: The designs should follow the principles needed to ensure they are freely usable, drafted here under "Licensing".
   - Any external dependencies of the project should be libre, so they can be forked and maintained if necessary.
+- Incremental: This project should be attempted in an incremental, scalable manner, rather than creating a complex system that would need to be implemented all at once to be effective. That way, small improvements can be made without attempting the insurmountable task of improving larger components of society at once. This incremental development would also allow using the strengths of other current and future projects and systems, and collaborating with and complementing them more effectively.
 
 ### Licensing
 
@@ -662,21 +663,3 @@ The sixth trait is being _global_. The proposed project is intended to be able t
 The seventh trait is _generational_. Whether an age gap will affect this project is hard to predict. If it does, it should only be by the choice of individuals, rather than by inaccessibility or prejudice: if people who are a different age than the majority involved in the project, those people should be provided any necessary accommodations to the fullest extent possible (medical care for the elderly, education for the young, and so on). This project should not engage in discrimination based on age, although it could only serve adults until a sufficient child protection framework is in place (e.g. I think Google doesn't allow kids to use it, so this presumably shouldn't either).
 
 The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
-
-# Needs work
-
-
-When you look at life from a perspective of fundamentals, there are a few things that are necessary: food, water, and shelter. Without these basic elements, humans would not survive very long. If one is hard working and clever, one can provide these things for one’s self, by living off the land. When humans start to live together in communities, things become more complicated; medical care and education become important. The goals of a community are to make life more secure and predictable for the community’s members, and to reduce the hardships associated with “primitive” living (living without the support systems of a complex society). But with those goals comes a problem: how are those goals to be effectively implemented? Through the development of strategies such as specialization of individuals’ abilities and the creation of technological solutions, these challenges can be met.
-
-As more people start living together, though, they will almost inevitably come into conflict. What can be done when the individual’s interests conflict with those of the society? What about conflicts between individuals? To deal with these issues, laws and a justice system can be put into place. An economy or labor-sharing strategy can aid in the exchange of services and goods, to avoid conflicts over these matters. A free market economy is helpful to a society, because it redirects the energies of greed and uses them as a force for technological development.
-
-Philosophical discourse becomes important in many areas, such as the resolution of the conflicts and challenges of a complex society, and the research into understanding the world around us. This discourse leads to the development of more complex technology drawing on the ideas of the society, then leading to debates about ethics, to scientific investigation about the nature of our world, and to the development of ways to understand and accept who we are, such as religion and science.
-
-Ideas, knowledge, and art become economically motivated, and so copyright and patent laws are established to encourage and protect innovation in these areas. The wide availability of information becomes increasingly relevant, and information technology and distribution systems such as books and computers are developed. Support infrastructures are created and strengthened, to protect society against threats both external and internal, such as disease, crime, terrorism, civil unrest, and war.
-
-I would like to attempt to improve on the existing systems that have developed for solving these problems. I would like to undertake this project in an incremental, scalable manner, rather than creating a complex system that would need to be implemented all at once to be effective. That way, small improvements could be made without attempting to undertake the insurmountable task of improving larger components of society at once. This incremental development would allow for the strengths of the existing systems to persist, as well.
-
-
-  
-
-Ember builtin commands (built in to the shell/CLI) should be exposed via the directory structure. As should other resources Dcs, DCE mapping data, relationship types, node types, metadata types, etc….
