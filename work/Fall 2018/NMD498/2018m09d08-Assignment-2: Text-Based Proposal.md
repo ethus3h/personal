@@ -8,12 +8,6 @@ At the bottom is a bunch of text related to the project. Most of it is probably 
 
 This proposal suggests a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
 
-Ember is a multifaceted project to develop a scalable environment for building an effective society.
-
-Create a system to enable efficacy, efficiency, and justice of society.
-
-The Ember Project would create a global power structure that would work to create an efficient opt-in society.
-
 # The problem
 
 There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. This results in wasted effort on developing redundant proprietary technologies, regressions in standards of living caused by the unavailability of proprietary systems, and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain).
@@ -31,9 +25,9 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 
 # General approach
 
-This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. The communites should attempt to provide a consistent and complete experience to the people who are part of them, without depending on support from external infrastructure, technology, or government. Relying on external support increases fragility. 
+This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. The communites should attempt to provide a consistent and complete experience to the people who are part of them, without depending on support from external infrastructure, technology, or government. Relying on external support increases fragility.
 
-To organize the broad scope of this project, it is currently divided into four primary areas of work: 
+This is a multifaceted project to develop a scalable environment for building an effective, just, and efficient society; consequently, it is quite broad in scope. To organize the broad scope of this project, it is currently divided into four primary areas of work: 
 - A specification of principles and methods on which the project is based
 - A community and a non-profit organization to manage and implement the project
 - An information technology environment
