@@ -2,8 +2,6 @@ The structure of this document is based on "Text-based project proposal: Templat
 
 Note that some sections have been re-ordered, to ensure that the most relevant and accessible information is presented first, with lengthier and more abstruse sections placed later. This proposal incorporates some earlier writings on the project.
 
-At the bottom is a bunch of text related to the project. Most of it is probably pretty bad....
-
 # Abstract
 
 This proposal introduces a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
@@ -73,8 +71,9 @@ Other parts of the project are also begun. (The technical specifications and oth
   - This includes both in writing and in person. Improving my in-person communication skills is especially important (my in-person speaking on this project is disastrously bad).
 
 ## Finances, budget, and stability
-- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration (`futuramerlin.com`) is good through the end of 2022, at which point it will need renewal, which is about US$10/year.)
+- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration (`futuramerlin.com`) is good through the end of 2022, at which point it will need renewal, which is about US$10/year.) The most recent costs of technical infrastructure is US$106.20 for three years of Web hosting, plus US$83.76 for eight year ownership of domain name. A rough estimate of the cost for the semester of Web hosting is therefore US$17.70, and the cost for the semester of the domain name is US$5.24.
 - While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
+- Significant volunteer involvement and/or external investment will be necessary for a full implementation of this project.
 
 ## Steps dependent on interpersonal connections
 - Establish the physical community. This will require initial capital of *at least* tens of thousands of US dollars, as well as support for ongoing expenses.
@@ -101,6 +100,7 @@ These tasks are much less important than the above, but are much easier and comp
   - Other EITE development tasks: networking, data storage and distribution, etc.
   - Write C implementation of StageL
   - Benchmark JavaScript implementation versus C→WebAssembly, out of curiosity. WASM would require clang in the toolchain, which wouldn't be ideal until clang can be run on non-WASM EITE, but anyway...
+  - An alternative strategy could omit implementing the technology, and only focusing on developing the specification, although that strategy would risk increasing the problems the project is intended to fix (by providing existing IT companies with the project’s technological innovations, but not having a free/libre implementation of them to prevent existing companies using distorted clones of the idea to further their proprietary goals and vendor lock-in).
 - Write/compile the library
   - Write, compile, and organize content for part 1 of the library
     - Specifications (from above)
@@ -144,12 +144,13 @@ These design goals are present to attempt to prevent regressions in the availabi
   - readily available (not rare or geographically restricted)
   - in a form that can be efficiently returned to a natural state if desired at the end of their lifespan (many plastics, for instance, would fail this criterion unless an energy-efficient tool for reversing their creation is available)
   - all technologies needed for their sourcing, processing, and end-of-life processing must meet these requirements
-  - in a form that will return to a natural material over time (the goal of this rule is to avoid materials that result in nonbiodegradeable litter like the microparticles that synthetic textiles sometimes result in; it could probably be better written)
+  - in a form that will return to a natural material over time (the goal of this rule is to avoid materials that result in nonbiodegradeable litter like the microparticles that synthetic textiles sometimes produce; it could probably be better expressed)
 - Rugged: All item designs should be long-lasting (not disposable, able to function for many years), rugged, and able to function in adverse conditions.
 - Safe: All designs should be safe to build, use, disassemble, and biodegrade.
 - Reliable: All designs should work predictably and reliably.
 - Libre: The designs should follow the principles needed to ensure they are freely usable, drafted here under "Licensing".
   - Any external dependencies of the project should be libre, so they can be forked and maintained if necessary.
+
 ### Licensing
 
 Aside from sections 2 and 3 of the Ember Library, all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Ember Freedom Requirements. This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its ancillary projects are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, software, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
@@ -215,10 +216,11 @@ An Ember community's services collective is a not-for-profit that organizes the 
 
 ## Information technology environment
 
-
 ### Introduction
 
-This section proposes developing an information technology system that allows various types of data to be given a first-class role. The proposed system is a centralized append-only information store, a computer operating system integrated with that information store, and related specifications.
+This section proposes developing an information technology system that allows various types of data to be given a first-class role. The proposed system is a centralized but non-centralization-dependent append-only information store, a computer operating system integrated with that information store, and related specifications.
+
+Web-based information technology companies such as Google, Amazon, and Facebook have a disproportionately large amount of power, have a disproportionately large role in how individuals are able to conduct their daily lives, and are single points of failure for a large portion of the modern lifestyle. These corporations are private institutions with little to no public oversight and control, despite having a large and visible role (perhaps even larger than any one government) in individuals’ lives. To begin to challenge that power structure, this semi-decentralized document-oriented computing platform should be developed that can integrate the abilities of traditional information technology systems into a single, cohesive system. Such a system should be free/libre software, and should be designed in such a way that it can adapt when needed to functioning as a fully decentralized, serverless system, transparently adjusting to the networking capabilities or lack thereof available to it on an ad-hoc basis. The existence of this project as a replacement would prevent single IT companies’ systems being single points of failure, and its distributed model would prevent it itself from being a single point of failure. Additionally, by being fully free/libre software, and by using a single system and data format for the full range of services, this proposal would reduce the dangers created by vendor lock-in, proprietary products, and incompatible IT systems.
 
 ### Overview
 
@@ -276,7 +278,7 @@ To decentralize such a system, individual computers that make up the information
 
 For instance, two geographically remote implementations of this system would be able to be connected when a network connection between them was available, being able to share work assignments remotely, but if a storm or other situation disrupted the network connection, the two communities’ economies would split into separate economies and continue working independently seamlessly, and then recombine when the network connection returned. In such a system, each individual who has a computer thus has access to and control over that part of the economy. This still leaves one centralized aspect, though, which is the software controlling the economies. If it is community-maintained libre software, that problem is largely eliminated, aside from the usual problems of project governance. If it is preferred, the software could also have facilities for creating ad-hoc centralization, where one instance of the software within each group of instances accessible within a given network would adopt the role of leader. This could be decided automatically, and made fully invisible to users of the system, or through community selection with automatic selection as a fallback, which would probably be preferable so as to ensure that systems with good connectivity and uptime (such as servers in datacenters) were selected as leaders, avoiding unnecessary inefficiency and maximizing reliability.
 
-## Target solution spaces
+### Target solution spaces
 
 - Getting a summary of everything going on (start / home screen kind of thing): Customizable. For example, could contain:
   - A brief reminder of who/where/when/etc. I am
@@ -459,6 +461,37 @@ For instance, two geographically remote implementations of this system would be 
   - Social bookmarking
   - …
 
+### Implementation challenges and strategy
+
+The first implementation was in PHP, and had poor architecture and rather unmaintainable code. A second attempt in Java was excessively ambitious in attempting to parse a programming-language-style document format interactively, without any specification and only minimal planning or architecture, as well as being highly overengineered. An attempt in PHP and JQuery to build a user interface toolkit based on these principles crashed and burned due to poor code architecture and attempting to “put the cart before the horse” in developing a UI toolkit without any specification for it, and without consideration of the existing (specified) aspects of the format. A fresh attempt in PHP stalled due to also being rather unmaintainable and awkwardly written, specifically in its use of dynamically written JavaScript, and trouble storing arbitrary binary content, independent of character encoding, in HTML text boxes (which are really the wrong tool for the job). An implementation in Bash was considered and a command-line interface designed for it, but probably this will simply become a wrapper around the JavaScript implementation. The JavaScript implementation here will attempt to avoid these issues by only implementing what has already been specified, not attempting to handle the programming-language-style format yet, using extensive unit tests (which was very helpful in the Java implementation), and using modularized code (which has been helpful in successful projects undertaken in the interim), and by planning the architecture of the code (shown in the diagram below) before implementing it. A staging language will be implemented in JavaScript to allow the code written for the project to be trivially portable to other platforms and languages.
+
+#### Client implementation design diagram
+
+```
+         External I/O: document source ──────────────╮
+               (as Dc sequence)                      │
+                                                     ↓
+   [○ Document execution state] ╮    ╭ [○ Document as Dc sequence] ←╮
+                ↑               ↓    ↓                              │
+                ╰───── Document execution loop:  ───────────────────╯
+  Other External I/O ← iterates over tokens (Dcs)
+                                   ↓
+                              Renderer: converts and
+                              and writes to renderer
+                              buffer visible document
+                              elements
+                                     ↓
+                              ⎡ Renderer buffer: holds     ⎤
+                              ⎢ representation of document ⎥
+                              ⎢ in the format desired for  ⎥
+External I/O: render target ← ⎢ output (terminal text for  ⎥
+(e.g. terminal or browser)    ⎢ a CLI, HTML for a browser, ⎥
+                              ⎢ bitmap for a raster        ⎥
+                              ⎢ monitor or HTML Canvas,    ⎥
+                              ⎢ other formats for export,  ⎥
+                              ⎣ etc.)                      ⎦
+```
+
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
@@ -483,13 +516,8 @@ The eighth trait is _inequality_. Unfortunately, this likely may affect the proj
 
 
 
-Problem: At present, Web-based information technology companies such as Google, Amazon, and Facebook have a disproportionately large amount of power, have a disproportionately large role in how individuals are able to conduct their daily lives, and are single points of failure for a large portion of the modern lifestyle. There is no practical way to rebel against this system. Van Gelder refers to “institutions whose behavior calls into question their right to exist” (“Introduction: How Occupy Wall Street Changes Everything”, Sarah Van Gelder, 2011, p. 10). The hegemony of corporations is a strong parallel to such institutions — unlike the government, corporations are private institutions with little to no public oversight and control, despite having a large and visible role (perhaps even larger than any one government) in individuals’ lives.
 
-Proposed solution: To begin to challenge this power structure, as part of an ongoing project, I propose developing an semi-decentralized document-oriented computing platform that can integrate the abilities of traditional information technology systems into a single, cohesive system. Such a system should be free/libre software, and should be designed in such a way that it can adapt when needed to functioning as a fully decentralized, serverless system, transparently adjusting to the networking capabilities or lack thereof available to it on an ad-hoc basis. The existence of this project as a replacement would prevent single IT companies’ systems being single points of failure, and its distributed model would prevent it itself from being a single point of failure. Additionally, by being fully free/libre software, and by using a single system and data format for the full range of services, this proposal would reduce the dangers created by vendor lock-in, proprietary products, and incompatible IT systems.
 
-Top strategies: My goal is to develop an initial implementation for this system, and create a community-led nonprofit organization to manage it. An alternative strategy could be omitting the implementation phase, and only focusing on developing a specification for such a system that could be presented elsewhere, although that strategy would risk increasing the problems the project is intended to fix (by providing existing IT companies with the project’s technological innovations, but not having a free/libre implementation of them to prevent existing companies using distorted clones of the idea to further their proprietary goals and vendor lock-in).
-
-Target audience: This project is aimed at and would benefit people who currently use proprietary IT systems. Secondary audiences include people who already use and care about free/libre software, and people who have not used IT systems but would like to. Making such a system be accessible and aesthetically pleasing is important, but achieving those aims is mostly a solved problem, and by following standard best practices this should not be a significant issue in the development of this project. To help it be easy to use, a user interface proposal is available that serves as an iteration on traditional computing models while being simpler and more capable; I believe that this proposal should be used as the default user interface modality for the proposed IT system. The project itself is quite serious, reflecting its great importance (at least in my opinion) and substantial scope, but fun elements certainly play a role in it (free/libre computer games, etc.) — not to mention the simple fun of using a great system that you know you fully control and can rely on, rather than being controlled by and dependent on corporate interests!
 
 Background
 
@@ -498,32 +526,7 @@ Explanation
 
 This project has a very large scope. Consequently, for this Approach, the target goals would be more limited. A practical implementation target for the context of this class project is the development of a simple state-machine–driven interpreter of the token-based document format specification for the information technology environment aspect of the project. A JavaScript implementation of this project is under way. JavaScript would allow the project to be portable on the Web platform, and perhaps allow implementing graphical user interface elements of the project sooner, while Bash would allow a character-mode textual user interface, perhaps a command-line environment. Either of these types of implementations of the format is valuable, regardless of the language they are developed in, and should be developed at some point; for this project only one would really be practical for meeting the implementation target within the context of this class, most likely. There have been several previous attempts at developing this, but they have not worked out for various reasons.
 
-The first implementation was in PHP, and had poor architecture and rather unmaintainable code. A second attempt in Java was excessively ambitious in attempting to parse a programming-language-style document format interactively, without any specification and only minimal planning or architecture, as well as being highly overengineered. An attempt in PHP and JQuery to build a user interface toolkit based on these principles crashed and burned due to poor code architecture and attempting to “put the cart before the horse” in developing a UI toolkit without any specification for it, and without consideration of the existing (specified) aspects of the format. A fresh attempt in PHP stalled due to also being rather unmaintainable and awkwardly written, specifically in its use of dynamically written JavaScript, and trouble storing arbitrary binary content, independent of character encoding, in HTML text boxes (which are really the wrong tool for the job). An implementation in Bash was considered and a command-line interface designed for it, but probably this will simply become a wrapper around the JavaScript implementation. The JavaScript implementation here will attempt to avoid these issues by only implementing what has already been specified, not attempting to handle the programming-language-style format yet, using extensive unit tests (which was very helpful in the Java implementation), and using modularized code (which has been helpful in successful projects undertaken in the interim), and by planning the architecture of the code (shown in the diagram below) before implementing it.
-Design diagram
 
-        External I/O: document source ──────────────╮
-               (as Dc sequence)                      │
-                                                     ↓
-   [○ Document execution state] ╮    ╭ [○ Document as Dc sequence] ←╮
-                ↑               ↓    ↓                              │
-                ╰───── Document execution loop:  ───────────────────╯
-  Other External I/O ← iterates over tokens (Dcs)
-                                   ↓
-                              Renderer: converts and
-                              and writes to renderer
-                              buffer visible document
-                              elements
-                                     ↓
-                              ⎡ Renderer buffer: holds     ⎤
-                              ⎢ representation of document ⎥
-                              ⎢ in the format desired for  ⎥
-External I/O: render target ← ⎢ output (terminal text for  ⎥
-(e.g. terminal or browser)    ⎢ a CLI, HTML for a browser, ⎥
-                              ⎢ bitmap for a raster        ⎥
-                              ⎢ monitor or HTML Canvas,    ⎥
-                              ⎢ other formats for export,  ⎥
-                              ⎣ etc.)                      ⎦
-The most recent costs of technical infrastructure is US$106.20 for three years of Web hosting, plus US$83.76 for eight year ownership of domain name. The cost for the semester of Web hosting is therefore US$17.70, and the cost for the semester of the domain name is US$5.24. The full implementation of the project is a very large project, and will require substantial investment of time and money. Land and a building for the project would cost tens or hundreds of thousands of US dollars, which I hope to fund by getting a well-paying job enabled by my education. That education will probably require at least two semesters of university without financial aid, which will require tens of thousands of dollars in student loans and their interest. Significant volunteer involvement and/or external investment would be necessary for a full implementation, since the project is too large for me to complete solo.
 Audience
 
 The intended audience for the part of this project I am undertaking this semester is very limited. It is simply a technology demo and beginning of an implementation of a tool with larger scope. Consequently, it will presumably be rather limited in its practical utility, making it not suitable for a general audience, and mainly useful as a tool for demonstrating some of the principles used in this project, and as a core starting-point for the implementation of a more substantial and practically useful set of capabilities. People that would be especially benefited by the full form of this project include individuals from marginalized groups, especially those with disabilities, mental illnesses, and the homeless, by enabling them to support themselves through a community and reducing barriers presented to them by discrimination, and by reducing the need for individuals’ dependence on the traditional monetary economy.
