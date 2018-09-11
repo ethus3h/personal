@@ -50,6 +50,7 @@ Other parts of the project are also begun. (The technical specifications and oth
       - Philosophy and rationale
       - Community
       - Technology and engineering
+      - Goods and services
     - Information technology environment software implementation
     - Library of knowledge and great cultural works
   - A self-sustaining financially, technologically, and resource-independent community and a non-profit organization to manage and implement the project, and to serve as a model for other communities using this strategy
@@ -197,6 +198,10 @@ There should be a universally and easily accessible facility to allow the commun
 
 Human society is sometimes unpredictable in the rights and safeties it affords. Consequently, a unified institution with the aim of remedying these issues should be established outside of the realms of traditional governmental structures. Participation in Ember communities shall be dependent on agreement to specified terms, to best protect the rights of the individuals making up the community.
 
+## Specification document
+
+The most significant knowledge assets of the project should comprise a book, which is equivalent to part 1 of the library, with the information technology environment implementation and part 2 of the library provided with it. That could take the form of an ebook, a physical printed book, or other innovative document formats. It should include specifications of the project philosophy and rationale, community, technology and engineering, and goods and services, as well as a carefully prepared compilation of other important knowledge.
+
 ## Designs
 
 The Ember project should develop designs for things such as clothing, tools, and housing. Any finished design provided by the project should conform to some specific traits.
@@ -222,6 +227,8 @@ A self-contained automated crop growing system could be constructed that would a
 ## Library Section 1: Basic knowledge, to be included in the text of the project specification
 
 This section of the library will require research and writing. It should consist of many short sections, each covering a topic. Each of these sections should list all other sections that must be understood as prerequisites for understanding it. Ideally, the dependency tree of every section should culminate in a single section that gives a basic understanding of the dominant language of the reference (probably English, for the forseeable future), so that by translating that one section into another language, every other concept in the reference can be understood by reading its section and its section's prerequisites.
+
+It should include specifications of the project philosophy and rationale, community, technology and engineering, and goods and services.
 
 ## Library Section 2: Great cultural works, to be included as digital data with the project specification
 
@@ -638,33 +645,20 @@ The eighth trait is _inequality_. Unfortunately, this likely may affect the proj
 
 # Needs work
 
-There are a large number of works of great cultural importance. They have touched on a number of meaningful subjects, but several subjects have stood out particularly for me: ethics, rights, prejudice and bigotry, and theology. These are elements of society that play important roles, influencing the ways people live and experience their daily lives.
-
-  
 
 When you look at life from a perspective of fundamentals, there are a few things that are necessary: food, water, and shelter. Without these basic elements, humans would not survive very long. If one is hard working and clever, one can provide these things for one’s self, by living off the land. When humans start to live together in communities, things become more complicated; medical care and education become important. The goals of a community are to make life more secure and predictable for the community’s members, and to reduce the hardships associated with “primitive” living (living without the support systems of a complex society). But with those goals comes a problem: how are those goals to be effectively implemented? Through the development of strategies such as specialization of individuals’ abilities and the creation of technological solutions, these challenges can be met.
 
-  
-
 As more people start living together, though, they will almost inevitably come into conflict. What can be done when the individual’s interests conflict with those of the society? What about conflicts between individuals? To deal with these issues, laws and a justice system can be put into place. An economy or labor-sharing strategy can aid in the exchange of services and goods, to avoid conflicts over these matters. A free market economy is helpful to a society, because it redirects the energies of greed and uses them as a force for technological development.
-
-  
 
 Philosophical discourse becomes important in many areas, such as the resolution of the conflicts and challenges of a complex society, and the research into understanding the world around us. This discourse leads to the development of more complex technology drawing on the ideas of the society, then leading to debates about ethics, to scientific investigation about the nature of our world, and to the development of ways to understand and accept who we are, such as religion and science.
 
-  
-
 Ideas, knowledge, and art become economically motivated, and so copyright and patent laws are established to encourage and protect innovation in these areas. The wide availability of information becomes increasingly relevant, and information technology and distribution systems such as books and computers are developed. Support infrastructures are created and strengthened, to protect society against threats both external and internal, such as disease, crime, terrorism, civil unrest, and war.
-
-  
 
 I would like to attempt to improve on the existing systems that have developed for solving these problems. I would like to undertake this project in an incremental, scalable manner, rather than creating a complex system that would need to be implemented all at once to be effective. That way, small improvements could be made without attempting to undertake the insurmountable task of improving larger components of society at once. This incremental development would allow for the strengths of the existing systems to persist, as well.
 
-  
-
 The Ember organization
 
-The central part of Ember, which its other parts are constructed to serve, is those people who have chosen to become members of the Ember organization. This organization will impose no restrictions on those who chose to become its members apart from the protection of their rights (and any restrictions that such protection entails), and anyone can choose to become a part of it or to leave it at any time. Becoming a member involves being listed in the central Ember computing environment database, presumably with sufficient biometric data to prevent identity theft or other fraudulent activity. Names, addresses, or other such personal information, beyond the biometric data previously mentioned, would not be required for the process of becoming a member. Members are not obligated to use any of the services provided by Ember, and could request at any time the termination of any services presently provided to them, including (I suppose?) even the basic protection of their human rights that Ember should by default provide.
+The central part of Ember, which its other parts are constructed to serve, is those people who have chosen to become members of the Ember organization. This organization should not impose restrictions on those who chose to become its members apart from those necessary for the protection of their rights, and anyone should be able to choose to become a part of it or to leave it at any time. Joining the organization would involve being listed in the central Ember computing environment database, presumably with sufficient biometric data to prevent identity theft or other fraudulent activity. Names, addresses, or other such personal information, beyond the biometric data previously mentioned, would not be required for the process of becoming a member. Members are not obligated to use any of the services provided by Ember, and could request at any time the termination of any services presently provided to them. In consideration of the "right to die" debate, perhaps people should be able to (revocably, of course, and only if they can give meaningful consent) even request termination of the basic protection of their human rights such as emergency medical care that any community should by default provide as best as possible to anyone regardless of affiliation.
 
 Ethical postulates upon which it is based
 
