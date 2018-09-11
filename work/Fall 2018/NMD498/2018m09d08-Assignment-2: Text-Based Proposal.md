@@ -150,7 +150,7 @@ These design goals are present to attempt to prevent regressions in the availabi
   - Any external dependencies of the project should be libre, so they can be forked and maintained if necessary.
 ### Licensing
 
-Aside from sections 2 and 3 of the Ember Library, all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Strict Ember Freedom Requirements. This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its ancillary projects are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, software, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
+Aside from sections 2 and 3 of the Ember Library, all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Ember Freedom Requirements. This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its ancillary projects are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, software, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
 
 #### Rationale
 
@@ -204,6 +204,49 @@ An Ember community is a group of individuals who have chosen to create an Ember 
 ## Services collective
 
 An Ember community's services collective is a not-for-profit that organizes the procurement and distribution of goods and services for its members, and perhaps those who are not its members as well. The goal of this organization would be to provide any needful things desired by its members for their lives. For instance, if a person chose to receive food through Ember, they could request that it be provided in exchange for labor. Their labor would help contribute to services requested in the future by them or other Ember members. The organization should have 24/7 available buildings staffed by Ember members from whom aid could be sought, such as the furnishing of meals, shelter, clothing, access to information, or other services, in exchange for labor. That way, if an Ember member is in trouble in a strange town, for instance, with no money, identification (beyond their own body), or other resources, they could go to the local Ember building to receive any services they desire; they could even build up credit in preparation for such an incident by working for the Ember collective prior to taking a trip, for instance, so they would have already earned any services they might want.
+
+## Information technology environment
+
+### Introduction
+
+This section documents the Ember computing environment: a centralized append-only information store, a computer operating system integrated with that information store, and related specifications. This is a work-in-progress draft, and everything here is subject to change and is not presently suited for implementation.
+
+### Overview
+
+The computing environment will consist of the following components (subject to change):
+
+- Development principles, describing the process to use for creating the computing environment
+- Data formats
+  - Specifications
+  - Reference implementations
+- Client app
+- Server apps:
+  - Public-facing API
+  - Search engine
+  - Storage backend
+
+### Development principles
+
+#### Prerequisites for code to be added to the repository
+
+- Code must be readable and documented.
+- Code must not cause or have failing tests.
+- Code should include thorough automatic test coverage.
+- Code must address a deviation from the current specification (bug, missing feature, etc.), and may not contain code unrelated to that.
+
+#### How issues should be prioritised
+
+Ordered from highest priority to lowest priority
+
+1.  Security vulnerabilities
+2.  Functional regressions
+3.  Incorrect results
+4.  Crashes and similar critical usability issues
+5.  Slow code with a significant impact on usability
+6.  Aesthetic regressions
+7.  Minor usability issues
+8.  Slow code with a moderate impact on usability
+9.  Missing features
 
 # Alignment of the project approach to the traits of the currently emerging new media
 
