@@ -146,8 +146,40 @@ These design goals are present to attempt to prevent regressions in the availabi
 - Rugged: All item designs should be long-lasting (not disposable, able to function for many years), rugged, and able to function in adverse conditions.
 - Safe: All designs should be safe to build, use, disassemble, and biodegrade.
 - Reliable: All designs should work predictably and reliably.
-- Libre: The designs should follow the principles needed to ensure they are freely usable, drafted here as the Ember Freedom Requirements.
+- Libre: The designs should follow the principles needed to ensure they are freely usable, drafted here under "Licensing".
   - Any external dependencies of the project should be libre, so they can be forked and maintained if necessary.
+### Licensing
+
+Aside from sections 2 and 3 of the Ember Library, all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Strict Ember Freedom Requirements. This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its ancillary projects are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, software, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
+
+#### Rationale
+
+These licensing requirements are present to attempt to prevent regressions in the availability and utility of the Ember project.
+
+#### Ember Minimal Freedom Requirements (EMFR)
+
+For given Information to be compliant with this standard, the following must be true of it:
+
+*   Self-contained: All information necessary for the full and complete use of the Information must also be EMFR-compliant.
+*   Redistributable: The Information must be legally redistributable.
+*   Source included: The preferred form for editing the Information must be available and EMFR-compliant; when used by Ember or when presented as EMFR-compliant, if the Information is in a form that is not the preferred form for editing it, a copy of the Information in the preferred form for editing it must always be included with the other copy.
+*   Notice of terms: When used by Ember or when presented as EMFR-compliant, documentation of these requirements must be provided with all copies of the Information.
+*   Irrevocable: The restrictions on the Information that make it EMFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
+*   Unencumbered and unencumbering: The Information may not employ any means to prevent or hinder copying or using it freely (e.g. DRM); furthermore, if the Information enables access to information that employs such means, the Information must not be complicit in facilitating those restrictions (for instance, an EMFR-compliant app that allows streaming DRM-protected content to an HDMI content-protection–enabled monitor MUST enable that content to be used freely by the user, and may not simply pass protected content through to the monitor without being able to decrypt it and enable its free use by the user; software like Firefox's content-decryption-module sandbox is thus not EMFR-compliant).
+
+#### Ember Freedom Requirements (EFR)
+
+This is the same as the Ember Minimal Freedom Requirements, with the following additional restrictions:
+
+*   Requiring non-misleading attribution: Attribution to the source of the Information must be required; if the Information is a derivative work, it must be made clear that it has been modified from the source information.
+*   Editable: It must be legal to modify the Information, and to redistribute both modified and/or unmodified copies of the Information.
+*   Mandatory publication: The Information must be promptly published and made widely available publicly at the cost of distribution or less.
+*   Copyleft: These requirements must be required to apply to all derivative works of the Information, and must be required to apply to all information packaged with the Information (e.g., non-EFR-compliant firmware may not be provided with an EFR-compliant kernel).
+*   Inherited: New information created using the Information must be EMFR-compliant.
+*   Provision as a service: When the Information is provided as a service (as in the case of software being run on a server), the Information must be made readily available to those who access the service, and documentation of these requirements must be provided with the service.
+*   Notice of terms: Documentation of these requirements must be provided with all copies of the Information.
+*   Restricted use: The Information may not itself be used as or as part of advertising or propaganda without the agreement of its creator or creators, although it may be used as a tool for the creation of advertising or propaganda.
+*   Irrevocable: The restrictions on the Information that make it EFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
 
 ## Goals
 
@@ -261,38 +293,6 @@ The intended audience for the part of this project I am undertaking this semeste
 I would like to create a robotic gardener. What it would do is automate the process of growing and harvesting crops. By combining small motors and sensors and a simple programmable computer system like an Arduino, a small self-contained box could be constructed that would accept a seed as input and produce crops and more seed as output. This could be used for easily growing many types of plant, by providing different growing instructions and seeds as needed. It could also be built in a way that tries to use energy from the environment efficiently, and avoid excessive use of mains power. This would be helpful in simplifying access to plant products, even plants that are not commonly available easily. For example, if one wants a type of plant like clover that is usually only available in the wild in summer, and not sold in the winter, but the person wants it available to them year round, then it could be grown by the robotic gardener.
 
 
-## Licensing
-
-Aside from sections 2 and 3 of the [Ember Library](/library), all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Strict Ember Freedom Requirements. This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its [ancillary projects](/ancillary) are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, software, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
-
-### Rationale
-
-These licensing requirements are present to attempt to prevent regressions in the availability and utility of the Ember project.
-
-### Ember Minimal Freedom Requirements (EMFR)
-
-For given Information to be compliant with this standard, the following must be true:
-
-*   Self-contained: All information necessary for the full and complete use of the Information must also be EMFR-compliant.
-*   Redistributable: The Information must be legally redistributable.
-*   Source included: The preferred form for editing the Information must be available and EMFR-compliant; when used by Ember or when presented as EMFR-compliant, if the Information is in a form that is not the preferred form for editing it, a copy of the Information in the preferred form for editing it must always be included with the other copy.
-*   Notice of terms: When used by Ember or when presented as EMFR-compliant, documentation of these requirements must be provided with all copies of the Information.
-*   Irrevocable: The restrictions on the Information that make it EMFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
-*   Unencumbered and unencumbering: The Information may not employ any means to prevent or hinder copying or using it freely (e.g. DRM); furthermore, if the Information enables access to information that employs such means, the Information must not be complicit in facilitating those restrictions (for instance, an EMFR-compliant app that allows streaming DRM-protected content to an HDMI content-protection–enabled monitor MUST enable that content to be used freely by the user, and may not simply pass protected content through to the monitor without being able to decrypt it and enable its free use by the user; software like Firefox's content-decryption-module sandbox is thus not EMFR-compliant).
-
-### Ember Freedom Requirements (EFR)
-
-This is the same as the Ember Minimal Freedom Requirements, with the following additional restrictions:
-
-*   Requiring non-misleading attribution: Attribution to the source of the Information must be required; if the Information is a derivative work, it must be made clear that it has been modified from the source information.
-*   Editable: It must be legal to modify the Information, and to redistribute both modified and/or unmodified copies of the Information.
-*   Mandatory publication: The Information must be promptly published and made widely available publicly at the cost of distribution or less.
-*   Copyleft: These requirements must be required to apply to all derivative works of the Information, and must be required to apply to all information packaged with the Information (e.g., non-EFR-compliant firmware may not be provided with an EFR-compliant kernel).
-*   Inherited: New information created using the Information must be EMFR-compliant.
-*   Provision as a service: When the Information is provided as a service (as in the case of software being run on a server), the Information must be made readily available to those who access the service, and documentation of these requirements must be provided with the service.
-*   Notice of terms: Documentation of these requirements must be provided with all copies of the Information.
-*   Restricted use: The Information may not itself be used as or as part of advertising or propaganda without the agreement of its creator or creators, although it may be used as a tool for the creation of advertising or propaganda.
-*   Irrevocable: The restrictions on the Information that make it EFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
 
 ## Introduction
 
