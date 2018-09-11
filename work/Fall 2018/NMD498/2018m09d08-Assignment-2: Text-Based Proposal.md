@@ -161,26 +161,26 @@ These licensing requirements are present to attempt to prevent regressions in th
 
 For given Information to be compliant with this standard, the following must be true of it:
 
-*   Self-contained: All information necessary for the full and complete use of the Information must also be EMFR-compliant.
-*   Redistributable: The Information must be legally redistributable.
-*   Source included: The preferred form for editing the Information must be available and EMFR-compliant; when used by Ember or when presented as EMFR-compliant, if the Information is in a form that is not the preferred form for editing it, a copy of the Information in the preferred form for editing it must always be included with the other copy.
-*   Notice of terms: When used by Ember or when presented as EMFR-compliant, documentation of these requirements must be provided with all copies of the Information.
-*   Irrevocable: The restrictions on the Information that make it EMFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
-*   Unencumbered and unencumbering: The Information may not employ any means to prevent or hinder copying or using it freely (e.g. DRM); furthermore, if the Information enables access to information that employs such means, the Information must not be complicit in facilitating those restrictions (for instance, an EMFR-compliant app that allows streaming DRM-protected content to an HDMI content-protection–enabled monitor MUST enable that content to be used freely by the user, and may not simply pass protected content through to the monitor without being able to decrypt it and enable its free use by the user; software like Firefox's content-decryption-module sandbox is thus not EMFR-compliant).
+- Self-contained: All information necessary for the full and complete use of the Information must also be EMFR-compliant.
+- Redistributable: The Information must be legally redistributable.
+- Source included: The preferred form for editing the Information must be available and EMFR-compliant; when used by Ember or when presented as EMFR-compliant, if the Information is in a form that is not the preferred form for editing it, a copy of the Information in the preferred form for editing it must always be included with the other copy.
+- Notice of terms: When used by Ember or when presented as EMFR-compliant, documentation of these requirements must be provided with all copies of the Information.
+- Irrevocable: The restrictions on the Information that make it EMFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
+- Unencumbered and unencumbering: The Information may not employ any means to prevent or hinder copying or using it freely (e.g. DRM); furthermore, if the Information enables access to information that employs such means, the Information must not be complicit in facilitating those restrictions (for instance, an EMFR-compliant app that allows streaming DRM-protected content to an HDMI content-protection–enabled monitor MUST enable that content to be used freely by the user, and may not simply pass protected content through to the monitor without being able to decrypt it and enable its free use by the user; software like Firefox's content-decryption-module sandbox is thus not EMFR-compliant).
 
 #### Ember Freedom Requirements (EFR)
 
 This is the same as the Ember Minimal Freedom Requirements, with the following additional restrictions:
 
-*   Requiring non-misleading attribution: Attribution to the source of the Information must be required; if the Information is a derivative work, it must be made clear that it has been modified from the source information.
-*   Editable: It must be legal to modify the Information, and to redistribute both modified and/or unmodified copies of the Information.
-*   Mandatory publication: The Information must be promptly published and made widely available publicly at the cost of distribution or less.
-*   Copyleft: These requirements must be required to apply to all derivative works of the Information, and must be required to apply to all information packaged with the Information (e.g., non-EFR-compliant firmware may not be provided with an EFR-compliant kernel).
-*   Inherited: New information created using the Information must be EMFR-compliant.
-*   Provision as a service: When the Information is provided as a service (as in the case of software being run on a server), the Information must be made readily available to those who access the service, and documentation of these requirements must be provided with the service.
-*   Notice of terms: Documentation of these requirements must be provided with all copies of the Information.
-*   Restricted use: The Information may not itself be used as or as part of advertising or propaganda without the agreement of its creator or creators, although it may be used as a tool for the creation of advertising or propaganda.
-*   Irrevocable: The restrictions on the Information that make it EFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
+- Requiring non-misleading attribution: Attribution to the source of the Information must be required; if the Information is a derivative work, it must be made clear that it has been modified from the source information.
+- Editable: It must be legal to modify the Information, and to redistribute both modified and/or unmodified copies of the Information.
+- Mandatory publication: The Information must be promptly published and made widely available publicly at the cost of distribution or less.
+- Copyleft: These requirements must be required to apply to all derivative works of the Information, and must be required to apply to all information packaged with the Information (e.g., non-EFR-compliant firmware may not be provided with an EFR-compliant kernel).
+- Inherited: New information created using the Information must be EMFR-compliant.
+- Provision as a service: When the Information is provided as a service (as in the case of software being run on a server), the Information must be made readily available to those who access the service, and documentation of these requirements must be provided with the service.
+- Notice of terms: Documentation of these requirements must be provided with all copies of the Information.
+- Restricted use: The Information may not itself be used as or as part of advertising or propaganda without the agreement of its creator or creators, although it may be used as a tool for the creation of advertising or propaganda.
+- Irrevocable: The restrictions on the Information that make it EFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
 
 ## Goals
 
@@ -245,15 +245,15 @@ The computing environment will consist of the following components (subject to c
 
 Ordered from highest priority to lowest priority
 
-1.  Security vulnerabilities
-2.  Functional regressions
-3.  Incorrect results
-4.  Crashes and similar critical usability issues
-5.  Slow code with a significant impact on usability
-6.  Aesthetic regressions
-7.  Minor usability issues
-8.  Slow code with a moderate impact on usability
-9.  Missing features
+- Security vulnerabilities
+- Functional regressions
+- Incorrect results
+- Crashes and similar critical usability issues
+- Slow code with a significant impact on usability
+- Aesthetic regressions
+- Minor usability issues
+- Slow code with a moderate impact on usability
+- Missing features
 
 ### Further principles
 
@@ -276,222 +276,185 @@ For instance, two geographically remote implementations of this system would be 
 ## Target solution spaces
 
 - Getting a summary of everything going on (start / home screen kind of thing): Customizable. For example, could contain:
-
-- A brief reminder of who/where/when/etc. I am
-- What I have to do today (schedule, tasks, etc.)
-- Important news (e.g. emergencies, etc.)
-- A search box
-- A way to easily create a journal entry, blog/microblog post, social networking status update, etc.
-- A way to easily add an event to my schedule or a task to my to-do list or a note to myself (Stickies style) or a more thorough journal-y note to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
-- A way to easily compose an IM / email / etc. or place a voice/videocall
-- Messages from others (emails, IMs, voice/videomails, etc.)
-- Other guided information resources (see below)
-- A hierarchy of things to browse through (web-portal style)
-- …
-
-- Media playback
-
-- Movies
-
-- Feature films
-- Video series
-- Online streaming home video (YouTube, etc.)
-- …
-
-- Music
-
-- Albums
-- Individual tracks
-- Music videos
-- Artist/album/tag/etc. radio
-- Playlists, including shared playlists
-- Scores
-- …
-
-- Games
-
-- Interactive fiction, MUDs, MOOs, MMOs, puzzles, board game simulations, many other types of games …
-
-- Ebooks
-- Poetry
-- Quotations
-- Essays
-- News
-- Comics
-- Manga
-- Blogs & RSS feeds
-- Consuming realtime media (television, radio, livestreams, …)
-- …
-
+  - A brief reminder of who/where/when/etc. I am
+  - What I have to do today (schedule, tasks, etc.)
+  - Important news (e.g. emergencies, etc.)
+  - A search box
+  - A way to easily create a journal entry, blog/microblog post, social networking status update, etc.
+  - A way to easily add an event to my schedule or a task to my to-do list or a note to myself (Stickies style) or a more thorough journal-y note to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
+  - A way to easily compose an IM / email / etc. or place a voice/videocall
+  - Messages from others (emails, IMs, voice/videomails, etc.)
+  - Other guided information resources (see below)
+  - A hierarchy of things to browse through (web-portal style)
+  - …
+- Media consumption and browsing
+  - Reading and interacting with documents/apps
+  - Browsing a Web site
+  - Browsing through EITE nodes
+  - Movies
+    - Feature films
+    - Video series
+    - Online streaming home video (YouTube, etc.)
+    - …
+  - Music
+    - Albums
+    - Individual tracks
+    - Music videos
+    - Artist/album/tag/etc. radio
+    - Playlists, including shared playlists
+    - Scores
+    - …
+  - Games
+  - Interactive fiction, MUDs, MOOs, MMOs, puzzles, board game simulations, many other types of games …
+  - Ebooks
+  - Poetry
+  - Quotations
+  - Essays
+  - News
+  - Comics
+  - Manga
+  - Blogs & RSS feeds
+  - Consuming realtime media (television, radio, livestreams, …)
+  - …
 - Document creation and sharing
-
-- Writing a paper
-- Collaborative document editing / creation
-- Composing a score
-- Writing a book
-- Creating a movie
-- Creating a storyboard for a movie
-- Writing a script
-- Editing a photograph
-- Creating animation
-- Notes to myself (Stickies style)
-- More thorough journal-y notes to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
-- 3D modeling and rendering
-- CAD
-- Diagramming
-- Creating a database
-- Mind mapping
-- Recording and producing a song
-- Diagramming structures in multiple dimensions
-- Developing apps
-- Designing a typeface
-- Working with GIS data
-- Recording a photograph or a video using a webcam, scanner, camera, …
-- Recording audio using a microphone
-- Working with geometric figures
-- Recording music from a USB/MIDI instrument
-- Blogging and microblogging
-- Working with legal documents
-- …
-
-- Browsing through documents and information
-
-- Browsing a Web site
-- Browsing through Ember nodes
-- …
-
+  - Writing a paper
+  - Collaborative document editing / creation
+  - Composing a score
+  - Writing a book
+  - Creating a movie
+  - Creating a storyboard for a movie
+  - Writing a script
+  - Editing a photograph
+  - Creating animation
+  - Notes to one's self (sticky notes style)
+  - More thorough journal-y notes to one's self (including jotting down / recording / playing in musical ideas, etc.)
+  - 3D modeling and rendering
+  - CAD
+  - Diagramming
+  - Creating a database
+  - Mind mapping
+  - Recording and producing a song
+  - Diagramming structures in multiple dimensions
+  - Developing apps
+  - Designing a typeface
+  - Working with GIS data
+  - Recording a photograph or a video using a webcam, scanner, camera, …
+  - Recording audio using a microphone
+  - Working with geometric figures
+  - Recording music from a USB/MIDI instrument
+  - Blogging and microblogging
+  - Working with legal documents
+  - …
 - Working with structured information (this is mostly also document creation / management)
-
-- Managing a genealogy using Ember records
-- Managing a calendar / schedule
-- Managing a to-do list
-- Managing a contacts directory
-- Working with scientific data
-- Maintaining a retail environment (online or physical)
-- Managing recipes
-- Managing a reading list
-- Journaling
-- Managing a bibliography
-- Fantasy sports
-- Managing and using bookmarks
-- Managing financial information
-- Managing personal notes, documents, projects, photographs, videos, etc.
-- Managing a class
-- Participating in a class
-- …
-
-- Resources/tools
-
-- Dictionary
-- Thesaurus
-- Chemical elements chart and data
-- Maps, travel directions, and sky charts
-- Calculator
-- Using the computer as a flashlight
-- Field guides / identification keys
-- Instructions and how-to information
-- Lessons on things
-
-- Typing lessons
-- Instrument lessons
-- Tutorials on using software
-- …
-
-- Support using Ember
-- Nutrition information
-- Support in other aspects of life (e.g. help with trouble fishing, etc.)
-- …
-
+  - Managing a genealogy using Ember records
+  - Managing a calendar / schedule
+  - Managing a to-do list
+  - Managing a contacts directory
+  - Working with scientific data
+  - Maintaining a retail environment (online or physical)
+  - Managing recipes
+  - Managing a reading list
+  - Journaling
+  - Managing a bibliography
+  - Fantasy sports
+  - Managing and using bookmarks
+  - Managing financial information
+  - Managing personal notes, documents, projects, photographs, videos, etc.
+  - Managing a class
+  - Participating in a class
+  - …
+- Using resources/tools
+  - Dictionary
+  - Thesaurus
+  - Chemical elements chart and data
+  - Maps, travel directions, and sky charts
+  - Calculator
+  - Using the computer as a flashlight
+  - Field guides / identification keys
+  - Instructions and how-to information
+  - Lessons on things
+    - Typing lessons
+    - Language learning lessons
+    - Musical instrument lessons
+    - Tutorials on using software
+    - …
+  - Support using EITE & Ember
+  - Nutrition information
+  - Support in other aspects of life (e.g. help with trouble fishing, personal motivation, nutrition, depression, etc.)
+  - …
 - Management
-
-- Database creation and administration (this is really “Document creation”, but also listed here)
-- Network administration
-- Programming
-- Emulation of other computing systems
-- Working with files and directories
-- Converting data from one format to another
-- Compressing and/or archiving data and/or directory structures
-- Imaging disks
-- Encrypting, decrypting, creating checksum records for, checking against checksum records, packing with parity data, restoring from parity data…
-- Running apps (this is basically just opening documents)
-
-- Distributed computing
-
-- Forensics
-- Computer security
-
-- Malware prevention, intrusion detection, …
-
-- Data serialization
-- …
-
+  - Database creation and administration (this is really “Document creation”, but also listed here)
+  - Network administration
+  - Programming
+  - Emulation of other computing systems (this is also media playback, of a sort)
+  - Working with files and directories
+  - Converting data from one format to another
+  - Compressing and/or archiving data and/or directory structures
+  - Imaging disks
+  - Encrypting, decrypting, creating checksum records for, checking against checksum records, packing with parity data, restoring from parity data…
+  - Running apps (this is basically just opening documents, )
+  - Distributed computing
+  - Digital forensics
+  - Computer security
+  - Malware prevention, intrusion detection, …
+  - Data serialization
+  - …
 - Exchange
-
-- Buying and selling goods
-- Trading stocks
-- Purchasing and selling tickets
-- Issuing and redeeming coupons
-- Sending money (money-order style)
-- …
-
+  - Buying and selling goods
+  - Trading stocks and cryptocurrencies
+  - Purchasing and selling tickets
+  - Issuing and redeeming coupons
+  - Sending money (money-order style)
+  - …
 - Searching
-
-- Answers (e.g. facts, math questions)
-- Finding media (e.g. news, movies, music, etc.)
-- Locating documents
-- …
-
+  - Answers (e.g. facts, math questions)
+  - Finding media (e.g. news, movies, music, etc.)
+  - Locating documents
+  - …
 - Guided time use and content consumption
-
-- Notifications
-
-- Emergencies
-- Important news
-- Emails
-- Blog feeds
-- Things I’m supposed to be doing
-- Personal health warnings
-- Computer status warnings (disk/memory failure, overheating, can’t connect to Ember server, running out of battery power, …)
-- …
-
-- Activity guidance
-
-- What to do right now
-- What I have on my schedule upcoming
-- …
-
-- News headlines
-- Blog feeds
-- Podcasts
-- Top charts (popular items)
-- Best charts (classics / enduring popularity items)
-- Suggested recipes
-- Fitness tips
-- Weather information
-- Stock market information
-- Computer’s status (resource usage, etc.)
-- Personal health
-- Sports information
-- Acquaintance suggestions (people I might find interesting to talk to / get to know)
-- Dating suggestions / matchmaking
-- …
-
+  - Notifications
+  - Emergencies
+  - Important news
+  - Emails
+  - Blog feeds
+  - Things I’m supposed to be doing
+  - Personal health warnings
+  - Computer status warnings (disk/memory failure, overheating, can’t connect to Ember server, running out of battery power, …)
+  - …
+  - Activity guidance
+    - What to do right now
+    - What I have on my schedule upcoming
+    - …
+  - News headlines
+  - Blog feeds
+  - Podcasts
+  - Top charts (popular items)
+  - Best charts (classics / enduring popularity items)
+  - Suggested recipes
+  - Fitness tips
+  - Weather information
+  - Stock market information
+  - Computer’s status (resource usage, etc.)
+  - Personal health
+  - Sports information
+  - Acquaintance suggestions (people I might find interesting to talk to / get to know)
+  - Dating suggestions / matchmaking
+  - …
 - Communication
-
-- Instant messaging
-- Email
-- Video chat and group video chat
-- Audio and video messages
-- Collaborative document editing (this is “Document creation” but is related to communication)
-- Social networking
-- Blogging and microblogging (this is “Document creation” but is also a form of communication)
-- Newsgroups
-- BBSes
-- File sharing
-- Industrial automation (machine embroidery, etc.) (not sure if this fits in communication, since it’s communication with machines)
-- Sharing/microblogging/adding as status updates URLs, photographs, music, videos, …
-- Social bookmarking
-- …
+  - Instant messaging
+  - Email
+  - Video chat and group video chat
+  - Audio and video messages
+  - Collaborative document editing (this is “Document creation” but is related to communication)
+  - Social networking
+  - Blogging and microblogging (this is “Document creation” but is also a form of communication)
+  - Newsgroups
+  - BBSes
+  - File sharing
+  - Industrial automation (machine embroidery, etc.) (not an exact fit in the category of communication, since it’s communication with machines: perhaps closer to "management")
+  - Sharing/microblogging/adding as status updates URLs, photographs, music, videos, …
+  - Social bookmarking
+  - …
 
 # Alignment of the project approach to the traits of the currently emerging new media
 
