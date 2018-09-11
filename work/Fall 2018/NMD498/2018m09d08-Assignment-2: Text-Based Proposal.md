@@ -290,7 +290,7 @@ For instance, two geographically remote implementations of this system would be 
 - Media consumption and browsing
   - Reading and interacting with documents/apps
   - Browsing a Web site
-  - Browsing through EITE nodes
+  - Browsing through EITE nodes and other structured datasets/databases
   - Movies
     - Feature films
     - Video series
