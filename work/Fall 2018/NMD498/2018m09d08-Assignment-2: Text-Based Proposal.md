@@ -499,6 +499,80 @@ External I/O: render target ← ⎢ output (terminal text for  ⎥
                               ⎣ etc.)                      ⎦
 ```
 
+### StageL
+
+### EITE document formats
+
+There are two conceptually significant document formats for storing EITE data. Both formats consist of a sequence of Dcs. The simpler format would be a simple list of Dcs, similar to a character-based text encoding. The more complex format (the "EITE Language") would be a traditional programming language. The two formats should share a one-to-one equivalency for a given document, and merely be different ways of representing that document.
+
+### EITE Language
+
+Note that the syntax specifications are not included here, as they are lengthy, incomplete, and likely to be changed in the course of further development.
+
+#### Objective
+
+Develop a machine-readable language that can be implemented using StageL, and transpiled into StageL if desired. It should be practically useable as a shell as well as for running stored programs.
+
+#### Language profiles
+
+EITE Language programs may optionally declare a non-default language profile to use: Core, Basic, and Dangerous (the default is "Standard"). Core and Basic both restrict the program to a subset of the language. The Basic language interpreter is written using the Core subset of the language, and provides useful shortcuts to use in the development of the interpreter for the Standard profile. The Default language interpreter is written using the Basic subset of the language. The Dangerous profile allows using language features which are probably a bad idea to use, but may be needed in some cases.
+
+#### Dcs
+
+The core unit of the EITE Language is the Dc (Document Component). The defined Dcs are listed in DcData.csv. An EITE Language document is a list of Dcs, and a file is considered _structurally valid_ if it can be interpreted as such. A Dc can have a syntactical pattern that it can require if it is to be meaningful. For example, a marker to _begin_ a section of a document might be required to have a matching _end_ marker. A document is only _syntactically valid_ if the usage of each Dc contained within it conforms to the Dc's defined syntax, even if the document is otherwise structurally valid.
+
+#### Structures in the EITE Language
+
+The EITE Language uses the following main types of entity to represent information.
+
+##### Type
+
+Types are templates describing the structure of objects. They are known as prototypes or classes in most programming languages, depending on whether objects described by them inherit changes to the types made after the object was created. (Objects can be used as types by casting.) Type names begin with a capital letter when in source form.
+
+##### Object
+
+An object is an entity that conforms to a given type (an _instance_ of that type). The most general type is _object_, and there is no need for an object to conform to any other type.
+
+##### Block
+
+A block is a group of statements.
+
+##### Project
+
+A project is a single document, and if relevant, any other documents maintained as part of that document.
+
+##### Module
+
+A module is one or more Library-mode documents that have a package name for addressing the things they provide.
+
+##### List
+
+A list is an ordered list of objects.
+
+##### String
+
+A string is a list of Dcs. Because all Dcs can be used in strings, any data type can be cast to a string, and all data types internally _are_ strings of Dcs.
+
+##### Routine
+
+A routine is a set of instructions for a computer to follow as part of the process of interpreting a document. Similar concepts are known as functions or subroutines in most programming languages, or as methods when used within objects. Routines have an associated structure that indicates what parameters may be passed to it.
+
+##### Operator
+
+An operator is a short notation or syntax pattern for some common routines (e.g., `Number a + Number b` in place of `add(Number a, Number b)`.
+
+##### Identifier
+
+An identifier is a name for an object.
+
+##### Structure
+
+A structure is the definition of what the structure is that an entity can have, similar to type definitions or type signatures in some programming languages. A type can contain named Structures without any values for defining an interface.
+
+##### Statement
+
+A statement is a logical line of a document. It can be an invocation of a routine, or a declaration of an entity's structure or value.
+
 # Alignment of the project approach to the traits of the currently emerging new media
 
 Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdprojects.net/teaching_resources/jenkins_eight_traits_of_new_media.pdf) provides eight traits that its author observes in the prominent currently emerging new media. This section of the proposal evaluates this project's expression of this set of traits.
@@ -522,96 +596,6 @@ The eighth trait is _inequality_. Unfortunately, this likely may affect the proj
 # Needs work
 
 
-
-
-Audience
-
-The intended audience for the part of this project I am undertaking this semester is very limited. It
-
-
-
-
-### Test suite
-
-eet
-
-EITE execution test: given an input document in a specified format, run it and compare its output (the printable state of the document after it exits) to the expected output.
-
-ept
-
-EITE parse test: given an input document in a specified format, parse it and compare its representation as a Dc list to the expected representation.
-
-### EITE Language
-
-#### Objective
-
-Develop a machine-readable language that can be source-to-source translated into other languages. It should be practically useable as a shell as well as for running stored programs. Possible target languages to investigate include Bash, Rakudo Perl 6, NQP, C--, C, PyQt5, and JQuery.
-
-#### Language profiles
-
-EITE Language programs may optionally declare a non-default language profile to use: Core, Basic, and Dangerous (the default is "Standard"). Core and Basic both restrict the program to a subset of the language. The Basic language interpreter is written using the Core subset of the language, and provides useful shortcuts to use in the development of the interpreter for the Standard profile. The Default language interpreter is written using the Basic subset of the language. The Dangerous profile allows using language features which are probably a bad idea to use, but may be needed in some cases.
-
-#### Dcs
-
-The core unit of the EITE Language is the Dc (Document Component). The defined Dcs are listed in DcData.csv. An EITE Language document is a list of Dcs, and a file is considered _structurally valid_ if it can be interpreted as such. A Dc can have a syntactical pattern that it can require if it is to be meaningful. For example, a marker to _begin_ a section of a document might be required to have a matching _end_ marker. A document is only _syntactically valid_ if the usage of each Dc contained within it conforms to the Dc's defined syntax, even if the document is otherwise structurally valid.
-
-#### Structures in the EITE Language
-
-The EITE Language uses the following main types of entity to represent information:
-
-Type
-
-Types are templates describing the structure of objects. They are known as prototypes or classes in most programming languages, depending on whether objects described by them inherit changes to the types made after the object was created. (Objects can be used as types by casting.) Type names begin with a capital letter when in source form.
-
-Object
-
-An object is an entity that conforms to a given type (an _instance_ of that type). The most general type is _object_, and there is no need for an object to conform to any other type.
-
-Block
-
-A block is a group of statements. The routine `block` indicates a separation between blocks, although in most cases block division is indicated implicitly by a `:` at the end of a line (in which case the block indentation level increases), or by the decrease in whitespace marking a decrease in block indentation level.
-
-Project
-
-A project is a single document, and if relevant, any other documents maintained as part of that document.
-
-Module
-
-A module is one or more Library-mode documents that have a package name for addressing the things they provide.
-
-List
-
-A list is an ordered list of objects. An inline list is begun by `[` and terminated by `]`. Example: `listName=["a" [5 6] $b]; say $listName[0]` stores three Objects in a list named `listName` and prints `a`. Objects can be given custom identifiers for addressing them by separating them using `:` , in which case they should be additionally separated by `,` . Example: `listName=[foo: "a", bar: [5, 6], baz: b]; say $listName[foo]`.
-
-String
-
-A string is a list of Dcs. (Because all Dcs can be used in strings, any data type can be cast to a string.) An inline list is begun by `"` and terminated by a second `"`. In source form, `"` and `\` must be escaped using `\`. Example: `stringName="Hello, \"World\"!"` stores the string `Hello, "World"!` in a string named `stringName`. Strings can be concatenated by placing them beside each other: `a="foo"; b="baz"; say $a"bar"$b` prints `foobarbaz`. String literals can be specified without the quotation marks when they are used as parameters to a routine, because then they won't be confused for routine invocations. They need to have quotation marks if they look like numbers, though. I \*think\* context can be used to ensure that they aren't mistaken for types, but I'm not sure about that.
-
-Routine
-
-A routine is a set of instructions for a computer to follow as part of the process of interpreting a document. Similar concepts are known as functions or subroutines in most programming languages, or as methods when used within objects. Routines have an associated structure that indicates what parameters may be passed to it; they will be accessible through a list named `!par`, and if named, then also through their names. Specifying a return type for a routine is optional. If none is specified, it will be treated as "void", meaning no return type is expected. It is denoted by `()` followed by a block of statements, with its structure, if desired, within the parentheses. Example: `String foo(String, String qux?, *){say $!par[1]$!par[2]$qux}; foo("bar" "baz"); foo("bar" 6 "qux") # qux is 6, param 0 is bar, param 1 is 6, and param 2 is qux; foo(qux=6 "bar") # qux is still 6, but now parameter 0 is 6 and 1 is bar` represents an unnamed (positional-only) string parameter, an optional string parameter named "qux", and an unknown number (zero or more) of additional parameters of any type, and prints
-
-    bazbaz
-    6qux6
-    bar6
-
-. Because literals are printed by default when at the beginning of a statement, the "invoke" routine must be used to invoke a routine in some cases, such as when referencing a routine by a name stored in a variable or constant: `a="I! Am! An! Awkward! Identifier!"; $a(){say "blob"}; invoke $a`. An alternative syntax for routine invocation, omitting parentheses, can be used if desired: `foo(String, String qux?){}; foo qux=6 bar`
-
-Operator
-
-An operator is a short notation or syntax pattern for some common routines (e.g., `Number a + Number b` in place of `add(Number a, Number b)`, or `if true; then say 'Hello, World!'; else die` in place of `if(true, (){say 'Hello, World!'}, (){die})`).
-
-Identifier
-
-An identifier is a name for an object. They are indicated by `$`, except for identifiers for routines, which do not have the `$` prefix. Before the `$` a type signature is often present. Except for routines, `!` following the `$` indicates a language-defined identifier, and must be escaped if used as the first character of a custom identifier. For routines, the pattern is inverted: `!` before an identifier indicates that a custom routine is being referenced (it must be included in calls to `invoke`, as well). `(` following the `$` indicates a special value, not a normal identifier, using Bash's syntax: `$(say "foo"; say "bar")` represents the output of the code between the `(` and the `)`, and `$(<foo)` represents the contents of the file `foo`.
-
-Structure
-
-A structure is the definition of what the structure is that an entity can have, similar to type definitions or type signatures in some programming languages. A type can contain named Structures without any values for defining an interface.
-
-Statement
-
-A statement is a logical line of a document. It can be an invocation of a routine, or a declaration of an entity's structure or value.
 These do not indicate that information is guaranteed correct within the given authority context, but only that that is the intended authority of the material.
 
   * Objective consensus: Like Wikipedia. Neutral point of view. Doesn't necessarily represent all points of view equally because of lack of consensus about them.
