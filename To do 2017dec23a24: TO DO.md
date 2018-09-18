@@ -215,6 +215,8 @@ javascript and is sexually aroused by having his time wasted.
 ```
  —Michael Orlitzky at https://archives.gentoo.org/gentoo-dev/message/1c196c0c1757c3ce32cadc11cf0be8e1
 
+"Heaven without you would be too much to bear, and hell would not be hell if you were there." (copied from https://www.spectator.co.uk/2014/12/a-masterclass-in-the-art-of-seduction/ )
+
 Things facebook is good for:
 - Staying in touch with people far away (like, ya know, email and telephones) 
 - Messaging high school classmates thirty years later so you can get together and remember how much high school sucked 
