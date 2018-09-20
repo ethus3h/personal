@@ -668,9 +668,15 @@ Where will you be distributing your meme?
 
 ### App: ________________
 
+The app can be provided as a Web page, a native app, or a boot-to-app OS. The current version uses a Web page, although it is consequently limited to the restrictions imposed on Web pages by Web browsers.
+
 ### Immersion: ________________
 
+I should learn to speak about the project so I can explain it in person, and learn to be friends with people in general.
+
 ### YouTube: ________________
+
+A video can be created to introduce people to the project, and hope they will engage in working on it with me.
 
 ## Standing
 
@@ -678,11 +684,19 @@ What credibility do you have for spreading your meme?
 
 ### App Store reviews: ________________
 
+I have recieved no comments on the app, although it does not do anything yet from a user perspective (other than use several hundred lines of code to print "Hello, World!", and run very slowly).
+
 ### Face-to-face community: ________________
+
+I would like to use the advantages provided by the University environment during this last year of my attendence to connect with people interested in this project. I am currently the only person working on the project, although I have talked about it briefly in the context of class presentations, and have discussed it a bit with a few professors.
 
 ### Influencers: ________________
 
+I hope to connect with people who have skill communicating and connecting with other people who would be interested in the project. I am currently the only person working on the project.
+
 ### YouTube subscribers: ________________
+
+I have two subscribers on my personal YouTube account, and none on my official account.
 
 ## Manual Vector
 
@@ -690,21 +704,39 @@ How will you inject your meme?
 
 ### Submitting an app
 
+An app can be distributed as a Web page, as a stand-alone downloadable app (as a file, through operating system package managers), and as a boot-to-app OS. All of these are reasonable distribution platforms for EITE, although likely only native apps would be able to run the server part of the app. (Different platforms have different limitations on what apps are able to accomplish, as a result of environment (hardware, software, network, etc.) limitations.)
+
 ### Clothing
+
+This would be possible, pretty much being a walking poster. It probably would cost a large amount of money to get a professional looking customized shirt, though, and a hand-made one would not necessarily be very convincing.
 
 ### Flashmob
 
+There would need to be more people. A single-person flashmob wouldn't be particularly visible.
+
 ### Launch event
+
+I don't know how to do this, or what it would involve. It sounds expensive, complicated, and liable to have no one show up....
 
 ### Postcards
 
+These could possibly be useful as a way to communicate with people working on the project if they are far away. Until there are distant people, though, they wouldn't be worth the cost (it's expensive to print and mail, and each postcard presumably only would reach a few people, unlike a poster).
+
 ### Posters
+
+I have designed a poster to help promote this project.
 
 ### Stickers
 
+If people with vehicles want them, they could be funded and made. Since I do not have a vehicle, this is a low priority for me.
+
 ### Embedding (YouTube)
 
+This is no longer necessary with the availabilty of HTML5 video.
+
 ### Linking in comments (YouTube)
+
+This is quite useful, although YouTube actually calls it the "Description" (it's separate from the comments). Providing information and links related to the video allows people who were interested in the video to pursue the project.
 
 ## Automatic Vector
 
@@ -712,15 +744,23 @@ How will computers spread your meme?
 
 ### IFTTT
 
+This is a tool for constructing simple tasks using Web services' APIs. It does not seem relevant to this project.
+
 ## Payload
 
 What's the smallest unit of meaning you hope to circulate?
 
 ### App-payload: ________________
 
+The EITE client and server apps are proposed above.
+
 ### URL-blog: ________________
 
+This proposal could be polished and published as a Web page. Alternatively or in addition, it should be used to fill out the content in the project's Web site.
+
 ### Video: ________________
+
+A video introduction to the project can be created to serve as an aid to recruit other people to work on this.
 
 ## Recognition
 
@@ -742,7 +782,7 @@ I don't use this. It's proprietary, it contributes unnecessarily to page CPU and
 
 ### Google Pagerank
 
-Pagerank was discontinued in 2016.
+Google Pagerank was discontinued in 2016.
 
 ### Money
 
@@ -761,3 +801,7 @@ People communicating with me to join forces on working on this project is the pr
 These are available via YouTube video page. People who contact me are more helpful than people who watch a video but are not interested enough to proceed.
 
 # Annotated bibliography
+
+https://www.opensourceecology.org/
+https://www.yesmagazine.org/issues/solidarity/capitalism-is-not-the-only-choice-20171114
+https://mainetime.timebanks.org/
