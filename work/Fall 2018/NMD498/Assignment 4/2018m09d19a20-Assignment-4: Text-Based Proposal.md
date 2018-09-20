@@ -2,6 +2,8 @@ The structure of this document is based on "Text-based project proposal: Templat
 
 Note that the structure is slightly different than in the template, to present the most relevant and accessible information first, with lengthier and more abstruse sections placed later. This proposal incorporates some earlier writings on the project.
 
+FIXME: Make changes using feedback (in an email labeled from Google-Drive).
+
 # Abstract
 
 This proposal introduces a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
@@ -802,6 +804,6 @@ These are available via YouTube video page. People who contact me are more helpf
 
 # Annotated bibliography
 
-https://www.opensourceecology.org/
-https://www.yesmagazine.org/issues/solidarity/capitalism-is-not-the-only-choice-20171114
-https://mainetime.timebanks.org/
+- Open Source Ecology: https://www.opensourceecology.org/
+- Capitalism is Not the Only Choice: https://www.yesmagazine.org/issues/solidarity/capitalism-is-not-the-only-choice-20171114
+- Time Initiative of Maine: https://mainetime.timebanks.org/
