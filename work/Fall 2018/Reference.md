@@ -4,8 +4,8 @@ NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
 - word press: http://umainenewmedia.net/course/nmd-498-copy/
 - syllabus: http://jonippolito.net/teaching/capstone/capstone_syllabus_2x_week.html
-- ASSIGNMENT 4: Gantt chart project, buget spreadsheet
-- ,http://www.ganttproject.biz/ (edited)
+- ASSIGNMENT 4: t you have a badge and three significant enhancements to your proposal due Thursday 20 Septembe
+- 
 
 
 COS312: 
