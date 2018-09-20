@@ -2,6 +2,8 @@ The structure of this document is based on "Text-based project proposal: Templat
 
 Note that the structure is slightly different than in the template, to present the most relevant and accessible information first, with lengthier and more abstruse sections placed later. This proposal incorporates some earlier writings on the project.
 
+FIXME: Make changes using feedback (in an email labeled from Google-Drive).
+
 # Abstract
 
 This proposal introduces a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
@@ -659,3 +661,157 @@ The sixth trait is being _global_. The proposed project is intended to be able t
 The seventh trait is _generational_. Whether an age gap will affect this project is hard to predict. If it does, it should only be by the choice of individuals, rather than by inaccessibility or prejudice: if people who are a different age than the majority involved in the project, those people should be provided any necessary accommodations to the fullest extent possible (medical care for the elderly, education for the young, and so on). This project should not engage in discrimination based on age, although it could only serve adults until a sufficient child protection framework is in place (e.g. I think Google doesn't allow kids to use it, so this presumably shouldn't either).
 
 The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
+
+# My Viral Media Campaign Plan
+
+## Circulation
+
+Where will you be distributing your meme?
+
+### App: ________________
+
+The app can be provided as a Web page, a native app, or a boot-to-app OS. The current version uses a Web page, although it is consequently limited to the restrictions imposed on Web pages by Web browsers.
+
+### Immersion: ________________
+
+I should learn to speak about the project so I can explain it in person, and learn to be friends with people in general.
+
+### YouTube: ________________
+
+A video can be created to introduce people to the project, and hope they will engage in working on it with me.
+
+## Standing
+
+What credibility do you have for spreading your meme?
+
+### App Store reviews: ________________
+
+I have recieved no comments on the app, although it does not do anything yet from a user perspective (other than use several hundred lines of code to print "Hello, World!", and run very slowly).
+
+### Face-to-face community: ________________
+
+I would like to use the advantages provided by the University environment during this last year of my attendence to connect with people interested in this project. I am currently the only person working on the project, although I have talked about it briefly in the context of class presentations, and have discussed it a bit with a few professors.
+
+### Influencers: ________________
+
+I hope to connect with people who have skill communicating and connecting with other people who would be interested in the project. I am currently the only person working on the project.
+
+### YouTube subscribers: ________________
+
+I have two subscribers on my personal YouTube account, and none on my official account.
+
+## Manual Vector
+
+How will you inject your meme?
+
+### Submitting an app
+
+An app can be distributed as a Web page, as a stand-alone downloadable app (as a file, through operating system package managers), and as a boot-to-app OS. All of these are reasonable distribution platforms for EITE, although likely only native apps would be able to run the server part of the app. (Different platforms have different limitations on what apps are able to accomplish, as a result of environment (hardware, software, network, etc.) limitations.)
+
+### Clothing
+
+This would be possible, pretty much being a walking poster. It probably would cost a large amount of money to get a professional looking customized shirt, though, and a hand-made one would not necessarily be very convincing.
+
+### Flashmob
+
+There would need to be more people. A single-person flashmob wouldn't be particularly visible.
+
+### Launch event
+
+I don't know how to do this, or what it would involve. It sounds expensive, complicated, and liable to have no one show up....
+
+### Postcards
+
+These could possibly be useful as a way to communicate with people working on the project if they are far away. Until there are distant people, though, they wouldn't be worth the cost (it's expensive to print and mail, and each postcard presumably only would reach a few people, unlike a poster).
+
+### Posters
+
+I have designed a poster to help promote this project.
+
+### Stickers
+
+If people with vehicles want them, they could be funded and made. Since I do not have a vehicle, this is a low priority for me.
+
+### Embedding (YouTube)
+
+This is no longer necessary with the availabilty of HTML5 video.
+
+### Linking in comments (YouTube)
+
+This is quite useful, although YouTube actually calls it the "Description" (it's separate from the comments). Providing information and links related to the video allows people who were interested in the video to pursue the project.
+
+## Automatic Vector
+
+How will computers spread your meme?
+
+### IFTTT
+
+This is a tool for constructing simple tasks using Web services' APIs. It does not seem relevant to this project.
+
+## Payload
+
+What's the smallest unit of meaning you hope to circulate?
+
+### App-payload: ________________
+
+The EITE client and server apps are proposed above.
+
+### URL-blog: ________________
+
+This proposal could be polished and published as a Web page. Alternatively or in addition, it should be used to fill out the content in the project's Web site.
+
+### Video: ________________
+
+A video introduction to the project can be created to serve as an aid to recruit other people to work on this.
+
+## Recognition
+
+How will you measure success?
+
+There are two primary success metrics for this semester. One is the progress I make on a prototype and strategy development; another is how many other people I can convince to work on the project with me.
+
+### App downloads/sales
+
+This can be estimated by how it corresponds roughly to the number of people who work on the project with me, which is presumably an upper bound on the number. Some people who want to use the app easily but not worry about developing it (e.g. people who find it useful but are working on non-EITE aspects of the project) would use this method of engagement.
+
+### Web site hits
+
+The Web host I am currently using tracks this automatically, but it is of dubious reliability (doesn't indicate how many people are actually interested in working on the project). The number of people who contact and talk to me about it would be a more reliable metric.
+
+### Google Analytics
+
+I don't use this. It's proprietary, it contributes unnecessarily to page CPU and network load, it invades the privacy of people who have used it, and it doesn't measure people with any familiarity with computers, since they would use uBlock Origin or similar software to prevent it loading.
+
+### Google Pagerank
+
+Google Pagerank was discontinued in 2016.
+
+### Money
+
+People with money may become interested in investing it in this project. If so, any contributions and expenditures should be tracked carefully, with the information publicly available to ensure that contributions are used efficiently. Only my personal funds are used at present.
+
+### Credibility (Diggs/Karma)
+
+As an undergraduate student with good grades, I have a moderate but fairly low amount of credibility. My lack of work experience in related fields may affect that as well. (My résumé and the software I have developed are available online, which can help people evaluate my experience, giving me more credibility.)
+
+### Reader comments
+
+People communicating with me to join forces on working on this project is the primary quantifiable metric of success for this semester, I think.
+
+### YouTube views
+
+These are available via YouTube video page. People who contact me are more helpful than people who watch a video but are not interested enough to proceed.
+
+# Annotated bibliography
+
+- The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union.
+- The GNU (https://www.gnu.org/) and
+- KDE (https://www.kde.org/) communities have produced a large number of successful free/libre/open-source software packages, which are already in use to facilitate development of this project.
+- The United States of America (https://www.wikimedia.org/) was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
+- The Wikimedia movement (https://www.wikimedia.org/) has produced a wide range of libre-licensed educational information, including the structured knowledge database Wikidata. The knowledge the Wikimedia projects has created is similar in some ways to some aspects of this project, and would be useful to use in developing this project.
+- Open Source Ecology (https://www.opensourceecology.org/) is developing, under a libre license, the technologies needed to construct a society. These are resources that are very useful to developing this project.
+- MusicBrainz (https://musicbrainz.org/) is a libre-licensed structured database of music and musicians. It is the original inspiration for the structured data aspects of EITE.
+- Apache Wave (http://incubator.apache.org/projects/wave.html) partially inspired and influenced the communications approach for EITE (mixed-media, everything-is-a-document/everything-is-a-string, collaborative networking).
+- Cryto Coding Collective (http://cryto.net/) is attempting a not-for-profit community-maintaned information technology infrastructure.
+- BabelStone (http://babelstone.co.uk/) has many articles discussing challenges in using various writing systems in information technology systems. These articles influenced my interest in the availability of tools with better typography capabilities.
+- ArchiveTeam (https://www.archiveteam.org/; http://fileformats.archiveteam.org/) works to preserve documents that were stored using the Internet and cloud services, and has articles and information about the massive losses of history and knowledge that have coincided with the use of these technologies. Frustration with these issues inspired the use of append-only storage as a core design parameter of EITE.
