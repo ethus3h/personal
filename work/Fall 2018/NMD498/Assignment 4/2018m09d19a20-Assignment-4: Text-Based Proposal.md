@@ -804,7 +804,7 @@ These are available via YouTube video page. People who contact me are more helpf
 
 # Annotated bibliography
 
-- The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union. ArchiveTeam (https://www.archiveteam.org/) has articles and information about the massive loss of history and knowledge resulting from the .
+- The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union.
 - The GNU (https://www.gnu.org/) and
 - KDE (https://www.kde.org/) communities have produced a large number of successful free/libre/open-source software packages, which are already in use to facilitate development of this project.
 - The United States of America (https://www.wikimedia.org/) was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
@@ -814,4 +814,4 @@ These are available via YouTube video page. People who contact me are more helpf
 - Apache Wave (http://incubator.apache.org/projects/wave.html) partially inspired and influenced the communications approach for EITE (mixed-media, everything-is-a-document/everything-is-a-string, collaborative networking).
 - Cryto Coding Collective (http://cryto.net/) is attempting a not-for-profit community-maintaned information technology infrastructure.
 - BabelStone (http://babelstone.co.uk/) has many articles discussing challenges in using various writing systems in information technology systems. These articles influenced my interest in the availability of tools with better typography capabilities.
-- ArchiveTeam (https://www.archiveteam.org/) works to preserve documents that were stored using cloud services.
+- ArchiveTeam (https://www.archiveteam.org/; http://fileformats.archiveteam.org/) works to preserve documents that were stored using the Internet and cloud services, and has articles and information about the massive losses of history and knowledge that have coincided with the use of these technologies. Frustration with these issues inspired the use of append-only storage as a core design parameter of EITE.
