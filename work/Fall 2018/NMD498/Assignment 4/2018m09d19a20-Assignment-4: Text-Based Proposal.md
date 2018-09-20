@@ -726,18 +726,38 @@ What's the smallest unit of meaning you hope to circulate?
 
 How will you measure success?
 
+There are two primary success metrics for this semester. One is the progress I make on a prototype and strategy development; another is how many other people I can convince to work on the project with me.
+
 ### App downloads/sales
+
+This can be estimated by how it corresponds roughly to the number of people who work on the project with me, which is presumably an upper bound on the number. Some people who want to use the app easily but not worry about developing it (e.g. people who find it useful but are working on non-EITE aspects of the project) would use this method of engagement.
 
 ### Web site hits
 
+The Web host I am currently using tracks this automatically, but it is of dubious reliability (doesn't indicate how many people are actually interested in working on the project). The number of people who contact and talk to me about it would be a more reliable metric.
+
 ### Google Analytics
+
+I don't use this. It's proprietary, it contributes unnecessarily to page CPU and network load, it invades the privacy of people who have used it, and it doesn't measure people with any familiarity with computers, since they would use uBlock Origin or similar software to prevent it loading.
 
 ### Google Pagerank
 
+Pagerank was discontinued in 2016.
+
 ### Money
+
+People with money may become interested in investing it in this project. If so, any contributions and expenditures should be tracked carefully, with the information publicly available to ensure that contributions are used efficiently. Only my personal funds are used at present.
 
 ### Credibility (Diggs/Karma)
 
+As an undergraduate student with good grades, I have a moderate but fairly low amount of credibility. My lack of work experience in related fields may affect that as well. (My résumé and the software I have developed are available online, which can help people evaluate my experience, giving me more credibility.)
+
 ### Reader comments
 
+People communicating with me to join forces on working on this project is the primary quantifiable metric of success for this semester, I think.
+
 ### YouTube views
+
+These are available via YouTube video page. People who contact me are more helpful than people who watch a video but are not interested enough to proceed.
+
+# Annotated bibliography
