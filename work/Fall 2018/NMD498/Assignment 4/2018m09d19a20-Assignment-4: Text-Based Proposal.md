@@ -659,3 +659,45 @@ The sixth trait is being _global_. The proposed project is intended to be able t
 The seventh trait is _generational_. Whether an age gap will affect this project is hard to predict. If it does, it should only be by the choice of individuals, rather than by inaccessibility or prejudice: if people who are a different age than the majority involved in the project, those people should be provided any necessary accommodations to the fullest extent possible (medical care for the elderly, education for the young, and so on). This project should not engage in discrimination based on age, although it could only serve adults until a sufficient child protection framework is in place (e.g. I think Google doesn't allow kids to use it, so this presumably shouldn't either).
 
 The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
+
+# My Viral Media Campaign Plan
+## Circulation
+Where will you be distributing your meme?
+App: ________________
+Immersion: ________________
+YouTube: ________________
+## Standing
+What credibility do you have for spreading your meme?
+App Store reviews: ________________
+Face-to-face community: ________________
+Influencers: ________________
+YouTube subscribers: ________________
+## Manual Vector
+How will you inject your meme?
+Submitting an app
+Clothing
+Flashmob
+Launch event
+Postcards
+Posters
+Stickers
+Embedding (YouTube)
+Linking in comments (YouTube)
+## Automatic Vector
+How will computers spread your meme?
+IFTTT
+## Payload
+What's the smallest unit of meaning you hope to circulate?
+App-payload: ________________
+URL-blog: ________________
+Video: ________________
+## Recognition
+How will you measure success?
+App downloads/sales
+Web site hits
+Google Analytics
+Google Pagerank
+Money
+Credibility (Diggs/Karma)
+Reader comments
+YouTube views
