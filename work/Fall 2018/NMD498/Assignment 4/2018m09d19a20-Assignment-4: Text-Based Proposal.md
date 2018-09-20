@@ -804,6 +804,13 @@ These are available via YouTube video page. People who contact me are more helpf
 
 # Annotated bibliography
 
-- Open Source Ecology: https://www.opensourceecology.org/
-- Capitalism is Not the Only Choice: https://www.yesmagazine.org/issues/solidarity/capitalism-is-not-the-only-choice-20171114
-- Time Initiative of Maine: https://mainetime.timebanks.org/
+- The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union.
+- The GNU (https://www.gnu.org/) and
+- KDE (https://www.kde.org/) communities have produced a large number of successful free/libre/open-source software packages, which are already in use to facilitate development of this project.
+- The United States of America (https://www.wikimedia.org/) was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
+- The Wikimedia movement (https://www.wikimedia.org/) has produced a wide range of libre-licensed educational information, including the structured knowledge database Wikidata. The knowledge the Wikimedia projects has created is similar in some ways to some aspects of this project, and would be useful to use in developing this project.
+- Open Source Ecology (https://www.opensourceecology.org/) is developing, under a libre license, the technologies needed to construct a society. These are resources that are very useful to developing this project.
+- MusicBrainz (https://musicbrainz.org/) is a libre-licensed structured database of music and musicians. It is the original inspiration for the structured data aspects of EITE.
+- Apache Wave (http://incubator.apache.org/projects/wave.html) partially inspired and influenced the communications approach for EITE (mixed-media, everything-is-a-document/everything-is-a-string, collaborative networking).
+- Cryto Coding Collective (http://cryto.net/) is attempting a not-for-profit community-maintaned information technology infrastructure.
+- 
