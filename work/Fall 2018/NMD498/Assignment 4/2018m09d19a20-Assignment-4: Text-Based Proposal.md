@@ -661,43 +661,83 @@ The seventh trait is _generational_. Whether an age gap will affect this project
 The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
 
 # My Viral Media Campaign Plan
+
 ## Circulation
+
 Where will you be distributing your meme?
-App: ________________
-Immersion: ________________
-YouTube: ________________
+
+### App: ________________
+
+### Immersion: ________________
+
+### YouTube: ________________
+
 ## Standing
+
 What credibility do you have for spreading your meme?
-App Store reviews: ________________
-Face-to-face community: ________________
-Influencers: ________________
-YouTube subscribers: ________________
+
+### App Store reviews: ________________
+
+### Face-to-face community: ________________
+
+### Influencers: ________________
+
+### YouTube subscribers: ________________
+
 ## Manual Vector
+
 How will you inject your meme?
-Submitting an app
-Clothing
-Flashmob
-Launch event
-Postcards
-Posters
-Stickers
-Embedding (YouTube)
-Linking in comments (YouTube)
+
+### Submitting an app
+
+### Clothing
+
+### Flashmob
+
+### Launch event
+
+### Postcards
+
+### Posters
+
+### Stickers
+
+### Embedding (YouTube)
+
+### Linking in comments (YouTube)
+
 ## Automatic Vector
+
 How will computers spread your meme?
-IFTTT
+
+### IFTTT
+
 ## Payload
+
 What's the smallest unit of meaning you hope to circulate?
-App-payload: ________________
-URL-blog: ________________
-Video: ________________
+
+### App-payload: ________________
+
+### URL-blog: ________________
+
+### Video: ________________
+
 ## Recognition
+
 How will you measure success?
-App downloads/sales
-Web site hits
-Google Analytics
-Google Pagerank
-Money
-Credibility (Diggs/Karma)
-Reader comments
-YouTube views
+
+### App downloads/sales
+
+### Web site hits
+
+### Google Analytics
+
+### Google Pagerank
+
+### Money
+
+### Credibility (Diggs/Karma)
+
+### Reader comments
+
+### YouTube views
