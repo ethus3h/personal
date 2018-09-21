@@ -1,4 +1,4 @@
-## Investigate bill due date / financial aid / enrollment
+Investigate bill due date / financial aid / enrollment
 
 NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
