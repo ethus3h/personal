@@ -13,7 +13,9 @@ Annotated Bibliography:10-20 news articles, similar projects, and related sites.
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
-- assigments  3: 
+- assigments  3:  Use lights to give your terrain a unique look, then create a picture-in-
+picture game view. One camera should exclude certain scene elements through the utilization of 
+content layers
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
