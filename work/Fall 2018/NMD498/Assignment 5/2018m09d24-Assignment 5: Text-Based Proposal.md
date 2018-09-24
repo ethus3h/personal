@@ -79,6 +79,26 @@ Other parts of the project are also begun. (The technical specifications and oth
 - While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
 - Significant volunteer involvement and/or external investment will be necessary for a full implementation of this project.
 
+### Detailed budget
+
+#### Bootstrapping and mockup
+```
+Task                                Hours   Price/hr    Cost$   Price owner
+============================================================================================
+Get people to join me on project    200     10          2000    I volunteer as much as I can
+Develop prototype                   200     10          2000    I volunteer to do my best
+Fill out prototype                  1000    10          10000   I volunteer as much as I can
+TOTAL                               1400    10          14000
+```
+
+#### Implementation
+```
+Task                                Hours   Price/hr    Cost    Price owner
+===========================================================================
+
+
+```
+
 ## Steps dependent on interpersonal connections
 - Establish the physical community. This will require initial capital of *at least* tens of thousands of US dollars, as well as support for ongoing expenses.
 - Create a non-profit organization to manage and be responsible for the project
@@ -162,7 +182,7 @@ For given Information to be compliant with this standard, the following must be 
 - Source included: The preferred form for editing the Information must be available and EMFR-compliant; when used by Ember or when presented as EMFR-compliant, if the Information is in a form that is not the preferred form for editing it, a copy of the Information in the preferred form for editing it must always be included with the other copy.
 - Notice of terms: When used by Ember or when presented as EMFR-compliant, documentation of these requirements must be provided with all copies of the Information.
 - Irrevocable: The restrictions on the Information that make it EMFR-compliant must be irrevocable, at least until it falls into the public domain by legal necessity.
-- Unencumbered and unencumbering: The Information may not employ any means to prevent or hinder copying or using it freely (e.g. DRM); furthermore, if the Information enables access to information that employs such means, the Information must not be complicit in facilitating those restrictions (for instance, an EMFR-compliant app that allows streaming DRM-protected content to an HDMI content-protection–enabled monitor MUST enable that content to be used freely by the user, and may not simply pass protected content through to the monitor without being able to decrypt it and enable its free use by the user; software like Firefox's content-decryption-module sandbox is thus not EMFR-compliant).
+- Unencumbered and unencumbering: The Information may not employ any means to prevent or hinder copying or using it freely (_e.g._ DRM); furthermore, if the Information enables access to information that employs such means, the Information must not be complicit in facilitating those restrictions (for instance, an EMFR-compliant app that allows streaming DRM-protected content to an HDMI content-protection–enabled monitor MUST enable that content to be used freely by the user, and may not simply pass protected content through to the monitor without being able to decrypt it and enable its free use by the user; software like Firefox's content-decryption-module sandbox is thus not EMFR-compliant).
 
 #### Ember Freedom Requirements (EFR)
 
@@ -171,7 +191,7 @@ This is the same as the Ember Minimal Freedom Requirements, with the following a
 - Requiring non-misleading attribution: Attribution to the source of the Information must be required; if the Information is a derivative work, it must be made clear that it has been modified from the source information.
 - Editable: It must be legal to modify the Information, and to redistribute both modified and/or unmodified copies of the Information.
 - Mandatory publication: The Information must be promptly published and made widely available publicly at the cost of distribution or less.
-- Copyleft: These requirements must be required to apply to all derivative works of the Information, and must be required to apply to all information packaged with the Information (e.g., non-EFR-compliant firmware may not be provided with an EFR-compliant kernel).
+- Copyleft: These requirements must be required to apply to all derivative works of the Information, and must be required to apply to all information packaged with the Information (_e.g._, non-EFR-compliant firmware may not be provided with an EFR-compliant kernel).
 - Inherited: New information created using the Information must be EMFR-compliant.
 - Provision as a service: When the Information is provided as a service (as in the case of software being run on a server), the Information must be made readily available to those who access the service, and documentation of these requirements must be provided with the service.
 - Notice of terms: Documentation of these requirements must be provided with all copies of the Information.
@@ -315,7 +335,7 @@ Thorough user group and subgroup support should be provided. This would be espec
 - Getting a summary of everything going on (start / home screen kind of thing): Customizable. For example, could contain:
   - A brief reminder of who/where/when/etc. I am
   - What I have to do today (schedule, tasks, etc.)
-  - Important news (e.g. emergencies, etc.)
+  - Important news (_e.g._ emergencies, etc.)
   - A search box
   - A way to easily create a journal entry, blog/microblog post, social networking status update, etc.
   - A way to easily add an event to my schedule or a task to my to-do list or a note to myself (Stickies style) or a more thorough journal-y note to myself (à la this note on apps and features) (this could even include jotting down / recording / playing in musical ideas, etc.)
@@ -417,7 +437,7 @@ Thorough user group and subgroup support should be provided. This would be espec
     - …
   - Support using EITE & Ember
   - Nutrition information
-  - Support in other aspects of life (e.g. help with trouble fishing, personal motivation, nutrition, depression, etc.)
+  - Support in other aspects of life (_e.g._ help with trouble fishing, personal motivation, nutrition, depression, etc.)
   - …
 - Management
   - Database creation and administration (this is really “Document creation”, but also listed here)
@@ -444,8 +464,8 @@ Thorough user group and subgroup support should be provided. This would be espec
   - Sending money (money-order style)
   - …
 - Searching
-  - Answers (e.g. facts, math questions)
-  - Finding media (e.g. news, movies, music, etc.)
+  - Answers (_e.g._ facts, math questions)
+  - Finding media (_e.g._ news, movies, music, etc.)
   - Locating documents
   - …
 - Guided time use and content consumption
@@ -495,7 +515,7 @@ Thorough user group and subgroup support should be provided. This would be espec
 
 ### Semantic representation
 
-There are two principle structural levels for which elements need to be described: documents and texts. A document is a complete unit such as a book or journal article, which would comprise various textual regions (note that in typesetting some items, such as database records of titles or filenames, only one textual region would be used; in the first, either a "Document Title" or a "Standard" region type would be used, depending on how the database was being queried, that is, the presentation style of the information as a title or as standard text (such as if it were being displayed in a page that contained a list of database fields), and in the second, a "Standard" region type would be used for interface display in lists (other region types might be used at other times) (note that in any use cases when it is in a "Standard" textual region, it would still have the text type Title)). A textual region is a section of content that has one semantic componency, _e. g._ the body of a document or the title; a document is therefore comprised of texts.
+There are two principle structural levels for which elements need to be described: documents and texts. A document is a complete unit such as a book or journal article, which would comprise various textual regions (note that in typesetting some items, such as database records of titles or filenames, only one textual region would be used; in the first, either a "Document Title" or a "Standard" region type would be used, depending on how the database was being queried, that is, the presentation style of the information as a title or as standard text (such as if it were being displayed in a page that contained a list of database fields), and in the second, a "Standard" region type would be used for interface display in lists (other region types might be used at other times) (note that in any use cases when it is in a "Standard" textual region, it would still have the text type Title)). A textual region is a section of content that has one semantic componency, _e.g._ the body of a document or the title; a document is therefore comprised of texts.
 
 - Liberal relationship formation and node typing: A node can be assigned any other node as its type; a relationship can be from any type of node to any other type of node even if that is not how the relationship is defined (this situation could display a warning, for example).
 - Authority contexts: Information should be able to be tagged with information on its authority. When used at the node level, as opposed to within document content, authority context information should be validated to ensure the utility of the available nodes (so that the authority context tagging can be used to evaluate the reliability of a given document). For instance, objective consensus, reflecting a neutral point of view, not necessarily trying to represent all points of view equally because of lack of consensus about them, versus subjective individual/organization source, representing an individual or organization's opinion, without necessarily any regard for a neutral point of view, such as in opinion writing or advertising.
@@ -508,7 +528,7 @@ Various fully featured ways to interact with the system should be provided. For 
 
 A complex sequence of Dcs could be built using special-purpose input tools for constructing them. For instance, purpose-built tools could be provided for constructing a sequence of Dcs representing a mathematical equation, or a sequence of Dcs representing a given time or color.
 
-Similarly, a special type of sequence builder could be used to build sets of values. For instance, for selecting a document to send to someone, a document set builder dialog could be provided. It would allow selecting one or more documents to send manually, or selecting one or more documents by specifying rules for their selection. Then, the set containing the chosen node or nodes (optionally, at their present revision) is saved as a node; that set node is then provided to the person one is communicating to; the same interface could be used for selecting files for working with in an app. Sets could have restrictions, such as regarding how many documents they could contain, whether they could contain complex structures (such as a directory tree), whether one document could be swapped out with another or not, or whether the set should automatically gather new nodes matching the specified rules. Sets could also be driven by search criteria (e.g. the most relevant 10 nodes for a given keyword or given Boolean search conditions, or all four nodes with type Musician and a "is member of" relationship to "The Beatles", or the rapidly changing set of nodes with type Musician and a current or past "is member of" relationship to "Yes"), or built programmatically from new or existing nodes. Sets could also hold non-node strings. (Node IDs, as with everything else, can be considered as special cases of strings.) This would allow file uploads, searches, etc. to all be driven using the same basic user interface module, which would essentially be an extension of traditional file pickers. The set node would have a Dc sequence representation, as do all nodes, so this is really a Dc sequence builder. Like anything else in EITE, by virtue of being an append-only system, a set could "time travel": a set could display its contents as they would be at any past time. Another application of the set builder could be creating a document that displayed the current top 10 tracks on the Billboard Hot 100 — a set could be created representing the top 10, and a rule could be created if desired to deal with the condition if the Hot 100 was discontinued: the set could be configured to return nothing, to return a fixed list, to return the top 10 from the final edition of the charts, _et cetera_. A set builder could also be used to select dynamic and non-finite groups of things, such as the set of all integers, or all strings matching a given language syntax; this ability would be similar to the lazy evaluation used frequently in functional programming.
+Similarly, a special type of sequence builder could be used to build sets of values. For instance, for selecting a document to send to someone, a document set builder dialog could be provided. It would allow selecting one or more documents to send manually, or selecting one or more documents by specifying rules for their selection. Then, the set containing the chosen node or nodes (optionally, at their present revision) is saved as a node; that set node is then provided to the person one is communicating to; the same interface could be used for selecting files for working with in an app. Sets could have restrictions, such as regarding how many documents they could contain, whether they could contain complex structures (such as a directory tree), whether one document could be swapped out with another or not, or whether the set should automatically gather new nodes matching the specified rules. Sets could also be driven by search criteria (_e.g._ the most relevant 10 nodes for a given keyword or given Boolean search conditions, or all four nodes with type Musician and a "is member of" relationship to "The Beatles", or the rapidly changing set of nodes with type Musician and a current or past "is member of" relationship to "Yes"), or built programmatically from new or existing nodes. Sets could also hold non-node strings. (Node IDs, as with everything else, can be considered as special cases of strings.) This would allow file uploads, searches, etc. to all be driven using the same basic user interface module, which would essentially be an extension of traditional file pickers. The set node would have a Dc sequence representation, as do all nodes, so this is really a Dc sequence builder. Like anything else in EITE, by virtue of being an append-only system, a set could "time travel": a set could display its contents as they would be at any past time. Another application of the set builder could be creating a document that displayed the current top 10 tracks on the Billboard Hot 100 — a set could be created representing the top 10, and a rule could be created if desired to deal with the condition if the Hot 100 was discontinued: the set could be configured to return nothing, to return a fixed list, to return the top 10 from the final edition of the charts, _et cetera_. A set builder could also be used to select dynamic and non-finite groups of things, such as the set of all integers, or all strings matching a given language syntax; this ability would be similar to the lazy evaluation used frequently in functional programming.
 
 ### Implementation challenges and strategy
 
@@ -621,7 +641,7 @@ A routine is a set of instructions for a computer to follow as part of the proce
 
 ##### Operator
 
-An operator is a short notation or syntax pattern for some common routines (e.g., `Number a + Number b` in place of `add(Number a, Number b)`.
+An operator is a short notation or syntax pattern for some common routines (_e.g._, `Number a + Number b` in place of `add(Number a, Number b)`.
 
 ##### Identifier
 
@@ -643,7 +663,7 @@ The first of these traits is _innovation_. As a communication medium, the inform
 
 The second trait is _convergence_. This proposal is highly convergent, being a broadly scoped project to innovate across a wide range of aspects of society, industry, and technology. Even regarding only the information technology environment, it is intended to inherit the capabilities of existing computers, which are used for text, sound, image, video, and interactive media, among others.
 
-The third defining trait is _everyday_ presence. As a project to develop a unified system providing all the knowledge resources needed for running a society, if it is successfully completed and used to its envisioned potential, it would serve as the framework for people's everyday lives. When only available in partial form, those portions of it can be used in everyday settings as well (e.g. large chunks of my classwork and other data I rely on and use on an everyday basis (personal projects, music library, email, etc.) are stored and managed using software developed in the course of developing this project).
+The third defining trait is _everyday_ presence. As a project to develop a unified system providing all the knowledge resources needed for running a society, if it is successfully completed and used to its envisioned potential, it would serve as the framework for people's everyday lives. When only available in partial form, those portions of it can be used in everyday settings as well (_e.g._ large chunks of my classwork and other data I rely on and use on an everyday basis (personal projects, music library, email, etc.) are stored and managed using software developed in the course of developing this project).
 
 The fourth trait is _appropriation_. This proposed project ideally will be highly appropriative, because so much work has already been done. It would in all probability be hugely wasteful and impractical to attempt to build everything from scratch, rather than to leverage existing systems (even if only practical through inspiration!) and merely work to fill gaps and integrate the various existing technologies well. That said, reliance on proprietary or externally managed technologies should be eliminated as soon as practical, with all elements of the project and its dependencies being fully libre, because proprietary, non-maintainable, and trade-dependent systems are brittle and are a huge threat to the ability of human society to maintain its standards of living over time. Any external dependencies of the project should be libre, so they can be forked and maintained if necessary.
 
@@ -651,7 +671,7 @@ The fifth trait is _networkedness_. As a design goal for this project, networkin
 
 The sixth trait is being _global_. The proposed project is intended to be able to be geographically dispersed, although individual communities would only be able to collaborate on physical projects by being physically colocated, for obvious reasons.
 
-The seventh trait is _generational_. Whether an age gap will affect this project is hard to predict. If it does, it should only be by the choice of individuals, rather than by inaccessibility or prejudice: if people who are a different age than the majority involved in the project, those people should be provided any necessary accommodations to the fullest extent possible (medical care for the elderly, education for the young, and so on). This project should not engage in discrimination based on age, although it could only serve adults until a sufficient child protection framework is in place (e.g. I think Google doesn't allow kids to use it, so this presumably shouldn't either).
+The seventh trait is _generational_. Whether an age gap will affect this project is hard to predict. If it does, it should only be by the choice of individuals, rather than by inaccessibility or prejudice: if people who are a different age than the majority involved in the project, those people should be provided any necessary accommodations to the fullest extent possible (medical care for the elderly, education for the young, and so on). This project should not engage in discrimination based on age, although it could only serve adults until a sufficient child protection framework is in place (_e.g._ I think Google doesn't allow kids to use it, so this presumably shouldn't either).
 
 The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
 
@@ -725,7 +745,7 @@ I have designed a poster to help promote this project.
 
 ### Stickers
 
-If people with vehicles want them, they could be funded and made. Since I do not have a vehicle, this is a low priority for me.
+Stickers could be funded and made. There is a risk that they could become litter or used as vandalism, though, which could harm the project, rather than promote it.
 
 ### Embedding (YouTube)
 
@@ -767,7 +787,7 @@ There are two primary success metrics for this semester. One is the progress I m
 
 ### App downloads/sales
 
-This can be estimated by how it corresponds roughly to the number of people who work on the project with me, which is presumably an upper bound on the number. Some people who want to use the app easily but not worry about developing it (e.g. people who find it useful but are working on non-EITE aspects of the project) would use this method of engagement.
+This can be estimated by how it corresponds roughly to the number of people who work on the project with me, which is presumably an upper bound on the number. Some people who want to use the app easily but not worry about developing it (_e.g._ people who find it useful but are working on non-EITE aspects of the project) would use this method of engagement.
 
 ### Web site hits
 
