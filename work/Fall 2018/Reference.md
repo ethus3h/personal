@@ -13,7 +13,6 @@ NMD498:
   - (In your Gantt chart, make sure promotion is an overlapping part of your timeline
   - Add to text-based proposal
     - Timeline
-    - Budget(This is that spreadsheet thing.Mine needs work)
     - Visual approaches (including diagram)
     - Promotion plan[is this the Viral meida campain thing?]
   - add a new approach to The Pool that links directly to the summary portfolio entry. Be sure to add the appropriate subject; for fall 2018, that is capstone-2019.
