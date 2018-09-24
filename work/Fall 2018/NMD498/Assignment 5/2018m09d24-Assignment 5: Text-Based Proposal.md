@@ -85,7 +85,7 @@ Other parts of the project are also begun. (The technical specifications and oth
 
 All figures are rough estimates.
 
-#### Bootstrapping and mockup
+#### Prototype and bootstrapping
 ```
 Task                                Hours   Price/hr    Cost$   Price owner
 ============================================================================================
