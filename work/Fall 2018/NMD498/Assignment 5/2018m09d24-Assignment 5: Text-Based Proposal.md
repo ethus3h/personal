@@ -79,13 +79,15 @@ Other parts of the project are also begun. (The technical specifications and oth
 - While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
 - Significant volunteer involvement and/or external investment will be necessary for a full implementation of this project.
 
-### Detailed budget
+### Detailed budget estimates
+
+All figures are rough estimates.
 
 #### Bootstrapping and mockup
 ```
 Task                                Hours   Price/hr    Cost$   Price owner
 ============================================================================================
-Get people to join me on project    200     10          2000    I volunteer as much as I can
+Get people to join me on project    200     10          2000    I volunteer
 Develop prototype                   200     10          2000    I volunteer to do my best
 Fill out prototype                  1000    10          10000   I volunteer as much as I can
 TOTAL                               1400    10          14000
@@ -95,12 +97,12 @@ TOTAL                               1400    10          14000
 ```
 Task                                Hours   Price/hr    Cost$   Price owner
 ============================================================================================
-Aquire land                         unit    100000±     100000± Community organization
-Establish community                 5000?   25+         125000? Community organization
-Develop substantial implementation  5000?   25+         125000? Community organization
-Fill out implementation             10000?  25+         250000? Community organization
-Support and maintain implementation ongoing 25+         ongoing Community organization
-TOTAL                               1400    10          600000? + ongoing
+Aquire land                         unit    100000      100000  Community organization
+Establish community                 5000    25          125000  Community organization
+Develop substantial implementation  5000    25          125000  Community organization
+Fill out implementation             10000   25          250000  Community organization
+Support and maintain implementation ongoing 25          ongoing Community organization
+TOTAL                               1400    10          600000+ongoing
 ```
 
 ## Steps dependent on interpersonal connections
