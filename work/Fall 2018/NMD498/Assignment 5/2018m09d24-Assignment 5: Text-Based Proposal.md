@@ -88,17 +88,18 @@ All figures are rough estimates.
 #### Prototype and bootstrapping
 ```
 Task                                Hours   Price/hr    Cost$   Price owner
-============================================================================================
+===================================================================================================
 Get people to join me on project    200     10          2000    I volunteer
 Develop prototype                   200     10          2000    I volunteer to do my best
 Fill out prototype                  1000    10          10000   I volunteer as much as I can
+Web hosting costs                   unit(yr)120         120     I will try to get the money in time
 TOTAL                               1400    10          14000
 ```
 
 #### Implementation
 ```
 Task                                Hours   Price/hr    Cost$   Price owner
-============================================================================================
+===================================================================================================
 Acquire land                        unit    100000      100000  Community organization
 Establish community                 5000    25          125000  Community organization
 Develop substantial implementation  5000    25          125000  Community organization
