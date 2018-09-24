@@ -12,7 +12,7 @@ This proposal introduces a project to develop and facilitate collaboration on a 
 
 There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. This results in wasted effort on developing redundant proprietary technologies, regressions in standards of living caused by the unavailability of proprietary systems, and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain).
 
-There is also no project that is sucessfully ensuring the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. This results in human suffering and inequality, catastrophic cultural and historical loss, and prolonged global ecological crises caused by government and corporate apathy and abuse.
+There is also no project that is successfully ensuring the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. This results in human suffering and inequality, catastrophic cultural and historical loss, and prolonged global ecological crises caused by government and corporate apathy and abuse.
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
 
