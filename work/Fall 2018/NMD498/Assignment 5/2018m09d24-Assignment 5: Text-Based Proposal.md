@@ -801,7 +801,7 @@ These are available via YouTube video page. People who contact me are more helpf
 
 Computers are not necessary, central, or even all that relevant to the core goals of this project. They play a role in it as proposed due to how they can simplify, facilitate, and expedite its development, implementation, and use. However, the information technology environment proposal could simply be omitted without significant loss to the project, and the remainder of the proposal implemented as described (using traditional "paper office" tools for communication, knowledge storage, and management). Taking this further, remote medieval monasteries are perhaps somewhat similar to what this project would look like without any modern technologies, in that they were self-sustaining communities (and tended towards the preservation of knowledge).
 
-The extensive focus on the information technology aspects in the proposal is largely a product of their impressive capabilities, and my personal interest in them and those capabilities.
+The extensive focus on the information technology aspects in the proposal is largely a product of their impressive capabilities and flexiblity, and my personal interest in them and in and their potential.
 
 # Annotated bibliography
 
