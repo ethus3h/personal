@@ -26,10 +26,8 @@ These problems are not hypothetical. They are very real and ongoing problems, an
 - ArchiveTeam. "A Million Ways to Die on the Web". https://www.archiveteam.org/index.php?title=A_Million_Ways_to_Die_on_the_Web
 
 ## Existing work towards solving this problem
-- The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union.
-- The GNU (https://www.gnu.org/) and KDE (https://www.kde.org/) communities have produced a large number of successful free/libre/open-source software packages, which are already in use to facilitate development of this project.
-- The United States of America (https://www.wikimedia.org/) was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
-- The Wikimedia movement (https://www.wikimedia.org/) has produced a wide range of libre-licensed educational information, including the structured knowledge database Wikidata. The knowledge the Wikimedia projects has created is similar in some ways to some aspects of this project, and would be useful to use in developing this project.
+
+Many existing projects address various aspects of the issues this project addresses. None seems to cohesively aim to integrate these aspects into a comprehensive libre framework and model implementation, though, driving the need for this project. For an annotated list of related projects and inspirations to this project, see the bibliography at the end of this proposal.
 
 # General approach
 
@@ -804,6 +802,7 @@ These are available via YouTube video page. People who contact me are more helpf
 
 # Annotated bibliography
 
+## Related projects and inspirations
 - The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union.
 - The GNU (https://www.gnu.org/) and
 - KDE (https://www.kde.org/) communities have produced a large number of successful free/libre/open-source software packages, which are already in use to facilitate development of this project.
