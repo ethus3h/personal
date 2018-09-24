@@ -657,7 +657,7 @@ The seventh trait is _generational_. Whether an age gap will affect this project
 
 The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
 
-# My Viral Media Campaign Plan
+# "My Viral Media Campaign Plan" questionnaire responses
 
 ## Circulation
 
