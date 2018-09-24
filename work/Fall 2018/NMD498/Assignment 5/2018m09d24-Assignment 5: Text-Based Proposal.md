@@ -147,7 +147,7 @@ These design goals are present to attempt to prevent regressions in the availabi
 
 ### Licensing
 
-Aside from sections 2 and 3 of the Ember Library, all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Ember Freedom Requirements. (By their nature, sections 2 and 3 of the library cannot practically be fully libre at present; see .) This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its ancillary projects are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, software, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
+Aside from sections 2 and 3 of the Ember Library, all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Ember Freedom Requirements. (By their nature, sections 2 and 3 of the library cannot practically be fully libre at present; see the "Library" section of the proposal for further information and rationale.) This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its ancillary projects are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, software, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
 
 #### Rationale
 
@@ -219,6 +219,8 @@ An Ember community's services collective is a not-for-profit that organizes the 
 A self-contained automated crop growing system could be constructed that would accept a seed as input and produce crops and more seed as output. This could be used for easily growing many types of plant, by providing different growing instructions and seeds as needed. It could also be built in a way that tries to use energy from the environment efficiently, and avoid excessive use of mains power. This would be helpful in simplifying access to plant products, even plants that are not commonly available easily. This principle could be applied to goods in general, using production on demand to reduce waste and transportation and storage costs. Such a system would require a level of technology that will likely take a while to develop without proprietary dependencies.
 
 ## Library
+
+The library is divided into three sections, each increasingly broad in scope. Sections 2 and 3 are the only parts of the project that are not fully libre-licensed, due to the inclusion of non-libre-licensed third-party-owned contents in the libraries. The inclusion of some non-libre contents is justified in these cases because of their cultural and historic importance, because they are not dependencies of any other parts of the project, and in the general interest of preserving knowledge. The non-libre contents should of course not be relied upon outside of their role as cultural knowledge artifacts.
 
 ## Library Section 1: Basic knowledge, to be included in the text of the project specification
 
