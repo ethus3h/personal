@@ -264,7 +264,7 @@ The computing environment will consist of the following components (subject to c
   - Public-facing API
   - Search engine
   - Storage backend
-    
+
 ### Development principles
 
 - Never remove a feature, capability, or option. If the development of an improved architecture or addition of new features involves scrapping existing code, reintroduce all previously existing capabilities before releasing the changes to the software.
@@ -806,6 +806,7 @@ These are available via YouTube video page. People who contact me are more helpf
 - Browne, Malachy. "YouTube Removes Videos Showing Atrocities in Syria" (https://web.archive.org/web/20171004135730/https://www.nytimes.com/2017/08/22/world/middleeast/syria-youtube-videos-isis.html). 2017 Aug. 22, in _The New York Times_. As corporate-mediated platforms become primary communications media with increasing reliance on them, the effects of using a privately managed platform without the traditional legal protections of press freedom become increasingly pronounced.
 - "Deforestation" (https://en.wikipedia.org/wiki/Deforestation). In _Wikipedia_. Deforestation is one highly visible illustration of the damage done by short-term, profit-driven decisionmaking.
 - ArchiveTeam. "A Million Ways to Die on the Web" (https://www.archiveteam.org/index.php?title=A_Million_Ways_to_Die_on_the_Web). This article discusses some of the threats to the preservation of Web-based media.
+- Income inequality
 - Tape blanking
 - Nitrite film loss
 
@@ -825,3 +826,4 @@ These are available via YouTube video page. People who contact me are more helpf
 - The Long Now Foundation (http://longnow.org/) promotes long-term thinking, which is an important design and ethics principle of this project.
 - Free Software Foundation (https://www.fsf.org/) promotes principles of freedom as used in and by this project.
 - Bangor Public Library (https://www.bpl.lib.me.us/) provided an environment that stimulated my interest in libraries when I was younger, both in their roles as guardians of knowledge and memory and as social spaces offering resources and a place to go to the public, especially people who are lonely, poor, or otherwise vulnerable. This project incorporates both of those principles.
+- Memory crystals
