@@ -93,10 +93,14 @@ TOTAL                               1400    10          14000
 
 #### Implementation
 ```
-Task                                Hours   Price/hr    Cost    Price owner
-===========================================================================
-
-
+Task                                Hours   Price/hr    Cost$   Price owner
+============================================================================================
+Aquire land                         unit    100000±     100000± Community organization
+Establish community                 5000?   25+         125000? Community organization
+Develop substantial implementation  5000?   25+         125000? Community organization
+Fill out implementation             10000?  25+         250000? Community organization
+Support and maintain implementation ongoing 25+         ongoing Community organization
+TOTAL                               1400    10          600000? + ongoing
 ```
 
 ## Steps dependent on interpersonal connections
