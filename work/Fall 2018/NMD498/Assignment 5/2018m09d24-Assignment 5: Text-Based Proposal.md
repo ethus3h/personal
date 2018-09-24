@@ -180,7 +180,7 @@ This is the same as the Ember Minimal Freedom Requirements, with the following a
 
 ## Goals
 
-An Ember community should provide useful elements of survival: shelter, nutrition (including food and water), medical care, education, and information. It would do this as its fulfilment of its objective of managing the various needs of a society, by enabling people to be effective participants in that society.
+An Ember community should provide useful elements of survival: shelter, nutrition (including food and water), medical care, education, and information. It would do this as its fulfillment of its objective of managing the various needs of a society, by enabling people to be effective participants in that society.
 
 One role of Ember would be to provide goods. For this, it would be ideal for Ember to control as much of the supply chain as possible. That would allow efficient provision of the goods such as to reduce cost and ensure quality. That control of the supply chain would, in an ideal scenario, extend to all stages of the process, from production of the raw materials to component production to assembly to distribution, as well as shipping at all stages of the process. If Ember both controlled production of raw materials in a region and was the dominant institution working to ensure that those resources are used responsibly, it would of course be important to take the interest Ember has in using the resources sustainably into consideration.
 
