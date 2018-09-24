@@ -721,6 +721,8 @@ These could possibly be useful as a way to communicate with people working on th
 
 I have designed a poster to help promote this project.
 
+![Poster mockup](2018sept19a20v7-poster-exported-2018sept24.png)
+
 ### Stickers
 
 If people with vehicles want them, they could be funded and made. Since I do not have a vehicle, this is a low priority for me.
