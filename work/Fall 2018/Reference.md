@@ -6,12 +6,11 @@ NMD498:
 - syllabus: http://jonippolito.net/teaching/capstone/capstone_syllabus_2x_week.html
 - Office hours: 10 to 12 (?) office hours Wednesday reservation https://is.gd/JMDye3 — COME AT LEAST ONCE!
 - Visual approaches: Create and include at least two more approaches (flowcharts, storyboards, renderings, etc) that could help someone evaluate your project.
-- (In your Gantt chart, make sure promotion is an overlapping part of your timeline
 - include your standing is in each of the social networks you plan to use, and how you might increase it. 
-- DO Milestones planning see syllabus for dates.
 - "This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment.": "Once again: bring a few examples of how this would all work."
 - ASSIGNMENT 5:
   - Incorporate milestones into timeline Team B Oct 16, Nov 6, Nov 29, Dec 13, Feb 7, Feb 28, Mar 28, Apr 18.
+  - (In your Gantt chart, make sure promotion is an overlapping part of your timeline
   - Add to text-based proposal
     - Timeline
     - Budget[Do i already have this??]
