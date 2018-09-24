@@ -68,6 +68,8 @@ Other parts of the project are also begun. (The technical specifications and oth
 - The most important tasks are also the most difficult. Developing assets (specifications, software, etc.) is trivial compared to developing communication skills and establishing allies. There's a reason there are several usable computer programs developed for this project, but no other people working on it.
 - My role in this project should be to coordinate and facilitate until a person or persons more capable is/are available, and/or until it is self-managed, and my presence or absence would have no appreciable effect on it.
 
+### Timeline
+
 ## People and communication
 - Establish connections with people. Human connections will be critical for the success of this project.
 - Develop effective communication skills and strategies. Without being able to get allies in developing the project, it would be dead in the water.
