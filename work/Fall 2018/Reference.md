@@ -14,10 +14,9 @@ NMD498:
   - Incorporate milestones into timeline Team B Oct 16, Nov 6, Nov 29, Dec 13, Feb 7, Feb 28, Mar 28, Apr 18.
   - Add to text-based proposal
     - Timeline
-    - Budget
+    - Budget[Do i already have this??]
     - Visual approaches (including diagram)
-    - Annotated Bibliography
-    - Promotion plan
+    - Promotion plan[is this the Viral meida campain thing?]
   - add a new approach to The Pool that links directly to the summary portfolio entry. Be sure to add the appropriate subject; for fall 2018, that is capstone-2019.
 
 COS312: 
