@@ -212,8 +212,6 @@ This proposal advocates the creation of a project to develop an adequate infrast
 
 Humans have come to expect and rely upon social constructs for their safety and mutual benefit, but human society is sometimes unpredictable in the rights and safeties it affords. Consequently, there is a need for a unified institution to be established outside of the realms of traditional governmental structures to provide some semblance of a filling of this void. The general rules of this organization should be established on the basis of rights: rather than making a rule that, for example, prohibits murder, instead a rule should be established that protects individuals’ right to life. In such a way, rules would not be created that infringe freedom more than that which is necessary to retain order in society.
 
-This project would, in its complete form, provide useful elements of survival: shelter, nutrition (including food and water), medical care, education, and information. It would do this as its fulfilment of its objective of managing the various needs of a society, by enabling people to be effective participants in that society.
-
 An Ember community's services collective is a not-for-profit that organizes the procurement and distribution of goods and services for its members, and perhaps others as well. The goal of this organization would be to provide any needful things desired by its members for their lives. For instance, if a person chose to receive food through Ember, they could request that it be provided in exchange for labor. Their labor would help contribute to services requested in the future by them or other Ember members. The organization should have 24/7 available buildings staffed by Ember members from whom aid could be sought, such as the furnishing of meals, shelter, clothing, access to information, or other services, in exchange for labor. That way, if an Ember member is in trouble in an unfamiliar town, for instance, with no money, identification (beyond their own body), or other resources, they could go to the local Ember building to receive any services they desire; they could even build up credit in preparation for such an incident by working for the Ember collective prior to taking a trip, for instance, so they would have already earned any services they might want (thus acting as travel insurance, in a sense).
 
 A self-contained automated crop growing system could be constructed that would accept a seed as input and produce crops and more seed as output. This could be used for easily growing many types of plant, by providing different growing instructions and seeds as needed. It could also be built in a way that tries to use energy from the environment efficiently, and avoid excessive use of mains power. This would be helpful in simplifying access to plant products, even plants that are not commonly available easily. This principle could be applied to goods in general, using production on demand to reduce waste and transportation and storage costs. Such a system would require a level of technology that will likely take a while to develop without proprietary dependencies.
@@ -497,7 +495,7 @@ Thorough user group and subgroup support should be provided. This would be espec
 
 ### Semantic representation
 
-There are two principle structural levels for which elements need to be described: documents and texts. A document is a complete unit such as a book or journal article, which would comprise various textual regions (note that in typesetting some items, such as database records of titles or filenames, only one textual region would be used; in the first, either a "Document Title" or a "Standard" region type would be used, depending on how the database was being queried, that is, the presentation style of the information as a title or as standard text (such as if it were being displayed in a page that contained a list of database fields), and in the second, a "Standard" region type would be used for interface display in lists (other region types might be used at other times) (note that in any use cases when it is in a "Standard" textual region, it would still have the text type Title)). A textual region is a section of content that has one semantic componency, e. g. the body of a document or the title; a document is therefore comprised of texts.
+There are two principle structural levels for which elements need to be described: documents and texts. A document is a complete unit such as a book or journal article, which would comprise various textual regions (note that in typesetting some items, such as database records of titles or filenames, only one textual region would be used; in the first, either a "Document Title" or a "Standard" region type would be used, depending on how the database was being queried, that is, the presentation style of the information as a title or as standard text (such as if it were being displayed in a page that contained a list of database fields), and in the second, a "Standard" region type would be used for interface display in lists (other region types might be used at other times) (note that in any use cases when it is in a "Standard" textual region, it would still have the text type Title)). A textual region is a section of content that has one semantic componency, _e. g._ the body of a document or the title; a document is therefore comprised of texts.
 
 - Liberal relationship formation and node typing: A node can be assigned any other node as its type; a relationship can be from any type of node to any other type of node even if that is not how the relationship is defined (this situation could display a warning, for example).
 - Authority contexts: Information should be able to be tagged with information on its authority. When used at the node level, as opposed to within document content, authority context information should be validated to ensure the utility of the available nodes (so that the authority context tagging can be used to evaluate the reliability of a given document). For instance, objective consensus, reflecting a neutral point of view, not necessarily trying to represent all points of view equally because of lack of consensus about them, versus subjective individual/organization source, representing an individual or organization's opinion, without necessarily any regard for a neutral point of view, such as in opinion writing or advertising.
@@ -554,7 +552,7 @@ A simple programming language should be provided for easily writing portable alg
 #### Design goals
 
 - Imperative language. Trivial to implement, learn, and read; extremely portable.
-- Provide function calls, arrays, strings, numbers, booleans, and operators for these types with strict typing. Objects and first-class functions are out of scope for this language.
+- Provide function calls, arrays, strings, numbers, Booleans, and operators for these types with strict typing. Objects and first-class functions are out of scope for this language.
 - Commonly used more complex constructs, such as arbitrary-precision numbers and associative arrays, should be offered as abstractions implemented within StageL as part of a common library of reference code.
 - Implemented as a transpiler that accepts a file as input and produces a file in the target language as output.
 - Have an implementation of itself using itself, to provide testing and portability of the language.
@@ -681,11 +679,11 @@ What credibility do you have for spreading your meme?
 
 ### App Store reviews: ________________
 
-I have recieved no comments on the app, although it does not do anything yet from a user perspective (other than use several hundred lines of code to print "Hello, World!", and run very slowly).
+I have received no comments on the app, although it does not do anything yet from a user perspective (other than use several hundred lines of code to print "Hello, World!", and run very slowly).
 
 ### Face-to-face community: ________________
 
-I would like to use the advantages provided by the University environment during this last year of my attendence to connect with people interested in this project. I am currently the only person working on the project, although I have talked about it briefly in the context of class presentations, and have discussed it a bit with a few professors.
+I would like to use the advantages provided by the University environment during this last year of my attendance to connect with people interested in this project. I am currently the only person working on the project, although I have talked about it briefly in the context of class presentations, and have discussed it a bit with a few professors.
 
 ### Influencers: ________________
 
@@ -729,7 +727,7 @@ If people with vehicles want them, they could be funded and made. Since I do not
 
 ### Embedding (YouTube)
 
-This is no longer necessary with the availabilty of HTML5 video.
+This is no longer necessary with the availability of HTML5 video.
 
 ### Linking in comments (YouTube)
 
@@ -801,7 +799,7 @@ These are available via YouTube video page. People who contact me are more helpf
 
 Computers are not necessary, central, or even all that relevant to the core goals of this project. They play a role in it as proposed due to how they can simplify, facilitate, and expedite its development, implementation, and use. However, the information technology elements of the proposal could simply be omitted without significant loss or change to the project, and the remainder of the proposal implemented as described (using traditional "paper office" or similar tools for communication, knowledge storage, and management). Taking this further, remote medieval monasteries are perhaps somewhat similar to what this project would look like without any modern technologies, in that they were self-sustaining communities based on a known, adaptable model (and tended towards the preservation of knowledge).
 
-The extensive focus on the information technology aspects in the proposal is largely a product of their impressive capabilities and flexiblity, and my personal interest in and frustration with them and their potential, and recognition of the value they could hold for society and this project.
+The extensive focus on the information technology aspects in the proposal is largely a product of their impressive capabilities and flexibility, and my personal interest in and frustration with them and their potential, and recognition of the value they could hold for society and this project.
 
 # Annotated bibliography
 
@@ -825,7 +823,7 @@ The extensive focus on the information technology aspects in the proposal is lar
 - Open Source Ecology (https://www.opensourceecology.org/) is developing, under a libre license, the technologies needed to construct a society. These are resources that are very useful to developing this project.
 - MusicBrainz (https://musicbrainz.org/) is a libre-licensed structured database of music and musicians. It is the original inspiration for the structured data aspects of EITE.
 - Apache Wave (http://incubator.apache.org/projects/wave.html) partially inspired and influenced the communications approach for EITE (mixed-media, everything-is-a-document/everything-is-a-string, collaborative networking).
-- Cryto Coding Collective (http://cryto.net/) is attempting a not-for-profit community-maintaned information technology infrastructure.
+- Cryto Coding Collective (http://cryto.net/) is attempting a not-for-profit community-maintained information technology infrastructure.
 - BabelStone (http://babelstone.co.uk/) has many articles discussing challenges in using various writing systems in information technology systems. These articles influenced my interest in the availability of tools with better typography capabilities.
 - ArchiveTeam (https://www.archiveteam.org/; http://fileformats.archiveteam.org/) works to preserve documents that were stored using the Internet and cloud services, and has articles and information about the massive losses of history and knowledge that have coincided with the use of these technologies. Frustration with these issues inspired the use of append-only storage as a core design parameter of EITE.
 - Bibliotheca Alexandrina (http://bibalex.org/) preserves and provides access to a wide range of knowledge.
