@@ -99,7 +99,7 @@ TOTAL                               1400    10          14000
 ```
 Task                                Hours   Price/hr    Cost$   Price owner
 ============================================================================================
-Aquire land                         unit    100000      100000  Community organization
+Acquire land                         unit    100000      100000  Community organization
 Establish community                 5000    25          125000  Community organization
 Develop substantial implementation  5000    25          125000  Community organization
 Fill out implementation             10000   25          250000  Community organization
