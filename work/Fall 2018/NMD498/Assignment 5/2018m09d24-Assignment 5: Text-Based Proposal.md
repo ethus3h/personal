@@ -864,5 +864,6 @@ The extensive focus on the information technology aspects in the proposal is lar
 - The Long Now Foundation (http://longnow.org/) promotes long-term thinking, which is an important design and ethics principle of this project.
 - Free Software Foundation (https://www.fsf.org/) promotes principles of freedom as used in and by this project.
 - Bangor Public Library (https://www.bpl.lib.me.us/) provided an environment that stimulated my interest in libraries when I was younger, both in their roles as guardians of knowledge and memory and as social spaces offering resources and a place to go to the public, especially people who are poor, lonely, or otherwise vulnerable or in need. This project incorporates both of those principles, as well as sharing the structure of a resource maintained by and for a community.
-- Framasoft (https://framasoft.org/)
-- Memory crystals
+- Framasoft (https://framasoft.org/) is a community providing libre software and services.
+- Arch Mission (https://archmission.org/) is compiling libraries of culturally important knowledge, similar to those proposed in this project.
+- Nanostructures in quartz glass (Kazansky, Peter G. "Laser nanostructuring in glass for long-term and large-scale digital preservation", http://www.digitalpreservation.gov/meetings/DSA2017/Day_2/05_AM_Kransky_5D_Optical_Storage.pdf) are an intriguing technology with the potential to make the distribution and preservation of large amounts of information practical.
