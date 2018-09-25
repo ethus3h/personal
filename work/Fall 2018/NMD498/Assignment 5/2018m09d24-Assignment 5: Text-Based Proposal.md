@@ -863,4 +863,5 @@ The extensive focus on the information technology aspects in the proposal is lar
 - The Long Now Foundation (http://longnow.org/) promotes long-term thinking, which is an important design and ethics principle of this project.
 - Free Software Foundation (https://www.fsf.org/) promotes principles of freedom as used in and by this project.
 - Bangor Public Library (https://www.bpl.lib.me.us/) provided an environment that stimulated my interest in libraries when I was younger, both in their roles as guardians of knowledge and memory and as social spaces offering resources and a place to go to the public, especially people who are poor, lonely, or otherwise vulnerable or in need. This project incorporates both of those principles, as well as sharing the structure of a resource maintained by and for a community.
+- Framasoft (https://framasoft.org/)
 - Memory crystals
