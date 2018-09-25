@@ -4,6 +4,10 @@ Note that the structure is slightly different than in the template, to present t
 
 FIXME: Make changes using feedback (in an email labeled from Google-Drive).
 
+Title (working title): Community Resources Development Project
+
+Human connections will be critical for the success of this project. If you're interested on working on a hackable community, please contact me! I can be reached at (207) 200-5386 (please leave a voicemail). Thanks!
+
 # Abstract
 
 This proposal introduces a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
