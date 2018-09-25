@@ -315,14 +315,14 @@ People communicating with me to join forces on working on this project is the pr
 # Annotated bibliography
 
 ## Evidence of the problem
-- "National Museum of Brazil fire" (https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire). In _Wikipedia_. This fire exemplifies how organizational apathy to cultural preservation can cause devastating losses.
-- "Deforestation" (https://en.wikipedia.org/wiki/Deforestation). In _Wikipedia_. Deforestation is one highly visible illustration of the damage done by short-term, profit-driven decisionmaking.
-- Economic inequality (https://en.wikipedia.org/wiki/Economic_inequality), often correlating with race and gender, arising regardless of individuals' capacity for economic contribution to society, reduces opportunities for social equality or justice.
+- "National Museum of Brazil fire". In _Wikipedia_. This fire exemplifies how organizational apathy to cultural preservation can cause devastating losses.
+- "Deforestation". In _Wikipedia_. Deforestation is one highly visible illustration of the damage done by short-term, profit-driven decisionmaking.
+- Economic inequality, often correlating with race and gender, arising regardless of individuals' capacity for economic contribution to society, reduces opportunities for social equality or justice.
 
 ## Related projects and inspirations
-- The United States of America (https://www.wikimedia.org/) was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
-- Open Source Ecology (https://www.opensourceecology.org/) is developing, under a libre license, the technologies needed to construct a society. These are resources that are very useful to developing this project.
-- Bibliotheca Alexandrina (http://bibalex.org/) preserves and provides access to a wide range of knowledge.
-- The Long Now Foundation (http://longnow.org/) promotes long-term thinking, which is an important design and ethics principle of this project.
-- Bangor Public Library (https://www.bpl.lib.me.us/) provided an environment that stimulated my interest in libraries when I was younger, both in their roles as guardians of knowledge and memory and as social spaces offering resources and a place to go to the public, especially people who are poor, lonely, or otherwise vulnerable or in need. This project incorporates both of those principles, as well as sharing the structure of a resource maintained by and for a community.
-- Arch Mission (https://archmission.org/) is compiling libraries of culturally important knowledge, similar to those proposed in this project.
+- The United States of America was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
+- Open Source Ecology is developing, under a libre license, the technologies needed to construct a society. These are resources that are very useful to developing this project.
+- Bibliotheca Alexandrina preserves and provides access to a wide range of knowledge.
+- The Long Now Foundation promotes long-term thinking, which is an important design and ethics principle of this project.
+- Bangor Public Library provided an environment that stimulated my interest in libraries when I was younger, both in their roles as guardians of knowledge and memory and as social spaces offering resources and a place to go to the public, especially people who are poor, lonely, or otherwise vulnerable or in need. This project incorporates both of those principles, as well as sharing the structure of a resource maintained by and for a community.
+- Arch Mission is compiling libraries of culturally important knowledge, similar to those proposed in this project.
