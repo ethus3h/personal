@@ -129,7 +129,7 @@ These design goals are present to attempt to prevent regressions in the availabi
 
 ### Licensing
 
-Aside from sections 2 and 3 of the Ember Library, all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Ember Freedom Requirements. (By their nature, sections 2 and 3 of the library cannot practically be fully libre at present; see the "Library" section of the proposal for further information and rationale.) This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its ancillary projects are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, computer typefaces, visual art, patents and inventions, specifications, schematics for equipment, etc.
+Aside from sections 2 and 3 of the Ember Library, all portions of the Ember project should be compliant with the Ember Freedom Requirements, and all portions of the project original to Ember should be compliant with the Ember Freedom Requirements. (By their nature, sections 2 and 3 of the library cannot practically be fully libre at present; see the "Library" section of the proposal for further information and rationale.) This is likely not yet a legally effective license, due to a lack of available legal expertise to work on it, and consequently, most of the Ember project and its ancillary projects are licensed under the GNU Affero GPL, version 3 (see the licensing information in each individual repository for details). The term "Information", in these requirements, refers to things such as music, visual art, patents and inventions, specifications, schematics for equipment, etc.
 
 #### Rationale
 
@@ -306,7 +306,7 @@ People with money may become interested in investing it in this project. If so, 
 
 ### Credibility (Diggs/Karma)
 
-As an undergraduate student with good grades, I have a moderate but fairly low amount of credibility. My lack of work experience in related fields may affect that as well. (My résumé and the software I have developed are available online, which can help people evaluate my experience, giving me more credibility.)
+As an undergraduate student with good grades, I have a moderate but fairly low amount of credibility. My lack of work experience in related fields may affect that as well. (My résumé is available publicly, which can help people evaluate my experience, giving me more credibility.)
 
 ### Reader comments
 
