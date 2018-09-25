@@ -844,6 +844,8 @@ The extensive focus on the information technology aspects in the proposal is lar
 - Income inequality
 - Tape blanking
 - Nitrite film loss
+- Slack
+- Snapchat, like Slack, isa company that predicates its entire business model on the wanton destruction of history.
 
 ## Related projects and inspirations
 - The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union.
