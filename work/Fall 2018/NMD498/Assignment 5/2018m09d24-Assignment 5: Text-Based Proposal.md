@@ -118,7 +118,7 @@ TOTAL                               1400    10          600000+ongoing
 - Establish the physical community. This will require initial capital of *at least* tens of thousands of US dollars, as well as support for ongoing expenses.
 - Create a non-profit organization to manage and be responsible for the project
 - Ensure that organization's financial stability (through sources such as an endowment and grants)
-- Transfer control of the project's assets (Web presence, etc.) to that organization 
+- Transfer control of the project's assets (Web presence, etc.) to that organization
 
 ## Development
 

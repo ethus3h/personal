@@ -2,15 +2,13 @@ The structure of this document is based on "Text-based project proposal: Templat
 
 Note that the structure is slightly different than in the template, to present the most relevant and accessible information first, with lengthier and more abstruse sections placed later. This proposal incorporates some earlier writings on the project.
 
-FIXME: Make changes using feedback (in an email labeled from Google-Drive).
-
-Title (working title): Community Resources Development Project
+Title (working title): Community Resources Development Project: Proposal without information technology environment
 
 Human connections will be critical for the success of this project. If you're interested on working on a hackable community, please contact me! I can be reached at (207) 200-5386 (please leave a voicemail). Thanks!
 
 # Abstract
 
-This proposal introduces a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
+This proposal introduces a project to develop and facilitate collaboration on a specification, a library, and a model community, to serve as resources and infrastructure for innovative communities.
 
 # The problem
 
@@ -38,19 +36,8 @@ This is a multifaceted project to develop a scalable environment for building an
 - An information technology environment
 - A library of knowledge and great cultural works
 
-## Current project status
-
-"Ember" is the current name of this project.
-
-The primary components comprising the project are currently unfinished, but a variety of software maintained to facilitate the development of the project is available.
-
-The main output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archiving, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty version control repositories used now for the project, as well as the structured archiving of more than eighteen million additional documents outside of the project.
-
-Other parts of the project are also begun. (The technical specifications and other data produced so far for the project are not included in this proposal document.)
-
 # Expected outcomes
 
-- Completed, stable software environment used for developing the project
 - Project objectives completed
   - Support and ongoing development of the project's intellectual deliverables, all of which (with the exceptions of parts 2 and 3 of the library) should be libre-licensed
     - Specifications
@@ -58,23 +45,15 @@ Other parts of the project are also begun. (The technical specifications and oth
       - Community
       - Technology and engineering
       - Goods and services
-    - Information technology environment software implementation
     - Library of knowledge and great cultural works
   - A self-sustaining financially, technologically, and resource-independent community and a non-profit organization to manage and implement the project, and to serve as a model for other communities using this strategy
-    - Managed, geographically-redundant computing infrastructure and data archiving
   - Distribution of the knowledge assets, allowing a decentralized network of communities using these specifications
-    - Ideally, the entirety of the knowledge assets (perhaps excluding section 3 of the library) would be available in a wristband storage format, or something similar, ensuring that every person carries the entirety of the contents of the project with them, essentially becoming human backups of the data, and with any single person having the knowledge necessary to recreate the entire project and all its technology if they want. Printed books should also be available and distributed to libraries.
-    - The cloud computing infrastructure should use a decentralized, asynchronously resolving append-only data store, similar to blockchains, to ensure the preservation and longevity of data stored using it as best as possible.
 
 # Tasks list
 
 ## Planning and strategy
-- The most important tasks are also the most difficult. Developing assets (specifications, software, etc.) is trivial compared to developing communication skills and establishing allies. There's a reason there are several usable computer programs developed for this project, but no other people working on it.
+- The most important tasks are also the most difficult. Developing assets (specifications, etc.) is trivial compared to developing communication skills and establishing allies.
 - My role in this project should be to coordinate and facilitate until a person or persons more capable is/are available, and/or until it is self-managed, and my presence or absence would have no appreciable effect on it.
-
-### Timeline
-
-![Gantt chart](ProjectGanttChart2018sept18-v5-2018sept25.png)
 
 ## People and communication
 - Establish connections with people. Human connections will be critical for the success of this project.
@@ -83,42 +62,15 @@ Other parts of the project are also begun. (The technical specifications and oth
   - This includes both in writing and in person. Improving my in-person communication skills is especially important (my in-person speaking on this project is disastrously bad).
 
 ## Finances, budget, and stability
-- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration (`futuramerlin.com`) is good through the end of 2022, at which point it will need renewal, which is about US$10/year.) The most recent costs of technical infrastructure is US$106.20 for three years of Web hosting, plus US$83.76 for eight year ownership of domain name. A rough estimate of the cost for the semester of Web hosting is therefore US$17.70, and the cost for the semester of the domain name is US$5.24.
+- Finances: Develop a financial strategy and budget requirements.
 - While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
 - Significant volunteer involvement and/or external investment will be necessary for a full implementation of this project.
-
-### Detailed budget estimates
-
-All figures are rough estimates.
-
-#### Prototype and bootstrapping
-```
-Task                                Hours   Price/hr    Cost$   Price owner
-===================================================================================================
-Get people to join me on project    200     10          2000    I volunteer
-Develop prototype                   200     10          2000    I volunteer to do my best
-Fill out prototype                  1000    10          10000   I volunteer as much as I can
-Web hosting costs                   unit(yr)120         120     I will try to get the money in time
-TOTAL                               1400    10          14120
-```
-
-#### Implementation
-```
-Task                                Hours   Price/hr    Cost$   Price owner
-===================================================================================================
-Acquire land                        unit    100000      100000  Community organization
-Establish community                 5000    25          125000  Community organization
-Develop substantial implementation  5000    25          125000  Community organization
-Fill out implementation             10000   25          250000  Community organization
-Support and maintain implementation ongoing 25          ongoing Community organization
-TOTAL                               1400    10          600000+ongoing
-```
 
 ## Steps dependent on interpersonal connections
 - Establish the physical community. This will require initial capital of *at least* tens of thousands of US dollars, as well as support for ongoing expenses.
 - Create a non-profit organization to manage and be responsible for the project
 - Ensure that organization's financial stability (through sources such as an endowment and grants)
-- Transfer control of the project's assets (Web presence, etc.) to that organization 
+- Transfer control of the project's assets to that organization
 
 ## Development
 
