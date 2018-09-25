@@ -74,7 +74,7 @@ Other parts of the project are also begun. (The technical specifications and oth
 
 ### Timeline
 
-![Gantt chart](ProjectGanttChart2018sept18-v3-2018sept25.png)
+![Gantt chart](ProjectGanttChart2018sept18-v5-2018sept25.png)
 
 ## People and communication
 - Establish connections with people. Human connections will be critical for the success of this project.
