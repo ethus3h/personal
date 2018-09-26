@@ -2,9 +2,9 @@ The structure of this document is based on "Text-based project proposal: Templat
 
 Note that the structure is slightly different than in the template, to present the most relevant and accessible information first, with lengthier and more abstruse sections placed later. This proposal incorporates some earlier writings on the project.
 
-FIXME: Make changes using feedback (in an email labeled from Google-Drive).
-
 Title (working title): Community Resources Development Project
+
+Please bear in mind that the computer/document/communication stuff is really just an unimportant tangent to the main point of this project. It's only in this proposal so much because I like working on it.
 
 Human connections will be critical for the success of this project. If you're interested on working on a hackable community, please contact me! I can be reached at (207) 200-5386 (please leave a voicemail). Thanks!
 
