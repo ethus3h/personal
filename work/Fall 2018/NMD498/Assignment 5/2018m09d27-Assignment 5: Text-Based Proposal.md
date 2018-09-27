@@ -60,6 +60,10 @@ The chief problems for the project right now are communication (helping people u
 - The most important tasks are also the most difficult. Developing assets (specifications, etc.) is trivial compared to developing communication skills and establishing allies.
 - My role in this project should be to coordinate and facilitate until a person or persons more capable is/are available, and/or until it is self-managed, and my presence or absence would have no appreciable effect on it.
 
+### Timeline
+
+![Gantt chart](ProjectGanttChart2018sept18-v6-2018sept27.png)
+
 ## People and communication
 - Establish connections with people. Human connections will be critical for the success of this project.
 - Develop effective communication skills and strategies. Without being able to get allies in developing the project, it would be dead in the water.
@@ -70,6 +74,33 @@ The chief problems for the project right now are communication (helping people u
 - Finances: Develop a financial strategy and budget requirements.
 - While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
 - Significant volunteer involvement and/or external investment will be necessary for a full implementation of this project.
+
+### Detailed budget estimates
+
+All figures are rough estimates.
+
+#### Prototype and bootstrapping
+```
+Task                                Hours   Price/hr    Cost$   Price owner
+===================================================================================================
+Get people to join me on project    200     10          2000    I volunteer
+Develop prototype                   200     10          2000    I volunteer to do my best
+Fill out prototype                  1000    10          10000   I volunteer as much as I can
+Web hosting costs                   unit(yr)120         120     I will try to get the money in time
+TOTAL                               1400    10          14120
+```
+
+#### Implementation
+```
+Task                                Hours   Price/hr    Cost$   Price owner
+===================================================================================================
+Acquire land                        unit    100000      100000  Community organization
+Establish community                 5000    25          125000  Community organization
+Develop substantial implementation  5000    25          125000  Community organization
+Fill out implementation             10000   25          250000  Community organization
+Support and maintain implementation ongoing 25          ongoing Community organization
+TOTAL                               1400    10          600000+ongoing
+```
 
 ## Steps dependent on interpersonal connections
 - Establish the physical community. This will require initial capital of *at least* tens of thousands of US dollars, as well as support for ongoing expenses.
