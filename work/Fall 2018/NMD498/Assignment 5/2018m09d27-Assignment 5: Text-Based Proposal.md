@@ -1,10 +1,8 @@
-The structure of this document is based on "Text-based project proposal: Template" (Jon Ippolito).
+The structure of this document is based on "Text-based project proposal: Template" (http://jonippolito.net/teaching/capstone/text_proposal_template.html).
 
 Note that the structure is slightly different than in the template, to present the most relevant and accessible information first, with lengthier and more abstruse sections placed later. This proposal incorporates some earlier writings on the project.
 
-Title (working title): Community Resources Development Project: Proposal without information technology environment
-
-This version of the proposal has nothing at all to do with computers / electronic communication technology / information technology!
+Title (working title): Community Resources Development Project
 
 Human connections will be critical for the success of this project. If you're interested on working on a hackable community, please contact me! I can be reached at (207) 200-5386 (please leave a voicemail). Thanks!
 
@@ -12,17 +10,9 @@ Human connections will be critical for the success of this project. If you're in
 
 This proposal introduces a project to develop and facilitate collaboration on a specification, a library, and a model community, to serve as resources and infrastructure for innovative communities.
 
-# Computer-free project strategy
-
-This is a modified version of the proposal to illustrate that information technology systems are not a critical part of it: it omits all references to or dependency on electronic information technology systems.
-
-Computers are not necessary, central, or even all that relevant to the core goals of this project. They play a role in it as proposed due to how they can simplify, facilitate, and expedite its development, implementation, and use. However, the information technology elements of the proposal could simply be omitted without significant loss or change to the project, and the remainder of the proposal implemented as described (using traditional "paper office" or similar tools for communication, knowledge storage, and management). Taking this further, remote medieval monasteries are perhaps somewhat similar to what this project would look like without any modern technologies, in that they were self-sustaining communities based on a known, adaptable model (and tended towards the preservation of knowledge).
-
-The extensive focus on the information technology aspects in the proposal is largely a product of their impressive capabilities and flexibility, and my personal interest in and frustration with them and their potential, and recognition of the value they could hold for society and this project.
-
 # The problem
 
-There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. "Libre" refers to the ethical principle of freedom of knowledge, whereby knowledge is provided with the legal protection of rights such as modification and redistribution. (For specifics on this project's goals and strategies in libre licensing, see the "Licensing" section below.) This results in wasted effort on developing redundant proprietary technologies (for instance, multiple non-interoperable word processing apps), regressions in standards of living caused by the unavailability of proprietary systems (for instance, not being able to use the features of a previous version of a word processing app that some capabilities removed), and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain) (for instance, the loss of many historic films and television series to neglect or deliberate destruction).
+There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. "Libre" refers to the ethical principle of freedom of knowledge, whereby knowledge is provided with the legal protection of rights such as modification and redistribution. (For specifics on this project's goals and strategies in libre licensing, see the "Licensing" section below.)
 
 There is also no project that is successfully ensuring the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. This results in human suffering and inequality (for instance, the dramatic disparities in income between race, gender, and economic groups), catastrophic cultural and historical loss (for instance, as in the loss of the National Museum of Brazil), and prolonged global ecological crises (for instance, deforestation and climate change) caused by government and corporate apathy and abuse.
 
@@ -40,13 +30,18 @@ Many existing projects address various aspects of the issues this project addres
 
 This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. The communities should attempt to provide a consistent and complete experience to the people who are part of them, without depending on support from external infrastructure, technology, or government. Relying on external support increases fragility.
 
-This is a multifaceted project to develop a scalable environment for building an effective, just, and efficient society; consequently, it is quite broad in scope. To organize the broad scope of this project, it is currently divided into four primary areas of work: 
+This is a multifaceted project to develop a scalable environment for building an effective, just, and efficient society; consequently, it is quite broad in scope. To organize the broad scope of this project, it is currently divided into three primary areas of work: 
 - A specification of principles and methods on which the project is based
 - A community and a non-profit organization to manage and implement the project
-- An information technology environment
 - A library of knowledge and great cultural works
 
 # Expected outcomes
+
+## Project bootstrapping
+
+The initial work on this project should focus on two primary challenge areas. The first is to figure out how to communicateis to connect with a number of other people interested in working o
+
+## Overall project
 
 - Project objectives completed
   - Support and ongoing development of the project's intellectual deliverables, all of which (with the exceptions of parts 2 and 3 of the library) should be libre-licensed
