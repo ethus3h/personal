@@ -257,6 +257,8 @@ I hope to connect with people who have skill communicating and connecting with o
 
 How will you inject your meme?
 
+These options, particularly those that seem non-obvious in their implementation, deserve further research and consideration.
+
 ### Clothing
 
 This would be possible, pretty much being a walking poster. It probably would cost a large amount of money to get a professional looking customized shirt, though, and a hand-made one would not necessarily be very convincing.
