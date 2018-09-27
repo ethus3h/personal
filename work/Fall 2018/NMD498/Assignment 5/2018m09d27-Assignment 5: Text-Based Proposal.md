@@ -39,7 +39,7 @@ This is a multifaceted project to develop a scalable environment for building an
 
 ## Project bootstrapping
 
-The initial work on this project should focus on two primary challenge areas. The first is to figure out how to communicateis to connect with a number of other people interested in working o
+The chief problems for the project right now are communication (helping people understand what the project is, and what needs to be done on it) and collaboration (getting people on board with it). Resolving those issues should really be the first order of business for me, and probably should be my focus for this semester.
 
 ## Overall project
 
@@ -229,13 +229,15 @@ The seventh trait is _generational_. Whether an age gap will affect this project
 
 The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
 
-# "My Viral Media Campaign Plan" questionnaire responses
+# Promotion strategy
+
+Based on the "Viral Media Campaign Planner" questionnaire (http://tutorials.nmdprojects.net/plan_viral_campaign/).
 
 ## Circulation
 
 Where will you be distributing your meme?
 
-### Immersion: ________________
+### Immersion
 
 I should learn to speak about the project so I can explain it in person, and learn to be friends with people in general.
 
@@ -243,11 +245,11 @@ I should learn to speak about the project so I can explain it in person, and lea
 
 What credibility do you have for spreading your meme?
 
-### Face-to-face community: ________________
+### Face-to-face community
 
 I would like to use the advantages provided by the University environment during this last year of my attendance to connect with people interested in this project. I am currently the only person working on the project, although I have talked about it briefly in the context of class presentations, and have discussed it a bit with a few professors.
 
-### Influencers: ________________
+### Influencers
 
 I hope to connect with people who have skill communicating and connecting with other people who would be interested in the project. I am currently the only person working on the project.
 
@@ -285,7 +287,7 @@ Stickers could be funded and made. There is a risk that they could become litter
 
 What's the smallest unit of meaning you hope to circulate?
 
-### Article: ________________
+### Article
 
 This proposal could be polished and published.
 
@@ -310,14 +312,15 @@ People communicating with me to join forces on working on this project is the pr
 # Annotated bibliography
 
 ## Evidence of the problem
-- "National Museum of Brazil fire". In _Wikipedia_. This fire exemplifies how organizational apathy to cultural preservation can cause devastating losses.
-- "Deforestation". In _Wikipedia_. Deforestation is one highly visible illustration of the damage done by short-term, profit-driven decisionmaking.
-- Economic inequality, often correlating with race and gender, arising regardless of individuals' capacity for economic contribution to society, reduces opportunities for social equality or justice.
+- "Deforestation" (https://en.wikipedia.org/wiki/Deforestation). In _Wikipedia_. Deforestation is one highly visible illustration of the damage done by short-term, profit-driven decisionmaking.
+- "National Museum of Brazil fire" (https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire). In _Wikipedia_. This fire exemplifies how organizational apathy to cultural preservation can cause devastating losses.
+- Economic inequality (https://en.wikipedia.org/wiki/Economic_inequality), often correlating with race and gender, arising regardless of individuals' capacity for economic contribution to society, reduces opportunities for social equality or justice.
+- The practice of "wiping" (https://en.wikipedia.org/wiki/Wiping; https://en.wikipedia.org/wiki/Doctor_Who_missing_episodes) historic broadcast media (radio and television) shows is illustrative of popular attitudes towards historical preservation: when value is not recognized at a given moment, things are wantonly neglected or destroyed without regard for what value they may hold in the future. Similarly, many films are lost, especially those that were stored using fragile and flammable nitrocellulose film, in the absence of comprehensive systems in place to ensure their preservation (https://en.wikipedia.org/wiki/Film_preservation; https://en.wikipedia.org/wiki/Lost_film; https://en.wikipedia.org/wiki/Nitrocellulose#Film).
 
 ## Related projects and inspirations
-- The United States of America was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
 - Open Source Ecology is developing, under a libre license, the technologies needed to construct a society. These are resources that are very useful to developing this project.
 - Bibliotheca Alexandrina preserves and provides access to a wide range of knowledge.
 - The Long Now Foundation promotes long-term thinking, which is an important design and ethics principle of this project.
-- Bangor Public Library provided an environment that stimulated my interest in libraries when I was younger, both in their roles as guardians of knowledge and memory and as social spaces offering resources and a place to go to the public, especially people who are poor, lonely, or otherwise vulnerable or in need. This project incorporates both of those principles, as well as sharing the structure of a resource maintained by and for a community.
 - Arch Mission is compiling libraries of culturally important knowledge, similar to those proposed in this project.
+- The United States of America was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
+- Bangor Public Library provided an environment that stimulated my interest in libraries when I was younger, both in their roles as guardians of knowledge and memory and as social spaces offering resources and a place to go to the public, especially people who are poor, lonely, or otherwise vulnerable or in need. This project incorporates both of those principles, as well as sharing the structure of a resource maintained by and for a community.
