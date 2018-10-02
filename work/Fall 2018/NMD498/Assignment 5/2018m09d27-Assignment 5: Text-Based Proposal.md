@@ -343,7 +343,7 @@ These could possibly be useful as a way to communicate with people working on th
 
 ### Posters
 
-I have designed a poster to help promote this project.
+I have designed two posters to help promote this project.
 
 ![Poster mockup](Screenshot_2018-10-02%20Ember%20cropped%202018oct02.png)
 
