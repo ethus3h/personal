@@ -54,6 +54,11 @@ The chief problems for the project right now are communication (helping people u
   - A self-sustaining financially, technologically, and resource-independent community and a non-profit organization to manage and implement the project, and to serve as a model for other communities using this strategy
   - Distribution of the knowledge assets, allowing a decentralized network of communities using these specifications
 
+
+## User stories / use cases
+
+
+
 # Tasks list
 
 ## Planning and strategy
