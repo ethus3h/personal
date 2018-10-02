@@ -345,7 +345,7 @@ These could possibly be useful as a way to communicate with people working on th
 
 I have designed a poster to help promote this project.
 
-![Poster mockup](Screenshot_2018-10-02 Ember cropped 2018oct02.png)
+![Poster mockup](Screenshot_2018-10-02%20Ember%20cropped%202018oct02.png)
 
 ![Poster mockup](2018sept19a20v7-poster-exported-2018sept24.png)
 
