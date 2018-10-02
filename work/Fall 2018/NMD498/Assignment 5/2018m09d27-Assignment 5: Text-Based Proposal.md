@@ -57,7 +57,29 @@ The chief problems for the project right now are communication (helping people u
 
 ## User stories / use cases
 
+Assuming the community is already running, and has courses and resources available. (Initial bootstrapping would need people to support themselves independently while constructing the infrastructure.)
 
+Day 1. People have just started.
+Person A: 0 credits, no qualifications.
+Person B: 0 credits, no qualifications.
+
+Person A starts taking a course in office skills. There are multiple office skills jobs openings, so the course does not cost anything, and food/shelter is provided for A without requiring credits while they are working on it.
+Person B takes a physical fitness test.
+
+Day 2. A: 0 credits, no qualifications; still taking the course.
+B: 0 credits, physical fitness qualification.
+
+A continues the office skills course.
+B looks at the list of available jobs that only need physical fitness for their qualification, and accepts a job clearing rocks from a field (10 credits/hour), and works for eight hours. B now moves into the community, using 15 credit / day for housing and 8 credit / day for food.
+
+Day 3. A: 0 credits, no qualifications; still taking the course.
+B: 57 credits, physical fitness qualification.
+
+A completes and takes final test for office skills. There are still a few hours, but no office skills jobs available right then, so A picks up litter and turns it in for a 3 credit bounty.
+B works for 10 hours.
+
+Day 4. A: 3 credits; office skills qualification.
+B: 134 credits; physical fitness qualification.
 
 # Tasks list
 
