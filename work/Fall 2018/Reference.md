@@ -21,4 +21,4 @@ COS312:
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
-- Due : Assignment 30 Seconds Text Animation text
+- Due : Assignment 30 Seconds Text Animation text to sound (use until?)
