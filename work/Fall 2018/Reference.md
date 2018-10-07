@@ -13,7 +13,6 @@ NMD498:
   - Add user stories / use cases.
 - ASSIGNMENT 5:
   - Incorporate milestones into timeline Team B Oct 16, Nov 6, Nov 29, Dec 13, Feb 7, Feb 28, Mar 28, Apr 18.
-  - Add to text-based proposal Promotion plan[is this the Viral meida campain thing?]
   - add a new approach to The Pool that links directly to the summary portfolio entry. Be sure to add the appropriate subject; for fall 2018, that is capstone-2019.
 
 COS312: 
@@ -22,4 +21,4 @@ COS312:
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
-- Due Thurday: Assignment parallax movie
+- Due : Assignment 30 Seconds Text Animation text
