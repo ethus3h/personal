@@ -1,0 +1,171 @@
+{
+    "createdBy": "Redirector v3.2.1",
+    "createdAt": "2018-10-08T17:05:33.480Z",
+    "redirects": [
+        {
+            "description": "Make Discourse forums less annoying",
+            "exampleUrl": "https://www.realmeye.com/forum/t/post-your-unpopular-opinions-about-realm-here/37897?page=2",
+            "exampleResult": "https://www.realmeye.com/forum/t/post-your-unpopular-opinions-about-realm-here/37897/2?_escaped_fragment_",
+            "error": null,
+            "includePattern": "(.+)\\/t\\/([\\w-]+)\\/(\\d+)\\?page=(\\d+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1/t/$2/$3/$4?_escaped_fragment_",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        },
+        {
+            "description": "Make Discourse forums less annoying",
+            "exampleUrl": "https://www.realmeye.com/forum/t/post-your-unpopular-opinions-about-realm-here/37897",
+            "exampleResult": "https://www.realmeye.com/forum/t/post-your-unpopular-opinions-about-realm-here/37897/?_escaped_fragment_",
+            "error": null,
+            "includePattern": "(.+)\\/t\\/([\\w-]+)\\/(\\d+)?",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1/t/$2/$3/?_escaped_fragment_",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        },
+        {
+            "description": "Make Discourse forums less annoying",
+            "exampleUrl": "https://www.realmeye.com/forum/t/is-something-wrong-with-realm-my-items-disappeared/15277/17",
+            "exampleResult": "https://www.realmeye.com/forum/t/is-something-wrong-with-realm-my-items-disappeared/15277/17?_escaped_fragment_",
+            "error": null,
+            "includePattern": "(.+)\\/t\\/([\\w-]+)\\/(\\d+)(\\/\\d+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1/t/$2/$3$4?_escaped_fragment_",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        },
+        {
+            "description": "about: 2018sept28",
+            "exampleUrl": "about:",
+            "exampleResult": "about:support",
+            "error": null,
+            "includePattern": "about:",
+            "excludePattern": "",
+            "patternDesc": "wtf? https://bugzilla.mozilla.org/show_bug.cgi?id=1408044",
+            "redirectUrl": "about:support",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Fix Wikipedia theme, part 4, 20 Oct. 2017",
+            "exampleUrl": "https://en.wikipedia.org/wiki/Wikipedia:Village_pump_(technical)?foo=bar",
+            "exampleResult": "https://en.wikipedia.org/wiki/Wikipedia:Village_pump_(technical)?foo=bar&useskin=minerva",
+            "error": null,
+            "includePattern": "https://en.wikipedia.org/(.*\\?.*)$",
+            "excludePattern": "https://en.wikipedia.org/(.*[&\\?]useskin=minerva|.*#.*)",
+            "patternDesc": "",
+            "redirectUrl": "https://en.wikipedia.org/$1&useskin=minerva",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Fix Wikipedia theme, part 3, 20 Oct. 2017",
+            "exampleUrl": "https://en.wikipedia.org/wiki/Wikipedia:Village_pump_(technical)#foo",
+            "exampleResult": "https://en.wikipedia.org/wiki/Wikipedia:Village_pump_(technical)?useskin=minerva#foo",
+            "error": null,
+            "includePattern": "https://en.wikipedia.org/([^\\?]*)(#.*)$",
+            "excludePattern": "https://en.wikipedia.org/.*[\\?&]useskin=minerva",
+            "patternDesc": "",
+            "redirectUrl": "https://en.wikipedia.org/$1?useskin=minerva$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Fix Wikipedia theme, part 2, 20 Oct. 2017",
+            "exampleUrl": "https://en.wikipedia.org/wiki/Wikipedia:Village_pump_(technical)?action=edit#foo",
+            "exampleResult": "https://en.wikipedia.org/wiki/Wikipedia:Village_pump_(technical)?action=edit&useskin=minerva#foo",
+            "error": null,
+            "includePattern": "https://en.wikipedia.org/(.*\\?.*)(#.*)$",
+            "excludePattern": "https://en.wikipedia.org/.*[&\\?]useskin=minerva",
+            "patternDesc": "",
+            "redirectUrl": "https://en.wikipedia.org/$1&useskin=minerva$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Fix Wikipedia skin 20 Oct. 2017",
+            "exampleUrl": "https://en.wikipedia.org/wiki/Wikipedia:Village_pump_(technical)",
+            "exampleResult": "https://en.wikipedia.org/wiki/Wikipedia:Village_pump_(technical)?useskin=minerva",
+            "error": null,
+            "includePattern": "https://en.wikipedia.org/([^\\?]*)",
+            "excludePattern": "https://en.wikipedia.org/(.*[\\?&]useskin=minerva|.*#.*)",
+            "patternDesc": "",
+            "redirectUrl": "https://en.wikipedia.org/$1?useskin=minerva",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Fix Drop Box",
+            "exampleUrl": "https://www.dropbox.com/s/3zu993uhbok80r2/overlay.zip?dl=0",
+            "exampleResult": "https://www.dropbox.com/s/3zu993uhbok80r2/overlay.zip?dl=1",
+            "error": null,
+            "includePattern": "^http(s)?:\\/\\/(www\\.)?dropbox\\.com\\/(.+)\\?dl=0$",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://$2dropbox.com/$3?dl=1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        },
+        {
+            "description": "",
+            "exampleUrl": "https://imgur.com/JAT6qeb",
+            "exampleResult": "https://i.imgur.com/JAT6qeb.png",
+            "error": null,
+            "includePattern": "^https?:\\/\\/imgur\\.com\\/([\\w\\d]+)",
+            "excludePattern": "\\/a\\/",
+            "patternDesc": "",
+            "redirectUrl": "https://i.imgur.com/$1.png",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        }
+    ]
+}
