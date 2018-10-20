@@ -1,5 +1,7 @@
 Investigate bill due date / financial aid / enrollment
 
+RENT 396.99
+
 NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
 - word press: http://umainenewmedia.net/course/nmd-498-copy/
