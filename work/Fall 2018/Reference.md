@@ -20,7 +20,7 @@ NMD498:
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
-- assigments 21 Oct:New assignemnt  Ragdoll 22 OCT SUNDAY TODAY
+- assigments 21 Oct:New assignemnt  Ragdoll 21 OCT SUNDAY TODAY
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
