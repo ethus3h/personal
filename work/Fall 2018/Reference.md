@@ -19,7 +19,7 @@ NMD498:
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
-- assigments  4:  
+- assigments 21 Oct:New assignemnt  
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
