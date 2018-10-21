@@ -1,5 +1,7 @@
 Investigate bill due date / financial aid / enrollment
 
+RENT 396.99
+
 NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
 - word press: http://umainenewmedia.net/course/nmd-498-copy/
@@ -17,7 +19,7 @@ NMD498:
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
-- assigments  4:  
+- assigments 21 Oct:New assignemnt  
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
