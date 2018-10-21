@@ -20,8 +20,8 @@ NMD498:
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
-- assigments 21 Oct:New assignemnt  
+- assigments 21 Oct:New assignemnt  Ragdoll 22 OCT SUNDAY TODAY
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
-- Due : Assignment 30 Seconds Text Animation text to sound (use until?)Kinetic Typography Assignment: Please create a 30-second kinetic typography piece (slightly longer is okay) utilizing only typefaces, color design, and simple shape elements (think lines and squares, not clip art/photos). The piece can be animated to music, podcasts, television, film quotes, or any other form of audio you wish to use. The key word in this assignment is 'kinetic'. Animations should be dynamic and appropriate to the subject material. Your design choices should reinforce the atmosphere/content of the audio clip you use. You are welcome to use 3D layers, AE expressions, scale, position, rotation, and AE effects to obtain your desired results. This assignment is due on October 11th, when we will have critique.
+- Due : Assignment 30 Seconds Tv intro THURSDAY
