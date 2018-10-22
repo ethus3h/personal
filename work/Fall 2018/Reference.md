@@ -15,7 +15,7 @@ NMD498:
   - extplain what we are doing very simply. Explian wwhy weere doing it, can me more intellecutaly.
   - Add user stories / use cases.
 - ASSIGNMENT 6:
-  - Revised portfolio DUE 23 OCT 2018
+  - Revised proposal DUE 23 OCT 2018
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
