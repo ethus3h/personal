@@ -14,9 +14,8 @@ NMD498:
   - "think about how to bring the reader early on into getting the concept of the project. I think you do it relatively well but you should help your reader by bringing strong/concrete examples from the onset. Also adding some figures would help. The text just feels a little bit too “dry” and technical. You can start with making it more digestable, and then in later sections you can go towards more technical stuff. You *do it* already but … just not enough."
   - extplain what we are doing very simply. Explian wwhy weere doing it, can me more intellecutaly.
   - Add user stories / use cases.
-- ASSIGNMENT 5:
-  - Incorporate milestones into timeline Team B Oct 16, Nov 6, Nov 29, Dec 13, Feb 7, Feb 28, Mar 28, Apr 18.
-  - add a new approach to The Pool that links directly to the summary portfolio entry. Be sure to add the appropriate subject; for fall 2018, that is capstone-2019.
+- ASSIGNMENT 6:
+  - Revised proposal DUE 23 OCT 2018
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
