@@ -55,7 +55,7 @@ The main functional output of the project so far has been the successful develop
   - This includes both in writing and in person. Improving my in-person communication skills is especially important.
 
 ## Finances, budget, and stability
-- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration (`futuramerlin.com`) is good through the end of 2022, at which point it will need renewal, which is about US$10/year.) The most recent costs of technical infrastructure is US$106.20 for three years of Web hosting, plus US$83.76 for eight year ownership of domain name. A rough estimate of the cost for the semester of Web hosting is therefore US$17.70, and the cost for the semester of the domain name is US$5.24.
+- Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is somewhere in the US$5/month range. The domain name registration (`futuramerlin.com`) is good through the end of 2022, at which point it will need renewal, which is about US$10/year.) The most recent costs of technical infrastructure is US$106.20 for three years of Web hosting, plus US$83.76 for eight year ownership of domain name. A rough estimate of the cost for the semester of Web hosting is therefore US$17.70, and the cost for the semester of the domain name is US$5.24.
 - While the project still has a bus factor of 1, my personal stability is critical for the project. Barring exceptional circumstances, I should be able to continue working on it through graduation thanks to the university and government's student financial aid, and my family's financial support.
 - Significant volunteer involvement and/or external investment will be necessary for a full implementation of this project.
 
@@ -69,7 +69,7 @@ Task                                Hours   Price/hr    Cost$   Price owner
 ===================================================================================================
 Develop prototype                   400     10          4000    I volunteer to do my best
 Fill out prototype                  1000    10          10000   I volunteer as much as I can
-Web hosting costs                   unit(yr)120         120     I will try to get the money in time
+Web hosting costs                   unit(yr)120         120
 TOTAL                               1400    10          14120
 ```
 
