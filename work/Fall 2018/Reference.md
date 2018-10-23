@@ -1,6 +1,7 @@
 Investigate bill due date / financial aid / enrollment
 
 RENT 396.99
+16m50s ep 12 Haibane Renmei
 
 NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
