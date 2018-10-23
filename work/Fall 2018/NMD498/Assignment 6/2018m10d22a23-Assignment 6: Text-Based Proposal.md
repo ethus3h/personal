@@ -50,10 +50,9 @@ The main functional output of the project so far has been the successful develop
 ![Gantt chart](ProjectGanttChart2018oct16n3.png)
 
 ## People and communication
-- Establish connections with people. Human connections will be critical for the success of this project.
-- Develop effective communication skills and strategies. Without being able to get allies in developing the project, it would be dead in the water.
+- Develop effective communication skills and strategies.
   - That means being able to express clearly, succinctly, and persuasively the following (at least): _what_ this project is, _why_ it is important and achievable, and _how_ to help with it.
-  - This includes both in writing and in person. Improving my in-person communication skills is especially important (my in-person speaking on this project is disastrously bad).
+  - This includes both in writing and in person. Improving my in-person communication skills is especially important.
 
 ## Finances, budget, and stability
 - Finances: Develop a financial strategy and budget requirements. As a single, close to broke student without employment or a degree (yet), or a rich family giving me a small loan of a million dollars, I can barely support keeping the lights on for the Web site. (Hosting is going to expire in October, and I haven't figured out how I'm going to pay for it for the next few years. It's somewhere in the US$5/month range. The domain name registration (`futuramerlin.com`) is good through the end of 2022, at which point it will need renewal, which is about US$10/year.) The most recent costs of technical infrastructure is US$106.20 for three years of Web hosting, plus US$83.76 for eight year ownership of domain name. A rough estimate of the cost for the semester of Web hosting is therefore US$17.70, and the cost for the semester of the domain name is US$5.24.
@@ -68,23 +67,10 @@ All figures are rough estimates.
 ```
 Task                                Hours   Price/hr    Cost$   Price owner
 ===================================================================================================
-Get people to join me on project    200     10          2000    I volunteer
-Develop prototype                   200     10          2000    I volunteer to do my best
+Develop prototype                   400     10          4000    I volunteer to do my best
 Fill out prototype                  1000    10          10000   I volunteer as much as I can
 Web hosting costs                   unit(yr)120         120     I will try to get the money in time
 TOTAL                               1400    10          14120
-```
-
-#### Implementation
-```
-Task                                Hours   Price/hr    Cost$   Price owner
-===================================================================================================
-Acquire land                        unit    100000      100000  Community organization
-Establish community                 5000    25          125000  Community organization
-Develop substantial implementation  5000    25          125000  Community organization
-Fill out implementation             10000   25          250000  Community organization
-Support and maintain implementation ongoing 25          ongoing Community organization
-TOTAL                               1400    10          600000+ongoing
 ```
 
 ## Steps dependent on interpersonal connections
@@ -647,54 +633,6 @@ How will you inject your meme?
 
 An app can be distributed as a Web page, as a stand-alone downloadable app (as a file, through operating system package managers), and as a boot-to-app OS. All of these are reasonable distribution platforms for EITE, although likely only native apps would be able to run the server part of the app. (Different platforms have different limitations on what apps are able to accomplish, as a result of environment (hardware, software, network, etc.) limitations.)
 
-### Clothing
-
-This would be possible, pretty much being a walking poster. It probably would cost a large amount of money to get a professional looking customized shirt, though, and a hand-made one would not necessarily be very convincing.
-
-### Flashmob
-
-There would need to be more people. A single-person flashmob wouldn't be particularly visible.
-
-### Launch event
-
-I don't know how to do this, or what it would involve. It sounds expensive, complicated, and liable to have no one show up....
-
-### Postcards
-
-These could possibly be useful as a way to communicate with people working on the project if they are far away. Until there are distant people, though, they wouldn't be worth the cost (it's expensive to print and mail, and each postcard presumably only would reach a few people, unlike a poster).
-
-### Posters
-
-I have designed a poster to help promote this project.
-
-![Poster mockup](2018sept19a20v7-poster-exported-2018sept24.png)
-
-### Stickers
-
-Stickers could be funded and made. There is a risk that they could become litter or used as vandalism, though, which could harm the project, rather than promote it.
-
-### Embedding (YouTube)
-
-This is no longer necessary with the availability of HTML5 video.
-
-### Linking in comments (YouTube)
-
-This is quite useful, although YouTube actually calls it the "Description" (it's separate from the comments). Providing information and links related to the video allows people who were interested in the video to pursue the project.
-
-## Automatic Vector
-
-How will computers spread your meme?
-
-### IFTTT
-
-This is a tool for constructing simple tasks using Web services' APIs. It does not seem relevant to this project.
-
-## Payload
-
-What's the smallest unit of meaning you hope to circulate?
-
-### App-payload: ________________
-
 The EITE client and server apps are proposed above.
 
 ### URL-blog: ________________
@@ -709,7 +647,7 @@ A video introduction to the project can be created to serve as an aid to recruit
 
 How will you measure success?
 
-There are two primary success metrics for this semester. One is the progress I make on a prototype and strategy development; another is how many other people I can convince to work on the project with me.
+I can measure success by the progress I make on a prototype and strategy development.
 
 ### App downloads/sales
 
@@ -727,17 +665,9 @@ I don't use this. It's proprietary, it contributes unnecessarily to page CPU and
 
 Google Pagerank was discontinued in 2016.
 
-### Money
-
-People with money may become interested in investing it in this project. If so, any contributions and expenditures should be tracked carefully, with the information publicly available to ensure that contributions are used efficiently. Only my personal funds are used at present.
-
 ### Credibility (Diggs/Karma)
 
 As an undergraduate student with good grades, I have a moderate but fairly low amount of credibility. My lack of work experience in related fields may affect that as well. (My résumé and the software I have developed are available online, which can help people evaluate my experience, giving me more credibility.)
-
-### Reader comments
-
-People communicating with me to join forces on working on this project is the primary quantifiable metric of success for this semester, I think.
 
 ### YouTube views
 
@@ -750,31 +680,19 @@ These are available via YouTube video page. People who contact me are more helpf
 - Madge, Robert. "GDPR: data portability is a false promise" (https://medium.com/mydata/gdpr-data-portability-is-a-false-promise-af460d35a629). 2017 July 4, in _MyData_.: This article discusses how corporations, when charged with preserving individuals' electronic information, cannot be relied upon to make it easy to transfer to other information technology environments; even if the data can be exported, which is rarely available as a lossless option, it cannot necessarily be transferred to other services due to the lack of standardization. At a minimum, lossless information exporting should be available, with documentation of the format in which it is exported. Google Drive, for instance, does not provide any lossless, documented, supported export format. They offer some supported and documented formats, but they are not lossless (particularly significant is the absence of export of document revision history, despite that history being stored and exposed via the user interface). Some success has been reported with retrieving their native format, but it is not documented, supported, or easily accessible (https://webapps.stackexchange.com/q/45562; http://features.jsomers.net/how-i-reverse-engineered-google-docs/).
 - "National Museum of Brazil fire" (https://en.wikipedia.org/wiki/National_Museum_of_Brazil_fire). In _Wikipedia_. This fire exemplifies how organizational apathy to cultural preservation can cause devastating losses.
 - Browne, Malachy. "YouTube Removes Videos Showing Atrocities in Syria" (https://web.archive.org/web/20171004135730/https://www.nytimes.com/2017/08/22/world/middleeast/syria-youtube-videos-isis.html). 2017 Aug. 22, in _The New York Times_. As corporate-mediated platforms become primary communications media with increasing reliance on them, the effects of using a privately managed platform without the traditional legal protections of press freedom become increasingly pronounced.
-- "Deforestation" (https://en.wikipedia.org/wiki/Deforestation). In _Wikipedia_. Deforestation is one highly visible illustration of the damage done by short-term, profit-driven decisionmaking.
 - ArchiveTeam. "A Million Ways to Die on the Web" (https://www.archiveteam.org/index.php?title=A_Million_Ways_to_Die_on_the_Web). This article discusses some of the threats to the preservation of Web-based media.
-- Economic inequality (https://en.wikipedia.org/wiki/Economic_inequality), often correlating with race and gender, arising regardless of individuals' capacity for economic contribution to society, reduces opportunities for social equality or justice.
 - The practice of "wiping" (https://en.wikipedia.org/wiki/Wiping; https://en.wikipedia.org/wiki/Doctor_Who_missing_episodes) historic broadcast media (radio and television) shows is illustrative of popular attitudes towards historical preservation: when value is not recognized at a given moment, things are wantonly neglected or destroyed without regard for what value they may hold in the future. Similarly, many films are lost, especially those that were stored using fragile and flammable nitrocellulose film, in the absence of comprehensive systems in place to ensure their preservation (https://en.wikipedia.org/wiki/Film_preservation; https://en.wikipedia.org/wiki/Lost_film; https://en.wikipedia.org/wiki/Nitrocellulose#Film).
 - "Slack's bait and switch", in _Opkode_ (https://opkode.com/blog/slacks-bait-and-switch/), as well as [this discussion](https://news.ycombinator.com/item?id=16567009) in response to it, and especially [this comment](https://news.ycombinator.com/item?id=16569232); also [this article](https://medium.freecodecamp.org/so-yeah-we-tried-slack-and-we-deeply-regretted-it-391bcc714c81), and [this page](https://get.slack.help/hc/en-us/articles/201658943), [this page](https://get.slack.help/hc/en-us/articles/115002422943-Message-and-storage-limits-on-the-Free-plan), and [this other page](https://get.slack.help/hc/en-us/articles/204897248-guide-to-slack-data-exports) from Slack themselves. The popular Slack messaging app is designed to capture its users' data, without allowing it to be easily exported: a Slack user cannot export (or even view) all the data they have access to. This prevents people from practically preserving their data stored using Slack. Their business model relies on capturing users' data, and holding it hostage until organizations need it enough to pay them for it.
 - Snapchat (https://en.wikipedia.org/wiki/Snapchat), like Slack, is a company that predicates its entire business model on the wanton destruction of history: it provides a communications tool that is marketed upon the premise that messages sent with it are forgotten. It is unconscionable that the attitude even exists where anyone would find this acceptable, never mind that it is _widespread_.
-- Unity3d physics : things can't float on other things
-- Adobe Illustrator doesn't have a smudge brush
+- The Adobe Illustrator vector drawing program doesn't have a smudge brush, although Adobe Photoshop does. There isn't a technical barrier to this (a smudge brush could be implemented by having a final pass over the rasterized artwork applying the equivalent Photoshop transformation), but because a smudge brush is a raster-centric concept, it is not provided even though it would be useful.
 
 ## Related projects and inspirations
 - The Internet Archive (https://archive.org/) is working to preserve and provide access to all knowledge. They also have been working to innovate in other areas, such as by encouraging the development of Distributed Web technology, affordable housing, and an alternative credit union.
 - The GNU (https://www.gnu.org/) and
 - KDE (https://www.kde.org/) communities have produced a large number of successful free/libre/open-source software packages, which are already in use to facilitate development of this project.
-- The United States of America (https://www.usa.gov/) was created as an innovative community on a very large scale. The history of the successes and challenges it and other countries and communities have faced are valuable experiences to learn from when designing organizational management and governance principles.
 - The Wikimedia movement (https://www.wikimedia.org/) has produced a wide range of libre-licensed educational information, including the structured knowledge database Wikidata. The knowledge the Wikimedia projects has created is similar in some ways to some aspects of this project, and would be useful to use in developing this project.
-- Open Source Ecology (https://www.opensourceecology.org/) is developing, under a libre license, the technologies needed to construct a society. These are resources that are very useful to developing this project.
 - MusicBrainz (https://musicbrainz.org/) is a libre-licensed structured database of music and musicians. It is the original inspiration for the structured data aspects of EITE.
 - Apache Wave (http://incubator.apache.org/projects/wave.html) partially inspired and influenced the communications approach for EITE (mixed-media, everything-is-a-document/everything-is-a-string, collaborative networking).
-- Cryto Coding Collective (http://cryto.net/) is attempting a not-for-profit community-maintained information technology infrastructure.
 - BabelStone (http://babelstone.co.uk/) has many articles discussing challenges in using various writing systems in information technology systems. These articles influenced my interest in the availability of tools with better typography capabilities.
 - ArchiveTeam (https://www.archiveteam.org/; http://fileformats.archiveteam.org/) works to preserve documents that were stored using the Internet and cloud services, and has articles and information about the massive losses of history and knowledge that have coincided with the use of these technologies. Frustration with these issues inspired the use of append-only storage as a core design parameter of EITE.
-- Bibliotheca Alexandrina (http://bibalex.org/) preserves and provides access to a wide range of knowledge.
-- The Long Now Foundation (http://longnow.org/) promotes long-term thinking, which is an important design and ethics principle of this project.
 - Free Software Foundation (https://www.fsf.org/) promotes principles of freedom as used in and by this project.
-- Bangor Public Library (https://www.bpl.lib.me.us/) provided an environment that stimulated my interest in libraries when I was younger, both in their roles as guardians of knowledge and memory and as social spaces offering resources and a place to go to the public, especially people who are poor, lonely, or otherwise vulnerable or in need. This project incorporates both of those principles, as well as sharing the structure of a resource maintained by and for a community.
-- Framasoft (https://framasoft.org/) is a community providing libre software and services.
-- Arch Mission (https://archmission.org/) is compiling libraries of culturally important knowledge, similar to those proposed in this project.
-- Nanostructures in quartz glass (Kazansky, Peter G. "Laser nanostructuring in glass for long-term and large-scale digital preservation", http://www.digitalpreservation.gov/meetings/DSA2017/Day_2/05_AM_Kransky_5D_Optical_Storage.pdf) are an intriguing technology with the potential to make the distribution and preservation of large amounts of information practical.
