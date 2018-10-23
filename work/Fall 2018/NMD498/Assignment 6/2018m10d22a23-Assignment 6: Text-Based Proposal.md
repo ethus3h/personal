@@ -2,27 +2,19 @@ The structure of this document is based on "Text-based project proposal: Templat
 
 Note that the structure is slightly different than in the template, to present the most relevant and accessible information first, with lengthier and more abstruse sections placed later. This proposal incorporates some earlier writings on the project.
 
-Title (working title): Community Resources Development Project
-
-Please bear in mind that the computer/document/communication stuff is really just an unimportant tangent to the main point of this project. It's only in this proposal so much because I like working on it.
-
-Human connections will be critical for the success of this project. If you're interested on working on a hackable community, please contact me! I can be reached at (207) 200-5386 (please leave a voicemail). Thanks!
+Title (working title): Document-Centric Computing Environment
 
 # Abstract
 
-This proposal introduces a project to develop and facilitate collaboration on a specification, a computing environment, a library, and a model community, to serve as resources and infrastructure for innovative communities.
+This proposal introduces a project to develop a document-centric computing environment and data format.
 
 # The problem
 
-There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. "Libre" refers to the ethical principle of freedom of knowledge, whereby knowledge is provided with the legal protection of rights such as modification and redistribution. (For specifics on this project's goals and strategies in libre licensing, see the "Licensing" section below.) This results in wasted effort on developing redundant proprietary technologies (for instance, multiple non-interoperable word processing apps), regressions in standards of living caused by the unavailability of proprietary systems (for instance, not being able to use the features of a previous version of a word processing app that some capabilities removed), and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain) (for instance, the loss of many historic films and television series to neglect or deliberate destruction).
+Existing information technology systems have . There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. "Libre" refers to the ethical principle of freedom of knowledge, whereby knowledge is provided with the legal protection of rights such as modification and redistribution. (For specifics on this project's goals and strategies in libre licensing, see the "Licensing" section below.) This results in wasted effort on developing redundant proprietary technologies (for instance, multiple non-interoperable word processing apps), regressions in standards of living caused by the unavailability of proprietary systems (for instance, not being able to use the features of a previous version of a word processing app that some capabilities removed), and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain) (for instance, the loss of many historic films and television series to neglect or deliberate destruction).
 
 There is also no project that is successfully ensuring the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. This results in human suffering and inequality (for instance, the dramatic disparities in income between race, gender, and economic groups), catastrophic cultural and historical loss (for instance, as in the loss of the National Museum of Brazil), and prolonged global ecological crises (for instance, deforestation and climate change) caused by government and corporate apathy and abuse.
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
-
-## Evidence of the problem
-
-For an annotated reading list of evidence supporting the presence of some of the issues this project tackles, see the "Evidence of the problem" section of the bibliography at the end of this proposal.
 
 ## Existing work towards solving this problem
 
@@ -30,40 +22,23 @@ Many existing projects address various aspects of the issues this project addres
 
 # General approach
 
-This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. The communities should attempt to provide a consistent and complete experience to the people who are part of them, without depending on support from external infrastructure, technology, or government. Relying on external support increases fragility.
-
-This is a multifaceted project to develop a scalable environment for building an effective, just, and efficient society; consequently, it is quite broad in scope. To organize the broad scope of this project, it is currently divided into four primary areas of work: 
-- A specification of principles and methods on which the project is based
-- A community and a non-profit organization to manage and implement the project
-- An information technology environment
-- A library of knowledge and great cultural works
+This project should aim to systematically support the libre development and distribution as best as possible of an innovative information technology environment.
 
 ## Current project status
 
-"Ember" is the current name of this project.
+"Ember Information Technology Environment" is the current name of this project.
 
 The primary components comprising the project are currently unfinished, but a variety of software maintained to facilitate the development of the project is available.
 
-The main output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archiving, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty version control repositories used now for the project, as well as the structured archiving of more than eighteen million additional documents outside of the project.
+A preliminary implementation of the document formats proposed herein is under development.
 
-Other parts of the project are also begun. (The technical specifications and other data produced so far for the project are not included in this proposal document.)
+The main functional output of the project so far has been the successful development of two well-tested, partially completed software applications that are currently used to facilitate the further development of the project. The first of these is a static Web site generator, which is used to build the project's Web site (it includes working features for theming using CSS, with some included themes, automatic blog pagination, and discography Web site generation for musicians). The second of these is a suite of tools for working with file version tracking, document archiving, and data storage and distribution. It is currently in use for storing and managing the more than eleven million files and forty version control repositories used now for the project, as well as the structured archiving of more than eighteen million additional documents outside of the project.
 
 # Expected outcomes
 
 - Completed, stable software environment used for developing the project
-- Project objectives completed
-  - Support and ongoing development of the project's intellectual deliverables, all of which (with the exceptions of parts 2 and 3 of the library) should be libre-licensed
     - Specifications
-      - Philosophy and rationale
-      - Community
-      - Technology and engineering
-      - Goods and services
     - Information technology environment software implementation
-    - Library of knowledge and great cultural works
-  - A self-sustaining financially, technologically, and resource-independent community and a non-profit organization to manage and implement the project, and to serve as a model for other communities using this strategy
-    - Managed, geographically-redundant computing infrastructure and data archiving
-  - Distribution of the knowledge assets, allowing a decentralized network of communities using these specifications
-    - Ideally, the entirety of the knowledge assets (perhaps excluding section 3 of the library) would be available in a wristband storage format, or something similar, ensuring that every person carries the entirety of the contents of the project with them, essentially becoming human backups of the data, and with any single person having the knowledge necessary to recreate the entire project and all its technology if they want. Printed books should also be available and distributed to libraries.
     - The cloud computing infrastructure should use a decentralized, asynchronously resolving append-only data store, similar to blockchains, to ensure the preservation and longevity of data stored using it as best as possible.
 
 # Tasks list
