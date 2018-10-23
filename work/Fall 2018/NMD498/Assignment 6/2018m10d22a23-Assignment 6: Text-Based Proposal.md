@@ -49,7 +49,7 @@ The main functional output of the project so far has been the successful develop
 
 ### Timeline
 
-![Gantt chart](ProjectGanttChart2018sept18-v5-2018sept25.png)
+![Gantt chart](ProjectGanttChart2018oct16n3.png)
 
 ## People and communication
 - Establish connections with people. Human connections will be critical for the success of this project.
