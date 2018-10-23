@@ -10,9 +10,7 @@ This proposal introduces a project to develop a document-centric computing envir
 
 # The problem
 
-Existing information technology systems have . There is no project that is successfully systematically supporting the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living. "Libre" refers to the ethical principle of freedom of knowledge, whereby knowledge is provided with the legal protection of rights such as modification and redistribution. (For specifics on this project's goals and strategies in libre licensing, see the "Licensing" section below.) This results in wasted effort on developing redundant proprietary technologies (for instance, multiple non-interoperable word processing apps), regressions in standards of living caused by the unavailability of proprietary systems (for instance, not being able to use the features of a previous version of a word processing app that some capabilities removed), and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain) (for instance, the loss of many historic films and television series to neglect or deliberate destruction).
-
-There is also no project that is successfully ensuring the availability of communities managed in the long-term interest of their constituents, humanity, and the environment. This results in human suffering and inequality (for instance, the dramatic disparities in income between race, gender, and economic groups), catastrophic cultural and historical loss (for instance, as in the loss of the National Museum of Brazil), and prolonged global ecological crises (for instance, deforestation and climate change) caused by government and corporate apathy and abuse.
+Existing information technology systems have various unnecessary limitations. In addition, many existing information technology systems are not libre software. "Libre" refers to the ethical principle of freedom of knowledge, whereby knowledge is provided with the legal protection of rights such as modification and redistribution. (For specifics on this project's goals and strategies in libre licensing, see the "Licensing" section below.) This results in wasted effort on developing redundant proprietary technologies (for instance, multiple non-interoperable word processing apps), regressions in standards of living caused by the unavailability of proprietary systems (for instance, not being able to use the features of a previous version of a word processing app that some capabilities removed), and the incalculable loss of shared cultural heritage through inconsistent or nonexistent archival practices (and in many cases active hostility towards historical preservation, especially in the interest of short-term personal economic gain) (for instance, the loss of many historic films and television series to neglect or deliberate destruction).
 
 These problems are not hypothetical. They are very real and ongoing problems, and are actively causing very real and ongoing harm.
 
@@ -100,8 +98,7 @@ TOTAL                               1400    10          600000+ongoing
 These tasks are much less important than the above, but are much easier and comprehensible for me. Consequently, this is where most of my work so far has been.
 
 - Develop, write, test, and document specifications
-  - Community governance specifications
-  - Technology information and specifications (engineering, construction, information technology, etc.), without dependencies (enough information should be included to enable full construction of all technologies starting from nature, without any existing knowledge or technology/machinery; this should be _tested_)
+  - Information technology information and specifications, without external (non-libre) dependencies (enough information should be included to enable full construction of all technologies starting from nature, without any existing knowledge or technology/machinery; this should be _tested_)
 - Continue development of support software
 - Develop software for information technology environment (EITE)
   - Finish specifying and build JavaScript implementation of portable, trivial staging language (StageL)
@@ -115,13 +112,6 @@ These tasks are much less important than the above, but are much easier and comp
   - Write C implementation of StageL
   - Benchmark JavaScript implementation versus C→WebAssembly, out of curiosity. WASM would require clang in the toolchain, which wouldn't be ideal until clang can be run on non-WASM EITE, but anyway...
   - An alternative strategy could omit implementing the technology, and only focusing on developing the specification, although that strategy would risk increasing the problems the project is intended to fix (by providing existing IT companies with the project’s technological innovations, but not having a free/libre implementation of them to prevent existing companies using distorted clones of the idea to further their proprietary goals and vendor lock-in).
-- Write/compile the library
-  - Write, compile, and organize content for part 1 of the library
-    - Specifications (from above)
-    - Subject area information (history, mathematics, linguistics, engineering, etc.)
-  - Continue compiling part 2 of the library
-- (Dependent on additional finances, land, and people) Provide physical cloud computing infrastructure
-- Figure out how to connect the community's network to the Internet, somehow (its connection shouldn't be dependent on external parties: it should follow the Internet Archive's model of being an AS with peering agreements) to allow accessing and preserving the knowledge there. In accordance with avoiding dependencies on external resources, the Internet should likely not be relied on for providing connectivity, although at least in the beginning it is useful for communication to facilitate the project, and perhaps the benefits of providing Internet-based remote login to the information technology environment would outweigh the risks.
 
 # Resources needed
 
@@ -139,7 +129,7 @@ These tasks are much less important than the above, but are much easier and comp
 
 ## Design principles
 
-These design goals are present to attempt to prevent regressions in the availability and utility of the project.
+These design goals are present to attempt to prevent regressions in the availability and utility of the project, and are inherited from the Ember parent project.
 
 - Buildable: All technologies and materials needed to build, use, and disassemble the design must also meet these design requirements, and must be fully specified in this document, with reference within the design to those other design specifications, so that every design listed here can be built, used, and disassembled without any knowledge outside of this document, beginning with only the materials available naturally.
 - Deconstructable: The design should be able to be disassembled and/or reassembled without any damage or loss to the materials used.
@@ -190,62 +180,6 @@ This is the same as the Ember Minimal Freedom Requirements, with the following a
 
 ## Goals
 
-An Ember community should provide useful elements of survival: shelter, nutrition (including food and water), medical care, education, and information. It would do this as its fulfillment of its objective of managing the various needs of a society, by enabling people to be effective participants in that society.
-
-One role of Ember would be to provide goods. For this, it would be ideal for Ember to control as much of the supply chain as possible. That would allow efficient provision of the goods such as to reduce cost and ensure quality. That control of the supply chain would, in an ideal scenario, extend to all stages of the process, from production of the raw materials to component production to assembly to distribution, as well as shipping at all stages of the process. If Ember both controlled production of raw materials in a region and was the dominant institution working to ensure that those resources are used responsibly, it would of course be important to take the interest Ember has in using the resources sustainably into consideration.
-
-There should be a universally and easily accessible facility to allow the community to vote easily, with systems in place to prevent voter suppression or intimidation.
-
-## Rationale
-
-Human society is sometimes unpredictable in the rights and safeties it affords. Consequently, a unified institution with the aim of remedying these issues should be established outside of the realms of traditional governmental structures. Participation in Ember communities shall be dependent on agreement to specified terms, to best protect the rights of the individuals making up the community.
-
-## Specification document
-
-The most significant knowledge assets of the project should comprise a book, which is equivalent to part 1 of the library, with the information technology environment implementation and part 2 of the library provided with it. That could take the form of an ebook, a physical printed book, or other innovative document formats. It should include specifications of the project philosophy and rationale, community, technology and engineering, and goods and services, as well as a carefully prepared compilation of other important knowledge.
-
-## Designs
-
-The Ember project should develop designs for things such as clothing, tools, and housing. Any finished design provided by the project should conform to some specific traits.
-
-## Community
-
-An Ember community is a group of individuals who have chosen to create an Ember community, and to live in accordance with shared principles so as to best protect individuals' rights.
-
-This organization should not impose restrictions on those who chose to become its members apart from those necessary for the protection of their rights, and anyone should be able to choose to become a part of it or to leave it at any time. Joining the organization would involve being listed in the central Ember computing environment database, presumably with sufficient biometric data to prevent identity theft or other fraudulent activity. Names, addresses, or other such personal information, beyond the biometric data previously mentioned, would not be required for the process of becoming a member. Members are not obligated to use any of the services provided by Ember, and could request at any time the termination of any services presently provided to them. In consideration of the "right to die" debate, perhaps people should be able to (revocably, of course, and only if they can give meaningful consent) even request termination of the basic protection of their human rights such as emergency medical care that any community should by default provide as best as possible to anyone regardless of affiliation.
-
-There are many other concerns relevant to the management of a community, as well; a thorough assessment and consideration of management and governance principles and relevant historical experience would be a prerequisite for the development of the community proposed here.
-
-## Services collective
-
-This proposal advocates the creation of a project to develop an adequate infrastructure for managing and providing for the basic needs of society. This organization could exist alongside governments and other social structures, as well as potentially taking their place in the event that they collapse or fail to perform as expected.
-
-Humans have come to expect and rely upon social constructs for their safety and mutual benefit, but human society is sometimes unpredictable in the rights and safeties it affords. Consequently, there is a need for a unified institution to be established outside of the realms of traditional governmental structures to provide some semblance of a filling of this void. The general rules of this organization should be established on the basis of rights: rather than making a rule that, for example, prohibits murder, instead a rule should be established that protects individuals’ right to life. In such a way, rules would not be created that infringe freedom more than that which is necessary to retain order in society.
-
-An Ember community's services collective is a not-for-profit that organizes the procurement and distribution of goods and services for its members, and perhaps others as well. The goal of this organization would be to provide any needful things desired by its members for their lives. For instance, if a person chose to receive food through Ember, they could request that it be provided in exchange for labor. Their labor would help contribute to services requested in the future by them or other Ember members. The organization should have 24/7 available buildings staffed by Ember members from whom aid could be sought, such as the furnishing of meals, shelter, clothing, access to information, or other services, in exchange for labor. That way, if an Ember member is in trouble in an unfamiliar town, for instance, with no money, identification (beyond their own body), or other resources, they could go to the local Ember building to receive any services they desire; they could even build up credit in preparation for such an incident by working for the Ember collective prior to taking a trip, for instance, so they would have already earned any services they might want (thus acting as travel insurance, in a sense).
-
-A self-contained automated crop growing system could be constructed that would accept a seed as input and produce crops and more seed as output. This could be used for easily growing many types of plant, by providing different growing instructions and seeds as needed. It could also be built in a way that tries to use energy from the environment efficiently, and avoid excessive use of mains power. This would be helpful in simplifying access to plant products, even plants that are not commonly available easily. This principle could be applied to goods in general, using production on demand to reduce waste and transportation and storage costs. Such a system would require a level of technology that will likely take a while to develop without proprietary dependencies.
-
-## Library
-
-The library is divided into three sections, each increasingly broad in scope. Sections 2 and 3 are the only parts of the project that are not fully libre-licensed, due to the inclusion of non-libre-licensed third-party-owned contents in the libraries. The inclusion of some non-libre contents is justified in these cases because of their cultural and historic importance, because they are not dependencies of any other parts of the project, and in the general interest of preserving knowledge. The non-libre contents should of course not be relied upon outside of their role as cultural knowledge artifacts.
-
-## Library Section 1: Basic knowledge, to be included in the text of the project specification
-
-This section of the library will require research and writing. It should consist of many short sections, each covering a topic. Each of these sections should list all other sections that must be understood as prerequisites for understanding it. Ideally, the dependency tree of every section should culminate in a single section that gives a basic understanding of the dominant language of the reference (probably English, for the forseeable future), so that by translating that one section into another language, every other concept in the reference can be understood by reading its section and its section's prerequisites.
-
-It should include specifications of the project philosophy and rationale, community, technology and engineering, and goods and services.
-
-## Library Section 2: Great cultural works, to be included as digital data with the project specification
-
-Work has begun on compiling this section of the library, but its utility is restricted by many relevant assets being under copyright but not libre-licensed.
-
-## Library Section 3: The data held by the EITE cloud infrastructure
-
-This section of the library will presumably be too much information to be included in the project specification, although future information storage technology advances may render that less of an issue.
-
-## Information technology environment
-
 ### Introduction
 
 This section proposes developing an information technology system that allows various types of data to be given a first-class role. The proposed system is a centralized but non-centralization-dependent append-only information store, a computer operating system integrated with that information store, and related specifications.
@@ -257,6 +191,8 @@ People that would be especially benefited by the full form of this project inclu
 An important basic principle of EITE is flexibility. It should allow the user do what they want in an elegant manner, without undue shenanigans, difficult workarounds, or unwanted assistance. It should accommodate various workflows, and be thoroughly customizable. Its default configuration should be simple and easy to use. User interfaces should abstract away technical complexities by default while remaining fully usable, while allowing access to those complexities if desired.
 
 The system should use a single, libre, fully specified data format to store all types of information it processes, and development of the system should strive to ensure that a thorough selection of capabilities are provided out of the box using a consistent and customizable user interface, obviating the need for external apps (which often tend to be inconsistent in things such as internationalization and accessibility). The use of a single data format would allow, for instance, text, structured data, sound, and interactive media such as computer games to all be practically equivalent to each other, such that wherever one could be used, another could be used instead, ensuring thorough flexibility. (External apps should be possible to use, for instance as references to facilitate developing libre alternatives, as well as to provide historical access and allow verifying that libre alternatives are actually equivalent, but while they should be possible to use, they should not be _necessary_ to use.)
+
+For instance, there is no technical reason that italicized text can not be used in email subject lines, or for that matter, that an entire computer game could not be used as someone's email address. These restrictions are arbitrary and frustrating to people trying to work around them, and this computer system should resolve that by considering all types of information to be stored as simple strings of tokens, similar to current character encodings.
 
 ### Overview
 
@@ -651,19 +587,19 @@ Henry Jenkins's article "Eight Traits of the New Media Landscape" (http://nmdpro
 
 The first of these traits is _innovation_. This project proposal is arguably merely an extension and refinement of existing systems, and so may not be considered true innovation, depending on perspective. Even in that case, however, because those existing systems are themselves innovative, this project remains a work within new media, even if it is not itself a new medium.
 
-The second trait is _convergence_. This proposal is highly convergent, being a broadly scoped project to innovate across a wide range of aspects of society, industry, and technology. Even regarding only the information technology environment, it is intended to inherit the capabilities of existing computers, which are used for text, sound, image, video, and interactive media, among others.
+The second trait is _convergence_. This proposal is highly convergent, being a broadly scoped project to innovate across a wide range of technology applications. It is intended to inherit the capabilities of existing computers, which are used for text, sound, image, video, and interactive media, among others.
 
-The third defining trait is _everyday_ presence. As a project to develop a unified system providing all the knowledge resources needed for running a society, if it is successfully completed and used to its envisioned potential, it would be able to serve as the framework for people's everyday lives. When only available in partial form, those portions of it can be used in everyday settings as well (_e.g._ large chunks of my classwork and other data I rely on and use on an everyday basis (personal projects, music library, email, etc.) are stored and managed using software developed in the course of developing this project).
+The third defining trait is _everyday_ presence. As a project to develop a unified system providing all necessary technology infrastructure, if it is successfully completed and used to its envisioned potential, it would be able to serve as the framework for people's everyday lives. When only available in partial form, those portions of it can be used in everyday settings as well (_e.g._ large chunks of my classwork and other data I rely on and use on an everyday basis (personal projects, music library, email, etc.) are stored and managed using software developed in the course of developing this project).
 
 The fourth trait is _appropriation_. This proposed project ideally will be highly appropriative, because so much work has already been done. It would in all probability be hugely wasteful and impractical to attempt to build everything from scratch, rather than to leverage existing systems (even if only practical through inspiration!) and merely work to fill gaps and integrate the various existing technologies well. That said, reliance on proprietary or externally managed technologies should be eliminated as soon as practical, with all elements of the project and its dependencies being fully libre, because proprietary, non-maintainable, and trade-dependent systems are brittle and are a huge threat to the ability of human society to maintain its standards of living over time. Any external dependencies of the project should be libre, so they can be forked and maintained if necessary.
 
 The fifth trait is _networkedness_. As a design goal for this project, networking should be provided when available, but never mandatory. Systems that depend entirely on networking are, echoing the discussion of the fourth point, brittle. A cloud computing–backed virtual digital assistant, for instance, is thoroughly useless in the event of networking being unavailable. Once constructed, the best tools would be fully usable in a vacuum.
 
-The sixth trait is being _global_. The proposed project is intended to be able to be geographically dispersed, although individual communities would only be able to collaborate on physical projects by being physically colocated, for obvious reasons.
+The sixth trait is being _global_. The proposed project is intended to be able to be geographically dispersed.
 
 The seventh trait is _generational_. Whether an age gap will affect this project is hard to predict. If it does, it should only be by the choice of individuals, rather than by inaccessibility or prejudice: if people who are a different age than the majority involved in the project, those people should be provided any necessary accommodations to the fullest extent possible (medical care for the elderly, education for the young, and so on). This project should not engage in discrimination based on age, although it could only serve adults until a sufficient child protection framework is in place (_e.g._ I think Google doesn't allow kids to use it, so this presumably shouldn't either).
 
-The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, because a community would presumably be unable to sufficiently support individuals with some disabilities to modern standards until it was somewhat technologically sophisticated, meaning that people involved in the project would need to be able to provide for themselves and (for the physical community or communities) provide transportation for access, restricting practical use of the project to those who are wealthy or otherwise supported. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
+The eighth trait is _inequality_. Unfortunately, this likely may affect the project initially, particularly due to economic barriers to access to information technology systems. Working to reduce undesired inequality as much as possible should be a design goal of the project, while promoting diversity and freedom.
 
 # "My Viral Media Campaign Plan" questionnaire responses
 
@@ -806,12 +742,6 @@ People communicating with me to join forces on working on this project is the pr
 ### YouTube views
 
 These are available via YouTube video page. People who contact me are more helpful than people who watch a video but are not interested enough to proceed.
-
-# Computer-free project strategy
-
-Computers are not necessary, central, or even all that relevant to the core goals of this project. They play a role in it as proposed due to how they can simplify, facilitate, and expedite its development, implementation, and use. However, the information technology elements of the proposal could simply be omitted without significant loss or change to the project, and the remainder of the proposal implemented as described (using traditional "paper office" or similar tools for communication, knowledge storage, and management). Taking this further, remote medieval monasteries are perhaps somewhat similar to what this project would look like without any modern technologies, in that they were self-sustaining communities based on a known, adaptable model (and tended towards the preservation of knowledge).
-
-The extensive focus on the information technology aspects in the proposal is largely a product of their impressive capabilities and flexibility, and my personal interest in and frustration with them and their potential, and recognition of the value they could hold for society and this project.
 
 # Annotated bibliography
 
