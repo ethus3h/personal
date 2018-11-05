@@ -24,16 +24,7 @@ NMD498:
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
-- assigments 21 Oct:New assignemnt Week 7: 
-
-Set up a Heads-Up Display (HUD) to further emphasize the readout of your player's health and points by further modifying the UI component with the fonts, sizes, and colors of your choice. Consider using a slider to represent health or points. Add win/die scenes transitioned to with LoadLevel. Publish your game to WebGL. Hand the whole game folder as well as the WebGL version for me to grade. Turn in to the Blackboard a sharable link to a single file zipped or gzipped copy of your whole game folder that you have deposited on your Google Drive. 
-
- 
-
-Bonus: Add the GemShader package to your project, explore its options and abilities, and use these objects for your health point pickup objects.
-
-Bonus: Add the Detonator package to your project, explore its options and abilities, and use these animation/particle systems with your damage objects. 
-
+- assigments :
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
