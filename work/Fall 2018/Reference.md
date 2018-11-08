@@ -34,7 +34,7 @@ public class ExportPackage {
     [MenuItem ("AssetDatabase/ExportExample")]
     static void ExportExample () {
 
-        AssetDatabse.ExportPackage("Assets/Fastook_Coroutines", "Fastook_Coroutines.unitypackage", ExportPackageOptions.Interactive | ExportPackageOptions.IncludeDependencies | ExportPackageOptions.recurse | ExportPackageOptions.IncludeLibraryAssets);
+        AssetDatabse.ExportPackage("Assets/Fastook_Coroutines", "Fastook_Coroutines.unitypackage", ExportPackageOptions.Interactive | ExportPackageOptions.IncludeDependencies | ExportPackageOptions.recurse | ExportPackageOptions.IncludeLibraryAssets );
     }
 }
 ```
