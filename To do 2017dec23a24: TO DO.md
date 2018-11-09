@@ -1,6 +1,6 @@
 # TO DO
 
-https://stackoverflow.com/questions/39320990/google-code-archive-to-github : https://code.google.com/archive/p/arcmaj3-client/source/default/source / https://archive.org/download/code-urls-2015may03/code-urls-2015may03.txt
+[DONE; in "/google-code-projects" in ember-history] https://stackoverflow.com/questions/39320990/google-code-archive-to-github : https://code.google.com/archive/p/arcmaj3-client/source/default/source / https://archive.org/download/code-urls-2015may03/code-urls-2015may03.txt
 
 New Git tip for Web site: To make local branches for all remote branches for the remote called `upstream` (well, any branch with an identifier with `upstream/` in its name): `for remote in $(git branch -r | grep 'upstream/' | grep -v '\->'); do git branch --track "upstream-branches/${remote# }" "${remote# }"; done`
 
