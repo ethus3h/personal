@@ -1,3 +1,10 @@
+Check and mark failed if failed LocalStore packs, to avoid repeatedly trying to fetch the same ones.
+It should alert that a specific LocalStore is failed (touch a .localstore-failed file for it,
+and spit out a list of pointers using that LocalStore, maybe to the root of the stream repository).
+Perhaps there should also be a bulk tool for getting pointer filenames, so a list of pointers can be
+fed into it to get a list of files instead (perhaps only 1 per pointer?).
+To check: what is the procedure for fixing a broken pointer that passes quick-check? (e.g. I think broken LocalStore can still pass quick check). Does sreg_fsck move the pointer out of the way when it discovers it's failed, or mark it in some other way so it is recreated next time that stream is stored?
+
 https://gist.github.com/jscher2000/9623b34ed793274396ac04b81cb81660
 https://github.com/CoolOppo/Unity-Networking-FPS
 https://github.com/DoYouEven/IceAge-Unity
