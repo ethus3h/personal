@@ -44,3 +44,60 @@ The resulting file end up in the UNity game folder. If you have no custom tag in
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
 - Due : Assignment 30 Seconds Tv intro THURSDAY
+kyan@elegiac ~ nohup compiz --replace openbox $ concrete examples. Make accessibledescription. Write for people for before . Accessible slides. What i do before how i do it. Interest them, give a hook. Make them want to understand. Strart with concrete .xaasync function fbSwitcher(intNum) {
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $     await assertIsInt(intNum); let strReturn;
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $     if (await implEq(0, await implMod(intNum, 15))) {
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $         /* just a literal sequence of bytes. Everything should be binary safe. 0x could be used to return data, too. 0x = data, not numbers, in StageL. */
+mbash: /bin: Is a directory
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20181129141804735430947_2d303530300a:
+An error was reported on  line 5 in /home/kyan at 20181129191804713795796U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $         strReturn = 'FizzBuzz'; await assertIsStr(strReturn); return strReturn;
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $     }
+bash: syntax error near unexpected token `}'
+kyan@elegiac ~ nohup compiz --replace openbox $     /* Comment */
+bash: /bin: Is a directory
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20181129141804760099025_2d303530300a:
+An error was reported on  line 9 in /home/kyan at 20181129191804743950651U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $     if (await implEq(0, await implMod(intNum, 5))) {
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $         /* Comment 2 */
+bash: /bin: Is a directory
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20181129141804783753498_2d303530300a:
+An error was reported on  line 11 in /home/kyan at 20181129191804767069896U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $         strReturn = 'Buzz'; await assertIsStr(strReturn); return strReturn;
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $         /* Comment 3 */
+bash: /bin: Is a directory
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20181129141804807563567_2d303530300a:
+An error was reported on  line 14 in /home/kyan at 20181129191804790971196U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $     /* Could also write it like this, with the condition on another line */
+bash: /bin: Is a directory
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20181129141804830430706_2d303530300a:
+An error was reported on  line 15 in /home/kyan at 20181129191804814057752U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $     if (await implEq(0, await implMod(intNum, 3))) {
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $         /* Comment 4 */
+bash: /bin: Is a directory
+el/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20181129141804857015008_2d303530300a:
+An error was reported on  line 17 in /home/kyan at 20181129191804837098618U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $         strReturn = 'Fizz'; await assertIsStr(strReturn); return strReturn;
+bash: syntax error near unexpected token `('
+kyan@elegiac ~ nohup compiz --replace openbox $     }
+bash: syntax error near unexpected token `}'
+kyan@elegiac ~ nohup compiz --replace openbox $ }
+bash: syntax error near unexpected token `}'
+kyan@elegiac ~ nohup compiz --replace openbox $ mple example. For the event thing, let ppl write code. Type-in code for StageL maybe to demo  it. Adjust gant chart and discuss how i am late. Askfor advice for jon's class what i could cut or do to make it work. 
