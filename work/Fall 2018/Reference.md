@@ -8,15 +8,11 @@ NMD498:
 - syllabus: http://jonippolito.net/teaching/capstone/capstone_syllabus_2x_week.html
 - Office hours: 10 to 12 (?) office hours Wednesday reservation https://is.gd/JMDye3 — COME AT LEAST ONCE!
 - Visual approaches: Create and include at least two more approaches (flowcharts, storyboards, renderings, etc) that could help someone evaluate your project.
-- include your standing is in each of the social networks you plan to use, and how you might increase it. 
 - Feedback integration
-  - "This project should aim to systematically support the libre development and distribution as best as possible of the full set of knowledge and resources needed to support humans' standard of living, and to ensure the availability of communities managed in the long-term interest of their constituents, humanity, and the environment.": "Once again: bring a few examples of how this would all work."
   - "think about how to bring the reader early on into getting the concept of the project. I think you do it relatively well but you should help your reader by bringing strong/concrete examples from the onset. Also adding some figures would help. The text just feels a little bit too “dry” and technical. You can start with making it more digestable, and then in later sections you can go towards more technical stuff. You *do it* already but … just not enough."
   - concrete examples. Make accessible description. Write in a way that assumes no audience foreknowledge of the project. Accessible slides. Explain what i do before how i do it which is less interesting. Interest them, give a hook. Make them want to understand. Start with concrete example(s). For the event thing, let ppl write code. Type-in StageL code to demo it & let people experience it, like an old computer magazine. Adjust Gantt chart and discuss how I am late. Ask for advice from jon's class what i could cut or do to make it work.
   - First, extplain what we are doing very simply. Then explian wwhy we're doing it, which can be more intellecutaly.
   - Add user stories / use cases.
-- ASSIGNMENT 6:
-  - Revised proposal DUE 23 OCT 2018
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
