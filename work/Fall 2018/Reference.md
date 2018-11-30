@@ -1,11 +1,6 @@
 Investigate bill due date / financial aid / enrollment
 
-- RENT 396.99
-- 2884098
 - 16m50s ep 12 Haibane Renmei
-- Wednesday, October 31
-10:30 – 11:00am
-Boardman Hall, Orono, ME 04473, USA Room #238
 
 NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
@@ -25,9 +20,9 @@ NMD498:
 
 COS312: 
 - Assignenmnts on Black board (https://my.umaine.edu)
-- assigments :
+- assigments :Final assignment project
 
 NMD344:
 - Is Slack: https://nmd344.slack.com/messages
-- Due : Assignment 1 to 3 minutes
+- Due : Final assignment 1 to 3 minutes
 
