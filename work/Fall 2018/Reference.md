@@ -1,6 +1,7 @@
 Investigate bill due date / financial aid / enrollment
 
 - 16m50s ep 12 Haibane Renmei
+- https://yalebooks.yale.edu/book/9780300233117/essential-duchamp
 
 NMD498:
 - slack; https://nmd498-2018.slack.com/messages/CCL81PTTJ/
