@@ -24,10 +24,6 @@ NMD344:
 - Due : Final assignment 1 to 3 minutes
 
 
-https://github.com/tc39/ecmascript_sharedmem
-https://github.com/tc39/ecma262
 https://github.com/blueberrymusic?tab=repositories
-https://github.com/koalaman/linuxatemyram.com
-https://github.com/mgorny/tar-test-inputs
 https://github.com/ryanoasis/nerd-fonts
 https://osdn.net/projects/mplus-fonts/ (https://www.embecosm.com/appnotes/ean11/ean11-howto-cvs-git-1.0.html)
