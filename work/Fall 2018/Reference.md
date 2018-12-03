@@ -23,3 +23,8 @@ NMD344:
 - Is Slack: https://nmd344.slack.com/messages
 - Due : Final assignment 1 to 3 minutes
 
+sregi_verify_entry never mark localstore-dependent entries as verified; remove .verified file if it exists for them
+
+https://github.com/blueberrymusic?tab=repositories
+https://github.com/ryanoasis/nerd-fonts
+https://osdn.net/projects/mplus-fonts/ (https://www.embecosm.com/appnotes/ean11/ean11-howto-cvs-git-1.0.html)
