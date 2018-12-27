@@ -24,8 +24,6 @@
 ./ebooks
 ./ebooks/2013
 ./ebooks/2014
-./ebooks/2015
-./ebooks/2016
 ./ebooks/2017
 ./ebooks/2018
 ./ebooks/ACrownofSwordsv6
@@ -42,7 +40,6 @@
 ./ebooks/Card_OrsonScott
 ./ebooks/catalog
 ./ebooks/Chartrand_Mark
-./ebooks/computer_ebooks
 ./ebooks/Cote_Michael
 ./ebooks/covers
 ./ebooks/CrossroadsofTwilightv6
@@ -53,7 +50,6 @@
 ./ebooks/Earlier-Ravensv3
 ./ebooks/Easton_Tom
 ./ebooks/Ellison_Harlan
-./ebooks/ENCYCLOPEDIAS_AND_KNOWLEDGE_PART_I
 ./ebooks/fathers
 ./ebooks/five_star_books
 ./ebooks/Fontana_Dorothy
@@ -75,7 +71,6 @@
 ./ebooks/information
 ./ebooks/initials
 ./ebooks/lines
-./ebooks/literature
 ./ebooks/LordofChaosv6
 ./ebooks/Malartre_Elisabeth
 ./ebooks/McCaffrey_Anne
@@ -97,7 +92,6 @@
 ./ebooks/Silverberg_Robert
 ./ebooks/Skotak_Robert
 ./ebooks/ssi
-./ebooks/star_wars
 ./ebooks/stories
 ./ebooks/subs
 ./ebooks/Text
@@ -117,8 +111,6 @@
 ./ebooks/Witcover_Paul
 ./ebooks/Zebrowski_George
 ./email
-./files
-./files/popularmusic
 ./gfx
 ./gfx/backgrounds
 ./glossary
