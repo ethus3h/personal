@@ -1,0 +1,13 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ due 27 jan midnight: proposal , with descript of topic, where i anticipate finding material on topic, plus a progress report every 2 weeks sunday by midnight. include demo folder (optional i think).  demo day at end of semester. final report at end , incl. esp. comparing what we accomplished versus what we had planned, and a list of resources we used, and how the project evolved as we implemented it; (see slides for this week).^C
+kyan@elegiac ~ nohup compiz --replace openbox $ 
+kyan@elegiac ~ nohup compiz --replace openbox $ search ''procedural cave generation tutorial''.  sebastian legue procedural terrain generation (in blackboard)  Marching cubes  Pro builder tool unity 2018 might help with procedural terrain. 
+
+
+
+
+
+
+
+
+
+
