@@ -1,0 +1,23 @@
+kyan@elegiac ~ nohup compiz --replace openbox $ esc to close; click outside to close
+bash: esc: command not found
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20190131133125589094183_2d303530300a:
+An error was reported on  line 1 in /home/kyan at 20190131183125541116756U2d303530300a.
+bash: click: command not found
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20190131133125643040280_2d303530300a:
+An error was reported on  line 1 in /home/kyan at 20190131183125599292129U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ fitt's law
+> ''
+> '
+bash: $'fitts law\n\n': command not found
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20190131133855483723849_2d303530300a:
+An error was reported on  line 4 in /home/kyan at 20190131183855435804064U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ make react grid
+make: *** No rule to make target 'react'.  Stop.
+/bin/bash
+failed with the error on /usr/bin/error-notify line 28 in /home/kyan at 20190131134453500746155_2d303530300a:
+An error was reported on  line 5 in /home/kyan at 20190131184453469335164U2d303530300a.
+kyan@elegiac ~ nohup compiz --replace openbox $ ^Cean
+kyan@elegiac ~ nohup compiz --replace openbox $ scratch that i mean, remake my assignment with css grid.
