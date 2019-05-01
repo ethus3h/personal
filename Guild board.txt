@@ -6,7 +6,9 @@ A Realm of the Mad God guild
 
 The primary guild mission and philosophy is to foster a caring and friendly environment in Realm of the Mad God.
 
-The guild is run by CuteFairy (me). If you need to contact me, you can email me at elliot@futuramerlin.com. The authoritative version of this document is maintained at https://github.com/ethus3h/personal/blob/master/Guild%20board.txt
+The guild is run by CuteFairy (me). If you need to contact me, you can email me at elli@futuramerlin.com. The authoritative version of this document is maintained at https://github.com/ethus3h/personal/blob/master/Guild%20board.txt
+
+Update 9 May 2019: I don't play Realm much now, primarily because it is proprietary software and I am increasingly concerned with eliminating my exposure to anything other than free/libre/open-source software (see https://fsf.org/ for information on why it's important to avoid non-free software). Sorry to disappear.
 
 ~ Rules <3 ~
 
@@ -29,4 +31,4 @@ As many of you know i like to help people out, and i have quite a few great item
 
 The upgrade rocks! thanks guys for all the effort! -Ik 
 
-
+when is some one on, i'm getting bored soloing -McErieg
